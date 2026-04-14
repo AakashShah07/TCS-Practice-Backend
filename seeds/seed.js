@@ -1,6 +1,8 @@
 require('dotenv').config();
 const mongoose = require('mongoose');
 const Question = require('../models/Question');
+const User = require('../models/User');
+const Test = require('../models/Test');
 
 // Data
 const numericalData = require('./numerical.json');
@@ -15,23 +17,101 @@ const seedDB = async () => {
     await mongoose.connect(mongoURI);
     console.log('MongoDB connected...');
 
-    // Clear existing questions
-    await Question.deleteMany();
-    console.log('Cleared existing questions...');
+    // Clear existing data
+    await Promise.all([
+      Question.deleteMany(),
+      User.deleteMany(),
+      Test.deleteMany(),
+    ]);
+    console.log('Cleared existing data...');
 
-    // Combine all data
+    // Create admin user
+    const admin = await User.create({
+      name: 'Admin',
+      email: 'admin@tcsnqt.com',
+      password: 'admin123',
+      role: 'admin',
+    });
+    console.log(`Admin created: ${admin.email} / admin123`);
+
+    // Create demo user
+    const demo = await User.create({
+      name: 'Demo User',
+      email: 'demo@tcsnqt.com',
+      password: 'demo123',
+      role: 'user',
+    });
+    console.log(`Demo user created: ${demo.email} / demo123`);
+
+    // Seed questions
     const allQuestions = [
       ...numericalData,
       ...reasoningData,
       ...verbalData,
       ...advancedData,
     ];
+    const inserted = await Question.insertMany(allQuestions);
+    console.log(`Seeded ${inserted.length} questions.`);
 
-    // Insert data
-    await Question.insertMany(allQuestions);
-    console.log(`Successfully seeded ${allQuestions.length} questions.`);
+    // Create section tests
+    const sections = { numerical: [], reasoning: [], verbal: [], advanced: [] };
+    for (const q of inserted) {
+      if (sections[q.section]) sections[q.section].push(q._id);
+    }
 
-    // Close connection
+    await Test.create({
+      title: 'Numerical Ability Test',
+      type: 'section_test',
+      section: 'numerical',
+      questions: sections.numerical,
+      totalQuestions: sections.numerical.length,
+      duration: 25 * 60,
+    });
+
+    await Test.create({
+      title: 'Logical Reasoning Test',
+      type: 'section_test',
+      section: 'reasoning',
+      questions: sections.reasoning,
+      totalQuestions: sections.reasoning.length,
+      duration: 25 * 60,
+    });
+
+    await Test.create({
+      title: 'Verbal Ability Test',
+      type: 'section_test',
+      section: 'verbal',
+      questions: sections.verbal,
+      totalQuestions: sections.verbal.length,
+      duration: 25 * 60,
+    });
+
+    await Test.create({
+      title: 'Advanced Quantitative & Reasoning Test',
+      type: 'section_test',
+      section: 'advanced',
+      questions: sections.advanced,
+      totalQuestions: sections.advanced.length,
+      duration: 25 * 60,
+    });
+
+    // Full mock test
+    const allIds = inserted.map((q) => q._id);
+    await Test.create({
+      title: 'TCS NQT Full Mock Test',
+      type: 'full_mock',
+      questions: allIds,
+      totalQuestions: allIds.length,
+      duration: 120 * 60,
+      sectionLocked: true,
+    });
+
+    console.log('Tests created.');
+
+    console.log('\n--- Seeding Complete ---');
+    console.log('Admin:  admin@tcsnqt.com / admin123');
+    console.log('Demo:   demo@tcsnqt.com / demo123');
+
     mongoose.connection.close();
     process.exit(0);
   } catch (error) {

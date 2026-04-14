@@ -1,0 +1,145 @@
+[
+  {
+    "text": "Read the passage: 'The paradox of modern connectivity lies in its capacity to simultaneously unite and isolate. While social media platforms have enabled unprecedented global communication, studies consistently demonstrate a correlation between heavy social media usage and increased feelings of loneliness. This is not merely a coincidence — the curated nature of online personas creates an environment where authentic human connection is supplanted by performative interaction, leaving users emotionally malnourished despite being perpetually connected.' Which of the following best captures the author's central argument?",
+    "options": [
+      "Social media should be banned to reduce loneliness",
+      "Technology connects people globally but the connection lacks emotional authenticity",
+      "Loneliness is caused by excessive screen time",
+      "Online personas are always dishonest"
+    ],
+    "correctAnswer": 1,
+    "section": "verbal",
+    "topic": "Reading Comprehension",
+    "difficulty": "hard",
+    "explanation": "The passage argues that despite connectivity, the curated/performative nature of social media replaces authentic connection, leading to emotional isolation. Option B captures this paradox precisely."
+  },
+  {
+    "text": "Read the passage: 'Cognitive dissonance theory suggests that individuals experience psychological discomfort when holding contradictory beliefs or when their actions conflict with their values. To resolve this dissonance, people often rationalize their behaviour rather than changing it. A smoker aware of health risks, for instance, might convince themselves that the stress relief outweighs the danger, or that they will quit eventually — thereby preserving their self-image without modifying their actions.' According to the passage, how do people typically resolve cognitive dissonance?",
+    "options": [
+      "By immediately changing their behaviour",
+      "By seeking professional help",
+      "By justifying their actions through rationalization",
+      "By ignoring the conflicting information entirely"
+    ],
+    "correctAnswer": 2,
+    "section": "verbal",
+    "topic": "Reading Comprehension",
+    "difficulty": "hard",
+    "explanation": "The passage explicitly states people 'rationalize their behaviour rather than changing it' and gives the smoker example to illustrate justification of actions."
+  },
+  {
+    "text": "Read the passage: 'The Dunning-Kruger effect demonstrates that individuals with limited knowledge in a domain tend to overestimate their competence, while genuine experts often underestimate theirs. This asymmetry arises because incompetence robs people of the metacognitive ability to recognize their own deficiencies. Paradoxically, as one's actual expertise increases, so does the awareness of how much remains unknown — creating a humility born of deeper understanding.' What does the passage imply about the relationship between knowledge and confidence?",
+    "options": [
+      "More knowledge always leads to more confidence",
+      "Less knowledge leads to appropriately low confidence",
+      "The relationship between knowledge and confidence is inversely proportional at extremes",
+      "Experts are always humble about their abilities"
+    ],
+    "correctAnswer": 2,
+    "section": "verbal",
+    "topic": "Reading Comprehension",
+    "difficulty": "hard",
+    "explanation": "The passage describes how low-knowledge individuals overestimate (high confidence) while high-knowledge experts underestimate (lower confidence). This inverse relationship at extremes is the core of the Dunning-Kruger effect."
+  },
+  {
+    "text": "Choose the sentence with NO grammatical error:",
+    "options": [
+      "The team of scientists have published their findings in the journal.",
+      "Neither the manager nor the employees was aware of the policy change.",
+      "Every one of the participants has submitted their application on time.",
+      "Each of the students was required to submit his or her assignment."
+    ],
+    "correctAnswer": 3,
+    "section": "verbal",
+    "topic": "Grammar",
+    "difficulty": "hard",
+    "explanation": "'Each' is singular and takes 'was'. 'His or her' correctly matches singular antecedent. Option A: 'team...have' should be 'has'. Option B: 'was' should be 'were' (nearest subject is plural). Option C: 'every one...has' is correct but 'their' doesn't agree with singular 'every one'."
+  },
+  {
+    "text": "Identify the sentence with correct use of the subjunctive mood:",
+    "options": [
+      "The board insisted that he resigns immediately.",
+      "I recommend that she takes the advanced course.",
+      "It is essential that every employee be present at the meeting.",
+      "The professor suggested that the student writes a new thesis."
+    ],
+    "correctAnswer": 2,
+    "section": "verbal",
+    "topic": "Grammar",
+    "difficulty": "hard",
+    "explanation": "The subjunctive mood uses the base form of the verb after expressions of demand/suggestion/necessity. 'Be present' (not 'is present') is correct subjunctive. Others incorrectly use indicative forms (resigns, takes, writes)."
+  },
+  {
+    "text": "Select the sentence with correct parallel structure:",
+    "options": [
+      "She enjoys reading, to swim, and hiking on weekends.",
+      "The policy was criticized for being unclear, inconsistent, and it was poorly enforced.",
+      "The manager asked staff to complete their reports, update the database, and to attend the meeting.",
+      "The course teaches students to analyze data, interpret results, and present findings."
+    ],
+    "correctAnswer": 3,
+    "section": "verbal",
+    "topic": "Grammar",
+    "difficulty": "hard",
+    "explanation": "Parallel structure requires matching grammatical forms. Option D: 'to analyze...interpret...present' — all infinitives sharing the 'to'. Others mix gerunds with infinitives or clauses."
+  },
+  {
+    "text": "Which sentence correctly uses a dangling modifier?",
+    "options": [
+      "Walking through the park, the trees looked beautiful.",
+      "Having finished the project, the deadline no longer worried us.",
+      "After reviewing the evidence, the case was dismissed by the judge.",
+      "Exhausted from the journey, a hot meal was exactly what he needed."
+    ],
+    "correctAnswer": 1,
+    "section": "verbal",
+    "topic": "Grammar",
+    "difficulty": "hard",
+    "explanation": "Option B: 'Having finished the project' correctly modifies 'us' (we finished → the deadline no longer worried us). Others have dangling modifiers: trees weren't walking, the case didn't review evidence, a meal wasn't exhausted."
+  },
+  {
+    "text": "Choose the word that best fits: 'The politician's speech was deliberately _____, designed to appeal to emotions rather than logic.'",
+    "options": ["Pedantic", "Demagogic", "Laconic", "Didactic"],
+    "correctAnswer": 1,
+    "section": "verbal",
+    "topic": "Vocabulary",
+    "difficulty": "hard",
+    "explanation": "Demagogic: appealing to popular prejudices and emotions rather than reason. Pedantic: overly concerned with details. Laconic: brief. Didactic: instructive."
+  },
+  {
+    "text": "Choose the word opposite in meaning to 'Sycophantic':",
+    "options": ["Flattering", "Candid", "Obsequious", "Servile"],
+    "correctAnswer": 1,
+    "section": "verbal",
+    "topic": "Vocabulary",
+    "difficulty": "hard",
+    "explanation": "Sycophantic means excessively flattering/servile. Candid means honest and straightforward — the opposite. Flattering, obsequious, and servile are all synonyms of sycophantic."
+  },
+  {
+    "text": "The word 'Equivocate' most nearly means:",
+    "options": ["To speak with equal force", "To use ambiguous language to mislead", "To divide equally", "To equalize"],
+    "correctAnswer": 1,
+    "section": "verbal",
+    "topic": "Vocabulary",
+    "difficulty": "hard",
+    "explanation": "Equivocate means to use ambiguous or unclear expressions to avoid commitment or to mislead — deliberately vague language."
+  },
+  {
+    "text": "Which word best completes the analogy? Loquacious : Taciturn :: Profligate : _____",
+    "options": ["Frugal", "Wealthy", "Generous", "Extravagant"],
+    "correctAnswer": 0,
+    "section": "verbal",
+    "topic": "Vocabulary",
+    "difficulty": "hard",
+    "explanation": "Loquacious (talkative) is opposite of Taciturn (quiet). Profligate (wastefully extravagant) is opposite of Frugal (economical)."
+  },
+  {
+    "text": "'Despite the company's _____ profits, the CEO's _____ spending habits eventually led to its bankruptcy.' Choose the best pair:",
+    "options": ["meagre...frugal", "substantial...profligate", "dwindling...cautious", "modest...prudent"],
+    "correctAnswer": 1,
+    "section": "verbal",
+    "topic": "Vocabulary",
+    "difficulty": "hard",
+    "explanation": "'Despite' signals contrast. The company had good profits (substantial) but the CEO spent wastefully (profligate), leading to bankruptcy. This is the only pair that creates a logical contrast."
+  }
+]

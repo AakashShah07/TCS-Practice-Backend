@@ -72,7 +72,7 @@ exports.getHistory = async (req, res, next) => {
         .skip(skip)
         .limit(parseInt(limit))
         .populate('test', 'title type section')
-        .select('score totalQuestions percentage correct wrong skipped timeTaken createdAt'),
+        .select('attempt score totalQuestions percentage correct wrong skipped timeTaken createdAt'),
       Result.countDocuments({ user: req.user._id }),
     ]);
 

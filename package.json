@@ -8,7 +8,8 @@
     "dev": "nodemon server.js",
     "seed": "node seeds/seed.js",
     "seed:hard": "node seeds/seed_hard.js",
-    "seed:extra": "node seeds/seed_extra.js"
+    "seed:extra": "node seeds/seed_extra.js",
+    "seed:extra2": "node seeds/seed_extra2.js"
   },
   "keywords": [],
   "author": "",

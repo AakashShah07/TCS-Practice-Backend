@@ -1,0 +1,38 @@
+[
+  {
+    "text": "If the equation (1+λ²) x² + 2λcx + (c²-a²) has equal roots, then a² (1+λ²) = ____",
+    "options": ["c²", "-2", "a²", "-4"],
+    "correctAnswer": 0,
+    "section": "advanced",
+    "topic": "Algebra",
+    "difficulty": "hard",
+    "explanation": "Extracted from TCS NQT Paper 1."
+  },
+  {
+    "text": "A five-digit number is to be written using 1, 2, 3, 4 and 5 using each exactly once such that the number is divisible by 4. How many such numbers are there?",
+    "options": ["12", "24", "6", "18"],
+    "correctAnswer": 2,
+    "section": "advanced",
+    "topic": "Number Systems",
+    "difficulty": "hard",
+    "explanation": "Extracted from TCS NQT Paper 1."
+  },
+  {
+    "text": "What is the remainder when the square of the LCM of 4, 6, 12, and 15 is divided by the square of HCF of 51, 119 and 323?",
+    "options": ["130", "136", "132", "134"],
+    "correctAnswer": 2,
+    "section": "advanced",
+    "topic": "Number Systems",
+    "difficulty": "hard",
+    "explanation": "Extracted from TCS NQT Paper 2."
+  },
+  {
+    "text": "A wall is of 10m 73cm in length and 6m 67cm in height. Find the least number of square boxes of equal size required to paint the entire wall completely.",
+    "options": ["851", "861", "855", "865"],
+    "correctAnswer": 0,
+    "section": "advanced",
+    "topic": "Mensuration",
+    "difficulty": "hard",
+    "explanation": "Extracted from TCS NQT Paper 3."
+  }
+]

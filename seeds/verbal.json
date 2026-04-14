@@ -1,0 +1,287 @@
+[
+  {
+    "text": "Choose the word most similar in meaning to 'Eloquent':",
+    "options": ["Silent", "Articulate", "Confused", "Angry"],
+    "correctAnswer": 1,
+    "section": "verbal",
+    "topic": "Vocabulary",
+    "difficulty": "easy",
+    "explanation": "Eloquent means fluent or persuasive in speaking, which is similar to articulate."
+  },
+  {
+    "text": "Identify the error: 'Each of the students have completed their assignments on time.'",
+    "options": ["Each of", "have completed", "their assignments", "on time"],
+    "correctAnswer": 1,
+    "section": "verbal",
+    "topic": "Grammar",
+    "difficulty": "easy",
+    "explanation": "'Each' is singular, so the verb should be 'has completed' not 'have completed'."
+  },
+  {
+    "text": "Choose the correct sentence:",
+    "options": [
+      "He don't know nothing about it.",
+      "He doesn't know anything about it.",
+      "He don't know anything about it.",
+      "He doesn't knows anything about it."
+    ],
+    "correctAnswer": 1,
+    "section": "verbal",
+    "topic": "Sentence Correction",
+    "difficulty": "easy",
+    "explanation": "'He' takes 'doesn't' (not 'don't') and 'anything' (not double negative 'nothing')."
+  },
+  {
+    "text": "Read the passage: 'The industrial revolution transformed society from agrarian to urban. Factories replaced farms as the primary workplace. This shift led to significant social changes including urbanization and the rise of the working class.' What was the primary change described?",
+    "options": [
+      "Political revolution",
+      "Shift from agricultural to industrial society",
+      "Development of technology",
+      "Growth of farms"
+    ],
+    "correctAnswer": 1,
+    "section": "verbal",
+    "topic": "Reading Comprehension",
+    "difficulty": "easy",
+    "explanation": "The passage describes the transformation from agrarian (agricultural) to urban (industrial) society."
+  },
+  {
+    "text": "Choose the word opposite in meaning to 'Benevolent':",
+    "options": ["Kind", "Malevolent", "Generous", "Wealthy"],
+    "correctAnswer": 1,
+    "section": "verbal",
+    "topic": "Vocabulary",
+    "difficulty": "easy",
+    "explanation": "Benevolent means well-meaning and kindly. Malevolent means having ill will, the opposite."
+  },
+  {
+    "text": "Fill in the blank: 'Neither the teacher nor the students ___ present at the meeting.'",
+    "options": ["was", "were", "is", "has been"],
+    "correctAnswer": 1,
+    "section": "verbal",
+    "topic": "Grammar",
+    "difficulty": "medium",
+    "explanation": "With 'neither...nor', the verb agrees with the nearest subject 'students' (plural), so 'were' is correct."
+  },
+  {
+    "text": "Choose the correct sentence:",
+    "options": [
+      "The committee have reached their decision.",
+      "The committee has reached its decision.",
+      "The committee have reached its decision.",
+      "The committee has reached their decisions."
+    ],
+    "correctAnswer": 1,
+    "section": "verbal",
+    "topic": "Sentence Correction",
+    "difficulty": "medium",
+    "explanation": "'Committee' is a collective noun treated as singular. 'Has reached its decision' is correct."
+  },
+  {
+    "text": "Read: 'Climate change poses an existential threat to coastal communities. Rising sea levels could displace millions. Despite global agreements, emissions continue to rise.' What is the tone of this passage?",
+    "options": ["Optimistic", "Neutral", "Concerned/Warning", "Humorous"],
+    "correctAnswer": 2,
+    "section": "verbal",
+    "topic": "Reading Comprehension",
+    "difficulty": "medium",
+    "explanation": "Words like 'existential threat', 'displace millions', and 'despite...continue to rise' convey a concerned, warning tone."
+  },
+  {
+    "text": "Choose the word most similar to 'Pragmatic':",
+    "options": ["Idealistic", "Practical", "Emotional", "Theoretical"],
+    "correctAnswer": 1,
+    "section": "verbal",
+    "topic": "Vocabulary",
+    "difficulty": "medium",
+    "explanation": "Pragmatic means dealing with things sensibly and realistically, similar to practical."
+  },
+  {
+    "text": "Identify the error: 'The news are very disturbing and has affected everyone.'",
+    "options": ["The news", "are very", "disturbing and", "has affected"],
+    "correctAnswer": 1,
+    "section": "verbal",
+    "topic": "Grammar",
+    "difficulty": "medium",
+    "explanation": "'News' is uncountable and takes a singular verb. It should be 'is very' not 'are very'."
+  },
+  {
+    "text": "Choose the word opposite to 'Ubiquitous':",
+    "options": ["Common", "Rare", "Everywhere", "Abundant"],
+    "correctAnswer": 1,
+    "section": "verbal",
+    "topic": "Vocabulary",
+    "difficulty": "hard",
+    "explanation": "Ubiquitous means present everywhere. Rare is the opposite."
+  },
+  {
+    "text": "Select the correctly punctuated sentence:",
+    "options": [
+      "Its a beautiful day isnt it.",
+      "It's a beautiful day, isn't it?",
+      "Its a beautiful day, isnt it?",
+      "It's a beautiful day isn't it."
+    ],
+    "correctAnswer": 1,
+    "section": "verbal",
+    "topic": "Sentence Correction",
+    "difficulty": "easy",
+    "explanation": "'It's' (contraction), comma before tag question, 'isn't' (contraction), question mark at end."
+  },
+  {
+    "text": "Read: 'Artificial intelligence is revolutionizing healthcare. AI algorithms can now detect diseases from medical images with accuracy surpassing human doctors. However, ethical concerns about data privacy and algorithmic bias remain significant challenges.' The main argument is:",
+    "options": [
+      "AI should replace all doctors",
+      "AI has potential in healthcare but faces ethical challenges",
+      "Data privacy is not important",
+      "AI is dangerous for healthcare"
+    ],
+    "correctAnswer": 1,
+    "section": "verbal",
+    "topic": "Reading Comprehension",
+    "difficulty": "medium",
+    "explanation": "The passage presents AI's benefits in healthcare while acknowledging ethical challenges — a balanced view."
+  },
+  {
+    "text": "Choose the correct form: 'I wish I ___ a bird.'",
+    "options": ["am", "was", "were", "be"],
+    "correctAnswer": 2,
+    "section": "verbal",
+    "topic": "Grammar",
+    "difficulty": "medium",
+    "explanation": "After 'wish', we use the subjunctive mood: 'were' regardless of the subject."
+  },
+  {
+    "text": "What does the idiom 'to bite the bullet' mean?",
+    "options": [
+      "To eat something hard",
+      "To face a difficult situation bravely",
+      "To avoid responsibility",
+      "To speak harshly"
+    ],
+    "correctAnswer": 1,
+    "section": "verbal",
+    "topic": "Vocabulary",
+    "difficulty": "medium",
+    "explanation": "'Bite the bullet' means to endure a painful or difficult situation with courage."
+  },
+  {
+    "text": "Identify the error: 'Being a rainy day, we cancelled the match.'",
+    "options": ["Being a", "rainy day", "we cancelled", "the match"],
+    "correctAnswer": 0,
+    "section": "verbal",
+    "topic": "Grammar",
+    "difficulty": "hard",
+    "explanation": "Dangling modifier error. It should be 'It being a rainy day' or 'Since it was a rainy day'."
+  },
+  {
+    "text": "Choose the word most similar to 'Ephemeral':",
+    "options": ["Permanent", "Transient", "Solid", "Ancient"],
+    "correctAnswer": 1,
+    "section": "verbal",
+    "topic": "Vocabulary",
+    "difficulty": "hard",
+    "explanation": "Ephemeral means lasting for a very short time, similar to transient."
+  },
+  {
+    "text": "Select the best replacement: 'The teacher asked the students to give their opinion for the topic.'",
+    "options": [
+      "to give their opinion on the topic",
+      "to give their opinion about the topic",
+      "to give their opinion in the topic",
+      "No correction needed"
+    ],
+    "correctAnswer": 0,
+    "section": "verbal",
+    "topic": "Sentence Correction",
+    "difficulty": "easy",
+    "explanation": "The correct preposition with 'opinion' is 'on', not 'for'."
+  },
+  {
+    "text": "Read: 'Democracy is not merely a form of government; it is a way of life. It demands tolerance, respect for diversity, and active participation from citizens.' According to the passage, democracy requires:",
+    "options": [
+      "Only voting",
+      "Tolerance, respect for diversity, and participation",
+      "Military strength",
+      "Economic wealth"
+    ],
+    "correctAnswer": 1,
+    "section": "verbal",
+    "topic": "Reading Comprehension",
+    "difficulty": "easy",
+    "explanation": "The passage explicitly states democracy demands tolerance, respect for diversity, and active participation."
+  },
+  {
+    "text": "Choose the correct sentence:",
+    "options": [
+      "Me and him went to the store.",
+      "Him and I went to the store.",
+      "He and I went to the store.",
+      "I and he went to the store."
+    ],
+    "correctAnswer": 2,
+    "section": "verbal",
+    "topic": "Sentence Correction",
+    "difficulty": "easy",
+    "explanation": "Subject pronouns 'He and I' are correct as subjects. Convention places the first person last."
+  },
+  {
+    "text": "Choose the word opposite to 'Verbose':",
+    "options": ["Wordy", "Concise", "Lengthy", "Detailed"],
+    "correctAnswer": 1,
+    "section": "verbal",
+    "topic": "Vocabulary",
+    "difficulty": "medium",
+    "explanation": "Verbose means using more words than needed. Concise means brief and to the point — the opposite."
+  },
+  {
+    "text": "Fill in the blank: 'Had I known about the meeting, I ___ attended it.'",
+    "options": ["will have", "would have", "should", "could"],
+    "correctAnswer": 1,
+    "section": "verbal",
+    "topic": "Grammar",
+    "difficulty": "medium",
+    "explanation": "Third conditional (past unreal): 'Had I known... I would have attended.' Expresses a hypothetical past situation."
+  },
+  {
+    "text": "Read: 'The internet has democratized access to information, enabling individuals worldwide to learn, communicate, and collaborate. Yet, the digital divide remains, with billions still lacking reliable internet access.' What does 'digital divide' refer to?",
+    "options": [
+      "A type of computer virus",
+      "The gap between those with and without internet access",
+      "A programming language",
+      "Social media platforms"
+    ],
+    "correctAnswer": 1,
+    "section": "verbal",
+    "topic": "Reading Comprehension",
+    "difficulty": "medium",
+    "explanation": "Context clue: 'billions still lacking reliable internet access' defines the digital divide as the gap in internet access."
+  },
+  {
+    "text": "Choose the correct sentence:",
+    "options": [
+      "The data shows that the experiment failed.",
+      "The data show that the experiment failed.",
+      "The datas show that the experiment failed.",
+      "The data showing that experiment failed."
+    ],
+    "correctAnswer": 1,
+    "section": "verbal",
+    "topic": "Sentence Correction",
+    "difficulty": "hard",
+    "explanation": "Technically, 'data' is the plural of 'datum', so 'data show' is grammatically correct in formal usage."
+  },
+  {
+    "text": "What does the phrase 'a Pyrrhic victory' mean?",
+    "options": [
+      "A decisive victory",
+      "A victory won at too great a cost",
+      "A military victory",
+      "An easy victory"
+    ],
+    "correctAnswer": 1,
+    "section": "verbal",
+    "topic": "Vocabulary",
+    "difficulty": "hard",
+    "explanation": "A Pyrrhic victory is one that inflicts such a devastating toll on the victor that it is tantamount to defeat."
+  }
+]

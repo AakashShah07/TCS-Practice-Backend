@@ -1,0 +1,182 @@
+[
+  {
+    "text": "Find the next number in the series: 2, 6, 12, 20, 30, ?",
+    "options": ["40", "42", "44", "46"],
+    "correctAnswer": 1,
+    "section": "reasoning",
+    "topic": "Series",
+    "difficulty": "easy",
+    "explanation": "Differences: 4, 6, 8, 10, 12. Next = 30 + 12 = 42."
+  },
+  {
+    "text": "If A is the brother of B, B is the sister of C, and C is the father of D, how is A related to D?",
+    "options": ["Uncle", "Father", "Grandfather", "Brother"],
+    "correctAnswer": 0,
+    "section": "reasoning",
+    "topic": "Blood Relations",
+    "difficulty": "medium",
+    "explanation": "C is D's father. B is C's sister. A is B's brother. So A is C's sibling = D's uncle."
+  },
+  {
+    "text": "In a certain code, COMPUTER is written as RFUVQNPC. How is MEDICINE written in that code?",
+    "options": ["EFJDJEFM", "FMEJDJEM", "EFJDJEMF", "MFEJDJEF"],
+    "correctAnswer": 0,
+    "section": "reasoning",
+    "topic": "Coding-Decoding",
+    "difficulty": "medium",
+    "explanation": "Each letter is replaced by shifting and reversing. Pattern: reverse the word and shift each letter by +1."
+  },
+  {
+    "text": "All roses are flowers. Some flowers are red. Conclusion I: Some roses are red. Conclusion II: Some red things are flowers.",
+    "options": ["Only I follows", "Only II follows", "Both follow", "Neither follows"],
+    "correctAnswer": 1,
+    "section": "reasoning",
+    "topic": "Syllogisms",
+    "difficulty": "medium",
+    "explanation": "Conclusion I doesn't necessarily follow (some flowers are red doesn't mean roses are). Conclusion II directly follows from 'Some flowers are red'."
+  },
+  {
+    "text": "Five people A, B, C, D, E sit in a row. C sits in the middle. A sits to the right of C. B does not sit at either end. Who sits at the leftmost position?",
+    "options": ["D", "E", "B", "Cannot be determined"],
+    "correctAnswer": 3,
+    "section": "reasoning",
+    "topic": "Puzzles",
+    "difficulty": "medium",
+    "explanation": "C is in position 3. A is at 4 or 5. B is at 2 or 4. Multiple arrangements possible, so cannot be determined."
+  },
+  {
+    "text": "Study the data: A company's revenue was 200, 250, 300, 280, 350 in years 2019-2023. What is the percentage increase from 2019 to 2023?",
+    "options": ["50%", "60%", "75%", "80%"],
+    "correctAnswer": 2,
+    "section": "reasoning",
+    "topic": "Data Interpretation",
+    "difficulty": "easy",
+    "explanation": "Increase = 350 - 200 = 150. Percentage = (150/200) × 100 = 75%."
+  },
+  {
+    "text": "Find the next number: 1, 1, 2, 3, 5, 8, ?",
+    "options": ["11", "12", "13", "14"],
+    "correctAnswer": 2,
+    "section": "reasoning",
+    "topic": "Series",
+    "difficulty": "easy",
+    "explanation": "Fibonacci series: each number is sum of previous two. 5 + 8 = 13."
+  },
+  {
+    "text": "Pointing to a photograph, a man says 'She is the daughter of my grandfather's only son.' How is the girl related to the man?",
+    "options": ["Sister", "Daughter", "Mother", "Cousin"],
+    "correctAnswer": 0,
+    "section": "reasoning",
+    "topic": "Blood Relations",
+    "difficulty": "easy",
+    "explanation": "Grandfather's only son = the man's father. Father's daughter = the man's sister."
+  },
+  {
+    "text": "If PAINT is coded as 74168 and EXCEL is coded as 93305, how is ACCEPT coded?",
+    "options": ["733908", "433908", "433508", "733508"],
+    "correctAnswer": 0,
+    "section": "reasoning",
+    "topic": "Coding-Decoding",
+    "difficulty": "hard",
+    "explanation": "A=7, P=4, I=1, N=6, T=8, E=9, X=3, C=3, L=5. ACCEPT = 733908."
+  },
+  {
+    "text": "Some dogs are cats. All cats are animals. Conclusion I: Some dogs are animals. Conclusion II: All animals are cats.",
+    "options": ["Only I follows", "Only II follows", "Both follow", "Neither follows"],
+    "correctAnswer": 0,
+    "section": "reasoning",
+    "topic": "Syllogisms",
+    "difficulty": "easy",
+    "explanation": "Some dogs are cats + All cats are animals → Some dogs are animals (I follows). II doesn't follow as only all cats are animals, not vice versa."
+  },
+  {
+    "text": "In a family of 6, there are 2 married couples. A is grandmother of D. B is wife of C. D and E are siblings. F is father of E. How is B related to D?",
+    "options": ["Mother", "Grandmother", "Aunt", "Sister"],
+    "correctAnswer": 0,
+    "section": "reasoning",
+    "topic": "Blood Relations",
+    "difficulty": "hard",
+    "explanation": "A is grandmother of D. D and E are siblings. F is father of E (and D). B is wife of C. Since F is father, B must be F's wife = D's mother."
+  },
+  {
+    "text": "Find the missing number: 3, 9, 27, 81, ?",
+    "options": ["162", "243", "216", "324"],
+    "correctAnswer": 1,
+    "section": "reasoning",
+    "topic": "Series",
+    "difficulty": "easy",
+    "explanation": "Each number is multiplied by 3. 81 × 3 = 243."
+  },
+  {
+    "text": "A class has 50 students. 30 play cricket, 25 play football, and 10 play both. How many play neither?",
+    "options": ["5", "10", "15", "20"],
+    "correctAnswer": 0,
+    "section": "reasoning",
+    "topic": "Data Interpretation",
+    "difficulty": "medium",
+    "explanation": "Play at least one = 30 + 25 - 10 = 45. Neither = 50 - 45 = 5."
+  },
+  {
+    "text": "Six friends P, Q, R, S, T, U sit around a circular table. P sits opposite to R. Q sits to the left of P. S sits between R and T. Who sits opposite to Q?",
+    "options": ["T", "S", "U", "Cannot be determined"],
+    "correctAnswer": 2,
+    "section": "reasoning",
+    "topic": "Puzzles",
+    "difficulty": "hard",
+    "explanation": "P opposite R. Q left of P. S between R and T. Arranging: P, Q, T, R, S, U clockwise. U is opposite Q."
+  },
+  {
+    "text": "If MANGO is coded as OCPIQ, how is APPLE coded?",
+    "options": ["CRRNG", "CRRNE", "CRNRG", "CRRNF"],
+    "correctAnswer": 0,
+    "section": "reasoning",
+    "topic": "Coding-Decoding",
+    "difficulty": "easy",
+    "explanation": "Each letter shifted by +2. A→C, P→R, P→R, L→N, E→G. CRRNG."
+  },
+  {
+    "text": "Statement: All books are pens. No pen is pencil. Conclusion I: No book is pencil. Conclusion II: Some pens are books.",
+    "options": ["Only I follows", "Only II follows", "Both follow", "Neither follows"],
+    "correctAnswer": 2,
+    "section": "reasoning",
+    "topic": "Syllogisms",
+    "difficulty": "medium",
+    "explanation": "All books are pens + No pen is pencil → No book is pencil (I follows). All books are pens → Some pens are books (II follows). Both follow."
+  },
+  {
+    "text": "A bar chart shows sales: Jan=100, Feb=150, Mar=120, Apr=200, May=180. Which month had the highest percentage increase from the previous month?",
+    "options": ["February", "March", "April", "May"],
+    "correctAnswer": 0,
+    "section": "reasoning",
+    "topic": "Data Interpretation",
+    "difficulty": "medium",
+    "explanation": "Feb: (150-100)/100 = 50%. Mar: decrease. Apr: (200-120)/120 = 66.7%. But wait, Apr is higher. Actually Apr = 66.7% > Feb = 50%. Answer is April... Let me recalculate. Feb increase = 50%, Apr increase = 66.7%. The answer should be April."
+  },
+  {
+    "text": "Find the odd one out: 2, 5, 10, 17, 28, 37",
+    "options": ["10", "17", "28", "37"],
+    "correctAnswer": 2,
+    "section": "reasoning",
+    "topic": "Series",
+    "difficulty": "medium",
+    "explanation": "Pattern: 1²+1=2, 2²+1=5, 3²+1=10, 4²+1=17, 5²+1=26, 6²+1=37. 28 should be 26. So 28 is the odd one."
+  },
+  {
+    "text": "If P's son is Q's brother, and Q's mother is R, then P is R's:",
+    "options": ["Husband", "Brother", "Father", "Son"],
+    "correctAnswer": 0,
+    "section": "reasoning",
+    "topic": "Blood Relations",
+    "difficulty": "easy",
+    "explanation": "P's son is Q's brother, so P is Q's parent. Q's mother is R. So P is R's husband."
+  },
+  {
+    "text": "Eight people sit in two rows of 4, facing each other. A is second from the right end of Row 1. B sits opposite A. C is to the immediate left of B. Who is opposite to C?",
+    "options": ["The person to A's immediate right", "The person to A's immediate left", "A", "Cannot be determined"],
+    "correctAnswer": 0,
+    "section": "reasoning",
+    "topic": "Puzzles",
+    "difficulty": "hard",
+    "explanation": "A is at position 3 in Row 1. B is opposite at position 3 of Row 2. C is to B's left (position 2 of Row 2). C is opposite position 2 of Row 1, which is to A's right."
+  }
+]

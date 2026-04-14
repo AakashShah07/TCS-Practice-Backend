@@ -1,0 +1,252 @@
+const TestAttempt = require('../models/TestAttempt');
+const Test = require('../models/Test');
+
+// @desc    Start a test attempt
+// @route   POST /api/attempts/start/:testId
+exports.startAttempt = async (req, res, next) => {
+  try {
+    const test = await Test.findById(req.params.testId);
+    if (!test || !test.isActive) {
+      return res.status(404).json({ success: false, message: 'Test not found or inactive' });
+    }
+
+    // Check for existing in-progress attempt
+    const existing = await TestAttempt.findOne({
+      user: req.user._id,
+      test: test._id,
+      status: 'in_progress',
+    });
+    if (existing) {
+      return res.json({
+        success: true,
+        message: 'Resuming existing attempt',
+        data: existing,
+      });
+    }
+
+    // Initialize responses for all questions
+    const responses = test.questions.map((qId) => ({
+      question: qId,
+      selectedAnswer: null,
+      status: 'not_visited',
+      timeSpent: 0,
+    }));
+
+    const attempt = await TestAttempt.create({
+      user: req.user._id,
+      test: test._id,
+      duration: test.duration,
+      responses,
+      currentSection: test.section || null,
+    });
+
+    res.status(201).json({ success: true, data: attempt });
+  } catch (error) {
+    next(error);
+  }
+};
+
+// @desc    Get attempt state (for resume)
+// @route   GET /api/attempts/:id/state
+exports.getAttemptState = async (req, res, next) => {
+  try {
+    const attempt = await TestAttempt.findOne({
+      _id: req.params.id,
+      user: req.user._id,
+    }).populate({
+      path: 'test',
+      select: 'title type section totalQuestions duration sectionLocked',
+    }).populate({
+      path: 'responses.question',
+      select: 'text options section topic',
+    });
+
+    if (!attempt) {
+      return res.status(404).json({ success: false, message: 'Attempt not found' });
+    }
+
+    res.json({ success: true, data: attempt });
+  } catch (error) {
+    next(error);
+  }
+};
+
+// @desc    Save/update answer for a question
+// @route   PUT /api/attempts/:id/answer
+exports.saveAnswer = async (req, res, next) => {
+  try {
+    const { questionIndex, selectedAnswer, timeSpent } = req.body;
+    const attempt = await TestAttempt.findOne({
+      _id: req.params.id,
+      user: req.user._id,
+      status: 'in_progress',
+    });
+
+    if (!attempt) {
+      return res.status(400).json({ success: false, message: 'No active attempt found' });
+    }
+
+    // Validate time hasn't expired (with 30s grace period)
+    const elapsed = (Date.now() - attempt.startedAt.getTime()) / 1000;
+    if (elapsed > attempt.duration + 30) {
+      attempt.status = 'timed_out';
+      attempt.submittedAt = new Date();
+      await attempt.save();
+      return res.status(400).json({ success: false, message: 'Test time has expired' });
+    }
+
+    if (questionIndex < 0 || questionIndex >= attempt.responses.length) {
+      return res.status(400).json({ success: false, message: 'Invalid question index' });
+    }
+
+    attempt.responses[questionIndex].selectedAnswer = selectedAnswer;
+    attempt.responses[questionIndex].status = selectedAnswer !== null ? 'answered' : 'not_answered';
+    if (timeSpent) {
+      attempt.responses[questionIndex].timeSpent += timeSpent;
+    }
+
+    await attempt.save();
+    res.json({ success: true, data: { questionIndex, status: attempt.responses[questionIndex].status } });
+  } catch (error) {
+    next(error);
+  }
+};
+
+// @desc    Mark question for review
+// @route   PUT /api/attempts/:id/mark-review
+exports.markForReview = async (req, res, next) => {
+  try {
+    const { questionIndex } = req.body;
+    const attempt = await TestAttempt.findOne({
+      _id: req.params.id,
+      user: req.user._id,
+      status: 'in_progress',
+    });
+
+    if (!attempt) {
+      return res.status(400).json({ success: false, message: 'No active attempt found' });
+    }
+
+    if (questionIndex < 0 || questionIndex >= attempt.responses.length) {
+      return res.status(400).json({ success: false, message: 'Invalid question index' });
+    }
+
+    attempt.responses[questionIndex].status = 'marked_for_review';
+    await attempt.save();
+    res.json({ success: true, data: { questionIndex, status: 'marked_for_review' } });
+  } catch (error) {
+    next(error);
+  }
+};
+
+// @desc    Clear response for a question
+// @route   PUT /api/attempts/:id/clear
+exports.clearResponse = async (req, res, next) => {
+  try {
+    const { questionIndex } = req.body;
+    const attempt = await TestAttempt.findOne({
+      _id: req.params.id,
+      user: req.user._id,
+      status: 'in_progress',
+    });
+
+    if (!attempt) {
+      return res.status(400).json({ success: false, message: 'No active attempt found' });
+    }
+
+    if (questionIndex < 0 || questionIndex >= attempt.responses.length) {
+      return res.status(400).json({ success: false, message: 'Invalid question index' });
+    }
+
+    attempt.responses[questionIndex].selectedAnswer = null;
+    attempt.responses[questionIndex].status = 'not_answered';
+    await attempt.save();
+    res.json({ success: true, data: { questionIndex, status: 'not_answered' } });
+  } catch (error) {
+    next(error);
+  }
+};
+
+// @desc    Update current question/section navigation
+// @route   PUT /api/attempts/:id/navigate
+exports.navigate = async (req, res, next) => {
+  try {
+    const { currentQuestion, currentSection, timeSpent, previousQuestion } = req.body;
+    const attempt = await TestAttempt.findOne({
+      _id: req.params.id,
+      user: req.user._id,
+      status: 'in_progress',
+    });
+
+    if (!attempt) {
+      return res.status(400).json({ success: false, message: 'No active attempt found' });
+    }
+
+    // Update time spent on previous question
+    if (previousQuestion !== undefined && timeSpent && previousQuestion < attempt.responses.length) {
+      attempt.responses[previousQuestion].timeSpent += timeSpent;
+      if (attempt.responses[previousQuestion].status === 'not_visited') {
+        attempt.responses[previousQuestion].status = 'not_answered';
+      }
+    }
+
+    attempt.currentQuestion = currentQuestion;
+    if (currentSection) attempt.currentSection = currentSection;
+
+    await attempt.save();
+    res.json({ success: true, data: { currentQuestion, currentSection } });
+  } catch (error) {
+    next(error);
+  }
+};
+
+// @desc    Record tab switch
+// @route   PUT /api/attempts/:id/tab-switch
+exports.recordTabSwitch = async (req, res, next) => {
+  try {
+    const attempt = await TestAttempt.findOneAndUpdate(
+      { _id: req.params.id, user: req.user._id, status: 'in_progress' },
+      { $inc: { tabSwitchCount: 1 } },
+      { new: true }
+    );
+
+    if (!attempt) {
+      return res.status(400).json({ success: false, message: 'No active attempt found' });
+    }
+
+    res.json({ success: true, data: { tabSwitchCount: attempt.tabSwitchCount } });
+  } catch (error) {
+    next(error);
+  }
+};
+
+// @desc    Submit test
+// @route   POST /api/attempts/:id/submit
+exports.submitAttempt = async (req, res, next) => {
+  try {
+    const attempt = await TestAttempt.findOne({
+      _id: req.params.id,
+      user: req.user._id,
+      status: 'in_progress',
+    });
+
+    if (!attempt) {
+      return res.status(400).json({ success: false, message: 'No active attempt or already submitted' });
+    }
+
+    const now = new Date();
+    const elapsed = (now.getTime() - attempt.startedAt.getTime()) / 1000;
+
+    attempt.submittedAt = now;
+    attempt.status = elapsed > attempt.duration + 30 ? 'timed_out' : 'completed';
+    await attempt.save();
+
+    // Scoring is handled by the result controller (called separately or triggered here)
+    const { calculateAndSaveResult } = require('../utils/scoringEngine');
+    const result = await calculateAndSaveResult(attempt);
+
+    res.json({ success: true, data: { attempt, result } });
+  } catch (error) {
+    next(error);
+  }
+};

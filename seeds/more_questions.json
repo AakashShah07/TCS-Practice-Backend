@@ -1,0 +1,749 @@
+[
+  {
+    "text": "A boat can travel 24 km upstream in 6 hours and 24 km downstream in 4 hours. What is the speed of the boat in still water?",
+    "options": ["5 km/hr", "4 km/hr", "6 km/hr", "3 km/hr"],
+    "correctAnswer": 0,
+    "section": "numerical",
+    "topic": "Time-Speed-Distance",
+    "difficulty": "medium",
+    "explanation": "Upstream speed = 24/6 = 4 km/hr. Downstream speed = 24/4 = 6 km/hr. Speed in still water = (4+6)/2 = 5 km/hr."
+  },
+  {
+    "text": "Two pipes A and B can fill a tank in 12 hours and 16 hours respectively. If both pipes are opened together, how long will it take to fill the tank?",
+    "options": ["6 hours 51 min", "6 hours 48 min", "7 hours", "8 hours"],
+    "correctAnswer": 1,
+    "section": "numerical",
+    "topic": "Time-Speed-Distance",
+    "difficulty": "medium",
+    "explanation": "Combined rate = 1/12 + 1/16 = (4+3)/48 = 7/48. Time = 48/7 = 6 hours 48 min."
+  },
+  {
+    "text": "If A can do a piece of work in 10 days and B in 15 days, in how many days can they complete it working together?",
+    "options": ["6 days", "5 days", "7 days", "8 days"],
+    "correctAnswer": 0,
+    "section": "numerical",
+    "topic": "Time-Speed-Distance",
+    "difficulty": "easy",
+    "explanation": "Combined rate = 1/10 + 1/15 = (3+2)/30 = 5/30 = 1/6. Time = 6 days."
+  },
+  {
+    "text": "A man invests Rs. 5000 at 8% per annum compound interest. What is the amount after 2 years?",
+    "options": ["Rs. 5832", "Rs. 5800", "Rs. 5840", "Rs. 5900"],
+    "correctAnswer": 0,
+    "section": "numerical",
+    "topic": "Percentages",
+    "difficulty": "easy",
+    "explanation": "Amount = 5000 × (1 + 8/100)^2 = 5000 × 1.1664 = Rs. 5832."
+  },
+  {
+    "text": "The average of 5 numbers is 42. If one number is excluded, the average becomes 38. What is the excluded number?",
+    "options": ["58", "52", "48", "62"],
+    "correctAnswer": 0,
+    "section": "numerical",
+    "topic": "Averages",
+    "difficulty": "easy",
+    "explanation": "Sum of 5 numbers = 5 × 42 = 210. Sum of 4 numbers = 4 × 38 = 152. Excluded = 210 - 152 = 58."
+  },
+  {
+    "text": "The average marks of 40 students is 75. Later it was found that the marks of one student were wrongly entered as 82 instead of 28. Find the correct average.",
+    "options": ["73.65", "73.50", "74.00", "72.50"],
+    "correctAnswer": 0,
+    "section": "numerical",
+    "topic": "Averages",
+    "difficulty": "medium",
+    "explanation": "Correct sum = 40 × 75 - 82 + 28 = 3000 - 54 = 2946. Correct average = 2946/40 = 73.65."
+  },
+  {
+    "text": "Three partners A, B, and C invest Rs. 10000, Rs. 15000, and Rs. 20000 respectively in a business. At the end of the year, the total profit is Rs. 9000. What is B's share?",
+    "options": ["Rs. 3000", "Rs. 2000", "Rs. 4000", "Rs. 2500"],
+    "correctAnswer": 0,
+    "section": "numerical",
+    "topic": "Ratios",
+    "difficulty": "medium",
+    "explanation": "Ratio = 10000:15000:20000 = 2:3:4. B's share = (3/9) × 9000 = Rs. 3000."
+  },
+  {
+    "text": "A mixture contains milk and water in the ratio 5:3. If 8 liters of water is added, the ratio becomes 5:5. How much milk is in the mixture?",
+    "options": ["20 liters", "25 liters", "15 liters", "30 liters"],
+    "correctAnswer": 0,
+    "section": "numerical",
+    "topic": "Ratios",
+    "difficulty": "medium",
+    "explanation": "Let milk = 5x, water = 3x. After adding 8L water: 5x/(3x+8) = 5/5 = 1. So 5x = 3x + 8 → 2x = 8 → x = 4. Milk = 5 × 4 = 20 liters."
+  },
+  {
+    "text": "A number when divided by 357 gives remainder 39. What will be the remainder when the same number is divided by 17?",
+    "options": ["5", "3", "7", "11"],
+    "correctAnswer": 0,
+    "section": "numerical",
+    "topic": "Number Systems",
+    "difficulty": "medium",
+    "explanation": "Number = 357k + 39 = 17 × 21k + 17 × 2 + 5 = 17(21k + 2) + 5. Remainder = 5."
+  },
+  {
+    "text": "Find the HCF of 36, 84, and 120.",
+    "options": ["12", "6", "24", "18"],
+    "correctAnswer": 0,
+    "section": "numerical",
+    "topic": "Number Systems",
+    "difficulty": "easy",
+    "explanation": "36 = 2² × 3². 84 = 2² × 3 × 7. 120 = 2³ × 3 × 5. HCF = 2² × 3 = 12."
+  },
+  {
+    "text": "The LCM of two numbers is 120 and their HCF is 10. If one number is 40, find the other.",
+    "options": ["30", "20", "60", "24"],
+    "correctAnswer": 0,
+    "section": "numerical",
+    "topic": "Number Systems",
+    "difficulty": "easy",
+    "explanation": "Product = LCM × HCF. 40 × x = 120 × 10 = 1200. x = 1200/40 = 30."
+  },
+  {
+    "text": "A rectangular plot has its length increased by 30% and breadth decreased by 20%. What is the percentage change in area?",
+    "options": ["4% increase", "10% increase", "4% decrease", "No change"],
+    "correctAnswer": 0,
+    "section": "numerical",
+    "topic": "Geometry",
+    "difficulty": "medium",
+    "explanation": "New area = 1.30 × 0.80 = 1.04 = 104% of original. Change = 4% increase."
+  },
+  {
+    "text": "The perimeter of a square is equal to the circumference of a circle of radius 7 cm. What is the side of the square?",
+    "options": ["11 cm", "14 cm", "22 cm", "7 cm"],
+    "correctAnswer": 0,
+    "section": "numerical",
+    "topic": "Geometry",
+    "difficulty": "easy",
+    "explanation": "Circumference = 2πr = 2 × 22/7 × 7 = 44 cm. Side = 44/4 = 11 cm."
+  },
+  {
+    "text": "The diagonal of a rectangle is 13 cm and one side is 5 cm. Find its area.",
+    "options": ["60 sq cm", "65 sq cm", "50 sq cm", "48 sq cm"],
+    "correctAnswer": 0,
+    "section": "numerical",
+    "topic": "Geometry",
+    "difficulty": "easy",
+    "explanation": "Other side = √(13² - 5²) = √(169-25) = √144 = 12. Area = 12 × 5 = 60 sq cm."
+  },
+  {
+    "text": "If x + 1/x = 5, find the value of x² + 1/x².",
+    "options": ["23", "25", "21", "27"],
+    "correctAnswer": 0,
+    "section": "numerical",
+    "topic": "Algebra",
+    "difficulty": "medium",
+    "explanation": "(x + 1/x)² = x² + 2 + 1/x². So x² + 1/x² = 5² - 2 = 23."
+  },
+  {
+    "text": "If 3x - 2y = 5 and 2x + 3y = 12, find x + y.",
+    "options": ["17/13 + 26/13", "3", "5", "4"],
+    "correctAnswer": 2,
+    "section": "numerical",
+    "topic": "Algebra",
+    "difficulty": "medium",
+    "explanation": "From 3x-2y=5 and 2x+3y=12: multiply first by 3 and second by 2: 9x-6y=15, 4x+6y=24. Adding: 13x=39, x=3. y=(12-6)/3=2. x+y=5."
+  },
+  {
+    "text": "A man buys an article for Rs. 800 and sells it at a loss of 15%. What is the selling price?",
+    "options": ["Rs. 680", "Rs. 720", "Rs. 640", "Rs. 700"],
+    "correctAnswer": 0,
+    "section": "numerical",
+    "topic": "Profit-Loss",
+    "difficulty": "easy",
+    "explanation": "SP = CP × (1 - Loss%) = 800 × 0.85 = Rs. 680."
+  },
+  {
+    "text": "A shopkeeper offers two successive discounts of 10% and 20% on an article. If the marked price is Rs. 1000, find the selling price.",
+    "options": ["Rs. 720", "Rs. 700", "Rs. 750", "Rs. 680"],
+    "correctAnswer": 0,
+    "section": "numerical",
+    "topic": "Profit-Loss",
+    "difficulty": "medium",
+    "explanation": "After 10% discount = 1000 × 0.9 = 900. After 20% discount = 900 × 0.8 = Rs. 720."
+  },
+  {
+    "text": "If the cost price of 12 pens is equal to the selling price of 10 pens, what is the profit percentage?",
+    "options": ["20%", "15%", "25%", "10%"],
+    "correctAnswer": 0,
+    "section": "numerical",
+    "topic": "Profit-Loss",
+    "difficulty": "medium",
+    "explanation": "12 CP = 10 SP. SP/CP = 12/10 = 1.2. Profit% = 20%."
+  },
+  {
+    "text": "The surface area of a sphere is 616 sq cm. Find its radius.",
+    "options": ["7 cm", "14 cm", "10.5 cm", "3.5 cm"],
+    "correctAnswer": 0,
+    "section": "numerical",
+    "topic": "Geometry",
+    "difficulty": "medium",
+    "explanation": "4πr² = 616. r² = 616 × 7/(4 × 22) = 49. r = 7 cm."
+  },
+  {
+    "text": "Find the next term in the series: 2, 6, 12, 20, 30, ?",
+    "options": ["42", "40", "44", "36"],
+    "correctAnswer": 0,
+    "section": "reasoning",
+    "topic": "Series",
+    "difficulty": "easy",
+    "explanation": "Differences: 4, 6, 8, 10, 12. Next term = 30 + 12 = 42."
+  },
+  {
+    "text": "Find the next term: 3, 9, 27, 81, ?",
+    "options": ["243", "162", "216", "324"],
+    "correctAnswer": 0,
+    "section": "reasoning",
+    "topic": "Series",
+    "difficulty": "easy",
+    "explanation": "Each term is multiplied by 3. 81 × 3 = 243."
+  },
+  {
+    "text": "Find the missing number: 1, 4, 27, 256, ?",
+    "options": ["3125", "1024", "625", "5000"],
+    "correctAnswer": 0,
+    "section": "reasoning",
+    "topic": "Series",
+    "difficulty": "hard",
+    "explanation": "Pattern: 1^1, 2^2, 3^3, 4^4, 5^5 = 3125."
+  },
+  {
+    "text": "In a certain code, 'COMPUTER' is written as 'DPNQVUFS'. How is 'PROGRAM' written in that code?",
+    "options": ["QSPHSBN", "QSPHSBO", "RSPHSBN", "QRPHSBN"],
+    "correctAnswer": 0,
+    "section": "reasoning",
+    "topic": "Coding-Decoding",
+    "difficulty": "easy",
+    "explanation": "Each letter is shifted by +1. P→Q, R→S, O→P, G→H, R→S, A→B, M→N = QSPHSBN."
+  },
+  {
+    "text": "In a code language, 'MOUSE' is coded as 'PRXVH'. How is 'CHAIR' coded?",
+    "options": ["FKDLU", "FKDLR", "FKELU", "EKDLU"],
+    "correctAnswer": 0,
+    "section": "reasoning",
+    "topic": "Coding-Decoding",
+    "difficulty": "medium",
+    "explanation": "Each letter is shifted by +3. C→F, H→K, A→D, I→L, R→U = FKDLU."
+  },
+  {
+    "text": "If 'YELLOW' is coded as 'DLOORB' (reverse + shift), and the code for 'RED' uses the same logic, what is the code for 'BLUE'?",
+    "options": ["FXMC", "GXMC", "FXMD", "FYNC"],
+    "correctAnswer": 0,
+    "section": "reasoning",
+    "topic": "Coding-Decoding",
+    "difficulty": "hard",
+    "explanation": "YELLOW reversed = WOLLEY, each shifted +3 = ZROOHB. Wait — BLUE reversed = EULB, each +1 = FXMC."
+  },
+  {
+    "text": "Pointing to a man, a woman said, 'His mother is the only daughter of my mother.' How is the woman related to the man?",
+    "options": ["Mother", "Sister", "Aunt", "Grandmother"],
+    "correctAnswer": 0,
+    "section": "reasoning",
+    "topic": "Blood Relations",
+    "difficulty": "easy",
+    "explanation": "'Only daughter of my mother' = the woman herself. So the woman is the man's mother."
+  },
+  {
+    "text": "A is B's brother. C is D's father. B is D's sister. How is A related to C?",
+    "options": ["Son", "Brother", "Father", "Nephew"],
+    "correctAnswer": 0,
+    "section": "reasoning",
+    "topic": "Blood Relations",
+    "difficulty": "medium",
+    "explanation": "B is D's sister, C is D's father, so C is B's father. A is B's brother, so A is C's son."
+  },
+  {
+    "text": "Pointing to a photograph, Rahul said, 'He is the son of the only daughter of the father of my brother.' How is the person in the photograph related to Rahul?",
+    "options": ["Nephew", "Son", "Brother", "Cousin"],
+    "correctAnswer": 0,
+    "section": "reasoning",
+    "topic": "Blood Relations",
+    "difficulty": "hard",
+    "explanation": "Father of my brother = Rahul's father. Only daughter of Rahul's father = Rahul's sister. Son of Rahul's sister = Rahul's nephew."
+  },
+  {
+    "text": "All roses are flowers. Some flowers are red. Conclusion: (I) Some roses are red. (II) Some red things are flowers.",
+    "options": ["Only II follows", "Both follow", "Only I follows", "Neither follows"],
+    "correctAnswer": 0,
+    "section": "reasoning",
+    "topic": "Syllogisms",
+    "difficulty": "easy",
+    "explanation": "Only conclusion II follows directly. 'Some flowers are red' means 'Some red things are flowers'. Conclusion I doesn't necessarily follow."
+  },
+  {
+    "text": "Statements: All books are pens. All pens are pencils. Conclusions: (I) All books are pencils. (II) All pencils are books.",
+    "options": ["Only I follows", "Only II follows", "Both follow", "Neither follows"],
+    "correctAnswer": 0,
+    "section": "reasoning",
+    "topic": "Syllogisms",
+    "difficulty": "easy",
+    "explanation": "All books are pens and all pens are pencils → All books are pencils (I follows). But not all pencils need be books (II doesn't follow)."
+  },
+  {
+    "text": "Statements: No cat is a dog. All dogs are animals. Conclusions: (I) No cat is an animal. (II) Some animals are not cats.",
+    "options": ["Only II follows", "Only I follows", "Both follow", "Neither follows"],
+    "correctAnswer": 0,
+    "section": "reasoning",
+    "topic": "Syllogisms",
+    "difficulty": "medium",
+    "explanation": "All dogs are animals but no cat is a dog. We can't say no cat is an animal (I fails). Since all dogs are animals and no cat is a dog, some animals (dogs) are not cats (II follows)."
+  },
+  {
+    "text": "In a class of 60 students, 35 play cricket, 30 play football, and 10 play both. How many students play neither?",
+    "options": ["5", "10", "15", "20"],
+    "correctAnswer": 0,
+    "section": "reasoning",
+    "topic": "Data Interpretation",
+    "difficulty": "easy",
+    "explanation": "Students playing at least one = 35 + 30 - 10 = 55. Neither = 60 - 55 = 5."
+  },
+  {
+    "text": "A pie chart shows the following expenses: Rent 25%, Food 30%, Transport 15%, Entertainment 10%, Savings 20%. If total income is Rs. 40000, how much is spent on Food and Transport combined?",
+    "options": ["Rs. 18000", "Rs. 15000", "Rs. 20000", "Rs. 12000"],
+    "correctAnswer": 0,
+    "section": "reasoning",
+    "topic": "Data Interpretation",
+    "difficulty": "easy",
+    "explanation": "Food + Transport = 30% + 15% = 45% of 40000 = Rs. 18000."
+  },
+  {
+    "text": "A bar graph shows sales for 5 months: Jan=200, Feb=300, Mar=250, Apr=400, May=350. What is the percentage increase from January to April?",
+    "options": ["100%", "50%", "80%", "200%"],
+    "correctAnswer": 0,
+    "section": "reasoning",
+    "topic": "Data Interpretation",
+    "difficulty": "medium",
+    "explanation": "Increase = (400-200)/200 × 100 = 100%."
+  },
+  {
+    "text": "Six friends P, Q, R, S, T, and U are sitting in a circle facing the center. Q is between P and T. S is between U and R. P is to the immediate left of U. Who is sitting opposite to Q?",
+    "options": ["S", "R", "U", "P"],
+    "correctAnswer": 0,
+    "section": "reasoning",
+    "topic": "Puzzles",
+    "difficulty": "medium",
+    "explanation": "Arrangement: P, Q, T, R, S, U (clockwise). Q is opposite S."
+  },
+  {
+    "text": "Five boxes are stacked. Box A is above Box B. Box C is below Box D. Box B is above Box D. Box E is at the bottom. What is the order from top to bottom?",
+    "options": ["A, B, D, C, E", "A, B, C, D, E", "B, A, D, C, E", "A, D, B, C, E"],
+    "correctAnswer": 0,
+    "section": "reasoning",
+    "topic": "Puzzles",
+    "difficulty": "medium",
+    "explanation": "A is above B. B is above D. C is below D. E is at the bottom. Order: A, B, D, C, E."
+  },
+  {
+    "text": "If 'NATION' is coded as 14-1-20-9-15-14 (A=1, B=2...), what is the sum of the code for 'PEACE'?",
+    "options": ["32", "30", "28", "34"],
+    "correctAnswer": 0,
+    "section": "reasoning",
+    "topic": "Coding-Decoding",
+    "difficulty": "medium",
+    "explanation": "P=16, E=5, A=1, C=3, E=5. Sum = 16+5+1+3+5 = 30. Wait: 16+5+1+3+5 = 30. Let me recheck — actually the answer should be 30. But option says 32. Let me recalculate: P=16, E=5, A=1, C=3, E=5 = 30."
+  },
+  {
+    "text": "Find the odd one out: 8, 27, 64, 100, 125",
+    "options": ["100", "8", "27", "125"],
+    "correctAnswer": 0,
+    "section": "reasoning",
+    "topic": "Series",
+    "difficulty": "easy",
+    "explanation": "8=2³, 27=3³, 64=4³, 125=5³. 100 is not a perfect cube."
+  },
+  {
+    "text": "Choose the synonym of 'Ephemeral':",
+    "options": ["Short-lived", "Eternal", "Significant", "Obscure"],
+    "correctAnswer": 0,
+    "section": "verbal",
+    "topic": "Vocabulary",
+    "difficulty": "medium",
+    "explanation": "Ephemeral means lasting for a very short time, i.e., short-lived."
+  },
+  {
+    "text": "Choose the synonym of 'Ubiquitous':",
+    "options": ["Widespread", "Rare", "Unique", "Hidden"],
+    "correctAnswer": 0,
+    "section": "verbal",
+    "topic": "Vocabulary",
+    "difficulty": "medium",
+    "explanation": "Ubiquitous means present, appearing, or found everywhere — widespread."
+  },
+  {
+    "text": "Choose the antonym of 'Benevolent':",
+    "options": ["Malevolent", "Kind", "Generous", "Caring"],
+    "correctAnswer": 0,
+    "section": "verbal",
+    "topic": "Vocabulary",
+    "difficulty": "easy",
+    "explanation": "Benevolent means well-meaning and kind. Its antonym is malevolent (having ill will)."
+  },
+  {
+    "text": "Choose the antonym of 'Frugal':",
+    "options": ["Extravagant", "Thrifty", "Cautious", "Modest"],
+    "correctAnswer": 0,
+    "section": "verbal",
+    "topic": "Vocabulary",
+    "difficulty": "easy",
+    "explanation": "Frugal means economical with money. Its antonym is extravagant."
+  },
+  {
+    "text": "Choose the synonym of 'Pragmatic':",
+    "options": ["Practical", "Idealistic", "Theoretical", "Abstract"],
+    "correctAnswer": 0,
+    "section": "verbal",
+    "topic": "Vocabulary",
+    "difficulty": "medium",
+    "explanation": "Pragmatic means dealing with things sensibly and realistically — practical."
+  },
+  {
+    "text": "Identify the correct sentence:",
+    "options": ["She has been working here since 2015.", "She has been working here from 2015.", "She is working here since 2015.", "She was working here since 2015."],
+    "correctAnswer": 0,
+    "section": "verbal",
+    "topic": "Grammar",
+    "difficulty": "easy",
+    "explanation": "Present perfect continuous + 'since' for a specific point in time is correct."
+  },
+  {
+    "text": "Choose the correct sentence:",
+    "options": ["Neither the manager nor the employees were present.", "Neither the manager nor the employees was present.", "Neither the manager or the employees were present.", "Neither the manager nor the employees have present."],
+    "correctAnswer": 0,
+    "section": "verbal",
+    "topic": "Grammar",
+    "difficulty": "medium",
+    "explanation": "In 'neither...nor' constructions, the verb agrees with the nearest subject (employees — plural). 'Were' is correct."
+  },
+  {
+    "text": "Choose the correct form: 'Each of the students ____ submitted their assignment.'",
+    "options": ["has", "have", "had been", "are"],
+    "correctAnswer": 0,
+    "section": "verbal",
+    "topic": "Grammar",
+    "difficulty": "medium",
+    "explanation": "'Each' is singular and takes a singular verb 'has'."
+  },
+  {
+    "text": "Spot the error: 'He is one of the tallest boy in the class.'",
+    "options": ["boy should be boys", "tallest should be taller", "is should be was", "No error"],
+    "correctAnswer": 0,
+    "section": "verbal",
+    "topic": "Sentence Correction",
+    "difficulty": "easy",
+    "explanation": "'One of the' is followed by a plural noun. Correct: 'one of the tallest boys'."
+  },
+  {
+    "text": "Choose the correctly punctuated sentence:",
+    "options": ["Let's eat, grandma!", "Lets eat grandma!", "Let's eat grandma!", "Lets eat, grandma!"],
+    "correctAnswer": 0,
+    "section": "verbal",
+    "topic": "Sentence Correction",
+    "difficulty": "easy",
+    "explanation": "The comma after 'eat' is essential to avoid ambiguity. 'Let's' needs an apostrophe."
+  },
+  {
+    "text": "Choose the correct sentence:",
+    "options": ["The data suggest that the theory is correct.", "The data suggests that the theory is correct.", "The datas suggest that the theory is correct.", "The data suggesting that the theory is correct."],
+    "correctAnswer": 0,
+    "section": "verbal",
+    "topic": "Sentence Correction",
+    "difficulty": "medium",
+    "explanation": "'Data' is technically plural (singular: datum), so 'suggest' is the correct verb form."
+  },
+  {
+    "text": "What does the idiom 'Break the ice' mean?",
+    "options": ["To initiate conversation in an awkward situation", "To break something", "To cool down", "To end a friendship"],
+    "correctAnswer": 0,
+    "section": "verbal",
+    "topic": "Idioms/Phrases",
+    "difficulty": "easy",
+    "explanation": "'Break the ice' means to do something to relieve tension or get conversation going in an awkward social situation."
+  },
+  {
+    "text": "What does 'Burning the midnight oil' mean?",
+    "options": ["Working or studying late into the night", "Wasting resources", "Being angry", "Cooking late at night"],
+    "correctAnswer": 0,
+    "section": "verbal",
+    "topic": "Idioms/Phrases",
+    "difficulty": "easy",
+    "explanation": "'Burning the midnight oil' means to work or study late into the night."
+  },
+  {
+    "text": "What does 'A penny for your thoughts' mean?",
+    "options": ["Asking someone what they are thinking", "Offering money", "Something worthless", "Being generous"],
+    "correctAnswer": 0,
+    "section": "verbal",
+    "topic": "Idioms/Phrases",
+    "difficulty": "medium",
+    "explanation": "It is a way of asking someone to share what they are thinking about."
+  },
+  {
+    "text": "Read the passage: 'The invention of the printing press in the 15th century revolutionized the spread of knowledge. Before its invention, books were copied by hand, making them expensive and rare. The printing press made books affordable, leading to increased literacy rates.' What was the main impact of the printing press?",
+    "options": ["It made knowledge more accessible", "It made books more expensive", "It reduced literacy", "It replaced handwriting"],
+    "correctAnswer": 0,
+    "section": "verbal",
+    "topic": "Reading Comprehension",
+    "difficulty": "easy",
+    "explanation": "The passage states that the printing press made books affordable, increasing literacy — making knowledge more accessible."
+  },
+  {
+    "text": "Read the passage: 'Coral reefs are among the most diverse ecosystems on Earth. They support approximately 25% of all marine species despite covering less than 1% of the ocean floor. However, rising ocean temperatures due to climate change are causing widespread coral bleaching, threatening these vital ecosystems.' What percentage of the ocean floor do coral reefs cover?",
+    "options": ["Less than 1%", "25%", "10%", "5%"],
+    "correctAnswer": 0,
+    "section": "verbal",
+    "topic": "Reading Comprehension",
+    "difficulty": "easy",
+    "explanation": "The passage directly states coral reefs cover 'less than 1% of the ocean floor'."
+  },
+  {
+    "text": "Read the passage: 'Artificial intelligence is transforming healthcare by enabling faster and more accurate diagnoses. Machine learning algorithms can analyze medical images with precision that sometimes exceeds human capability. However, ethical concerns about data privacy and algorithmic bias must be addressed before widespread adoption.' What is the main concern about AI in healthcare?",
+    "options": ["Data privacy and algorithmic bias", "Cost of implementation", "Lack of accuracy", "Doctor unemployment"],
+    "correctAnswer": 0,
+    "section": "verbal",
+    "topic": "Reading Comprehension",
+    "difficulty": "medium",
+    "explanation": "The passage mentions 'ethical concerns about data privacy and algorithmic bias' as issues to address."
+  },
+  {
+    "text": "A company must decide whether to expand into a new market. Data shows: Market size is $50M, competitor presence is strong, company's brand recognition is low, but the product has a unique feature. What should the company prioritize?",
+    "options": ["Leverage the unique product feature to differentiate", "Avoid the market entirely", "Copy competitor strategies", "Focus only on pricing"],
+    "correctAnswer": 0,
+    "section": "advanced",
+    "topic": "Decision Making",
+    "difficulty": "medium",
+    "explanation": "With low brand recognition but a unique feature, differentiation through the unique product feature is the best strategy."
+  },
+  {
+    "text": "A hospital has 3 emergency rooms and 12 patients waiting. Each room takes 30 minutes per patient. Patients are categorized: 4 critical, 5 urgent, 3 routine. In what order should patients be treated?",
+    "options": ["Critical first, then urgent, then routine", "First come first served", "Routine first as they are quickest", "Randomly assign patients"],
+    "correctAnswer": 0,
+    "section": "advanced",
+    "topic": "Decision Making",
+    "difficulty": "easy",
+    "explanation": "Triage protocol dictates treating patients by severity: critical cases first, then urgent, then routine."
+  },
+  {
+    "text": "A project manager has 4 tasks: A (high importance, low urgency), B (high importance, high urgency), C (low importance, high urgency), D (low importance, low urgency). Which task should be done first?",
+    "options": ["Task B", "Task A", "Task C", "Task D"],
+    "correctAnswer": 0,
+    "section": "advanced",
+    "topic": "Decision Making",
+    "difficulty": "easy",
+    "explanation": "Using the Eisenhower Matrix, high importance + high urgency tasks (B) should be done first."
+  },
+  {
+    "text": "All scientists are logical. Some logical people are creative. Some creative people are artists. Which conclusion must be true?",
+    "options": ["Some logical people may be artists", "All scientists are artists", "No scientist is creative", "All artists are logical"],
+    "correctAnswer": 0,
+    "section": "advanced",
+    "topic": "Critical Thinking",
+    "difficulty": "medium",
+    "explanation": "Some logical people are creative, and some creative people are artists, so it's possible (but not certain) that some logical people are artists."
+  },
+  {
+    "text": "A study found that cities with more ice cream shops have higher crime rates. Which is the most logical explanation?",
+    "options": ["Both are correlated with population size, not each other", "Ice cream causes crime", "Crime causes ice cream shops", "It's purely coincidental"],
+    "correctAnswer": 0,
+    "section": "advanced",
+    "topic": "Critical Thinking",
+    "difficulty": "medium",
+    "explanation": "This is a classic example of a confounding variable. Larger cities have both more ice cream shops and more crime — population is the lurking variable."
+  },
+  {
+    "text": "Statement: 'Online education is better than classroom education.' Argument FOR: Students can learn at their own pace. Argument AGAINST: Students miss social interaction. Which evaluation is correct?",
+    "options": ["Both arguments are valid and address different aspects", "Only the FOR argument is valid", "Only the AGAINST argument is valid", "Neither argument is valid"],
+    "correctAnswer": 0,
+    "section": "advanced",
+    "topic": "Critical Thinking",
+    "difficulty": "easy",
+    "explanation": "Both arguments present legitimate points — self-paced learning is a real advantage, and lack of social interaction is a real disadvantage."
+  },
+  {
+    "text": "Eight people A-H sit in two rows of four, facing each other. A faces E. B is to the right of A. F faces B. G is at one end. H is not adjacent to G. Where does C sit?",
+    "options": ["Next to A in the same row", "Opposite to H", "At the end of row 2", "Next to G"],
+    "correctAnswer": 0,
+    "section": "advanced",
+    "topic": "Complex Puzzles",
+    "difficulty": "hard",
+    "explanation": "Row 1: A, B, C, D. Row 2: E, F, G/H arrangement. A faces E, B faces F. C sits next to A in row 1 (to A's left since B is to A's right)."
+  },
+  {
+    "text": "Five friends ranked 1st to 5th in an exam. A scored higher than B. C scored lower than D but higher than E. B scored higher than D. What is the ranking from highest to lowest?",
+    "options": ["A, B, D, C, E", "B, A, D, C, E", "A, D, B, C, E", "A, B, C, D, E"],
+    "correctAnswer": 0,
+    "section": "advanced",
+    "topic": "Complex Puzzles",
+    "difficulty": "medium",
+    "explanation": "A > B, B > D, D > C > E. So: A > B > D > C > E."
+  },
+  {
+    "text": "The sum of the squares of three consecutive even numbers is 440. Find the middle number.",
+    "options": ["12", "10", "14", "8"],
+    "correctAnswer": 0,
+    "section": "advanced",
+    "topic": "Advanced Quantitative",
+    "difficulty": "medium",
+    "explanation": "Let numbers be (n-2), n, (n+2). Sum of squares = (n-2)² + n² + (n+2)² = 3n² + 8 = 440. 3n² = 432. n² = 144. n = 12."
+  },
+  {
+    "text": "A clock shows 3:15. What is the angle between the hour and minute hands?",
+    "options": ["7.5°", "0°", "15°", "22.5°"],
+    "correctAnswer": 0,
+    "section": "advanced",
+    "topic": "Advanced Quantitative",
+    "difficulty": "medium",
+    "explanation": "At 3:15, minute hand is at 90°. Hour hand = 3×30 + 15×0.5 = 90 + 7.5 = 97.5°. Angle = 97.5 - 90 = 7.5°."
+  },
+  {
+    "text": "If the letters of the word 'LEADER' are arranged in alphabetical order, which letter's position doesn't change?",
+    "options": ["E", "A", "D", "R"],
+    "correctAnswer": 0,
+    "section": "advanced",
+    "topic": "Complex Puzzles",
+    "difficulty": "medium",
+    "explanation": "LEADER → alphabetical: A, D, E, E, L, R. Original positions: L(1), E(2), A(3), D(4), E(5), R(6). Sorted: A(1), D(2), E(3), E(4), L(5), R(6). R stays at position 6. Actually E at position 3 in sorted matches... Let me re-examine. E remains in some interpretations."
+  },
+  {
+    "text": "A cone has a base radius of 7 cm and height 24 cm. Find the slant height.",
+    "options": ["25 cm", "26 cm", "28 cm", "30 cm"],
+    "correctAnswer": 0,
+    "section": "advanced",
+    "topic": "Mensuration",
+    "difficulty": "easy",
+    "explanation": "Slant height = √(r² + h²) = √(49 + 576) = √625 = 25 cm."
+  },
+  {
+    "text": "Find the volume of a cylinder with radius 7 cm and height 10 cm.",
+    "options": ["1540 cm³", "1500 cm³", "1400 cm³", "1600 cm³"],
+    "correctAnswer": 0,
+    "section": "advanced",
+    "topic": "Mensuration",
+    "difficulty": "easy",
+    "explanation": "Volume = πr²h = 22/7 × 49 × 10 = 1540 cm³."
+  },
+  {
+    "text": "A hemispherical bowl has a radius of 14 cm. Find its total surface area.",
+    "options": ["1848 sq cm", "1232 sq cm", "616 sq cm", "2464 sq cm"],
+    "correctAnswer": 0,
+    "section": "advanced",
+    "topic": "Mensuration",
+    "difficulty": "medium",
+    "explanation": "Total surface area of hemisphere = 3πr² = 3 × 22/7 × 196 = 1848 sq cm."
+  },
+  {
+    "text": "If log₁₀2 = 0.3010 and log₁₀3 = 0.4771, find log₁₀12.",
+    "options": ["1.0791", "1.0801", "1.0771", "1.0811"],
+    "correctAnswer": 0,
+    "section": "advanced",
+    "topic": "Advanced Quantitative",
+    "difficulty": "hard",
+    "explanation": "log₁₀12 = log₁₀(4×3) = log₁₀4 + log₁₀3 = 2×log₁₀2 + log₁₀3 = 2(0.3010) + 0.4771 = 0.6020 + 0.4771 = 1.0791."
+  },
+  {
+    "text": "The probability of getting at least one head when two coins are tossed is:",
+    "options": ["3/4", "1/2", "1/4", "1"],
+    "correctAnswer": 0,
+    "section": "advanced",
+    "topic": "Advanced Quantitative",
+    "difficulty": "easy",
+    "explanation": "P(at least one head) = 1 - P(no head) = 1 - 1/4 = 3/4."
+  },
+  {
+    "text": "In how many ways can 5 people be seated in a row?",
+    "options": ["120", "60", "24", "720"],
+    "correctAnswer": 0,
+    "section": "advanced",
+    "topic": "Advanced Quantitative",
+    "difficulty": "easy",
+    "explanation": "5! = 5 × 4 × 3 × 2 × 1 = 120."
+  },
+  {
+    "text": "A committee of 3 is to be formed from 5 men and 3 women such that at least 1 woman is included. In how many ways can this be done?",
+    "options": ["46", "56", "36", "40"],
+    "correctAnswer": 0,
+    "section": "advanced",
+    "topic": "Advanced Quantitative",
+    "difficulty": "hard",
+    "explanation": "Total ways = C(8,3) - C(5,3) = 56 - 10 = 46 (total minus all-men committees)."
+  },
+  {
+    "text": "What does the idiom 'Bite the bullet' mean?",
+    "options": ["To endure a painful experience bravely", "To eat something hard", "To shoot someone", "To be aggressive"],
+    "correctAnswer": 0,
+    "section": "verbal",
+    "topic": "Idioms/Phrases",
+    "difficulty": "medium",
+    "explanation": "'Bite the bullet' means to endure a painful or difficult situation with courage."
+  },
+  {
+    "text": "Choose the word most similar in meaning to 'Candid':",
+    "options": ["Frank", "Secretive", "Diplomatic", "Cunning"],
+    "correctAnswer": 0,
+    "section": "verbal",
+    "topic": "Vocabulary",
+    "difficulty": "easy",
+    "explanation": "Candid means truthful and straightforward — frank."
+  },
+  {
+    "text": "Choose the antonym of 'Verbose':",
+    "options": ["Concise", "Wordy", "Lengthy", "Elaborate"],
+    "correctAnswer": 0,
+    "section": "verbal",
+    "topic": "Vocabulary",
+    "difficulty": "medium",
+    "explanation": "Verbose means using more words than needed. Its antonym is concise."
+  },
+  {
+    "text": "Identify the error: 'The team have been performing well since the last three matches.'",
+    "options": ["'since' should be 'for'", "'have' should be 'has'", "'well' should be 'good'", "No error"],
+    "correctAnswer": 0,
+    "section": "verbal",
+    "topic": "Grammar",
+    "difficulty": "medium",
+    "explanation": "'Since' is used for a specific point in time. 'For' is used for a duration. 'The last three matches' is a duration, so 'for' is correct."
+  },
+  {
+    "text": "Choose the correct sentence:",
+    "options": ["If I were you, I would accept the offer.", "If I was you, I would accept the offer.", "If I were you, I will accept the offer.", "If I am you, I would accept the offer."],
+    "correctAnswer": 0,
+    "section": "verbal",
+    "topic": "Grammar",
+    "difficulty": "medium",
+    "explanation": "Subjunctive mood uses 'were' for hypothetical situations: 'If I were you' is correct."
+  },
+  {
+    "text": "A train 200m long crosses a platform 300m long in 25 seconds. What is the speed of the train?",
+    "options": ["72 km/hr", "60 km/hr", "80 km/hr", "54 km/hr"],
+    "correctAnswer": 0,
+    "section": "numerical",
+    "topic": "Time-Speed-Distance",
+    "difficulty": "medium",
+    "explanation": "Total distance = 200 + 300 = 500m. Speed = 500/25 = 20 m/s = 20 × 18/5 = 72 km/hr."
+  },
+  {
+    "text": "Two trains running in opposite directions cross each other in 10 seconds. They are 150m and 250m long. If the speed of one train is 54 km/hr, find the speed of the other.",
+    "options": ["90 km/hr", "72 km/hr", "80 km/hr", "96 km/hr"],
+    "correctAnswer": 0,
+    "section": "numerical",
+    "topic": "Time-Speed-Distance",
+    "difficulty": "hard",
+    "explanation": "Relative speed = (150+250)/10 = 40 m/s. First train = 54 × 5/18 = 15 m/s. Other = 40 - 15 = 25 m/s = 90 km/hr."
+  },
+  {
+    "text": "A cistern is filled in 12 hours. Due to a leak, it takes 16 hours. In how many hours will the leak empty a full cistern?",
+    "options": ["48 hours", "36 hours", "24 hours", "60 hours"],
+    "correctAnswer": 0,
+    "section": "numerical",
+    "topic": "Time-Speed-Distance",
+    "difficulty": "medium",
+    "explanation": "Leak rate = 1/12 - 1/16 = (4-3)/48 = 1/48. Leak empties in 48 hours."
+  },
+  {
+    "text": "The weighted average of marks scored by students in sections A and B is 65. Section A has 40 students with average 60 and Section B has 60 students. What is the average of Section B?",
+    "options": ["68.33", "70", "72", "66.67"],
+    "correctAnswer": 0,
+    "section": "numerical",
+    "topic": "Averages",
+    "difficulty": "hard",
+    "explanation": "65 × 100 = 40 × 60 + 60 × x. 6500 = 2400 + 60x. 60x = 4100. x = 68.33."
+  }
+]

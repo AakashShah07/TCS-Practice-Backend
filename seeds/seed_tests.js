@@ -31,6 +31,9 @@ const seedTests = async () => {
       advanced: 'Advanced Quantitative & Reasoning Test',
     };
 
+    const questionsPerTest = 25;
+    const durationPerTest = 30 * 60; // 30 minutes
+
     for (const section of sections) {
       if (sectionQuestions[section].length > 0) {
         await Test.create({
@@ -38,27 +41,29 @@ const seedTests = async () => {
           type: 'section_test',
           section,
           questions: sectionQuestions[section],
-          totalQuestions: sectionQuestions[section].length,
-          duration: 25 * 60,
+          totalQuestions: questionsPerTest,
+          duration: durationPerTest,
           isActive: true,
         });
-        console.log(`Created: ${sectionNames[section]} (${sectionQuestions[section].length} questions)`);
+        console.log(`Created: ${sectionNames[section]} (pool: ${sectionQuestions[section].length}, per test: ${questionsPerTest})`);
       }
     }
 
     // Create full mock test with all questions
     const allIds = Object.values(sectionQuestions).flat();
     if (allIds.length > 0) {
+      const mockQuestionsPerSection = 25;
+      const mockTotalQuestions = mockQuestionsPerSection * sections.length;
       await Test.create({
         title: 'TCS NQT Full Mock Test',
         type: 'full_mock',
         questions: allIds,
-        totalQuestions: allIds.length,
-        duration: 120 * 60,
+        totalQuestions: mockTotalQuestions,
+        duration: 30 * 60 * sections.length,
         sectionLocked: true,
         isActive: true,
       });
-      console.log(`Created: TCS NQT Full Mock Test (${allIds.length} questions)`);
+      console.log(`Created: TCS NQT Full Mock Test (${mockTotalQuestions} questions, pool: ${allIds.length})`);
     }
 
     console.log('\n--- Test seeding complete ---');

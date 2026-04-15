@@ -1,5 +1,16 @@
 const TestAttempt = require('../models/TestAttempt');
 const Test = require('../models/Test');
+const Question = require('../models/Question');
+
+// Fisher-Yates shuffle
+function shuffle(arr) {
+  const a = [...arr];
+  for (let i = a.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [a[i], a[j]] = [a[j], a[i]];
+  }
+  return a;
+}
 
 // @desc    Start a test attempt
 // @route   POST /api/attempts/start/:testId
@@ -24,8 +35,29 @@ exports.startAttempt = async (req, res, next) => {
       });
     }
 
-    // Initialize responses for all questions
-    const responses = test.questions.map((qId) => ({
+    // Pick random questions from the pool for this attempt
+    let selectedQuestionIds;
+
+    if (test.type === 'full_mock') {
+      // For full mock: pick proportionally from each section
+      const sectionCounts = { numerical: 25, reasoning: 25, verbal: 25, advanced: 14 };
+      selectedQuestionIds = [];
+      for (const [section, count] of Object.entries(sectionCounts)) {
+        const pool = await Question.find({ section }).select('_id');
+        const shuffled = shuffle(pool.map((q) => q._id));
+        selectedQuestionIds.push(...shuffled.slice(0, Math.min(count, shuffled.length)));
+      }
+    } else if (test.section) {
+      // For section tests: pick `totalQuestions` random questions from that section
+      const pool = await Question.find({ section: test.section }).select('_id');
+      const shuffled = shuffle(pool.map((q) => q._id));
+      selectedQuestionIds = shuffled.slice(0, Math.min(test.totalQuestions, shuffled.length));
+    } else {
+      // Fallback: use the test's fixed questions
+      selectedQuestionIds = shuffle(test.questions);
+    }
+
+    const responses = selectedQuestionIds.map((qId) => ({
       question: qId,
       selectedAnswer: null,
       status: 'not_visited',

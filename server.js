@@ -28,6 +28,25 @@ app.get('/api/health', (req, res) => {
   res.json({ success: true, message: 'TCS NQT API is running' });
 });
 
+// Debug: check DB collections (REMOVE after debugging)
+app.get('/api/debug/db', async (req, res) => {
+  try {
+    const mongoose = require('mongoose');
+    const Test = require('./models/Test');
+    const Question = require('./models/Question');
+    const testCount = await Test.countDocuments();
+    const testAll = await Test.countDocuments({});
+    const testActive = await Test.countDocuments({ isActive: true });
+    const questionCount = await Question.countDocuments();
+    const dbName = mongoose.connection.name;
+    const dbHost = mongoose.connection.host;
+    const tests = await Test.find({}).select('title type isActive').lean();
+    res.json({ dbHost, dbName, questionCount, testCount, testAll, testActive, tests });
+  } catch (err) {
+    res.status(500).json({ error: err.message });
+  }
+});
+
 // Routes
 app.use('/api/auth', require('./routes/auth'));
 app.use('/api/tests', require('./routes/tests'));

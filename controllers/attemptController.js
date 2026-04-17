@@ -47,6 +47,11 @@ exports.startAttempt = async (req, res, next) => {
         const shuffled = shuffle(pool.map((q) => q._id));
         selectedQuestionIds.push(...shuffled.slice(0, Math.min(count, shuffled.length)));
       }
+    } else if (test.type === 'topic_practice' && test.topic) {
+      // For topic practice: pick from questions matching that specific topic
+      const pool = await Question.find({ section: test.section, topic: test.topic }).select('_id');
+      const shuffled = shuffle(pool.map((q) => q._id));
+      selectedQuestionIds = shuffled.slice(0, Math.min(test.totalQuestions, shuffled.length));
     } else if (test.section) {
       // For section tests: pick `totalQuestions` random questions from that section
       const pool = await Question.find({ section: test.section }).select('_id');

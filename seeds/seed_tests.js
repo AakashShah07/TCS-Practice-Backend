@@ -52,18 +52,16 @@ const seedTests = async () => {
     // Create full mock test with all questions
     const allIds = Object.values(sectionQuestions).flat();
     if (allIds.length > 0) {
-      const mockQuestionsPerSection = 25;
-      const mockTotalQuestions = mockQuestionsPerSection * sections.length;
       await Test.create({
         title: 'TCS NQT Full Mock Test',
         type: 'full_mock',
         questions: allIds,
-        totalQuestions: mockTotalQuestions,
-        duration: 30 * 60 * sections.length,
+        totalQuestions: 79,
+        duration: 120 * 60,
         sectionLocked: true,
         isActive: true,
       });
-      console.log(`Created: TCS NQT Full Mock Test (${mockTotalQuestions} questions, pool: ${allIds.length})`);
+      console.log(`Created: TCS NQT Full Mock Test (79 questions, pool: ${allIds.length})`);
     }
 
     console.log('\n--- Test seeding complete ---');

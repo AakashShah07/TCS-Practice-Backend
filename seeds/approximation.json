@@ -1,0 +1,272 @@
+[
+  {
+    "text": "Approximate: √3967 + 1798 ÷ 41 ≈ ?",
+    "options": ["103", "105", "107", "110"],
+    "correctAnswer": 2,
+    "section": "numerical",
+    "topic": "Approximation",
+    "difficulty": "hard",
+    "explanation": "√3967 ≈ √3969 = 63. 1798 ÷ 41 ≈ 1800 ÷ 41 ≈ 43.9. Total ≈ 63 + 44 ≈ 107."
+  },
+  {
+    "text": "Approximate: ³√4900 + √2398 − 289 ÷ 17 ≈ ?",
+    "options": ["45", "51", "47", "49"],
+    "correctAnswer": 3,
+    "section": "numerical",
+    "topic": "Approximation",
+    "difficulty": "hard",
+    "explanation": "³√4900 ≈ ³√4913 = 17. √2398 ≈ √2401 = 49. 289 ÷ 17 = 17. Total ≈ 17 + 49 − 17 = 49."
+  },
+  {
+    "text": "Approximate: 39.8% of 1002 + √1759 ≈ ?",
+    "options": ["441", "435", "448", "430"],
+    "correctAnswer": 0,
+    "section": "numerical",
+    "topic": "Approximation",
+    "difficulty": "hard",
+    "explanation": "39.8% of 1002 ≈ 40% of 1000 = 400. But more precisely ≈ 0.398 × 1002 ≈ 399. √1759 ≈ √1764 = 42. Total ≈ 399 + 42 = 441."
+  },
+  {
+    "text": "Approximate: 1503 ÷ 49 + √2499 + ³√1330 ≈ ?",
+    "options": ["88", "92", "95", "85"],
+    "correctAnswer": 1,
+    "section": "numerical",
+    "topic": "Approximation",
+    "difficulty": "hard",
+    "explanation": "1503 ÷ 49 ≈ 1500 ÷ 50 = 30, more precisely ≈ 30.7. √2499 ≈ √2500 = 50. ³√1330 ≈ ³√1331 = 11. Total ≈ 31 + 50 + 11 = 92."
+  },
+  {
+    "text": "Approximate: √998 + √1602 + 301 ÷ 6 ≈ ?",
+    "options": ["118", "125", "120", "122"],
+    "correctAnswer": 3,
+    "section": "numerical",
+    "topic": "Approximation",
+    "difficulty": "hard",
+    "explanation": "√998 ≈ √1000 ≈ 31.6 ≈ 32. √1602 ≈ √1600 = 40. 301 ÷ 6 ≈ 300 ÷ 6 = 50. Total ≈ 32 + 40 + 50 = 122."
+  },
+  {
+    "text": "Approximate: (47.8)² ÷ 23 + √1223 ≈ ?",
+    "options": ["134", "130", "138", "140"],
+    "correctAnswer": 0,
+    "section": "numerical",
+    "topic": "Approximation",
+    "difficulty": "hard",
+    "explanation": "47.8² ≈ 48² = 2304. But precisely ≈ 2285. 2285 ÷ 23 ≈ 99.3 ≈ 99. √1223 ≈ √1225 = 35. Total ≈ 99 + 35 = 134."
+  },
+  {
+    "text": "Approximate: √3598 + 723 ÷ 18 − ³√510 ≈ ?",
+    "options": ["88", "90", "92", "96"],
+    "correctAnswer": 2,
+    "section": "numerical",
+    "topic": "Approximation",
+    "difficulty": "hard",
+    "explanation": "√3598 ≈ √3600 = 60. 723 ÷ 18 ≈ 720 ÷ 18 = 40. ³√510 ≈ ³√512 = 8. Total ≈ 60 + 40 − 8 = 92."
+  },
+  {
+    "text": "Approximate: 897 ÷ 31 + √2808 ≈ ?",
+    "options": ["78", "82", "84", "80"],
+    "correctAnswer": 1,
+    "section": "numerical",
+    "topic": "Approximation",
+    "difficulty": "hard",
+    "explanation": "897 ÷ 31 ≈ 900 ÷ 31 ≈ 29. √2808 ≈ √2809 = 53. Total ≈ 29 + 53 = 82."
+  },
+  {
+    "text": "Approximate: 44.8% of 998 + √2023 ≈ ?",
+    "options": ["488", "496", "500", "492"],
+    "correctAnswer": 3,
+    "section": "numerical",
+    "topic": "Approximation",
+    "difficulty": "hard",
+    "explanation": "44.8% of 998 ≈ 45% of 1000 = 450. Precisely ≈ 0.448 × 998 ≈ 447. √2023 ≈ √2025 = 45. Total ≈ 447 + 45 = 492."
+  },
+  {
+    "text": "Approximate: √1985 + √625 ≈ ?",
+    "options": ["70", "68", "72", "65"],
+    "correctAnswer": 0,
+    "section": "numerical",
+    "topic": "Approximation",
+    "difficulty": "hard",
+    "explanation": "√1985 ≈ √1936 = 44 or √2025 = 45. More precisely ≈ 44.6 ≈ 45. √625 = 25. Total ≈ 45 + 25 = 70."
+  },
+  {
+    "text": "Approximate: ³√2740 + 499 ÷ 25 ≈ ?",
+    "options": ["30", "32", "34", "36"],
+    "correctAnswer": 2,
+    "section": "numerical",
+    "topic": "Approximation",
+    "difficulty": "hard",
+    "explanation": "³√2740 ≈ ³√2744 = 14. 499 ÷ 25 ≈ 500 ÷ 25 = 20. Total ≈ 14 + 20 = 34."
+  },
+  {
+    "text": "Approximate: 601 ÷ 19 + √1597 ≈ ?",
+    "options": ["68", "72", "75", "65"],
+    "correctAnswer": 1,
+    "section": "numerical",
+    "topic": "Approximation",
+    "difficulty": "hard",
+    "explanation": "601 ÷ 19 ≈ 600 ÷ 19 ≈ 31.6 ≈ 32. √1597 ≈ √1600 = 40. Total ≈ 32 + 40 = 72."
+  },
+  {
+    "text": "Approximate: 999 ÷ 49 + √838 ≈ ?",
+    "options": ["45", "53", "47", "49"],
+    "correctAnswer": 3,
+    "section": "numerical",
+    "topic": "Approximation",
+    "difficulty": "hard",
+    "explanation": "999 ÷ 49 ≈ 1000 ÷ 50 = 20. More precisely ≈ 20.4. √838 ≈ √841 = 29. Total ≈ 20.4 + 29 = 49.4 ≈ 49."
+  },
+  {
+    "text": "Approximate: √5183 − ³√728 + 398 ÷ 21 ≈ ?",
+    "options": ["82", "78", "85", "80"],
+    "correctAnswer": 0,
+    "section": "numerical",
+    "topic": "Approximation",
+    "difficulty": "hard",
+    "explanation": "√5183 ≈ √5184 = 72. ³√728 ≈ ³√729 = 9. 398 ÷ 21 ≈ 399 ÷ 21 ≈ 19. Total ≈ 72 − 9 + 19 = 82."
+  },
+  {
+    "text": "Approximate: 24.9% of 2004 + ³√3370 ≈ ?",
+    "options": ["508", "520", "514", "500"],
+    "correctAnswer": 2,
+    "section": "numerical",
+    "topic": "Approximation",
+    "difficulty": "hard",
+    "explanation": "24.9% of 2004 ≈ 25% of 2000 = 500. Precisely ≈ 0.249 × 2004 ≈ 499. ³√3370 ≈ ³√3375 = 15. Total ≈ 499 + 15 = 514."
+  },
+  {
+    "text": "Approximate: √7918 + 1297 ÷ 37 ≈ ?",
+    "options": ["120", "124", "128", "130"],
+    "correctAnswer": 1,
+    "section": "numerical",
+    "topic": "Approximation",
+    "difficulty": "hard",
+    "explanation": "√7918 ≈ √7921 = 89. 1297 ÷ 37 ≈ 1295 ÷ 37 = 35. Total ≈ 89 + 35 = 124."
+  },
+  {
+    "text": "Approximate: (31.8)² ÷ 12 − √576 + ³√2197 ≈ ?",
+    "options": ["75", "71", "69", "73"],
+    "correctAnswer": 3,
+    "section": "numerical",
+    "topic": "Approximation",
+    "difficulty": "hard",
+    "explanation": "31.8² ≈ 32² = 1024. Precisely ≈ 1011.24. 1011 ÷ 12 ≈ 84.3 ≈ 84. √576 = 24. ³√2197 = 13. Total ≈ 84 − 24 + 13 = 73."
+  },
+  {
+    "text": "Approximate: √14399 + 598 ÷ 23 ≈ ?",
+    "options": ["146", "150", "140", "142"],
+    "correctAnswer": 0,
+    "section": "numerical",
+    "topic": "Approximation",
+    "difficulty": "hard",
+    "explanation": "√14399 ≈ √14400 = 120. 598 ÷ 23 = 26. Total ≈ 120 + 26 = 146."
+  },
+  {
+    "text": "Approximate: 65.2% of 801 − √2023 + ³√8000 ≈ ?",
+    "options": ["503", "490", "497", "510"],
+    "correctAnswer": 2,
+    "section": "numerical",
+    "topic": "Approximation",
+    "difficulty": "hard",
+    "explanation": "65.2% of 801 ≈ 65% of 800 = 520. Precisely ≈ 0.652 × 801 ≈ 522. √2023 ≈ √2025 = 45. ³√8000 = 20. Total ≈ 522 − 45 + 20 = 497."
+  },
+  {
+    "text": "Approximate: (73.9)² ÷ 37 + √3479 ≈ ?",
+    "options": ["203", "207", "212", "200"],
+    "correctAnswer": 1,
+    "section": "numerical",
+    "topic": "Approximation",
+    "difficulty": "hard",
+    "explanation": "73.9² ≈ 74² = 5476. Precisely ≈ 5461. 5461 ÷ 37 ≈ 147.6 ≈ 148. √3479 ≈ √3481 = 59. Total ≈ 148 + 59 = 207."
+  },
+  {
+    "text": "Approximate: √9999 + ³√5830 − 703 ÷ 19 ≈ ?",
+    "options": ["75", "85", "78", "81"],
+    "correctAnswer": 3,
+    "section": "numerical",
+    "topic": "Approximation",
+    "difficulty": "hard",
+    "explanation": "√9999 ≈ √10000 = 100. ³√5830 ≈ ³√5832 = 18. 703 ÷ 19 = 37. Total ≈ 100 + 18 − 37 = 81."
+  },
+  {
+    "text": "Approximate: 1997 ÷ 41 + √2399 − ³√124 ≈ ?",
+    "options": ["93", "97", "89", "100"],
+    "correctAnswer": 0,
+    "section": "numerical",
+    "topic": "Approximation",
+    "difficulty": "hard",
+    "explanation": "1997 ÷ 41 ≈ 2000 ÷ 41 ≈ 48.8 ≈ 49. √2399 ≈ √2401 = 49. ³√124 ≈ ³√125 = 5. Total ≈ 49 + 49 − 5 = 93."
+  },
+  {
+    "text": "Approximate: √8098 × 2 − 799 ÷ 17 ≈ ?",
+    "options": ["128", "137", "133", "140"],
+    "correctAnswer": 2,
+    "section": "numerical",
+    "topic": "Approximation",
+    "difficulty": "hard",
+    "explanation": "√8098 ≈ √8100 = 90. 90 × 2 = 180. 799 ÷ 17 = 47. Total ≈ 180 − 47 = 133."
+  },
+  {
+    "text": "Approximate: ³√17570 + 52.1% of 503 ≈ ?",
+    "options": ["280", "288", "295", "275"],
+    "correctAnswer": 1,
+    "section": "numerical",
+    "topic": "Approximation",
+    "difficulty": "hard",
+    "explanation": "³√17570 ≈ ³√17576 = 26. 52.1% of 503 ≈ 52% of 500 = 260. Precisely ≈ 0.521 × 503 ≈ 262. Total ≈ 26 + 262 = 288."
+  },
+  {
+    "text": "Approximate: √6399 + √1599 − ³√3370 ≈ ?",
+    "options": ["110", "100", "98", "105"],
+    "correctAnswer": 3,
+    "section": "numerical",
+    "topic": "Approximation",
+    "difficulty": "hard",
+    "explanation": "√6399 ≈ √6400 = 80. √1599 ≈ √1600 = 40. ³√3370 ≈ ³√3375 = 15. Total ≈ 80 + 40 − 15 = 105."
+  },
+  {
+    "text": "Approximate: 2398 ÷ 51 + √3598 + ³√999 ≈ ?",
+    "options": ["117", "112", "122", "110"],
+    "correctAnswer": 0,
+    "section": "numerical",
+    "topic": "Approximation",
+    "difficulty": "hard",
+    "explanation": "2398 ÷ 51 ≈ 2400 ÷ 50 = 48. Precisely ≈ 47. √3598 ≈ √3600 = 60. ³√999 ≈ ³√1000 = 10. Total ≈ 47 + 60 + 10 = 117."
+  },
+  {
+    "text": "Approximate: (29.9)² − √8098 + 1498 ÷ 53 ≈ ?",
+    "options": ["840", "825", "832", "845"],
+    "correctAnswer": 2,
+    "section": "numerical",
+    "topic": "Approximation",
+    "difficulty": "hard",
+    "explanation": "29.9² ≈ 30² = 900. Precisely ≈ 894. √8098 ≈ √8100 = 90. 1498 ÷ 53 ≈ 1500 ÷ 53 ≈ 28.3 ≈ 28. Total ≈ 894 − 90 + 28 = 832."
+  },
+  {
+    "text": "Approximate: 33.3% of 2997 + ³√1727 − √624 ≈ ?",
+    "options": ["980", "986", "992", "975"],
+    "correctAnswer": 1,
+    "section": "numerical",
+    "topic": "Approximation",
+    "difficulty": "hard",
+    "explanation": "33.3% of 2997 ≈ (1/3) × 3000 = 1000. Precisely ≈ 0.333 × 2997 ≈ 998. ³√1727 ≈ ³√1728 = 12. √624 ≈ √625 = 25. Total ≈ 998 + 12 − 25 = 985 ≈ 986."
+  },
+  {
+    "text": "Approximate: √15875 + 4001 ÷ 57 − ³√2740 ≈ ?",
+    "options": ["175", "188", "178", "182"],
+    "correctAnswer": 3,
+    "section": "numerical",
+    "topic": "Approximation",
+    "difficulty": "hard",
+    "explanation": "√15875 ≈ √15876 = 126. 4001 ÷ 57 ≈ 3990 ÷ 57 = 70. ³√2740 ≈ ³√2744 = 14. Total ≈ 126 + 70 − 14 = 182."
+  },
+  {
+    "text": "Approximate: (62.1)² ÷ 43 + √5183 − ³√3370 ≈ ?",
+    "options": ["147", "140", "153", "135"],
+    "correctAnswer": 0,
+    "section": "numerical",
+    "topic": "Approximation",
+    "difficulty": "hard",
+    "explanation": "62.1² ≈ 62² = 3844. Precisely ≈ 3856. 3856 ÷ 43 ≈ 89.7 ≈ 90. √5183 ≈ √5184 = 72. ³√3370 ≈ ³√3375 = 15. Total ≈ 90 + 72 − 15 = 147."
+  }
+]

@@ -16,15 +16,15 @@ const seed = async () => {
     // Remove existing Blood Relations test if any
     await Test.deleteMany({ topic: 'Blood Relations', type: 'topic_practice' });
 
-    // Create the test with 50 questions, 60 minutes
+    // Create the test with 25 questions, 30 minutes
     const test = await Test.create({
       title: 'Blood Relations Challenge',
       type: 'topic_practice',
       section: 'reasoning',
       topic: 'Blood Relations',
       questions: questions.map(q => q._id),
-      totalQuestions: 50,
-      duration: 60 * 60, // 60 minutes in seconds
+      totalQuestions: 25,
+      duration: 30 * 60, // 30 minutes in seconds
       sectionLocked: false,
       isActive: true,
     });

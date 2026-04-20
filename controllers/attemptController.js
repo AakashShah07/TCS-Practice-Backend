@@ -28,11 +28,22 @@ exports.startAttempt = async (req, res, next) => {
       status: 'in_progress',
     });
     if (existing) {
-      return res.json({
-        success: true,
-        message: 'Resuming existing attempt',
-        data: existing,
-      });
+      // Check if the existing attempt has expired
+      const elapsed = (Date.now() - existing.startedAt.getTime()) / 1000;
+      const isExpired = elapsed > existing.duration + 30;
+
+      if (isExpired || req.body.forceNew) {
+        // Mark old attempt as timed_out so a fresh one can be created
+        existing.status = 'timed_out';
+        existing.submittedAt = new Date();
+        await existing.save();
+      } else {
+        return res.json({
+          success: true,
+          message: 'Resuming existing attempt',
+          data: existing,
+        });
+      }
     }
 
     // Pick random questions from the pool for this attempt

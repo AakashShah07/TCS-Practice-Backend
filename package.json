@@ -10,7 +10,9 @@
     "seed:hard": "node seeds/seed_hard.js",
     "seed:extra": "node seeds/seed_extra.js",
     "seed:extra2": "node seeds/seed_extra2.js",
-    "seed:custom": "node seeds/seed_custom.js"
+    "seed:custom": "node seeds/seed_custom.js",
+    "seed:ratio-percentage": "node seeds/seed_ratio_percentage.js",
+    "seed:ratio-percentage-test": "node seeds/seed_ratio_percentage_test.js"
   },
   "keywords": [],
   "author": "",

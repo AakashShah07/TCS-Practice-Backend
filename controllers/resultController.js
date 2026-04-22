@@ -35,15 +35,14 @@ exports.getReview = async (req, res, next) => {
       return res.status(404).json({ success: false, message: 'Result not found' });
     }
 
-    // Filter to wrong and skipped answers
-    const review = result.questionDetails
-      .filter((qd) => !qd.isCorrect)
-      .map((qd) => ({
-        question: qd.question,
-        selectedAnswer: qd.selectedAnswer,
-        correctAnswer: qd.correctAnswer,
-        timeSpent: qd.timeSpent,
-      }));
+    // Return all questions with correct/wrong status
+    const review = result.questionDetails.map((qd) => ({
+      question: qd.question,
+      selectedAnswer: qd.selectedAnswer,
+      correctAnswer: qd.correctAnswer,
+      isCorrect: qd.isCorrect,
+      timeSpent: qd.timeSpent,
+    }));
 
     res.json({
       success: true,

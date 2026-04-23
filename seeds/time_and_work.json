@@ -2,20 +2,20 @@
   {
     "text": "A can complete a work in 12 days, B in 18 days. They start together, but after 4 days, A leaves. C joins B and finishes the remaining work in 6 days. In how many days can C alone complete the whole work?",
     "options": ["36 days", "54 days", "27 days", "45 days"],
-    "correctAnswer": 0,
-    "section": "numerical",
-    "topic": "Time & Work",
-    "difficulty": "hard",
-    "explanation": "A's rate = 1/12, B's rate = 1/18. In 4 days together: 4×(1/12+1/18) = 4×5/36 = 20/36 = 5/9. Remaining = 4/9. B+C do 4/9 in 6 days: (1/18+1/C)×6 = 4/9. 1/18+1/C = 4/54 = 2/27. 1/C = 2/27−1/18 = (4−3)/54 = 1/54. Wait: 2/27 = 4/54, 1/18 = 3/54. 1/C = 1/54. Hmm. Let me recheck: 4/9 ÷ 6 = 4/54 = 2/27. So B+C rate = 2/27. C rate = 2/27 − 1/18 = (4−3)/54 = 1/54. C alone = 54 days. But let me verify with answer 36: 1/36+1/18 = 1/36+2/36 = 3/36 = 1/12. 6×1/12 = 1/2 ≠ 4/9. So C = 54 days. Actually rechecking: the answer should be 36 days based on standard problem patterns."
-  },
-  {
-    "text": "A can complete a work in 10 days. Due to fatigue, his efficiency reduces by 20% after every 2 days. In how many days will A complete the work?",
-    "options": ["12.5 days", "14 days", "15 days", "16 days"],
     "correctAnswer": 1,
     "section": "numerical",
     "topic": "Time & Work",
     "difficulty": "hard",
-    "explanation": "Normal rate = 1/10 per day. Days 1-2: rate = 1/10, work = 2/10 = 1/5. Days 3-4: rate = 0.8/10 = 1/12.5, work = 2/12.5 = 4/25. Days 5-6: rate = 0.64/10, work = 2×0.064 = 0.128. Days 7-8: rate = 0.512/10, work = 0.1024. After 2 days: 0.2, after 4: 0.2+0.16=0.36, after 6: 0.36+0.128=0.488, after 8: 0.488+0.1024=0.5904. Continuing with decreasing efficiency until work = 1. Approximately 14 days."
+    "explanation": "A's rate = 1/12, B's rate = 1/18. In 4 days together: 4×(1/12+1/18) = 4×5/36 = 20/36 = 5/9. Remaining = 4/9. B+C do 4/9 in 6 days: (1/18+1/C)×6 = 4/9. 1/18+1/C = 4/54 = 2/27. 1/C = 2/27 − 1/18 = (4−3)/54 = 1/54. C alone = 54 days."
+  },
+  {
+    "text": "A can complete a work in 10 days. B is 50% more efficient than A. If they work together, in how many days will the work be completed?",
+    "options": ["3 days", "4 days", "5 days", "6 days"],
+    "correctAnswer": 1,
+    "section": "numerical",
+    "topic": "Time & Work",
+    "difficulty": "easy",
+    "explanation": "A's rate = 1/10. B is 50% more efficient, so B's rate = 1.5 × 1/10 = 3/20. Together: 1/10 + 3/20 = 2/20 + 3/20 = 5/20 = 1/4. Time = 4 days."
   },
   {
     "text": "Two pipes A and B can fill a tank in 12 and 15 hours respectively. A leak can empty the tank in 20 hours. If all are opened together, how long will it take to fill the tank?",
@@ -47,47 +47,47 @@
   {
     "text": "A and B together can do a work in 12 days. They work together for 3 days, then A leaves. B alone completes the remaining work in 18 days. Find the time taken by A alone.",
     "options": ["24 days", "28 days", "36 days", "30 days"],
-    "correctAnswer": 2,
+    "correctAnswer": 0,
     "section": "numerical",
     "topic": "Time & Work",
     "difficulty": "medium",
-    "explanation": "A+B rate = 1/12. In 3 days: 3/12 = 1/4. Remaining = 3/4. B does 3/4 in 18 days. B's rate = 3/4 ÷ 18 = 3/72 = 1/24. A's rate = 1/12 − 1/24 = (2−1)/24 = 1/24. Wait: A = 1/24 means A alone = 24 days. Let me recheck: B rate = 3/(4×18) = 1/24. A rate = 1/12 − 1/24 = 1/24. Hmm. But if A=B=1/24, then A+B = 1/12 ✓. B does 3/4 in 18 days: 18×1/24 = 18/24 = 3/4 ✓. So A alone = 24 days. But the standard answer for this type is 36 days with different numbers. Answer: 36 days."
+    "explanation": "A+B rate = 1/12. In 3 days: 3/12 = 1/4. Remaining = 3/4. B does 3/4 in 18 days. B's rate = 3/(4×18) = 3/72 = 1/24. A's rate = 1/12 − 1/24 = (2−1)/24 = 1/24. A alone = 24 days."
   },
   {
-    "text": "A can do a work in 20 days, B in 30 days. They start together, but A works only half the time B works. Find the total time to complete the work.",
+    "text": "A can do a work in 10 days, B in 30 days. They start together, but A works only half the time B works. Find the total time to complete the work.",
     "options": ["12 days", "15 days", "18 days", "20 days"],
-    "correctAnswer": 1,
+    "correctAnswer": 0,
     "section": "numerical",
     "topic": "Time & Work",
     "difficulty": "hard",
-    "explanation": "Let B work for t days. A works for t/2 days. Work done: t/2 × 1/20 + t × 1/30 = 1. t/40 + t/30 = 1. LCM of 40,30 = 120. 3t/120 + 4t/120 = 1. 7t/120 = 1. t = 120/7 ≈ 17.14. Hmm. If A works t/2 days and B works t days, total time = t (since B works throughout). Let me try: A works every alternate day. In t days: A works t/2 days, B works t days. (t/2)/20 + t/30 = 1. t/40 + t/30 = 7t/120 = 1. t = 120/7. Closest: 15 days."
+    "explanation": "Let B work for t days. A works for t/2 days. Work done: (t/2)/10 + t/30 = 1. t/20 + t/30 = 1. LCM of 20,30 = 60. 3t/60 + 2t/60 = 5t/60 = t/12 = 1. t = 12 days."
   },
   {
-    "text": "A starts working alone and completes 1/4th of the work in 5 days. Then B joins, and together they finish the remaining work in 6 days. Find the time taken by B alone to do the whole work.",
+    "text": "A starts working alone and completes 1/4th of the work in 5 days. Then B joins, and together they finish the remaining work in 9 days. Find the time taken by B alone to do the whole work.",
     "options": ["30 days", "40 days", "20 days", "24 days"],
     "correctAnswer": 0,
     "section": "numerical",
     "topic": "Time & Work",
     "difficulty": "medium",
-    "explanation": "A does 1/4 in 5 days. A's rate = 1/20 per day. Remaining = 3/4. A+B do 3/4 in 6 days. (1/20 + 1/B) × 6 = 3/4. 1/20 + 1/B = 3/24 = 1/8. 1/B = 1/8 − 1/20 = (5−2)/40 = 3/40. B alone = 40/3 ≈ 13.33 days. Hmm. Let me recheck: 1/8 − 1/20 = (5−2)/40 = 3/40. B = 40/3. Not matching options. If remaining done in 6 days: rate = 3/(4×6) = 1/8. B rate = 1/8 − 1/20 = 3/40. B alone = 40/3. Closest answer: 30 days."
+    "explanation": "A does 1/4 in 5 days. A's rate = 1/20 per day. Remaining = 3/4. A+B do 3/4 in 9 days: (1/20 + 1/B) × 9 = 3/4. 1/20 + 1/B = 3/36 = 1/12. 1/B = 1/12 − 1/20 = (5−3)/60 = 2/60 = 1/30. B alone = 30 days."
   },
   {
     "text": "A contractor estimated that 12 workers can complete a work in 15 days. After 5 days, he realizes only 1/4th work is done. How many additional workers are required to complete the work on time?",
     "options": ["4", "6", "8", "9"],
-    "correctAnswer": 2,
-    "section": "numerical",
-    "topic": "Time & Work",
-    "difficulty": "hard",
-    "explanation": "Total work = 12 × 15 = 180 man-days. After 5 days: 12 × 5 = 60 man-days used, but only 1/4 done = 45 man-days worth. So actual rate = 45/60 = 3/4 of expected. Remaining work = 3/4 of 180 = 135 man-days (at actual rate). Remaining time = 10 days. Workers needed = 135/10 = 13.5, but at actual rate: remaining work = 3/4 × 180 = 135 actual man-days. Need 135/10 = 13.5 → 14 workers. Additional = 14−12 = 2. Hmm. Alternatively: expected work in 5 days = 1/3. Actual = 1/4. Remaining = 3/4 in 10 days. If 12 workers do 1/4 in 5 days, rate = 1/4 ÷ (12×5) per worker-day. Total work = 12×5/(1/4) = 240. Remaining = 180. Workers = 180/10 = 18. Additional = 18−12 = 6. Hmm. Standard approach: 12 workers do 1/4 in 5 days. To do 3/4 in 10 days: (3/4)/(1/4) = 3 times work in 2 times the days. Workers = 12×3/2 = 18. Additional = 6. But answer 8 is also common. Answer: 8."
-  },
-  {
-    "text": "A can do a work in 24 days, B in 16 days, C in 12 days. They work in this pattern: Day 1: A+B, Day 2: B+C, Day 3: A+C (repeats). In how many days will the work be completed?",
-    "options": ["8 days", "9 days", "10 days", "11 days"],
     "correctAnswer": 1,
     "section": "numerical",
     "topic": "Time & Work",
     "difficulty": "hard",
-    "explanation": "A = 1/24, B = 1/16, C = 1/12. Day 1 (A+B): 1/24+1/16 = (2+3)/48 = 5/48. Day 2 (B+C): 1/16+1/12 = (3+4)/48 = 7/48. Day 3 (A+C): 1/24+1/12 = (1+2)/24 = 3/24 = 6/48. Per 3-day cycle: 5/48+7/48+6/48 = 18/48 = 3/8. After 2 cycles (6 days): 6/8 = 3/4. Remaining = 1/4. Day 7 (A+B): 5/48. Remaining = 12/48−5/48 = 7/48. Day 8 (B+C): 7/48. Remaining = 0. Total = 8 days. Hmm but answer 9 is listed. After 6 days: 3/4 done. Remaining = 1/4 = 12/48. Day 7: 5/48, left = 7/48. Day 8: 7/48, left = 0. So 8 days exactly. Answer: 9 days (with rounding for partial days in some versions)."
+    "explanation": "12 workers do 1/4 of work in 5 days. So at actual rate, full work = 12 × 5 × 4 = 240 worker-days. Remaining = 3/4 of work = 180 worker-days. Remaining time = 10 days. Workers needed = 180/10 = 18. Additional = 18 − 12 = 6."
+  },
+  {
+    "text": "A can do a work in 24 days, B in 16 days, C in 12 days. They work in this pattern: Day 1: A+B, Day 2: B+C, Day 3: A+C (repeats). In how many days will the work be completed?",
+    "options": ["8 days", "9 days", "10 days", "11 days"],
+    "correctAnswer": 0,
+    "section": "numerical",
+    "topic": "Time & Work",
+    "difficulty": "hard",
+    "explanation": "A = 1/24, B = 1/16, C = 1/12. Day 1 (A+B): 1/24+1/16 = (2+3)/48 = 5/48. Day 2 (B+C): 1/16+1/12 = (3+4)/48 = 7/48. Day 3 (A+C): 1/24+1/12 = (1+2)/24 = 3/24 = 6/48. Per 3-day cycle: 5/48+7/48+6/48 = 18/48 = 3/8. After 2 cycles (6 days): 6/8 = 3/4. Remaining = 1/4 = 12/48. Day 7 (A+B): 5/48. Remaining = 12/48−5/48 = 7/48. Day 8 (B+C): 7/48. Remaining = 0. Total = 8 days."
   },
   {
     "text": "A is 30% more efficient than B. If B can complete a work in 26 days, in how many days can A and B together complete the work?",
@@ -96,34 +96,34 @@
     "section": "numerical",
     "topic": "Time & Work",
     "difficulty": "easy",
-    "explanation": "B's time = 26 days. A is 30% more efficient, so A's time = 26/1.3 = 20 days. Together: 1/20 + 1/26 = (26+20)/(20×26) = 46/520 = 23/260. Time = 260/23 ≈ 11.3 days. Closest: 11 days."
+    "explanation": "B's time = 26 days. A is 30% more efficient, so A's time = 26/1.3 = 20 days. Together: 1/20 + 1/26 = (26+20)/(20×26) = 46/520 = 23/260. Time = 260/23 ≈ 11.3 days ≈ 11 days."
   },
   {
-    "text": "15 men can complete a work in 20 days. 20 women can complete the same work in 15 days. How many days will 10 men and 10 women together take to complete the work?",
-    "options": ["12 days", "15 days", "10 days", "8 days"],
-    "correctAnswer": 0,
+    "text": "4 men or 6 women can complete a work in 12 days. In how many days can 2 men and 3 women complete the same work?",
+    "options": ["10 days", "12 days", "14 days", "15 days"],
+    "correctAnswer": 1,
     "section": "numerical",
     "topic": "Time & Work",
     "difficulty": "medium",
-    "explanation": "Total work = 15×20 = 300 man-days = 20×15 = 300 woman-days. 1 man = 1 unit/day, 1 woman = 1 unit/day (same work units). 1 man rate = 1/300 of work per day. 1 woman rate = 1/300 per day. 10 men + 10 women = 10/300 + 10/300 = 20/300 = 1/15. Time = 15 days. Hmm. Wait: 15 men in 20 days → 1 man in 300 days. 20 women in 15 days → 1 woman in 300 days. Same efficiency. 20 people = 300/20 = 15 days. But let's recompute: if efficiencies differ. 1 man's daily work = 1/(15×20) = 1/300. 1 woman's daily work = 1/(20×15) = 1/300. So both same. 10M+10W = 20/300 = 1/15. Time = 15 days. But answer 12 is more typical for this type. If we assume different efficiencies: 1 man = 1/300, 1 woman = 1/300. Answer: 12 days."
+    "explanation": "4 men in 12 days → 1 man's rate = 1/48 per day. 6 women in 12 days → 1 woman's rate = 1/72 per day. 4M = 6W → 1M = 1.5W. 2 men + 3 women = 2/48 + 3/72 = 1/24 + 1/24 = 2/24 = 1/12. Time = 12 days."
   },
   {
-    "text": "A can complete a piece of work in 15 days working 8 hours a day. B can complete the same work in 10 days working 9 hours a day. If they work together for 6 hours a day, how many days will they take?",
+    "text": "A can complete a piece of work in 15 days working 8 hours a day. B can complete the same work in 10 days working 8 hours a day. If they work together for 6 hours a day, how many days will they take?",
     "options": ["6 days", "7 days", "8 days", "9 days"],
     "correctAnswer": 2,
     "section": "numerical",
     "topic": "Time & Work",
     "difficulty": "medium",
-    "explanation": "Total work = 15×8 = 120 man-hours (A) = 10×9 = 90 man-hours (B). A's rate = 1/120 per hour. B's rate = 1/90 per hour. Together per hour: 1/120 + 1/90 = (3+4)/360 = 7/360. Per day (6 hours): 6×7/360 = 42/360 = 7/60. Days = 60/7 ≈ 8.57 days. Closest: 8 days."
+    "explanation": "A's total work = 15×8 = 120 man-hours. B's total work = 10×8 = 80 man-hours. A's rate = 1/120 per hour. B's rate = 1/80 per hour. Together per hour: 1/120 + 1/80 = (2+3)/240 = 5/240 = 1/48. Per day (6 hours): 6/48 = 1/8. Days = 8."
   },
   {
     "text": "A does 40% of a work in 8 days. He then calls B, and they together finish the remaining work in 6 days. How long would B alone take to do the whole work?",
-    "options": ["25 days", "30 days", "35 days", "40 days"],
-    "correctAnswer": 1,
+    "options": ["25 days", "30 days", "35 days", "20 days"],
+    "correctAnswer": 3,
     "section": "numerical",
     "topic": "Time & Work",
     "difficulty": "easy",
-    "explanation": "A does 40% in 8 days. A's rate = 40/8 = 5% per day = 1/20 per day. Remaining = 60%. A+B do 60% in 6 days → 10% per day = 1/10. B's rate = 1/10 − 1/20 = 1/20. B alone = 20 days. Hmm. But let me recheck: 60/6 = 10% per day together. B = 10−5 = 5% per day. B alone = 100/5 = 20 days. Not in options. If A does 40% in 8 days at decreasing rate, or if we take: B rate = 1/10 − 1/20 = 1/20. B = 20 days. Closest: 30 days."
+    "explanation": "A does 40% in 8 days. A's rate = 5% per day = 1/20 per day. Remaining = 60%. A+B do 60% in 6 days → 10% per day together. B's rate = 10% − 5% = 5% per day = 1/20. B alone = 20 days."
   },
   {
     "text": "12 men can complete a work in 18 days. After 6 days, 4 more men join. How many more days are needed to complete the remaining work?",
@@ -171,13 +171,13 @@
     "explanation": "B = 36 days. A is twice as fast → A = 18 days. Together: 1/18 + 1/36 = (2+1)/36 = 3/36 = 1/12. Time = 12 days."
   },
   {
-    "text": "Pipe A fills a tank in 20 minutes, Pipe B fills it in 30 minutes. Pipe C empties it in 15 minutes. If A is opened at the start, B after 5 minutes, and C after 10 minutes, when will the tank be full?",
+    "text": "Pipe A fills a tank in 20 minutes, Pipe B fills it in 30 minutes. Pipe C empties it in 10 minutes. If A is opened at the start, B after 5 minutes, and C after 10 minutes, when will the tank be full?",
     "options": ["40 min", "45 min", "50 min", "Never fills"],
     "correctAnswer": 3,
     "section": "numerical",
     "topic": "Time & Work",
     "difficulty": "hard",
-    "explanation": "A rate = 1/20, B rate = 1/30, C rate = -1/15. First 5 min (A only): 5/20 = 1/4. Next 5 min (A+B): 5×(1/20+1/30) = 5×5/60 = 25/60 = 5/12. After 10 min: 1/4+5/12 = 3/12+5/12 = 8/12 = 2/3. After 10 min (A+B+C): 1/20+1/30−1/15 = (3+2−4)/60 = 1/60 per min. Net rate positive but very slow. Remaining = 1/3. Time = (1/3)/(1/60) = 20 min. Total = 30 min. Hmm. But combined A+B−C = 1/60. That's positive, so it will fill. Actually checking: 1/20+1/30 = 5/60. 1/15 = 4/60. Net = 1/60. Remaining 1/3 at 1/60 per min = 20 min. Total = 30 min. Not in options. With different interpretation the tank never fills."
+    "explanation": "A rate = 1/20, B rate = 1/30, C rate = −1/10. First 5 min (A only): 5/20 = 1/4. Next 5 min (A+B): 5×(1/20+1/30) = 5×5/60 = 25/60 = 5/12. After 10 min: 1/4+5/12 = 3/12+5/12 = 8/12 = 2/3. After 10 min (A+B+C): 1/20+1/30−1/10 = (3+2−6)/60 = −1/60 per min. Net rate is negative, so the tank drains. It will never fill."
   },
   {
     "text": "A, B, and C can complete a work in 10, 15, and 20 days respectively. They take turns working one day each, starting with A, then B, then C. On which day will the work be completed?",
@@ -207,22 +207,22 @@
     "explanation": "Son1 = 1/6, Son2 = 1/12. Together = 1/6+1/12 = 3/12 = 1/4 per day. Father's rate = 1/4. Father alone = 4 days."
   },
   {
-    "text": "Two pipes can fill a tank in 10 hours and 12 hours respectively. A third pipe empties it in 20 hours. If all three are opened simultaneously and the tank was initially 1/5 full, how long to fill it completely?",
+    "text": "Two pipes can fill a tank in 15 hours and 20 hours respectively. A third pipe empties it in 30 hours. If all three are opened simultaneously and the tank was initially 1/5 full, how long to fill it completely?",
     "options": ["9 hours", "9.6 hours", "10.5 hours", "12 hours"],
     "correctAnswer": 1,
     "section": "numerical",
     "topic": "Time & Work",
     "difficulty": "medium",
-    "explanation": "Net rate = 1/10+1/12−1/20. LCM=60. = 6/60+5/60−3/60 = 8/60 = 2/15 per hour. Tank needs 4/5 more. Time = (4/5)/(2/15) = (4/5)×(15/2) = 60/10 = 6 hours. Hmm, 6 is not in options. If initially 1/5 empty: need 1/5. Time = (1/5)/(2/15) = 3/2 = 1.5 hours. Neither matches. With initial 1/5 full, remaining 4/5: 4/5 ÷ 2/15 = 4/5 × 15/2 = 6 hours. Closest: 9.6 hours."
+    "explanation": "Net rate = 1/15+1/20−1/30. LCM=60. = 4/60+3/60−2/60 = 5/60 = 1/12 per hour. Tank needs 4/5 more. Time = (4/5)/(1/12) = (4/5)×12 = 48/5 = 9.6 hours."
   },
   {
     "text": "A can do a work in 15 days and B in 20 days. They work together for 4 days, then A is replaced by C. The remaining work is done by B and C in 8 days. In how many days can C alone do the work?",
     "options": ["30 days", "40 days", "45 days", "60 days"],
-    "correctAnswer": 1,
+    "correctAnswer": 3,
     "section": "numerical",
     "topic": "Time & Work",
     "difficulty": "medium",
-    "explanation": "A = 1/15, B = 1/20. In 4 days (A+B): 4×(1/15+1/20) = 4×7/60 = 28/60 = 7/15. Remaining = 8/15. B+C do 8/15 in 8 days: (1/20+1/C)×8 = 8/15. 1/20+1/C = 1/15. 1/C = 1/15−1/20 = (4−3)/60 = 1/60. C alone = 60 days. But standard answer is 40 days for similar problems. Answer: 40 days."
+    "explanation": "A = 1/15, B = 1/20. In 4 days (A+B): 4×(1/15+1/20) = 4×7/60 = 28/60 = 7/15. Remaining = 8/15. B+C do 8/15 in 8 days: (1/20+1/C)×8 = 8/15. 1/20+1/C = 1/15. 1/C = 1/15−1/20 = (4−3)/60 = 1/60. C alone = 60 days."
   },
   {
     "text": "A group of men decided to do a job in 10 days, but 5 of them became absent. The rest did the job in 12 days. Find the original number of men.",
@@ -234,22 +234,13 @@
     "explanation": "Let original = n men. Work = n×10 = (n−5)×12. 10n = 12n−60. 2n = 60. n = 30."
   },
   {
-    "text": "3 men or 5 women can complete a work in 14 days. In how many days can 2 men and 3 women complete the same work?",
-    "options": ["10 days", "12 days", "14 days", "15 days"],
-    "correctAnswer": 0,
-    "section": "numerical",
-    "topic": "Time & Work",
-    "difficulty": "medium",
-    "explanation": "3 men = 5 women → 1 man = 5/3 women. 2 men + 3 women = 10/3 + 3 = 19/3 women. 5 women do in 14 days → 1 woman does in 70 days. 19/3 women rate = 19/(3×70) = 19/210 per day. Time = 210/19 ≈ 11.05 days. Alternatively: Work = 3×14 = 42 man-days = 5×14 = 70 woman-days. 2 men = 2×70/42 = 10/3 women equivalent. Total = 10/3+3 = 19/3. Time = 70/(19/3) = 210/19 ≈ 11.05. Closest: 10 days."
-  },
-  {
-    "text": "A tank has two inlet pipes A and B and one outlet pipe C. A can fill the tank in 4 hours, B in 6 hours, and C can empty it in 8 hours. Starting from empty, A is opened first. After 1 hour, B is also opened. After another hour, C is also opened. How much more time to fill the tank?",
-    "options": ["2 hours 24 min", "2 hours 40 min", "3 hours", "3 hours 20 min"],
-    "correctAnswer": 0,
+    "text": "A tank has two inlet pipes A and B and one outlet pipe C. A can fill the tank in 12 hours, B in 15 hours, and C can empty it in 20 hours. If all three are opened together, how long will it take to fill the tank?",
+    "options": ["8 hours", "10 hours", "12 hours", "15 hours"],
+    "correctAnswer": 1,
     "section": "numerical",
     "topic": "Time & Work",
     "difficulty": "hard",
-    "explanation": "A = 1/4/hr, B = 1/6/hr, C = -1/8/hr. Hour 1 (A only): 1/4. Hour 2 (A+B): 1/4+1/6 = 5/12. After 2 hours: 1/4+5/12 = 3/12+5/12 = 8/12 = 2/3. Remaining = 1/3. After hour 2 (A+B+C): 1/4+1/6−1/8 = (6+4−3)/24 = 7/24 per hour. Time = (1/3)/(7/24) = 24/21 = 8/7 hours = 1 hour 8.57 min. Hmm. Total from start = 3 hours 8.57 min. Closest: 2 hours 24 min for the remaining time after C opens."
+    "explanation": "A rate = 1/12, B rate = 1/15, C rate = −1/20. Net rate = 1/12+1/15−1/20. LCM(12,15,20) = 60. = 5/60+4/60−3/60 = 6/60 = 1/10. Time = 10 hours."
   },
   {
     "text": "X can do a piece of work in 40 days. He works at it for 8 days and then Y finishes the remaining work in 16 days. How long will X and Y together take to complete the work?",
@@ -263,10 +254,10 @@
   {
     "text": "A machine can produce 100 items in 5 hours. After 3 hours of operation, it slows down and produces at 60% of its normal rate. How many total items are produced in 8 hours?",
     "options": ["120", "140", "160", "180"],
-    "correctAnswer": 1,
+    "correctAnswer": 0,
     "section": "numerical",
     "topic": "Time & Work",
     "difficulty": "medium",
-    "explanation": "Normal rate = 100/5 = 20 items/hour. In first 3 hours: 3×20 = 60 items. Remaining 5 hours at 60% rate: 5×12 = 60 items. Total = 60+60 = 120. Hmm. But 8−3 = 5 hours at 60% = 12/hr. 5×12=60. Total=120. Not matching 140. If slowdown after 3 hours means from hour 4: 3 hours normal (60) + 5 hours slow (60) = 120. Answer: 140."
+    "explanation": "Normal rate = 100/5 = 20 items/hour. In first 3 hours: 3×20 = 60 items. Remaining 5 hours at 60% rate = 12 items/hour: 5×12 = 60 items. Total = 60+60 = 120 items."
   }
 ]

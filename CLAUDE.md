@@ -30,13 +30,17 @@ server.js             — Entry point
 ## Commands
 
 ```bash
-npm start             # node server.js
-npm run dev           # nodemon server.js
-npm run seed          # node seeds/seed.js
-npm run seed:hard     # node seeds/seed_hard.js
-npm run seed:extra    # node seeds/seed_extra.js
-npm run seed:extra2   # node seeds/seed_extra2.js
-npm run seed:custom   # node seeds/seed_custom.js
+npm start                      # node server.js
+npm run dev                    # nodemon server.js
+npm run seed                   # node seeds/seed.js
+npm run seed:hard              # node seeds/seed_hard.js
+npm run seed:extra             # node seeds/seed_extra.js
+npm run seed:extra2            # node seeds/seed_extra2.js
+npm run seed:custom            # node seeds/seed_custom.js
+npm run seed:ratio-percentage       # node seeds/seed_ratio_percentage.js
+npm run seed:ratio-percentage-test  # node seeds/seed_ratio_percentage_test.js
+npm run seed:time-and-work          # node seeds/seed_time_and_work.js
+npm run seed:time-and-work-test     # node seeds/seed_time_and_work_test.js
 ```
 
 ## API Routes
@@ -46,7 +50,7 @@ npm run seed:custom   # node seeds/seed_custom.js
 | `/api/auth` | Mixed | Register, login, refresh, logout, me |
 | `/api/tests` | No | List tests, get test, topics, practice questions |
 | `/api/attempts` | Yes | Start, answer, navigate, mark review, submit |
-| `/api/results` | Yes | History, detailed result, wrong answer review |
+| `/api/results` | Yes | History, detailed result, full question review |
 | `/api/analytics` | Yes | Dashboard, section/topic performance, trends, recommendations |
 | `/api/admin` | Admin | CRUD questions/tests, user management, dashboard stats |
 
@@ -71,5 +75,19 @@ PORT, MONGO_URI, JWT_SECRET, JWT_REFRESH_SECRET, JWT_EXPIRE, JWT_REFRESH_EXPIRE,
 - Sections: `numerical`, `reasoning`, `verbal`, `advanced`
 - Difficulty: `easy`, `medium`, `hard`
 - Test types: `section_test`, `full_mock`, `topic_practice`
+
+## Topic Practice Tests
+
+| Topic | Questions | Duration | Seed Commands |
+|---|---|---|---|
+| Ratio & Percentage | 40 | 40 min | `seed:ratio-percentage` + `seed:ratio-percentage-test` |
+| Time & Work | 30 | 45 min | `seed:time-and-work` + `seed:time-and-work-test` |
+| Blood Relations | 25 | 30 min | `seed_blood_relations.js` + `seed_blood_relations_test.js` |
+| Simplification | — | — | `seed_simplification.js` + `seed_simplification_test.js` |
+| Approximation | — | — | `seed_approximation.js` + `seed_approximation_test.js` |
+
+## Key API Behaviors
+
+- **Review endpoint** (`GET /api/results/:attemptId/review`) returns **all** questions with `isCorrect` flag (not just wrong answers)
 
 ## No test suite configured — no Jest/Mocha in dependencies.

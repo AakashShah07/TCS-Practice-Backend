@@ -11,11 +11,11 @@
   {
     "text": "If 2x + 3y = 12 and 3x - 2y = 5, find the value of x² + y².",
     "options": ["10", "13", "8", "11"],
-    "correctAnswer": 0,
+    "correctAnswer": 1,
     "section": "numerical",
     "topic": "Algebra",
     "difficulty": "medium",
-    "explanation": "From equations: multiply first by 2, second by 3: 4x+6y=24, 9x-6y=15. Add: 13x=39, x=3. Then y = (12-6)/3 = 2. x²+y² = 9+1 = nope, y=(12-2×3)/3 = (12-6)/3=2. x²+y²=9+4=13. Wait: 2(3)+3y=12 → 6+3y=12 → y=2. 9+4=13."
+    "explanation": "Multiply first eq by 2 and second by 3: 4x+6y=24, 9x−6y=15. Adding: 13x=39, x=3. From 2(3)+3y=12: y=2. x²+y² = 9+4 = 13."
   },
   {
     "text": "The product of two consecutive even numbers is 528. Find the smaller number.",
@@ -72,31 +72,31 @@
     "explanation": "After 20 innings: total = 20×45 = 900. New average = 47. After 21 innings: total = 21×47 = 987. 21st inning score = 987-900 = 87."
   },
   {
-    "text": "The average marks of 3 students A, B, C is 48. When D joins, the average becomes 44. When E replaces A, the average of B, C, D, E becomes 46. What are A's marks?",
+    "text": "The average marks of 3 students A, B, C is 48. When D joins, the average becomes 44. When E (who scored 64 marks) replaces A, the average of B, C, D, E becomes 46. What are A's marks?",
     "options": ["48", "52", "56", "40"],
     "correctAnswer": 2,
     "section": "numerical",
     "topic": "Averages",
     "difficulty": "hard",
-    "explanation": "A+B+C = 144. A+B+C+D = 176 → D = 32. B+C+D+E = 184 → B+C+E = 184-32 = 152. B+C = 144-A. So 144-A+E = 152 → E = A+8. Also B+C+D+E=184, B+C=144-A, so 144-A+32+E=184 → E=A+8. We need another equation. Actually from A+B+C=144 and B+C+D+E=184: subtract: A-D-E = 144-184 = -40. A-32-(A+8) = -40 → -40 = -40. This is always true. We need: the average of B,C,D,E is 46 and A+B+C=144. Hmm, actually A=56 works: B+C=88, D=32, E=64, check: 88+32+64=184, avg=46. ✓"
+    "explanation": "A+B+C = 144. A+B+C+D = 176 → D = 32. B+C+D+E = 184 and E = 64 → B+C = 184−32−64 = 88. A = 144−88 = 56."
   },
   {
-    "text": "A trader mixes 36 kg of rice at Rs. 20/kg with 24 kg of rice at Rs. 24/kg. He sells the mixture at Rs. 25/kg. What is his profit percentage?",
-    "options": ["15.4%", "13.6%", "16.8%", "14.2%"],
-    "correctAnswer": 1,
+    "text": "A trader mixes 36 kg of rice at Rs. 20/kg with 24 kg of rice at Rs. 24/kg. He sells the mixture at Rs. 27/kg. What is his profit percentage?",
+    "options": ["25%", "20%", "16.8%", "15.4%"],
+    "correctAnswer": 0,
     "section": "numerical",
     "topic": "Profit-Loss",
     "difficulty": "hard",
-    "explanation": "CP = 36×20 + 24×24 = 720+576 = 1296. Total qty = 60 kg. SP = 60×25 = 1500. Profit = 204. Profit% = 204/1296 × 100 ≈ 15.74%. Hmm. Actually let me recalculate: 204/1296 = 0.15740... ≈ 15.7%. None exactly match. CP per kg = 1296/60 = 21.6. SP = 25. Profit% = 3.4/21.6 × 100 = 15.74%. Closest is 15.4%. Hmm. Let me try: maybe 36×20=720, 24×24=576, total=1296. SP=1500. Profit=204. 204×100/1296 = 15.74. Going with 13.6 based on different interpretation. Actually: avg CP = 1296/60 = 21.6. Profit per kg = 25-21.6 = 3.4. Profit% = (3.4/25)×100 = 13.6% on selling price. Yes — 13.6% if calculated on SP."
+    "explanation": "CP = 36×20 + 24×24 = 720+576 = 1296. Total qty = 60 kg. SP = 60×27 = 1620. Profit = 324. Profit% = (324/1296) × 100 = 25%."
   },
   {
     "text": "A man buys an article and sells it at a profit of 20%. If he had bought it at 20% less and sold for Rs. 75 less, he would have gained 25%. Find the original cost price.",
     "options": ["Rs. 375", "Rs. 300", "Rs. 250", "Rs. 400"],
-    "correctAnswer": 1,
+    "correctAnswer": 0,
     "section": "numerical",
     "topic": "Profit-Loss",
     "difficulty": "hard",
-    "explanation": "Let CP = x. SP1 = 1.2x. New CP = 0.8x. New SP = 1.25 × 0.8x = x. Given: 1.2x - x = 75 → 0.2x = 75 → x = 375. Wait: SP1 - new SP = 75. 1.2x - x = 0.2x = 75. x = 375. But answer says 300. Let me re-read: sells for Rs.75 less → new SP = 1.2x - 75. New SP also = 1.25 × 0.8x = x. So 1.2x-75 = x → 0.2x = 75 → x = 375. Answer is Rs. 375."
+    "explanation": "Let CP = x. SP1 = 1.2x. New CP = 0.8x. New SP = 1.25 × 0.8x = x. Since new SP is Rs. 75 less: 1.2x − x = 0.2x = 75. x = Rs. 375."
   },
   {
     "text": "By selling 45 oranges for Rs. 160, a person loses 20%. How many should he sell for Rs. 112 to gain 40%?",
@@ -144,22 +144,22 @@
     "explanation": "Direct common tangent = √[d² - (r1-r2)²] where d = r1+r2 = 8. = √[64 - 4] = √60 cm."
   },
   {
-    "text": "A vessel in the shape of a hollow hemisphere is full of water. Its contents are emptied into a cylindrical container of radius 6 cm. If the water fills the cylinder to a height of 12 cm, find the radius of the hemisphere.",
-    "options": ["9 cm", "6 cm", "12 cm", "8 cm"],
+    "text": "A vessel in the shape of a hollow hemisphere is full of water. Its contents are emptied into a cylindrical container of radius 6 cm. If the water fills the cylinder to a height of 4 cm, find the radius of the hemisphere.",
+    "options": ["6 cm", "9 cm", "12 cm", "8 cm"],
     "correctAnswer": 0,
     "section": "numerical",
     "topic": "Geometry",
     "difficulty": "hard",
-    "explanation": "Vol of hemisphere = Vol of cylinder. (2/3)πR³ = π(6²)(12) = 432π. R³ = 648. R = ∛648. Hmm 648 = 8×81, ∛648 ≈ 8.65. Not exactly 9. Let me recheck: (2/3)R³ = 36×12=432. R³ = 648. 9³=729. Not matching. Try: maybe full sphere formula? (4/3)πR³=432π → R³=324. Still not clean. Let me use: if height=12, radius of cylinder=6. Volume = π×36×12=432π. Hemisphere = (2/3)πR³. 2R³/3=432. R³=648. R=∛648 ≈ 8.65 ≈ 9 cm approximately."
+    "explanation": "Vol of hemisphere = Vol of cylinder. (2/3)πR³ = π(6²)(4) = 144π. R³ = 144 × 3/2 = 216. R = ∛216 = 6 cm."
   },
   {
     "text": "Eight people sit around a circular table. In how many ways can they be arranged if two particular persons must sit opposite each other?",
     "options": ["1440", "720", "5040", "2520"],
-    "correctAnswer": 0,
+    "correctAnswer": 1,
     "section": "advanced",
     "topic": "Advanced Quantitative",
     "difficulty": "hard",
-    "explanation": "Fix person A. Person B sits opposite (1 way). Remaining 6 arrange in 6! = 720 ways. But in circular we fix one person, so: fix A at a seat, B opposite = 1 choice, remaining 6! = 720. Total = 720. Wait: fix A (removes circular symmetry). B must sit opposite = 1 way. Remaining 6 in 6 seats = 6! = 720. But 6! = 720. Hmm, the answer should be 720. But option says 1440. If we consider A can sit in any of 2 orientations... no, we fixed A. Actually: fix one person in circular = (n-1)! for all arrangements = 7! = 5040. With constraint B opposite A: fix A, B has 1 choice, rest = 6! = 720. But wait, maybe the question means specific opposite, and both A and B can be placed. Nah, fix A at position 1, B at position 5. 6! = 720. Let me go with 720 ways. Actually 1440 could be if we don't fix circular: 8 positions, fix A at any, B opposite = 1, rest 6! = 720. If there's a reflection thing = 720×2 = 1440. For non-identical circular arrangements with 'opposite' constraint considering table orientation: 1440."
+    "explanation": "In circular permutations, fix person A to remove rotational symmetry. Person B must sit opposite A = 1 way. Remaining 6 people can be arranged in 6! = 720 ways. Total = 720."
   },
   {
     "text": "A password must be 4 characters long using digits 0-9 and letters A-F (hexadecimal). How many passwords are possible if repetition is allowed and it must contain at least one letter?",
@@ -209,11 +209,11 @@
   {
     "text": "Study the table: A company's quarterly revenue (in lakhs) — Q1:45, Q2:52, Q3:48, Q4:65. Expenses: Q1:38, Q2:41, Q3:50, Q4:55. In which quarter was the profit margin (profit/revenue × 100) highest?",
     "options": ["Q4", "Q2", "Q1", "Q3"],
-    "correctAnswer": 0,
+    "correctAnswer": 1,
     "section": "reasoning",
     "topic": "Data Interpretation",
     "difficulty": "medium",
-    "explanation": "Profit margins: Q1=(45-38)/45=15.5%, Q2=(52-41)/52=21.1%, Q3=(48-50)/48=-4.2% (loss), Q4=(65-55)/65=15.4%. Q2 has highest at 21.1%. Wait: Q2=11/52=21.15%, Q4=10/65=15.38%, Q1=7/45=15.55%. Q2 is highest. But answer says Q4. Let me recheck: Q1: 7/45=15.5%, Q2: 11/52=21.15%, Q3: -2/48=loss, Q4: 10/65=15.38%. Q2 is highest margin. Answer should be Q2."
+    "explanation": "Profit margin = (Revenue−Expenses)/Revenue × 100. Q1: 7/45 = 15.6%. Q2: 11/52 = 21.2%. Q3: (48−50)/48 = −4.2% (loss). Q4: 10/65 = 15.4%. Q2 has the highest profit margin at 21.2%."
   },
   {
     "text": "A pie chart shows budget allocation: Education 25%, Healthcare 20%, Defence 15%, Infrastructure 30%, Others 10%. If the total budget is Rs. 4800 crore, how much more is spent on Infrastructure than Healthcare?",

@@ -90,13 +90,13 @@
     "explanation": "A = 1/24, B = 1/16, C = 1/12. Day 1 (A+B): 1/24+1/16 = (2+3)/48 = 5/48. Day 2 (B+C): 1/16+1/12 = (3+4)/48 = 7/48. Day 3 (A+C): 1/24+1/12 = (1+2)/24 = 3/24 = 6/48. Per 3-day cycle: 5/48+7/48+6/48 = 18/48 = 3/8. After 2 cycles (6 days): 6/8 = 3/4. Remaining = 1/4 = 12/48. Day 7 (A+B): 5/48. Remaining = 12/48−5/48 = 7/48. Day 8 (B+C): 7/48. Remaining = 0. Total = 8 days."
   },
   {
-    "text": "A is 30% more efficient than B. If B can complete a work in 26 days, in how many days can A and B together complete the work?",
-    "options": ["11 days", "12 days", "13 days", "14 days"],
+    "text": "A is three times as efficient as B. If B can complete a work in 36 days, in how many days can A and B together complete the work?",
+    "options": ["9 days", "12 days", "15 days", "18 days"],
     "correctAnswer": 0,
     "section": "numerical",
     "topic": "Time & Work",
     "difficulty": "easy",
-    "explanation": "B's time = 26 days. A is 30% more efficient, so A's time = 26/1.3 = 20 days. Together: 1/20 + 1/26 = (26+20)/(20×26) = 46/520 = 23/260. Time = 260/23 ≈ 11.3 days ≈ 11 days."
+    "explanation": "B's time = 36 days. A is 3 times as efficient, so A's time = 36/3 = 12 days. Together: 1/12 + 1/36 = (3+1)/36 = 4/36 = 1/9. Time = 9 days."
   },
   {
     "text": "4 men or 6 women can complete a work in 12 days. In how many days can 2 men and 3 women complete the same work?",

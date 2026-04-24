@@ -146,11 +146,11 @@
   {
     "text": "A bar chart shows sales: Jan=100, Feb=150, Mar=120, Apr=200, May=180. Which month had the highest percentage increase from the previous month?",
     "options": ["February", "March", "April", "May"],
-    "correctAnswer": 0,
+    "correctAnswer": 2,
     "section": "reasoning",
     "topic": "Data Interpretation",
     "difficulty": "medium",
-    "explanation": "Feb: (150-100)/100 = 50%. Mar: decrease. Apr: (200-120)/120 = 66.7%. But wait, Apr is higher. Actually Apr = 66.7% > Feb = 50%. Answer is April... Let me recalculate. Feb increase = 50%, Apr increase = 66.7%. The answer should be April."
+    "explanation": "Feb: (150−100)/100 = 50%. Mar: (120−150)/150 = −20% (decrease). Apr: (200−120)/120 = 66.7%. May: (180−200)/200 = −10% (decrease). April has the highest percentage increase at 66.7%."
   },
   {
     "text": "Find the odd one out: 2, 5, 10, 17, 28, 37",

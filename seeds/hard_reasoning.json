@@ -29,11 +29,11 @@
   {
     "text": "What is the missing number: 7, 11, 20, 36, 61, ?",
     "options": ["97", "99", "105", "91"],
-    "correctAnswer": 1,
+    "correctAnswer": 0,
     "section": "reasoning",
     "topic": "Series",
     "difficulty": "hard",
-    "explanation": "Differences: 4, 9, 16, 25 (perfect squares 2²,3²,4²,5²). Next diff = 6²=36+2=38. Wait: 7+4=11, 11+9=20, 20+16=36, 36+25=61, 61+36=97. Hmm, let me recheck: differences are 4,9,16,25,36. 61+36=97. Actually 99 if pattern is 4,9,16,25,38 — but squares give 97. With the given options, 99 works with alternate pattern: second differences 5,7,9,11,13 → diffs become 4,9,16,25,38 → 61+38=99."
+    "explanation": "Differences: 4, 9, 16, 25 (perfect squares: 2², 3², 4², 5²). Next difference = 6² = 36. Answer = 61 + 36 = 97."
   },
   {
     "text": "A introduces B saying 'His mother is the only daughter of my mother-in-law.' How is A related to B?",

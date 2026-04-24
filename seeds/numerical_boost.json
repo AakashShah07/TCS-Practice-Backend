@@ -38,11 +38,11 @@
   {
     "text": "The sum of two numbers is 45 and their difference is 11. Find the product of the two numbers.",
     "options": ["476", "504", "462", "510"],
-    "correctAnswer": 1,
+    "correctAnswer": 0,
     "section": "numerical",
     "topic": "Algebra",
     "difficulty": "medium",
-    "explanation": "a+b=45, a-b=11. a=28, b=17. Product = 28×17 = 476. Wait: 28×17 = 476. Hmm. Let me recheck: (45+11)/2=28, (45-11)/2=17. 28×17=476. Answer is 476."
+    "explanation": "a+b=45, a−b=11. a = (45+11)/2 = 28, b = (45−11)/2 = 17. Product = 28×17 = 476."
   },
   {
     "text": "If the polynomial x² + bx + 12 has roots 3 and 4, find b.",
@@ -83,11 +83,11 @@
   {
     "text": "A cricketer has an average of 38 runs in 40 innings. How many runs must he score in the next innings to raise his average to 40?",
     "options": ["120", "80", "100", "118"],
-    "correctAnswer": 3,
+    "correctAnswer": 0,
     "section": "numerical",
     "topic": "Averages",
     "difficulty": "medium",
-    "explanation": "Total runs so far = 38×40 = 1520. Required total for 41 innings at avg 40 = 41×40 = 1640. Runs needed = 1640-1520 = 120. Hmm, let me recheck. 120 is option A. Wait: 41×40=1640, 1640-1520=120. Answer should be 120."
+    "explanation": "Total runs so far = 38×40 = 1520. Required total for 41 innings at avg 40 = 41×40 = 1640. Runs needed = 1640−1520 = 120."
   },
   {
     "text": "The average weight of A, B, C is 60 kg. A's weight is 10 kg more than B's and 15 kg more than C's. Find A's weight.",
@@ -123,7 +123,7 @@
     "section": "numerical",
     "topic": "Geometry",
     "difficulty": "medium",
-    "explanation": "(4/3) × (22/7) × r³ = 4851. r³ = 4851 × 3 × 7 / (4 × 22) = 4851 × 21/88 = 1157.625. Hmm: 4851 × 21 = 101871. 101871/88 = 1157.625. r = ∛1157.625 ≈ 10.5. Check: (4/3)(22/7)(10.5)³ = (4/3)(22/7)(1157.625) = 88/21 × 1157.625 = 4851. ✓"
+    "explanation": "(4/3) × (22/7) × r³ = 4851. r³ = 4851 × 21/88 = 1157.625. r = ∛1157.625 = 10.5 cm. Verify: (4/3)(22/7)(10.5)³ = (88/21)(1157.625) = 4851. ✓"
   },
   {
     "text": "An equilateral triangle has a side of 12 cm. Find its area.",
@@ -153,13 +153,13 @@
     "explanation": "Let ages be 7x and 2x. After 10 years: (7x+10)/(2x+10) = 9/4. 28x+40 = 18x+90. 10x = 50. x=5. Father = 35."
   },
   {
-    "text": "A sum of Rs. 3600 is divided among A, B, C such that A gets 2/5 of what B gets and B gets 3/4 of what C gets. Find C's share.",
+    "text": "A sum of Rs. 4100 is divided among A, B, C such that A gets 2/5 of what B gets and B gets 3/4 of what C gets. Find C's share.",
     "options": ["Rs. 2000", "Rs. 1500", "Rs. 1200", "Rs. 1800"],
     "correctAnswer": 0,
     "section": "numerical",
     "topic": "Ratios",
     "difficulty": "medium",
-    "explanation": "B = (3/4)C. A = (2/5)B = (2/5)(3/4)C = (3/10)C. Total: (3/10)C + (3/4)C + C = 3600. (6+15+20)/20 × C = 3600. (41/20)C = 3600. Hmm: 3C/10 + 3C/4 + C = (6C+15C+20C)/20 = 41C/20 = 3600. C = 3600×20/41 ≈ 1756. Not clean. Let me re-read: A gets 2/5 of B's share. B gets 3/4 of C's share. A:B = 2:5? No, A = (2/5)×B. So A/B = 2/5. B/C = 3/4. A:B:C = (2/5×3/4) : 3/4 : 1 = 6/20 : 15/20 : 20/20 = 6:15:20. Total parts = 41. C = 20/41 × 3600 ≈ 1756. Not matching options. Let me use simpler numbers: A = 2/5 B, B = 3/4 C. A:B = 2:5, B:C = 3:4. Make B common: A:B = 6:15, B:C = 15:20. A:B:C = 6:15:20. Sum = 41. Hmm. Not clean. Let me adjust the problem. Actually let me change the answer: C = 20×3600/41 = 72000/41 = 1756.1. Closest is Rs. 1800. Going with 2000."
+    "explanation": "B = (3/4)C. A = (2/5)B = (2/5)(3/4)C = (3/10)C. A:B:C = 3/10 : 3/4 : 1 = 6:15:20. Total parts = 41. C's share = (20/41) × 4100 = Rs. 2000."
   },
   {
     "text": "If 15 men can do a piece of work in 20 days, in how many days can 25 men do the same work?",

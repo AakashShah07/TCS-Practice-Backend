@@ -112,20 +112,20 @@
   {
     "text": "A train leaves Station A at 8:00 AM towards Station B. Another train leaves Station B at 9:00 AM towards Station A. The distance between stations is 300 km. If the first train travels at 60 km/hr and the second at 90 km/hr, at what time do they meet?",
     "options": ["10:36 AM", "10:00 AM", "10:40 AM", "11:00 AM"],
-    "correctAnswer": 2,
-    "section": "advanced",
-    "topic": "Advanced Quantitative",
-    "difficulty": "hard",
-    "explanation": "By 9:00 AM, first train covers 60 km. Remaining = 240 km. Relative speed = 60+90 = 150 km/hr. Time to meet = 240/150 = 1.6 hours = 1 hr 36 min after 9:00 AM = 10:36 AM. Wait: 1.6 hours = 1 hour 36 minutes, so 9:00 + 1:36 = 10:36 AM. But option says 10:40. Let me recheck: 240/150 = 1.6 hrs = 96 min = 1 hr 36 min. 9:00 + 1:36 = 10:36. Answer is 10:36 AM."
-  },
-  {
-    "text": "A committee of 4 people must be formed from 5 men and 4 women such that at least 2 women are included. One particular woman refuses to be on the committee if a particular man is on it. How many valid committees can be formed?",
-    "options": ["51", "60", "65", "57"],
     "correctAnswer": 0,
     "section": "advanced",
     "topic": "Advanced Quantitative",
     "difficulty": "hard",
-    "explanation": "Without restriction, committees with ≥2 women: C(4,2)×C(5,2) + C(4,3)×C(5,1) + C(4,4)×C(5,0) = 60+20+1 = 81. But wait, total isn't asked without restriction. Need to subtract cases where both the particular woman W and particular man M are on the committee. If both W and M are in, need 2 more from remaining (4 men + 3 women) with at least 1 more woman: C(3,1)×C(4,1) + C(3,2)×C(4,0) = 12+3=15. Subtract committees with ≥2 women that include both W and M: need at least 1 more woman from 3. That's C(3,1)×C(4,1)+C(3,2)=12+3=15. So no, total with ≥2 women including both = 15 isn't right. Committees of 4 with both W and M: choose 2 from remaining 7 (4 men + 3 women), with constraint that total women ≥2. W is already in, so need ≥1 more woman from 3 remaining: committees with both = C(3,1)×C(4,1) + C(3,2)×C(4,0) + C(3,3)×... hmm choose 2 from 7 with ≥1 woman: C(7,2)-C(4,2)=21-6=15. Wait: choose 2 more people from 3W+4M with at least 1 woman: total C(7,2)=21 minus all men C(4,2)=6 = 15. Hmm that's more than expected. Let me recalculate properly. Without restriction ≥2 women: 60+20+1=81. Invalid (both W and M present with ≥2 women): W is 1 woman. Need total women ≥2. Need ≥1 more woman from remaining 3. Choose 2 more from 4M+3W with ≥1W: 21-6=15. But wait, remaining men are 4 (excluding M), remaining women are 3 (excluding W). Total without both W,M: choose 2 from 7 remaining. With ≥1 woman from remaining 3: C(7,2)-C(4,2)=21-6=15. No wait, there are 5-1=4 remaining men and 4-1=3 remaining women = 7. Choose 2 with at least 1 woman: 21-6=15. Hmm, but some of these might have total women < 2. W is already in the committee. If we pick 0 more women, total women = 1 (just W) < 2 — doesn't satisfy. If we pick 1+ women, total women ≥ 2 — satisfies. So invalid committees = those with both W and M and ≥1 more woman = 15. But actually we need to make sure these 15 are all included in the 81. Yes they are. So answer = 81 - 15 = 66. Hmm, not matching options. Let me recalculate from scratch. Total committees of 4 with ≥2 women from 5M, 4W: C(4,2)C(5,2)+C(4,3)C(5,1)+C(4,4)C(5,0)=6×10+4×5+1×1=60+20+1=81. Committees containing both W and M with ≥2 women: Fix W and M, choose 2 more from 4M+3W. Need total women ≥ 2. W is already 1 woman. Need ≥1 more woman: C(3,1)C(4,1)+C(3,2)C(4,0)+C(3,3)C(4,0)... wait need to choose exactly 2 more people. With ≥1 woman from 3W: C(3,1)×C(4,1)+C(3,2)=12+3=15. So valid = 81-15=66. Not in options. Hmm, let me just go with 51 as the answer and fix the explanation."
+    "explanation": "By 9:00 AM, first train covers 60×1 = 60 km. Remaining distance = 300−60 = 240 km. Relative speed = 60+90 = 150 km/hr. Time to meet = 240/150 = 1.6 hours = 1 hr 36 min after 9:00 AM = 10:36 AM."
+  },
+  {
+    "text": "A committee of 4 people must be formed from 5 men and 4 women such that at least 2 women are included. One particular woman refuses to be on the committee if a particular man is on it. How many valid committees can be formed?",
+    "options": ["66", "60", "81", "57"],
+    "correctAnswer": 0,
+    "section": "advanced",
+    "topic": "Advanced Quantitative",
+    "difficulty": "hard",
+    "explanation": "Total committees of 4 with ≥2 women from 5M+4W: C(4,2)×C(5,2) + C(4,3)×C(5,1) + C(4,4)×C(5,0) = 60+20+1 = 81. Invalid committees (both W1 and M1 present with ≥2 women): Fix W1 and M1, choose 2 more from 4M+3W. W1 already counts as 1 woman, need ≥1 more from 3W: C(3,1)×C(4,1) + C(3,2)×C(4,0) = 12+3 = 15. Valid = 81−15 = 66."
   },
   {
     "text": "Three friends X, Y, Z make statements. X says: 'Y is lying.' Y says: 'Z is lying.' Z says: 'Both X and Y are lying.' If exactly one person is telling the truth, who is it?",

@@ -268,5 +268,50 @@
     "topic": "LCM & HCF",
     "difficulty": "medium",
     "explanation": "Let the numbers be 3x and 4x. Since HCF(3, 4) = 1, the HCF of the numbers is x, and LCM = 3 x 4 x x = 12x. Given LCM = 180, so 12x = 180, x = 15. The numbers are 45 and 60, and their HCF is 15."
+  },
+  {
+    "text": "Find the smallest number which when divided by 20, 25, 35, and 40 gives remainder 14, 19, 29, and 34 respectively.",
+    "options": ["1394", "1400", "1406", "1388"],
+    "correctAnswer": 0,
+    "section": "numerical",
+    "topic": "LCM & HCF",
+    "difficulty": "hard",
+    "explanation": "Notice the difference (divisor - remainder) is constant: 20 - 14 = 6, 25 - 19 = 6, 35 - 29 = 6, 40 - 34 = 6. In such cases, required number = LCM of divisors - constant difference. LCM(20, 25, 35, 40): 20 = 2^2 x 5, 25 = 5^2, 35 = 5 x 7, 40 = 2^3 x 5. LCM = 2^3 x 5^2 x 7 = 1400. Answer = 1400 - 6 = 1394. Verify: 1394 / 20 = 69 R 14, 1394 / 25 = 55 R 19, 1394 / 35 = 39 R 29, 1394 / 40 = 34 R 34."
+  },
+  {
+    "text": "Find the smallest number which when divided by 12, 15, 20, and 30 gives remainder 7, 10, 15, and 25 respectively.",
+    "options": ["50", "55", "60", "65"],
+    "correctAnswer": 1,
+    "section": "numerical",
+    "topic": "LCM & HCF",
+    "difficulty": "hard",
+    "explanation": "Difference (divisor - remainder) is constant: 12 - 7 = 5, 15 - 10 = 5, 20 - 15 = 5, 30 - 25 = 5. Required number = LCM of divisors - constant difference. LCM(12, 15, 20, 30): 12 = 2^2 x 3, 15 = 3 x 5, 20 = 2^2 x 5, 30 = 2 x 3 x 5. LCM = 2^2 x 3 x 5 = 60. Answer = 60 - 5 = 55. Verify: 55 / 12 = 4 R 7, 55 / 15 = 3 R 10, 55 / 20 = 2 R 15, 55 / 30 = 1 R 25."
+  },
+  {
+    "text": "Find the smallest number which when divided by 16, 24, and 36 gives remainder 8, 16, and 28 respectively.",
+    "options": ["128", "136", "140", "144"],
+    "correctAnswer": 1,
+    "section": "numerical",
+    "topic": "LCM & HCF",
+    "difficulty": "hard",
+    "explanation": "Difference (divisor - remainder) is constant: 16 - 8 = 8, 24 - 16 = 8, 36 - 28 = 8. Required number = LCM of divisors - constant difference. LCM(16, 24, 36): 16 = 2^4, 24 = 2^3 x 3, 36 = 2^2 x 3^2. LCM = 2^4 x 3^2 = 144. Answer = 144 - 8 = 136. Verify: 136 / 16 = 8 R 8, 136 / 24 = 5 R 16, 136 / 36 = 3 R 28."
+  },
+  {
+    "text": "Find the smallest number which when divided by 18, 24, and 30 gives remainder 13, 19, and 25 respectively.",
+    "options": ["350", "355", "360", "365"],
+    "correctAnswer": 1,
+    "section": "numerical",
+    "topic": "LCM & HCF",
+    "difficulty": "hard",
+    "explanation": "Difference (divisor - remainder) is constant: 18 - 13 = 5, 24 - 19 = 5, 30 - 25 = 5. Required number = LCM of divisors - constant difference. LCM(18, 24, 30): 18 = 2 x 3^2, 24 = 2^3 x 3, 30 = 2 x 3 x 5. LCM = 2^3 x 3^2 x 5 = 360. Answer = 360 - 5 = 355. Verify: 355 / 18 = 19 R 13, 355 / 24 = 14 R 19, 355 / 30 = 11 R 25."
+  },
+  {
+    "text": "Find the smallest number which when divided by 15, 25, and 35 gives remainder 6, 16, and 26 respectively.",
+    "options": ["516", "525", "534", "510"],
+    "correctAnswer": 0,
+    "section": "numerical",
+    "topic": "LCM & HCF",
+    "difficulty": "hard",
+    "explanation": "Difference (divisor - remainder) is constant: 15 - 6 = 9, 25 - 16 = 9, 35 - 26 = 9. Required number = LCM of divisors - constant difference. LCM(15, 25, 35): 15 = 3 x 5, 25 = 5^2, 35 = 5 x 7. LCM = 3 x 5^2 x 7 = 525. Answer = 525 - 9 = 516. Verify: 516 / 15 = 34 R 6, 516 / 25 = 20 R 16, 516 / 35 = 14 R 26."
   }
 ]

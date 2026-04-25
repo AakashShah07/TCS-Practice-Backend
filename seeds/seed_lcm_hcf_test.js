@@ -23,8 +23,8 @@ const seed = async () => {
       section: 'numerical',
       topic: 'LCM & HCF',
       questions: questions.map(q => q._id),
-      totalQuestions: 30,
-      duration: 40 * 60, // 40 minutes in seconds
+      totalQuestions: 35,
+      duration: 45 * 60, // 45 minutes in seconds
       sectionLocked: false,
       isActive: true,
     });

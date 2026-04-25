@@ -1,0 +1,272 @@
+[
+  {
+    "text": "Find the HCF of 72, 120, and 168.",
+    "options": ["12", "24", "6", "18"],
+    "correctAnswer": 1,
+    "section": "numerical",
+    "topic": "LCM & HCF",
+    "difficulty": "easy",
+    "explanation": "72 = 2^3 x 3^2, 120 = 2^3 x 3 x 5, 168 = 2^3 x 3 x 7. HCF = 2^3 x 3 = 24."
+  },
+  {
+    "text": "Find the HCF of 84, 126, and 210.",
+    "options": ["14", "21", "42", "7"],
+    "correctAnswer": 2,
+    "section": "numerical",
+    "topic": "LCM & HCF",
+    "difficulty": "easy",
+    "explanation": "84 = 2^2 x 3 x 7, 126 = 2 x 3^2 x 7, 210 = 2 x 3 x 5 x 7. HCF = 2 x 3 x 7 = 42."
+  },
+  {
+    "text": "Find the HCF of 48, 64, and 80.",
+    "options": ["8", "12", "4", "16"],
+    "correctAnswer": 3,
+    "section": "numerical",
+    "topic": "LCM & HCF",
+    "difficulty": "easy",
+    "explanation": "48 = 2^4 x 3, 64 = 2^6, 80 = 2^4 x 5. HCF = 2^4 = 16."
+  },
+  {
+    "text": "Find the LCM of 15, 20, and 30.",
+    "options": ["60", "120", "180", "240"],
+    "correctAnswer": 0,
+    "section": "numerical",
+    "topic": "LCM & HCF",
+    "difficulty": "easy",
+    "explanation": "15 = 3 x 5, 20 = 2^2 x 5, 30 = 2 x 3 x 5. LCM = 2^2 x 3 x 5 = 60."
+  },
+  {
+    "text": "Find the LCM of 12, 18, and 24.",
+    "options": ["36", "48", "72", "144"],
+    "correctAnswer": 2,
+    "section": "numerical",
+    "topic": "LCM & HCF",
+    "difficulty": "easy",
+    "explanation": "12 = 2^2 x 3, 18 = 2 x 3^2, 24 = 2^3 x 3. LCM = 2^3 x 3^2 = 72."
+  },
+  {
+    "text": "Find the LCM of 8, 14, and 21.",
+    "options": ["56", "84", "112", "168"],
+    "correctAnswer": 3,
+    "section": "numerical",
+    "topic": "LCM & HCF",
+    "difficulty": "easy",
+    "explanation": "8 = 2^3, 14 = 2 x 7, 21 = 3 x 7. LCM = 2^3 x 3 x 7 = 168."
+  },
+  {
+    "text": "For two numbers, LCM = 180 and HCF = 6. If one number is 30, find the other.",
+    "options": ["36", "42", "48", "60"],
+    "correctAnswer": 0,
+    "section": "numerical",
+    "topic": "LCM & HCF",
+    "difficulty": "medium",
+    "explanation": "For two numbers: LCM x HCF = Product of the numbers. So other number = (LCM x HCF) / given number = (180 x 6) / 30 = 1080 / 30 = 36."
+  },
+  {
+    "text": "For two numbers, LCM = 420 and HCF = 14. If one number is 84, find the other.",
+    "options": ["56", "70", "84", "98"],
+    "correctAnswer": 1,
+    "section": "numerical",
+    "topic": "LCM & HCF",
+    "difficulty": "medium",
+    "explanation": "Other number = (LCM x HCF) / given number = (420 x 14) / 84 = 5880 / 84 = 70."
+  },
+  {
+    "text": "The LCM of two numbers is 360 and their HCF is 12. If one number is 60, find the other.",
+    "options": ["48", "60", "72", "84"],
+    "correctAnswer": 2,
+    "section": "numerical",
+    "topic": "LCM & HCF",
+    "difficulty": "medium",
+    "explanation": "Other number = (LCM x HCF) / given number = (360 x 12) / 60 = 4320 / 60 = 72."
+  },
+  {
+    "text": "Three numbers are in the ratio 2:3:5 and their HCF is 12. Find the numbers.",
+    "options": ["24, 36, 60", "12, 18, 30", "36, 48, 60", "48, 72, 120"],
+    "correctAnswer": 0,
+    "section": "numerical",
+    "topic": "LCM & HCF",
+    "difficulty": "easy",
+    "explanation": "If HCF = 12 and ratio is 2:3:5, the numbers are 2 x 12 = 24, 3 x 12 = 36, and 5 x 12 = 60."
+  },
+  {
+    "text": "Three numbers are in the ratio 3:4:7 and their HCF is 8. Find the numbers.",
+    "options": ["12, 16, 28", "24, 32, 56", "48, 64, 112", "15, 20, 35"],
+    "correctAnswer": 1,
+    "section": "numerical",
+    "topic": "LCM & HCF",
+    "difficulty": "easy",
+    "explanation": "If HCF = 8 and ratio is 3:4:7, the numbers are 3 x 8 = 24, 4 x 8 = 32, and 7 x 8 = 56."
+  },
+  {
+    "text": "Three numbers are in the ratio 5:6:9 and their HCF is 15. Find the numbers.",
+    "options": ["50, 60, 90", "25, 30, 45", "75, 90, 135", "100, 120, 180"],
+    "correctAnswer": 2,
+    "section": "numerical",
+    "topic": "LCM & HCF",
+    "difficulty": "easy",
+    "explanation": "If HCF = 15 and ratio is 5:6:9, the numbers are 5 x 15 = 75, 6 x 15 = 90, and 9 x 15 = 135."
+  },
+  {
+    "text": "Three bells ring at intervals of 6, 8, and 12 minutes. If they ring together at 10:00 AM, when will they ring together again?",
+    "options": ["10:24 AM", "10:12 AM", "10:36 AM", "10:48 AM"],
+    "correctAnswer": 0,
+    "section": "numerical",
+    "topic": "LCM & HCF",
+    "difficulty": "medium",
+    "explanation": "LCM of 6, 8, and 12: 6 = 2 x 3, 8 = 2^3, 12 = 2^2 x 3. LCM = 2^3 x 3 = 24 minutes. They will ring together again at 10:00 + 24 = 10:24 AM."
+  },
+  {
+    "text": "Three traffic lights change every 36, 48, and 72 seconds. If they all change at the same time, after how many seconds will they change together again?",
+    "options": ["96", "144", "216", "288"],
+    "correctAnswer": 1,
+    "section": "numerical",
+    "topic": "LCM & HCF",
+    "difficulty": "medium",
+    "explanation": "36 = 2^2 x 3^2, 48 = 2^4 x 3, 72 = 2^3 x 3^2. LCM = 2^4 x 3^2 = 16 x 9 = 144 seconds."
+  },
+  {
+    "text": "Four bells toll at intervals of 4, 6, 8, and 10 seconds. If they toll together at 12:00 noon, when will they next toll together?",
+    "options": ["12:01 PM", "12:02 PM", "12:03 PM", "12:04 PM"],
+    "correctAnswer": 1,
+    "section": "numerical",
+    "topic": "LCM & HCF",
+    "difficulty": "medium",
+    "explanation": "4 = 2^2, 6 = 2 x 3, 8 = 2^3, 10 = 2 x 5. LCM = 2^3 x 3 x 5 = 120 seconds = 2 minutes. They will next toll together at 12:02 PM."
+  },
+  {
+    "text": "Find the greatest number that divides 135, 225, and 315 leaving remainder 5 in each case.",
+    "options": ["10", "15", "20", "25"],
+    "correctAnswer": 0,
+    "section": "numerical",
+    "topic": "LCM & HCF",
+    "difficulty": "medium",
+    "explanation": "Subtract the remainder from each number: 135 - 5 = 130, 225 - 5 = 220, 315 - 5 = 310. Now find HCF(130, 220, 310). 130 = 2 x 5 x 13, 220 = 2^2 x 5 x 11, 310 = 2 x 5 x 31. HCF = 2 x 5 = 10."
+  },
+  {
+    "text": "Find the greatest number that divides 150, 230, and 310 leaving remainder 6 in each case.",
+    "options": ["8", "16", "24", "32"],
+    "correctAnswer": 1,
+    "section": "numerical",
+    "topic": "LCM & HCF",
+    "difficulty": "medium",
+    "explanation": "Subtract the remainder: 150 - 6 = 144, 230 - 6 = 224, 310 - 6 = 304. Find HCF(144, 224, 304). 144 = 2^4 x 3^2, 224 = 2^5 x 7, 304 = 2^4 x 19. HCF = 2^4 = 16."
+  },
+  {
+    "text": "Find the greatest number that divides 99, 153, and 207 leaving remainder 3 in each case.",
+    "options": ["3", "4", "6", "12"],
+    "correctAnswer": 2,
+    "section": "numerical",
+    "topic": "LCM & HCF",
+    "difficulty": "medium",
+    "explanation": "Subtract the remainder: 99 - 3 = 96, 153 - 3 = 150, 207 - 3 = 204. Find HCF(96, 150, 204). 96 = 2^5 x 3, 150 = 2 x 3 x 5^2, 204 = 2^2 x 3 x 17. HCF = 2 x 3 = 6."
+  },
+  {
+    "text": "Find the least number which when divided by 12, 16, and 20 leaves remainder 7 in each case.",
+    "options": ["240", "247", "252", "267"],
+    "correctAnswer": 1,
+    "section": "numerical",
+    "topic": "LCM & HCF",
+    "difficulty": "medium",
+    "explanation": "First find LCM(12, 16, 20). 12 = 2^2 x 3, 16 = 2^4, 20 = 2^2 x 5. LCM = 2^4 x 3 x 5 = 240. The required number = LCM + remainder = 240 + 7 = 247."
+  },
+  {
+    "text": "Find the least number which when divided by 15, 20, and 25 leaves remainder 9 in each case.",
+    "options": ["300", "305", "309", "315"],
+    "correctAnswer": 2,
+    "section": "numerical",
+    "topic": "LCM & HCF",
+    "difficulty": "medium",
+    "explanation": "LCM(15, 20, 25). 15 = 3 x 5, 20 = 2^2 x 5, 25 = 5^2. LCM = 2^2 x 3 x 5^2 = 300. The required number = 300 + 9 = 309."
+  },
+  {
+    "text": "Find the least number which when divided by 8, 12, and 18 leaves remainder 5 in each case.",
+    "options": ["67", "72", "75", "77"],
+    "correctAnswer": 3,
+    "section": "numerical",
+    "topic": "LCM & HCF",
+    "difficulty": "medium",
+    "explanation": "LCM(8, 12, 18). 8 = 2^3, 12 = 2^2 x 3, 18 = 2 x 3^2. LCM = 2^3 x 3^2 = 72. The required number = 72 + 5 = 77."
+  },
+  {
+    "text": "Find the least number which is exactly divisible by 1/2, 2/3, and 3/4.",
+    "options": ["6", "8", "12", "24"],
+    "correctAnswer": 0,
+    "section": "numerical",
+    "topic": "LCM & HCF",
+    "difficulty": "medium",
+    "explanation": "LCM of fractions = LCM of numerators / HCF of denominators = LCM(1, 2, 3) / HCF(2, 3, 4) = 6 / 1 = 6. Verification: 6 / (1/2) = 12, 6 / (2/3) = 9, 6 / (3/4) = 8. All are whole numbers."
+  },
+  {
+    "text": "Find the LCM of 2/3, 4/9, and 8/27.",
+    "options": ["2/27", "8/3", "8/27", "4/3"],
+    "correctAnswer": 1,
+    "section": "numerical",
+    "topic": "LCM & HCF",
+    "difficulty": "hard",
+    "explanation": "LCM of fractions = LCM of numerators / HCF of denominators = LCM(2, 4, 8) / HCF(3, 9, 27) = 8 / 3."
+  },
+  {
+    "text": "Find the HCF of 3/4, 5/6, and 7/8.",
+    "options": ["1/24", "1/12", "1/48", "1/8"],
+    "correctAnswer": 0,
+    "section": "numerical",
+    "topic": "LCM & HCF",
+    "difficulty": "medium",
+    "explanation": "HCF of fractions = HCF of numerators / LCM of denominators = HCF(3, 5, 7) / LCM(4, 6, 8) = 1 / 24."
+  },
+  {
+    "text": "The product of two numbers is 2028 and their HCF is 12. Find the LCM.",
+    "options": ["144", "156", "169", "182"],
+    "correctAnswer": 2,
+    "section": "numerical",
+    "topic": "LCM & HCF",
+    "difficulty": "easy",
+    "explanation": "For two numbers: Product = LCM x HCF. So LCM = Product / HCF = 2028 / 12 = 169."
+  },
+  {
+    "text": "The product of two numbers is 3780 and their HCF is 18. Find the LCM.",
+    "options": ["180", "195", "200", "210"],
+    "correctAnswer": 3,
+    "section": "numerical",
+    "topic": "LCM & HCF",
+    "difficulty": "easy",
+    "explanation": "LCM = Product / HCF = 3780 / 18 = 210."
+  },
+  {
+    "text": "The product of two numbers is 1764 and their LCM is 252. Find the HCF.",
+    "options": ["6", "7", "9", "14"],
+    "correctAnswer": 1,
+    "section": "numerical",
+    "topic": "LCM & HCF",
+    "difficulty": "medium",
+    "explanation": "HCF = Product / LCM = 1764 / 252 = 7."
+  },
+  {
+    "text": "The HCF of two numbers is 16 and their LCM is 480. If one number is 80, find the other.",
+    "options": ["96", "100", "120", "144"],
+    "correctAnswer": 0,
+    "section": "numerical",
+    "topic": "LCM & HCF",
+    "difficulty": "medium",
+    "explanation": "Other number = (LCM x HCF) / given number = (480 x 16) / 80 = 7680 / 80 = 96."
+  },
+  {
+    "text": "The sum of two numbers is 216 and their HCF is 27. How many such pairs of numbers are possible?",
+    "options": ["1", "2", "3", "4"],
+    "correctAnswer": 1,
+    "section": "numerical",
+    "topic": "LCM & HCF",
+    "difficulty": "hard",
+    "explanation": "Let the numbers be 27a and 27b where HCF(a, b) = 1. Then 27(a + b) = 216, so a + b = 8. Co-prime pairs (a, b) with a + b = 8 and a < b: (1, 7) and (3, 5). The pairs (2, 6) and (4, 4) are not co-prime. So 2 pairs are possible: (27, 189) and (81, 135)."
+  },
+  {
+    "text": "Two numbers are in the ratio 3:4. Their LCM is 180. Find their HCF.",
+    "options": ["12", "15", "18", "20"],
+    "correctAnswer": 1,
+    "section": "numerical",
+    "topic": "LCM & HCF",
+    "difficulty": "medium",
+    "explanation": "Let the numbers be 3x and 4x. Since HCF(3, 4) = 1, the HCF of the numbers is x, and LCM = 3 x 4 x x = 12x. Given LCM = 180, so 12x = 180, x = 15. The numbers are 45 and 60, and their HCF is 15."
+  }
+]

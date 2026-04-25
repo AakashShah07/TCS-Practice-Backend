@@ -14,7 +14,9 @@
     "seed:ratio-percentage": "node seeds/seed_ratio_percentage.js",
     "seed:ratio-percentage-test": "node seeds/seed_ratio_percentage_test.js",
     "seed:time-and-work": "node seeds/seed_time_and_work.js",
-    "seed:time-and-work-test": "node seeds/seed_time_and_work_test.js"
+    "seed:time-and-work-test": "node seeds/seed_time_and_work_test.js",
+    "seed:lcm-hcf": "node seeds/seed_lcm_hcf.js",
+    "seed:lcm-hcf-test": "node seeds/seed_lcm_hcf_test.js"
   },
   "keywords": [],
   "author": "",

@@ -11,6 +11,8 @@ Express.js + MongoDB REST API for a TCS NQT exam practice platform. Provides aut
 - **Database:** MongoDB Atlas via Mongoose 9
 - **Auth:** JWT (access + refresh tokens), bcryptjs
 - **Validation:** express-validator
+- **Security:** helmet, cors
+- **Logging:** morgan
 - **Deployment:** Vercel (serverless)
 
 ## Project Structure
@@ -41,7 +43,15 @@ npm run seed:ratio-percentage       # node seeds/seed_ratio_percentage.js
 npm run seed:ratio-percentage-test  # node seeds/seed_ratio_percentage_test.js
 npm run seed:time-and-work          # node seeds/seed_time_and_work.js
 npm run seed:time-and-work-test     # node seeds/seed_time_and_work_test.js
+npm run seed:lcm-hcf               # node seeds/seed_lcm_hcf.js
+npm run seed:lcm-hcf-test          # node seeds/seed_lcm_hcf_test.js
 ```
+
+Additional seed scripts (no npm aliases — run directly with `node seeds/<file>`):
+- `seed_numerical_boost.js`, `seed_more.js`, `seed_tests.js`
+- `seed_blood_relations.js`, `seed_blood_relations_test.js`
+- `seed_simplification.js`, `seed_simplification_test.js`
+- `seed_approximation.js`, `seed_approximation_test.js`
 
 ## API Routes
 
@@ -78,13 +88,14 @@ PORT, MONGO_URI, JWT_SECRET, JWT_REFRESH_SECRET, JWT_EXPIRE, JWT_REFRESH_EXPIRE,
 
 ## Topic Practice Tests
 
-| Topic | Questions | Duration | Seed Commands |
-|---|---|---|---|
-| Ratio & Percentage | 40 | 40 min | `seed:ratio-percentage` + `seed:ratio-percentage-test` |
-| Time & Work | 30 | 45 min | `seed:time-and-work` + `seed:time-and-work-test` |
-| Blood Relations | 25 | 30 min | `seed_blood_relations.js` + `seed_blood_relations_test.js` |
-| Simplification | — | — | `seed_simplification.js` + `seed_simplification_test.js` |
-| Approximation | — | — | `seed_approximation.js` + `seed_approximation_test.js` |
+| Topic | Questions (pool) | Per Test | Duration | Seed Commands |
+|---|---|---|---|---|
+| Ratio & Percentage | 40 | 40 | 40 min | `seed:ratio-percentage` + `seed:ratio-percentage-test` |
+| Time & Work | 30 | 30 | 45 min | `seed:time-and-work` + `seed:time-and-work-test` |
+| LCM & HCF | 35 | 35 | 45 min | `seed:lcm-hcf` + `seed:lcm-hcf-test` |
+| Blood Relations | 50 | 25 | 30 min | `seed_blood_relations.js` + `seed_blood_relations_test.js` |
+| Simplification | 30 | 30 | 45 min | `seed_simplification.js` + `seed_simplification_test.js` |
+| Approximation | 30 | 30 | 40 min | `seed_approximation.js` + `seed_approximation_test.js` |
 
 ## Key API Behaviors
 

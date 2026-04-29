@@ -148,4 +148,24 @@ Example 1
 Input
 strs = ["flower", "flow", "flight"]
 Output
-"fl"
+"fl" 
+
+
+q7: Jack loves Sundays because he gets to play and go cycling with his friends.
+
+At the beginning of every month, Jack counts how many Sundays will occur within the next n days.
+
+The month can start on any day of the week:
+
+Sunday
+Monday
+Tuesday
+...
+Saturday
+
+Your task is to count the number of Sundays within n days from the start of the month.
+
+Example
+Input
+start_day = "mon"
+n = 13

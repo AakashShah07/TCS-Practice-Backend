@@ -249,5 +249,80 @@
       "spaceComplexity": "O(n)"
     },
     "source": "TCS NQT PYQ - Advanced Coding"
+  },
+  {
+    "title": "Longest Common Prefix",
+    "description": "Write a function to find the longest common prefix among an array of strings.\n\nIf there is no common prefix, return an empty string \"\".",
+    "difficulty": "easy",
+    "topic": "Strings",
+    "constraints": [
+      "1 <= strs.length <= 200",
+      "0 <= strs[i].length <= 200",
+      "strs[i] consists of only lowercase English letters"
+    ],
+    "examples": [
+      {
+        "input": "strs = [\"flower\", \"flow\", \"flight\"]",
+        "output": "\"fl\"",
+        "explanation": "All three strings start with 'fl'. The third character differs ('o' vs 'i'), so the longest common prefix is 'fl'."
+      },
+      {
+        "input": "strs = [\"dog\", \"racecar\", \"car\"]",
+        "output": "\"\"",
+        "explanation": "There is no common prefix among the input strings, so return empty string."
+      }
+    ],
+    "bruteForce": {
+      "approach": "**Logic:** Take the first string as a reference. For each character position, check if that character exists and matches in ALL other strings.\n\n**Steps:**\n1. If array is empty, return \"\"\n2. Take first string as reference\n3. For each index i (0 to len(first_string)-1):\n   a. Get character c = first_string[i]\n   b. For every other string in the array:\n      - If i >= len(that_string) OR that_string[i] != c → return prefix so far\n4. If we finish the loop, entire first string is the prefix",
+      "code": "def longest_common_prefix(strs):\n    if not strs:\n        return \"\"\n    \n    prefix = \"\"\n    first = strs[0]\n    \n    for i in range(len(first)):\n        c = first[i]\n        for s in strs[1:]:\n            if i >= len(s) or s[i] != c:\n                return prefix\n        prefix += c\n    \n    return prefix\n\n# Input\nn = int(input())\nstrs = [input() for _ in range(n)]\nprint(longest_common_prefix(strs))",
+      "language": "python",
+      "timeComplexity": "O(S) where S = sum of all characters in all strings",
+      "spaceComplexity": "O(m) where m = length of prefix (string concatenation)"
+    },
+    "optimal": {
+      "approach": "**Logic:** Sort the array. After sorting, the most different strings will be at the first and last positions. So we only need to compare the first and last string.\n\n**Why this works:** Sorting arranges strings lexicographically. If the first and last strings share a common prefix, ALL strings in between must also share that prefix.\n\n**Steps:**\n1. Sort the array\n2. Compare only the first and last string character by character\n3. Return the common prefix between them\n\n**Alternative optimal:** Use `os.path.commonprefix` or zip-based approach for clean code.",
+      "code": "def longest_common_prefix(strs):\n    if not strs:\n        return \"\"\n    \n    strs.sort()\n    first = strs[0]\n    last = strs[-1]\n    prefix = \"\"\n    \n    for i in range(min(len(first), len(last))):\n        if first[i] != last[i]:\n            break\n        prefix += first[i]\n    else:\n        return prefix\n    \n    return prefix\n\n# Input\nn = int(input())\nstrs = [input() for _ in range(n)]\nprint(longest_common_prefix(strs))\n\n# --- Clean zip-based alternative ---\n# def lcp(strs):\n#     prefix = \"\"\n#     for chars in zip(*strs):\n#         if len(set(chars)) == 1:\n#             prefix += chars[0]\n#         else:\n#             break\n#     return prefix",
+      "language": "python",
+      "timeComplexity": "O(n * m * log n) where n = number of strings, m = max string length (due to sort)",
+      "spaceComplexity": "O(m)"
+    },
+    "source": "TCS NQT PYQ"
+  },
+  {
+    "title": "Count Sundays in N Days",
+    "description": "Jack loves Sundays because he gets to play and go cycling with his friends.\n\nAt the beginning of every month, Jack counts how many Sundays will occur within the next n days.\n\nThe month can start on any day of the week: Sunday, Monday, Tuesday, ..., Saturday.\n\nGiven the starting day and n days, count the number of Sundays.",
+    "difficulty": "easy",
+    "topic": "Math & Logic",
+    "constraints": [
+      "1 <= n <= 10^9",
+      "start_day is one of: sun, mon, tue, wed, thu, fri, sat"
+    ],
+    "examples": [
+      {
+        "input": "start_day = \"mon\"\nn = 13",
+        "output": "1",
+        "explanation": "Starting from Monday, the days are:\nMon(1), Tue(2), Wed(3), Thu(4), Fri(5), Sat(6), Sun(7), Mon(8), Tue(9), Wed(10), Thu(11), Fri(12), Sat(13).\nOnly 1 Sunday falls within 13 days."
+      },
+      {
+        "input": "start_day = \"sun\"\nn = 14",
+        "output": "2",
+        "explanation": "Starting from Sunday: Sun(1), Mon(2)...Sat(7), Sun(8), Mon(9)...Sat(14). Two Sundays on day 1 and day 8."
+      }
+    ],
+    "bruteForce": {
+      "approach": "**Logic:** Simulate each day. Track the current day of the week and count how many times we land on Sunday.\n\n**Steps:**\n1. Map start_day to a number (sun=0, mon=1, ..., sat=6)\n2. Loop from day 1 to n:\n   a. Calculate current_day = (start_day_num + day - 1) % 7\n   b. If current_day == 0 (Sunday), increment count\n3. Return count\n\n**Problem:** For very large n (up to 10^9), this is too slow.",
+      "code": "def count_sundays_brute(start_day, n):\n    days = {'sun': 0, 'mon': 1, 'tue': 2, 'wed': 3,\n            'thu': 4, 'fri': 5, 'sat': 6}\n    start = days[start_day.lower()]\n    count = 0\n    \n    for i in range(n):\n        current = (start + i) % 7\n        if current == 0:  # Sunday\n            count += 1\n    \n    return count\n\n# Input\nstart_day = input()\nn = int(input())\nprint(count_sundays_brute(start_day, n))",
+      "language": "python",
+      "timeComplexity": "O(n) — TLE for n up to 10^9",
+      "spaceComplexity": "O(1)"
+    },
+    "optimal": {
+      "approach": "**Logic:** Use math instead of simulation.\n\n**Key Insight:** In every 7 consecutive days, exactly 1 Sunday occurs. So:\n1. Find how many days until the first Sunday from start_day\n2. Calculate how many complete weeks fit in the remaining days\n3. Check if there's a leftover partial week that includes a Sunday\n\n**Formula:**\n- days_to_sunday = (7 - start_day_num) % 7\n- If days_to_sunday == 0, the first day itself is Sunday\n- If days_to_sunday >= n, there are 0 Sundays (first Sunday is beyond n days)\n- Otherwise: remaining = n - days_to_sunday, sundays = 1 + (remaining - 1) // 7\n\n**Simpler formula:**\n- days_to_sunday = (7 - start) % 7 (distance to first Sunday, 0 if start is Sunday)\n- sundays = (n - days_to_sunday + 6) // 7 if days_to_sunday < n, else 0\n\nOr even simpler: Every 7-day block has 1 Sunday. Count full weeks + check remainder.",
+      "code": "def count_sundays_optimal(start_day, n):\n    days = {'sun': 0, 'mon': 1, 'tue': 2, 'wed': 3,\n            'thu': 4, 'fri': 5, 'sat': 6}\n    start = days[start_day.lower()]\n    \n    # Days until first Sunday (0 if starting on Sunday)\n    days_to_sunday = (7 - start) % 7\n    \n    if days_to_sunday >= n:\n        # First Sunday is beyond n days\n        # But if start is Sunday (days_to_sunday=0), day 1 is Sunday\n        return 1 if days_to_sunday == 0 else 0\n    \n    # Remaining days after first Sunday\n    remaining = n - days_to_sunday\n    \n    # 1 for the first Sunday + complete weeks in remaining days\n    # Each complete 7-day block has 1 Sunday\n    sundays = (remaining + 6) // 7  # ceiling division\n    \n    return sundays\n\n# Input\nstart_day = input()\nn = int(input())\nprint(count_sundays_optimal(start_day, n))\n\n# --- Even simpler one-liner approach ---\n# def count_sundays(start, n):\n#     d = {'sun':0,'mon':1,'tue':2,'wed':3,'thu':4,'fri':5,'sat':6}\n#     s = d[start.lower()]\n#     # Last day's index in the week\n#     end = s + n - 1\n#     # Number of full weeks spanned\n#     return (end // 7) - (s // 7) + (1 if s == 0 or end % 7 >= 0 - s % 7 else 0)\n#     # Simplest: count Sundays in range [s, s+n-1]\n#     return sum(1 for i in range(s, s+n) if i % 7 == 0)",
+      "language": "python",
+      "timeComplexity": "O(1)",
+      "spaceComplexity": "O(1)"
+    },
+    "source": "TCS NQT PYQ"
   }
 ]

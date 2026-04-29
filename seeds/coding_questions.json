@@ -1,0 +1,253 @@
+[
+  {
+    "title": "Star Hash Balance",
+    "description": "Given a string S consisting only of '*' and '#'.\n\nFind the minimum number required to make the string valid.\n\nA string is considered valid if the number of '*' and '#' are equal.\n\nRules:\n- If count of '*' > count of '#' → return a positive integer (the difference)\n- If count of '#' > count of '*' → return a negative integer (the difference)\n- If both are equal → return 0",
+    "difficulty": "easy",
+    "topic": "Strings",
+    "constraints": [
+      "1 <= len(S) <= 10^5",
+      "S contains only '*' and '#'"
+    ],
+    "examples": [
+      {
+        "input": "###***",
+        "output": "0",
+        "explanation": "Number of '*' = 3, Number of '#' = 3. They are equal, so output is 0."
+      },
+      {
+        "input": "****##",
+        "output": "2",
+        "explanation": "Number of '*' = 4, Number of '#' = 2. Difference = 4 - 2 = 2. Since '*' > '#', return positive 2."
+      }
+    ],
+    "bruteForce": {
+      "approach": "**Logic:** Count '*' and '#' separately using two loops or two counter variables, then return the difference.\n\n**Steps:**\n1. Initialize two counters: star_count = 0, hash_count = 0\n2. Loop through each character in the string\n3. If character is '*', increment star_count\n4. If character is '#', increment hash_count\n5. Return star_count - hash_count",
+      "code": "def star_hash_balance(s):\n    star_count = 0\n    hash_count = 0\n    \n    for char in s:\n        if char == '*':\n            star_count += 1\n        elif char == '#':\n            hash_count += 1\n    \n    return star_count - hash_count\n\n# Input\ns = input()\nprint(star_hash_balance(s))",
+      "language": "python",
+      "timeComplexity": "O(n)",
+      "spaceComplexity": "O(1)"
+    },
+    "optimal": {
+      "approach": "**Logic:** Use a single counter variable. Increment for '*', decrement for '#'. The final value directly gives the answer.\n\n**Why this works:** Instead of tracking two counts and subtracting, we track the running difference directly. This saves one variable and one subtraction.\n\n**Steps:**\n1. Initialize balance = 0\n2. For each character: balance += 1 if '*', else balance -= 1\n3. Return balance",
+      "code": "def star_hash_balance(s):\n    balance = 0\n    for char in s:\n        balance += 1 if char == '*' else -1\n    return balance\n\n# Input\ns = input()\nprint(star_hash_balance(s))\n\n# --- One-liner alternative ---\n# s = input()\n# print(s.count('*') - s.count('#'))",
+      "language": "python",
+      "timeComplexity": "O(n)",
+      "spaceComplexity": "O(1)"
+    },
+    "source": "TCS NQT PYQ"
+  },
+  {
+    "title": "Count Elements Greater Than All Previous",
+    "description": "Given an integer array Arr of size N, find the count of elements whose value is greater than all of its previous elements.\n\nNote:\n- The first element is always counted.\n- An element is counted if it is strictly greater than every element before it.",
+    "difficulty": "easy",
+    "topic": "Arrays",
+    "constraints": [
+      "1 <= N <= 10^5",
+      "-10^9 <= Arr[i] <= 10^9"
+    ],
+    "examples": [
+      {
+        "input": "N = 5\nArr = [7, 4, 8, 2, 9]",
+        "output": "3",
+        "explanation": "7 → first element → counted\n4 → not greater than 7 → not counted\n8 → greater than 7 and 4 → counted\n2 → not greater than previous max (8) → not counted\n9 → greater than all previous → counted\nTotal = 3"
+      }
+    ],
+    "bruteForce": {
+      "approach": "**Logic:** For each element, check ALL previous elements to see if the current element is greater than every one of them.\n\n**Steps:**\n1. Initialize count = 1 (first element always counted)\n2. For each element at index i (from 1 to N-1):\n   a. Set is_greater = True\n   b. Loop through all elements from index 0 to i-1\n   c. If any previous element >= Arr[i], set is_greater = False and break\n   d. If is_greater is True, increment count\n3. Return count",
+      "code": "def count_greater_brute(arr, n):\n    count = 1  # first element always counted\n    \n    for i in range(1, n):\n        is_greater = True\n        for j in range(i):\n            if arr[j] >= arr[i]:\n                is_greater = False\n                break\n        if is_greater:\n            count += 1\n    \n    return count\n\n# Input\nn = int(input())\narr = list(map(int, input().split()))\nprint(count_greater_brute(arr, n))",
+      "language": "python",
+      "timeComplexity": "O(n^2)",
+      "spaceComplexity": "O(1)"
+    },
+    "optimal": {
+      "approach": "**Logic:** Instead of checking all previous elements each time, just track the maximum element seen so far. If current element > max_so_far, it's automatically greater than ALL previous elements.\n\n**Why this works:** If an element is greater than the maximum of all previous elements, it must be greater than each individual previous element.\n\n**Steps:**\n1. Initialize count = 1, max_so_far = Arr[0]\n2. For each element from index 1 to N-1:\n   a. If Arr[i] > max_so_far → increment count, update max_so_far\n3. Return count",
+      "code": "def count_greater_optimal(arr, n):\n    count = 1\n    max_so_far = arr[0]\n    \n    for i in range(1, n):\n        if arr[i] > max_so_far:\n            count += 1\n            max_so_far = arr[i]\n    \n    return count\n\n# Input\nn = int(input())\narr = list(map(int, input().split()))\nprint(count_greater_optimal(arr, n))",
+      "language": "python",
+      "timeComplexity": "O(n)",
+      "spaceComplexity": "O(1)"
+    },
+    "source": "TCS NQT PYQ"
+  },
+  {
+    "title": "Odd Balloon Colour",
+    "description": "At a fun fair, a street vendor is selling balloons of different colours. He sells N balloons, where each balloon colour is stored in an array B[].\n\nThe task is to find the colour of the balloon that appears an odd number of times in the array.\n\nNote:\n- If more than one colour appears an odd number of times, print the first colour in the array whose count is odd.\n- Balloon colours may be in uppercase or lowercase (case-sensitive).\n- If all colours appear an even number of times, print: \"All are even\"",
+    "difficulty": "easy",
+    "topic": "Hashing",
+    "constraints": [
+      "1 <= N <= 10^5",
+      "Each element is a single character or string"
+    ],
+    "examples": [
+      {
+        "input": "N = 7\nB = [r, g, b, b, g, y, y]",
+        "output": "r",
+        "explanation": "Counts: r → 1, g → 2, b → 2, y → 2\nOnly 'r' appears an odd number of times (1 time)."
+      }
+    ],
+    "bruteForce": {
+      "approach": "**Logic:** For each unique colour, count its occurrences by iterating through the entire array. Return the first one with an odd count.\n\n**Steps:**\n1. For each element in the array (in order):\n   a. Count how many times it appears in the full array\n   b. If count is odd, return that colour\n2. If no colour has odd count, return \"All are even\"",
+      "code": "def odd_balloon_brute(balloons, n):\n    checked = set()\n    \n    for b in balloons:\n        if b in checked:\n            continue\n        checked.add(b)\n        count = 0\n        for x in balloons:\n            if x == b:\n                count += 1\n        if count % 2 != 0:\n            return b\n    \n    return \"All are even\"\n\n# Input\nn = int(input())\nballoons = input().split()\nprint(odd_balloon_brute(balloons, n))",
+      "language": "python",
+      "timeComplexity": "O(n^2)",
+      "spaceComplexity": "O(n)"
+    },
+    "optimal": {
+      "approach": "**Logic:** Use a dictionary (hashmap) to count frequencies in a single pass. Then iterate through the original array to find the first colour with an odd count.\n\n**Why this works:** HashMap gives O(1) lookups. We iterate once to build counts, then once more to find the first odd — total O(n).\n\n**Steps:**\n1. Build frequency map in one pass\n2. Iterate through original array (preserves order)\n3. Return first element whose count is odd",
+      "code": "from collections import Counter\n\ndef odd_balloon_optimal(balloons, n):\n    freq = Counter(balloons)\n    \n    for b in balloons:\n        if freq[b] % 2 != 0:\n            return b\n    \n    return \"All are even\"\n\n# Input\nn = int(input())\nballoons = input().split()\nprint(odd_balloon_optimal(balloons, n))",
+      "language": "python",
+      "timeComplexity": "O(n)",
+      "spaceComplexity": "O(n)"
+    },
+    "source": "TCS NQT PYQ"
+  },
+  {
+    "title": "Monkeys on the Tree",
+    "description": "There are n monkeys sitting on the branches of a huge tree.\n\nTravelers offer:\n- m bananas\n- p peanuts\n\nEach monkey can eat:\n- k bananas OR\n- j peanuts\n\nMonkeys come down one at a time, eat, and then leave. A monkey does not climb back onto the tree.\n\nIf the remaining bananas or peanuts are less than k or j, the last monkey can eat the remaining items as well.\n\nFind the number of monkeys left on the tree after feeding.",
+    "difficulty": "medium",
+    "topic": "Math & Greedy",
+    "constraints": [
+      "1 <= n <= 10^6",
+      "1 <= k, j <= 10^4",
+      "0 <= m, p <= 10^9"
+    ],
+    "examples": [
+      {
+        "input": "n = 10, k = 3, j = 2, m = 6, p = 4",
+        "output": "6",
+        "explanation": "Bananas: 6 bananas / 3 per monkey = 2 monkeys fed\nPeanuts: 4 peanuts / 2 per monkey = 2 monkeys fed\nTotal fed = 4, Remaining on tree = 10 - 4 = 6"
+      },
+      {
+        "input": "n = 5, k = 2, j = 3, m = 5, p = 7",
+        "output": "0",
+        "explanation": "Bananas: ceil(5/2) = 3 monkeys fed (2+2+1)\nPeanuts: ceil(7/3) = 3 monkeys fed (3+3+1)\nTotal could feed = 6, but only 5 monkeys → all fed → 0 left"
+      }
+    ],
+    "bruteForce": {
+      "approach": "**Logic:** Simulate the process. First feed monkeys with bananas one by one (each eats k, last one eats remaining). Then feed remaining monkeys with peanuts.\n\n**Steps:**\n1. Start with n monkeys, m bananas, p peanuts\n2. Feed with bananas:\n   - While there are bananas (m > 0) and monkeys on tree:\n     - Monkey comes down, eats min(k, m) bananas\n     - Subtract eaten from m, decrement n\n3. Feed with peanuts:\n   - While there are peanuts (p > 0) and monkeys on tree:\n     - Monkey comes down, eats min(j, p) peanuts\n     - Subtract eaten from p, decrement n\n4. Return n",
+      "code": "def monkeys_left_brute(n, k, j, m, p):\n    remaining = n\n    \n    # Feed with bananas\n    while m > 0 and remaining > 0:\n        eat = min(k, m)\n        m -= eat\n        remaining -= 1\n    \n    # Feed with peanuts\n    while p > 0 and remaining > 0:\n        eat = min(j, p)\n        p -= eat\n        remaining -= 1\n    \n    return remaining\n\n# Input\nn = int(input())\nk = int(input())\nj = int(input())\nm = int(input())\np = int(input())\nprint(monkeys_left_brute(n, k, j, m, p))",
+      "language": "python",
+      "timeComplexity": "O(m/k + p/j) — can be very large",
+      "spaceComplexity": "O(1)"
+    },
+    "optimal": {
+      "approach": "**Logic:** Use math (ceiling division) instead of simulation.\n\n**Key Insight:** The number of monkeys fed by bananas = ceil(m / k). The number fed by peanuts = ceil(p / j). Total fed cannot exceed n.\n\n**Ceiling division trick:** ceil(a / b) = (a + b - 1) // b\n\n**Steps:**\n1. fed_bananas = ceil(m / k) if m > 0, else 0\n2. fed_peanuts = ceil(p / j) if p > 0, else 0\n3. total_fed = min(fed_bananas + fed_peanuts, n)\n4. Return n - total_fed",
+      "code": "import math\n\ndef monkeys_left_optimal(n, k, j, m, p):\n    fed_bananas = math.ceil(m / k) if m > 0 else 0\n    fed_peanuts = math.ceil(p / j) if p > 0 else 0\n    \n    total_fed = min(fed_bananas + fed_peanuts, n)\n    return n - total_fed\n\n# Input\nn = int(input())\nk = int(input())\nj = int(input())\nm = int(input())\np = int(input())\nprint(monkeys_left_optimal(n, k, j, m, p))\n\n# --- Without math import ---\n# fed_bananas = (m + k - 1) // k if m > 0 else 0\n# fed_peanuts = (p + j - 1) // j if p > 0 else 0",
+      "language": "python",
+      "timeComplexity": "O(1)",
+      "spaceComplexity": "O(1)"
+    },
+    "source": "TCS NQT PYQ"
+  },
+  {
+    "title": "Sort by Risk Severity (Sort 0, 1, 2)",
+    "description": "Airport security officials have confiscated several items from passengers.\n\nEach item has a risk severity level:\n- 0 → Low Risk\n- 1 → Medium Risk\n- 2 → High Risk\n\nThese risk levels are stored in an array of size N.\n\nThe task is to sort the array based on risk severity in ascending order.\n\nNote: This is the classic Dutch National Flag problem.",
+    "difficulty": "medium",
+    "topic": "Arrays & Sorting",
+    "constraints": [
+      "1 <= N <= 10^5",
+      "Arr[i] is 0, 1, or 2"
+    ],
+    "examples": [
+      {
+        "input": "N = 7\nArr = [1, 0, 2, 0, 1, 0, 2]",
+        "output": "0 0 0 1 1 2 2",
+        "explanation": "All 0s (Low Risk) come first, then 1s (Medium Risk), then 2s (High Risk)."
+      }
+    ],
+    "bruteForce": {
+      "approach": "**Logic:** Simply use Python's built-in sort. Or count the frequency of 0s, 1s, and 2s and reconstruct the array.\n\n**Counting approach steps:**\n1. Count occurrences of 0, 1, and 2\n2. Overwrite array: first all 0s, then all 1s, then all 2s\n\nThis uses two passes — one to count, one to write.",
+      "code": "def sort_severity_brute(arr, n):\n    count0 = arr.count(0)\n    count1 = arr.count(1)\n    count2 = arr.count(2)\n    \n    result = [0] * count0 + [1] * count1 + [2] * count2\n    return result\n\n# Input\nn = int(input())\narr = list(map(int, input().split()))\nresult = sort_severity_brute(arr, n)\nprint(' '.join(map(str, result)))",
+      "language": "python",
+      "timeComplexity": "O(n)",
+      "spaceComplexity": "O(n)"
+    },
+    "optimal": {
+      "approach": "**Logic:** Dutch National Flag Algorithm (3-pointer approach) — sort in a single pass, in-place.\n\n**Key Idea:** Use three pointers:\n- `low` → boundary of 0s (everything before low is 0)\n- `mid` → current element being examined\n- `high` → boundary of 2s (everything after high is 2)\n\n**Steps:**\n1. Initialize low = 0, mid = 0, high = n - 1\n2. While mid <= high:\n   - If arr[mid] == 0: swap(arr[low], arr[mid]), low++, mid++\n   - If arr[mid] == 1: mid++ (1 is already in correct zone)\n   - If arr[mid] == 2: swap(arr[mid], arr[high]), high-- (don't increment mid, swapped element needs checking)\n3. Array is now sorted",
+      "code": "def sort_severity_optimal(arr, n):\n    low = 0\n    mid = 0\n    high = n - 1\n    \n    while mid <= high:\n        if arr[mid] == 0:\n            arr[low], arr[mid] = arr[mid], arr[low]\n            low += 1\n            mid += 1\n        elif arr[mid] == 1:\n            mid += 1\n        else:  # arr[mid] == 2\n            arr[mid], arr[high] = arr[high], arr[mid]\n            high -= 1\n            # Note: don't increment mid here!\n    \n    return arr\n\n# Input\nn = int(input())\narr = list(map(int, input().split()))\nresult = sort_severity_optimal(arr, n)\nprint(' '.join(map(str, result)))",
+      "language": "python",
+      "timeComplexity": "O(n)",
+      "spaceComplexity": "O(1)"
+    },
+    "source": "TCS NQT PYQ"
+  },
+  {
+    "title": "Minimum Moves to Convert String",
+    "description": "Ayush is working on a strange algorithm where he wants to convert a string from A to B, both strings of equal length N.\n\nBelow are the rules which can be performed to convert a string:\n- String A and B are of equal length\n- Both are in lowercase\n- Choose a subset X from string A, between index 1 and N\n- Let 's' be the letter which alphabetically comes before all other letters in the subset. Let 's' be the 'smallest element' in the subset.\n- Replace all elements of the subset with the letter 's'\n\nFind the minimum number of moves required to perform the conversion. If it is not possible to convert A to B then return -1.\n\nKey Observation: The operation can only DECREASE characters (replace with smallest in subset). So if B[i] > A[i] for any position, conversion is impossible. Also if B[i] < A[i], B[i] must exist somewhere in A to be usable as a smallest element.",
+    "difficulty": "hard",
+    "topic": "Strings & Greedy",
+    "constraints": [
+      "1 <= N <= 1000",
+      "Only lowercase English letters",
+      "Length of A = Length of B = N"
+    ],
+    "examples": [
+      {
+        "input": "N = 5\nA = abcab\nB = aabab",
+        "output": "2",
+        "explanation": "Operation 1: Choose indices 2,3,5 from A='abcab' → subset [b,c,b], smallest='b' → replace all with 'b' → A becomes 'abbab'\nOperation 2: Choose indices 1,2,4 from A='abbab' → subset [a,b,a], smallest='a' → replace all with 'a' → A becomes 'aabab' = B\nSo answer = 2"
+      },
+      {
+        "input": "N = 2\nA = de\nB = cd",
+        "output": "-1",
+        "explanation": "A has 'd' and 'e'. B needs 'c' which doesn't exist in A, and the operation can only replace with the smallest in a subset (can't create new characters smaller than what exists). Since 'c' < 'd', we'd need 'c' in A. Impossible."
+      },
+      {
+        "input": "N = 4\nA = abab\nB = abaa",
+        "output": "1",
+        "explanation": "Operation 1: Choose indices 3,4 → subset [a,b], smallest='a' → replace → A becomes 'abaa' = B"
+      }
+    ],
+    "bruteForce": {
+      "approach": "**Logic:** Compare A and B character by character.\n\n**Key Observations:**\n1. If A == B already, return 0 (or 1 depending on interpretation — some consider identity as 1 move)\n2. If any character in B is not present in A, return -1 (we can only replace with existing characters)\n3. Collect characters that differ between A and B. Group the target characters in B (at differing positions). The number of unique target characters = number of operations needed.\n\n**Why unique targets?** Each operation replaces a subset with the smallest character in that subset. So for each distinct target character in B (at positions where A differs), we need one operation.\n\n**Steps:**\n1. If A == B, return 0\n2. Find positions where A[i] != B[i]\n3. For each such position, check B[i] exists in A — if not, return -1\n4. Collect unique B[i] values at differing positions\n5. Return count of unique values",
+      "code": "def min_moves_brute(n, a, b):\n    if a == b:\n        return 0\n    \n    # Collect differing characters from A and target chars from B\n    res = \"\"   # chars in A at differing positions\n    res2 = \"\"  # chars in B at differing positions\n    \n    for i in range(n):\n        if a[i] != b[i]:\n            res += a[i]\n            res2 += b[i]\n    \n    # Check feasibility: each target char in B must exist in A\n    for ch in set(res2):\n        if ch not in a:\n            return -1\n    \n    # Number of operations = number of unique target characters\n    return len(set(res2))\n\n# Input\nn = int(input())\na = input()\nb = input()\nprint(min_moves_brute(n, a, b))",
+      "language": "python",
+      "timeComplexity": "O(n * 26) ≈ O(n)",
+      "spaceComplexity": "O(n)"
+    },
+    "optimal": {
+      "approach": "**Logic:** Same core idea but cleaner implementation using sets.\n\n**Key Insight:**\n- If A == B → 0 moves\n- For each position where A[i] != B[i], the target B[i] must exist somewhere in A\n- Each unique target character at differing positions requires exactly one operation\n- One operation can handle ALL positions that need the same target character\n\n**Why?** In one operation, we pick a subset containing all positions that should become character 'c', plus ensure 'c' is the smallest in the subset. Then all those positions become 'c'.\n\n**Steps:**\n1. If A == B, return 0\n2. Build set of characters in A (for feasibility check)\n3. Build set of target characters at differing positions\n4. If any target char not in A → return -1\n5. Return size of target set",
+      "code": "def min_moves_optimal(n, a, b):\n    if a == b:\n        return 0\n    \n    a_chars = set(a)\n    target_chars = set()\n    \n    for i in range(n):\n        if a[i] != b[i]:\n            target_chars.add(b[i])\n    \n    # Check if conversion is possible\n    for ch in target_chars:\n        if ch not in a_chars:\n            return -1\n    \n    return len(target_chars)\n\n# Input\nn = int(input())\na = input()\nb = input()\nprint(min_moves_optimal(n, a, b))",
+      "language": "python",
+      "timeComplexity": "O(n)",
+      "spaceComplexity": "O(26) ≈ O(1)"
+    },
+    "source": "TCS NQT PYQ - Advanced Coding"
+  },
+  {
+    "title": "Drum Beats - Permutation Cycle",
+    "description": "Jack is a sports teacher at St. Patrick's School. He lines up N students in his class. At each position he has fixed a board with a unique integer number (1 to N) in a random order given by array B[].\n\nStudents initially stand in increasing order of their jersey numbers (1, 2, 3, ..., N) from left to right.\n\nGame Rules:\n- After every beat of the drum, each student moves to the position (index) that their current board is pointing to.\n- This keeps going on until all students are back to their original starting positions.\n\nGiven N and the board arrangement B[], find the number of beats required to bring all students back to their original positions.\n\nThis is a classic Permutation Cycle problem — the answer is the LCM of all cycle lengths in the permutation.",
+    "difficulty": "hard",
+    "topic": "Permutation & Number Theory",
+    "constraints": [
+      "1 <= N <= 10^5",
+      "B[] is a permutation of 1 to N"
+    ],
+    "examples": [
+      {
+        "input": "N = 3\nB = [1, 2, 3]",
+        "output": "1",
+        "explanation": "Board = [1, 2, 3]. Each student's board points to their own position. After 1 beat, everyone is back. Answer = 1."
+      },
+      {
+        "input": "N = 5\nB = [2, 3, 1, 5, 4]",
+        "output": "6",
+        "explanation": "Cycles in permutation:\n- Cycle 1: 1→2→3→1 (length 3)\n- Cycle 2: 4→5→4 (length 2)\nLCM(3, 2) = 6\nAfter 6 beats, all students return to original positions."
+      }
+    ],
+    "bruteForce": {
+      "approach": "**Logic:** Simulate the process. After each beat, move every student to their board's position. Count beats until the arrangement matches the original.\n\n**Steps:**\n1. Store original positions = [1, 2, 3, ..., N]\n2. current = copy of original\n3. beats = 0\n4. Do:\n   a. Move each student: new_pos[i] = current[B[i]-1] (0-indexed)\n   b. current = new_pos\n   c. beats++\n5. Until current == original\n6. Return beats",
+      "code": "def drum_beats_brute(n, board):\n    original = list(range(1, n + 1))\n    current = original[:]\n    beats = 0\n    \n    while True:\n        # Each student moves to position their board points to\n        new_pos = [0] * n\n        for i in range(n):\n            new_pos[board[i] - 1] = current[i]\n        \n        current = new_pos\n        beats += 1\n        \n        if current == original:\n            break\n    \n    return beats\n\n# Input\nn = int(input())\nboard = list(map(int, input().split()))\nprint(drum_beats_brute(n, board))",
+      "language": "python",
+      "timeComplexity": "O(n * LCM) — LCM can be exponentially large",
+      "spaceComplexity": "O(n)"
+    },
+    "optimal": {
+      "approach": "**Logic:** Find all cycles in the permutation and compute the LCM of their lengths.\n\n**Key Mathematical Insight:**\nA permutation can be decomposed into disjoint cycles. Each cycle of length L returns to its starting position after exactly L beats. For ALL students to return simultaneously, we need LCM of all cycle lengths.\n\n**Example: B = [2, 3, 1, 5, 4]**\n- Start at index 0: 0→1→2→0 (cycle length 3)\n- Start at index 3: 3→4→3 (cycle length 2)\n- LCM(3, 2) = 6\n\n**Steps:**\n1. Find all cycles using visited array\n2. For each unvisited node, trace the cycle and record its length\n3. Compute LCM of all cycle lengths\n4. LCM(a, b) = (a * b) / GCD(a, b)",
+      "code": "from math import gcd\n\ndef drum_beats_optimal(n, board):\n    visited = [False] * n\n    cycle_lengths = []\n    \n    for i in range(n):\n        if not visited[i]:\n            length = 0\n            j = i\n            while not visited[j]:\n                visited[j] = True\n                j = board[j] - 1  # move to board's position (0-indexed)\n                length += 1\n            cycle_lengths.append(length)\n    \n    # LCM of all cycle lengths\n    result = cycle_lengths[0]\n    for i in range(1, len(cycle_lengths)):\n        result = result * cycle_lengths[i] // gcd(result, cycle_lengths[i])\n    \n    return result\n\n# Input\nn = int(input())\nboard = list(map(int, input().split()))\nprint(drum_beats_optimal(n, board))",
+      "language": "python",
+      "timeComplexity": "O(n)",
+      "spaceComplexity": "O(n)"
+    },
+    "source": "TCS NQT PYQ - Advanced Coding"
+  }
+]

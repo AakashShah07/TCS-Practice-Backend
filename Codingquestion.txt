@@ -1,0 +1,151 @@
+Q1   Given a string S consisting only of '*' and '#'.
+
+Find the minimum number required to make the string valid.
+
+A string is considered valid if the number of '*' and '#' are equal.
+
+Rules
+If count of '*' > count of '#' → return a positive integer
+If count of '#' > count of '*' → return a negative integer
+If both are equal → return 0
+Example 1
+
+Input:
+
+###***
+
+Output:
+
+0
+
+Explanation:
+Number of '*' and '#' are equal.
+
+Example 2
+
+Input:
+
+****##
+
+Output:
+
+2
+
+Explanation:
+There are 2 more '*' than '#'.
+
+
+
+
+Q2. Given an integer array Arr of size N, find the count of elements whose value is greater than all of its previous elements.
+
+Note
+The first element is always counted.
+An element is counted if it is strictly greater than every element before it.
+Example
+Input
+N = 5
+Arr = [7, 4, 8, 2, 9]
+Explanation
+7 → first element → counted
+4 → not greater than 7
+8 → greater than 7 and 4 → counted
+2 → not greater than previous maximum
+9 → greater than all previous elements → counted
+Output
+3
+
+
+
+q3  At a fun fair, a street vendor is selling balloons of different colours.
+
+He sells N balloons, where each balloon colour is stored in an array B[].
+
+The task is to find the colour of the balloon that appears an odd number of times in the array.
+
+Note
+If more than one colour appears an odd number of times, print the first colour in the array whose count is odd.
+Balloon colours may be in uppercase or lowercase.
+If all colours appear an even number of times, print:
+All are even
+Example 1
+Input
+N = 7
+
+B = [r, g, b, b, g, y, y]
+Explanation
+
+Counts:
+
+r → 1 time
+g → 2 times
+b → 2 times
+y → 2 times
+
+Only r appears odd number of times.
+
+Output
+r 
+
+
+
+q4: There are n monkeys sitting on the branches of a huge tree.
+
+Travelers offer:
+
+m bananas
+p peanuts
+
+Each monkey can eat:
+
+k bananas OR
+j peanuts
+
+Monkeys come down one at a time, eat, and then leave.
+A monkey does not climb back onto the tree.
+
+If the remaining bananas or peanuts are less than k or j, the last monkey can eat the remaining items as well.
+
+Your task is to find the number of monkeys left on the tree after feeding.
+
+Input Variables
+n → Total number of monkeys
+k → Bananas eaten by one monkey
+j → Peanuts eaten by one monkey
+m → Total bananas
+p → Total peanuts
+Logic  
+
+
+
+
+Q5:  Airport security officials have confiscated several items from passengers.
+
+Each item has a risk severity level:
+
+0 → Low Risk
+1 → Medium Risk
+2 → High Risk
+
+These risk levels are stored in an array of size N.
+
+The task is to sort the array based on risk severity in ascending order.
+
+Example
+Input
+N = 7
+
+Arr = [1, 0, 2, 0, 1, 0, 2]
+Output
+0 0 0 1 1 2 2 
+
+
+Q6: Write a function to find the longest common prefix among an array of strings.
+
+If there is no common prefix, return an empty string "".
+
+Example 1
+Input
+strs = ["flower", "flow", "flight"]
+Output
+"fl"

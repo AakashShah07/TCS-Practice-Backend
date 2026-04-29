@@ -19,8 +19,8 @@ Express.js + MongoDB REST API for a TCS NQT exam practice platform. Provides aut
 
 ```
 config/db.js          — MongoDB connection
-models/               — Mongoose schemas (User, Test, Question, TestAttempt, Result, UserAnalytics)
-controllers/          — Business logic (auth, test, attempt, result, analytics, admin)
+models/               — Mongoose schemas (User, Test, Question, TestAttempt, Result, UserAnalytics, CodingQuestion)
+controllers/          — Business logic (auth, test, attempt, result, analytics, admin, coding)
 routes/               — Express routers mapping to controllers
 middleware/            — auth (JWT protect + adminOnly), errorHandler, validate
 validators/           — express-validator rules (auth, question, test)
@@ -45,6 +45,7 @@ npm run seed:time-and-work          # node seeds/seed_time_and_work.js
 npm run seed:time-and-work-test     # node seeds/seed_time_and_work_test.js
 npm run seed:lcm-hcf               # node seeds/seed_lcm_hcf.js
 npm run seed:lcm-hcf-test          # node seeds/seed_lcm_hcf_test.js
+npm run seed:coding                # node seeds/seed_coding.js
 ```
 
 Additional seed scripts (no npm aliases — run directly with `node seeds/<file>`):
@@ -63,6 +64,7 @@ Additional seed scripts (no npm aliases — run directly with `node seeds/<file>
 | `/api/results` | Yes | History, detailed result, full question review |
 | `/api/analytics` | Yes | Dashboard, section/topic performance, trends, recommendations |
 | `/api/admin` | Admin | CRUD questions/tests, user management, dashboard stats |
+| `/api/coding` | No | PYQ coding question solutions with brute force & optimal approaches |
 
 ## Key Patterns
 

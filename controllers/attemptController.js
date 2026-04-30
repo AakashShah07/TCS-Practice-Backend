@@ -134,15 +134,6 @@ exports.saveAnswer = async (req, res, next) => {
       return res.status(400).json({ success: false, message: 'No active attempt found' });
     }
 
-    // Validate time hasn't expired (with 30s grace period)
-    const elapsed = (Date.now() - attempt.startedAt.getTime()) / 1000;
-    if (elapsed > attempt.duration + 30) {
-      attempt.status = 'timed_out';
-      attempt.submittedAt = new Date();
-      await attempt.save();
-      return res.status(400).json({ success: false, message: 'Test time has expired' });
-    }
-
     if (questionIndex < 0 || questionIndex >= attempt.responses.length) {
       return res.status(400).json({ success: false, message: 'Invalid question index' });
     }

@@ -361,5 +361,46 @@
       "spaceComplexity": "O(R * C) for storing the matrix"
     },
     "source": "TCS NQT PYQ"
+  },
+  {
+    "title": "Sum of Integers in Range",
+    "description": "You are given two integers i and j.\n\nYour task is to calculate the sum of all integers from i to j (inclusive) and print the result.\n\nNote: i can be greater than, less than, or equal to j.",
+    "difficulty": "easy",
+    "topic": "Math",
+    "constraints": [
+      "-10^9 <= i, j <= 10^9"
+    ],
+    "examples": [
+      {
+        "input": "i = 1\nj = 5",
+        "output": "15",
+        "explanation": "Sum = 1 + 2 + 3 + 4 + 5 = 15"
+      },
+      {
+        "input": "i = 5\nj = 1",
+        "output": "15",
+        "explanation": "Even though i > j, the sum from 1 to 5 is still 15."
+      },
+      {
+        "input": "i = -2\nj = 3",
+        "output": "3",
+        "explanation": "Sum = -2 + -1 + 0 + 1 + 2 + 3 = 3"
+      }
+    ],
+    "bruteForce": {
+      "approach": "**Logic:** Loop through every integer from the smaller value to the larger value and keep a running total.\n\n**Steps:**\n1. Find the smaller and larger of i and j\n2. Initialize sum = 0\n3. Loop from min(i, j) to max(i, j), adding each number to sum\n4. Return sum",
+      "code": "def sum_range_brute(i, j):\n    total = 0\n    start = min(i, j)\n    end = max(i, j)\n    \n    for num in range(start, end + 1):\n        total += num\n    \n    return total\n\n# Input\ni = int(input())\nj = int(input())\nprint(sum_range_brute(i, j))",
+      "language": "python",
+      "timeComplexity": "O(|j - i|)",
+      "spaceComplexity": "O(1)"
+    },
+    "optimal": {
+      "approach": "**Logic:** Use the arithmetic series formula to compute the sum in O(1).\n\n**Formula:** Sum of integers from a to b = (number_of_terms) × (first + last) / 2\n- n = |j - i| + 1 (number of terms)\n- Sum = n × (i + j) / 2\n\n**Why this works:** This is Gauss's formula for the sum of an arithmetic progression with common difference 1.\n\n**Steps:**\n1. n = abs(j - i) + 1\n2. Sum = n * (i + j) // 2\n3. Return Sum",
+      "code": "def sum_range_optimal(i, j):\n    n = abs(j - i) + 1\n    return n * (i + j) // 2\n\n# Input\ni = int(input())\nj = int(input())\nprint(sum_range_optimal(i, j))\n\n# --- One-liner ---\n# i, j = int(input()), int(input())\n# print((abs(j - i) + 1) * (i + j) // 2)",
+      "language": "python",
+      "timeComplexity": "O(1)",
+      "spaceComplexity": "O(1)"
+    },
+    "source": "TCS NQT PYQ"
   }
 ]

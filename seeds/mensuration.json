@@ -180,13 +180,13 @@
     "explanation": "Volume of sphere = (4/3)π(12³) = 2304π. Volume of cone = (1/3)π(6²)h = 12πh. Equate: 12πh = 2304π → h = 192 cm. Slant height = √(6²+192²) = √(36+36864) = √36900 ≈ 192 cm."
   },
   {
-    "text": "A square pyramid has a base of side 8 cm and each slant edge is 10 cm. Find its total surface area.",
+    "text": "A square pyramid has a base of side 8 cm and slant height 10 cm. Find its total surface area.",
     "options": ["256 cm²", "192 cm²", "224 cm²", "288 cm²"],
     "correctAnswer": 2,
     "section": "numerical",
     "topic": "Mensuration",
     "difficulty": "hard",
-    "explanation": "Base area = 8² = 64 cm². If slant height = 10, lateral area = (1/2)×perimeter×l = (1/2)×32×10 = 160. TSA = 64+160 = 224 cm²."
+    "explanation": "Base area = 8² = 64 cm². Slant height l = 10 cm. Lateral area = (1/2) × perimeter × l = (1/2) × 32 × 10 = 160 cm². TSA = 64 + 160 = 224 cm²."
   },
   {
     "text": "The radius of a sphere is r. It is packed inside a cube such that it just fits. What percentage of the cube's volume is occupied by the sphere?",

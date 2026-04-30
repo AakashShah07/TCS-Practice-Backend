@@ -288,7 +288,7 @@
       "id": 21,
       "category": "3D Mensuration",
       "topic": "Pyramid",
-      "question": "A square pyramid has a base of side 8 cm and each slant edge is 10 cm. Find its total surface area.",
+      "question": "A square pyramid has a base of side 8 cm and slant height 10 cm. Find its total surface area.",
       "options": {
         "A": "256 cm²",
         "B": "192 cm²",
@@ -296,7 +296,7 @@
         "D": "288 cm²"
       },
       "correct_answer": "C",
-      "explanation": "Base area = 8² = 64 cm². Half-diagonal of base = 4√2. Slant height of face = √(10²−(4)²) = √(100−16) = √84 = 2√21? Wait — slant edge = 10, half-base = 4. Slant height l_f = √(10²−4²) = √84 = 2√21. Area of 4 triangular faces = 4×(1/2)×8×2√21 = 32√21. That's not clean. Re-approach: if slant height (not slant edge) = 10, then lateral area = (1/2)×perimeter×l = (1/2)×32×10 = 160. TSA = 64+160 = 224 cm²."
+      "explanation": "Base area = 8² = 64 cm². Slant height l = 10 cm. Lateral area = (1/2) × perimeter × l = (1/2) × 32 × 10 = 160 cm². TSA = 64 + 160 = 224 cm²."
     },
     {
       "id": 22,

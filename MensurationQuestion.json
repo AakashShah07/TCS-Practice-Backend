@@ -99,8 +99,8 @@
         "C": "169π − 72π = 97π cm²",
         "D": "144π cm²"
       },
-      "correct_answer": "C",
-      "explanation": "Radius of large circle R = 13. Distance from center to chord = 5. Half-chord = √(13²−5²) = √144 = 12 cm. Chord = 24 cm. Radius of small circle = 12 cm. Area between circles = π(13²) − π(12²) = π(169−144) = 25π cm². The required region = large circle area − small circle area = 25π cm². Correct answer is B (25π). Always compute half-chord first."
+      "correct_answer": "B",
+      "explanation": "Radius of large circle R = 13. Distance from center to chord = 5. Half-chord = √(13²−5²) = √144 = 12 cm. Chord = 24 cm. Radius of small circle = 12 cm. Area between circles = π(13²) − π(12²) = π(169−144) = 25π cm²."
     },
     {
       "id": 8,

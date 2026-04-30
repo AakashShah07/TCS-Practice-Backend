@@ -56,7 +56,7 @@
   {
     "text": "A chord of a circle of radius 13 cm is at a distance of 5 cm from the center. A smaller circle is drawn with this chord as diameter. Find the area of the region inside the larger circle but outside the smaller circle.",
     "options": ["133π cm²", "25π cm²", "97π cm²", "144π cm²"],
-    "correctAnswer": 2,
+    "correctAnswer": 1,
     "section": "numerical",
     "topic": "Mensuration",
     "difficulty": "hard",

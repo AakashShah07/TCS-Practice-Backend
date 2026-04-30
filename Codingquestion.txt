@@ -169,3 +169,42 @@ Example
 Input
 start_day = "mon"
 n = 13
+
+
+
+Q8:  Simple Question Statement
+
+A mall parking lot is represented using a matrix of size R × C.
+
+0 means the parking space is empty.
+1 means the parking space is occupied.
+
+Your task is to find the row that contains the maximum number of occupied parking spaces (1s).
+
+If rows are counted starting from 1, return the row number having the highest count of 1s.
+
+Approach
+
+We will go row by row and count how many 1s are present in each row.
+
+While traversing:
+
+Keep track of:
+maximum count of 1s found so far
+row index where this maximum occurs
+
+Whenever a row has more 1s than the current maximum:
+
+update the maximum count
+update the answer row
+
+At the end, return the row number.
+
+Logic
+Steps
+Read matrix dimensions R and C
+Traverse every row
+Count number of 1s in that row
+Compare with current maximum
+Store row index if current row has more 1s
+Print the row number

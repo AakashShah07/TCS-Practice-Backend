@@ -99,13 +99,13 @@
     "explanation": "Let width = 2r (diameter of semicircle), height of rectangle = h. Perimeter: 2h + 2r + πr = 10 → h = (10−r(π+2))/2. Area A = 2rh + πr²/2. Substitute h and maximize dA/dr = 0. Solving gives r = 10/(π+4), so width 2r = 20/(π+4) m."
   },
   {
-    "text": "In quadrilateral ABCD, AB=3, BC=4, CD=4, DA=5 and diagonal AC=5. Find area of ABCD.",
-    "options": ["6 + 4√6 cm²", "6 + 4√5 cm²", "12 cm²", "6 + 2√15 cm²"],
-    "correctAnswer": 2,
+    "text": "The diagonal of a quadrilateral is 24 cm and the perpendiculars drawn to it from the opposite vertices are 6 cm and 8 cm. Find the area of the quadrilateral.",
+    "options": ["168 cm²", "192 cm²", "144 cm²", "156 cm²"],
+    "correctAnswer": 0,
     "section": "numerical",
     "topic": "Mensuration",
-    "difficulty": "hard",
-    "explanation": "Triangle ABC: sides 3,4,5 → right triangle (3²+4²=5²). Area = (1/2)×3×4 = 6. Triangle ACD: sides 5,4,5 → isosceles. By Heron's: s=(5+4+5)/2=7, Area=√(7×2×3×2)=2√21. Total = 6+2√21 cm²."
+    "difficulty": "easy",
+    "explanation": "Area of quadrilateral = (1/2) × diagonal × (sum of perpendiculars) = (1/2) × 24 × (6 + 8) = (1/2) × 24 × 14 = 168 cm²."
   },
   {
     "text": "A hollow cylindrical pipe is 21 cm long. Its inner and outer diameters are 10 cm and 14 cm respectively. Find the volume of the material used in making the pipe. (π = 22/7)",

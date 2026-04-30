@@ -162,15 +162,15 @@
       "id": 12,
       "category": "2D Mensuration",
       "topic": "Quadrilateral",
-      "question": "In quadrilateral ABCD, AB=3, BC=4, CD=4, DA=5 and diagonal AC=5. Find area of ABCD.",
+      "question": "The diagonal of a quadrilateral is 24 cm and the perpendiculars drawn to it from the opposite vertices are 6 cm and 8 cm. Find the area of the quadrilateral.",
       "options": {
-        "A": "6 + 4√6 cm²",
-        "B": "6 + 4√5 cm²",
-        "C": "12 cm²",
-        "D": "6 + 2√15 cm²"
+        "A": "168 cm²",
+        "B": "192 cm²",
+        "C": "144 cm²",
+        "D": "156 cm²"
       },
-      "correct_answer": "C",
-      "explanation": "Triangle ABC: sides 3,4,5 → right triangle (3²+4²=5²). Area = (1/2)×3×4 = 6. Triangle ACD: sides 5,4,5 → s = 7, Area = √(7×2×3×2) = √84 = 2√21? Let's re-check with Heron's: s=(5+4+5)/2=7, Area=√(7×2×3×2)=√84=2√21. Total = 6+2√21 cm². In many TCS variants, the answer comes to 6+2√21 ≈ 15.17 cm². If AC=5, AB=3, BC=4: ABC is right-angled at B. Area(ABC)=6. For ACD with AC=5, CD=4, DA=5: by Heron's s=7, area=√(7·2·3·2)=2√21. Total=6+2√21."
+      "correct_answer": "A",
+      "explanation": "Area of quadrilateral = (1/2) × diagonal × (sum of perpendiculars) = (1/2) × 24 × (6 + 8) = (1/2) × 24 × 14 = 168 cm²."
     },
     {
       "id": 13,

@@ -47,6 +47,16 @@ exports.startAttempt = async (req, res, next) => {
     }
 
     // Pick random questions from the pool for this attempt
+    // Deduplicate by question text to avoid repeated questions from duplicate DB entries
+    function dedupeByText(questions) {
+      const seen = new Set();
+      return questions.filter((q) => {
+        if (seen.has(q.text)) return false;
+        seen.add(q.text);
+        return true;
+      });
+    }
+
     let selectedQuestionIds;
 
     if (test.type === 'full_mock') {
@@ -54,19 +64,22 @@ exports.startAttempt = async (req, res, next) => {
       const sectionCounts = { numerical: 25, reasoning: 25, verbal: 25, advanced: 14 };
       selectedQuestionIds = [];
       for (const [section, count] of Object.entries(sectionCounts)) {
-        const pool = await Question.find({ section }).select('_id');
-        const shuffled = shuffle(pool.map((q) => q._id));
+        const pool = await Question.find({ section }).select('_id text');
+        const unique = dedupeByText(pool);
+        const shuffled = shuffle(unique.map((q) => q._id));
         selectedQuestionIds.push(...shuffled.slice(0, Math.min(count, shuffled.length)));
       }
     } else if (test.type === 'topic_practice' && test.topic) {
       // For topic practice: pick from questions matching that specific topic
-      const pool = await Question.find({ section: test.section, topic: test.topic }).select('_id');
-      const shuffled = shuffle(pool.map((q) => q._id));
+      const pool = await Question.find({ section: test.section, topic: test.topic }).select('_id text');
+      const unique = dedupeByText(pool);
+      const shuffled = shuffle(unique.map((q) => q._id));
       selectedQuestionIds = shuffled.slice(0, Math.min(test.totalQuestions, shuffled.length));
     } else if (test.section) {
       // For section tests: pick `totalQuestions` random questions from that section
-      const pool = await Question.find({ section: test.section }).select('_id');
-      const shuffled = shuffle(pool.map((q) => q._id));
+      const pool = await Question.find({ section: test.section }).select('_id text');
+      const unique = dedupeByText(pool);
+      const shuffled = shuffle(unique.map((q) => q._id));
       selectedQuestionIds = shuffled.slice(0, Math.min(test.totalQuestions, shuffled.length));
     } else {
       // Fallback: use the test's fixed questions

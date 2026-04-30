@@ -47,5 +47,7 @@ const questionSchema = new mongoose.Schema(
 // Indexes for filtered queries
 questionSchema.index({ section: 1, topic: 1 });
 questionSchema.index({ section: 1, difficulty: 1 });
+// Prevent duplicate questions with the same text in the same topic
+questionSchema.index({ text: 1, topic: 1 }, { unique: true });
 
 module.exports = mongoose.model('Question', questionSchema);

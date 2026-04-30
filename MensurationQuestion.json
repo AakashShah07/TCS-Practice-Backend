@@ -206,13 +206,13 @@
       "topic": "Sphere",
       "question": "A solid metallic sphere of radius 6 cm is melted and recast into small spherical balls of radius 0.5 cm. How many balls are formed, and what is the total surface area of all balls combined? (π = 22/7)",
       "options": {
-        "A": "1728 balls; 5544 cm²",
+        "A": "1728 balls; 1728π cm²",
         "B": "1728 balls; 3456π cm²",
         "C": "216 balls; 864π cm²",
-        "D": "1000 balls; 2000π cm²"
+        "D": "1728 balls; 864π cm²"
       },
-      "correct_answer": "B",
-      "explanation": "Volume of big sphere = (4/3)π(6³) = 288π cm³. Volume of small sphere = (4/3)π(0.5³) = (4/3)π(0.125) = π/6 cm³. Number of balls = 288π ÷ (π/6) = 1728. TSA of each small ball = 4π(0.5²) = π cm². Total TSA = 1728π cm². In decimal: 1728 × (22/7) ≈ 5430.86 cm²."
+      "correct_answer": "A",
+      "explanation": "Volume of big sphere = (4/3)π(6³) = 288π cm³. Volume of small sphere = (4/3)π(0.5³) = π/6 cm³. Number of balls = 288π ÷ (π/6) = 1728. TSA of each small ball = 4π(0.5²) = π cm². Total TSA = 1728 × π = 1728π cm²."
     },
     {
       "id": 16,

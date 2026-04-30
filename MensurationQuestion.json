@@ -78,15 +78,15 @@
       "id": 6,
       "category": "2D Mensuration",
       "topic": "Trapezium",
-      "question": "The parallel sides of a trapezium are 18 cm and 10 cm. The non-parallel sides are each 6 cm. Find its area.",
+      "question": "The parallel sides of a trapezium are 16 cm and 12 cm. The non-parallel sides are each 6 cm. Find its area.",
       "options": {
         "A": "56√2 cm²",
         "B": "48√2 cm²",
         "C": "32√2 cm²",
         "D": "40√2 cm²"
       },
-      "correct_answer": "C",
-      "explanation": "Drop perpendiculars from the shorter parallel side. Each base offset = (18−10)/2 = 4 cm. Height = √(6²−4²) = √(36−16) = √20 = 2√5 cm. Area = (1/2)(18+10) × 2√5 = 28√5... Wait, let's recheck: height = √(36−16)=√20=2√5. Area = (1/2)×28×2√5 = 28√5 cm². Note: if the non-parallel sides are 5 cm each, offset = 4, height = 3, area = 42 cm². Here with the given values, Area = 28√5 ≈ 62.6. The closest clean answer among the options using h = 4√2 (if sides were such) gives 32√2. Always verify substitution carefully in exams."
+      "correct_answer": "A",
+      "explanation": "Drop perpendiculars from the shorter parallel side. Each base offset = (16−12)/2 = 2 cm. Height = √(6²−2²) = √(36−4) = √32 = 4√2 cm. Area = (1/2)(16+12) × 4√2 = (1/2) × 28 × 4√2 = 56√2 cm²."
     },
     {
       "id": 7,

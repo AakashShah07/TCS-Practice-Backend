@@ -45,13 +45,13 @@
     "explanation": "Area of sector = (90/360) × π × 14² = (1/4) × (22/7) × 196 = 154 cm². Area of triangle formed = (1/2) × 14 × 14 = 98 cm². Area of segment = 154 − 98 = 56 cm²."
   },
   {
-    "text": "The parallel sides of a trapezium are 18 cm and 10 cm. The non-parallel sides are each 6 cm. Find its area.",
+    "text": "The parallel sides of a trapezium are 16 cm and 12 cm. The non-parallel sides are each 6 cm. Find its area.",
     "options": ["56√2 cm²", "48√2 cm²", "32√2 cm²", "40√2 cm²"],
-    "correctAnswer": 2,
+    "correctAnswer": 0,
     "section": "numerical",
     "topic": "Mensuration",
-    "difficulty": "hard",
-    "explanation": "Drop perpendiculars from the shorter parallel side. Each base offset = (18−10)/2 = 4 cm. Height = √(6²−4²) = √(36−16) = √20 = 2√5 cm. Area = (1/2)(18+10) × 2√5 = 28√5. The closest clean answer among the options is 32√2."
+    "difficulty": "medium",
+    "explanation": "Drop perpendiculars from the shorter parallel side. Each base offset = (16−12)/2 = 2 cm. Height = √(6²−2²) = √(36−4) = √32 = 4√2 cm. Area = (1/2)(16+12) × 4√2 = (1/2) × 28 × 4√2 = 56√2 cm²."
   },
   {
     "text": "A chord of a circle of radius 13 cm is at a distance of 5 cm from the center. A smaller circle is drawn with this chord as diameter. Find the area of the region inside the larger circle but outside the smaller circle.",

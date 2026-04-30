@@ -402,5 +402,46 @@
       "spaceComplexity": "O(1)"
     },
     "source": "TCS NQT PYQ"
+  },
+  {
+    "title": "Equalize Three Numbers",
+    "description": "You are given three integers p, q, and r.\n\nIn one operation:\n- Add 1 to any two numbers\n- Subtract 1 from the third number\n\nFind the minimum number of operations required to make all three numbers equal.\n\nIf it is impossible, print -1.\n\nKey Observation: In one operation, the total sum changes by +1 (+1 +1 -1 = +1). For all three numbers to become equal, their sum must be divisible by 3 at some stage. Also, each operation reduces the total imbalance by 2.",
+    "difficulty": "medium",
+    "topic": "Math & Logic",
+    "constraints": [
+      "-10^9 <= p, q, r <= 10^9"
+    ],
+    "examples": [
+      {
+        "input": "p = 1, q = 2, r = 3",
+        "output": "1",
+        "explanation": "Sum = 6, target = 6/3 = 2. Deviations: |1-2| + |2-2| + |3-2| = 1 + 0 + 1 = 2. Operations = 2/2 = 1.\nOperation: Add 1 to p, subtract 1 from r → p=2, q=2, r=2."
+      },
+      {
+        "input": "p = 1, q = 1, r = 1",
+        "output": "0",
+        "explanation": "All numbers are already equal."
+      },
+      {
+        "input": "p = 1, q = 2, r = 4",
+        "output": "-1",
+        "explanation": "Sum = 7. 7 % 3 != 0, so it's impossible to make all three equal."
+      }
+    ],
+    "bruteForce": {
+      "approach": "**Logic:** Simulate the operations. Try all possible combinations of which two numbers to increment and which to decrement, using BFS or recursion to find the minimum steps.\n\n**Steps:**\n1. Check if (p + q + r) % 3 == 0, if not return -1\n2. Use BFS from state (p, q, r)\n3. At each state, try 3 possible operations:\n   - Add 1 to p & q, subtract 1 from r\n   - Add 1 to p & r, subtract 1 from q\n   - Add 1 to q & r, subtract 1 from p\n4. Return steps when p == q == r\n\n**Problem:** Very slow for large values, only works for small inputs.",
+      "code": "from collections import deque\n\ndef equalize_brute(p, q, r):\n    if p == q == r:\n        return 0\n    if (p + q + r) % 3 != 0:\n        return -1\n    \n    target = (p + q + r) // 3\n    visited = set()\n    queue = deque([(p, q, r, 0)])\n    visited.add((p, q, r))\n    \n    while queue:\n        a, b, c, steps = queue.popleft()\n        \n        for na, nb, nc in [\n            (a+1, b+1, c-1),\n            (a+1, b-1, c+1),\n            (a-1, b+1, c+1)\n        ]:\n            if na == nb == nc:\n                return steps + 1\n            state = (na, nb, nc)\n            if state not in visited:\n                visited.add(state)\n                queue.append((na, nb, nc, steps + 1))\n    \n    return -1\n\n# Input\np = int(input())\nq = int(input())\nr = int(input())\nprint(equalize_brute(p, q, r))",
+      "language": "python",
+      "timeComplexity": "O(3^n) where n = number of operations — exponential",
+      "spaceComplexity": "O(3^n)"
+    },
+    "optimal": {
+      "approach": "**Logic:** Use math to directly compute the answer.\n\n**Key Insights:**\n1. Each operation changes the sum by +1, so the target sum must be reachable\n2. If (p + q + r) % 3 != 0, it's impossible → return -1\n3. If possible, the target value = (p + q + r) / 3\n4. Each operation reduces the total deviation from target by 2\n5. Minimum operations = total_deviation / 2\n\n**Formula:**\n- target = (p + q + r) // 3\n- ops = (|p - target| + |q - target| + |r - target|) // 2\n\n**Steps:**\n1. Check (p + q + r) % 3 == 0, else return -1\n2. Compute target = sum // 3\n3. Return sum of absolute deviations // 2",
+      "code": "def equalize_optimal(p, q, r):\n    total = p + q + r\n    \n    if total % 3 != 0:\n        return -1\n    \n    target = total // 3\n    deviation = abs(p - target) + abs(q - target) + abs(r - target)\n    \n    return deviation // 2\n\n# Input\np = int(input())\nq = int(input())\nr = int(input())\nprint(equalize_optimal(p, q, r))\n\n# --- One-liner ---\n# p, q, r = int(input()), int(input()), int(input())\n# s = p + q + r\n# print(-1 if s % 3 else (abs(p-s//3) + abs(q-s//3) + abs(r-s//3)) // 2)",
+      "language": "python",
+      "timeComplexity": "O(1)",
+      "spaceComplexity": "O(1)"
+    },
+    "source": "TCS NQT PYQ"
   }
 ]

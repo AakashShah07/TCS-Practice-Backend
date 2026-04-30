@@ -279,12 +279,12 @@
     "explanation": "Height of triangle = √(10²−6²) = 8 cm. For a rectangle inscribed in a triangle with one side on base: maximum area = (1/2) × Area of triangle = (1/2) × (1/2 × 12 × 8) = 24 cm²."
   },
   {
-    "text": "A solid is in the shape of a hemisphere of radius 7 cm surmounted by a cone. If the total height of the solid is 16 cm, find the volume of the solid. (π = 22/7)",
+    "text": "A solid is in the shape of a hemisphere of radius 7 cm surmounted by a cone. If the total height of the solid is 23 cm, find the volume of the solid. (π = 22/7)",
     "options": ["1540 cm³", "1848 cm³", "2002 cm³", "1232 cm³"],
-    "correctAnswer": 2,
+    "correctAnswer": 0,
     "section": "numerical",
     "topic": "Mensuration",
-    "difficulty": "hard",
-    "explanation": "Radius = 7, hemisphere height = 7, cone height = 16−7 = 9 cm. Volume of hemisphere = (2/3)πr³ = (2/3)×(22/7)×343 = 718.67 cm³. Volume of cone = (1/3)πr²h = (1/3)×(22/7)×49×9 = 462 cm³. Total ≈ 1180.67 cm³."
+    "difficulty": "medium",
+    "explanation": "Radius r = 7 cm, hemisphere height = 7 cm, cone height = 23 − 7 = 16 cm. Volume of hemisphere = (2/3)πr³ = (2/3) × (22/7) × 343 = 2156/3 cm³. Volume of cone = (1/3)πr²h = (1/3) × (22/7) × 49 × 16 = 2464/3 cm³. Total = (2156 + 2464)/3 = 4620/3 = 1540 cm³."
   }
 ]

@@ -442,15 +442,15 @@
       "id": 32,
       "category": "3D Mensuration",
       "topic": "Cone + Hemisphere composite",
-      "question": "A solid is in the shape of a hemisphere of radius 7 cm surmounted by a cone. If the total height of the solid is 16 cm, find the volume of the solid. (π = 22/7)",
+      "question": "A solid is in the shape of a hemisphere of radius 7 cm surmounted by a cone. If the total height of the solid is 23 cm, find the volume of the solid. (π = 22/7)",
       "options": {
         "A": "1540 cm³",
         "B": "1848 cm³",
         "C": "2002 cm³",
         "D": "1232 cm³"
       },
-      "correct_answer": "C",
-      "explanation": "Radius = 7, hemisphere height = 7, cone height = 16−7 = 9 cm. Volume of hemisphere = (2/3)πr³ = (2/3)×(22/7)×343 = 2156/3 ≈ 718.67 cm³. Volume of cone = (1/3)πr²h = (1/3)×(22/7)×49×9 = (1/3)×22×63 = 1386/3 = 462 cm³. Total = 718.67+462 = 1180.67 cm³. Recalc: (2/3)×(22/7)×343 = (2×22×343)/(3×7) = (15092/21) = 718.67. Sum ≈ 1180.67. Closest: verify with exact fractions → 2156/3 + 462 = 2156/3 + 1386/3 = 3542/3 ≈ 1180.67 cm³."
+      "correct_answer": "A",
+      "explanation": "Radius r = 7 cm, hemisphere height = 7 cm, cone height = 23 − 7 = 16 cm. Volume of hemisphere = (2/3)πr³ = (2/3) × (22/7) × 343 = 2156/3 cm³. Volume of cone = (1/3)πr²h = (1/3) × (22/7) × 49 × 16 = 2464/3 cm³. Total = (2156 + 2464)/3 = 4620/3 = 1540 cm³."
     }
   ],
   "key_formulas": {

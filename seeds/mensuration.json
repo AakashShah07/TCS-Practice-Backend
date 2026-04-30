@@ -109,12 +109,12 @@
   },
   {
     "text": "A hollow cylindrical pipe is 21 cm long. Its inner and outer diameters are 10 cm and 14 cm respectively. Find the volume of the material used in making the pipe. (π = 22/7)",
-    "options": ["17424 cm³", "7920 cm³", "9504 cm³", "11088 cm³"],
+    "options": ["1584 cm³", "1848 cm³", "1320 cm³", "1452 cm³"],
     "correctAnswer": 0,
     "section": "numerical",
     "topic": "Mensuration",
     "difficulty": "medium",
-    "explanation": "Inner radius r = 5 cm, outer radius R = 7 cm, length h = 21 cm. Volume = π(R²−r²)h = (22/7)(49−25)(21) = (22/7)(24)(21) = 22×24×3 = 1584 cm³. Always check unit conversion carefully in TCS NQT."
+    "explanation": "Inner radius r = 5 cm, outer radius R = 7 cm, length h = 21 cm. Volume = π(R²−r²)h = (22/7)(49−25)(21) = (22/7) × 24 × 21 = 22 × 24 × 3 = 1584 cm³."
   },
   {
     "text": "A cone of radius 10 cm and height 30 cm is cut parallel to its base at a height of 10 cm from the base. Find the ratio of the volume of the smaller cone to that of the frustum.",

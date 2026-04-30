@@ -17,7 +17,9 @@
     "seed:time-and-work-test": "node seeds/seed_time_and_work_test.js",
     "seed:lcm-hcf": "node seeds/seed_lcm_hcf.js",
     "seed:lcm-hcf-test": "node seeds/seed_lcm_hcf_test.js",
-    "seed:coding": "node seeds/seed_coding.js"
+    "seed:coding": "node seeds/seed_coding.js",
+    "seed:mensuration": "node seeds/seed_mensuration.js",
+    "seed:mensuration-test": "node seeds/seed_mensuration_test.js"
   },
   "keywords": [],
   "author": "",

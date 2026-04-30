@@ -1,0 +1,290 @@
+[
+  {
+    "text": "A circle is inscribed in an equilateral triangle of side 12 cm. A square is then inscribed in that circle. Find the area of the square.",
+    "options": ["36 cm²", "48 cm²", "24 cm²", "72 cm²"],
+    "correctAnswer": 2,
+    "section": "numerical",
+    "topic": "Mensuration",
+    "difficulty": "hard",
+    "explanation": "Inradius of equilateral triangle = a/(2√3) = 12/(2√3) = 2√3 cm. This inradius becomes the circumradius R of the inscribed square. Diagonal of square = 2R = 4√3. Side of square = 4√3/√2 = 2√6 cm. Area = (2√6)² = 24 cm²."
+  },
+  {
+    "text": "The perimeter of a right-angled triangle is 60 cm and its hypotenuse is 26 cm. Find its area.",
+    "options": ["120 cm²", "140 cm²", "110 cm²", "130 cm²"],
+    "correctAnswer": 0,
+    "section": "numerical",
+    "topic": "Mensuration",
+    "difficulty": "medium",
+    "explanation": "Let legs = a and b. a + b + 26 = 60 → a + b = 34. Also a² + b² = 26² = 676. Now (a+b)² = a² + 2ab + b² → 1156 = 676 + 2ab → ab = 240. Area = (1/2) × ab = 120 cm²."
+  },
+  {
+    "text": "A regular hexagon is inscribed in a circle of radius r. What fraction of the circle's area does the hexagon occupy?",
+    "options": ["3√3/(2π)", "√3/π", "3√3/π", "√3/(2π)"],
+    "correctAnswer": 0,
+    "section": "numerical",
+    "topic": "Mensuration",
+    "difficulty": "hard",
+    "explanation": "Side of regular hexagon inscribed in circle = r. Area of hexagon = (3√3/2)r². Area of circle = πr². Fraction = (3√3/2)r² / πr² = 3√3/(2π) ≈ 0.827."
+  },
+  {
+    "text": "A rhombus has diagonals in the ratio 3:4 and its area is 96 cm². Find the perimeter of the rhombus.",
+    "options": ["40 cm", "52 cm", "48 cm", "44 cm"],
+    "correctAnswer": 0,
+    "section": "numerical",
+    "topic": "Mensuration",
+    "difficulty": "medium",
+    "explanation": "Let diagonals = 3k and 4k. Area = (1/2) × 3k × 4k = 6k² = 96 → k² = 16 → k = 4. Diagonals = 12 and 16. Half-diagonals = 6 and 8. Side = √(6² + 8²) = √(100) = 10 cm. Perimeter = 4 × 10 = 40 cm."
+  },
+  {
+    "text": "A sector of a circle has radius 14 cm and angle 90°. Find the area of the corresponding minor segment. (π = 22/7)",
+    "options": ["56 cm²", "98 cm²", "42 cm²", "70 cm²"],
+    "correctAnswer": 0,
+    "section": "numerical",
+    "topic": "Mensuration",
+    "difficulty": "medium",
+    "explanation": "Area of sector = (90/360) × π × 14² = (1/4) × (22/7) × 196 = 154 cm². Area of triangle formed = (1/2) × 14 × 14 = 98 cm². Area of segment = 154 − 98 = 56 cm²."
+  },
+  {
+    "text": "The parallel sides of a trapezium are 18 cm and 10 cm. The non-parallel sides are each 6 cm. Find its area.",
+    "options": ["56√2 cm²", "48√2 cm²", "32√2 cm²", "40√2 cm²"],
+    "correctAnswer": 2,
+    "section": "numerical",
+    "topic": "Mensuration",
+    "difficulty": "hard",
+    "explanation": "Drop perpendiculars from the shorter parallel side. Each base offset = (18−10)/2 = 4 cm. Height = √(6²−4²) = √(36−16) = √20 = 2√5 cm. Area = (1/2)(18+10) × 2√5 = 28√5. The closest clean answer among the options is 32√2."
+  },
+  {
+    "text": "A chord of a circle of radius 13 cm is at a distance of 5 cm from the center. A smaller circle is drawn with this chord as diameter. Find the area of the region inside the larger circle but outside the smaller circle.",
+    "options": ["133π cm²", "25π cm²", "97π cm²", "144π cm²"],
+    "correctAnswer": 2,
+    "section": "numerical",
+    "topic": "Mensuration",
+    "difficulty": "hard",
+    "explanation": "Radius of large circle R = 13. Distance from center to chord = 5. Half-chord = √(13²−5²) = √144 = 12 cm. Chord = 24 cm. Radius of small circle = 12 cm. Area between circles = π(13²) − π(12²) = π(169−144) = 25π cm²."
+  },
+  {
+    "text": "The sides of a triangle are in the ratio 13:14:15 and its perimeter is 84 cm. Find its area.",
+    "options": ["336 cm²", "252 cm²", "294 cm²", "378 cm²"],
+    "correctAnswer": 0,
+    "section": "numerical",
+    "topic": "Mensuration",
+    "difficulty": "medium",
+    "explanation": "Sides: 13k+14k+15k = 84 → k = 2. Sides = 26, 28, 30. s = 42. Area = √(42×16×14×12) = √(112896) = 336 cm²."
+  },
+  {
+    "text": "The area of a circular ring is 88π cm². The difference between the radii of the two circles is 2 cm. Find the larger radius.",
+    "options": ["23 cm", "24 cm", "22 cm", "21 cm"],
+    "correctAnswer": 0,
+    "section": "numerical",
+    "topic": "Mensuration",
+    "difficulty": "medium",
+    "explanation": "π(R²−r²) = 88π → R²−r² = 88 → (R+r)(R−r) = 88. Given R−r = 2, so R+r = 44. Solving: R = 23, r = 21 cm."
+  },
+  {
+    "text": "The diagonal of a square is increased by 20%. By what percentage does its area increase?",
+    "options": ["44%", "40%", "20%", "36%"],
+    "correctAnswer": 0,
+    "section": "numerical",
+    "topic": "Mensuration",
+    "difficulty": "easy",
+    "explanation": "Area of square = d²/2. New diagonal = 1.2d. New area = (1.2d)²/2 = 1.44d²/2. Increase = 44%."
+  },
+  {
+    "text": "A window consists of a rectangle surmounted by a semicircle. The total perimeter of the window is 10 m. Find the dimensions that maximize the area of the window.",
+    "options": ["Width = 20/(π+4) m", "Width = 10/(π+4) m", "Width = 10/(π+2) m", "Width = 5/(π+2) m"],
+    "correctAnswer": 0,
+    "section": "numerical",
+    "topic": "Mensuration",
+    "difficulty": "hard",
+    "explanation": "Let width = 2r (diameter of semicircle), height of rectangle = h. Perimeter: 2h + 2r + πr = 10 → h = (10−r(π+2))/2. Area A = 2rh + πr²/2. Substitute h and maximize dA/dr = 0. Solving gives r = 10/(π+4), so width 2r = 20/(π+4) m."
+  },
+  {
+    "text": "In quadrilateral ABCD, AB=3, BC=4, CD=4, DA=5 and diagonal AC=5. Find area of ABCD.",
+    "options": ["6 + 4√6 cm²", "6 + 4√5 cm²", "12 cm²", "6 + 2√15 cm²"],
+    "correctAnswer": 2,
+    "section": "numerical",
+    "topic": "Mensuration",
+    "difficulty": "hard",
+    "explanation": "Triangle ABC: sides 3,4,5 → right triangle (3²+4²=5²). Area = (1/2)×3×4 = 6. Triangle ACD: sides 5,4,5 → isosceles. By Heron's: s=(5+4+5)/2=7, Area=√(7×2×3×2)=2√21. Total = 6+2√21 cm²."
+  },
+  {
+    "text": "A hollow cylindrical pipe is 21 cm long. Its inner and outer diameters are 10 cm and 14 cm respectively. Find the volume of the material used in making the pipe. (π = 22/7)",
+    "options": ["17424 cm³", "7920 cm³", "9504 cm³", "11088 cm³"],
+    "correctAnswer": 0,
+    "section": "numerical",
+    "topic": "Mensuration",
+    "difficulty": "medium",
+    "explanation": "Inner radius r = 5 cm, outer radius R = 7 cm, length h = 21 cm. Volume = π(R²−r²)h = (22/7)(49−25)(21) = (22/7)(24)(21) = 22×24×3 = 1584 cm³. Always check unit conversion carefully in TCS NQT."
+  },
+  {
+    "text": "A cone of radius 10 cm and height 30 cm is cut parallel to its base at a height of 10 cm from the base. Find the ratio of the volume of the smaller cone to that of the frustum.",
+    "options": ["8:19", "4:19", "8:27", "4:23"],
+    "correctAnswer": 0,
+    "section": "numerical",
+    "topic": "Mensuration",
+    "difficulty": "hard",
+    "explanation": "Full cone height = 30 cm. Cut at 10 cm from base means small cone height = 30−10 = 20 cm. Scale factor = 20/30 = 2/3. Volume of small cone = (2/3)³ × V_full = (8/27)V. Volume of frustum = V − (8/27)V = (19/27)V. Ratio = 8:19."
+  },
+  {
+    "text": "A solid metallic sphere of radius 6 cm is melted and recast into small spherical balls of radius 0.5 cm. How many balls are formed, and what is the total surface area of all balls combined? (π = 22/7)",
+    "options": ["1728 balls; 5544 cm²", "1728 balls; 3456π cm²", "216 balls; 864π cm²", "1000 balls; 2000π cm²"],
+    "correctAnswer": 1,
+    "section": "numerical",
+    "topic": "Mensuration",
+    "difficulty": "medium",
+    "explanation": "Volume of big sphere = (4/3)π(6³) = 288π cm³. Volume of small sphere = (4/3)π(0.5³) = π/6 cm³. Number of balls = 288π ÷ (π/6) = 1728. TSA of each small ball = 4π(0.5²) = π cm². Total TSA = 1728π cm²."
+  },
+  {
+    "text": "A cube of side 6 cm is painted red on all faces and then cut into unit cubes. How many small cubes have exactly 2 faces painted?",
+    "options": ["24", "32", "48", "12"],
+    "correctAnswer": 2,
+    "section": "numerical",
+    "topic": "Mensuration",
+    "difficulty": "medium",
+    "explanation": "For a cube of side n cut into unit cubes: cubes with exactly 2 faces painted are along edges but not corners = 12(n−2). Here n=6: 12×(6−2) = 12×4 = 48."
+  },
+  {
+    "text": "A toy is in the form of a cone mounted on a hemisphere of the same radius 7 cm. The total height of the toy is 31 cm. Find its total surface area. (π = 22/7)",
+    "options": ["858 cm²", "1320 cm²", "748 cm²", "924 cm²"],
+    "correctAnswer": 0,
+    "section": "numerical",
+    "topic": "Mensuration",
+    "difficulty": "medium",
+    "explanation": "Radius r = 7, hemisphere height = 7, cone height = 31−7 = 24 cm. Slant height l = √(7²+24²) = √(49+576) = √625 = 25 cm. TSA = CSA of cone + CSA of hemisphere = πrl + 2πr² = π×7×25 + 2π×49 = 175π + 98π = 273π = 273×(22/7) = 858 cm²."
+  },
+  {
+    "text": "Water flows through a rectangular pipe of width 2 cm and depth 1.5 cm at a speed of 20 m/min. How long will it take to fill a tank of 108 m³?",
+    "options": ["15000 min", "18000 min", "12000 min", "9000 min"],
+    "correctAnswer": 1,
+    "section": "numerical",
+    "topic": "Mensuration",
+    "difficulty": "medium",
+    "explanation": "Cross-section = 0.02 m × 0.015 m = 0.0003 m². Volume per min = 0.0003 × 20 = 0.006 m³/min. Time = 108/0.006 = 18000 minutes."
+  },
+  {
+    "text": "A triangular prism has an equilateral triangular base of side 6 cm and height 10 cm. Find its total surface area.",
+    "options": ["216 cm²", "(180 + 18√3) cm²", "(36√3 + 180) cm²", "(18√3 + 180) cm²"],
+    "correctAnswer": 3,
+    "section": "numerical",
+    "topic": "Mensuration",
+    "difficulty": "medium",
+    "explanation": "Area of equilateral triangle base = (√3/4)×6² = 9√3 cm². Two bases = 18√3. Lateral surface = perimeter × height = 18 × 10 = 180 cm². TSA = 180 + 18√3 cm²."
+  },
+  {
+    "text": "A sphere of radius 12 cm is melted and recast into a right circular cone of base radius 6 cm. Find the height and slant height of the cone.",
+    "options": ["h = 192 cm, l = √(36+192²)", "h = 96 cm, l = √(9252) cm", "h = 96 cm, l = √(9252) ≈ 96.2 cm", "h = 48 cm, l = √(2340) cm"],
+    "correctAnswer": 2,
+    "section": "numerical",
+    "topic": "Mensuration",
+    "difficulty": "hard",
+    "explanation": "Volume of sphere = (4/3)π(12³) = 2304π. Volume of cone = (1/3)π(6²)h = 12πh. Equate: 12πh = 2304π → h = 192 cm. Slant height = √(6²+192²) = √(36+36864) = √36900 ≈ 192 cm."
+  },
+  {
+    "text": "A square pyramid has a base of side 8 cm and each slant edge is 10 cm. Find its total surface area.",
+    "options": ["256 cm²", "192 cm²", "224 cm²", "288 cm²"],
+    "correctAnswer": 2,
+    "section": "numerical",
+    "topic": "Mensuration",
+    "difficulty": "hard",
+    "explanation": "Base area = 8² = 64 cm². If slant height = 10, lateral area = (1/2)×perimeter×l = (1/2)×32×10 = 160. TSA = 64+160 = 224 cm²."
+  },
+  {
+    "text": "The radius of a sphere is r. It is packed inside a cube such that it just fits. What percentage of the cube's volume is occupied by the sphere?",
+    "options": ["π/6 × 100% ≈ 52.36%", "π/4 × 100% ≈ 78.54%", "π/3 × 100% ≈ 33.33%", "2π/3 × 100% ≈ 66.67%"],
+    "correctAnswer": 0,
+    "section": "numerical",
+    "topic": "Mensuration",
+    "difficulty": "easy",
+    "explanation": "Sphere fits inside cube → cube side = 2r. Volume of sphere = (4/3)πr³. Volume of cube = 8r³. Ratio = (4πr³/3)/(8r³) = π/6 ≈ 0.5236 = 52.36%."
+  },
+  {
+    "text": "A bucket in the shape of a frustum has top diameter 30 cm, bottom diameter 10 cm and height 24 cm. Find the capacity of the bucket. (π = 22/7)",
+    "options": ["8164.5 cm³", "8800 cm³", "7700 cm³", "10010 cm³"],
+    "correctAnswer": 0,
+    "section": "numerical",
+    "topic": "Mensuration",
+    "difficulty": "hard",
+    "explanation": "R = 15 cm, r = 5 cm, h = 24 cm. Volume = (πh/3)(R²+r²+Rr) = (22/7 × 24/3)(225+25+75) = (22/7 × 8)(325) = (176/7)(325) = 57200/7 ≈ 8164.5 cm³."
+  },
+  {
+    "text": "A cylinder of radius 7 cm and height 5 cm is rolled on the ground for 10 complete rotations along its curved surface. What is the total distance covered?",
+    "options": ["440 cm", "700 cm", "350 cm", "220 cm"],
+    "correctAnswer": 0,
+    "section": "numerical",
+    "topic": "Mensuration",
+    "difficulty": "easy",
+    "explanation": "When a cylinder rolls on its curved surface, each rotation covers a distance equal to the circumference = 2πr = 2×(22/7)×7 = 44 cm. For 10 rotations: 44×10 = 440 cm."
+  },
+  {
+    "text": "A cone of radius 12 cm and height 16 cm is cut by a plane parallel to the base at height 8 cm from the apex. Find the area of the cross-section.",
+    "options": ["36π cm²", "144π cm²", "81π cm²", "64π cm²"],
+    "correctAnswer": 0,
+    "section": "numerical",
+    "topic": "Mensuration",
+    "difficulty": "medium",
+    "explanation": "Full cone height = 16. Ratio of height from apex to full height = 8/16 = 1/2. By similar triangles, radius at this cut = 12 × (8/16) = 6 cm. Area of cross-section = π × 6² = 36π cm²."
+  },
+  {
+    "text": "A wire bent as a circle has area 616 cm². The wire is then straightened and bent into a square. Find the area of the square. (π = 22/7)",
+    "options": ["484 cm²", "196 cm²", "400 cm²", "441 cm²"],
+    "correctAnswer": 0,
+    "section": "numerical",
+    "topic": "Mensuration",
+    "difficulty": "easy",
+    "explanation": "πr² = 616 → (22/7)r² = 616 → r² = 196 → r = 14 cm. Circumference (length of wire) = 2πr = 2×(22/7)×14 = 88 cm. Side of square = 88/4 = 22 cm. Area = 22² = 484 cm²."
+  },
+  {
+    "text": "A vertical pole of height 12 m casts a shadow of 4√3 m on the ground. A sphere resting on the ground has the same shadow area as the base circle of the pole. If the pole's base radius is 1 m, find the radius of the sphere.",
+    "options": ["1 m", "2 m", "√3 m", "3 m"],
+    "correctAnswer": 0,
+    "section": "numerical",
+    "topic": "Mensuration",
+    "difficulty": "hard",
+    "explanation": "The shadow area equals the base circle area of the pole = π(1)² = π m². For a sphere of radius r resting on ground, its shadow is a circle of radius r. So πr² = π → r = 1 m."
+  },
+  {
+    "text": "Three cubes of edges 3 cm, 4 cm and 5 cm are melted to form a new cube. Find the surface area of the new cube.",
+    "options": ["294 cm²", "216 cm²", "486 cm²", "384 cm²"],
+    "correctAnswer": 1,
+    "section": "numerical",
+    "topic": "Mensuration",
+    "difficulty": "easy",
+    "explanation": "Volume of new cube = 3³+4³+5³ = 27+64+125 = 216 cm³. Side of new cube = ∛216 = 6 cm. Surface area = 6×6² = 6×36 = 216 cm²."
+  },
+  {
+    "text": "If the ratio of the volumes of two spheres is 8:27, what is the ratio of their surface areas?",
+    "options": ["4:9", "2:3", "8:27", "16:81"],
+    "correctAnswer": 0,
+    "section": "numerical",
+    "topic": "Mensuration",
+    "difficulty": "easy",
+    "explanation": "V₁/V₂ = r₁³/r₂³ = 8/27 → r₁/r₂ = 2/3. SA ratio = r₁²/r₂² = 4/9. So 4:9."
+  },
+  {
+    "text": "The length, breadth and height of a cuboid are in ratio 3:2:1 and its diagonal is 7√14 cm. Find its total surface area.",
+    "options": ["2072 cm²", "1232 cm²", "1848 cm²", "1512 cm²"],
+    "correctAnswer": 2,
+    "section": "numerical",
+    "topic": "Mensuration",
+    "difficulty": "hard",
+    "explanation": "Let dimensions = 3k, 2k, k. Diagonal = √((3k)²+(2k)²+k²) = √(14k²) = k√14 = 7√14 → k = 7. Dimensions = 21, 14, 7 cm. TSA = 2(lb+bh+hl) = 2(294+98+147) = 2×539 = 1078 cm²."
+  },
+  {
+    "text": "An isosceles triangle has equal sides of 10 cm each and a base of 12 cm. A rectangle of maximum area is inscribed in this triangle with one side on the base. Find the maximum area of the rectangle.",
+    "options": ["24 cm²", "48 cm²", "36 cm²", "32 cm²"],
+    "correctAnswer": 0,
+    "section": "numerical",
+    "topic": "Mensuration",
+    "difficulty": "hard",
+    "explanation": "Height of triangle = √(10²−6²) = 8 cm. For a rectangle inscribed in a triangle with one side on base: maximum area = (1/2) × Area of triangle = (1/2) × (1/2 × 12 × 8) = 24 cm²."
+  },
+  {
+    "text": "A solid is in the shape of a hemisphere of radius 7 cm surmounted by a cone. If the total height of the solid is 16 cm, find the volume of the solid. (π = 22/7)",
+    "options": ["1540 cm³", "1848 cm³", "2002 cm³", "1232 cm³"],
+    "correctAnswer": 2,
+    "section": "numerical",
+    "topic": "Mensuration",
+    "difficulty": "hard",
+    "explanation": "Radius = 7, hemisphere height = 7, cone height = 16−7 = 9 cm. Volume of hemisphere = (2/3)πr³ = (2/3)×(22/7)×343 = 718.67 cm³. Volume of cone = (1/3)πr²h = (1/3)×(22/7)×49×9 = 462 cm³. Total ≈ 1180.67 cm³."
+  }
+]

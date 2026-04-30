@@ -443,5 +443,44 @@
       "spaceComplexity": "O(1)"
     },
     "source": "TCS NQT PYQ"
+  },
+  {
+    "title": "Find the Single Unique Element",
+    "description": "You are given an array where every element appears exactly 2 times, except one element which appears only 1 time.\n\nYour task is to find that single unique element.",
+    "difficulty": "easy",
+    "topic": "Bit Manipulation",
+    "constraints": [
+      "1 <= N <= 10^5",
+      "N is always odd",
+      "1 <= Arr[i] <= 10^9",
+      "Exactly one element appears once, all others appear exactly twice"
+    ],
+    "examples": [
+      {
+        "input": "N = 5\nArr = [2, 3, 5, 3, 2]",
+        "output": "5",
+        "explanation": "2 appears twice, 3 appears twice, 5 appears once. The unique element is 5."
+      },
+      {
+        "input": "N = 7\nArr = [1, 1, 4, 4, 7, 8, 8]",
+        "output": "7",
+        "explanation": "1, 4, 8 appear twice. 7 appears once. The unique element is 7."
+      }
+    ],
+    "bruteForce": {
+      "approach": "**Logic:** For each element, count how many times it appears in the array. Return the element with count 1.\n\n**Steps:**\n1. For each element in the array:\n   a. Count its occurrences by scanning the entire array\n   b. If count == 1, return that element\n\n**Alternative:** Use a dictionary/hashmap to store frequencies, then find the one with frequency 1.",
+      "code": "def find_unique_brute(arr, n):\n    for i in range(n):\n        count = 0\n        for j in range(n):\n            if arr[i] == arr[j]:\n                count += 1\n        if count == 1:\n            return arr[i]\n\n# Input\nn = int(input())\narr = list(map(int, input().split()))\nprint(find_unique_brute(arr, n))\n\n# --- HashMap approach (O(n) time, O(n) space) ---\n# from collections import Counter\n# freq = Counter(arr)\n# for num in arr:\n#     if freq[num] == 1:\n#         print(num)\n#         break",
+      "language": "python",
+      "timeComplexity": "O(n^2)",
+      "spaceComplexity": "O(1)"
+    },
+    "optimal": {
+      "approach": "**Logic:** Use XOR (^) operation. XOR of a number with itself is 0, and XOR of a number with 0 is the number itself.\n\n**Key Property:**\n- a ^ a = 0 (same numbers cancel out)\n- a ^ 0 = a\n- XOR is commutative and associative\n\nSo XOR of all elements will cancel out all pairs, leaving only the unique element.\n\n**Steps:**\n1. Initialize result = 0\n2. XOR every element in the array with result\n3. Return result",
+      "code": "def find_unique_optimal(arr, n):\n    result = 0\n    for num in arr:\n        result ^= num\n    return result\n\n# Input\nn = int(input())\narr = list(map(int, input().split()))\nprint(find_unique_optimal(arr, n))\n\n# --- One-liner using reduce ---\n# from functools import reduce\n# import operator\n# print(reduce(operator.xor, arr))",
+      "language": "python",
+      "timeComplexity": "O(n)",
+      "spaceComplexity": "O(1)"
+    },
+    "source": "TCS NQT PYQ"
   }
 ]

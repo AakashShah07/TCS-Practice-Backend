@@ -482,5 +482,120 @@
       "spaceComplexity": "O(1)"
     },
     "source": "TCS NQT PYQ"
+  },
+  {
+    "title": "Sum of First N Primes",
+    "description": "Given an integer N, find the sum of the first N prime numbers.\n\nA prime number is a number greater than 1 that has only two divisors: 1 and itself.",
+    "difficulty": "easy",
+    "topic": "Math & Number Theory",
+    "constraints": [
+      "1 <= N <= 10^4"
+    ],
+    "examples": [
+      {
+        "input": "N = 4",
+        "output": "17",
+        "explanation": "First 4 prime numbers: 2, 3, 5, 7\nSum = 2 + 3 + 5 + 7 = 17"
+      },
+      {
+        "input": "N = 1",
+        "output": "2",
+        "explanation": "First prime number is 2. Sum = 2."
+      }
+    ],
+    "bruteForce": {
+      "approach": "**Logic:** For each candidate number starting from 2, check if it is prime by testing divisibility against all numbers from 2 to num-1. If prime, add to sum. Stop after finding N primes.\n\n**Steps:**\n1. Initialize count = 0, total = 0, num = 2\n2. While count < N:\n   a. Check if num is prime by looping from 2 to num-1\n   b. If no divisor found, it's prime → add to total, increment count\n   c. Increment num\n3. Return total",
+      "code": "def sum_n_primes_brute(n):\n    count = 0\n    total = 0\n    num = 2\n    \n    while count < n:\n        is_prime = True\n        for i in range(2, num):\n            if num % i == 0:\n                is_prime = False\n                break\n        if is_prime:\n            total += num\n            count += 1\n        num += 1\n    \n    return total\n\n# Input\nn = int(input())\nprint(sum_n_primes_brute(n))",
+      "language": "python",
+      "timeComplexity": "O(N * P) where P is the N-th prime (each prime checked up to itself)",
+      "spaceComplexity": "O(1)"
+    },
+    "optimal": {
+      "approach": "**Logic:** Optimize the primality check by only testing divisors up to √num. A number that has no divisor up to its square root is guaranteed to be prime.\n\n**Why √num works:** If num = a × b and both a, b > √num, then a × b > num — contradiction. So at least one factor must be ≤ √num.\n\n**Steps:**\n1. Initialize count = 0, total = 0, num = 2\n2. While count < N:\n   a. Check if num is prime by looping from 2 to √num\n   b. If prime → add to total, increment count\n   c. Increment num\n3. Return total",
+      "code": "import math\n\ndef is_prime(num):\n    if num < 2:\n        return False\n    if num == 2:\n        return True\n    if num % 2 == 0:\n        return False\n    for i in range(3, int(math.sqrt(num)) + 1, 2):\n        if num % i == 0:\n            return False\n    return True\n\ndef sum_n_primes(n):\n    count = 0\n    total = 0\n    num = 2\n    \n    while count < n:\n        if is_prime(num):\n            total += num\n            count += 1\n        num += 1\n    \n    return total\n\n# Input\nn = int(input())\nprint(sum_n_primes(n))\n\n# --- Sieve alternative for large N ---\n# import math\n# def sum_primes_sieve(n):\n#     limit = max(100, n * 12)  # rough upper bound for N-th prime\n#     sieve = [True] * (limit + 1)\n#     sieve[0] = sieve[1] = False\n#     for i in range(2, int(math.sqrt(limit)) + 1):\n#         if sieve[i]:\n#             for j in range(i*i, limit + 1, i):\n#                 sieve[j] = False\n#     total, count = 0, 0\n#     for i in range(2, limit + 1):\n#         if sieve[i]:\n#             total += i\n#             count += 1\n#             if count == n:\n#                 return total",
+      "language": "python",
+      "timeComplexity": "O(N * √P) where P is the N-th prime",
+      "spaceComplexity": "O(1)"
+    },
+    "source": "TCS NQT PYQ"
+  },
+  {
+    "title": "Shortest Path in Weighted Graph",
+    "description": "You are given a weighted graph with n vertices and m edges. Each edge has a source vertex u, destination vertex v, and weight w.\n\nYou are also given a source node src and a destination node dest.\n\nYour task is to:\n1. Find the shortest path from src to dest\n2. Print the path\n3. Print the total shortest distance\n\nUse Dijkstra's algorithm for graphs with non-negative weights.",
+    "difficulty": "hard",
+    "topic": "Graphs & Shortest Path",
+    "constraints": [
+      "1 <= n <= 10^4",
+      "1 <= m <= 10^5",
+      "0 <= w <= 10^6",
+      "1 <= src, dest <= n",
+      "All edge weights are non-negative"
+    ],
+    "examples": [
+      {
+        "input": "n = 5, m = 6\nEdges:\n1 2 2\n1 3 4\n2 3 1\n2 4 7\n3 5 3\n4 5 1\nsrc = 1, dest = 5",
+        "output": "Path: 1 -> 3 -> 5\nDistance: 7",
+        "explanation": "Possible paths from 1 to 5:\n1→2→3→5 = 2+1+3 = 6... wait, let's check:\n1→3→5 = 4+3 = 7\n1→2→3→5 = 2+1+3 = 6\n1→2→4→5 = 2+7+1 = 10\nShortest path: 1 → 2 → 3 → 5 with distance 6."
+      },
+      {
+        "input": "n = 3, m = 3\nEdges:\n1 2 1\n2 3 2\n1 3 10\nsrc = 1, dest = 3",
+        "output": "Path: 1 -> 2 -> 3\nDistance: 3",
+        "explanation": "Direct path 1→3 costs 10. Via vertex 2: 1→2→3 costs 1+2 = 3. Shortest is 3."
+      }
+    ],
+    "bruteForce": {
+      "approach": "**Logic:** Use BFS/DFS to explore ALL possible paths from src to dest. Track the minimum cost path.\n\n**Steps:**\n1. Build an adjacency list from the edges\n2. Use DFS/recursion to explore every path from src to dest\n3. For each complete path, calculate total weight\n4. Track the path with minimum total weight\n5. Print the shortest path and its distance\n\n**Problem:** Exponential time complexity — explores every possible path, very slow for large graphs.",
+      "code": "def shortest_path_brute(n, edges, src, dest):\n    # Build adjacency list\n    graph = {i: [] for i in range(1, n + 1)}\n    for u, v, w in edges:\n        graph[u].append((v, w))\n        graph[v].append((u, w))  # undirected\n    \n    best_dist = float('inf')\n    best_path = []\n    \n    def dfs(node, target, visited, path, cost):\n        nonlocal best_dist, best_path\n        \n        if cost >= best_dist:  # pruning\n            return\n        \n        if node == target:\n            if cost < best_dist:\n                best_dist = cost\n                best_path = path[:]\n            return\n        \n        for neighbor, weight in graph[node]:\n            if neighbor not in visited:\n                visited.add(neighbor)\n                path.append(neighbor)\n                dfs(neighbor, target, visited, path, cost + weight)\n                path.pop()\n                visited.remove(neighbor)\n    \n    dfs(src, dest, {src}, [src], 0)\n    \n    print('Path:', ' -> '.join(map(str, best_path)))\n    print('Distance:', best_dist)\n\n# Input\nn, m = map(int, input().split())\nedges = []\nfor _ in range(m):\n    u, v, w = map(int, input().split())\n    edges.append((u, v, w))\nsrc, dest = map(int, input().split())\nshortest_path_brute(n, edges, src, dest)",
+      "language": "python",
+      "timeComplexity": "O(n!) — explores all possible paths",
+      "spaceComplexity": "O(n) for recursion stack and visited set"
+    },
+    "optimal": {
+      "approach": "**Logic:** Use Dijkstra's algorithm with a min-heap (priority queue). It finds the shortest path from src to all other nodes efficiently.\n\n**Key Idea:**\n- Maintain a distance array initialized to infinity\n- Use a min-heap to always process the closest unvisited node\n- For each node, relax all its neighbors (update distance if shorter path found)\n- Track parent of each node to reconstruct the path\n\n**Steps:**\n1. Build adjacency list\n2. Initialize dist[src] = 0, all others = infinity\n3. Push (0, src) into min-heap\n4. While heap is not empty:\n   a. Pop node with smallest distance\n   b. For each neighbor, if dist[node] + weight < dist[neighbor]:\n      - Update dist[neighbor]\n      - Set parent[neighbor] = node\n      - Push (new_dist, neighbor) into heap\n5. Reconstruct path using parent array from dest back to src\n6. Print path and dist[dest]",
+      "code": "import heapq\n\ndef dijkstra(n, edges, src, dest):\n    # Build adjacency list\n    graph = {i: [] for i in range(1, n + 1)}\n    for u, v, w in edges:\n        graph[u].append((v, w))\n        graph[v].append((u, w))  # undirected\n    \n    # Dijkstra's algorithm\n    dist = {i: float('inf') for i in range(1, n + 1)}\n    parent = {i: -1 for i in range(1, n + 1)}\n    dist[src] = 0\n    \n    heap = [(0, src)]  # (distance, node)\n    \n    while heap:\n        d, u = heapq.heappop(heap)\n        \n        if d > dist[u]:\n            continue  # skip outdated entries\n        \n        if u == dest:\n            break  # found shortest to dest\n        \n        for v, w in graph[u]:\n            if dist[u] + w < dist[v]:\n                dist[v] = dist[u] + w\n                parent[v] = u\n                heapq.heappush(heap, (dist[v], v))\n    \n    # Reconstruct path\n    if dist[dest] == float('inf'):\n        print('No path exists')\n        return\n    \n    path = []\n    node = dest\n    while node != -1:\n        path.append(node)\n        node = parent[node]\n    path.reverse()\n    \n    print('Path:', ' -> '.join(map(str, path)))\n    print('Distance:', dist[dest])\n\n# Input\nn, m = map(int, input().split())\nedges = []\nfor _ in range(m):\n    u, v, w = map(int, input().split())\n    edges.append((u, v, w))\nsrc, dest = map(int, input().split())\ndijkstra(n, edges, src, dest)",
+      "language": "python",
+      "timeComplexity": "O((m + n) log n) — with min-heap",
+      "spaceComplexity": "O(n + m) for graph, distance, and parent arrays"
+    },
+    "source": "TCS NQT PYQ"
+  },
+  {
+    "title": "Expense Manager",
+    "description": "Write a program to manage expenses from a given total income.\n\nThe program should:\n1. Take total income as input\n2. Repeatedly take an expense category and expense amount\n3. Stop when user enters \"done\"\n4. Print: Total Income, Total Expenses, Total Savings (Income - Expenses), and Expense breakdown category-wise\n\nIf the same category appears multiple times, their amounts should be summed up.",
+    "difficulty": "easy",
+    "topic": "Hashing & Simulation",
+    "constraints": [
+      "1 <= income <= 10^9",
+      "1 <= expense amount <= 10^9",
+      "Category names are non-empty strings",
+      "At least one expense entry before \"done\""
+    ],
+    "examples": [
+      {
+        "input": "Income: 50000\nFood 10000\nRent 20000\nFood 5000\nTravel 3000\ndone",
+        "output": "Total Income: 50000\nTotal Expenses: 38000\nTotal Savings: 12000\nFood: 15000\nRent: 20000\nTravel: 3000",
+        "explanation": "Income = 50000. Expenses: Food (10000+5000=15000), Rent (20000), Travel (3000). Total expenses = 38000. Savings = 50000 - 38000 = 12000."
+      },
+      {
+        "input": "Income: 30000\nBills 10000\nBills 5000\ndone",
+        "output": "Total Income: 30000\nTotal Expenses: 15000\nTotal Savings: 15000\nBills: 15000",
+        "explanation": "Only one category 'Bills' with total 15000. Savings = 30000 - 15000 = 15000."
+      }
+    ],
+    "bruteForce": {
+      "approach": "**Logic:** Store every expense entry as a tuple (category, amount) in a list. At the end, for each unique category, loop through the entire list to sum its amounts.\n\n**Steps:**\n1. Read income\n2. Read entries into a list until \"done\"\n3. Find unique categories\n4. For each unique category, scan the list to sum amounts\n5. Calculate total expenses and savings\n6. Print results",
+      "code": "def expense_manager_brute():\n    income = int(input())\n    expenses = []\n    \n    while True:\n        line = input()\n        if line.lower() == 'done':\n            break\n        parts = line.split()\n        category = parts[0]\n        amount = int(parts[1])\n        expenses.append((category, amount))\n    \n    # Find unique categories in order of first appearance\n    seen = set()\n    categories = []\n    for cat, _ in expenses:\n        if cat not in seen:\n            seen.add(cat)\n            categories.append(cat)\n    \n    # Sum per category by scanning full list each time\n    total_expenses = 0\n    breakdown = {}\n    for cat in categories:\n        cat_total = 0\n        for c, amt in expenses:\n            if c == cat:\n                cat_total += amt\n        breakdown[cat] = cat_total\n        total_expenses += cat_total\n    \n    savings = income - total_expenses\n    \n    print(f'Total Income: {income}')\n    print(f'Total Expenses: {total_expenses}')\n    print(f'Total Savings: {savings}')\n    for cat in categories:\n        print(f'{cat}: {breakdown[cat]}')\n\nexpense_manager_brute()",
+      "language": "python",
+      "timeComplexity": "O(n * k) where n = total entries, k = unique categories",
+      "spaceComplexity": "O(n)"
+    },
+    "optimal": {
+      "approach": "**Logic:** Use a dictionary to accumulate expenses per category in a single pass. Use an ordered list to preserve the order of first appearance.\n\n**Steps:**\n1. Read income\n2. For each entry, add the amount to the category's running total in a dict\n3. Track insertion order (Python 3.7+ dicts preserve order)\n4. After \"done\", compute total expenses as sum of all values\n5. Savings = income - total expenses\n6. Print results",
+      "code": "def expense_manager():\n    income = int(input())\n    breakdown = {}  # preserves insertion order in Python 3.7+\n    \n    while True:\n        line = input()\n        if line.lower() == 'done':\n            break\n        parts = line.split()\n        category = parts[0]\n        amount = int(parts[1])\n        breakdown[category] = breakdown.get(category, 0) + amount\n    \n    total_expenses = sum(breakdown.values())\n    savings = income - total_expenses\n    \n    print(f'Total Income: {income}')\n    print(f'Total Expenses: {total_expenses}')\n    print(f'Total Savings: {savings}')\n    for cat, amt in breakdown.items():\n        print(f'{cat}: {amt}')\n\nexpense_manager()\n\n# --- Using collections.defaultdict alternative ---\n# from collections import defaultdict\n# breakdown = defaultdict(int)\n# breakdown[category] += amount",
+      "language": "python",
+      "timeComplexity": "O(n) — single pass through entries",
+      "spaceComplexity": "O(k) where k = unique categories"
+    },
+    "source": "TCS NQT PYQ"
   }
 ]

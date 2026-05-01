@@ -207,4 +207,76 @@ Traverse every row
 Count number of 1s in that row
 Compare with current maximum
 Store row index if current row has more 1s
-Print the row number
+Print the row number  
+
+
+Q9: Simple Question Statement
+
+You are given two integers i and j.
+
+Your task is to calculate the sum of all integers from i to j (inclusive) and print the result.
+
+
+Q10: Simple Question Statement
+
+Given an integer N, find the sum of the first N prime numbers.
+
+A prime number is a number greater than 1 that has only two divisors:
+
+1
+itself
+Example
+Input
+N = 4
+
+First 4 prime numbers:
+
+2, 3, 5, 7
+
+Sum:
+
+2 + 3 + 5 + 7 = 17
+Output
+17
+
+
+Q11: You are given a weighted graph with:
+
+n vertices
+m edges
+
+Each edge has:
+
+source vertex u
+destination vertex v
+weight w
+
+You are also given:
+
+source node src
+destination node dest
+
+Your task is to:
+
+Find the shortest path from src to dest
+Print the path
+Print the total shortest distance
+
+
+Q12: Simple Question Statement
+Write a program to manage expenses from a given total income.
+The program should:
+
+Take total income as input
+
+Repeatedly take:
+expense category
+expense amount
+
+Stop when user enters: done
+
+Then print:
+Total Income
+Total Expenses
+Total Savings
+Expense breakdown category-wise

@@ -1,0 +1,317 @@
+[
+  {
+    "text": "A car travels at 60 km/h for 2 hours. What is the distance covered?",
+    "options": ["100 km", "120 km", "130 km", "150 km"],
+    "correctAnswer": 1,
+    "section": "numerical",
+    "topic": "Speed, Time & Distance",
+    "difficulty": "easy",
+    "explanation": "Distance = Speed × Time = 60 × 2 = 120 km."
+  },
+  {
+    "text": "Convert 90 km/h into m/s.",
+    "options": ["20 m/s", "25 m/s", "30 m/s", "15 m/s"],
+    "correctAnswer": 1,
+    "section": "numerical",
+    "topic": "Speed, Time & Distance",
+    "difficulty": "easy",
+    "explanation": "To convert km/h to m/s, multiply by 5/18. 90 × 5/18 = 25 m/s."
+  },
+  {
+    "text": "A person covers 150 km in 3 hours. What is his speed?",
+    "options": ["40 km/h", "45 km/h", "50 km/h", "55 km/h"],
+    "correctAnswer": 2,
+    "section": "numerical",
+    "topic": "Speed, Time & Distance",
+    "difficulty": "easy",
+    "explanation": "Speed = Distance / Time = 150 / 3 = 50 km/h."
+  },
+  {
+    "text": "A bus travels at 80 km/h. How long does it take to cover 200 km?",
+    "options": ["2 hr", "2.5 hr", "3 hr", "3.5 hr"],
+    "correctAnswer": 1,
+    "section": "numerical",
+    "topic": "Speed, Time & Distance",
+    "difficulty": "easy",
+    "explanation": "Time = Distance / Speed = 200 / 80 = 2.5 hours."
+  },
+  {
+    "text": "A man walks at 5 km/h for 2 hours and then at 3 km/h for 3 hours. What is his average speed?",
+    "options": ["3.5 km/h", "3.8 km/h", "4 km/h", "4.2 km/h"],
+    "correctAnswer": 1,
+    "section": "numerical",
+    "topic": "Speed, Time & Distance",
+    "difficulty": "easy",
+    "explanation": "Total distance = 5×2 + 3×3 = 10 + 9 = 19 km. Total time = 2 + 3 = 5 hours. Average speed = 19/5 = 3.8 km/h."
+  },
+  {
+    "text": "Two cars are moving in the same direction at 40 km/h and 60 km/h. What is their relative speed?",
+    "options": ["10 km/h", "20 km/h", "50 km/h", "100 km/h"],
+    "correctAnswer": 1,
+    "section": "numerical",
+    "topic": "Speed, Time & Distance",
+    "difficulty": "easy",
+    "explanation": "Relative speed in same direction = 60 − 40 = 20 km/h."
+  },
+  {
+    "text": "Two trains of lengths 180 m and 220 m are running in opposite directions at speeds of 54 km/h and 72 km/h respectively. How much time will they take to completely cross each other?",
+    "options": ["9 sec", "10 sec", "11.43 sec", "12 sec"],
+    "correctAnswer": 2,
+    "section": "numerical",
+    "topic": "Speed, Time & Distance",
+    "difficulty": "medium",
+    "explanation": "Relative speed (opposite direction) = 54 + 72 = 126 km/h = 126 × 5/18 = 35 m/s. Total length = 180 + 220 = 400 m. Time = 400/35 = 11.43 sec."
+  },
+  {
+    "text": "A boat can travel 36 km downstream in 3 hours and 24 km upstream in 4 hours. Find the speed of the stream.",
+    "options": ["2 km/h", "3 km/h", "4 km/h", "5 km/h"],
+    "correctAnswer": 1,
+    "section": "numerical",
+    "topic": "Speed, Time & Distance",
+    "difficulty": "medium",
+    "explanation": "Downstream speed = 36/3 = 12 km/h. Upstream speed = 24/4 = 6 km/h. Speed of stream = (12 − 6)/2 = 3 km/h."
+  },
+  {
+    "text": "A and B start simultaneously from two places 420 km apart toward each other. A travels at 40 km/h and B at 30 km/h. After how many hours will they meet?",
+    "options": ["5 hr", "6 hr", "7 hr", "8 hr"],
+    "correctAnswer": 1,
+    "section": "numerical",
+    "topic": "Speed, Time & Distance",
+    "difficulty": "easy",
+    "explanation": "Relative speed = 40 + 30 = 70 km/h. Time = 420/70 = 6 hr."
+  },
+  {
+    "text": "Two runners start simultaneously around a circular track of length 600 m. Their speeds are 6 m/s and 9 m/s. After how much time will they meet again at the starting point?",
+    "options": ["100 sec", "150 sec", "200 sec", "300 sec"],
+    "correctAnswer": 2,
+    "section": "numerical",
+    "topic": "Speed, Time & Distance",
+    "difficulty": "medium",
+    "explanation": "Time for first runner to complete one lap = 600/6 = 100 sec. Time for second runner = 600/9 = 66.67 sec. LCM of 100 and 200/3: LCM = 200 sec."
+  },
+  {
+    "text": "A man running at 8 km/h crosses a train moving in the opposite direction in 9 sec. If the train length is 180 m, find its speed.",
+    "options": ["56 km/h", "64 km/h", "72 km/h", "80 km/h"],
+    "correctAnswer": 1,
+    "section": "numerical",
+    "topic": "Speed, Time & Distance",
+    "difficulty": "medium",
+    "explanation": "Relative speed = 180/9 = 20 m/s. Man speed = 8 × 5/18 = 2.22 m/s. Since opposite direction, train speed = 20 − 2.22 = 17.78 m/s = 17.78 × 18/5 = 64 km/h."
+  },
+  {
+    "text": "A car travels first half distance at 30 km/h and second half at 60 km/h. What is the average speed?",
+    "options": ["40 km/h", "42 km/h", "45 km/h", "48 km/h"],
+    "correctAnswer": 0,
+    "section": "numerical",
+    "topic": "Speed, Time & Distance",
+    "difficulty": "medium",
+    "explanation": "Average speed for equal distances = 2ab/(a+b) = 2×30×60/90 = 3600/90 = 40 km/h."
+  },
+  {
+    "text": "A 240 m train crosses a platform in 24 sec and a pole in 12 sec. Find platform length.",
+    "options": ["200 m", "220 m", "240 m", "260 m"],
+    "correctAnswer": 2,
+    "section": "numerical",
+    "topic": "Speed, Time & Distance",
+    "difficulty": "easy",
+    "explanation": "Speed from pole crossing = 240/12 = 20 m/s. Distance covered crossing platform = 20 × 24 = 480 m. Platform length = 480 − 240 = 240 m."
+  },
+  {
+    "text": "A swimmer can swim at 5 km/h in still water. Stream speed is 3 km/h. If he swims perpendicular to stream for 1 hour, how far downstream does he drift?",
+    "options": ["2 km", "3 km", "4 km", "5 km"],
+    "correctAnswer": 1,
+    "section": "numerical",
+    "topic": "Speed, Time & Distance",
+    "difficulty": "easy",
+    "explanation": "Drift depends only on stream speed = 3 × 1 = 3 km."
+  },
+  {
+    "text": "A train 150 m long passes a signal in 15 sec. What is its speed?",
+    "options": ["30 km/h", "36 km/h", "45 km/h", "54 km/h"],
+    "correctAnswer": 1,
+    "section": "numerical",
+    "topic": "Speed, Time & Distance",
+    "difficulty": "easy",
+    "explanation": "Speed = 150/15 = 10 m/s = 10 × 18/5 = 36 km/h."
+  },
+  {
+    "text": "Two cyclists start together around a 500 m track at 5 m/s and 7 m/s. After how much time will they meet first?",
+    "options": ["125 sec", "150 sec", "200 sec", "250 sec"],
+    "correctAnswer": 3,
+    "section": "numerical",
+    "topic": "Speed, Time & Distance",
+    "difficulty": "medium",
+    "explanation": "Relative speed = 7 − 5 = 2 m/s. Time for faster to gain one full lap = 500/2 = 250 sec."
+  },
+  {
+    "text": "A boat travels 30 km upstream in 5 hr and same downstream in 3 hr. Find the boat speed in still water.",
+    "options": ["8 km/h", "9 km/h", "10 km/h", "11 km/h"],
+    "correctAnswer": 0,
+    "section": "numerical",
+    "topic": "Speed, Time & Distance",
+    "difficulty": "medium",
+    "explanation": "Upstream speed = 30/5 = 6 km/h. Downstream speed = 30/3 = 10 km/h. Still water speed = (10+6)/2 = 8 km/h."
+  },
+  {
+    "text": "A person walks at 4 km/h and reaches office 10 min late. At 5 km/h he reaches 5 min early. Find the distance.",
+    "options": ["5 km", "6 km", "7 km", "8 km"],
+    "correctAnswer": 0,
+    "section": "numerical",
+    "topic": "Speed, Time & Distance",
+    "difficulty": "medium",
+    "explanation": "Time difference = 15 min = 1/4 hr. d/4 − d/5 = 1/4. (5d−4d)/20 = 1/4. d/20 = 1/4. d = 5 km."
+  },
+  {
+    "text": "A man rows 15 km downstream in 1 hr and returns in 3 hr. Find the speed of the stream.",
+    "options": ["4 km/h", "5 km/h", "6 km/h", "7.5 km/h"],
+    "correctAnswer": 1,
+    "section": "numerical",
+    "topic": "Speed, Time & Distance",
+    "difficulty": "medium",
+    "explanation": "Downstream speed = 15/1 = 15 km/h. Upstream speed = 15/3 = 5 km/h. Stream speed = (15−5)/2 = 5 km/h."
+  },
+  {
+    "text": "A train running at 108 km/h crosses a bridge in 40 sec and a pole in 16 sec. Find the bridge length.",
+    "options": ["480 m", "600 m", "720 m", "840 m"],
+    "correctAnswer": 2,
+    "section": "numerical",
+    "topic": "Speed, Time & Distance",
+    "difficulty": "medium",
+    "explanation": "Speed = 108 × 5/18 = 30 m/s. Train length = 30 × 16 = 480 m. Total distance crossing bridge = 30 × 40 = 1200 m. Bridge length = 1200 − 480 = 720 m."
+  },
+  {
+    "text": "If speed increases by 20%, time reduces by what percentage?",
+    "options": ["16.67%", "20%", "25%", "33.33%"],
+    "correctAnswer": 0,
+    "section": "numerical",
+    "topic": "Speed, Time & Distance",
+    "difficulty": "medium",
+    "explanation": "Time is inversely proportional to speed. New time factor = 1/1.2 = 5/6. Reduction = 1 − 5/6 = 1/6 = 16.67%."
+  },
+  {
+    "text": "A thief is spotted 200 m away and police starts chasing at 8 m/s while thief runs at 5 m/s. How much time to catch the thief?",
+    "options": ["50 sec", "60 sec", "66.67 sec", "75 sec"],
+    "correctAnswer": 2,
+    "section": "numerical",
+    "topic": "Speed, Time & Distance",
+    "difficulty": "medium",
+    "explanation": "Relative speed = 8 − 5 = 3 m/s. Time = 200/3 = 66.67 sec."
+  },
+  {
+    "text": "A runner completes a race in 12 min. If speed increases by 25%, what is the new time?",
+    "options": ["8 min", "9 min 36 sec", "10 min", "11 min"],
+    "correctAnswer": 1,
+    "section": "numerical",
+    "topic": "Speed, Time & Distance",
+    "difficulty": "easy",
+    "explanation": "New speed = 1.25 × original. New time = 12/1.25 = 9.6 min = 9 min 36 sec."
+  },
+  {
+    "text": "A train 300 m long crosses another 200 m train moving in the opposite direction in 10 sec. If one train's speed is 54 km/h, find the other's speed.",
+    "options": ["90 km/h", "108 km/h", "126 km/h", "144 km/h"],
+    "correctAnswer": 2,
+    "section": "numerical",
+    "topic": "Speed, Time & Distance",
+    "difficulty": "hard",
+    "explanation": "Total length = 300 + 200 = 500 m. Relative speed = 500/10 = 50 m/s = 180 km/h. Other train speed = 180 − 54 = 126 km/h."
+  },
+  {
+    "text": "Two boats travel equal distances upstream and downstream. Ratio of times is 5:3. What is the ratio of boat speed to stream speed?",
+    "options": ["2:1", "3:1", "4:1", "5:2"],
+    "correctAnswer": 2,
+    "section": "numerical",
+    "topic": "Speed, Time & Distance",
+    "difficulty": "hard",
+    "explanation": "Time upstream : downstream = 5:3. So speed downstream : upstream = 5:3. (b+s):(b−s) = 5:3. 3(b+s) = 5(b−s). 3b+3s = 5b−5s. 8s = 2b. b/s = 4. Ratio = 4:1."
+  },
+  {
+    "text": "A car covers 20% distance at 40 km/h and remaining 80% at 60 km/h. What is the average speed?",
+    "options": ["52 km/h", "54.55 km/h", "56 km/h", "58 km/h"],
+    "correctAnswer": 1,
+    "section": "numerical",
+    "topic": "Speed, Time & Distance",
+    "difficulty": "medium",
+    "explanation": "Let total distance = 100 km. Time for 20 km at 40 = 0.5 hr. Time for 80 km at 60 = 4/3 hr. Total time = 0.5 + 4/3 = 11/6 hr. Average speed = 100/(11/6) = 600/11 = 54.55 km/h."
+  },
+  {
+    "text": "A train takes 20 sec to cross a man and 30 sec to cross a platform. If speed is 54 km/h, find the platform length.",
+    "options": ["120 m", "150 m", "180 m", "200 m"],
+    "correctAnswer": 1,
+    "section": "numerical",
+    "topic": "Speed, Time & Distance",
+    "difficulty": "medium",
+    "explanation": "Speed = 54 × 5/18 = 15 m/s. Train length = 15 × 20 = 300 m. Total distance crossing platform = 15 × 30 = 450 m. Platform length = 450 − 300 = 150 m."
+  },
+  {
+    "text": "A train crosses a platform twice its own length in 36 sec. If speed is 15 m/s, find the train length.",
+    "options": ["150 m", "180 m", "200 m", "225 m"],
+    "correctAnswer": 1,
+    "section": "numerical",
+    "topic": "Speed, Time & Distance",
+    "difficulty": "medium",
+    "explanation": "Platform = 2 × train length. Total distance = train + 2×train = 3×train. 3 × train = 15 × 36 = 540 m. Train length = 540/3 = 180 m."
+  },
+  {
+    "text": "A boat takes twice as long to go upstream as downstream. What is the ratio of stream speed to still water speed?",
+    "options": ["1:2", "1:3", "1:4", "1:5"],
+    "correctAnswer": 1,
+    "section": "numerical",
+    "topic": "Speed, Time & Distance",
+    "difficulty": "medium",
+    "explanation": "Let downstream time = t, upstream = 2t. For same distance: (b+s)×t = (b−s)×2t. b+s = 2b−2s. 3s = b. Stream:Still water = s:3s = 1:3."
+  },
+  {
+    "text": "A cyclist covers 1/3 distance at 20 km/h, next 1/3 at 30 km/h and remaining at 60 km/h. What is the average speed?",
+    "options": ["30 km/h", "32.7 km/h", "36 km/h", "40 km/h"],
+    "correctAnswer": 0,
+    "section": "numerical",
+    "topic": "Speed, Time & Distance",
+    "difficulty": "medium",
+    "explanation": "For three equal distances, average speed = 3/(1/20 + 1/30 + 1/60) = 3/((3+2+1)/60) = 3/(6/60) = 3/(1/10) = 30 km/h."
+  },
+  {
+    "text": "Two trains 100 m and 150 m long move in same direction at 45 km/h and 60 km/h. Time taken to cross each other?",
+    "options": ["45 sec", "50 sec", "60 sec", "75 sec"],
+    "correctAnswer": 2,
+    "section": "numerical",
+    "topic": "Speed, Time & Distance",
+    "difficulty": "medium",
+    "explanation": "Relative speed = 60 − 45 = 15 km/h = 15 × 5/18 = 25/6 m/s. Total length = 100 + 150 = 250 m. Time = 250/(25/6) = 250 × 6/25 = 60 sec."
+  },
+  {
+    "text": "A man can row 24 km downstream in 4 hr and upstream in 8 hr. How long will he take to cover 18 km in still water?",
+    "options": ["2 hr", "2.5 hr", "3 hr", "4 hr"],
+    "correctAnswer": 3,
+    "section": "numerical",
+    "topic": "Speed, Time & Distance",
+    "difficulty": "medium",
+    "explanation": "Downstream speed = 24/4 = 6 km/h. Upstream speed = 24/8 = 3 km/h. Still water speed = (6+3)/2 = 4.5 km/h. Time = 18/4.5 = 4 hr."
+  },
+  {
+    "text": "Two athletes, A and B, start running simultaneously around a circular stadium of circumference 900 m. A runs at 8 m/s while B runs at 5 m/s. How many times will A overtake B in the first 20 minutes?",
+    "options": ["2", "3", "4", "5"],
+    "correctAnswer": 2,
+    "section": "numerical",
+    "topic": "Speed, Time & Distance",
+    "difficulty": "hard",
+    "explanation": "Relative speed = 8 − 5 = 3 m/s. Time for one overtake = 900/3 = 300 sec. 20 min = 1200 sec. Number of overtakes = 1200/300 = 4."
+  },
+  {
+    "text": "A train crosses a small platform in 18 seconds and a larger platform in 30 seconds. The larger platform is 180 m longer than the smaller one. If the train moves at a constant speed, find the speed of the train.",
+    "options": ["10 m/s", "12 m/s", "15 m/s", "18 m/s"],
+    "correctAnswer": 2,
+    "section": "numerical",
+    "topic": "Speed, Time & Distance",
+    "difficulty": "hard",
+    "explanation": "Difference in time = 30 − 18 = 12 sec. In 12 sec, train covers the extra 180 m of the larger platform. Speed = 180/12 = 15 m/s."
+  },
+  {
+    "text": "Two trains of equal length enter a tunnel 500 m long from opposite ends simultaneously. They are moving at 72 km/h and 54 km/h respectively and completely cross each other inside the tunnel in 12 seconds. Find the length of each train.",
+    "options": ["180 m", "210 m", "240 m", "300 m"],
+    "correctAnswer": 1,
+    "section": "numerical",
+    "topic": "Speed, Time & Distance",
+    "difficulty": "hard",
+    "explanation": "Relative speed = 72 + 54 = 126 km/h = 35 m/s. Total length of both trains = 35 × 12 = 420 m. Each train = 420/2 = 210 m."
+  }
+]

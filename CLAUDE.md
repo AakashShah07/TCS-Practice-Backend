@@ -46,6 +46,8 @@ npm run seed:time-and-work-test     # node seeds/seed_time_and_work_test.js
 npm run seed:lcm-hcf               # node seeds/seed_lcm_hcf.js
 npm run seed:lcm-hcf-test          # node seeds/seed_lcm_hcf_test.js
 npm run seed:coding                # node seeds/seed_coding.js
+npm run seed:speed-time-distance        # node seeds/seed_speed_time_distance.js
+npm run seed:speed-time-distance-test   # node seeds/seed_speed_time_distance_test.js
 ```
 
 Additional seed scripts (no npm aliases — run directly with `node seeds/<file>`):
@@ -98,6 +100,7 @@ PORT, MONGO_URI, JWT_SECRET, JWT_REFRESH_SECRET, JWT_EXPIRE, JWT_REFRESH_EXPIRE,
 | Blood Relations | 50 | 25 | 30 min | `seed_blood_relations.js` + `seed_blood_relations_test.js` |
 | Simplification | 30 | 30 | 45 min | `seed_simplification.js` + `seed_simplification_test.js` |
 | Approximation | 30 | 30 | 40 min | `seed_approximation.js` + `seed_approximation_test.js` |
+| Speed, Time & Distance | 35 | 30 | 45 min | `seed:speed-time-distance` + `seed:speed-time-distance-test` |
 
 ## Key API Behaviors
 

@@ -94,7 +94,7 @@ PORT, MONGO_URI, JWT_SECRET, JWT_REFRESH_SECRET, JWT_EXPIRE, JWT_REFRESH_EXPIRE,
 
 | Topic | Questions (pool) | Per Test | Duration | Seed Commands |
 |---|---|---|---|---|
-| Ratio & Percentage | 40 | 40 | 40 min | `seed:ratio-percentage` + `seed:ratio-percentage-test` |
+| Ratio & Percentage | 69 | 30 | 40 min | `seed:ratio-percentage` + `seed:ratio-percentage-test` |
 | Time & Work | 30 | 30 | 45 min | `seed:time-and-work` + `seed:time-and-work-test` |
 | LCM & HCF | 35 | 35 | 45 min | `seed:lcm-hcf` + `seed:lcm-hcf-test` |
 | Blood Relations | 50 | 25 | 30 min | `seed_blood_relations.js` + `seed_blood_relations_test.js` |

@@ -358,5 +358,266 @@
     "topic": "Ratio & Percentage",
     "difficulty": "hard",
     "explanation": "Using alligation: Male avg = 8000, Female avg = 6000, Combined = 7200. Male side: 7200−6000 = 1200. Female side: 8000−7200 = 800. Ratio M:F = 1200:800 = 3:2."
+  },
+  {
+    "text": "The price of sugar increases by 25%. By what percent must consumption be reduced so that expenditure remains the same?",
+    "options": ["20%", "22%", "25%", "30%"],
+    "correctAnswer": 0,
+    "section": "numerical",
+    "topic": "Ratio & Percentage",
+    "difficulty": "easy",
+    "explanation": "Reduction required = (25/125) × 100 = 20%."
+  },
+  {
+    "text": "The present ages of A and B are in ratio 5:7. Five years later, the ratio becomes 3:4. Find the present age of B.",
+    "options": ["28", "30", "35", "42"],
+    "correctAnswer": 2,
+    "section": "numerical",
+    "topic": "Ratio & Percentage",
+    "difficulty": "medium",
+    "explanation": "Let ages = 5x and 7x. After 5 years: (5x+5)/(7x+5) = 3/4. Cross multiply: 20x+20 = 21x+15. x = 5. B = 7×5 = 35."
+  },
+  {
+    "text": "A number is increased by 20% and then decreased by 20%. What is the net change?",
+    "options": ["No change", "2% decrease", "4% decrease", "4% increase"],
+    "correctAnswer": 2,
+    "section": "numerical",
+    "topic": "Ratio & Percentage",
+    "difficulty": "easy",
+    "explanation": "Net effect = 20 − 20 − (20×20)/100 = −4%. So 4% decrease."
+  },
+  {
+    "text": "Milk and water are mixed in ratio 5:3. If 16 litres of water is added, the ratio becomes 5:7. Find the original quantity of the mixture.",
+    "options": ["24 L", "32 L", "48 L", "64 L"],
+    "correctAnswer": 1,
+    "section": "numerical",
+    "topic": "Ratio & Percentage",
+    "difficulty": "medium",
+    "explanation": "Milk = 5x, Water = 3x. After adding 16L water: 5x/(3x+16) = 5/7. 35x = 15x+80. 20x = 80. x = 4. Total mixture = 8×4 = 32 L."
+  },
+  {
+    "text": "Population of a town increases by 10% annually. If present population is 24200, what was the population 2 years ago?",
+    "options": ["18000", "20000", "22000", "24000"],
+    "correctAnswer": 1,
+    "section": "numerical",
+    "topic": "Ratio & Percentage",
+    "difficulty": "easy",
+    "explanation": "P × (1.1)² = 24200. P × 1.21 = 24200. P = 24200/1.21 = 20000."
+  },
+  {
+    "text": "If A:B = 3:4 and B:C = 5:6, then A:B:C equals:",
+    "options": ["15:20:24", "3:4:6", "15:4:24", "12:20:24"],
+    "correctAnswer": 0,
+    "section": "numerical",
+    "topic": "Ratio & Percentage",
+    "difficulty": "medium",
+    "explanation": "Make B common. LCM of 4 and 5 = 20. A:B = 3:4 → 15:20. B:C = 5:6 → 20:24. So A:B:C = 15:20:24."
+  },
+  {
+    "text": "A shopkeeper marks goods 40% above cost price and allows 10% discount. What is the profit percent?",
+    "options": ["20%", "24%", "26%", "30%"],
+    "correctAnswer": 2,
+    "section": "numerical",
+    "topic": "Ratio & Percentage",
+    "difficulty": "medium",
+    "explanation": "Take CP = 100. MP = 140. SP = 140 × 0.9 = 126. Profit = 26%."
+  },
+  {
+    "text": "A person's salary increases from ₹24000 to ₹30000. What is the percentage increase?",
+    "options": ["20%", "22%", "25%", "30%"],
+    "correctAnswer": 2,
+    "section": "numerical",
+    "topic": "Ratio & Percentage",
+    "difficulty": "easy",
+    "explanation": "Increase = 6000. Percentage = (6000/24000) × 100 = 25%."
+  },
+  {
+    "text": "If 60% of A = 40% of B, then A:B is:",
+    "options": ["2:3", "3:2", "4:5", "5:4"],
+    "correctAnswer": 0,
+    "section": "numerical",
+    "topic": "Ratio & Percentage",
+    "difficulty": "easy",
+    "explanation": "0.6A = 0.4B. A/B = 0.4/0.6 = 2/3. So A:B = 2:3."
+  },
+  {
+    "text": "Price decreases by 20%. By what percent must consumption increase to keep expenditure the same?",
+    "options": ["20%", "25%", "30%", "40%"],
+    "correctAnswer": 1,
+    "section": "numerical",
+    "topic": "Ratio & Percentage",
+    "difficulty": "easy",
+    "explanation": "Increase required = (20/80) × 100 = 25%."
+  },
+  {
+    "text": "A number increased by 10% becomes 220. What is the original number?",
+    "options": ["180", "190", "200", "210"],
+    "correctAnswer": 2,
+    "section": "numerical",
+    "topic": "Ratio & Percentage",
+    "difficulty": "easy",
+    "explanation": "1.1x = 220. x = 220/1.1 = 200."
+  },
+  {
+    "text": "Ratio of boys and girls is 7:5. If 8 girls join, ratio becomes 7:6. Find the number of boys.",
+    "options": ["42", "48", "56", "70"],
+    "correctAnswer": 2,
+    "section": "numerical",
+    "topic": "Ratio & Percentage",
+    "difficulty": "medium",
+    "explanation": "Let boys = 7x, girls = 5x. After 8 girls join: 7x/(5x+8) = 7/6. Cross multiply: 42x = 35x+56. 7x = 56. x = 8. Boys = 7×8 = 56."
+  },
+  {
+    "text": "An article sold at 20% profit for ₹600. What is the cost price?",
+    "options": ["400", "450", "500", "550"],
+    "correctAnswer": 2,
+    "section": "numerical",
+    "topic": "Ratio & Percentage",
+    "difficulty": "easy",
+    "explanation": "CP × 1.2 = 600. CP = 600/1.2 = 500."
+  },
+  {
+    "text": "A's salary is 25% more than B's. By what percent is B's salary less than A's?",
+    "options": ["15%", "20%", "25%", "30%"],
+    "correctAnswer": 1,
+    "section": "numerical",
+    "topic": "Ratio & Percentage",
+    "difficulty": "easy",
+    "explanation": "A = 1.25B. Difference = 0.25B. As % of A: (0.25B/1.25B) × 100 = 20%."
+  },
+  {
+    "text": "Two numbers are in ratio 4:7 and their sum is 99. Find the larger number.",
+    "options": ["63", "56", "49", "36"],
+    "correctAnswer": 0,
+    "section": "numerical",
+    "topic": "Ratio & Percentage",
+    "difficulty": "easy",
+    "explanation": "Sum of ratio parts = 11. x = 99/11 = 9. Larger number = 7 × 9 = 63."
+  },
+  {
+    "text": "A shopkeeper gives 20% and 10% successive discounts. What is the equivalent single discount?",
+    "options": ["28%", "30%", "32%", "35%"],
+    "correctAnswer": 0,
+    "section": "numerical",
+    "topic": "Ratio & Percentage",
+    "difficulty": "easy",
+    "explanation": "Equivalent discount = 20 + 10 − (20×10)/100 = 30 − 2 = 28%."
+  },
+  {
+    "text": "The population of a city decreases by 10% then increases by 10%. What is the net effect?",
+    "options": ["0%", "1% decrease", "1% increase", "2% decrease"],
+    "correctAnswer": 1,
+    "section": "numerical",
+    "topic": "Ratio & Percentage",
+    "difficulty": "easy",
+    "explanation": "Net effect = −10 + 10 − (10×10)/100 = −1%. So 1% decrease."
+  },
+  {
+    "text": "If A:B = 5:8 and B:C = 4:7, then A:C is:",
+    "options": ["5:7", "20:56", "35:64", "5:14"],
+    "correctAnswer": 3,
+    "section": "numerical",
+    "topic": "Ratio & Percentage",
+    "difficulty": "medium",
+    "explanation": "Make B common. A:B = 5:8. B:C = 4:7 → multiply by 2 → 8:14. So A:B:C = 5:8:14. A:C = 5:14."
+  },
+  {
+    "text": "A number is first reduced by 20% then increased by 25%. What is the result?",
+    "options": ["Increase 5%", "No change", "Decrease 5%", "Increase 2%"],
+    "correctAnswer": 1,
+    "section": "numerical",
+    "topic": "Ratio & Percentage",
+    "difficulty": "easy",
+    "explanation": "0.80 × 1.25 = 1.00. So no change."
+  },
+  {
+    "text": "Income ratio of A and B is 11:13 and expenditure ratio is 9:11. What is their savings ratio?",
+    "options": ["1:2", "2:3", "5:7", "Cannot determine"],
+    "correctAnswer": 3,
+    "section": "numerical",
+    "topic": "Ratio & Percentage",
+    "difficulty": "medium",
+    "explanation": "Savings = Income − Expenditure. Since income and expenditure use different multipliers (k and m), savings = 11k−9m and 13k−11m. Without knowing the relation between k and m, the ratio cannot be determined."
+  },
+  {
+    "text": "A mixture contains milk and water in ratio 7:2. How much water should be added to 9 parts of mixture to make the ratio 7:5?",
+    "options": ["2 parts", "3 parts", "4 parts", "5 parts"],
+    "correctAnswer": 1,
+    "section": "numerical",
+    "topic": "Ratio & Percentage",
+    "difficulty": "easy",
+    "explanation": "In 9 parts: milk = 7, water = 2. Add x parts water: 7/(2+x) = 7/5. So 2+x = 5. x = 3 parts."
+  },
+  {
+    "text": "Passing marks are 40%. A student gets 120 marks and fails by 40 marks. What are the total marks?",
+    "options": ["300", "350", "400", "450"],
+    "correctAnswer": 2,
+    "section": "numerical",
+    "topic": "Ratio & Percentage",
+    "difficulty": "easy",
+    "explanation": "Pass marks = 120 + 40 = 160. 40% of Total = 160. Total = 160/0.4 = 400."
+  },
+  {
+    "text": "If the radius of a circle increases by 20%, the area increases by:",
+    "options": ["20%", "40%", "44%", "48%"],
+    "correctAnswer": 2,
+    "section": "numerical",
+    "topic": "Ratio & Percentage",
+    "difficulty": "easy",
+    "explanation": "Area is proportional to r². New area = (1.2r)² = 1.44r². Increase = 44%."
+  },
+  {
+    "text": "The ratio of three numbers is 2:3:5 and their sum is 200. Find the largest number.",
+    "options": ["80", "90", "100", "120"],
+    "correctAnswer": 2,
+    "section": "numerical",
+    "topic": "Ratio & Percentage",
+    "difficulty": "easy",
+    "explanation": "Sum of ratio parts = 10. x = 200/10 = 20. Largest = 5 × 20 = 100."
+  },
+  {
+    "text": "An article marked at ₹800 is sold at 10% discount and still gives 20% profit. Find the cost price.",
+    "options": ["₹500", "₹550", "₹600", "₹650"],
+    "correctAnswer": 2,
+    "section": "numerical",
+    "topic": "Ratio & Percentage",
+    "difficulty": "medium",
+    "explanation": "SP = 800 × 0.9 = ₹720. CP × 1.2 = 720. CP = 720/1.2 = ₹600."
+  },
+  {
+    "text": "A number is increased by 15% and becomes 345. Find the original number.",
+    "options": ["250", "275", "300", "325"],
+    "correctAnswer": 2,
+    "section": "numerical",
+    "topic": "Ratio & Percentage",
+    "difficulty": "easy",
+    "explanation": "1.15x = 345. x = 345/1.15 = 300."
+  },
+  {
+    "text": "If 25% of x = 40% of y, then x:y is:",
+    "options": ["5:8", "8:5", "25:40", "2:5"],
+    "correctAnswer": 1,
+    "section": "numerical",
+    "topic": "Ratio & Percentage",
+    "difficulty": "easy",
+    "explanation": "0.25x = 0.4y. x/y = 0.4/0.25 = 8/5. So x:y = 8:5."
+  },
+  {
+    "text": "A trader gains 15% by selling sugar at ₹46/kg. What is the cost price per kg?",
+    "options": ["₹36", "₹38", "₹40", "₹42"],
+    "correctAnswer": 2,
+    "section": "numerical",
+    "topic": "Ratio & Percentage",
+    "difficulty": "easy",
+    "explanation": "CP × 1.15 = 46. CP = 46/1.15 = ₹40."
+  },
+  {
+    "text": "If the denominator of a fraction is increased by 25%, the fraction becomes 20% less. Can the original fraction be determined?",
+    "options": ["2/5", "3/5", "4/5", "Cannot determine"],
+    "correctAnswer": 3,
+    "section": "numerical",
+    "topic": "Ratio & Percentage",
+    "difficulty": "medium",
+    "explanation": "Let fraction = a/b. New fraction = a/(1.25b) = 0.8 × (a/b). Simplifying: 1/1.25 = 0.8, which is always true regardless of a and b. So the original fraction cannot be determined."
   }
 ]

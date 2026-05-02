@@ -12,9 +12,9 @@ connectDB();
 
 const app = express();
 
-// Middleware
-app.use(helmet());
+// Middleware — cors must run before helmet so preflight OPTIONS requests succeed
 app.use(cors({ origin: true, credentials: true }));
+app.use(helmet());
 app.use(express.json({ limit: '10mb' }));
 app.use(express.urlencoded({ extended: true }));
 app.use(cookieParser());

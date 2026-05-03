@@ -21,7 +21,9 @@
     "seed:mensuration": "node seeds/seed_mensuration.js",
     "seed:mensuration-test": "node seeds/seed_mensuration_test.js",
     "seed:speed-time-distance": "node seeds/seed_speed_time_distance.js",
-    "seed:speed-time-distance-test": "node seeds/seed_speed_time_distance_test.js"
+    "seed:speed-time-distance-test": "node seeds/seed_speed_time_distance_test.js",
+    "seed:probability-pnc": "node seeds/seed_probability_pnc.js",
+    "seed:probability-pnc-test": "node seeds/seed_probability_pnc_test.js"
   },
   "keywords": [],
   "author": "",

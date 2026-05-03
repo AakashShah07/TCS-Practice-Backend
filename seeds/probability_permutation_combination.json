@@ -1,0 +1,362 @@
+[
+  {
+    "text": "A committee of 5 members is to be formed from 6 men and 4 women. In how many ways can this be done if the committee must have at least 2 women?",
+    "options": ["186", "120", "126", "96"],
+    "correctAnswer": 0,
+    "section": "numerical",
+    "topic": "Probability, Permutation & Combination",
+    "difficulty": "medium",
+    "explanation": "Cases: Exactly 2W + 3M = C(4,2) x C(6,3) = 6 x 20 = 120. Exactly 3W + 2M = C(4,3) x C(6,2) = 4 x 15 = 60. Exactly 4W + 1M = C(4,4) x C(6,1) = 1 x 6 = 6. Total = 120 + 60 + 6 = 186."
+  },
+  {
+    "text": "Two dice are thrown simultaneously. What is the probability that the sum of numbers on the two dice is a prime number?",
+    "options": ["5/12", "7/18", "1/2", "5/18"],
+    "correctAnswer": 0,
+    "section": "numerical",
+    "topic": "Probability, Permutation & Combination",
+    "difficulty": "medium",
+    "explanation": "Total outcomes = 36. Prime sums possible: 2, 3, 5, 7, 11. Sum=2: (1,1) = 1. Sum=3: (1,2),(2,1) = 2. Sum=5: (1,4),(4,1),(2,3),(3,2) = 4. Sum=7: (1,6),(6,1),(2,5),(5,2),(3,4),(4,3) = 6. Sum=11: (5,6),(6,5) = 2. Total favorable = 1+2+4+6+2 = 15. Probability = 15/36 = 5/12."
+  },
+  {
+    "text": "A bag contains 4 red, 3 blue, and 2 green balls. Two balls are drawn at random. What is the probability that one is red and one is blue?",
+    "options": ["1/3", "2/9", "4/9", "1/2"],
+    "correctAnswer": 0,
+    "section": "numerical",
+    "topic": "Probability, Permutation & Combination",
+    "difficulty": "medium",
+    "explanation": "Total balls = 9. Total ways to pick 2 = C(9,2) = 36. Favorable (1 red, 1 blue) = C(4,1) x C(3,1) = 4 x 3 = 12. Probability = 12/36 = 1/3."
+  },
+  {
+    "text": "In how many ways can 10 identical chocolates be distributed among 4 children such that each child gets at least 1 chocolate?",
+    "options": ["84", "210", "120", "56"],
+    "correctAnswer": 0,
+    "section": "numerical",
+    "topic": "Probability, Permutation & Combination",
+    "difficulty": "hard",
+    "explanation": "Give 1 each to 4 children first. 6 chocolates left to distribute freely among 4 children (each can get 0 or more). Stars and bars: C(6+4-1, 4-1) = C(9,3) = 84."
+  },
+  {
+    "text": "Three cards are drawn from a standard 52-card deck. What is the probability that all three are face cards (J, Q, K)?",
+    "options": ["11/1105", "12/2197", "1/221", "3/1326"],
+    "correctAnswer": 0,
+    "section": "numerical",
+    "topic": "Probability, Permutation & Combination",
+    "difficulty": "hard",
+    "explanation": "Total face cards = 12 (J, Q, K of each suit). P = C(12,3)/C(52,3) = 220/22100 = 11/1105."
+  },
+  {
+    "text": "In how many ways can 7 persons sit around a circular table such that two particular persons always sit together?",
+    "options": ["240", "1440", "120", "480"],
+    "correctAnswer": 0,
+    "section": "numerical",
+    "topic": "Probability, Permutation & Combination",
+    "difficulty": "medium",
+    "explanation": "Treat 2 particular persons as 1 unit. Total units = 6. Circular arrangements = (6-1)! = 5! = 120. The 2 persons within the unit can swap = 2! = 2. Total = 120 x 2 = 240."
+  },
+  {
+    "text": "The probability that A solves a problem is 2/3 and B solves it is 3/4. If both try independently, what is the probability that the problem is solved?",
+    "options": ["11/12", "1/2", "5/6", "7/12"],
+    "correctAnswer": 0,
+    "section": "numerical",
+    "topic": "Probability, Permutation & Combination",
+    "difficulty": "medium",
+    "explanation": "P(neither solves) = (1 - 2/3)(1 - 3/4) = (1/3)(1/4) = 1/12. P(at least one solves) = 1 - 1/12 = 11/12."
+  },
+  {
+    "text": "From a group of 7 men and 6 women, 5 persons are to be selected. In how many ways can this be done if the group must have at least 3 men?",
+    "options": ["756", "702", "624", "546"],
+    "correctAnswer": 0,
+    "section": "numerical",
+    "topic": "Probability, Permutation & Combination",
+    "difficulty": "hard",
+    "explanation": "At least 3 men: 3M+2W = C(7,3) x C(6,2) = 35 x 15 = 525. 4M+1W = C(7,4) x C(6,1) = 35 x 6 = 210. 5M+0W = C(7,5) x C(6,0) = 21 x 1 = 21. Total = 525 + 210 + 21 = 756."
+  },
+  {
+    "text": "A speaks truth 4 out of 5 times. He tosses a coin and reports it is heads. What is the probability that it is actually heads?",
+    "options": ["4/5", "5/9", "4/9", "2/3"],
+    "correctAnswer": 0,
+    "section": "numerical",
+    "topic": "Probability, Permutation & Combination",
+    "difficulty": "hard",
+    "explanation": "Using Bayes' theorem: P(heads | says heads) = P(says heads | heads) x P(heads) / P(says heads) = (4/5 x 1/2) / [(4/5 x 1/2) + (1/5 x 1/2)] = (2/5) / (2/5 + 1/10) = (2/5) / (1/2) = 4/5."
+  },
+  {
+    "text": "How many 5-letter words (with or without meaning) can be formed from letters of the word 'TRIANGLE' such that each word begins with T and ends with E?",
+    "options": ["120", "720", "360", "1680"],
+    "correctAnswer": 0,
+    "section": "numerical",
+    "topic": "Probability, Permutation & Combination",
+    "difficulty": "hard",
+    "explanation": "TRIANGLE has 8 distinct letters: T, R, I, A, N, G, L, E. Word format: T _ _ _ E. Middle 3 positions filled from remaining 6 letters (R, I, A, N, G, L). Ways = P(6,3) = 6 x 5 x 4 = 120."
+  },
+  {
+    "text": "From a pack of 52 cards, 2 cards are drawn. What is the probability that both are aces?",
+    "options": ["1/221", "1/169", "2/52", "1/26"],
+    "correctAnswer": 0,
+    "section": "numerical",
+    "topic": "Probability, Permutation & Combination",
+    "difficulty": "medium",
+    "explanation": "P = C(4,2)/C(52,2) = 6/1326 = 1/221."
+  },
+  {
+    "text": "How many diagonals can be drawn in a polygon with 12 sides?",
+    "options": ["54", "60", "66", "72"],
+    "correctAnswer": 0,
+    "section": "numerical",
+    "topic": "Probability, Permutation & Combination",
+    "difficulty": "medium",
+    "explanation": "Number of diagonals = C(n,2) - n = C(12,2) - 12 = 66 - 12 = 54."
+  },
+  {
+    "text": "A box has 6 red and 4 black balls. Balls are drawn one by one without replacement. What is the probability that the 4th ball drawn is red?",
+    "options": ["3/5", "2/5", "1/2", "4/10"],
+    "correctAnswer": 0,
+    "section": "numerical",
+    "topic": "Probability, Permutation & Combination",
+    "difficulty": "hard",
+    "explanation": "By symmetry, the probability that any specific draw is red = total red / total balls = 6/10 = 3/5. This holds for any position draw without replacement."
+  },
+  {
+    "text": "In how many ways can 6 boys and 4 girls be arranged in a row such that no two girls sit adjacent to each other?",
+    "options": ["604800", "86400", "720", "10800"],
+    "correctAnswer": 0,
+    "section": "numerical",
+    "topic": "Probability, Permutation & Combination",
+    "difficulty": "hard",
+    "explanation": "First arrange 6 boys: 6! = 720 ways. Gaps created = 7 (including ends). Choose 4 gaps for 4 girls: P(7,4) = 7 x 6 x 5 x 4 = 840. Total = 720 x 840 = 604800."
+  },
+  {
+    "text": "What is the probability of getting exactly 2 heads when a fair coin is tossed 5 times?",
+    "options": ["5/16", "1/4", "3/8", "10/32"],
+    "correctAnswer": 0,
+    "section": "numerical",
+    "topic": "Probability, Permutation & Combination",
+    "difficulty": "medium",
+    "explanation": "P = C(5,2) x (1/2)^5 = 10/32 = 5/16."
+  },
+  {
+    "text": "A student must answer 10 out of 13 questions in an exam, choosing at least 4 from the first 5 questions. How many ways can this be done?",
+    "options": ["196", "280", "140", "160"],
+    "correctAnswer": 0,
+    "section": "numerical",
+    "topic": "Probability, Permutation & Combination",
+    "difficulty": "hard",
+    "explanation": "Case 1: Exactly 4 from first 5 = C(5,4) x C(8,6) = 5 x 28 = 140. Case 2: Exactly 5 from first 5 = C(5,5) x C(8,5) = 1 x 56 = 56. Total = 140 + 56 = 196."
+  },
+  {
+    "text": "In how many ways can the letters of the word 'MISSISSIPPI' be arranged?",
+    "options": ["34650", "11880", "7920", "720"],
+    "correctAnswer": 0,
+    "section": "numerical",
+    "topic": "Probability, Permutation & Combination",
+    "difficulty": "medium",
+    "explanation": "MISSISSIPPI: 11 letters. M=1, I=4, S=4, P=2. Arrangements = 11! / (1! x 4! x 4! x 2!) = 39916800 / 1152 = 34650."
+  },
+  {
+    "text": "If P(A) = 0.4, P(B) = 0.5, and P(A intersection B) = 0.2, find P(A|B).",
+    "options": ["0.4", "0.5", "0.2", "0.8"],
+    "correctAnswer": 0,
+    "section": "numerical",
+    "topic": "Probability, Permutation & Combination",
+    "difficulty": "medium",
+    "explanation": "P(A|B) = P(A intersection B) / P(B) = 0.2 / 0.5 = 0.4."
+  },
+  {
+    "text": "A die is rolled 3 times. What is the probability of getting a sum of exactly 10?",
+    "options": ["27/216", "25/216", "1/8", "7/72"],
+    "correctAnswer": 0,
+    "section": "numerical",
+    "topic": "Probability, Permutation & Combination",
+    "difficulty": "hard",
+    "explanation": "Total = 6^3 = 216. Count ordered triples (a,b,c) with a+b+c=10, each between 1-6. By enumeration: favorable outcomes = 27. P = 27/216 = 1/8."
+  },
+  {
+    "text": "How many 6-digit numbers can be formed using digits 1 to 6 exactly once, such that the digits 1 and 2 are not adjacent?",
+    "options": ["480", "600", "360", "240"],
+    "correctAnswer": 0,
+    "section": "numerical",
+    "topic": "Probability, Permutation & Combination",
+    "difficulty": "hard",
+    "explanation": "Total arrangements of 1-6 = 6! = 720. Arrangements where 1 and 2 ARE adjacent: treat as block = 5! x 2! = 120 x 2 = 240. Not adjacent = 720 - 240 = 480."
+  },
+  {
+    "text": "A card is drawn from a well-shuffled deck. What is the probability that it is either a king or a red card?",
+    "options": ["7/13", "1/2", "15/26", "4/13"],
+    "correctAnswer": 0,
+    "section": "numerical",
+    "topic": "Probability, Permutation & Combination",
+    "difficulty": "medium",
+    "explanation": "P(King) = 4/52. P(Red) = 26/52. P(Red King) = 2/52. P(King or Red) = 4/52 + 26/52 - 2/52 = 28/52 = 7/13."
+  },
+  {
+    "text": "In how many ways can the word 'ARRANGE' be arranged such that the two R's do not come together?",
+    "options": ["900", "1260", "360", "630"],
+    "correctAnswer": 0,
+    "section": "numerical",
+    "topic": "Probability, Permutation & Combination",
+    "difficulty": "hard",
+    "explanation": "ARRANGE: 7 letters, A=2, R=2, N=1, G=1, E=1. Total = 7!/(2! x 2!) = 5040/4 = 1260. R's together: treat RR as unit = 6 letters with A=2 = 6!/2! = 360. R's NOT together = 1260 - 360 = 900."
+  },
+  {
+    "text": "An urn contains 5 white and 3 black balls. Two balls are drawn successively without replacement. What is the probability that both are white?",
+    "options": ["5/14", "25/64", "5/8", "15/56"],
+    "correctAnswer": 0,
+    "section": "numerical",
+    "topic": "Probability, Permutation & Combination",
+    "difficulty": "medium",
+    "explanation": "P(both white) = C(5,2)/C(8,2) = 10/28 = 5/14."
+  },
+  {
+    "text": "Find the number of ways of arranging 8 people in a circle if two specific people must always be opposite each other.",
+    "options": ["1440", "720", "2520", "5040"],
+    "correctAnswer": 0,
+    "section": "numerical",
+    "topic": "Probability, Permutation & Combination",
+    "difficulty": "hard",
+    "explanation": "Fix one of the 2 people in the circle. The other must sit in the one opposite seat (1 way). Remaining 6 people fill 6 spots = 6! = 720. The fixed pair can swap positions = 2. Total = 720 x 2 = 1440."
+  },
+  {
+    "text": "A problem is given to three students A, B, C. Their probabilities of solving it are 1/2, 1/3, 1/4 respectively. What is the probability that exactly 2 of them solve the problem?",
+    "options": ["1/4", "11/24", "1/6", "3/8"],
+    "correctAnswer": 0,
+    "section": "numerical",
+    "topic": "Probability, Permutation & Combination",
+    "difficulty": "hard",
+    "explanation": "P(exactly 2 solve) = P(A and B, not C) + P(A and C, not B) + P(B and C, not A) = (1/2)(1/3)(3/4) + (1/2)(2/3)(1/4) + (1/2)(1/3)(1/4) = 3/24 + 2/24 + 1/24 = 6/24 = 1/4."
+  },
+  {
+    "text": "How many numbers between 100 and 1000 have exactly one of their digits as 7?",
+    "options": ["225", "252", "243", "200"],
+    "correctAnswer": 0,
+    "section": "numerical",
+    "topic": "Probability, Permutation & Combination",
+    "difficulty": "hard",
+    "explanation": "3-digit numbers with exactly one digit = 7. Case 1: 7 in hundreds place, others not 7: 9 x 9 = 81. Case 2: 7 in tens place, hundreds not 7: 8 x 9 = 72. Case 3: 7 in units place, others not 7: 8 x 9 = 72. Total = 81 + 72 + 72 = 225."
+  },
+  {
+    "text": "What is the probability that a leap year selected at random has 53 Sundays?",
+    "options": ["2/7", "1/7", "3/7", "1/4"],
+    "correctAnswer": 0,
+    "section": "numerical",
+    "topic": "Probability, Permutation & Combination",
+    "difficulty": "medium",
+    "explanation": "A leap year has 366 days = 52 complete weeks + 2 extra days. These 2 extra days can be: (Mon,Tue), (Tue,Wed), (Wed,Thu), (Thu,Fri), (Fri,Sat), (Sat,Sun), (Sun,Mon) - 7 equally likely pairs. 53rd Sunday occurs if extra days contain Sunday: (Sat,Sun) or (Sun,Mon) = 2 cases. P = 2/7."
+  },
+  {
+    "text": "The number of ways of selecting 3 numbers from 1 to 20 such that they are in arithmetic progression is:",
+    "options": ["90", "60", "100", "120"],
+    "correctAnswer": 0,
+    "section": "numerical",
+    "topic": "Probability, Permutation & Combination",
+    "difficulty": "hard",
+    "explanation": "For AP (a, a+d, a+2d) with 1 <= a and a+2d <= 20. For each d: count of valid a = 20-2d. d ranges from 1 to 9. Sum = (18+16+14+12+10+8+6+4+2) = 90."
+  },
+  {
+    "text": "In how many ways can 5 different rings be worn on 4 fingers (any number of rings per finger)?",
+    "options": ["1024", "120", "512", "625"],
+    "correctAnswer": 0,
+    "section": "numerical",
+    "topic": "Probability, Permutation & Combination",
+    "difficulty": "medium",
+    "explanation": "Each of the 5 rings can go on any of the 4 fingers independently. Total = 4^5 = 1024."
+  },
+  {
+    "text": "If two dice are thrown, what is the probability that the number on first die is greater than the number on second die?",
+    "options": ["5/12", "1/2", "7/12", "1/3"],
+    "correctAnswer": 0,
+    "section": "numerical",
+    "topic": "Probability, Permutation & Combination",
+    "difficulty": "medium",
+    "explanation": "By symmetry, P(first > second) = P(second > first). P(equal) = 6/36 = 1/6. P(first > second) = (1 - 1/6)/2 = (5/6)/2 = 5/12."
+  },
+  {
+    "text": "Three unbiased coins are tossed. What is the probability of getting at most 2 heads given that at least 1 head appears?",
+    "options": ["6/7", "7/8", "3/4", "1/2"],
+    "correctAnswer": 0,
+    "section": "numerical",
+    "topic": "Probability, Permutation & Combination",
+    "difficulty": "hard",
+    "explanation": "P(at least 1 head) = 7/8. P(at most 2 heads AND at least 1 head) = P(exactly 1H or 2H) = C(3,1)/8 + C(3,2)/8 = 3/8 + 3/8 = 6/8 = 3/4. P(at most 2H | at least 1H) = (3/4)/(7/8) = (3/4) x (8/7) = 6/7."
+  },
+  {
+    "text": "A and B throw a pair of dice alternately. A wins if he throws 6 before B throws 7. A starts. What is the probability of A winning?",
+    "options": ["30/61", "5/11", "6/11", "1/2"],
+    "correctAnswer": 0,
+    "section": "numerical",
+    "topic": "Probability, Permutation & Combination",
+    "difficulty": "hard",
+    "explanation": "P(A throws sum 6) = 5/36. P(B throws sum 7) = 6/36 = 1/6. P(A wins) = (5/36) / [1 - (31/36)(5/6)] = (5/36) / (61/216) = (5/36) x (216/61) = 30/61."
+  },
+  {
+    "text": "A box contains 3 red, 4 blue, and 5 green pens. 3 pens are drawn at random. What is the probability that all are of different colors?",
+    "options": ["3/11", "4/11", "2/11", "5/22"],
+    "correctAnswer": 0,
+    "section": "numerical",
+    "topic": "Probability, Permutation & Combination",
+    "difficulty": "medium",
+    "explanation": "Total = C(12,3) = 220. Favorable = C(3,1) x C(4,1) x C(5,1) = 3 x 4 x 5 = 60. P = 60/220 = 3/11."
+  },
+  {
+    "text": "Find the number of triangles that can be formed from the vertices of a regular hexagon.",
+    "options": ["20", "18", "16", "8"],
+    "correctAnswer": 0,
+    "section": "numerical",
+    "topic": "Probability, Permutation & Combination",
+    "difficulty": "medium",
+    "explanation": "Total ways to choose 3 vertices from 6 = C(6,3) = 20. In a regular hexagon, no 3 vertices are collinear. So total triangles = 20."
+  },
+  {
+    "text": "There are 4 white and 6 black balls. A ball is drawn and not replaced; then another is drawn. What is the probability that the first is white and the second is black?",
+    "options": ["4/15", "6/15", "8/25", "2/5"],
+    "correctAnswer": 0,
+    "section": "numerical",
+    "topic": "Probability, Permutation & Combination",
+    "difficulty": "medium",
+    "explanation": "P(1st white) = 4/10 = 2/5. P(2nd black | 1st white) = 6/9 = 2/3. P = (2/5)(2/3) = 4/15."
+  },
+  {
+    "text": "How many 3-digit numbers have exactly 2 distinct digits?",
+    "options": ["243", "252", "216", "360"],
+    "correctAnswer": 0,
+    "section": "numerical",
+    "topic": "Probability, Permutation & Combination",
+    "difficulty": "hard",
+    "explanation": "Total 3-digit numbers = 900. All same digit (1 distinct) = 9 (111, 222, ..., 999). All different (3 distinct) = 9 x 9 x 8 = 648. Exactly 2 distinct = 900 - 9 - 648 = 243."
+  },
+  {
+    "text": "6 boys and 6 girls sit in a row randomly. What is the probability that all girls sit together?",
+    "options": ["1/132", "6!/12!", "1/462", "7! x 6!/12!"],
+    "correctAnswer": 0,
+    "section": "numerical",
+    "topic": "Probability, Permutation & Combination",
+    "difficulty": "hard",
+    "explanation": "Treat 6 girls as 1 block. Total units = 7 (6 boys + 1 block). Arrange 7 units = 7!. Girls within block = 6!. Total arrangements = 12!. P = (7! x 6!) / 12! = 5040 x 720 / 479001600 = 1/132."
+  },
+  {
+    "text": "There are 10 points in a plane, no three of which are collinear. How many straight lines and triangles can be formed?",
+    "options": ["Lines = 45, Triangles = 120", "Lines = 90, Triangles = 120", "Lines = 45, Triangles = 240", "Lines = 55, Triangles = 100"],
+    "correctAnswer": 0,
+    "section": "numerical",
+    "topic": "Probability, Permutation & Combination",
+    "difficulty": "medium",
+    "explanation": "Lines: any 2 points determine a unique line. C(10,2) = 45. Triangles: any 3 non-collinear points form a triangle. C(10,3) = 120. Answer: Lines = 45, Triangles = 120."
+  },
+  {
+    "text": "How many 5-letter words can be formed using the letters of 'APPLE'?",
+    "options": ["60", "120", "20", "30"],
+    "correctAnswer": 0,
+    "section": "numerical",
+    "topic": "Probability, Permutation & Combination",
+    "difficulty": "easy",
+    "explanation": "APPLE has 5 letters where P repeats 2 times. Arrangements = 5!/2! = 120/2 = 60."
+  },
+  {
+    "text": "In how many ways can the letters of 'BANANA' be arranged?",
+    "options": ["60", "120", "180", "720"],
+    "correctAnswer": 0,
+    "section": "numerical",
+    "topic": "Probability, Permutation & Combination",
+    "difficulty": "easy",
+    "explanation": "BANANA has 6 letters: B=1, A=3, N=2. Arrangements = 6!/(3! x 2!) = 720/12 = 60."
+  }
+]

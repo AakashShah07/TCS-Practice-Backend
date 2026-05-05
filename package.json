@@ -23,7 +23,9 @@
     "seed:speed-time-distance": "node seeds/seed_speed_time_distance.js",
     "seed:speed-time-distance-test": "node seeds/seed_speed_time_distance_test.js",
     "seed:probability-pnc": "node seeds/seed_probability_pnc.js",
-    "seed:probability-pnc-test": "node seeds/seed_probability_pnc_test.js"
+    "seed:probability-pnc-test": "node seeds/seed_probability_pnc_test.js",
+    "seed:verbal-rc-parajumble": "node seeds/seed_verbal_rc_parajumble.js",
+    "seed:verbal-rc-parajumble-test": "node seeds/seed_verbal_rc_parajumble_test.js"
   },
   "keywords": [],
   "author": "",

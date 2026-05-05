@@ -48,6 +48,8 @@ npm run seed:lcm-hcf-test          # node seeds/seed_lcm_hcf_test.js
 npm run seed:coding                # node seeds/seed_coding.js
 npm run seed:speed-time-distance        # node seeds/seed_speed_time_distance.js
 npm run seed:speed-time-distance-test   # node seeds/seed_speed_time_distance_test.js
+npm run seed:verbal-rc-parajumble           # node seeds/seed_verbal_rc_parajumble.js
+npm run seed:verbal-rc-parajumble-test      # node seeds/seed_verbal_rc_parajumble_test.js
 ```
 
 Additional seed scripts (no npm aliases — run directly with `node seeds/<file>`):
@@ -101,6 +103,8 @@ PORT, MONGO_URI, JWT_SECRET, JWT_REFRESH_SECRET, JWT_EXPIRE, JWT_REFRESH_EXPIRE,
 | Simplification | 30 | 30 | 45 min | `seed_simplification.js` + `seed_simplification_test.js` |
 | Approximation | 30 | 30 | 40 min | `seed_approximation.js` + `seed_approximation_test.js` |
 | Speed, Time & Distance | 35 | 30 | 45 min | `seed:speed-time-distance` + `seed:speed-time-distance-test` |
+| Para Jumble | 15 | 15 | 20 min | `seed:verbal-rc-parajumble` + `seed:verbal-rc-parajumble-test` |
+| Reading Comprehension | 66+ | 30 | 45 min | `seed:verbal-rc-parajumble` + `seed:verbal-rc-parajumble-test` |
 
 ## Key API Behaviors
 

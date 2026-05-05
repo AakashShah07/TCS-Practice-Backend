@@ -105,6 +105,7 @@ PORT, MONGO_URI, JWT_SECRET, JWT_REFRESH_SECRET, JWT_EXPIRE, JWT_REFRESH_EXPIRE,
 | Speed, Time & Distance | 35 | 30 | 45 min | `seed:speed-time-distance` + `seed:speed-time-distance-test` |
 | Para Jumble | 15 | 15 | 20 min | `seed:verbal-rc-parajumble` + `seed:verbal-rc-parajumble-test` |
 | Reading Comprehension | 66+ | 30 | 45 min | `seed:verbal-rc-parajumble` + `seed:verbal-rc-parajumble-test` |
+| Vocabulary Fill in the Blank | 30 | 30 | 30 min | `seed:vocabulary-fitb` |
 
 ## Key API Behaviors
 

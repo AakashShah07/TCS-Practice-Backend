@@ -9,7 +9,14 @@ const seed = async () => {
     await mongoose.connect(mongoURI);
     console.log('MongoDB connected...');
 
-    const inserted = await Question.insertMany(questions);
+    const inserted = await Question.insertMany(questions, { ordered: false }).catch((err) => {
+      if (err.code === 11000) {
+        const count = err.insertedDocs?.length || err.result?.insertedCount || 0;
+        console.log(`Inserted ${count} new questions (skipped duplicates)`);
+        return err.insertedDocs || [];
+      }
+      throw err;
+    });
     console.log(`Inserted ${inserted.length} RC & Para Jumble questions`);
 
     // Show summary

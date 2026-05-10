@@ -50,6 +50,8 @@ npm run seed:speed-time-distance        # node seeds/seed_speed_time_distance.js
 npm run seed:speed-time-distance-test   # node seeds/seed_speed_time_distance_test.js
 npm run seed:verbal-rc-parajumble           # node seeds/seed_verbal_rc_parajumble.js
 npm run seed:verbal-rc-parajumble-test      # node seeds/seed_verbal_rc_parajumble_test.js
+npm run seed:vocabulary-fitb               # node seeds/seed_vocabulary_fitb.js
+npm run seed:error-detection               # node seeds/seed_error_detection.js
 ```
 
 Additional seed scripts (no npm aliases — run directly with `node seeds/<file>`):
@@ -106,6 +108,7 @@ PORT, MONGO_URI, JWT_SECRET, JWT_REFRESH_SECRET, JWT_EXPIRE, JWT_REFRESH_EXPIRE,
 | Para Jumble | 15 | 15 | 20 min | `seed:verbal-rc-parajumble` + `seed:verbal-rc-parajumble-test` |
 | Reading Comprehension | 66+ | 30 | 45 min | `seed:verbal-rc-parajumble` + `seed:verbal-rc-parajumble-test` |
 | Vocabulary Fill in the Blank | 30 | 30 | 30 min | `seed:vocabulary-fitb` |
+| Error Detection | 30 | 30 | 35 min | `seed:error-detection` |
 
 ## Key API Behaviors
 

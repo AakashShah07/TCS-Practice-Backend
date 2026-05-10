@@ -1,0 +1,272 @@
+[
+  {
+    "text": "Given below is a text with some words missing (Blank 1-2). Choose the most suitable words to complete the text.\n\nThe company's sudden decline was not caused by market conditions alone. Years of poor planning and careless spending left the management completely 1) _______ to deal with competition. Investors who once trusted the firm are now reluctant to support it. Experts believe that unless strict reforms are introduced, further losses are 2) _______.\n\nBlank 1: A. equipped  B. incapable  C. determined  D. delighted\nBlank 2: A. avoidable  B. uncertain  C. inevitable  D. flexible",
+    "options": ["1A 2A", "1B 2C", "1D 2B", "1C 2D"],
+    "correctAnswer": 1,
+    "section": "verbal",
+    "topic": "Error Detection",
+    "difficulty": "medium",
+    "explanation": "Blank 1: 'Incapable' (B) means lacking the ability or skill — it fits perfectly because poor planning left management unable to handle competition. 'Equipped' is the opposite; 'determined' and 'delighted' don't convey inability.\n\nBlank 2: 'Inevitable' (C) means certain to happen and impossible to avoid — it logically follows the warning that without reforms, losses will definitely continue. 'Avoidable' contradicts the warning tone; 'uncertain' and 'flexible' don't fit the context of guaranteed losses."
+  },
+  {
+    "text": "Given below is a text with some words missing (Blank 1-2). Choose the most suitable words to complete the text.\n\nMany students fail to achieve their goals not because they lack talent, but because they are easily 1) _______ by temporary setbacks. Success demands patience and the willingness to continue even when progress appears slow. Those who remain disciplined eventually find their efforts 2) _______.\n\nBlank 1: A. motivated  B. discouraged  C. rewarded  D. inspired\nBlank 2: A. pointless  B. harmful  C. fruitful  D. delayed",
+    "options": ["1A 2B", "1B 2C", "1D 2A", "1C 2D"],
+    "correctAnswer": 1,
+    "section": "verbal",
+    "topic": "Error Detection",
+    "difficulty": "medium",
+    "explanation": "Blank 1: 'Discouraged' (B) means losing confidence or enthusiasm — setbacks naturally discourage students, causing them to give up. 'Motivated' and 'inspired' are positive and contradict 'fail'; 'rewarded' doesn't collocate with 'by setbacks'.\n\nBlank 2: 'Fruitful' (C) means producing good results — disciplined effort eventually yields success. 'Pointless' and 'harmful' are negative and contradict the encouraging tone; 'delayed' doesn't describe the quality of effort."
+  },
+  {
+    "text": "Given below is a text with some words missing (Blank 1-2). Choose the most suitable words to complete the text.\n\nThe scientist's groundbreaking discovery was initially met with 1) _______ from the academic community. Many experts doubted the validity of the results because they challenged long-standing beliefs. However, repeated experiments eventually proved the findings to be completely 2) _______.\n\nBlank 1: A. admiration  B. enthusiasm  C. skepticism  D. celebration\nBlank 2: A. inaccurate  B. authentic  C. irrelevant  D. suspicious",
+    "options": ["1C 2B", "1A 2D", "1B 2A", "1D 2C"],
+    "correctAnswer": 0,
+    "section": "verbal",
+    "topic": "Error Detection",
+    "difficulty": "medium",
+    "explanation": "Blank 1: 'Skepticism' (C) means doubt or disbelief — the passage states experts doubted the results, so skepticism is the natural reaction. 'Admiration', 'enthusiasm', and 'celebration' are all positive and contradict 'doubted'.\n\nBlank 2: 'Authentic' (B) means genuine, real, or verified — repeated experiments confirmed the findings as true. 'Inaccurate' contradicts 'proved'; 'irrelevant' and 'suspicious' don't fit the idea of validation through experiments."
+  },
+  {
+    "text": "Given below is a text with some words missing (Blank 1-2). Choose the most suitable words to complete the text.\n\nAlthough the leader delivered inspiring speeches, his actions often appeared 1) _______ with his promises. Citizens soon realized that many policies were designed merely to gain popularity rather than solve real problems. Public trust therefore began to 2) _______ rapidly.\n\nBlank 1: A. consistent  B. incompatible  C. aligned  D. connected\nBlank 2: A. strengthen  B. improve  C. flourish  D. diminish",
+    "options": ["1A 2B", "1C 2A", "1B 2D", "1D 2C"],
+    "correctAnswer": 2,
+    "section": "verbal",
+    "topic": "Error Detection",
+    "difficulty": "medium",
+    "explanation": "Blank 1: 'Incompatible' (B) means not able to exist together harmoniously — the contrast word 'although' signals that actions didn't match promises. 'Consistent', 'aligned', and 'connected' all imply agreement, which contradicts the passage.\n\nBlank 2: 'Diminish' (D) means to become less or weaker — when citizens lose faith in insincere policies, trust naturally decreases. 'Strengthen', 'improve', and 'flourish' are all positive and contradict the negative tone."
+  },
+  {
+    "text": "Given below is a text with some words missing (Blank 1-2). Choose the most suitable words to complete the text.\n\nThe museum's latest exhibition attempts to 1) _______ ancient traditions that are slowly disappearing from modern society. Historians argue that preserving cultural heritage is essential because it provides future generations with a sense of identity and historical 2) _______.\n\nBlank 1: A. ignore  B. revive  C. abandon  D. conceal\nBlank 2: A. confusion  B. burden  C. continuity  D. destruction",
+    "options": ["1B 2C", "1D 2A", "1A 2D", "1C 2B"],
+    "correctAnswer": 0,
+    "section": "verbal",
+    "topic": "Error Detection",
+    "difficulty": "medium",
+    "explanation": "Blank 1: 'Revive' (B) means to bring back to life or restore — the exhibition aims to restore disappearing traditions. 'Ignore', 'abandon', and 'conceal' all imply neglect or hiding, which contradicts the preservation intent.\n\nBlank 2: 'Continuity' (C) means an unbroken connection with the past — preserving heritage gives future generations a link to their history. 'Confusion', 'burden', and 'destruction' are negative and don't fit the positive goal of heritage preservation."
+  },
+  {
+    "text": "Given below is a text with some words missing (Blank 1-2). Choose the most suitable words to complete the text.\n\nThe athlete's remarkable performance was not the result of natural ability alone. Years of disciplined training and strict adherence to routine helped him remain 1) _______ even under extreme pressure. His determination has become an 2) _______ for young players across the country.\n\nBlank 1: A. unstable  B. composed  C. careless  D. impatient\nBlank 2: A. obstacle  B. inspiration  C. excuse  D. uncertainty",
+    "options": ["1B 2B", "1A 2D", "1D 2C", "1C 2A"],
+    "correctAnswer": 0,
+    "section": "verbal",
+    "topic": "Error Detection",
+    "difficulty": "medium",
+    "explanation": "Blank 1: 'Composed' (B) means calm, self-controlled, and collected — disciplined training helps athletes stay calm under pressure. 'Unstable', 'careless', and 'impatient' are negative traits that contradict the idea of discipline.\n\nBlank 2: 'Inspiration' (B) means something that motivates others — a determined athlete naturally inspires younger players. 'Obstacle', 'excuse', and 'uncertainty' don't convey the positive influence described in the passage."
+  },
+  {
+    "text": "Given below is a text with some words missing (Blank 1-2). Choose the most suitable words to complete the text.\n\nRapid urbanization has created opportunities for economic growth, but it has also placed enormous pressure on public infrastructure. Without careful planning, cities may become increasingly 1) _______ and difficult to manage. Experts therefore recommend policies that promote sustainable and 2) _______ development.\n\nBlank 1: A. organized  B. efficient  C. congested  D. peaceful\nBlank 2: A. balanced  B. reckless  C. temporary  D. destructive",
+    "options": ["1A 2D", "1C 2A", "1B 2B", "1D 2C"],
+    "correctAnswer": 1,
+    "section": "verbal",
+    "topic": "Error Detection",
+    "difficulty": "medium",
+    "explanation": "Blank 1: 'Congested' (C) means overcrowded and blocked — without planning, rapid urbanization leads to overcrowded, unmanageable cities. 'Organized', 'efficient', and 'peaceful' are positive and contradict 'difficult to manage'.\n\nBlank 2: 'Balanced' (A) means fair, proportionate, and well-distributed — sustainable development requires a balanced approach. 'Reckless', 'temporary', and 'destructive' contradict the idea of sustainable, well-planned growth."
+  },
+  {
+    "text": "Given below is a text with some words missing (Blank 1-2). Choose the most suitable words to complete the text.\n\nThe author's writing style is admired for its simplicity and emotional depth. Rather than relying on complicated language, she uses ordinary experiences to convey 1) _______ truths about human relationships. Readers often find her stories both relatable and deeply 2) _______.\n\nBlank 1: A. superficial  B. profound  C. temporary  D. doubtful\nBlank 2: A. moving  B. ordinary  C. forgettable  D. rigid",
+    "options": ["1B 2A", "1A 2D", "1C 2B", "1D 2C"],
+    "correctAnswer": 0,
+    "section": "verbal",
+    "topic": "Error Detection",
+    "difficulty": "medium",
+    "explanation": "Blank 1: 'Profound' (B) means having deep meaning or insight — the passage praises the author's ability to reveal deep truths through simple writing. 'Superficial' means shallow (opposite); 'temporary' and 'doubtful' don't describe the quality of truths.\n\nBlank 2: 'Moving' (A) means emotionally touching or stirring — 'deeply moving' is a natural collocation describing stories that resonate emotionally. 'Ordinary' contradicts 'admired'; 'forgettable' and 'rigid' don't match 'emotional depth'."
+  },
+  {
+    "text": "Given below is a text with some words missing (Blank 1-2). Choose the most suitable words to complete the text.\n\nThe committee was formed to investigate allegations of corruption within the department. Although several officials attempted to 1) _______ important evidence, investigators eventually uncovered documents proving large-scale financial 2) _______.\n\nBlank 1: A. reveal  B. preserve  C. conceal  D. distribute\nBlank 2: A. honesty  B. misconduct  C. efficiency  D. stability",
+    "options": ["1C 2B", "1A 2C", "1D 2A", "1B 2D"],
+    "correctAnswer": 0,
+    "section": "verbal",
+    "topic": "Error Detection",
+    "difficulty": "medium",
+    "explanation": "Blank 1: 'Conceal' (C) means to hide or keep secret — corrupt officials would naturally try to hide incriminating evidence. 'Reveal' is the opposite; 'preserve' and 'distribute' don't fit the context of covering up corruption.\n\nBlank 2: 'Misconduct' (B) means unacceptable or improper behavior — 'financial misconduct' is a standard legal term for corruption involving money. 'Honesty', 'efficiency', and 'stability' are all positive and contradict 'corruption'."
+  },
+  {
+    "text": "Given below is a text with some words missing (Blank 1-2). Choose the most suitable words to complete the text.\n\nEnvironmentalists warn that excessive use of natural resources may cause irreversible damage to ecosystems. Unless governments adopt stricter regulations, many endangered species could soon become 1) _______. Conservation efforts therefore need immediate and 2) _______ support from the international community.\n\nBlank 1: A. abundant  B. extinct  C. adaptable  D. visible\nBlank 2: A. reluctant  B. temporary  C. wholehearted  D. limited",
+    "options": ["1A 2D", "1C 2B", "1B 2C", "1D 2A"],
+    "correctAnswer": 2,
+    "section": "verbal",
+    "topic": "Error Detection",
+    "difficulty": "medium",
+    "explanation": "Blank 1: 'Extinct' (B) means no longer existing as a species — without regulation, endangered species face the ultimate threat of extinction. 'Abundant' means plentiful (opposite); 'adaptable' and 'visible' don't convey the severity of the warning.\n\nBlank 2: 'Wholehearted' (C) means with complete sincerity and commitment — conservation requires full, enthusiastic support to succeed. 'Reluctant', 'temporary', and 'limited' all imply insufficient support, contradicting the urgency."
+  },
+  {
+    "text": "Given below is a text with some words missing (Blank 1-2). Choose the most suitable words to complete the text.\n\nThe startup gained popularity because of its innovative products and customer-friendly policies. However, rapid expansion without proper financial planning eventually placed the company under severe 1) _______. Analysts believe the crisis could have been avoided through more 2) _______ decision-making.\n\nBlank 1: A. pressure  B. celebration  C. comfort  D. relief\nBlank 2: A. impulsive  B. prudent  C. careless  D. emotional",
+    "options": ["1B 2C", "1C 2A", "1A 2B", "1D 2D"],
+    "correctAnswer": 2,
+    "section": "verbal",
+    "topic": "Error Detection",
+    "difficulty": "medium",
+    "explanation": "Blank 1: 'Pressure' (A) means stress or strain caused by demanding circumstances — 'under severe pressure' is a standard expression describing financial strain from unplanned expansion. 'Celebration', 'comfort', and 'relief' are all positive and contradict the crisis context.\n\nBlank 2: 'Prudent' (B) means showing care and thought for the future — wise, cautious decision-making could have prevented the financial crisis. 'Impulsive', 'careless', and 'emotional' describe the kind of poor decisions that caused the problem."
+  },
+  {
+    "text": "Given below is a text with some words missing (Blank 1-2). Choose the most suitable words to complete the text.\n\nTeachers play an important role in shaping students' attitudes toward learning. A supportive environment can encourage curiosity, whereas constant criticism may gradually 1) _______ confidence and reduce academic motivation. Educational institutions must therefore create systems that are both disciplined and 2) _______.\n\nBlank 1: A. strengthen  B. erode  C. inspire  D. expand\nBlank 2: A. encouraging  B. oppressive  C. confusing  D. inflexible",
+    "options": ["1B 2A", "1A 2D", "1C 2B", "1D 2C"],
+    "correctAnswer": 0,
+    "section": "verbal",
+    "topic": "Error Detection",
+    "difficulty": "medium",
+    "explanation": "Blank 1: 'Erode' (B) means to gradually wear away or diminish — constant criticism slowly weakens a student's confidence over time. 'Strengthen', 'inspire', and 'expand' are positive and contradict the negative effect of criticism.\n\nBlank 2: 'Encouraging' (A) means giving support and hope — educational systems should be disciplined yet supportive to foster learning. 'Oppressive', 'confusing', and 'inflexible' are all negative qualities that would harm students."
+  },
+  {
+    "text": "Given below is a text with some words missing (Blank 1-2). Choose the most suitable words to complete the text.\n\nThe diplomat handled the sensitive negotiations with remarkable patience and tact. Instead of responding emotionally to criticism, she remained calm and focused on achieving a mutually 1) _______ agreement. Her balanced approach prevented the situation from becoming unnecessarily 2) _______.\n\nBlank 1: A. beneficial  B. harmful  C. uncertain  D. controversial\nBlank 2: A. stable  B. peaceful  C. hostile  D. productive",
+    "options": ["1B 2A", "1D 2B", "1A 2C", "1C 2D"],
+    "correctAnswer": 2,
+    "section": "verbal",
+    "topic": "Error Detection",
+    "difficulty": "medium",
+    "explanation": "Blank 1: 'Beneficial' (A) means advantageous or favorable — 'mutually beneficial agreement' is a standard diplomatic phrase meaning both sides gain. 'Harmful', 'uncertain', and 'controversial' don't fit the goal of successful negotiations.\n\nBlank 2: 'Hostile' (C) means unfriendly or antagonistic — the diplomat's calm approach prevented the situation from turning aggressive. 'Stable', 'peaceful', and 'productive' are positive and wouldn't need to be 'prevented'."
+  },
+  {
+    "text": "Given below is a text with some words missing (Blank 1-2). Choose the most suitable words to complete the text.\n\nScientists are increasingly concerned about the spread of misinformation on social media platforms. False claims presented repeatedly as facts can easily 1) _______ public opinion and weaken trust in reliable institutions. To address this issue, digital literacy must become a more 2) _______ part of education.\n\nBlank 1: A. influence  B. protect  C. stabilize  D. clarify\nBlank 2: A. neglected  B. controversial  C. essential  D. optional",
+    "options": ["1A 2C", "1B 2D", "1D 2A", "1C 2B"],
+    "correctAnswer": 0,
+    "section": "verbal",
+    "topic": "Error Detection",
+    "difficulty": "medium",
+    "explanation": "Blank 1: 'Influence' (A) means to have an effect on someone's thinking or behavior — repeated false claims can sway public opinion in harmful ways. 'Protect', 'stabilize', and 'clarify' are positive actions that contradict the harmful effect of misinformation.\n\nBlank 2: 'Essential' (C) means absolutely necessary — digital literacy is crucial for combating misinformation. 'Neglected' and 'optional' imply it's unimportant; 'controversial' doesn't fit the recommendation tone."
+  },
+  {
+    "text": "Given below is a text with some words missing (Blank 1-2). Choose the most suitable words to complete the text.\n\nAlthough technology has simplified communication, many people argue that it has also reduced meaningful human interaction. Constant dependence on digital platforms may create relationships that are convenient but emotionally 1) _______. Psychologists therefore encourage individuals to maintain genuine social connections and avoid becoming excessively 2) _______ on virtual communication.\n\nBlank 1: A. fulfilling  B. shallow  C. valuable  D. inspiring\nBlank 2: A. dependent  B. interested  C. focused  D. adaptable",
+    "options": ["1A 2D", "1C 2B", "1B 2A", "1D 2C"],
+    "correctAnswer": 2,
+    "section": "verbal",
+    "topic": "Error Detection",
+    "difficulty": "medium",
+    "explanation": "Blank 1: 'Shallow' (B) means lacking depth — digital relationships may be convenient but lack genuine emotional connection. 'Fulfilling', 'valuable', and 'inspiring' are positive and contradict the criticism of reduced meaningful interaction.\n\nBlank 2: 'Dependent' (A) means relying on something excessively — 'excessively dependent on virtual communication' captures the warning about over-reliance on technology. 'Interested', 'focused', and 'adaptable' don't convey the negative dependency."
+  },
+  {
+    "text": "Given below is a text with some words missing (Blank 1-2). Choose the most suitable words to complete the text.\n\nThe principal warned students that success in competitive examinations requires consistent effort and proper time management. Depending entirely on last-minute preparation is both risky and 1) _______. Students who maintain discipline throughout the year are more likely to perform in a calm and 2) _______ manner during exams.\n\nBlank 1: A. effective  B. impractical  C. beneficial  D. reasonable\nBlank 2: A. anxious  B. careless  C. confident  D. confused",
+    "options": ["1B 2C", "1A 2D", "1C 2A", "1D 2B"],
+    "correctAnswer": 0,
+    "section": "verbal",
+    "topic": "Error Detection",
+    "difficulty": "medium",
+    "explanation": "Blank 1: 'Impractical' (B) means not sensible or realistic — last-minute preparation is unreliable and unrealistic for competitive exams. 'Effective', 'beneficial', and 'reasonable' are positive and contradict the warning against cramming.\n\nBlank 2: 'Confident' (C) means self-assured — disciplined students feel calm and confident during exams because they are well-prepared. 'Anxious', 'careless', and 'confused' are negative states that contradict the benefit of year-long discipline."
+  },
+  {
+    "text": "Given below is a text with some words missing (Blank 1-2). Choose the most suitable words to complete the text.\n\nThe documentary highlighted the importance of preserving forests, which play a vital role in maintaining ecological balance. Uncontrolled deforestation may not only destroy wildlife habitats but also 1) _______ climate-related disasters. Environmental experts therefore advocate stricter laws and greater public 2) _______.\n\nBlank 1: A. reduce  B. worsen  C. eliminate  D. postpone\nBlank 2: A. ignorance  B. resistance  C. awareness  D. hesitation",
+    "options": ["1A 2D", "1C 2A", "1B 2C", "1D 2B"],
+    "correctAnswer": 2,
+    "section": "verbal",
+    "topic": "Error Detection",
+    "difficulty": "medium",
+    "explanation": "Blank 1: 'Worsen' (B) means to make or become worse — deforestation intensifies climate disasters by removing natural barriers. 'Reduce', 'eliminate', and 'postpone' all imply improvement, which contradicts the destructive impact of deforestation.\n\nBlank 2: 'Awareness' (C) means knowledge or understanding of a situation — experts want the public to understand environmental issues. 'Ignorance' is the opposite; 'resistance' and 'hesitation' don't match the advocacy for environmental education."
+  },
+  {
+    "text": "Given below is a text with some words missing (Blank 1-2). Choose the most suitable words to complete the text.\n\nThe manager appreciated employees who were willing to accept feedback and improve their performance. He believed that arrogance often prevents individuals from recognizing their own 1) _______. A truly successful professional remains humble and open to continuous 2) _______.\n\nBlank 1: A. strengths  B. achievements  C. limitations  D. opportunities\nBlank 2: A. learning  B. criticism  C. competition  D. failure",
+    "options": ["1C 2A", "1B 2D", "1A 2B", "1D 2C"],
+    "correctAnswer": 0,
+    "section": "verbal",
+    "topic": "Error Detection",
+    "difficulty": "medium",
+    "explanation": "Blank 1: 'Limitations' (C) means weaknesses or shortcomings — arrogance blinds people to their own faults, preventing self-improvement. 'Strengths' and 'achievements' are positives that arrogance would highlight, not hide; 'opportunities' doesn't fit the self-awareness context.\n\nBlank 2: 'Learning' (A) means the process of acquiring knowledge — 'continuous learning' is the hallmark of a humble, growth-oriented professional. 'Criticism' is too harsh; 'competition' and 'failure' don't relate to personal development through humility."
+  },
+  {
+    "text": "Given below is a text with some words missing (Blank 1-2). Choose the most suitable words to complete the text.\n\nThe professor's lectures were known for their clarity and depth. Instead of merely presenting facts, he encouraged students to think 1) _______ and question established assumptions. His teaching methods inspired many students to develop a lifelong passion for intellectual 2) _______.\n\nBlank 1: A. critically  B. blindly  C. emotionally  D. casually\nBlank 2: A. comfort  B. curiosity  C. routine  D. discipline",
+    "options": ["1B 2D", "1C 2A", "1A 2B", "1D 2C"],
+    "correctAnswer": 2,
+    "section": "verbal",
+    "topic": "Error Detection",
+    "difficulty": "medium",
+    "explanation": "Blank 1: 'Critically' (A) means with careful analysis and judgment — questioning assumptions requires critical thinking, not passive acceptance. 'Blindly' means without thought (opposite); 'emotionally' and 'casually' don't describe the analytical approach encouraged.\n\nBlank 2: 'Curiosity' (B) means a strong desire to know or learn — 'intellectual curiosity' is a standard academic phrase describing the love of learning. 'Comfort' and 'routine' imply complacency; 'discipline' doesn't collocate naturally with 'passion for intellectual'."
+  },
+  {
+    "text": "Given below is a text with some words missing (Blank 1-2). Choose the most suitable words to complete the text.\n\nSeveral economists warned that excessive dependence on foreign imports could weaken the country's domestic industries. Without investment in local manufacturing, economic growth may become increasingly 1) _______. Governments must therefore create policies that encourage innovation and industrial 2) _______.\n\nBlank 1: A. sustainable  B. unstable  C. productive  D. balanced\nBlank 2: A. decline  B. expansion  C. confusion  D. hesitation",
+    "options": ["1A 2D", "1B 2B", "1D 2A", "1C 2C"],
+    "correctAnswer": 1,
+    "section": "verbal",
+    "topic": "Error Detection",
+    "difficulty": "medium",
+    "explanation": "Blank 1: 'Unstable' (B) means not firmly established and likely to change — over-reliance on imports creates economic vulnerability and instability. 'Sustainable', 'productive', and 'balanced' are positive and contradict the warning about economic weakness.\n\nBlank 2: 'Expansion' (B) means growth and development — policies should encourage industries to grow and innovate. 'Decline', 'confusion', and 'hesitation' are negative and don't fit the goal of strengthening domestic industries."
+  },
+  {
+    "text": "Given below is a text with some words missing (Blank 1-2). Choose the most suitable words to complete the text.\n\nThe writer criticized modern advertising for creating unrealistic expectations among consumers. Many advertisements are deliberately designed to 1) _______ emotions rather than provide accurate information about products. As a result, customers often make impulsive and financially 2) _______ decisions.\n\nBlank 1: A. manipulate  B. ignore  C. simplify  D. suppress\nBlank 2: A. beneficial  B. harmful  C. cautious  D. wise",
+    "options": ["1A 2B", "1C 2D", "1B 2A", "1D 2C"],
+    "correctAnswer": 0,
+    "section": "verbal",
+    "topic": "Error Detection",
+    "difficulty": "medium",
+    "explanation": "Blank 1: 'Manipulate' (A) means to control or influence cleverly and often unfairly — ads exploit emotions to drive purchases rather than inform. 'Ignore' and 'suppress' imply removing emotion; 'simplify' doesn't capture the deceptive intent.\n\nBlank 2: 'Harmful' (B) means causing damage — impulsive buying leads to financially damaging decisions. 'Beneficial', 'cautious', and 'wise' are positive and contradict the negative consequence of emotional manipulation."
+  },
+  {
+    "text": "Given below is a text with some words missing (Blank 1-2). Choose the most suitable words to complete the text.\n\nAlthough the project initially appeared impossible, the engineering team completed it through careful planning and collaboration. Their achievement demonstrated that even the most complex challenges can be overcome with patience and 1) _______. The company rewarded the team for its exceptional level of 2) _______.\n\nBlank 1: A. persistence  B. hesitation  C. confusion  D. reluctance\nBlank 2: A. negligence  B. inefficiency  C. dedication  D. uncertainty",
+    "options": ["1A 2C", "1B 2D", "1C 2A", "1D 2B"],
+    "correctAnswer": 0,
+    "section": "verbal",
+    "topic": "Error Detection",
+    "difficulty": "medium",
+    "explanation": "Blank 1: 'Persistence' (A) means continued effort despite difficulties — overcoming complex challenges requires patience and the determination to keep going. 'Hesitation', 'confusion', and 'reluctance' are negative traits that would prevent completion.\n\nBlank 2: 'Dedication' (C) means commitment and devotion to a task — the company rewarded the team's exceptional commitment. 'Negligence' and 'inefficiency' are faults; 'uncertainty' doesn't describe something rewarded."
+  },
+  {
+    "text": "Given below is a text with some words missing (Blank 1-2). Choose the most suitable words to complete the text.\n\nThe sudden rise in fuel prices created difficulties for small businesses already struggling with economic uncertainty. Many shop owners feared that additional expenses would further 1) _______ their profits. Economists advised the government to introduce measures that would provide temporary financial 2) _______.\n\nBlank 1: A. increase  B. stabilize  C. reduce  D. protect\nBlank 2: A. relief  B. pressure  C. instability  D. confusion",
+    "options": ["1C 2A", "1B 2D", "1A 2B", "1D 2C"],
+    "correctAnswer": 0,
+    "section": "verbal",
+    "topic": "Error Detection",
+    "difficulty": "medium",
+    "explanation": "Blank 1: 'Reduce' (C) means to make smaller or less — additional expenses eat into profits, making them smaller. 'Increase' and 'protect' are the opposite of the feared outcome; 'stabilize' doesn't convey the negative impact of rising costs.\n\nBlank 2: 'Relief' (A) means assistance given to reduce difficulty — 'financial relief' is a standard term for government aid during economic hardship. 'Pressure', 'instability', and 'confusion' are problems, not solutions."
+  },
+  {
+    "text": "Given below is a text with some words missing (Blank 1-2). Choose the most suitable words to complete the text.\n\nThe actor's popularity continued to grow because of his humility and professionalism. Unlike many celebrities, he remained approachable and never allowed fame to make him 1) _______. Fans admired not only his talent but also his genuine sense of 2) _______.\n\nBlank 1: A. arrogant  B. generous  C. disciplined  D. cheerful\nBlank 2: A. insecurity  B. responsibility  C. honesty  D. humor",
+    "options": ["1A 2C", "1B 2A", "1C 2D", "1D 2B"],
+    "correctAnswer": 0,
+    "section": "verbal",
+    "topic": "Error Detection",
+    "difficulty": "medium",
+    "explanation": "Blank 1: 'Arrogant' (A) means having an exaggerated sense of importance — fame often makes celebrities arrogant, but this actor resisted that. 'Generous', 'disciplined', and 'cheerful' are positive traits he wouldn't need to resist becoming.\n\nBlank 2: 'Honesty' (C) means being truthful and sincere — 'genuine sense of honesty' matches the humility and approachability described. 'Insecurity' is negative; 'responsibility' and 'humor', while positive, don't directly connect to 'genuine' and 'humility'."
+  },
+  {
+    "text": "Given below is a text with some words missing (Blank 1-2). Choose the most suitable words to complete the text.\n\nResearchers studying social behavior observed that people are often influenced by group opinions, even when those opinions are clearly incorrect. This tendency demonstrates how peer pressure can affect individual 1) _______ and weaken independent thinking. Psychologists encourage students to develop confidence in their own 2) _______.\n\nBlank 1: A. judgment  B. reputation  C. appearance  D. emotions\nBlank 2: A. failures  B. decisions  C. weaknesses  D. popularity",
+    "options": ["1A 2B", "1C 2A", "1D 2C", "1B 2D"],
+    "correctAnswer": 0,
+    "section": "verbal",
+    "topic": "Error Detection",
+    "difficulty": "medium",
+    "explanation": "Blank 1: 'Judgment' (A) means the ability to make considered decisions — peer pressure clouds individual judgment, making people accept wrong opinions. 'Reputation', 'appearance', and 'emotions' don't directly relate to decision-making affected by group influence.\n\nBlank 2: 'Decisions' (B) means choices or conclusions reached — students need confidence to trust their own decisions rather than follow the crowd. 'Failures' and 'weaknesses' are negative; 'popularity' doesn't connect to independent thinking."
+  },
+  {
+    "text": "Given below is a text with some words missing (Blank 1-2). Choose the most suitable words to complete the text.\n\nThe government launched several campaigns to improve literacy rates in rural areas. Officials believe that education is one of the most effective tools for reducing poverty and promoting social 1) _______. However, these efforts will remain ineffective unless schools receive adequate funding and qualified 2) _______.\n\nBlank 1: A. inequality  B. progress  C. division  D. conflict\nBlank 2: A. teachers  B. critics  C. investors  D. volunteers",
+    "options": ["1A 2D", "1C 2B", "1B 2A", "1D 2C"],
+    "correctAnswer": 2,
+    "section": "verbal",
+    "topic": "Error Detection",
+    "difficulty": "medium",
+    "explanation": "Blank 1: 'Progress' (B) means forward movement or advancement — education promotes social progress by lifting communities out of poverty. 'Inequality', 'division', and 'conflict' are social problems, not goals that education promotes.\n\nBlank 2: 'Teachers' (A) means qualified educators — schools need trained teachers to deliver effective education. 'Critics' and 'investors' serve different roles; 'volunteers' lack the professional qualifications needed for formal education."
+  },
+  {
+    "text": "Given below is a text with some words missing (Blank 1-2). Choose the most suitable words to complete the text.\n\nThe captain remained calm despite the team's poor performance in the first half of the match. Instead of criticizing the players harshly, he motivated them to remain focused and play with greater 1) _______. His positive attitude eventually helped the team achieve a surprising 2) _______.\n\nBlank 1: A. confidence  B. hesitation  C. fear  D. frustration\nBlank 2: A. defeat  B. collapse  C. victory  D. delay",
+    "options": ["1A 2C", "1B 2D", "1D 2A", "1C 2B"],
+    "correctAnswer": 0,
+    "section": "verbal",
+    "topic": "Error Detection",
+    "difficulty": "medium",
+    "explanation": "Blank 1: 'Confidence' (A) means belief in one's abilities — the captain motivated players to play with self-assurance instead of doubt. 'Hesitation', 'fear', and 'frustration' are negative emotions that would worsen performance.\n\nBlank 2: 'Victory' (C) means a win or triumph — the captain's positive motivation led to a surprising comeback win. 'Defeat' and 'collapse' are negative outcomes; 'delay' doesn't describe a match result."
+  },
+  {
+    "text": "Given below is a text with some words missing (Blank 1-2). Choose the most suitable words to complete the text.\n\nThe article argued that technological advancement should be accompanied by ethical responsibility. Innovations created without considering their social impact may ultimately prove more 1) _______ than beneficial. Scientists and policymakers must therefore work together to ensure that progress remains both safe and 2) _______.\n\nBlank 1: A. harmful  B. useful  C. efficient  D. practical\nBlank 2: A. irresponsible  B. sustainable  C. uncertain  D. temporary",
+    "options": ["1B 2D", "1D 2A", "1A 2B", "1C 2C"],
+    "correctAnswer": 2,
+    "section": "verbal",
+    "topic": "Error Detection",
+    "difficulty": "medium",
+    "explanation": "Blank 1: 'Harmful' (A) means causing damage — the contrast 'more ___ than beneficial' requires a negative word. Innovations without ethics can cause harm. 'Useful', 'efficient', and 'practical' are positive and don't create the needed contrast.\n\nBlank 2: 'Sustainable' (B) means able to be maintained long-term without damaging the environment — 'safe and sustainable' progress balances innovation with responsibility. 'Irresponsible', 'uncertain', and 'temporary' contradict the goal of responsible, lasting progress."
+  },
+  {
+    "text": "Given below is a text with some words missing (Blank 1-2). Choose the most suitable words to complete the text.\n\nThe novelist spent several years researching historical records before writing the book. Her dedication to accuracy allowed readers to experience the events with remarkable 1) _______. Critics praised the novel for being both informative and emotionally 2) _______.\n\nBlank 1: A. authenticity  B. confusion  C. exaggeration  D. uncertainty\nBlank 2: A. distant  B. engaging  C. repetitive  D. predictable",
+    "options": ["1A 2B", "1B 2D", "1C 2A", "1D 2C"],
+    "correctAnswer": 0,
+    "section": "verbal",
+    "topic": "Error Detection",
+    "difficulty": "medium",
+    "explanation": "Blank 1: 'Authenticity' (A) means the quality of being genuine and true to the original — years of research ensured historical accuracy, giving readers an authentic experience. 'Confusion', 'exaggeration', and 'uncertainty' all imply inaccuracy.\n\nBlank 2: 'Engaging' (B) means attracting and holding attention — 'emotionally engaging' means the novel connects with readers on an emotional level. 'Distant' is the opposite; 'repetitive' and 'predictable' are criticisms, not praise."
+  },
+  {
+    "text": "Given below is a text with some words missing (Blank 1-2). Choose the most suitable words to complete the text.\n\nThe doctor advised patients to avoid self-medication, warning that incorrect treatment could 1) _______ health problems rather than solve them. Medical experts emphasize the importance of consulting qualified professionals before taking any medication. Public awareness regarding responsible healthcare practices therefore remains extremely 2) _______.\n\nBlank 1: A. worsen  B. eliminate  C. simplify  D. balance\nBlank 2: A. unnecessary  B. essential  C. temporary  D. doubtful",
+    "options": ["1A 2B", "1B 2D", "1C 2A", "1D 2C"],
+    "correctAnswer": 0,
+    "section": "verbal",
+    "topic": "Error Detection",
+    "difficulty": "medium",
+    "explanation": "Blank 1: 'Worsen' (A) means to make worse — incorrect self-medication can aggravate existing health issues instead of curing them. 'Eliminate' and 'simplify' imply improvement; 'balance' doesn't fit the context of medical treatment.\n\nBlank 2: 'Essential' (B) means absolutely necessary — public awareness about safe healthcare practices is critically important. 'Unnecessary' is the opposite; 'temporary' and 'doubtful' undermine the importance of ongoing health education."
+  }
+]

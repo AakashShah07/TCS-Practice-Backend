@@ -52,6 +52,8 @@ npm run seed:verbal-rc-parajumble           # node seeds/seed_verbal_rc_parajumb
 npm run seed:verbal-rc-parajumble-test      # node seeds/seed_verbal_rc_parajumble_test.js
 npm run seed:vocabulary-fitb               # node seeds/seed_vocabulary_fitb.js
 npm run seed:error-detection               # node seeds/seed_error_detection.js
+npm run seed:average                       # node seeds/seed_average.js
+npm run seed:average-test                  # node seeds/seed_average_test.js
 ```
 
 Additional seed scripts (no npm aliases — run directly with `node seeds/<file>`):
@@ -109,6 +111,7 @@ PORT, MONGO_URI, JWT_SECRET, JWT_REFRESH_SECRET, JWT_EXPIRE, JWT_REFRESH_EXPIRE,
 | Reading Comprehension | 66+ | 30 | 45 min | `seed:verbal-rc-parajumble` + `seed:verbal-rc-parajumble-test` |
 | Vocabulary Fill in the Blank | 30 | 30 | 30 min | `seed:vocabulary-fitb` |
 | Error Detection | 30 | 30 | 35 min | `seed:error-detection` |
+| Average | 36 | 30 | 40 min | `seed:average` + `seed:average-test` |
 
 ## Key API Behaviors
 

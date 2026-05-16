@@ -28,7 +28,9 @@
     "seed:verbal-rc-parajumble-test": "node seeds/seed_verbal_rc_parajumble_test.js",
     "seed:vocabulary-fitb": "node seeds/seed_vocabulary_fitb.js",
     "seed:error-detection": "node seeds/seed_error_detection.js",
-    "seed:passage-fitb": "node seeds/seed_passage_fitb.js"
+    "seed:passage-fitb": "node seeds/seed_passage_fitb.js",
+    "seed:average": "node seeds/seed_average.js",
+    "seed:average-test": "node seeds/seed_average_test.js"
   },
   "keywords": [],
   "author": "",

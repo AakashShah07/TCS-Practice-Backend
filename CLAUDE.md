@@ -54,6 +54,8 @@ npm run seed:vocabulary-fitb               # node seeds/seed_vocabulary_fitb.js
 npm run seed:error-detection               # node seeds/seed_error_detection.js
 npm run seed:average                       # node seeds/seed_average.js
 npm run seed:average-test                  # node seeds/seed_average_test.js
+npm run seed:profit-and-loss               # node seeds/seed_profit_and_loss.js
+npm run seed:profit-and-loss-test          # node seeds/seed_profit_and_loss_test.js
 ```
 
 Additional seed scripts (no npm aliases — run directly with `node seeds/<file>`):
@@ -112,6 +114,7 @@ PORT, MONGO_URI, JWT_SECRET, JWT_REFRESH_SECRET, JWT_EXPIRE, JWT_REFRESH_EXPIRE,
 | Vocabulary Fill in the Blank | 30 | 30 | 30 min | `seed:vocabulary-fitb` |
 | Error Detection | 30 | 30 | 35 min | `seed:error-detection` |
 | Average | 36 | 30 | 40 min | `seed:average` + `seed:average-test` |
+| Profit & Loss | 34 | 30 | 40 min | `seed:profit-and-loss` + `seed:profit-and-loss-test` |
 
 ## Key API Behaviors
 

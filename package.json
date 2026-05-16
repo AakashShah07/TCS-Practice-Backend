@@ -30,7 +30,9 @@
     "seed:error-detection": "node seeds/seed_error_detection.js",
     "seed:passage-fitb": "node seeds/seed_passage_fitb.js",
     "seed:average": "node seeds/seed_average.js",
-    "seed:average-test": "node seeds/seed_average_test.js"
+    "seed:average-test": "node seeds/seed_average_test.js",
+    "seed:profit-and-loss": "node seeds/seed_profit_and_loss.js",
+    "seed:profit-and-loss-test": "node seeds/seed_profit_and_loss_test.js"
   },
   "keywords": [],
   "author": "",

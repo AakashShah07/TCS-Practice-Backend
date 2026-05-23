@@ -37,7 +37,7 @@
   },
   {
     "text": "A is B's sister. C is B's mother. D is C's father. E is D's mother. Then, how is A related to D?",
-    "options": ["Grandmother", "Grandfather", "Granddaughter", "Grand daughter"],
+    "options": ["Grandmother", "Grandfather", "Granddaughter", "Cousin"],
     "correctAnswer": 2,
     "section": "reasoning",
     "topic": "Blood Relations",

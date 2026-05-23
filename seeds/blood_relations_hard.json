@@ -18,13 +18,13 @@
     "explanation": "Shalini is Meena's step-daughter means Shalini is the daughter of the other wife of Rohan. So Shalini is the daughter of Lakshmi. Lakshmi is the mother of Shalini."
   },
   {
-    "text": "Baya has a brother Anil. Daya is the son of Chandra. Bimal is Chandra's father. In terms of relationship, what is Anil of Bimal?",
+    "text": "Daya has a brother Anil. Daya is the son of Chandra. Bimal is Chandra's father. In terms of relationship, what is Anil of Bimal?",
     "options": ["Son", "Grandson", "Brother", "Grandfather"],
     "correctAnswer": 1,
     "section": "reasoning",
     "topic": "Blood Relations",
     "difficulty": "hard",
-    "explanation": "Anil is the brother of Daya (Baya has a brother Anil — this means Anil is Baya's brother, and Daya is son of Chandra). Bimal is Chandra's father. So Anil is son of Chandra (brother of Daya). Bimal is father of Chandra. So Anil is grandson of Bimal."
+    "explanation": "Daya has a brother Anil, so Anil and Daya are brothers. Daya is the son of Chandra, so Anil is also the son of Chandra. Bimal is Chandra's father. So Anil is the grandson of Bimal."
   },
   {
     "text": "If (i) M is brother of N; (ii) B is brother of N; and (iii) M is brother of D, then which of the following statements is definitely true?",

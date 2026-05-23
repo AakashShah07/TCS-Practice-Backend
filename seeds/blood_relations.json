@@ -194,7 +194,7 @@
     "correctAnswer": 0,
     "section": "reasoning",
     "topic": "Blood Relations",
-    "difficulty": "easy",
+    "difficulty": "medium",
     "explanation": "Only daughter of Meena's mother = Meena herself. So Ravi's mother is Meena. Meena is Ravi's mother."
   },
   {
@@ -221,7 +221,7 @@
     "correctAnswer": 1,
     "section": "reasoning",
     "topic": "Blood Relations",
-    "difficulty": "easy",
+    "difficulty": "medium",
     "explanation": "P is only son of Q. R is daughter of Q. So P and R are siblings (brother and sister). S is son of R. S is P's nephew (sister's son)."
   },
   {
@@ -293,7 +293,7 @@
     "correctAnswer": 0,
     "section": "reasoning",
     "topic": "Blood Relations",
-    "difficulty": "easy",
+    "difficulty": "medium",
     "explanation": "A is daughter of B. B is mother of C. So A and C are siblings (both children of B). A is female (daughter). C is father of D (C is male). A is C's sister. A is D's aunt (father's sister)."
   },
   {
@@ -338,7 +338,7 @@
     "correctAnswer": 0,
     "section": "reasoning",
     "topic": "Blood Relations",
-    "difficulty": "easy",
+    "difficulty": "medium",
     "explanation": "Y's mother is X's mother-in-law. Mother-in-law = mother of one's spouse. So Y's mother is the mother of X's spouse, meaning X's spouse is Y's sibling. X married Y's sibling, making X the father/parent of Y's niece/nephew. In the standard TCS interpretation, X is Y's father (X married Y's mother, making Y's maternal grandmother X's mother-in-law)."
   },
   {
@@ -365,7 +365,7 @@
     "correctAnswer": 0,
     "section": "reasoning",
     "topic": "Blood Relations",
-    "difficulty": "easy",
+    "difficulty": "medium",
     "explanation": "Only daughter of the woman's mother = the woman herself. So the man's mother = the woman. The woman is the man's mother."
   },
   {
@@ -392,7 +392,7 @@
     "correctAnswer": 0,
     "section": "reasoning",
     "topic": "Blood Relations",
-    "difficulty": "easy",
+    "difficulty": "medium",
     "explanation": "Rahul's grandfather's only son = Rahul's father. Rahul's father's only daughter = Rahul's sister. But Rahul could be male and the son as well. Since the grandfather has 'only one son' (Rahul's father), and that son has 'only one daughter,' Rahul must be a son of that man as well (otherwise how does Rahul exist). So the daughter is Rahul's sister, and Rahul is her brother."
   },
   {
@@ -410,7 +410,7 @@
     "correctAnswer": 0,
     "section": "reasoning",
     "topic": "Blood Relations",
-    "difficulty": "easy",
+    "difficulty": "medium",
     "explanation": "B is son of A. B married C. D is daughter of B and C. E is husband of A. E is father of B (husband of B's mother). E is grandfather of D."
   },
   {
@@ -428,7 +428,7 @@
     "correctAnswer": 0,
     "section": "reasoning",
     "topic": "Blood Relations",
-    "difficulty": "easy",
+    "difficulty": "medium",
     "explanation": "Seema's uncle's daughter = Seema's cousin (female). The person is the brother of Seema's cousin = another child of Seema's uncle = also Seema's cousin."
   },
   {

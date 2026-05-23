@@ -9,22 +9,29 @@ const seed = async () => {
     await mongoose.connect(mongoURI);
     console.log('MongoDB connected...');
 
-    // Get all Blood Relations questions
-    const questions = await Question.find({ topic: 'Blood Relations' }).select('_id');
-    console.log(`Found ${questions.length} Blood Relations questions`);
+    // Get only hard and medium Blood Relations questions (no easy)
+    const questions = await Question.find({
+      topic: 'Blood Relations',
+      difficulty: { $in: ['hard', 'medium'] }
+    }).select('_id difficulty');
+    console.log(`Found ${questions.length} hard/medium Blood Relations questions`);
+
+    const hardCount = questions.filter(q => q.difficulty === 'hard').length;
+    const mediumCount = questions.filter(q => q.difficulty === 'medium').length;
+    console.log(`  Hard: ${hardCount}, Medium: ${mediumCount}`);
 
     // Remove existing Blood Relations test if any
     await Test.deleteMany({ topic: 'Blood Relations', type: 'topic_practice' });
 
-    // Create the test with 25 questions, 30 minutes
+    // Create the test with 30 questions, 35 minutes
     const test = await Test.create({
       title: 'Blood Relations Challenge',
       type: 'topic_practice',
       section: 'reasoning',
       topic: 'Blood Relations',
       questions: questions.map(q => q._id),
-      totalQuestions: 25,
-      duration: 30 * 60, // 30 minutes in seconds
+      totalQuestions: 30,
+      duration: 35 * 60, // 35 minutes in seconds
       sectionLocked: false,
       isActive: true,
     });

@@ -5,7 +5,7 @@
     "correctAnswer": 1,
     "section": "numerical",
     "topic": "LCM & HCF",
-    "difficulty": "hard",
+    "difficulty": "easy",
     "explanation": "72 = 2^3 x 3^2, 120 = 2^3 x 3 x 5, 168 = 2^3 x 3 x 7. HCF = 2^3 x 3 = 24."
   },
   {
@@ -14,7 +14,7 @@
     "correctAnswer": 2,
     "section": "numerical",
     "topic": "LCM & HCF",
-    "difficulty": "hard",
+    "difficulty": "easy",
     "explanation": "84 = 2^2 x 3 x 7, 126 = 2 x 3^2 x 7, 210 = 2 x 3 x 5 x 7. HCF = 2 x 3 x 7 = 42."
   },
   {
@@ -23,7 +23,7 @@
     "correctAnswer": 3,
     "section": "numerical",
     "topic": "LCM & HCF",
-    "difficulty": "hard",
+    "difficulty": "easy",
     "explanation": "48 = 2^4 x 3, 64 = 2^6, 80 = 2^4 x 5. HCF = 2^4 = 16."
   },
   {
@@ -32,7 +32,7 @@
     "correctAnswer": 0,
     "section": "numerical",
     "topic": "LCM & HCF",
-    "difficulty": "hard",
+    "difficulty": "easy",
     "explanation": "15 = 3 x 5, 20 = 2^2 x 5, 30 = 2 x 3 x 5. LCM = 2^2 x 3 x 5 = 60."
   },
   {
@@ -41,7 +41,7 @@
     "correctAnswer": 2,
     "section": "numerical",
     "topic": "LCM & HCF",
-    "difficulty": "hard",
+    "difficulty": "easy",
     "explanation": "12 = 2^2 x 3, 18 = 2 x 3^2, 24 = 2^3 x 3. LCM = 2^3 x 3^2 = 72."
   },
   {
@@ -50,7 +50,7 @@
     "correctAnswer": 3,
     "section": "numerical",
     "topic": "LCM & HCF",
-    "difficulty": "hard",
+    "difficulty": "easy",
     "explanation": "8 = 2^3, 14 = 2 x 7, 21 = 3 x 7. LCM = 2^3 x 3 x 7 = 168."
   },
   {
@@ -59,7 +59,7 @@
     "correctAnswer": 0,
     "section": "numerical",
     "topic": "LCM & HCF",
-    "difficulty": "hard",
+    "difficulty": "medium",
     "explanation": "For two numbers: LCM x HCF = Product of the numbers. So other number = (LCM x HCF) / given number = (180 x 6) / 30 = 1080 / 30 = 36."
   },
   {
@@ -68,7 +68,7 @@
     "correctAnswer": 1,
     "section": "numerical",
     "topic": "LCM & HCF",
-    "difficulty": "hard",
+    "difficulty": "medium",
     "explanation": "Other number = (LCM x HCF) / given number = (420 x 14) / 84 = 5880 / 84 = 70."
   },
   {
@@ -77,7 +77,7 @@
     "correctAnswer": 2,
     "section": "numerical",
     "topic": "LCM & HCF",
-    "difficulty": "hard",
+    "difficulty": "medium",
     "explanation": "Other number = (LCM x HCF) / given number = (360 x 12) / 60 = 4320 / 60 = 72."
   },
   {
@@ -86,7 +86,7 @@
     "correctAnswer": 0,
     "section": "numerical",
     "topic": "LCM & HCF",
-    "difficulty": "hard",
+    "difficulty": "easy",
     "explanation": "If HCF = 12 and ratio is 2:3:5, the numbers are 2 x 12 = 24, 3 x 12 = 36, and 5 x 12 = 60."
   },
   {
@@ -95,7 +95,7 @@
     "correctAnswer": 1,
     "section": "numerical",
     "topic": "LCM & HCF",
-    "difficulty": "hard",
+    "difficulty": "easy",
     "explanation": "If HCF = 8 and ratio is 3:4:7, the numbers are 3 x 8 = 24, 4 x 8 = 32, and 7 x 8 = 56."
   },
   {
@@ -104,7 +104,7 @@
     "correctAnswer": 2,
     "section": "numerical",
     "topic": "LCM & HCF",
-    "difficulty": "hard",
+    "difficulty": "easy",
     "explanation": "If HCF = 15 and ratio is 5:6:9, the numbers are 5 x 15 = 75, 6 x 15 = 90, and 9 x 15 = 135."
   },
   {
@@ -113,7 +113,7 @@
     "correctAnswer": 0,
     "section": "numerical",
     "topic": "LCM & HCF",
-    "difficulty": "hard",
+    "difficulty": "medium",
     "explanation": "LCM of 6, 8, and 12: 6 = 2 x 3, 8 = 2^3, 12 = 2^2 x 3. LCM = 2^3 x 3 = 24 minutes. They will ring together again at 10:00 + 24 = 10:24 AM."
   },
   {
@@ -122,7 +122,7 @@
     "correctAnswer": 1,
     "section": "numerical",
     "topic": "LCM & HCF",
-    "difficulty": "hard",
+    "difficulty": "medium",
     "explanation": "36 = 2^2 x 3^2, 48 = 2^4 x 3, 72 = 2^3 x 3^2. LCM = 2^4 x 3^2 = 16 x 9 = 144 seconds."
   },
   {
@@ -131,7 +131,7 @@
     "correctAnswer": 1,
     "section": "numerical",
     "topic": "LCM & HCF",
-    "difficulty": "hard",
+    "difficulty": "medium",
     "explanation": "4 = 2^2, 6 = 2 x 3, 8 = 2^3, 10 = 2 x 5. LCM = 2^3 x 3 x 5 = 120 seconds = 2 minutes. They will next toll together at 12:02 PM."
   },
   {
@@ -140,7 +140,7 @@
     "correctAnswer": 0,
     "section": "numerical",
     "topic": "LCM & HCF",
-    "difficulty": "hard",
+    "difficulty": "medium",
     "explanation": "Subtract the remainder from each number: 135 - 5 = 130, 225 - 5 = 220, 315 - 5 = 310. Now find HCF(130, 220, 310). 130 = 2 x 5 x 13, 220 = 2^2 x 5 x 11, 310 = 2 x 5 x 31. HCF = 2 x 5 = 10."
   },
   {
@@ -149,7 +149,7 @@
     "correctAnswer": 1,
     "section": "numerical",
     "topic": "LCM & HCF",
-    "difficulty": "hard",
+    "difficulty": "medium",
     "explanation": "Subtract the remainder: 150 - 6 = 144, 230 - 6 = 224, 310 - 6 = 304. Find HCF(144, 224, 304). 144 = 2^4 x 3^2, 224 = 2^5 x 7, 304 = 2^4 x 19. HCF = 2^4 = 16."
   },
   {
@@ -158,7 +158,7 @@
     "correctAnswer": 2,
     "section": "numerical",
     "topic": "LCM & HCF",
-    "difficulty": "hard",
+    "difficulty": "medium",
     "explanation": "Subtract the remainder: 99 - 3 = 96, 153 - 3 = 150, 207 - 3 = 204. Find HCF(96, 150, 204). 96 = 2^5 x 3, 150 = 2 x 3 x 5^2, 204 = 2^2 x 3 x 17. HCF = 2 x 3 = 6."
   },
   {
@@ -167,7 +167,7 @@
     "correctAnswer": 1,
     "section": "numerical",
     "topic": "LCM & HCF",
-    "difficulty": "hard",
+    "difficulty": "medium",
     "explanation": "First find LCM(12, 16, 20). 12 = 2^2 x 3, 16 = 2^4, 20 = 2^2 x 5. LCM = 2^4 x 3 x 5 = 240. The required number = LCM + remainder = 240 + 7 = 247."
   },
   {
@@ -176,7 +176,7 @@
     "correctAnswer": 2,
     "section": "numerical",
     "topic": "LCM & HCF",
-    "difficulty": "hard",
+    "difficulty": "medium",
     "explanation": "LCM(15, 20, 25). 15 = 3 x 5, 20 = 2^2 x 5, 25 = 5^2. LCM = 2^2 x 3 x 5^2 = 300. The required number = 300 + 9 = 309."
   },
   {
@@ -185,7 +185,7 @@
     "correctAnswer": 3,
     "section": "numerical",
     "topic": "LCM & HCF",
-    "difficulty": "hard",
+    "difficulty": "medium",
     "explanation": "LCM(8, 12, 18). 8 = 2^3, 12 = 2^2 x 3, 18 = 2 x 3^2. LCM = 2^3 x 3^2 = 72. The required number = 72 + 5 = 77."
   },
   {
@@ -194,7 +194,7 @@
     "correctAnswer": 0,
     "section": "numerical",
     "topic": "LCM & HCF",
-    "difficulty": "hard",
+    "difficulty": "medium",
     "explanation": "LCM of fractions = LCM of numerators / HCF of denominators = LCM(1, 2, 3) / HCF(2, 3, 4) = 6 / 1 = 6. Verification: 6 / (1/2) = 12, 6 / (2/3) = 9, 6 / (3/4) = 8. All are whole numbers."
   },
   {
@@ -212,7 +212,7 @@
     "correctAnswer": 0,
     "section": "numerical",
     "topic": "LCM & HCF",
-    "difficulty": "hard",
+    "difficulty": "medium",
     "explanation": "HCF of fractions = HCF of numerators / LCM of denominators = HCF(3, 5, 7) / LCM(4, 6, 8) = 1 / 24."
   },
   {
@@ -221,7 +221,7 @@
     "correctAnswer": 2,
     "section": "numerical",
     "topic": "LCM & HCF",
-    "difficulty": "hard",
+    "difficulty": "easy",
     "explanation": "For two numbers: Product = LCM x HCF. So LCM = Product / HCF = 2028 / 12 = 169."
   },
   {
@@ -230,7 +230,7 @@
     "correctAnswer": 3,
     "section": "numerical",
     "topic": "LCM & HCF",
-    "difficulty": "hard",
+    "difficulty": "easy",
     "explanation": "LCM = Product / HCF = 3780 / 18 = 210."
   },
   {
@@ -239,7 +239,7 @@
     "correctAnswer": 1,
     "section": "numerical",
     "topic": "LCM & HCF",
-    "difficulty": "hard",
+    "difficulty": "medium",
     "explanation": "HCF = Product / LCM = 1764 / 252 = 7."
   },
   {
@@ -248,7 +248,7 @@
     "correctAnswer": 0,
     "section": "numerical",
     "topic": "LCM & HCF",
-    "difficulty": "hard",
+    "difficulty": "medium",
     "explanation": "Other number = (LCM x HCF) / given number = (480 x 16) / 80 = 7680 / 80 = 96."
   },
   {
@@ -266,7 +266,7 @@
     "correctAnswer": 1,
     "section": "numerical",
     "topic": "LCM & HCF",
-    "difficulty": "hard",
+    "difficulty": "medium",
     "explanation": "Let the numbers be 3x and 4x. Since HCF(3, 4) = 1, the HCF of the numbers is x, and LCM = 3 x 4 x x = 12x. Given LCM = 180, so 12x = 180, x = 15. The numbers are 45 and 60, and their HCF is 15."
   },
   {

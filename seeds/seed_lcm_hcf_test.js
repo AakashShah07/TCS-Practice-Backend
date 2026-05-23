@@ -9,14 +9,7 @@ const seed = async () => {
     await mongoose.connect(mongoURI);
     console.log('MongoDB connected...');
 
-    // Upgrade existing easy/medium questions to hard
-    const upgraded = await Question.updateMany(
-      { topic: 'LCM & HCF', difficulty: { $in: ['easy', 'medium'] } },
-      { $set: { difficulty: 'hard' } }
-    );
-    console.log(`Upgraded ${upgraded.modifiedCount} easy/medium questions to hard`);
-
-    // Get only hard LCM & HCF questions
+    // Get only hard LCM & HCF questions for the test
     const questions = await Question.find({ topic: 'LCM & HCF', difficulty: 'hard' }).select('_id');
     console.log(`Found ${questions.length} hard LCM & HCF questions`);
 

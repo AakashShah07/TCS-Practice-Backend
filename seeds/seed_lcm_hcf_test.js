@@ -9,14 +9,21 @@ const seed = async () => {
     await mongoose.connect(mongoURI);
     console.log('MongoDB connected...');
 
-    // Get all LCM & HCF questions
-    const questions = await Question.find({ topic: 'LCM & HCF' }).select('_id');
-    console.log(`Found ${questions.length} LCM & HCF questions`);
+    // Upgrade existing easy/medium questions to hard
+    const upgraded = await Question.updateMany(
+      { topic: 'LCM & HCF', difficulty: { $in: ['easy', 'medium'] } },
+      { $set: { difficulty: 'hard' } }
+    );
+    console.log(`Upgraded ${upgraded.modifiedCount} easy/medium questions to hard`);
+
+    // Get only hard LCM & HCF questions
+    const questions = await Question.find({ topic: 'LCM & HCF', difficulty: 'hard' }).select('_id');
+    console.log(`Found ${questions.length} hard LCM & HCF questions`);
 
     // Remove existing LCM & HCF test if any
     await Test.deleteMany({ topic: 'LCM & HCF', type: 'topic_practice' });
 
-    // Create the test with 30 questions, 40 minutes
+    // Create the test with 35 questions, 45 minutes (hard only)
     const test = await Test.create({
       title: 'LCM & HCF Practice',
       type: 'topic_practice',

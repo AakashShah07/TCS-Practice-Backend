@@ -18,6 +18,10 @@ const responseSchema = new mongoose.Schema(
       enum: ['not_visited', 'answered', 'not_answered', 'marked_for_review'],
       default: 'not_visited',
     },
+    markedForReview: {
+      type: Boolean,
+      default: false,
+    },
     timeSpent: {
       type: Number,
       default: 0,

@@ -183,9 +183,10 @@ exports.markForReview = async (req, res, next) => {
       return res.status(400).json({ success: false, message: 'Invalid question index' });
     }
 
-    attempt.responses[questionIndex].status = 'marked_for_review';
+    const current = attempt.responses[questionIndex].markedForReview || false;
+    attempt.responses[questionIndex].markedForReview = !current;
     await attempt.save();
-    res.json({ success: true, data: { questionIndex, status: 'marked_for_review' } });
+    res.json({ success: true, data: { questionIndex, markedForReview: !current } });
   } catch (error) {
     next(error);
   }

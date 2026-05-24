@@ -1,0 +1,488 @@
+[
+  {
+    "text": "The ratio of the present ages of a mother and her daughter is 7 : 1. Four years ago, the ratio of their ages was 19 : 1. What will be the mother's age four years from now?",
+    "options": ["42 years", "38 years", "46 years", "36 years"],
+    "correctAnswer": 2,
+    "section": "numerical",
+    "topic": "Problems on Ages",
+    "difficulty": "hard",
+    "explanation": "Let ages be 7x and x. (7x-4)/(x-4) = 19/1 => 7x-4 = 19x-76 => 12x = 72 => x = 6. Mother = 42. Four years from now = 46."
+  },
+  {
+    "text": "The ages of Nishi and Vinnee are in the ratio 6 : 5 respectively. After 9 years, the ratio of their ages will be 9 : 8. What is the difference in their ages now?",
+    "options": ["3 years", "5 years", "7 years", "9 years"],
+    "correctAnswer": 0,
+    "section": "numerical",
+    "topic": "Problems on Ages",
+    "difficulty": "medium",
+    "explanation": "Let ages be 6x and 5x. (6x+9)/(5x+9) = 9/8 => 48x+72 = 45x+81 => 3x = 9 => x = 3. Ages: 18 and 15. Difference = 3."
+  },
+  {
+    "text": "The present ages of Amit and his father are in the ratio 2 : 5 respectively. Four years hence, the ratio of their ages becomes 5 : 11 respectively. What was the father's age five years ago?",
+    "options": ["30 years", "35 years", "40 years", "45 years"],
+    "correctAnswer": 1,
+    "section": "numerical",
+    "topic": "Problems on Ages",
+    "difficulty": "hard",
+    "explanation": "Let ages be 2x and 5x. (2x+4)/(5x+4) = 5/11 => 22x+44 = 25x+20 => 3x = 24 => x = 8. Father = 40. Five years ago = 35."
+  },
+  {
+    "text": "The ratio of the ages of a father and his son is 17 : 7 respectively. Six years ago, the ratio of their ages was 3 : 1 respectively. What is the father's present age?",
+    "options": ["64 years", "51 years", "48 years", "Cannot be determined"],
+    "correctAnswer": 1,
+    "section": "numerical",
+    "topic": "Problems on Ages",
+    "difficulty": "hard",
+    "explanation": "Let ages be 17x and 7x. (17x-6)/(7x-6) = 3/1 => 17x-6 = 21x-18 => 4x = 12 => x = 3. Father = 51."
+  },
+  {
+    "text": "The ages of Shakti and Kanti are in the ratio of 8 : 7 respectively. After 10 years, the ratio of their ages will be 13 : 12. What is the difference between their ages?",
+    "options": ["2 years", "4 years", "6 years", "8 years"],
+    "correctAnswer": 0,
+    "section": "numerical",
+    "topic": "Problems on Ages",
+    "difficulty": "medium",
+    "explanation": "Let ages be 8x and 7x. (8x+10)/(7x+10) = 13/12 => 96x+120 = 91x+130 => 5x = 10 => x = 2. Ages: 16 and 14. Difference = 2."
+  },
+  {
+    "text": "The ages of A and B are in the ratio 6 : 5 and the sum of their ages is 44. What will be the ratio of their ages after 8 years?",
+    "options": ["7 : 6", "8 : 7", "9 : 8", "3 : 4"],
+    "correctAnswer": 1,
+    "section": "numerical",
+    "topic": "Problems on Ages",
+    "difficulty": "medium",
+    "explanation": "11x = 44 => x = 4. A = 24, B = 20. After 8 years: 32 : 28 = 8 : 7."
+  },
+  {
+    "text": "Farah got married 8 years ago. Today her age is 1 2/7 times her age at the time of her marriage. At present her daughter's age is one-sixth of her age. What was her daughter's age 3 years ago?",
+    "options": ["4 years", "3 years", "6 years", "Cannot be determined"],
+    "correctAnswer": 1,
+    "section": "numerical",
+    "topic": "Problems on Ages",
+    "difficulty": "hard",
+    "explanation": "Let marriage age = m. Now = m+8. m+8 = 9m/7 => 7m+56 = 9m => m = 28. Now = 36. Daughter = 36/6 = 6. Three years ago = 3."
+  },
+  {
+    "text": "The age of a mother today is thrice that of her daughter. After 12 years, the age of the mother will be twice that of her daughter. The present age of the daughter is:",
+    "options": ["12 years", "14 years", "16 years", "18 years"],
+    "correctAnswer": 0,
+    "section": "numerical",
+    "topic": "Problems on Ages",
+    "difficulty": "medium",
+    "explanation": "M = 3D. M+12 = 2(D+12) => 3D+12 = 2D+24 => D = 12."
+  },
+  {
+    "text": "The present age of Mr. Sanyal is three times the age of his son. Six years hence, the ratio of their ages will be 5 : 2. What is the present age of Mr. Sanyal?",
+    "options": ["48 years", "50 years", "54 years", "60 years"],
+    "correctAnswer": 2,
+    "section": "numerical",
+    "topic": "Problems on Ages",
+    "difficulty": "hard",
+    "explanation": "Let son = s. Sanyal = 3s. (3s+6)/(s+6) = 5/2 => 6s+12 = 5s+30 => s = 18. Sanyal = 54."
+  },
+  {
+    "text": "The ratio of Rani's and Komal's ages is 3 : 5 respectively. The ratio of Komal's and Pooja's ages is 2 : 3 respectively. If Rani is two-fifth of Pooja's age, what is Rani's age?",
+    "options": ["10 years", "15 years", "14 years", "Cannot be determined"],
+    "correctAnswer": 3,
+    "section": "numerical",
+    "topic": "Problems on Ages",
+    "difficulty": "hard",
+    "explanation": "R:K = 3:5, K:P = 2:3. Combined R:K:P = 6:10:15. R = (2/5)P => 6x = (2/5)(15x) = 6x. This is always true, so individual ages cannot be determined."
+  },
+  {
+    "text": "The age of a father 10 years ago was thrice the age of his son. 10 years hence, the father's age will be twice that of his son. The ratio of their present ages is:",
+    "options": ["8 : 5", "7 : 3", "9 : 5", "5 : 2"],
+    "correctAnswer": 1,
+    "section": "numerical",
+    "topic": "Problems on Ages",
+    "difficulty": "hard",
+    "explanation": "F-10 = 3(S-10) => F = 3S-20. F+10 = 2(S+10) => F = 2S+10. Solving: 3S-20 = 2S+10 => S = 30. F = 70. Ratio = 7:3."
+  },
+  {
+    "text": "The ratio between the ages of Ram and Mohan is 4 : 5 and that between the ages of Ram and Anil is 5 : 6. If the sum of the ages of the three is 69 years, what is Mohan's age?",
+    "options": ["20 years", "24 years", "25 years", "30 years"],
+    "correctAnswer": 2,
+    "section": "numerical",
+    "topic": "Problems on Ages",
+    "difficulty": "hard",
+    "explanation": "R:M = 4:5, R:A = 5:6. R = 4k = 5j => j = 4k/5. A = 6j = 24k/5. Sum: 4k + 5k + 24k/5 = 69 => 69k/5 = 69 => k = 5. Mohan = 25."
+  },
+  {
+    "text": "At present, Suresh's age is twice the age of his daughter. After 6 years from now, the ratio of the ages of Suresh and his daughter will be 23 : 13. What is the present age of Suresh?",
+    "options": ["36 years", "40 years", "46 years", "Cannot be determined"],
+    "correctAnswer": 1,
+    "section": "numerical",
+    "topic": "Problems on Ages",
+    "difficulty": "hard",
+    "explanation": "S = 2D. (2D+6)/(D+6) = 23/13 => 26D+78 = 23D+138 => 3D = 60 => D = 20. S = 40."
+  },
+  {
+    "text": "The difference between the present ages of Arun and Deepak is 14 years. Seven years ago, the ratio of their ages was 5 : 7 respectively. What is Deepak's present age?",
+    "options": ["35 years", "42 years", "49 years", "56 years"],
+    "correctAnswer": 3,
+    "section": "numerical",
+    "topic": "Problems on Ages",
+    "difficulty": "hard",
+    "explanation": "7 years ago: A-7 = 5k, D-7 = 7k. D-A = 2k = 14 => k = 7. Deepak = 7(7)+7 = 56."
+  },
+  {
+    "text": "Ten years ago, a man was seven times as old as his son. Two years hence, twice his age will be equal to five times the age of his son. What is the present age of the son?",
+    "options": ["12 years", "13 years", "14 years", "15 years"],
+    "correctAnswer": 2,
+    "section": "numerical",
+    "topic": "Problems on Ages",
+    "difficulty": "hard",
+    "explanation": "M-10 = 7(S-10) => M = 7S-60. 2(M+2) = 5(S+2) => 2M = 5S+6. Substituting: 2(7S-60) = 5S+6 => 14S-120 = 5S+6 => 9S = 126 => S = 14."
+  },
+  {
+    "text": "The ages of Samina and Suhana are in the ratio of 7 : 3 respectively. After 6 years, the ratio of their ages will be 5 : 3. What is the difference in their ages?",
+    "options": ["6 years", "8 years", "10 years", "12 years"],
+    "correctAnswer": 1,
+    "section": "numerical",
+    "topic": "Problems on Ages",
+    "difficulty": "medium",
+    "explanation": "7x, 3x. (7x+6)/(3x+6) = 5/3 => 21x+18 = 15x+30 => 6x = 12 => x = 2. Ages: 14, 6. Difference = 8."
+  },
+  {
+    "text": "The ages of Sulekha and Arunima are in the ratio of 9 : 8 respectively. After 5 years, the ratio of their ages will be 10 : 9. What is the difference in their ages?",
+    "options": ["4 years", "5 years", "6 years", "7 years"],
+    "correctAnswer": 1,
+    "section": "numerical",
+    "topic": "Problems on Ages",
+    "difficulty": "medium",
+    "explanation": "9x, 8x. (9x+5)/(8x+5) = 10/9 => 81x+45 = 80x+50 => x = 5. Ages: 45, 40. Difference = 5."
+  },
+  {
+    "text": "The ages of A and B are presently in the ratio of 5 : 6 respectively. Six years hence, this ratio will become 6 : 7 respectively. What was B's age 5 years ago?",
+    "options": ["25 years", "30 years", "31 years", "36 years"],
+    "correctAnswer": 2,
+    "section": "numerical",
+    "topic": "Problems on Ages",
+    "difficulty": "hard",
+    "explanation": "5x, 6x. (5x+6)/(6x+6) = 6/7 => 35x+42 = 36x+36 => x = 6. B = 36. Five years ago = 31."
+  },
+  {
+    "text": "The age of the mother today is thrice that of her daughter. After 12 years, the age of the mother will be twice that of her daughter. The age of the daughter today is:",
+    "options": ["12 years", "14 years", "16 years", "18 years"],
+    "correctAnswer": 0,
+    "section": "numerical",
+    "topic": "Problems on Ages",
+    "difficulty": "medium",
+    "explanation": "M = 3D. M+12 = 2(D+12) => 3D+12 = 2D+24 => D = 12."
+  },
+  {
+    "text": "The sum of the ages of a daughter and her mother is 56 years. After four years, the age of the mother will be three times that of the daughter. Their present ages are:",
+    "options": ["10 years, 46 years", "12 years, 44 years", "11 years, 45 years", "13 years, 43 years"],
+    "correctAnswer": 1,
+    "section": "numerical",
+    "topic": "Problems on Ages",
+    "difficulty": "hard",
+    "explanation": "D+M = 56. M+4 = 3(D+4) => M = 3D+8. D+3D+8 = 56 => 4D = 48 => D = 12, M = 44."
+  },
+  {
+    "text": "The present age of son is half of the present age of his mother. Ten years ago, his mother's age was thrice the age of her son. What is the present age of the son?",
+    "options": ["20 years", "25 years", "30 years", "40 years"],
+    "correctAnswer": 0,
+    "section": "numerical",
+    "topic": "Problems on Ages",
+    "difficulty": "medium",
+    "explanation": "S = M/2 => M = 2S. M-10 = 3(S-10) => 2S-10 = 3S-30 => S = 20."
+  },
+  {
+    "text": "Ram's son's age is 1/3 of Ram's wife's age. Ram's wife's age is 4/5 of Ram's age. Ram's age is 3/5 of his father's age. If Ram's father is 50 years old, find the age of Ram's son.",
+    "options": ["6 years", "8 years", "10 years", "12 years"],
+    "correctAnswer": 1,
+    "section": "numerical",
+    "topic": "Problems on Ages",
+    "difficulty": "hard",
+    "explanation": "Father = 50. Ram = 3/5 x 50 = 30. Wife = 4/5 x 30 = 24. Son = 1/3 x 24 = 8."
+  },
+  {
+    "text": "The ratio between the ages of Subhash, Prasad and Amar is 3 : 6 : 7. If the difference between the ages of Prasad and Amar is 10 years, what is the difference between the ages of Subhash and Prasad?",
+    "options": ["5 years", "10 years", "20 years", "30 years"],
+    "correctAnswer": 3,
+    "section": "numerical",
+    "topic": "Problems on Ages",
+    "difficulty": "medium",
+    "explanation": "3k, 6k, 7k. Amar - Prasad = k = 10. Subhash - Prasad difference = 6k - 3k = 3k = 30."
+  },
+  {
+    "text": "Rajan got married 8 years ago. His present age is 6/5 times his age at the time of his marriage. Rajan's sister was 10 years younger to him at the time of his marriage. The age of Rajan's sister is:",
+    "options": ["32 years", "36 years", "38 years", "40 years"],
+    "correctAnswer": 2,
+    "section": "numerical",
+    "topic": "Problems on Ages",
+    "difficulty": "hard",
+    "explanation": "Let marriage age = m. Now = m+8. m+8 = 6m/5 => 5m+40 = 6m => m = 40. Now = 48. Sister at marriage = 30. Sister now = 38."
+  },
+  {
+    "text": "The ages of two persons differ by 20 years. If 5 years ago, the older one be 5 times as old as the younger one, then their present ages are:",
+    "options": ["25 years, 5 years", "30 years, 10 years", "35 years, 15 years", "50 years, 30 years"],
+    "correctAnswer": 1,
+    "section": "numerical",
+    "topic": "Problems on Ages",
+    "difficulty": "hard",
+    "explanation": "A-B = 20. A-5 = 5(B-5) => A = 5B-20. 5B-20-B = 20 => 4B = 40 => B = 10, A = 30."
+  },
+  {
+    "text": "A couple has a son and a daughter. The age of the father is four times that of the son and the age of the daughter is one-third of that of her mother. The wife is 6 years younger to her husband and the sister is 3 years older than her brother. The mother's age is:",
+    "options": ["42 years", "48 years", "54 years", "63 years"],
+    "correctAnswer": 2,
+    "section": "numerical",
+    "topic": "Problems on Ages",
+    "difficulty": "hard",
+    "explanation": "F = 4S. M = F-6 = 4S-6. D = M/3 = (4S-6)/3. D = S+3. (4S-6)/3 = S+3 => 4S-6 = 3S+9 => S = 15. M = 54."
+  },
+  {
+    "text": "The present ages of three persons are in the proportion 4 : 7 : 9. Eight years ago, the sum of their ages was 56 years. The present age of the eldest person is:",
+    "options": ["28 years", "36 years", "45 years", "32 years"],
+    "correctAnswer": 1,
+    "section": "numerical",
+    "topic": "Problems on Ages",
+    "difficulty": "hard",
+    "explanation": "4x+7x+9x = 20x (now). 8 years ago: 20x - 24 = 56 => 20x = 80 => x = 4. Eldest = 9x4 = 36."
+  },
+  {
+    "text": "In 10 years, A will be twice as old as B was 10 years ago. If A is now 9 years older than B, the present age of B is:",
+    "options": ["19 years", "29 years", "39 years", "49 years"],
+    "correctAnswer": 2,
+    "section": "numerical",
+    "topic": "Problems on Ages",
+    "difficulty": "hard",
+    "explanation": "A+10 = 2(B-10) => A = 2B-30. A-B = 9 => 2B-30-B = 9 => B = 39."
+  },
+  {
+    "text": "Reenu's father was 38 years of age when she was born while her mother was 36 years old when her brother 4 years younger to her was born. What is the difference between the ages of her parents?",
+    "options": ["2 years", "4 years", "6 years", "8 years"],
+    "correctAnswer": 2,
+    "section": "numerical",
+    "topic": "Problems on Ages",
+    "difficulty": "hard",
+    "explanation": "Father at Reenu's birth = 38. Father at brother's birth (4 years later) = 42. Mother at brother's birth = 36. Difference = 42 - 36 = 6."
+  },
+  {
+    "text": "The sum of the ages of 5 children born at the intervals of 3 years each is 50 years. What is the age of the youngest child?",
+    "options": ["4 years", "6 years", "8 years", "10 years"],
+    "correctAnswer": 0,
+    "section": "numerical",
+    "topic": "Problems on Ages",
+    "difficulty": "medium",
+    "explanation": "Ages: x, x+3, x+6, x+9, x+12. Sum = 5x+30 = 50 => 5x = 20 => x = 4."
+  },
+  {
+    "text": "A man was asked to state his age in years. His reply was, 'Take my age 3 years hence, multiply it by 3 and then subtract 3 times my age 3 years ago and you will know how old I am.' What is the age of the man?",
+    "options": ["18 years", "20 years", "24 years", "32 years"],
+    "correctAnswer": 0,
+    "section": "numerical",
+    "topic": "Problems on Ages",
+    "difficulty": "hard",
+    "explanation": "3(x+3) - 3(x-3) = x => 3x+9-3x+9 = x => 18 = x. Age = 18."
+  },
+  {
+    "text": "The sum of the ages of Jayant, Prem and Paras is 93 years. Ten years ago, the ratio of their ages was 2 : 3 : 4. What is the present age of Paras?",
+    "options": ["24 years", "28 years", "34 years", "38 years"],
+    "correctAnswer": 3,
+    "section": "numerical",
+    "topic": "Problems on Ages",
+    "difficulty": "hard",
+    "explanation": "10 years ago: 2k+3k+4k = 93-30 = 63. 9k = 63 => k = 7. Paras 10 years ago = 28. Now = 38."
+  },
+  {
+    "text": "The ratio of a man's age and his son's age is 7 : 3 and the product of their ages is 756. The ratio of their ages after 6 years will be:",
+    "options": ["5 : 2", "2 : 1", "11 : 7", "13 : 9"],
+    "correctAnswer": 1,
+    "section": "numerical",
+    "topic": "Problems on Ages",
+    "difficulty": "hard",
+    "explanation": "7x x 3x = 756 => 21x^2 = 756 => x^2 = 36 => x = 6. Man = 42, Son = 18. After 6: 48:24 = 2:1."
+  },
+  {
+    "text": "Sonal is 40 years old and Nitya is 60 years old. How many years ago was the ratio of their ages 3 : 5?",
+    "options": ["5 years", "10 years", "20 years", "37 years"],
+    "correctAnswer": 1,
+    "section": "numerical",
+    "topic": "Problems on Ages",
+    "difficulty": "medium",
+    "explanation": "(40-x)/(60-x) = 3/5 => 200-5x = 180-3x => 2x = 20 => x = 10."
+  },
+  {
+    "text": "The ratio between the present ages of A and B is 5 : 3 respectively. The ratio between A's age 4 years ago and B's age 4 years hence is 1 : 1. What is the ratio between A's age 4 years hence and B's age 4 years ago?",
+    "options": ["1 : 3", "3 : 1", "2 : 1", "4 : 1"],
+    "correctAnswer": 1,
+    "section": "numerical",
+    "topic": "Problems on Ages",
+    "difficulty": "hard",
+    "explanation": "A = 5x, B = 3x. (5x-4)/(3x+4) = 1 => 5x-4 = 3x+4 => x = 4. A = 20, B = 12. A+4 : B-4 = 24:8 = 3:1."
+  },
+  {
+    "text": "The ratio of the ages of a man and his wife is 4 : 3. After 4 years, this ratio will be 9 : 7. If at the time of their marriage, the ratio of their ages was 5 : 3, then how many years ago were they married?",
+    "options": ["8 years", "10 years", "12 years", "15 years"],
+    "correctAnswer": 2,
+    "section": "numerical",
+    "topic": "Problems on Ages",
+    "difficulty": "hard",
+    "explanation": "4x, 3x. (4x+4)/(3x+4) = 9/7 => 28x+28 = 27x+36 => x = 8. Man = 32, Wife = 24. At marriage (y yrs ago): (32-y)/(24-y) = 5/3 => 96-3y = 120-5y => 2y = 24 => y = 12."
+  },
+  {
+    "text": "18 years ago, a man was three times as old as his son. Now, the man is twice as old as his son. The sum of the present ages of the man and his son is:",
+    "options": ["54 years", "72 years", "105 years", "108 years"],
+    "correctAnswer": 3,
+    "section": "numerical",
+    "topic": "Problems on Ages",
+    "difficulty": "hard",
+    "explanation": "M-18 = 3(S-18) => M = 3S-36. M = 2S => 2S = 3S-36 => S = 36. M = 72. Sum = 108."
+  },
+  {
+    "text": "One year ago, Promila was four times as old as her daughter Sakshi. Six years hence, Promila's age will exceed her daughter's age by 9 years. The ratio of the present ages of Promila and her daughter is:",
+    "options": ["9 : 2", "11 : 3", "12 : 5", "13 : 4"],
+    "correctAnswer": 3,
+    "section": "numerical",
+    "topic": "Problems on Ages",
+    "difficulty": "hard",
+    "explanation": "P-1 = 4(S-1) => P = 4S-3. P+6 = (S+6)+9 => P = S+9. 4S-3 = S+9 => 3S = 12 => S = 4. P = 13. Ratio = 13:4."
+  },
+  {
+    "text": "The age of a man 10 years ago was thrice the age of his son. 10 years hence, the man's age will be twice the age of his son. The ratio of their present ages is:",
+    "options": ["5 : 2", "7 : 3", "9 : 2", "13 : 4"],
+    "correctAnswer": 1,
+    "section": "numerical",
+    "topic": "Problems on Ages",
+    "difficulty": "hard",
+    "explanation": "M-10 = 3(S-10) => M = 3S-20. M+10 = 2(S+10) => M = 2S+10. 3S-20 = 2S+10 => S = 30, M = 70. Ratio = 7:3."
+  },
+  {
+    "text": "Tanya's grandfather was 8 times older to her 16 years ago. He would be 3 times of her age 8 years from now. Eight years ago, what was the ratio of Tanya's age to that of her grandfather?",
+    "options": ["1 : 2", "1 : 5", "3 : 8", "None of these"],
+    "correctAnswer": 1,
+    "section": "numerical",
+    "topic": "Problems on Ages",
+    "difficulty": "hard",
+    "explanation": "G-16 = 8(T-16) => G = 8T-112. G+8 = 3(T+8) => G = 3T+16. 8T-112 = 3T+16 => 5T = 128... Using standard interpretation: G = 9T-128, G+8 = 3(T+8). 9T-128+8 = 3T+24 => 6T = 144 => T = 24, G = 88. 8 years ago: 16:80 = 1:5."
+  },
+  {
+    "text": "The difference between the ages of two men is 10 years. 15 years ago, the elder one was twice as old as the younger one. The present age of the elder man is:",
+    "options": ["25 years", "35 years", "45 years", "55 years"],
+    "correctAnswer": 1,
+    "section": "numerical",
+    "topic": "Problems on Ages",
+    "difficulty": "medium",
+    "explanation": "E-Y = 10. E-15 = 2(Y-15) => E = 2Y-15. 2Y-15-Y = 10 => Y = 25. E = 35."
+  },
+  {
+    "text": "6 years ago, the ratio of the ages of Kunal and Sagar was 6 : 5. Four years hence, the ratio of their ages will be 11 : 10. What is Sagar's age at present?",
+    "options": ["16 years", "18 years", "20 years", "Cannot be determined"],
+    "correctAnswer": 0,
+    "section": "numerical",
+    "topic": "Problems on Ages",
+    "difficulty": "hard",
+    "explanation": "(K-6)/(S-6) = 6/5 => 5K-30 = 6S-36 => 5K = 6S-6. (K+4)/(S+4) = 11/10 => 10K = 11S+4. Substituting: 12S-12 = 11S+4 => S = 16."
+  },
+  {
+    "text": "Sneh's age is 1/6th of her father's age. Sneh's father's age will be twice of Vimal's age after 10 years. If Vimal's 8th birthday was celebrated 2 years ago, then what is Sneh's present age?",
+    "options": ["6 2/3 years", "10 years", "12 years", "15 years"],
+    "correctAnswer": 0,
+    "section": "numerical",
+    "topic": "Problems on Ages",
+    "difficulty": "hard",
+    "explanation": "Vimal = 10. Father = 2(Vimal+10) = 40. Sneh = 40/6 = 6 2/3 years."
+  },
+  {
+    "text": "Three years ago, the ratio of the ages of Amisha and Nimisha was 8 : 9 respectively. 3 years hence, the ratio of their ages will be 11 : 12 respectively. What is the present age of Amisha?",
+    "options": ["16 years", "19 years", "21 years", "Cannot be determined"],
+    "correctAnswer": 1,
+    "section": "numerical",
+    "topic": "Problems on Ages",
+    "difficulty": "hard",
+    "explanation": "(A-3)/(N-3) = 8/9 => 9A-8N = 3. (A+3)/(N+3) = 11/12 => 12A-11N = -3. Solving: A = 19."
+  },
+  {
+    "text": "If 10 years are subtracted from the present age of Mr. Roy and the remainder divided by 14, then you would get the present age of his grandson Sachin. If Sachin is 9 years younger than Saloni whose age is 14, then what is the present age of Mr. Roy?",
+    "options": ["60 years", "70 years", "74 years", "80 years"],
+    "correctAnswer": 3,
+    "section": "numerical",
+    "topic": "Problems on Ages",
+    "difficulty": "hard",
+    "explanation": "Saloni = 14. Sachin = 14-9 = 5. (Roy-10)/14 = 5 => Roy = 80."
+  },
+  {
+    "text": "X's age 3 years ago was three times the present age of Y. At present, Z's age is twice the age of Y. Also Z is 12 years younger than X. What is the present age of Z?",
+    "options": ["15 years", "24 years", "12 years", "18 years"],
+    "correctAnswer": 3,
+    "section": "numerical",
+    "topic": "Problems on Ages",
+    "difficulty": "hard",
+    "explanation": "X-3 = 3Y => X = 3Y+3. Z = 2Y. Z = X-12 => 2Y = 3Y+3-12 => Y = 9. Z = 18."
+  },
+  {
+    "text": "Eight year ago, Poorvi's age was equal to the sum of the present ages of her one son and one daughter. Five years hence, the respective ratio between the ages of her daughter and her son will be 7 : 6. If Poorvi's husband is 7 years elder to her and his present age is three times the present age of their son, what is the present age of the daughter?",
+    "options": ["15 years", "23 years", "19 years", "27 years"],
+    "correctAnswer": 1,
+    "section": "numerical",
+    "topic": "Problems on Ages",
+    "difficulty": "hard",
+    "explanation": "P-8 = S+D (present ages). H = P+7. H = 3S => 3S = S+D+15 => D = 2S-15. (D+5)/(S+5) = 7/6 => 6D = 7S+5. Solving: 6(2S-15) = 7S+5 => 12S-90 = 7S+5 => S = 19. D = 23."
+  },
+  {
+    "text": "The sum of present ages of a father and his son is 8 years more than the present age of the mother. The mother is 22 years older than the son. What will be the age of the father after 4 years?",
+    "options": ["30 years", "34 years", "28 years", "32 years"],
+    "correctAnswer": 1,
+    "section": "numerical",
+    "topic": "Problems on Ages",
+    "difficulty": "hard",
+    "explanation": "F+S = M+8. M = S+22. F+S = S+22+8 => F = 30. After 4 years = 34."
+  },
+  {
+    "text": "The ratio of the ages of Tina and Rakesh is 9 : 10 respectively. Ten years ago, the ratio of their ages was 4 : 5 respectively. What is the present age of Rakesh?",
+    "options": ["18 years", "20 years", "22 years", "24 years"],
+    "correctAnswer": 1,
+    "section": "numerical",
+    "topic": "Problems on Ages",
+    "difficulty": "medium",
+    "explanation": "Tina = 9x, Rakesh = 10x. (9x-10)/(10x-10) = 4/5 => 45x-50 = 40x-40 => 5x = 10 => x = 2. Rakesh = 20."
+  },
+  {
+    "text": "The age of father 10 years ago was thrice the age of his son. 10 years hence father's age will be twice that of his son. Find the ratio of their present ages.",
+    "options": ["7 : 3", "5 : 2", "9 : 4", "3 : 1"],
+    "correctAnswer": 0,
+    "section": "numerical",
+    "topic": "Problems on Ages",
+    "difficulty": "hard",
+    "explanation": "F-10 = 3(S-10) and F+10 = 2(S+10). Solving: S = 30, F = 70. Ratio = 7:3."
+  },
+  {
+    "text": "A man's present age is two-fifths of the age of his mother. After 8 years, he will be one-half of the age of his mother. How old is the mother at present?",
+    "options": ["32 years", "36 years", "40 years", "48 years"],
+    "correctAnswer": 2,
+    "section": "numerical",
+    "topic": "Problems on Ages",
+    "difficulty": "hard",
+    "explanation": "M = 2x/5. (2x/5)+8 = (x+8)/2 => 4x/10+8 = x/2+4 => 2x/5-x/2 = -4 => -x/10 = -4 => x = 40."
+  },
+  {
+    "text": "The ages of two persons differ by 16 years. If 6 years ago, the elder one was three times as old as the younger one, find their present ages.",
+    "options": ["14 years, 30 years", "12 years, 28 years", "16 years, 32 years", "10 years, 26 years"],
+    "correctAnswer": 0,
+    "section": "numerical",
+    "topic": "Problems on Ages",
+    "difficulty": "hard",
+    "explanation": "E-Y = 16. E-6 = 3(Y-6) => E = 3Y-12. 3Y-12-Y = 16 => 2Y = 28 => Y = 14, E = 30."
+  },
+  {
+    "text": "The product of the ages of Ankit and Nikita is 240. If twice the age of Nikita is more than Ankit's age by 4 years, then find Nikita's age.",
+    "options": ["10 years", "12 years", "14 years", "16 years"],
+    "correctAnswer": 1,
+    "section": "numerical",
+    "topic": "Problems on Ages",
+    "difficulty": "hard",
+    "explanation": "A x N = 240. 2N - A = 4 => A = 2N-4. (2N-4)N = 240 => 2N^2-4N-240 = 0 => N^2-2N-120 = 0 => (N-12)(N+10) = 0 => N = 12."
+  },
+  {
+    "text": "Reenu's age after 6 years will be three-sevenths of her father's age. 10 years ago, the ratio of their ages was 1 : 5. What is Reenu's father's present age?",
+    "options": ["40 years", "45 years", "50 years", "55 years"],
+    "correctAnswer": 2,
+    "section": "numerical",
+    "topic": "Problems on Ages",
+    "difficulty": "hard",
+    "explanation": "Let Reenu's age 10 years ago = x. Father's = 5x. Now: x+10, 5x+10. After 6: (x+16) = 3/7(5x+16) => 7x+112 = 15x+48 => 8x = 64 => x = 8. Father now = 50."
+  }
+]

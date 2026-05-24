@@ -32,7 +32,10 @@
     "seed:average": "node seeds/seed_average.js",
     "seed:average-test": "node seeds/seed_average_test.js",
     "seed:profit-and-loss": "node seeds/seed_profit_and_loss.js",
-    "seed:profit-and-loss-test": "node seeds/seed_profit_and_loss_test.js"
+    "seed:profit-and-loss-test": "node seeds/seed_profit_and_loss_test.js",
+    "seed:lcm-hcf-hard": "node seeds/seed_lcm_hcf_hard.js",
+    "seed:problems-on-ages": "node seeds/seed_problems_on_ages.js",
+    "seed:problems-on-ages-test": "node seeds/seed_problems_on_ages_test.js"
   },
   "keywords": [],
   "author": "",

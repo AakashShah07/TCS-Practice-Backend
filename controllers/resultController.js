@@ -41,6 +41,7 @@ exports.getReview = async (req, res, next) => {
       selectedAnswer: qd.selectedAnswer,
       correctAnswer: qd.correctAnswer,
       isCorrect: qd.isCorrect,
+      markedForReview: qd.markedForReview || false,
       timeSpent: qd.timeSpent,
     }));
 

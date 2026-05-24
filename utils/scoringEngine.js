@@ -40,6 +40,7 @@ const calculateAndSaveResult = async (attempt) => {
       selectedAnswer: response.selectedAnswer,
       correctAnswer: question.correctAnswer,
       isCorrect: !isSkipped && isCorrect,
+      markedForReview: response.status === 'marked_for_review',
       timeSpent: response.timeSpent || 0,
     });
 

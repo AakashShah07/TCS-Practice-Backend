@@ -6,6 +6,7 @@ const questionDetailSchema = new mongoose.Schema(
     selectedAnswer: { type: Number, default: null },
     correctAnswer: { type: Number, required: true },
     isCorrect: { type: Boolean, required: true },
+    markedForReview: { type: Boolean, default: false },
     timeSpent: { type: Number, default: 0 },
   },
   { _id: false }

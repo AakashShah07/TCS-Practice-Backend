@@ -35,7 +35,9 @@
     "seed:profit-and-loss-test": "node seeds/seed_profit_and_loss_test.js",
     "seed:lcm-hcf-hard": "node seeds/seed_lcm_hcf_hard.js",
     "seed:problems-on-ages": "node seeds/seed_problems_on_ages.js",
-    "seed:problems-on-ages-test": "node seeds/seed_problems_on_ages_test.js"
+    "seed:problems-on-ages-test": "node seeds/seed_problems_on_ages_test.js",
+    "seed:coding-decoding": "node seeds/seed_coding_decoding.js",
+    "seed:coding-decoding-test": "node seeds/seed_coding_decoding_test.js"
   },
   "keywords": [],
   "author": "",

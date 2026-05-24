@@ -1,0 +1,398 @@
+[
+  {
+    "text": "In a certain code language, MYSTIFY is coded as NZTUJGZ. How is NEMESIS coded in that code?",
+    "options": ["OFNFTJT", "MDLDRHR", "OGNGUKU", "NFMFTJT"],
+    "correctAnswer": 0,
+    "section": "reasoning",
+    "topic": "Coding Decoding",
+    "difficulty": "hard",
+    "explanation": "Each letter +1: N→O, E→F, M→N, E→F, S→T, I→J, S→T = OFNFTJT."
+  },
+  {
+    "text": "If PALACE is coded as QBMBDF in a certain code, how is TRAVEL coded?",
+    "options": ["USBWFM", "USBWEM", "USBVEL", "TQZUDK"],
+    "correctAnswer": 0,
+    "section": "reasoning",
+    "topic": "Coding Decoding",
+    "difficulty": "hard",
+    "explanation": "Each letter +1: P→Q, A→B, L→M, A→B, C→D, E→F. TRAVEL: T→U, R→S, A→B, V→W, E→F, L→M = USBWFM."
+  },
+  {
+    "text": "If SPEAK is coded as RODZJ in a certain language, how is UNDER coded?",
+    "options": ["TMCDQ", "VOFES", "TLBCP", "UNDDR"],
+    "correctAnswer": 0,
+    "section": "reasoning",
+    "topic": "Coding Decoding",
+    "difficulty": "hard",
+    "explanation": "Each letter -1: S→R, P→O, E→D, A→Z, K→J. UNDER: U→T, N→M, D→C, E→D, R→Q = TMCDQ."
+  },
+  {
+    "text": "If CARROM is coded as BZQQNL in a certain code, how is PLANET coded?",
+    "options": ["OKZMDS", "OKZMET", "PLZMES", "NJYLCR"],
+    "correctAnswer": 0,
+    "section": "reasoning",
+    "topic": "Coding Decoding",
+    "difficulty": "hard",
+    "explanation": "Each letter -1: C→B, A→Z, R→Q, R→Q, O→N, M→L. PLANET: P→O, L→K, A→Z, N→M, E→D, T→S = OKZMDS."
+  },
+  {
+    "text": "If COLD is coded as EQNF in a certain code, how is WARM coded?",
+    "options": ["YCTO", "XBSN", "ZDUO", "YBTM"],
+    "correctAnswer": 0,
+    "section": "reasoning",
+    "topic": "Coding Decoding",
+    "difficulty": "medium",
+    "explanation": "Each letter +2: C→E, O→Q, L→N, D→F. WARM: W→Y, A→C, R→T, M→O = YCTO."
+  },
+  {
+    "text": "If LIGHT is coded as JGEFR in a certain language, how is DANCE coded?",
+    "options": ["BYLAC", "FCPEG", "BYKNC", "CZMBD"],
+    "correctAnswer": 0,
+    "section": "reasoning",
+    "topic": "Coding Decoding",
+    "difficulty": "hard",
+    "explanation": "Each letter -2: L→J, I→G, G→E, H→F, T→R. DANCE: D→B, A→Y, N→L, C→A, E→C = BYLAC."
+  },
+  {
+    "text": "If FORGET is coded as DMPECR in a certain code, how is PRISON coded?",
+    "options": ["NPGQML", "MOFOML", "RTKUQP", "NPGQNL"],
+    "correctAnswer": 0,
+    "section": "reasoning",
+    "topic": "Coding Decoding",
+    "difficulty": "hard",
+    "explanation": "Each letter -2: F→D, O→M, R→P, G→E, E→C, T→R. PRISON: P→N, R→P, I→G, S→Q, O→M, N→L = NPGQML."
+  },
+  {
+    "text": "If FACE is coded as IDFH in a certain code, how is WORD coded?",
+    "options": ["ZRUG", "ZQTF", "YTQG", "ASHW"],
+    "correctAnswer": 0,
+    "section": "reasoning",
+    "topic": "Coding Decoding",
+    "difficulty": "hard",
+    "explanation": "Each letter +3: F→I, A→D, C→F, E→H. WORD: W→Z, O→R, R→U, D→G = ZRUG."
+  },
+  {
+    "text": "If PAPER is coded as SDSHU in a certain code, how is MOTHER coded?",
+    "options": ["PRWKHU", "QSXLIV", "PQVJGT", "PRWKHV"],
+    "correctAnswer": 0,
+    "section": "reasoning",
+    "topic": "Coding Decoding",
+    "difficulty": "hard",
+    "explanation": "Each letter +3: P→S, A→D, P→S, E→H, R→U. MOTHER: M→P, O→R, T→W, H→K, E→H, R→U = PRWKHU."
+  },
+  {
+    "text": "If DRINK is coded as AOFJH in a certain code, how is PLANT coded?",
+    "options": ["MIXKQ", "NIXLQ", "MJYKR", "LIWJP"],
+    "correctAnswer": 0,
+    "section": "reasoning",
+    "topic": "Coding Decoding",
+    "difficulty": "hard",
+    "explanation": "Each letter -3: D→A, R→O, I→F, N→K, K→H. PLANT: P→M, L→I, A→X, N→K, T→Q = MIXKQ."
+  },
+  {
+    "text": "If GAME is coded as KEQI in a certain code, how is BLUE coded?",
+    "options": ["FPYI", "GPZJ", "EOXH", "FQYK"],
+    "correctAnswer": 0,
+    "section": "reasoning",
+    "topic": "Coding Decoding",
+    "difficulty": "hard",
+    "explanation": "Each letter +4: G→K, A→E, M→Q, E→I. BLUE: B→F, L→P, U→Y, E→I = FPYI."
+  },
+  {
+    "text": "If RIVER is coded as NERAN in a certain code, how is TIGER coded?",
+    "options": ["PECAN", "ODBAN", "QFDBQ", "PECAM"],
+    "correctAnswer": 0,
+    "section": "reasoning",
+    "topic": "Coding Decoding",
+    "difficulty": "hard",
+    "explanation": "Each letter -4: R→N, I→E, V→R, E→A, R→N. TIGER: T→P, I→E, G→C, E→A, R→N = PECAN."
+  },
+  {
+    "text": "In a certain code, ALTERED is written as ZOGVIVW. How is RELATED written?",
+    "options": ["IVOZGVW", "VIOZGVW", "WVGZOVI", "IVOGZVW"],
+    "correctAnswer": 0,
+    "section": "reasoning",
+    "topic": "Coding Decoding",
+    "difficulty": "hard",
+    "explanation": "Mirror coding (A↔Z, B↔Y, n→27-n): A→Z, L→O, T→G, E→V, R→I, E→V, D→W. RELATED: R→I, E→V, L→O, A→Z, T→G, E→V, D→W = IVOZGVW."
+  },
+  {
+    "text": "In a code where each letter is replaced by its opposite in the alphabet (A↔Z, B↔Y, etc.), how is APPLE coded?",
+    "options": ["ZKKOV", "ZKKOW", "ZKLOV", "YLLPW"],
+    "correctAnswer": 0,
+    "section": "reasoning",
+    "topic": "Coding Decoding",
+    "difficulty": "hard",
+    "explanation": "A→Z, P(16)→K(11), P→K, L(12)→O(15), E(5)→V(22) = ZKKOV."
+  },
+  {
+    "text": "In a mirror code (A=Z, B=Y, C=X and so on), how is WORLD coded?",
+    "options": ["DLIOW", "DLIPX", "EMJPX", "CKHNY"],
+    "correctAnswer": 0,
+    "section": "reasoning",
+    "topic": "Coding Decoding",
+    "difficulty": "hard",
+    "explanation": "W(23)→D(4), O(15)→L(12), R(18)→I(9), L(12)→O(15), D(4)→W(23) = DLIOW."
+  },
+  {
+    "text": "If TIGER is coded as GRTVI in mirror code, how is BRICK coded?",
+    "options": ["YIRXP", "ZHSYQ", "XHQWN", "YISYQ"],
+    "correctAnswer": 0,
+    "section": "reasoning",
+    "topic": "Coding Decoding",
+    "difficulty": "hard",
+    "explanation": "T→G, I→R, G→T, E→V, R→I. BRICK: B(2)→Y(25), R(18)→I(9), I(9)→R(18), C(3)→X(24), K(11)→P(16) = YIRXP."
+  },
+  {
+    "text": "If DANGER is coded as WZMTVI in mirror code, how is SIMPLE coded?",
+    "options": ["HRNKOV", "HRNKOW", "ISOLOV", "GQMJNU"],
+    "correctAnswer": 0,
+    "section": "reasoning",
+    "topic": "Coding Decoding",
+    "difficulty": "hard",
+    "explanation": "D→W, A→Z, N→M, G→T, E→V, R→I. SIMPLE: S(19)→H(8), I(9)→R(18), M(13)→N(14), P(16)→K(11), L(12)→O(15), E(5)→V(22) = HRNKOV."
+  },
+  {
+    "text": "If KINDLE is coded as ELDNIK, how is DRAGON coded?",
+    "options": ["NOGARD", "NORGAD", "GRADNO", "DRANGN"],
+    "correctAnswer": 0,
+    "section": "reasoning",
+    "topic": "Coding Decoding",
+    "difficulty": "medium",
+    "explanation": "KINDLE reversed = ELDNIK. DRAGON reversed = NOGARD."
+  },
+  {
+    "text": "In a certain code, THUNDER is written as REDNUHT. How is CLIMATE written?",
+    "options": ["ETAMILC", "ETAMICLM", "ETMAILC", "EATMILC"],
+    "correctAnswer": 0,
+    "section": "reasoning",
+    "topic": "Coding Decoding",
+    "difficulty": "medium",
+    "explanation": "THUNDER reversed = REDNUHT. CLIMATE reversed = ETAMILC."
+  },
+  {
+    "text": "In a certain code, COMPUTER is written as RETUPMOC. How is DIVISION written?",
+    "options": ["NOISIVID", "NOISIIVD", "NOISIVDI", "NIOISVID"],
+    "correctAnswer": 0,
+    "section": "reasoning",
+    "topic": "Coding Decoding",
+    "difficulty": "medium",
+    "explanation": "COMPUTER reversed = RETUPMOC. DIVISION reversed = NOISIVID."
+  },
+  {
+    "text": "If PERFECTION is coded as NOITCEFREP, how is WONDERFUL coded?",
+    "options": ["LUFREDNOW", "LUFREDWON", "LUFREDNWO", "ULFREDWON"],
+    "correctAnswer": 0,
+    "section": "reasoning",
+    "topic": "Coding Decoding",
+    "difficulty": "medium",
+    "explanation": "PERFECTION reversed = NOITCEFREP. WONDERFUL reversed = LUFREDNOW."
+  },
+  {
+    "text": "If PAINT is coded as 74128 and EXCEL is coded as 93596, how would you code ACCEPT?",
+    "options": ["455978", "455798", "459578", "554978"],
+    "correctAnswer": 0,
+    "section": "reasoning",
+    "topic": "Coding Decoding",
+    "difficulty": "hard",
+    "explanation": "P=7, A=4, I=1, N=2, T=8, E=9, X=3, C=5, L=6. ACCEPT: A=4, C=5, C=5, E=9, P=7, T=8 = 455978."
+  },
+  {
+    "text": "If DELHI is coded as 73541 and CALCUTTA is coded as 82589662, how is CALICUT coded?",
+    "options": ["8251896", "8251986", "8215896", "8521896"],
+    "correctAnswer": 0,
+    "section": "reasoning",
+    "topic": "Coding Decoding",
+    "difficulty": "hard",
+    "explanation": "D=7, E=3, L=5, H=4, I=1, C=8, A=2, U=9, T=6. CALICUT: C=8, A=2, L=5, I=1, C=8, U=9, T=6 = 8251896."
+  },
+  {
+    "text": "If ENTRY is coded as 12345 and STEADY is coded as 931785, how is TENANT coded?",
+    "options": ["312723", "321723", "312732", "321732"],
+    "correctAnswer": 0,
+    "section": "reasoning",
+    "topic": "Coding Decoding",
+    "difficulty": "hard",
+    "explanation": "E=1, N=2, T=3, R=4, Y=5, S=9, A=7, D=8. TENANT: T=3, E=1, N=2, A=7, N=2, T=3 = 312723."
+  },
+  {
+    "text": "If ROSE is coded as 6821 and CHAIR is coded as 73456, how is SEARCH coded?",
+    "options": ["214673", "214763", "216473", "214637"],
+    "correctAnswer": 0,
+    "section": "reasoning",
+    "topic": "Coding Decoding",
+    "difficulty": "hard",
+    "explanation": "R=6, O=8, S=2, E=1, C=7, H=3, A=4, I=5. SEARCH: S=2, E=1, A=4, R=6, C=7, H=3 = 214673."
+  },
+  {
+    "text": "If CHARCOAL is coded as 45164913 and MORALE is coded as 296137, how is REAL coded?",
+    "options": ["6713", "6731", "7613", "7631"],
+    "correctAnswer": 0,
+    "section": "reasoning",
+    "topic": "Coding Decoding",
+    "difficulty": "hard",
+    "explanation": "C=4, H=5, A=1, R=6, O=9, L=3, M=2, E=7. REAL: R=6, E=7, A=1, L=3 = 6713."
+  },
+  {
+    "text": "If PALE is coded as 2134 and EARTH is coded as 41590, how is PEARL coded?",
+    "options": ["24153", "24135", "24513", "25413"],
+    "correctAnswer": 0,
+    "section": "reasoning",
+    "topic": "Coding Decoding",
+    "difficulty": "hard",
+    "explanation": "P=2, A=1, L=3, E=4, R=5, T=9, H=0. PEARL: P=2, E=4, A=1, R=5, L=3 = 24153."
+  },
+  {
+    "text": "If SHARP is coded as 58034 and PUSH is coded as 4658, how is RUSH coded?",
+    "options": ["3658", "3685", "3568", "3856"],
+    "correctAnswer": 0,
+    "section": "reasoning",
+    "topic": "Coding Decoding",
+    "difficulty": "medium",
+    "explanation": "S=5, H=8, A=0, R=3, P=4, U=6. RUSH: R=3, U=6, S=5, H=8 = 3658."
+  },
+  {
+    "text": "If GIVE is coded as 5137 and BAT is coded as 924, how is GATE coded?",
+    "options": ["5247", "5274", "5927", "5742"],
+    "correctAnswer": 0,
+    "section": "reasoning",
+    "topic": "Coding Decoding",
+    "difficulty": "hard",
+    "explanation": "G=5, I=1, V=3, E=7, B=9, A=2, T=4. GATE: G=5, A=2, T=4, E=7 = 5247."
+  },
+  {
+    "text": "If D = 4 and COVER = 63, then BASIS = ?",
+    "options": ["49", "50", "54", "55"],
+    "correctAnswer": 1,
+    "section": "reasoning",
+    "topic": "Coding Decoding",
+    "difficulty": "hard",
+    "explanation": "A=1, B=2...Z=26. COVER = 3+15+22+5+18 = 63. BASIS = 2+1+19+9+19 = 50."
+  },
+  {
+    "text": "In a certain code, COME is coded as DQPI (1st letter +1, 2nd +2, 3rd +3, 4th +4). How is HELP coded?",
+    "options": ["IGOT", "IHOR", "IGNR", "JHQU"],
+    "correctAnswer": 0,
+    "section": "reasoning",
+    "topic": "Coding Decoding",
+    "difficulty": "hard",
+    "explanation": "C+1=D, O+2=Q, M+3=P, E+4=I. HELP: H+1=I, E+2=G, L+3=O, P+4=T = IGOT."
+  },
+  {
+    "text": "In a certain code, BLAST is coded as CNDWY (1st +1, 2nd +2, 3rd +3, 4th +4, 5th +5). How is CREAM coded?",
+    "options": ["DTHER", "ETHFS", "CSGDQ", "EUIGR"],
+    "correctAnswer": 0,
+    "section": "reasoning",
+    "topic": "Coding Decoding",
+    "difficulty": "hard",
+    "explanation": "B+1=C, L+2=N, A+3=D, S+4=W, T+5=Y. CREAM: C+1=D, R+2=T, E+3=H, A+4=E, M+5=R = DTHER."
+  },
+  {
+    "text": "In a certain code, SELF is coded as RCIB (1st -1, 2nd -2, 3rd -3, 4th -4). How is MONK coded?",
+    "options": ["LMKG", "LJLG", "LKLH", "LNLH"],
+    "correctAnswer": 0,
+    "section": "reasoning",
+    "topic": "Coding Decoding",
+    "difficulty": "hard",
+    "explanation": "S-1=R, E-2=C, L-3=I, F-4=B. MONK: M-1=L, O-2=M, N-3=K, K-4=G = LMKG."
+  },
+  {
+    "text": "In a code, odd-position letters are shifted +1 and even-position letters are shifted -1. How is PLANET coded?",
+    "options": ["QKBMFS", "OKZMDS", "QLCNGT", "QKBNFT"],
+    "correctAnswer": 0,
+    "section": "reasoning",
+    "topic": "Coding Decoding",
+    "difficulty": "hard",
+    "explanation": "P(1st,+1)=Q, L(2nd,-1)=K, A(3rd,+1)=B, N(4th,-1)=M, E(5th,+1)=F, T(6th,-1)=S = QKBMFS."
+  },
+  {
+    "text": "In a code, odd-position letters shift +2 and even-position letters shift -2. How is MARKET coded?",
+    "options": ["OYTIGR", "NXSHFQ", "OZTJHS", "PZUJHS"],
+    "correctAnswer": 0,
+    "section": "reasoning",
+    "topic": "Coding Decoding",
+    "difficulty": "hard",
+    "explanation": "M+2=O, A-2=Y, R+2=T, K-2=I, E+2=G, T-2=R = OYTIGR."
+  },
+  {
+    "text": "In a certain code, the word STOP is first reversed to give POTS and then each letter is shifted +1. How is GOLD coded?",
+    "options": ["EMPH", "FMOG", "EMOH", "EPHM"],
+    "correctAnswer": 0,
+    "section": "reasoning",
+    "topic": "Coding Decoding",
+    "difficulty": "hard",
+    "explanation": "GOLD reversed = DLOG, then +1: D→E, L→M, O→P, G→H = EMPH."
+  },
+  {
+    "text": "If MONKEY is coded as XDJMNL (reversed then each letter -1), how is JUMPED coded?",
+    "options": ["CDOLTI", "BENKSH", "EFQNVK", "CDOLUI"],
+    "correctAnswer": 0,
+    "section": "reasoning",
+    "topic": "Coding Decoding",
+    "difficulty": "hard",
+    "explanation": "MONKEY reversed = YEKNOM, each -1 = XDJMNL. JUMPED reversed = DEPMUJ, each -1: D→C, E→D, P→O, M→L, U→T, J→I = CDOLTI."
+  },
+  {
+    "text": "In a certain code, GARDEN is coded as DENGAR (first and second halves swapped). How is BRIDGE coded?",
+    "options": ["DGEBRI", "DGEIBR", "IDGEBR", "BRDIGE"],
+    "correctAnswer": 0,
+    "section": "reasoning",
+    "topic": "Coding Decoding",
+    "difficulty": "hard",
+    "explanation": "GARDEN: GAR+DEN → DEN+GAR = DENGAR. BRIDGE: BRI+DGE → DGE+BRI = DGEBRI."
+  },
+  {
+    "text": "In a certain code, consonants are shifted +1 and vowels are shifted -1. How is BRIDGE coded?",
+    "options": ["CSHEHD", "CSHFHD", "CQHCHD", "CASHGF"],
+    "correctAnswer": 0,
+    "section": "reasoning",
+    "topic": "Coding Decoding",
+    "difficulty": "hard",
+    "explanation": "B(cons)+1=C, R(cons)+1=S, I(vowel)-1=H, D(cons)+1=E, G(cons)+1=H, E(vowel)-1=D = CSHEHD."
+  },
+  {
+    "text": "In a code, FRACTION is coded by reversing groups of 4 letters. How is FRACTION coded?",
+    "options": ["CARFNOIT", "FRACNOIT", "CARFTION", "RFACTION"],
+    "correctAnswer": 0,
+    "section": "reasoning",
+    "topic": "Coding Decoding",
+    "difficulty": "hard",
+    "explanation": "FRACTION split into groups of 4: FRAC+TION. Reverse each group: CARF+NOIT = CARFNOIT."
+  },
+  {
+    "text": "In a certain code, BOMBAY is coded as MYMYMY (3rd and 6th letters repeated as pairs). How is MADRAS coded?",
+    "options": ["DADADA", "RARARA", "SASASA", "MAMAMA"],
+    "correctAnswer": 0,
+    "section": "reasoning",
+    "topic": "Coding Decoding",
+    "difficulty": "hard",
+    "explanation": "BOMBAY: 3rd letter=M, 6th=Y, repeated as MY-MY-MY. MADRAS: 3rd=D, 6th=S → DA-DA-DA = DADADA."
+  },
+  {
+    "text": "If REASON is coded as 5 and BELIEVED is coded as 7, what is the code for GOVERNMENT?",
+    "options": ["8", "9", "10", "11"],
+    "correctAnswer": 1,
+    "section": "reasoning",
+    "topic": "Coding Decoding",
+    "difficulty": "medium",
+    "explanation": "Code = number of letters - 1. REASON(6)→5, BELIEVED(8)→7. GOVERNMENT(10)→9."
+  },
+  {
+    "text": "Each letter is coded as its alphabetical position (A=1, B=2...Z=26). MACHINE is coded as 13-1-3-8-9-14-5. How is PENCIL coded?",
+    "options": ["16-5-14-3-9-12", "15-5-13-3-9-12", "16-5-14-3-8-12", "16-4-14-3-9-11"],
+    "correctAnswer": 0,
+    "section": "reasoning",
+    "topic": "Coding Decoding",
+    "difficulty": "medium",
+    "explanation": "P=16, E=5, N=14, C=3, I=9, L=12 = 16-5-14-3-9-12."
+  },
+  {
+    "text": "If VICTORY is coded as YLFWRUB (each letter +3), how is FREEDOM coded?",
+    "options": ["IUHHGRP", "IUHHGQP", "JVIIHSQ", "HTGGFQO"],
+    "correctAnswer": 0,
+    "section": "reasoning",
+    "topic": "Coding Decoding",
+    "difficulty": "hard",
+    "explanation": "Each letter +3: V→Y, I→L, C→F, T→W, O→R, R→U, Y→B. FREEDOM: F→I, R→U, E→H, E→H, D→G, O→R, M→P = IUHHGRP."
+  }
+]

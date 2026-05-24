@@ -162,13 +162,13 @@
     "explanation": "5x, 6x. (5x+6)/(6x+6) = 6/7 => 35x+42 = 36x+36 => x = 6. B = 36. Five years ago = 31."
   },
   {
-    "text": "The age of the mother today is thrice that of her daughter. After 12 years, the age of the mother will be twice that of her daughter. The age of the daughter today is:",
-    "options": ["12 years", "14 years", "16 years", "18 years"],
+    "text": "The present age of a father is 3 years more than three times the age of his son. Three years hence, father's age will be 10 years more than twice the age of his son. The present age of the father is:",
+    "options": ["33 years", "36 years", "39 years", "42 years"],
     "correctAnswer": 0,
     "section": "numerical",
     "topic": "Problems on Ages",
-    "difficulty": "medium",
-    "explanation": "M = 3D. M+12 = 2(D+12) => 3D+12 = 2D+24 => D = 12."
+    "difficulty": "hard",
+    "explanation": "F = 3S+3. F+3 = 2(S+3)+10 => 3S+6 = 2S+16 => S = 10. F = 33."
   },
   {
     "text": "The sum of the ages of a daughter and her mother is 56 years. After four years, the age of the mother will be three times that of the daughter. Their present ages are:",
@@ -357,7 +357,7 @@
     "section": "numerical",
     "topic": "Problems on Ages",
     "difficulty": "hard",
-    "explanation": "G-16 = 8(T-16) => G = 8T-112. G+8 = 3(T+8) => G = 3T+16. 8T-112 = 3T+16 => 5T = 128... Using standard interpretation: G = 9T-128, G+8 = 3(T+8). 9T-128+8 = 3T+24 => 6T = 144 => T = 24, G = 88. 8 years ago: 16:80 = 1:5."
+    "explanation": "'8 times older' means grandfather's age was 8 times more, i.e., 9 times Tanya's age. 16 years ago: G-16 = 9(T-16) => G = 9T-128. 8 years hence: G+8 = 3(T+8) => 9T-128+8 = 3T+24 => 6T = 144 => T = 24, G = 88. Eight years ago: T = 16, G = 80. Ratio = 16:80 = 1:5."
   },
   {
     "text": "The difference between the ages of two men is 10 years. 15 years ago, the elder one was twice as old as the younger one. The present age of the elder man is:",
@@ -441,13 +441,13 @@
     "explanation": "Tina = 9x, Rakesh = 10x. (9x-10)/(10x-10) = 4/5 => 45x-50 = 40x-40 => 5x = 10 => x = 2. Rakesh = 20."
   },
   {
-    "text": "The age of father 10 years ago was thrice the age of his son. 10 years hence father's age will be twice that of his son. Find the ratio of their present ages.",
-    "options": ["7 : 3", "5 : 2", "9 : 4", "3 : 1"],
-    "correctAnswer": 0,
+    "text": "The sum of the ages of a father and his son is 45 years. Five years ago, the product of their ages was 124. The present age of the father is:",
+    "options": ["30 years", "34 years", "36 years", "39 years"],
+    "correctAnswer": 2,
     "section": "numerical",
     "topic": "Problems on Ages",
     "difficulty": "hard",
-    "explanation": "F-10 = 3(S-10) and F+10 = 2(S+10). Solving: S = 30, F = 70. Ratio = 7:3."
+    "explanation": "F+S = 45. (F-5)(S-5) = 124. Let S = 45-F. (F-5)(40-F) = 124 => -F^2+45F-324 = 0 => F^2-45F+324 = 0 => (F-9)(F-36) = 0. F = 36 (father must be older). S = 9. Check: 31x4 = 124."
   },
   {
     "text": "A man's present age is two-fifths of the age of his mother. After 8 years, he will be one-half of the age of his mother. How old is the mother at present?",

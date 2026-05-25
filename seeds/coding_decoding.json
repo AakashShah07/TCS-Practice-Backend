@@ -1176,7 +1176,7 @@
     "explanation": "daily = ka (1&4), strong = lo (2&3), success = fa (3&4). Code = ka lo fa."
   },
   {
-    "text": "If \"garden mobile window\" is coded as \"6N, 8E, 9W\" and \"teacher planet market\" is coded as \"7R, 7T, 6R\" and \"silver rocket animal\" is coded as \"6R, 7T, 6L\", how is \"diamond\" coded?\n\nRule: Number = number of letters, Letter = middle letter.",
+    "text": "If \"garden mobile window\" is coded as \"6N, 8E, 9W\" and \"teacher planet market\" is coded as \"7R, 7T, 6R\" and \"silver rocket animal\" is coded as \"6R, 7T, 6L\", how is \"diamond\" coded?",
     "options": [
       "7M",
       "7N",
@@ -1187,10 +1187,10 @@
     "section": "reasoning",
     "topic": "Coding Decoding",
     "difficulty": "hard",
-    "explanation": "Diamond has 7 letters: D-I-A-M-O-N-D. Middle letter = M. Code = 7M."
+    "explanation": "Rule: Number = number of letters, Letter = middle letter.\nDiamond has 7 letters: D-I-A-M-O-N-D. Middle letter = M. Code = 7M."
   },
   {
-    "text": "If \"watch\" = 7T, \"postal\" = 9O, \"paint\" = 20D, \"English\" = 19B, \"among\" = 3U, \"code\" = 18F, \"series\" = 15O, \"society\" = 4E, \"number\" = 14W, \"Lenovo\" = 14V, \"you\" = 21P, \"synchronous\" = 13F, how is \"Promotion\" coded?\n\nRule: Number = average of first and last letter positions, Letter = middle letter.",
+    "text": "If \"watch\" = 7T, \"postal\" = 9O, \"paint\" = 20D, \"English\" = 19B, \"among\" = 3U, \"code\" = 18F, \"series\" = 15O, \"society\" = 4E, \"number\" = 14W, \"Lenovo\" = 14V, \"you\" = 21P, \"synchronous\" = 13F, how is \"Promotion\" coded?",
     "options": [
       "14P",
       "15P",
@@ -1201,10 +1201,10 @@
     "section": "reasoning",
     "topic": "Coding Decoding",
     "difficulty": "hard",
-    "explanation": "Promotion: P=16, N=14. Average = 15. Middle letter = O. Code = 15O."
+    "explanation": "Rule: Number = average of first and last letter positions, Letter = middle letter.\nPromotion: P=16, N=14. Average = 15. Middle letter = O. Code = 15O."
   },
   {
-    "text": "If \"market\" = 12T, \"flower\" = 9R, \"bright\" = 13G, \"planet\" = 17T, \"silver\" = 16R, \"honest\" = 11T, \"rocket\" = 18T, \"mother\" = 16R, \"animal\" = 7L, how is \"teacher\" coded?\n\nRule: Number = first + last letter position, Letter = second letter.",
+    "text": "If \"market\" = 12T, \"flower\" = 9R, \"bright\" = 13G, \"planet\" = 17T, \"silver\" = 16R, \"honest\" = 11T, \"rocket\" = 18T, \"mother\" = 16R, \"animal\" = 7L, how is \"teacher\" coded?",
     "options": [
       "None of these",
       "19C",
@@ -1215,10 +1215,10 @@
     "section": "reasoning",
     "topic": "Coding Decoding",
     "difficulty": "hard",
-    "explanation": "Teacher: T=20, R=18. Sum = 38. Second letter = E. None of the options match, so None of these."
+    "explanation": "Rule: Number = first + last letter position, Letter = second letter.\nTeacher: T=20, R=18. Sum = 38. Second letter = E. None of the options match, so None of these."
   },
   {
-    "text": "If \"Laptop\" = 12P, \"Garden\" = 7D, \"Market\" = 13R, \"Silver\" = 19L, how is \"Rocket\" coded?\n\nRule: Number = position of first letter, Letter = third letter.",
+    "text": "If \"Laptop\" = 12P, \"Garden\" = 7D, \"Market\" = 13R, \"Silver\" = 19L, how is \"Rocket\" coded?",
     "options": [
       "18K",
       "18C",
@@ -1229,10 +1229,10 @@
     "section": "reasoning",
     "topic": "Coding Decoding",
     "difficulty": "hard",
-    "explanation": "Rocket: R=18. Third letter = C. Code = 18C."
+    "explanation": "Rule: Number = position of first letter, Letter = third letter.\nRocket: R=18. Third letter = C. Code = 18C."
   },
   {
-    "text": "If \"Mountain\" = 13N, \"Teacher\" = 20C, \"Library\" = 12B, \"Digital\" = 4G, how is \"Network\" coded?\n\nRule: Number = position of first letter, Letter = second letter.",
+    "text": "If \"Mountain\" = 13N, \"Teacher\" = 20C, \"Library\" = 12B, \"Digital\" = 4G, how is \"Network\" coded?",
     "options": [
       "15T",
       "14T",
@@ -1243,10 +1243,10 @@
     "section": "reasoning",
     "topic": "Coding Decoding",
     "difficulty": "hard",
-    "explanation": "Network: N=14. Second letter = E. Not in options. None of these."
+    "explanation": "Rule: Number = position of first letter, Letter = second letter.\nNetwork: N=14. Second letter = E. Not in options. None of these."
   },
   {
-    "text": "If \"Bottle\" = 8T, \"Camera\" = 8M, \"Planet\" = 20A, \"Silver\" = 19L, how is \"Garden\" coded?\n\nRule: Number = first letter position + 1, Letter = middle letter.",
+    "text": "If \"Bottle\" = 8T, \"Camera\" = 8M, \"Planet\" = 20A, \"Silver\" = 19L, how is \"Garden\" coded?",
     "options": [
       "7D",
       "None of these",
@@ -1257,10 +1257,10 @@
     "section": "reasoning",
     "topic": "Coding Decoding",
     "difficulty": "hard",
-    "explanation": "Garden: G=7, 7+1=8. Middle letters are R/D (6 letters). Code = 8R. Not in options. None of these."
+    "explanation": "Rule: Number = first letter position + 1, Letter = middle letter.\nGarden: G=7, 7+1=8. Middle letters are R/D (6 letters). Code = 8R. Not in options. None of these."
   },
   {
-    "text": "If \"English\" = 19B, \"Postal\" = 16A, \"Lenovo\" = 14V, \"Society\" = 4E, how is \"Digital\" coded?\n\nRule: Number = position of first letter, Letter = second last letter.",
+    "text": "If \"English\" = 19B, \"Postal\" = 16A, \"Lenovo\" = 14V, \"Society\" = 4E, how is \"Digital\" coded?",
     "options": [
       "None of these",
       "7G",
@@ -1271,10 +1271,10 @@
     "section": "reasoning",
     "topic": "Coding Decoding",
     "difficulty": "hard",
-    "explanation": "Digital: D=4. Second last letter = A. Not in options. None of these."
+    "explanation": "Rule: Number = position of first letter, Letter = second last letter.\nDigital: D=4. Second last letter = A. Not in options. None of these."
   },
   {
-    "text": "If \"Window\" = 23D, \"Mobile\" = 13B, \"Rocket\" = 18C, \"Animal\" = 1M, how is \"Planet\" coded?\n\nRule: Number = first letter position, Letter = third letter.",
+    "text": "If \"Window\" = 23D, \"Mobile\" = 13B, \"Rocket\" = 18C, \"Animal\" = 1M, how is \"Planet\" coded?",
     "options": [
       "17A",
       "16N",
@@ -1285,10 +1285,10 @@
     "section": "reasoning",
     "topic": "Coding Decoding",
     "difficulty": "hard",
-    "explanation": "Planet: P=16. Third letter = A. Code = 16A."
+    "explanation": "Rule: Number = first letter position, Letter = third letter.\nPlanet: P=16. Third letter = A. Code = 16A."
   },
   {
-    "text": "If \"College\" = 8L, \"Student\" = 20U, \"Teacher\" = 18A, \"Library\" = 25R, how is \"Machine\" coded?\n\nRule: Number = last letter position + 1, Letter = second letter.",
+    "text": "If \"College\" = 8L, \"Student\" = 20U, \"Teacher\" = 18A, \"Library\" = 25R, how is \"Machine\" coded?",
     "options": [
       "None of these",
       "13H",
@@ -1299,10 +1299,10 @@
     "section": "reasoning",
     "topic": "Coding Decoding",
     "difficulty": "hard",
-    "explanation": "Machine: E=5, 5+1=6. Second letter = A. Not in options. None of these."
+    "explanation": "Rule: Number = last letter position + 1, Letter = second letter.\nMachine: E=5, 5+1=6. Second letter = A. Not in options. None of these."
   },
   {
-    "text": "If \"Morning\" = 13R, \"Picture\" = 16C, \"Science\" = 19I, \"Teacher\" = 20A, how is \"Journey\" coded?\n\nRule: Number = first letter position, Letter = second letter.",
+    "text": "If \"Morning\" = 13R, \"Picture\" = 16C, \"Science\" = 19I, \"Teacher\" = 20A, how is \"Journey\" coded?",
     "options": [
       "11O",
       "10U",
@@ -1313,6 +1313,6 @@
     "section": "reasoning",
     "topic": "Coding Decoding",
     "difficulty": "hard",
-    "explanation": "Journey: J=10. Second letter = O. Code = 10O."
+    "explanation": "Rule: Number = first letter position, Letter = second letter.\nJourney: J=10. Second letter = O. Code = 10O."
   }
 ]

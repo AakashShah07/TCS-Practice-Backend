@@ -37,7 +37,9 @@
     "seed:problems-on-ages": "node seeds/seed_problems_on_ages.js",
     "seed:problems-on-ages-test": "node seeds/seed_problems_on_ages_test.js",
     "seed:coding-decoding": "node seeds/seed_coding_decoding.js",
-    "seed:coding-decoding-test": "node seeds/seed_coding_decoding_test.js"
+    "seed:coding-decoding-test": "node seeds/seed_coding_decoding_test.js",
+    "seed:percentage": "node seeds/seed_percentage.js",
+    "seed:percentage-test": "node seeds/seed_percentage_test.js"
   },
   "keywords": [],
   "author": "",

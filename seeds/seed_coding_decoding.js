@@ -9,6 +9,9 @@ const seed = async () => {
     await mongoose.connect(mongoURI);
     console.log('MongoDB connected...');
 
+    const deleted = await Question.deleteMany({ topic: 'Coding Decoding' });
+    console.log(`Deleted ${deleted.deletedCount} existing Coding Decoding questions`);
+
     const inserted = await Question.insertMany(questions);
     console.log(`Inserted ${inserted.length} Coding Decoding questions`);
 

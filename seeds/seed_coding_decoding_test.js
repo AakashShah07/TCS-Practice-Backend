@@ -13,7 +13,7 @@ const seed = async () => {
       topic: 'Coding Decoding',
       difficulty: { $in: ['hard', 'medium'] }
     }).select('_id difficulty');
-    console.log(`Found ${questions.length} hard/medium Coding Decoding questions`);
+    console.log(`Found ${questions.length} hard/medium Coding Decoding questions (mostly hard)`);
 
     const hardCount = questions.filter(q => q.difficulty === 'hard').length;
     const mediumCount = questions.filter(q => q.difficulty === 'medium').length;
@@ -27,8 +27,8 @@ const seed = async () => {
       section: 'reasoning',
       topic: 'Coding Decoding',
       questions: questions.map(q => q._id),
-      totalQuestions: 40,
-      duration: 45 * 60,
+      totalQuestions: 50,
+      duration: 50 * 60,
       sectionLocked: false,
       isActive: true,
     });

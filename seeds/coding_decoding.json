@@ -1,8 +1,13 @@
 [
   {
     "text": "In a certain code language, MYSTIFY is coded as NZTUJGZ. How is NEMESIS coded in that code?",
-    "options": ["OFNFTJT", "MDLDRHR", "OGNGUKU", "NFMFTJT"],
-    "correctAnswer": 0,
+    "options": [
+      "MDLDRHR",
+      "OFNFTJT",
+      "OGNGUKU",
+      "NFMFTJT"
+    ],
+    "correctAnswer": 1,
     "section": "reasoning",
     "topic": "Coding Decoding",
     "difficulty": "hard",
@@ -10,8 +15,13 @@
   },
   {
     "text": "If PALACE is coded as QBMBDF in a certain code, how is TRAVEL coded?",
-    "options": ["USBWFM", "USBWEM", "USBVEL", "TQZUDK"],
-    "correctAnswer": 0,
+    "options": [
+      "USBWEM",
+      "TQZUDK",
+      "USBWFM",
+      "USBVEL"
+    ],
+    "correctAnswer": 2,
     "section": "reasoning",
     "topic": "Coding Decoding",
     "difficulty": "hard",
@@ -19,8 +29,13 @@
   },
   {
     "text": "If SPEAK is coded as RODZJ in a certain language, how is UNDER coded?",
-    "options": ["TMCDQ", "VOFES", "TLBCP", "UNDDR"],
-    "correctAnswer": 0,
+    "options": [
+      "VOFES",
+      "TMCDQ",
+      "TLBCP",
+      "UNDDR"
+    ],
+    "correctAnswer": 1,
     "section": "reasoning",
     "topic": "Coding Decoding",
     "difficulty": "hard",
@@ -28,7 +43,12 @@
   },
   {
     "text": "If CARROM is coded as BZQQNL in a certain code, how is PLANET coded?",
-    "options": ["OKZMDS", "OKZMET", "PLZMES", "NJYLCR"],
+    "options": [
+      "OKZMDS",
+      "PLZMES",
+      "NJYLCR",
+      "OKZMET"
+    ],
     "correctAnswer": 0,
     "section": "reasoning",
     "topic": "Coding Decoding",
@@ -37,8 +57,13 @@
   },
   {
     "text": "If COLD is coded as EQNF in a certain code, how is WARM coded?",
-    "options": ["YCTO", "XBSN", "ZDUO", "YBTM"],
-    "correctAnswer": 0,
+    "options": [
+      "XBSN",
+      "ZDUO",
+      "YCTO",
+      "YBTM"
+    ],
+    "correctAnswer": 2,
     "section": "reasoning",
     "topic": "Coding Decoding",
     "difficulty": "medium",
@@ -46,8 +71,13 @@
   },
   {
     "text": "If LIGHT is coded as JGEFR in a certain language, how is DANCE coded?",
-    "options": ["BYLAC", "FCPEG", "BYKNC", "CZMBD"],
-    "correctAnswer": 0,
+    "options": [
+      "FCPEG",
+      "BYLAC",
+      "CZMBD",
+      "BYKNC"
+    ],
+    "correctAnswer": 1,
     "section": "reasoning",
     "topic": "Coding Decoding",
     "difficulty": "hard",
@@ -55,8 +85,13 @@
   },
   {
     "text": "If FORGET is coded as DMPECR in a certain code, how is PRISON coded?",
-    "options": ["NPGQML", "MOFOML", "RTKUQP", "NPGQNL"],
-    "correctAnswer": 0,
+    "options": [
+      "RTKUQP",
+      "MOFOML",
+      "NPGQML",
+      "NPGQNL"
+    ],
+    "correctAnswer": 2,
     "section": "reasoning",
     "topic": "Coding Decoding",
     "difficulty": "hard",
@@ -64,8 +99,13 @@
   },
   {
     "text": "If FACE is coded as IDFH in a certain code, how is WORD coded?",
-    "options": ["ZRUG", "ZQTF", "YTQG", "ASHW"],
-    "correctAnswer": 0,
+    "options": [
+      "ASHW",
+      "ZQTF",
+      "ZRUG",
+      "YTQG"
+    ],
+    "correctAnswer": 2,
     "section": "reasoning",
     "topic": "Coding Decoding",
     "difficulty": "hard",
@@ -73,8 +113,13 @@
   },
   {
     "text": "If PAPER is coded as SDSHU in a certain code, how is MOTHER coded?",
-    "options": ["PRWKHU", "QSXLIV", "PQVJGT", "PRWKHV"],
-    "correctAnswer": 0,
+    "options": [
+      "PRWKHV",
+      "PQVJGT",
+      "PRWKHU",
+      "QSXLIV"
+    ],
+    "correctAnswer": 2,
     "section": "reasoning",
     "topic": "Coding Decoding",
     "difficulty": "hard",
@@ -82,8 +127,13 @@
   },
   {
     "text": "If DRINK is coded as AOFJH in a certain code, how is PLANT coded?",
-    "options": ["MIXKQ", "NIXLQ", "MJYKR", "LIWJP"],
-    "correctAnswer": 0,
+    "options": [
+      "LIWJP",
+      "NIXLQ",
+      "MJYKR",
+      "MIXKQ"
+    ],
+    "correctAnswer": 3,
     "section": "reasoning",
     "topic": "Coding Decoding",
     "difficulty": "hard",
@@ -91,8 +141,13 @@
   },
   {
     "text": "If GAME is coded as KEQI in a certain code, how is BLUE coded?",
-    "options": ["FPYI", "GPZJ", "EOXH", "FQYK"],
-    "correctAnswer": 0,
+    "options": [
+      "FQYK",
+      "FPYI",
+      "EOXH",
+      "GPZJ"
+    ],
+    "correctAnswer": 1,
     "section": "reasoning",
     "topic": "Coding Decoding",
     "difficulty": "hard",
@@ -100,8 +155,13 @@
   },
   {
     "text": "If RIVER is coded as NERAN in a certain code, how is TIGER coded?",
-    "options": ["PECAN", "ODBAN", "QFDBQ", "PECAM"],
-    "correctAnswer": 0,
+    "options": [
+      "ODBAN",
+      "PECAM",
+      "QFDBQ",
+      "PECAN"
+    ],
+    "correctAnswer": 3,
     "section": "reasoning",
     "topic": "Coding Decoding",
     "difficulty": "hard",
@@ -109,7 +169,12 @@
   },
   {
     "text": "In a certain code, ALTERED is written as ZOGVIVW. How is RELATED written?",
-    "options": ["IVOZGVW", "VIOZGVW", "WVGZOVI", "IVOGZVW"],
+    "options": [
+      "IVOZGVW",
+      "IVOGZVW",
+      "WVGZOVI",
+      "VIOZGVW"
+    ],
     "correctAnswer": 0,
     "section": "reasoning",
     "topic": "Coding Decoding",
@@ -118,8 +183,13 @@
   },
   {
     "text": "In a code where each letter is replaced by its opposite in the alphabet (A↔Z, B↔Y, etc.), how is APPLE coded?",
-    "options": ["ZKKOV", "ZKKOW", "ZKLOV", "YLLPW"],
-    "correctAnswer": 0,
+    "options": [
+      "YLLPW",
+      "ZKKOW",
+      "ZKKOV",
+      "ZKLOV"
+    ],
+    "correctAnswer": 2,
     "section": "reasoning",
     "topic": "Coding Decoding",
     "difficulty": "hard",
@@ -127,7 +197,12 @@
   },
   {
     "text": "In a mirror code (A=Z, B=Y, C=X and so on), how is WORLD coded?",
-    "options": ["DLIOW", "DLIPX", "EMJPX", "CKHNY"],
+    "options": [
+      "DLIOW",
+      "CKHNY",
+      "EMJPX",
+      "DLIPX"
+    ],
     "correctAnswer": 0,
     "section": "reasoning",
     "topic": "Coding Decoding",
@@ -136,8 +211,13 @@
   },
   {
     "text": "If TIGER is coded as GRTVI in mirror code, how is BRICK coded?",
-    "options": ["YIRXP", "ZHSYQ", "XHQWN", "YISYQ"],
-    "correctAnswer": 0,
+    "options": [
+      "YISYQ",
+      "YIRXP",
+      "ZHSYQ",
+      "XHQWN"
+    ],
+    "correctAnswer": 1,
     "section": "reasoning",
     "topic": "Coding Decoding",
     "difficulty": "hard",
@@ -145,8 +225,13 @@
   },
   {
     "text": "If DANGER is coded as WZMTVI in mirror code, how is SIMPLE coded?",
-    "options": ["HRNKOV", "HRNKOW", "ISOLOV", "GQMJNU"],
-    "correctAnswer": 0,
+    "options": [
+      "ISOLOV",
+      "GQMJNU",
+      "HRNKOW",
+      "HRNKOV"
+    ],
+    "correctAnswer": 3,
     "section": "reasoning",
     "topic": "Coding Decoding",
     "difficulty": "hard",
@@ -154,8 +239,13 @@
   },
   {
     "text": "If KINDLE is coded as ELDNIK, how is DRAGON coded?",
-    "options": ["NOGARD", "NORGAD", "GRADNO", "DRANGN"],
-    "correctAnswer": 0,
+    "options": [
+      "NORGAD",
+      "NOGARD",
+      "GRADNO",
+      "DRANGN"
+    ],
+    "correctAnswer": 1,
     "section": "reasoning",
     "topic": "Coding Decoding",
     "difficulty": "medium",
@@ -163,8 +253,13 @@
   },
   {
     "text": "In a certain code, THUNDER is written as REDNUHT. How is CLIMATE written?",
-    "options": ["ETAMILC", "ETAMICLM", "ETMAILC", "EATMILC"],
-    "correctAnswer": 0,
+    "options": [
+      "EATMILC",
+      "ETAMICLM",
+      "ETMAILC",
+      "ETAMILC"
+    ],
+    "correctAnswer": 3,
     "section": "reasoning",
     "topic": "Coding Decoding",
     "difficulty": "medium",
@@ -172,8 +267,13 @@
   },
   {
     "text": "In a certain code, COMPUTER is written as RETUPMOC. How is DIVISION written?",
-    "options": ["NOISIVID", "NOISIIVD", "NOISIVDI", "NIOISVID"],
-    "correctAnswer": 0,
+    "options": [
+      "NIOISVID",
+      "NOISIIVD",
+      "NOISIVID",
+      "NOISIVDI"
+    ],
+    "correctAnswer": 2,
     "section": "reasoning",
     "topic": "Coding Decoding",
     "difficulty": "medium",
@@ -181,8 +281,13 @@
   },
   {
     "text": "If PERFECTION is coded as NOITCEFREP, how is WONDERFUL coded?",
-    "options": ["LUFREDNOW", "LUFREDWON", "LUFREDNWO", "ULFREDWON"],
-    "correctAnswer": 0,
+    "options": [
+      "LUFREDNWO",
+      "LUFREDNOW",
+      "ULFREDWON",
+      "LUFREDWON"
+    ],
+    "correctAnswer": 1,
     "section": "reasoning",
     "topic": "Coding Decoding",
     "difficulty": "medium",
@@ -190,8 +295,13 @@
   },
   {
     "text": "If PAINT is coded as 74128 and EXCEL is coded as 93596, how would you code ACCEPT?",
-    "options": ["455978", "455798", "459578", "554978"],
-    "correctAnswer": 0,
+    "options": [
+      "455798",
+      "554978",
+      "455978",
+      "459578"
+    ],
+    "correctAnswer": 2,
     "section": "reasoning",
     "topic": "Coding Decoding",
     "difficulty": "hard",
@@ -199,8 +309,13 @@
   },
   {
     "text": "If DELHI is coded as 73541 and CALCUTTA is coded as 82589662, how is CALICUT coded?",
-    "options": ["8251896", "8251986", "8215896", "8521896"],
-    "correctAnswer": 0,
+    "options": [
+      "8215896",
+      "8251896",
+      "8251986",
+      "8521896"
+    ],
+    "correctAnswer": 1,
     "section": "reasoning",
     "topic": "Coding Decoding",
     "difficulty": "hard",
@@ -208,7 +323,12 @@
   },
   {
     "text": "If ENTRY is coded as 12345 and STEADY is coded as 931785, how is TENANT coded?",
-    "options": ["312723", "321723", "312732", "321732"],
+    "options": [
+      "312723",
+      "312732",
+      "321723",
+      "321732"
+    ],
     "correctAnswer": 0,
     "section": "reasoning",
     "topic": "Coding Decoding",
@@ -217,8 +337,13 @@
   },
   {
     "text": "If ROSE is coded as 6821 and CHAIR is coded as 73456, how is SEARCH coded?",
-    "options": ["214673", "214763", "216473", "214637"],
-    "correctAnswer": 0,
+    "options": [
+      "214763",
+      "214637",
+      "214673",
+      "216473"
+    ],
+    "correctAnswer": 2,
     "section": "reasoning",
     "topic": "Coding Decoding",
     "difficulty": "hard",
@@ -226,8 +351,13 @@
   },
   {
     "text": "If CHARCOAL is coded as 45164913 and MORALE is coded as 296137, how is REAL coded?",
-    "options": ["6713", "6731", "7613", "7631"],
-    "correctAnswer": 0,
+    "options": [
+      "7613",
+      "6713",
+      "7631",
+      "6731"
+    ],
+    "correctAnswer": 1,
     "section": "reasoning",
     "topic": "Coding Decoding",
     "difficulty": "hard",
@@ -235,8 +365,13 @@
   },
   {
     "text": "If PALE is coded as 2134 and EARTH is coded as 41590, how is PEARL coded?",
-    "options": ["24153", "24135", "24513", "25413"],
-    "correctAnswer": 0,
+    "options": [
+      "25413",
+      "24153",
+      "24513",
+      "24135"
+    ],
+    "correctAnswer": 1,
     "section": "reasoning",
     "topic": "Coding Decoding",
     "difficulty": "hard",
@@ -244,8 +379,13 @@
   },
   {
     "text": "If SHARP is coded as 58034 and PUSH is coded as 4658, how is RUSH coded?",
-    "options": ["3658", "3685", "3568", "3856"],
-    "correctAnswer": 0,
+    "options": [
+      "3568",
+      "3856",
+      "3685",
+      "3658"
+    ],
+    "correctAnswer": 3,
     "section": "reasoning",
     "topic": "Coding Decoding",
     "difficulty": "medium",
@@ -253,8 +393,13 @@
   },
   {
     "text": "If GIVE is coded as 5137 and BAT is coded as 924, how is GATE coded?",
-    "options": ["5247", "5274", "5927", "5742"],
-    "correctAnswer": 0,
+    "options": [
+      "5927",
+      "5247",
+      "5274",
+      "5742"
+    ],
+    "correctAnswer": 1,
     "section": "reasoning",
     "topic": "Coding Decoding",
     "difficulty": "hard",
@@ -262,8 +407,13 @@
   },
   {
     "text": "If D = 4 and COVER = 63, then BASIS = ?",
-    "options": ["49", "50", "54", "55"],
-    "correctAnswer": 1,
+    "options": [
+      "50",
+      "54",
+      "55",
+      "49"
+    ],
+    "correctAnswer": 0,
     "section": "reasoning",
     "topic": "Coding Decoding",
     "difficulty": "hard",
@@ -271,7 +421,12 @@
   },
   {
     "text": "In a certain code, COME is coded as DQPI (1st letter +1, 2nd +2, 3rd +3, 4th +4). How is HELP coded?",
-    "options": ["IGOT", "IHOR", "IGNR", "JHQU"],
+    "options": [
+      "IGOT",
+      "IGNR",
+      "JHQU",
+      "IHOR"
+    ],
     "correctAnswer": 0,
     "section": "reasoning",
     "topic": "Coding Decoding",
@@ -280,8 +435,13 @@
   },
   {
     "text": "In a certain code, BLAST is coded as CNDWY (1st +1, 2nd +2, 3rd +3, 4th +4, 5th +5). How is CREAM coded?",
-    "options": ["DTHER", "ETHFS", "CSGDQ", "EUIGR"],
-    "correctAnswer": 0,
+    "options": [
+      "CSGDQ",
+      "EUIGR",
+      "DTHER",
+      "ETHFS"
+    ],
+    "correctAnswer": 2,
     "section": "reasoning",
     "topic": "Coding Decoding",
     "difficulty": "hard",
@@ -289,8 +449,13 @@
   },
   {
     "text": "In a certain code, SELF is coded as RCIB (1st -1, 2nd -2, 3rd -3, 4th -4). How is MONK coded?",
-    "options": ["LMKG", "LJLG", "LKLH", "LNLH"],
-    "correctAnswer": 0,
+    "options": [
+      "LNLH",
+      "LKLH",
+      "LMKG",
+      "LJLG"
+    ],
+    "correctAnswer": 2,
     "section": "reasoning",
     "topic": "Coding Decoding",
     "difficulty": "hard",
@@ -298,7 +463,12 @@
   },
   {
     "text": "In a code, odd-position letters are shifted +1 and even-position letters are shifted -1. How is PLANET coded?",
-    "options": ["QKBMFS", "OKZMDS", "QLCNGT", "QKBNFT"],
+    "options": [
+      "QKBMFS",
+      "OKZMDS",
+      "QLCNGT",
+      "QKBNFT"
+    ],
     "correctAnswer": 0,
     "section": "reasoning",
     "topic": "Coding Decoding",
@@ -307,7 +477,12 @@
   },
   {
     "text": "In a code, odd-position letters shift +2 and even-position letters shift -2. How is MARKET coded?",
-    "options": ["OYTIGR", "NXSHFQ", "OZTJHS", "PZUJHS"],
+    "options": [
+      "OYTIGR",
+      "PZUJHS",
+      "OZTJHS",
+      "NXSHFQ"
+    ],
     "correctAnswer": 0,
     "section": "reasoning",
     "topic": "Coding Decoding",
@@ -316,8 +491,13 @@
   },
   {
     "text": "In a certain code, the word STOP is first reversed to give POTS and then each letter is shifted +1. How is GOLD coded?",
-    "options": ["EMPH", "FMOG", "EMOH", "EPHM"],
-    "correctAnswer": 0,
+    "options": [
+      "FMOG",
+      "EMPH",
+      "EMOH",
+      "EPHM"
+    ],
+    "correctAnswer": 1,
     "section": "reasoning",
     "topic": "Coding Decoding",
     "difficulty": "hard",
@@ -325,8 +505,13 @@
   },
   {
     "text": "If MONKEY is coded as XDJMNL (reversed then each letter -1), how is JUMPED coded?",
-    "options": ["CDOLTI", "BENKSH", "EFQNVK", "CDOLUI"],
-    "correctAnswer": 0,
+    "options": [
+      "CDOLUI",
+      "EFQNVK",
+      "BENKSH",
+      "CDOLTI"
+    ],
+    "correctAnswer": 3,
     "section": "reasoning",
     "topic": "Coding Decoding",
     "difficulty": "hard",
@@ -334,8 +519,13 @@
   },
   {
     "text": "In a certain code, GARDEN is coded as DENGAR (first and second halves swapped). How is BRIDGE coded?",
-    "options": ["DGEBRI", "DGEIBR", "IDGEBR", "BRDIGE"],
-    "correctAnswer": 0,
+    "options": [
+      "BRDIGE",
+      "DGEBRI",
+      "DGEIBR",
+      "IDGEBR"
+    ],
+    "correctAnswer": 1,
     "section": "reasoning",
     "topic": "Coding Decoding",
     "difficulty": "hard",
@@ -343,7 +533,12 @@
   },
   {
     "text": "In a certain code, consonants are shifted +1 and vowels are shifted -1. How is BRIDGE coded?",
-    "options": ["CSHEHD", "CSHFHD", "CQHCHD", "CASHGF"],
+    "options": [
+      "CSHEHD",
+      "CASHGF",
+      "CQHCHD",
+      "CSHFHD"
+    ],
     "correctAnswer": 0,
     "section": "reasoning",
     "topic": "Coding Decoding",
@@ -352,8 +547,13 @@
   },
   {
     "text": "In a code, FRACTION is coded by reversing groups of 4 letters. How is FRACTION coded?",
-    "options": ["CARFNOIT", "FRACNOIT", "CARFTION", "RFACTION"],
-    "correctAnswer": 0,
+    "options": [
+      "CARFTION",
+      "RFACTION",
+      "CARFNOIT",
+      "FRACNOIT"
+    ],
+    "correctAnswer": 2,
     "section": "reasoning",
     "topic": "Coding Decoding",
     "difficulty": "hard",
@@ -361,8 +561,13 @@
   },
   {
     "text": "In a certain code, BOMBAY is coded as MYMYMY (3rd and 6th letters repeated as pairs). How is MADRAS coded?",
-    "options": ["DADADA", "RARARA", "SASASA", "MAMAMA"],
-    "correctAnswer": 0,
+    "options": [
+      "MAMAMA",
+      "RARARA",
+      "SASASA",
+      "DADADA"
+    ],
+    "correctAnswer": 3,
     "section": "reasoning",
     "topic": "Coding Decoding",
     "difficulty": "hard",
@@ -370,8 +575,13 @@
   },
   {
     "text": "If REASON is coded as 5 and BELIEVED is coded as 7, what is the code for GOVERNMENT?",
-    "options": ["8", "9", "10", "11"],
-    "correctAnswer": 1,
+    "options": [
+      "11",
+      "8",
+      "9",
+      "10"
+    ],
+    "correctAnswer": 2,
     "section": "reasoning",
     "topic": "Coding Decoding",
     "difficulty": "medium",
@@ -379,7 +589,12 @@
   },
   {
     "text": "Each letter is coded as its alphabetical position (A=1, B=2...Z=26). MACHINE is coded as 13-1-3-8-9-14-5. How is PENCIL coded?",
-    "options": ["16-5-14-3-9-12", "15-5-13-3-9-12", "16-5-14-3-8-12", "16-4-14-3-9-11"],
+    "options": [
+      "16-5-14-3-9-12",
+      "15-5-13-3-9-12",
+      "16-5-14-3-8-12",
+      "16-4-14-3-9-11"
+    ],
     "correctAnswer": 0,
     "section": "reasoning",
     "topic": "Coding Decoding",
@@ -388,11 +603,716 @@
   },
   {
     "text": "If VICTORY is coded as YLFWRUB (each letter +3), how is FREEDOM coded?",
-    "options": ["IUHHGRP", "IUHHGQP", "JVIIHSQ", "HTGGFQO"],
-    "correctAnswer": 0,
+    "options": [
+      "IUHHGQP",
+      "HTGGFQO",
+      "JVIIHSQ",
+      "IUHHGRP"
+    ],
+    "correctAnswer": 3,
     "section": "reasoning",
     "topic": "Coding Decoding",
     "difficulty": "hard",
     "explanation": "Each letter +3: V→Y, I→L, C→F, T→W, O→R, R→U, Y→B. FREEDOM: F→I, R→U, E→H, E→H, D→G, O→R, M→P = IUHHGRP."
+  },
+  {
+    "text": "In a certain code language:\n1. \"smart people solve puzzles\" = \"ka mi to re\"\n2. \"people enjoy hard puzzles\" = \"mi su re lo\"\n3. \"smart minds enjoy logic\" = \"ka su ne po\"\n4. \"logic solve hard problems\" = \"po to lo zi\"\n\nWhat is the code for \"hard\"?",
+    "options": [
+      "to",
+      "lo",
+      "mi",
+      "po"
+    ],
+    "correctAnswer": 1,
+    "section": "reasoning",
+    "topic": "Coding Decoding",
+    "difficulty": "hard",
+    "explanation": "Common in sentences 2 and 4 = hard. Common codes = lo."
+  },
+  {
+    "text": "In a certain code language:\n1. \"bright stars shine tonight\" = \"ra ti mo ka\"\n2. \"stars guide lost sailors\" = \"ti su pa le\"\n3. \"bright sailors love sea\" = \"ra le jo ne\"\n4. \"sea shine under moon\" = \"ne mo fa zo\"\n\nWhat is the code for \"bright\"?",
+    "options": [
+      "ra",
+      "ti",
+      "ne",
+      "mo"
+    ],
+    "correctAnswer": 0,
+    "section": "reasoning",
+    "topic": "Coding Decoding",
+    "difficulty": "hard",
+    "explanation": "\"bright\" appears in sentences 1 and 3. Common code = ra."
+  },
+  {
+    "text": "In a certain code language:\n1. \"fast cars need fuel\" = \"do ka mi su\"\n2. \"fast trains need tracks\" = \"do re mi lo\"\n3. \"slow cars block roads\" = \"ka pa zi ne\"\n4. \"roads need repair soon\" = \"zi mi fa to\"\n\nWhat is the code for \"need\"?",
+    "options": [
+      "do",
+      "zi",
+      "ka",
+      "mi"
+    ],
+    "correctAnswer": 3,
+    "section": "reasoning",
+    "topic": "Coding Decoding",
+    "difficulty": "hard",
+    "explanation": "\"need\" appears in sentences 1, 2, 4. Common code in all three = mi."
+  },
+  {
+    "text": "In a certain code language:\n1. \"young artists create beauty\" = \"la so ki re\"\n2. \"artists paint bright walls\" = \"so mi pa tu\"\n3. \"young walls need repair\" = \"la tu zo ne\"\n4. \"beauty needs bright colors\" = \"re pa fi da\"\n\nWhat is the code for \"bright\"?",
+    "options": [
+      "re",
+      "pa",
+      "tu",
+      "so"
+    ],
+    "correctAnswer": 1,
+    "section": "reasoning",
+    "topic": "Coding Decoding",
+    "difficulty": "hard",
+    "explanation": "\"bright\" appears in sentence 2 and 4. Common code = pa."
+  },
+  {
+    "text": "In a certain code language:\n1. \"honest leaders build trust\" = \"ka mo re ti\"\n2. \"trust grows with time\" = \"ti lo pa su\"\n3. \"leaders guide people well\" = \"mo ne fa zo\"\n4. \"people build strong trust\" = \"fa re da ti\"\n\nWhat is the code for \"build\"?",
+    "options": [
+      "re",
+      "fa",
+      "ti",
+      "mo"
+    ],
+    "correctAnswer": 0,
+    "section": "reasoning",
+    "topic": "Coding Decoding",
+    "difficulty": "hard",
+    "explanation": "\"build\" appears in sentences 1 and 4. Common codes = re, ti. But trust also appears in 1 and 4, and from sentence 2, trust = ti. So build = re."
+  },
+  {
+    "text": "In a certain code language:\n1. \"cold winds bring rain\" = \"zu ka mi to\"\n2. \"rain makes rivers full\" = \"to pa li re\"\n3. \"cold rivers freeze quickly\" = \"zu li no fa\"\n4. \"quickly winds change direction\" = \"fa ka se do\"\n\nWhat is the code for \"quickly\"?",
+    "options": [
+      "li",
+      "fa",
+      "ka",
+      "zu"
+    ],
+    "correctAnswer": 1,
+    "section": "reasoning",
+    "topic": "Coding Decoding",
+    "difficulty": "hard",
+    "explanation": "\"quickly\" appears in sentences 3 and 4. Common code = fa."
+  },
+  {
+    "text": "In a certain code language:\n1. \"students learn coding daily\" = \"mi ka zo re\"\n2. \"teachers guide students patiently\" = \"lo pa mi su\"\n3. \"coding improves logical thinking\" = \"zo ne fa ti\"\n4. \"daily thinking builds patience\" = \"re ti do la\"\n\nWhat is the code for \"thinking\"?",
+    "options": [
+      "mi",
+      "zo",
+      "ti",
+      "re"
+    ],
+    "correctAnswer": 2,
+    "section": "reasoning",
+    "topic": "Coding Decoding",
+    "difficulty": "hard",
+    "explanation": "\"thinking\" appears in sentences 3 and 4. Common code = ti."
+  },
+  {
+    "text": "In a certain code language:\n1. \"green trees give shade\" = \"ka lo mi su\"\n2. \"trees clean fresh air\" = \"lo pa re zo\"\n3. \"fresh water gives life\" = \"re mi ta ne\"\n4. \"life needs clean air\" = \"ne fa pa zo\"\n\nWhat is the code for \"air\"?",
+    "options": [
+      "cannot be determined",
+      "pa",
+      "zo",
+      "ne"
+    ],
+    "correctAnswer": 0,
+    "section": "reasoning",
+    "topic": "Coding Decoding",
+    "difficulty": "hard",
+    "explanation": "\"air\" appears in sentences 2 and 4. Common codes = pa, zo. But \"clean\" also appears in 2 and 4. So air = either pa or zo. Cannot be determined."
+  },
+  {
+    "text": "In a certain code language:\n1. \"brave soldiers protect nation\" = \"ra ka mi to\"\n2. \"nation respects brave heroes\" = \"to ra su ne\"\n3. \"heroes fight with courage\" = \"ne pa lo zi\"\n4. \"soldiers fight for nation\" = \"ka lo fa to\"\n\nWhat is the code for \"soldiers\"?",
+    "options": [
+      "to",
+      "lo",
+      "ra",
+      "ka"
+    ],
+    "correctAnswer": 3,
+    "section": "reasoning",
+    "topic": "Coding Decoding",
+    "difficulty": "hard",
+    "explanation": "\"soldiers\" appears in sentences 1 and 4. Common codes = ka, to. But \"nation\" appears in 1, 2, 4 = to. So soldiers = ka."
+  },
+  {
+    "text": "In a certain code language:\n1. \"early birds catch worms\" = \"mi ka lo su\"\n2. \"birds fly over trees\" = \"ka pa re zo\"\n3. \"early trees grow tall\" = \"mi zo ne fa\"\n4. \"tall birds catch insects\" = \"fa ka lo ti\"\n\nWhat is the code for \"catch\"?",
+    "options": [
+      "fa",
+      "lo",
+      "ka",
+      "mi"
+    ],
+    "correctAnswer": 1,
+    "section": "reasoning",
+    "topic": "Coding Decoding",
+    "difficulty": "hard",
+    "explanation": "\"catch\" appears in sentences 1 and 4. Common codes = ka, lo. But \"birds\" appears in 1, 2, 4 = ka. So catch = lo."
+  },
+  {
+    "text": "In a certain code language:\n1. \"silent rivers carry secrets\" = \"mo ka ti re\"\n2. \"rivers flow through valleys\" = \"ka su lo pa\"\n3. \"silent valleys hide gold\" = \"mo pa zi ne\"\n4. \"gold secrets flow slowly\" = \"zi re su fa\"\n\nWhat is the code for \"flow\"?",
+    "options": [
+      "ka",
+      "su",
+      "re",
+      "pa"
+    ],
+    "correctAnswer": 1,
+    "section": "reasoning",
+    "topic": "Coding Decoding",
+    "difficulty": "hard",
+    "explanation": "\"flow\" appears in sentences 2 and 4. Common code = su."
+  },
+  {
+    "text": "In a certain code language:\n1. \"clever fox finds food\" = \"ra mi to ka\"\n2. \"fox runs through forest\" = \"mi su pa lo\"\n3. \"clever hunters enter forest\" = \"ra ne zi lo\"\n4. \"food enters forest slowly\" = \"ka zi lo fa\"\n\nWhat is the code for \"forest\"?",
+    "options": [
+      "ra",
+      "mi",
+      "zi",
+      "lo"
+    ],
+    "correctAnswer": 3,
+    "section": "reasoning",
+    "topic": "Coding Decoding",
+    "difficulty": "hard",
+    "explanation": "\"forest\" appears in sentences 2, 3, 4. Common code = lo."
+  },
+  {
+    "text": "In a certain code language:\n1. \"sharp minds solve problems\" = \"ka re mi to\"\n2. \"minds create new ideas\" = \"re su lo pa\"\n3. \"new problems need logic\" = \"lo to zi ne\"\n4. \"logic helps sharp minds\" = \"ne fa ka re\"\n\nWhat is the code for \"sharp\"?",
+    "options": [
+      "ne",
+      "re",
+      "to",
+      "ka"
+    ],
+    "correctAnswer": 3,
+    "section": "reasoning",
+    "topic": "Coding Decoding",
+    "difficulty": "hard",
+    "explanation": "\"sharp\" appears in sentences 1 and 4. Common codes = ka, re. But \"minds\" appears in 1, 2, 4 = re. So sharp = ka."
+  },
+  {
+    "text": "In a certain code language:\n1. \"bright lamps light rooms\" = \"pa mi ka to\"\n2. \"rooms need fresh air\" = \"to su re lo\"\n3. \"bright air feels clean\" = \"pa lo zi ne\"\n4. \"clean lamps need repair\" = \"ne mi su fa\"\n\nWhat is the code for \"clean\"?",
+    "options": [
+      "mi",
+      "pa",
+      "su",
+      "ne"
+    ],
+    "correctAnswer": 3,
+    "section": "reasoning",
+    "topic": "Coding Decoding",
+    "difficulty": "hard",
+    "explanation": "\"clean\" appears in sentences 3 and 4. Common code = ne."
+  },
+  {
+    "text": "In a certain code language:\n1. \"young players train daily\" = \"ka mi lo su\"\n2. \"players win tough matches\" = \"mi pa re to\"\n3. \"daily matches build confidence\" = \"su to zi ne\"\n4. \"confidence helps young players\" = \"ne fa ka mi\"\n\nWhat is the code for \"young\"?",
+    "options": [
+      "ne",
+      "ka",
+      "su",
+      "mi"
+    ],
+    "correctAnswer": 1,
+    "section": "reasoning",
+    "topic": "Coding Decoding",
+    "difficulty": "hard",
+    "explanation": "\"young\" appears in sentences 1 and 4. Common codes = ka, mi. But \"players\" appears in 1, 2, 4 = mi. So young = ka."
+  },
+  {
+    "text": "In a certain code language:\n1. \"heavy clouds bring thunder\" = \"zo ka mi re\"\n2. \"clouds cover dark sky\" = \"ka su lo pa\"\n3. \"dark nights bring fear\" = \"lo mi ti ne\"\n4. \"fear follows heavy nights\" = \"ne fa zo ti\"\n\nWhat is the code for \"nights\"?",
+    "options": [
+      "ne",
+      "zo",
+      "ti",
+      "lo"
+    ],
+    "correctAnswer": 2,
+    "section": "reasoning",
+    "topic": "Coding Decoding",
+    "difficulty": "hard",
+    "explanation": "\"nights\" appears in sentences 3 and 4. Common codes = ti, ne. But \"fear\" appears in 3 and 4 = ne. So nights = ti."
+  },
+  {
+    "text": "In a certain code language:\n1. \"honest workers earn respect\" = \"ra ka mi to\"\n2. \"workers build strong teams\" = \"ka su lo pa\"\n3. \"strong respect creates trust\" = \"lo to zi ne\"\n4. \"trust supports honest teams\" = \"ne fa ra pa\"\n\nWhat is the code for \"teams\"?",
+    "options": [
+      "ka",
+      "ra",
+      "pa",
+      "lo"
+    ],
+    "correctAnswer": 2,
+    "section": "reasoning",
+    "topic": "Coding Decoding",
+    "difficulty": "hard",
+    "explanation": "\"teams\" appears in sentences 2 and 4. Common code = pa."
+  },
+  {
+    "text": "In a certain code language:\n1. \"fresh fruits improve health\" = \"mi ka lo re\"\n2. \"health requires clean habits\" = \"re su pa to\"\n3. \"clean fruits taste sweet\" = \"pa ka zi ne\"\n4. \"sweet habits improve life\" = \"ne to lo fa\"\n\nWhat is the code for \"improve\"?",
+    "options": [
+      "ka",
+      "re",
+      "ne",
+      "lo"
+    ],
+    "correctAnswer": 3,
+    "section": "reasoning",
+    "topic": "Coding Decoding",
+    "difficulty": "hard",
+    "explanation": "\"improve\" appears in sentences 1 and 4. Common code = lo."
+  },
+  {
+    "text": "In a certain code language:\n1. \"ancient books contain wisdom\" = \"ka mi su to\"\n2. \"wisdom guides brave hearts\" = \"to pa re lo\"\n3. \"ancient hearts remember stories\" = \"ka lo zi ne\"\n4. \"stories contain hidden wisdom\" = \"ne su fa to\"\n\nWhat is the code for \"contain\"?",
+    "options": [
+      "su",
+      "ne",
+      "to",
+      "ka"
+    ],
+    "correctAnswer": 0,
+    "section": "reasoning",
+    "topic": "Coding Decoding",
+    "difficulty": "hard",
+    "explanation": "\"contain\" appears in sentences 1 and 4. Common codes = su, to. But \"wisdom\" appears in 1, 2, 4 = to. So contain = su."
+  },
+  {
+    "text": "In a certain code language:\n1. \"calm teachers explain lessons\" = \"ra mi ka to\"\n2. \"lessons help curious students\" = \"to su pa lo\"\n3. \"curious minds ask questions\" = \"pa ne zi fa\"\n4. \"students ask calm questions\" = \"lo zi ra fa\"\n\nWhat is the code for \"ask\"?",
+    "options": [
+      "fa",
+      "cannot be determined",
+      "zi",
+      "pa"
+    ],
+    "correctAnswer": 1,
+    "section": "reasoning",
+    "topic": "Coding Decoding",
+    "difficulty": "hard",
+    "explanation": "\"ask\" appears in sentences 3 and 4. Common codes = zi, fa. But \"questions\" also appears in 3 and 4. Cannot be determined."
+  },
+  {
+    "text": "In a certain code language:\n1. \"bright stars shine tonight\" = \"ka mi zo tu\"\n2. \"stars guide lost sailors\" = \"mi pa re lo\"\n3. \"bright sailors love sea\" = \"ka lo su ne\"\n4. \"sea shine under moon\" = \"ne zo fa do\"\n\nWhich can be the code for \"bright stars sea\"?",
+    "options": [
+      "ka mi ne",
+      "ka pa ne",
+      "ka zo ne",
+      "mi lo ne"
+    ],
+    "correctAnswer": 0,
+    "section": "reasoning",
+    "topic": "Coding Decoding",
+    "difficulty": "hard",
+    "explanation": "bright = ka (1&3), stars = mi (1&2), sea = ne (3&4). Code = ka mi ne."
+  },
+  {
+    "text": "In a certain code language:\n1. \"honest people earn respect\" = \"ra ka mi to\"\n2. \"people build strong teams\" = \"ka su lo pa\"\n3. \"strong respect creates trust\" = \"lo to zi ne\"\n4. \"trust supports honest teams\" = \"ne fa ra pa\"\n\nWhich can be the code for \"honest strong trust\"?",
+    "options": [
+      "ka lo ne",
+      "ra pa ne",
+      "ra lo ne",
+      "to lo ne"
+    ],
+    "correctAnswer": 2,
+    "section": "reasoning",
+    "topic": "Coding Decoding",
+    "difficulty": "hard",
+    "explanation": "honest = ra (1&4), strong = lo (2&3), trust = ne (3&4). Code = ra lo ne."
+  },
+  {
+    "text": "In a certain code language:\n1. \"cold winds bring rain\" = \"zu ka mi to\"\n2. \"rain makes rivers full\" = \"to pa li re\"\n3. \"cold rivers freeze quickly\" = \"zu li no fa\"\n4. \"quickly winds change direction\" = \"fa ka se do\"\n\nWhich can be the code for \"cold rain quickly\"?",
+    "options": [
+      "ka to fa",
+      "zu li fa",
+      "to pa fa",
+      "zu to fa"
+    ],
+    "correctAnswer": 3,
+    "section": "reasoning",
+    "topic": "Coding Decoding",
+    "difficulty": "hard",
+    "explanation": "cold = zu (1&3), rain = to (1&2), quickly = fa (3&4). Code = zu to fa."
+  },
+  {
+    "text": "In a certain code language:\n1. \"smart students solve problems\" = \"mi ka zo re\"\n2. \"teachers guide smart students\" = \"lo pa mi ka\"\n3. \"problems improve logical thinking\" = \"re ne fa ti\"\n4. \"thinking helps smart minds\" = \"ti su mi do\"\n\nWhich can be the code for \"smart problems thinking\"?",
+    "options": [
+      "mi re ti",
+      "lo re ti",
+      "mi zo ti",
+      "ka re ti"
+    ],
+    "correctAnswer": 0,
+    "section": "reasoning",
+    "topic": "Coding Decoding",
+    "difficulty": "hard",
+    "explanation": "smart = mi (1,2,4), problems = re (1&3), thinking = ti (3&4). Code = mi re ti."
+  },
+  {
+    "text": "In a certain code language:\n1. \"green trees give shade\" = \"ka lo mi su\"\n2. \"trees clean fresh air\" = \"lo pa re zo\"\n3. \"fresh water gives life\" = \"re mi ta ne\"\n4. \"life needs clean air\" = \"ne fa pa zo\"\n\nWhich can be the code for \"fresh clean life\"?",
+    "options": [
+      "re zo ne",
+      "mi pa ne",
+      "re pa ne",
+      "lo pa ne"
+    ],
+    "correctAnswer": 2,
+    "section": "reasoning",
+    "topic": "Coding Decoding",
+    "difficulty": "hard",
+    "explanation": "fresh = re (2&3), clean = pa (2&4), life = ne (3&4). Code = re pa ne."
+  },
+  {
+    "text": "In a certain code language:\n1. \"ancient books contain wisdom\" = \"ka mi su to\"\n2. \"wisdom guides brave hearts\" = \"to pa re lo\"\n3. \"ancient hearts remember stories\" = \"ka lo zi ne\"\n4. \"stories contain hidden wisdom\" = \"ne su fa to\"\n\nWhich can be the code for \"ancient wisdom stories\"?",
+    "options": [
+      "to pa ne",
+      "ka to ne",
+      "ka lo ne",
+      "ka su ne"
+    ],
+    "correctAnswer": 1,
+    "section": "reasoning",
+    "topic": "Coding Decoding",
+    "difficulty": "hard",
+    "explanation": "ancient = ka (1&3), wisdom = to (1,2,4), stories = ne (3&4). Code = ka to ne."
+  },
+  {
+    "text": "In a certain code language:\n1. \"young players train daily\" = \"ka mi lo su\"\n2. \"players win tough matches\" = \"mi pa re to\"\n3. \"daily matches build confidence\" = \"su to zi ne\"\n4. \"confidence helps young players\" = \"ne fa ka mi\"\n\nWhich can be the code for \"young players confidence\"?",
+    "options": [
+      "mi pa ne",
+      "ka mi ne",
+      "ka su ne",
+      "ka fa mi"
+    ],
+    "correctAnswer": 1,
+    "section": "reasoning",
+    "topic": "Coding Decoding",
+    "difficulty": "hard",
+    "explanation": "young = ka (1&4, since players = mi), players = mi (1,2,4), confidence = ne (3&4). Code = ka mi ne."
+  },
+  {
+    "text": "In a certain code language:\n1. \"heavy clouds bring thunder\" = \"zo ka mi re\"\n2. \"clouds cover dark sky\" = \"ka su lo pa\"\n3. \"dark nights bring fear\" = \"lo mi ti ne\"\n4. \"fear follows heavy nights\" = \"ne fa zo ti\"\n\nWhich can be the code for \"heavy dark fear\"?",
+    "options": [
+      "ka lo ne",
+      "zo lo ne",
+      "zo mi ne",
+      "zo ti ne"
+    ],
+    "correctAnswer": 1,
+    "section": "reasoning",
+    "topic": "Coding Decoding",
+    "difficulty": "hard",
+    "explanation": "heavy = zo (1&4), dark = lo (2&3), fear = ne (3&4). Code = zo lo ne."
+  },
+  {
+    "text": "In a certain code language:\n1. \"early birds catch worms\" = \"mi ka lo su\"\n2. \"birds fly over trees\" = \"ka pa re zo\"\n3. \"early trees grow tall\" = \"mi zo ne fa\"\n4. \"tall birds catch insects\" = \"fa ka lo ti\"\n\nWhich can be the code for \"early birds tall\"?",
+    "options": [
+      "ka zo fa",
+      "mi ka lo",
+      "mi lo fa",
+      "mi ka fa"
+    ],
+    "correctAnswer": 3,
+    "section": "reasoning",
+    "topic": "Coding Decoding",
+    "difficulty": "hard",
+    "explanation": "early = mi (1&3), birds = ka (1,2,4), tall = fa (3&4). Code = mi ka fa."
+  },
+  {
+    "text": "In a certain code language:\n1. \"more money in market\" = \"zo li aa to\"\n2. \"share in market profit\" = \"vo to je li\"\n3. \"making more profit now\" = \"su je zo ka\"\n4. \"now the market gains\" = \"do li yo su\"\n\nWhich can be the code for \"the more you share\"?",
+    "options": [
+      "yo je vo wi",
+      "vo wi zo do",
+      "do yo zo vo",
+      "vo zo wi bu"
+    ],
+    "correctAnswer": 1,
+    "section": "reasoning",
+    "topic": "Coding Decoding",
+    "difficulty": "hard",
+    "explanation": "more = zo (1&3), share = vo (sentence 2 by elimination), the = do or yo (sentence 4). \"you\" is new word needing new code. Option B has wi as new code for you."
+  },
+  {
+    "text": "In a certain code language:\n1. \"golden sun warms earth\" = \"ka mi to re\"\n2. \"sun rises over hills\" = \"mi pa lo su\"\n3. \"golden hills shine bright\" = \"ka su ne zo\"\n4. \"bright earth needs water\" = \"zo re fa do\"\n\nWhich can be the code for \"golden sun bright\"?",
+    "options": [
+      "mi re zo",
+      "ka mi zo",
+      "ka su zo",
+      "ka pa zo"
+    ],
+    "correctAnswer": 1,
+    "section": "reasoning",
+    "topic": "Coding Decoding",
+    "difficulty": "hard",
+    "explanation": "golden = ka (1&3), sun = mi (1&2), bright = zo (3&4). Code = ka mi zo."
+  },
+  {
+    "text": "In a certain code language:\n1. \"clever child reads books\" = \"ra ka mi to\"\n2. \"books teach moral values\" = \"to su lo pa\"\n3. \"clever values guide life\" = \"ra pa ne zi\"\n4. \"life needs moral courage\" = \"zi fa lo do\"\n\nWhich can be the code for \"clever moral life\"?",
+    "options": [
+      "ra lo zi",
+      "ra su lo",
+      "ra pa zi",
+      "ka lo zi"
+    ],
+    "correctAnswer": 0,
+    "section": "reasoning",
+    "topic": "Coding Decoding",
+    "difficulty": "hard",
+    "explanation": "clever = ra (1&3), moral = lo (2&4), life = zi (3&4). Code = ra lo zi."
+  },
+  {
+    "text": "In a certain code language:\n1. \"fast runners win races\" = \"mi ka lo su\"\n2. \"runners train every morning\" = \"ka pa re zo\"\n3. \"morning races bring energy\" = \"zo su ne fa\"\n4. \"energy helps fast runners\" = \"fa do mi ka\"\n\nWhich can be the code for \"fast runners energy\"?",
+    "options": [
+      "mi lo fa",
+      "ka su fa",
+      "do mi ka",
+      "mi ka fa"
+    ],
+    "correctAnswer": 3,
+    "section": "reasoning",
+    "topic": "Coding Decoding",
+    "difficulty": "hard",
+    "explanation": "runners = ka (1,2,4), fast = mi (1&4 after removing ka), energy = fa (3&4). Code = mi ka fa."
+  },
+  {
+    "text": "In a certain code language:\n1. \"red flowers smell sweet\" = \"zo ka mi re\"\n2. \"flowers bloom in garden\" = \"ka pa lo su\"\n3. \"sweet garden attracts bees\" = \"re su ne fa\"\n4. \"bees make red honey\" = \"fa do zo ti\"\n\nWhich can be the code for \"red sweet bees\"?",
+    "options": [
+      "zo su fa",
+      "ka re fa",
+      "zo mi fa",
+      "zo re fa"
+    ],
+    "correctAnswer": 3,
+    "section": "reasoning",
+    "topic": "Coding Decoding",
+    "difficulty": "hard",
+    "explanation": "red = zo (1&4), sweet = re (1&3), bees = fa (3&4). Code = zo re fa."
+  },
+  {
+    "text": "In a certain code language:\n1. \"brave king protects kingdom\" = \"ka mi to re\"\n2. \"king rules with justice\" = \"mi pa lo su\"\n3. \"justice brings peaceful kingdom\" = \"lo ne fa re\"\n4. \"brave soldiers bring victory\" = \"ka do ne zi\"\n\nWhich can be the code for \"brave justice kingdom\"?",
+    "options": [
+      "ka pa lo",
+      "ka ne re",
+      "ka lo re",
+      "mi lo re"
+    ],
+    "correctAnswer": 2,
+    "section": "reasoning",
+    "topic": "Coding Decoding",
+    "difficulty": "hard",
+    "explanation": "brave = ka (1&4), justice = lo (2&3), kingdom = re (1&3). Code = ka lo re."
+  },
+  {
+    "text": "In a certain code language:\n1. \"fresh milk gives strength\" = \"mi ka zo re\"\n2. \"milk makes healthy bones\" = \"ka pa lo su\"\n3. \"healthy food gives energy\" = \"lo ti zo fa\"\n4. \"energy builds strong bones\" = \"fa do ne su\"\n\nWhich can be the code for \"milk healthy energy\"?",
+    "options": [
+      "ka su fa",
+      "zo lo fa",
+      "ka lo fa",
+      "mi lo fa"
+    ],
+    "correctAnswer": 2,
+    "section": "reasoning",
+    "topic": "Coding Decoding",
+    "difficulty": "hard",
+    "explanation": "milk = ka (1&2), healthy = lo (2&3), energy = fa (3&4). Code = ka lo fa."
+  },
+  {
+    "text": "In a certain code language:\n1. \"old trees give shade\" = \"ra mi ka to\"\n2. \"trees protect small birds\" = \"mi su lo pa\"\n3. \"small birds sing songs\" = \"lo pa ne zi\"\n4. \"songs bring old memories\" = \"zi fa ra do\"\n\nWhich can be the code for \"old birds songs\"?",
+    "options": [
+      "ra ne zi",
+      "mi pa zi",
+      "ra pa zi",
+      "ra lo zi"
+    ],
+    "correctAnswer": 2,
+    "section": "reasoning",
+    "topic": "Coding Decoding",
+    "difficulty": "hard",
+    "explanation": "old = ra (1&4), birds = lo or pa (2&3, ambiguous with small), songs = zi (3&4). Code = ra pa zi (or ra lo zi)."
+  },
+  {
+    "text": "In a certain code language:\n1. \"sharp knife cuts vegetables\" = \"ka mi to re\"\n2. \"knife needs careful handling\" = \"mi pa lo su\"\n3. \"careful hands avoid cuts\" = \"lo ne fa re\"\n4. \"hands hold sharp tools\" = \"ne do ka zi\"\n\nWhich can be the code for \"sharp careful hands\"?",
+    "options": [
+      "ka pa ne",
+      "ka re ne",
+      "ka lo ne",
+      "mi lo ne"
+    ],
+    "correctAnswer": 2,
+    "section": "reasoning",
+    "topic": "Coding Decoding",
+    "difficulty": "hard",
+    "explanation": "sharp = ka (1&4), careful = lo (2&3), hands = ne (3&4). Code = ka lo ne."
+  },
+  {
+    "text": "In a certain code language:\n1. \"new ideas change world\" = \"mi ka lo su\"\n2. \"ideas inspire young minds\" = \"ka pa re zo\"\n3. \"young minds create future\" = \"pa re ne fa\"\n4. \"future needs new change\" = \"fa do mi lo\"\n\nWhich can be the code for \"new young future\"?",
+    "options": [
+      "mi lo fa",
+      "mi re fa",
+      "mi pa fa",
+      "ka pa fa"
+    ],
+    "correctAnswer": 2,
+    "section": "reasoning",
+    "topic": "Coding Decoding",
+    "difficulty": "hard",
+    "explanation": "new = mi (1&4), young = pa or re (2&3, ambiguous with minds), future = fa (3&4). Code = mi pa fa (or mi re fa)."
+  },
+  {
+    "text": "In a certain code language:\n1. \"daily practice improves skill\" = \"ka mi zo re\"\n2. \"skill builds strong confidence\" = \"re pa lo su\"\n3. \"strong practice creates success\" = \"lo mi ne fa\"\n4. \"success brings daily happiness\" = \"fa do ka ti\"\n\nWhich can be the code for \"daily strong success\"?",
+    "options": [
+      "ka ne fa",
+      "mi lo fa",
+      "ka pa fa",
+      "ka lo fa"
+    ],
+    "correctAnswer": 3,
+    "section": "reasoning",
+    "topic": "Coding Decoding",
+    "difficulty": "hard",
+    "explanation": "daily = ka (1&4), strong = lo (2&3), success = fa (3&4). Code = ka lo fa."
+  },
+  {
+    "text": "If \"garden mobile window\" is coded as \"6N, 8E, 9W\" and \"teacher planet market\" is coded as \"7R, 7T, 6R\" and \"silver rocket animal\" is coded as \"6R, 7T, 6L\", how is \"diamond\" coded?\n\nRule: Number = number of letters, Letter = middle letter.",
+    "options": [
+      "7M",
+      "7N",
+      "8M",
+      "8D"
+    ],
+    "correctAnswer": 0,
+    "section": "reasoning",
+    "topic": "Coding Decoding",
+    "difficulty": "hard",
+    "explanation": "Diamond has 7 letters: D-I-A-M-O-N-D. Middle letter = M. Code = 7M."
+  },
+  {
+    "text": "If \"watch\" = 7T, \"postal\" = 9O, \"paint\" = 20D, \"English\" = 19B, \"among\" = 3U, \"code\" = 18F, \"series\" = 15O, \"society\" = 4E, \"number\" = 14W, \"Lenovo\" = 14V, \"you\" = 21P, \"synchronous\" = 13F, how is \"Promotion\" coded?\n\nRule: Number = average of first and last letter positions, Letter = middle letter.",
+    "options": [
+      "14P",
+      "15P",
+      "16P",
+      "15O"
+    ],
+    "correctAnswer": 3,
+    "section": "reasoning",
+    "topic": "Coding Decoding",
+    "difficulty": "hard",
+    "explanation": "Promotion: P=16, N=14. Average = 15. Middle letter = O. Code = 15O."
+  },
+  {
+    "text": "If \"market\" = 12T, \"flower\" = 9R, \"bright\" = 13G, \"planet\" = 17T, \"silver\" = 16R, \"honest\" = 11T, \"rocket\" = 18T, \"mother\" = 16R, \"animal\" = 7L, how is \"teacher\" coded?\n\nRule: Number = first + last letter position, Letter = second letter.",
+    "options": [
+      "None of these",
+      "19C",
+      "17A",
+      "18C"
+    ],
+    "correctAnswer": 0,
+    "section": "reasoning",
+    "topic": "Coding Decoding",
+    "difficulty": "hard",
+    "explanation": "Teacher: T=20, R=18. Sum = 38. Second letter = E. None of the options match, so None of these."
+  },
+  {
+    "text": "If \"Laptop\" = 12P, \"Garden\" = 7D, \"Market\" = 13R, \"Silver\" = 19L, how is \"Rocket\" coded?\n\nRule: Number = position of first letter, Letter = third letter.",
+    "options": [
+      "18K",
+      "18C",
+      "20C",
+      "20K"
+    ],
+    "correctAnswer": 1,
+    "section": "reasoning",
+    "topic": "Coding Decoding",
+    "difficulty": "hard",
+    "explanation": "Rocket: R=18. Third letter = C. Code = 18C."
+  },
+  {
+    "text": "If \"Mountain\" = 13N, \"Teacher\" = 20C, \"Library\" = 12B, \"Digital\" = 4G, how is \"Network\" coded?\n\nRule: Number = position of first letter, Letter = second letter.",
+    "options": [
+      "15T",
+      "14T",
+      "14W",
+      "None of these"
+    ],
+    "correctAnswer": 3,
+    "section": "reasoning",
+    "topic": "Coding Decoding",
+    "difficulty": "hard",
+    "explanation": "Network: N=14. Second letter = E. Not in options. None of these."
+  },
+  {
+    "text": "If \"Bottle\" = 8T, \"Camera\" = 8M, \"Planet\" = 20A, \"Silver\" = 19L, how is \"Garden\" coded?\n\nRule: Number = first letter position + 1, Letter = middle letter.",
+    "options": [
+      "7D",
+      "None of these",
+      "7R",
+      "9R"
+    ],
+    "correctAnswer": 1,
+    "section": "reasoning",
+    "topic": "Coding Decoding",
+    "difficulty": "hard",
+    "explanation": "Garden: G=7, 7+1=8. Middle letters are R/D (6 letters). Code = 8R. Not in options. None of these."
+  },
+  {
+    "text": "If \"English\" = 19B, \"Postal\" = 16A, \"Lenovo\" = 14V, \"Society\" = 4E, how is \"Digital\" coded?\n\nRule: Number = position of first letter, Letter = second last letter.",
+    "options": [
+      "None of these",
+      "7G",
+      "7I",
+      "4I"
+    ],
+    "correctAnswer": 0,
+    "section": "reasoning",
+    "topic": "Coding Decoding",
+    "difficulty": "hard",
+    "explanation": "Digital: D=4. Second last letter = A. Not in options. None of these."
+  },
+  {
+    "text": "If \"Window\" = 23D, \"Mobile\" = 13B, \"Rocket\" = 18C, \"Animal\" = 1M, how is \"Planet\" coded?\n\nRule: Number = first letter position, Letter = third letter.",
+    "options": [
+      "17A",
+      "16N",
+      "17N",
+      "16A"
+    ],
+    "correctAnswer": 3,
+    "section": "reasoning",
+    "topic": "Coding Decoding",
+    "difficulty": "hard",
+    "explanation": "Planet: P=16. Third letter = A. Code = 16A."
+  },
+  {
+    "text": "If \"College\" = 8L, \"Student\" = 20U, \"Teacher\" = 18A, \"Library\" = 25R, how is \"Machine\" coded?\n\nRule: Number = last letter position + 1, Letter = second letter.",
+    "options": [
+      "None of these",
+      "13H",
+      "14C",
+      "13C"
+    ],
+    "correctAnswer": 0,
+    "section": "reasoning",
+    "topic": "Coding Decoding",
+    "difficulty": "hard",
+    "explanation": "Machine: E=5, 5+1=6. Second letter = A. Not in options. None of these."
+  },
+  {
+    "text": "If \"Morning\" = 13R, \"Picture\" = 16C, \"Science\" = 19I, \"Teacher\" = 20A, how is \"Journey\" coded?\n\nRule: Number = first letter position, Letter = second letter.",
+    "options": [
+      "11O",
+      "10U",
+      "11U",
+      "10O"
+    ],
+    "correctAnswer": 3,
+    "section": "reasoning",
+    "topic": "Coding Decoding",
+    "difficulty": "hard",
+    "explanation": "Journey: J=10. Second letter = O. Code = 10O."
   }
 ]

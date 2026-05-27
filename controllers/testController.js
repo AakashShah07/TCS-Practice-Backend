@@ -119,6 +119,40 @@ exports.generatePracticeTest = async (req, res, next) => {
       return res.status(400).json({ success: false, message: 'Section and topic are required' });
     }
 
+    // Check if a seeded test already exists for this topic — reuse it
+    const existingTest = await Test.findOne({
+      type: 'topic_practice',
+      section,
+      topic,
+      isActive: true,
+    });
+
+    if (existingTest) {
+      const questions = await Question.aggregate([
+        { $match: { section, topic } },
+        { $sample: { size: existingTest.totalQuestions } },
+        { $project: { text: 1, options: 1, section: 1, topic: 1, difficulty: 1 } },
+      ]);
+
+      return res.json({
+        success: true,
+        data: {
+          testId: existingTest._id,
+          title: existingTest.title,
+          topic,
+          section,
+          totalQuestions: existingTest.totalQuestions,
+          duration: existingTest.duration,
+          questions: questions.map((q) => ({
+            _id: q._id,
+            text: q.text,
+            options: q.options,
+            difficulty: q.difficulty,
+          })),
+        },
+      });
+    }
+
     const filter = { section, topic };
     if (difficulty) filter.difficulty = difficulty;
 
@@ -132,8 +166,7 @@ exports.generatePracticeTest = async (req, res, next) => {
       return res.status(404).json({ success: false, message: `No questions found for "${topic}"` });
     }
 
-    // Create a temporary practice test
-    const Test = require('../models/Test');
+    // Create a dynamic practice test
     const test = await Test.create({
       title: `${topic} Practice (${difficulty || 'Mixed'})`,
       type: 'topic_practice',

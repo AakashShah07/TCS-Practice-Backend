@@ -39,7 +39,10 @@
     "seed:coding-decoding": "node seeds/seed_coding_decoding.js",
     "seed:coding-decoding-test": "node seeds/seed_coding_decoding_test.js",
     "seed:percentage": "node seeds/seed_percentage.js",
-    "seed:percentage-test": "node seeds/seed_percentage_test.js"
+    "seed:percentage-test": "node seeds/seed_percentage_test.js",
+    "seed:cleanup-tests": "node seeds/cleanup_dynamic_tests.js",
+    "seed:reseed-all-tests": "node seeds/reseed_all_tests.js",
+    "seed:profit-and-loss-hard-book": "node seeds/seed_profit_and_loss_hard_book.js"
   },
   "keywords": [],
   "author": "",

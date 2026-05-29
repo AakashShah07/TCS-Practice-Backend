@@ -41,7 +41,7 @@ exports.getTest = async (req, res, next) => {
 exports.getTopicsBySection = async (req, res, next) => {
   try {
     const { section } = req.params;
-    const validSections = ['numerical', 'reasoning', 'verbal', 'advanced'];
+    const validSections = ['numerical', 'reasoning', 'verbal', 'advanced', 'system'];
     if (!validSections.includes(section)) {
       return res.status(400).json({ success: false, message: 'Invalid section' });
     }

@@ -24,7 +24,7 @@ const questionSchema = new mongoose.Schema(
     section: {
       type: String,
       required: [true, 'Section is required'],
-      enum: ['numerical', 'reasoning', 'verbal', 'advanced'],
+      enum: ['numerical', 'reasoning', 'verbal', 'advanced', 'system'],
     },
     topic: {
       type: String,

@@ -1,0 +1,1122 @@
+[
+  {
+    "text": "A relation in the relational model represents:",
+    "options": [
+      "File",
+      "Table",
+      "Record",
+      "Attribute"
+    ],
+    "correctAnswer": 1,
+    "section": "system",
+    "topic": "Relational Model, Keys, Relational Algebra",
+    "difficulty": "medium",
+    "explanation": "A relation corresponds to a table containing rows (tuples) and columns (attributes). ([Wikipedia][2])"
+  },
+  {
+    "text": "A row in a relation is called:",
+    "options": [
+      "Attribute",
+      "Domain",
+      "Tuple",
+      "Schema"
+    ],
+    "correctAnswer": 2,
+    "section": "system",
+    "topic": "Relational Model, Keys, Relational Algebra",
+    "difficulty": "medium",
+    "explanation": "Each record in a relational table is called a tuple."
+  },
+  {
+    "text": "The number of attributes in a relation is called:",
+    "options": [
+      "Cardinality",
+      "Degree",
+      "Domain",
+      "Instance"
+    ],
+    "correctAnswer": 1,
+    "section": "system",
+    "topic": "Relational Model, Keys, Relational Algebra",
+    "difficulty": "medium",
+    "explanation": "Degree = number of columns."
+  },
+  {
+    "text": "The number of tuples in a relation is called:",
+    "options": [
+      "Degree",
+      "Cardinality",
+      "Domain",
+      "Key"
+    ],
+    "correctAnswer": 1,
+    "section": "system",
+    "topic": "Relational Model, Keys, Relational Algebra",
+    "difficulty": "medium",
+    "explanation": "Cardinality refers to the number of rows."
+  },
+  {
+    "text": "A domain represents:",
+    "options": [
+      "Column name",
+      "Set of permissible values",
+      "Table",
+      "Record"
+    ],
+    "correctAnswer": 1,
+    "section": "system",
+    "topic": "Relational Model, Keys, Relational Algebra",
+    "difficulty": "medium",
+    "explanation": ""
+  },
+  {
+    "text": "Which key uniquely identifies a tuple?",
+    "options": [
+      "Foreign Key",
+      "Primary Key",
+      "Alternate Key",
+      "Composite Key"
+    ],
+    "correctAnswer": 1,
+    "section": "system",
+    "topic": "Relational Model, Keys, Relational Algebra",
+    "difficulty": "medium",
+    "explanation": ""
+  },
+  {
+    "text": "A candidate key is:",
+    "options": [
+      "Selected primary key only",
+      "Any minimal unique key",
+      "Foreign key",
+      "Super key only"
+    ],
+    "correctAnswer": 1,
+    "section": "system",
+    "topic": "Relational Model, Keys, Relational Algebra",
+    "difficulty": "medium",
+    "explanation": "Every candidate key can uniquely identify tuples with minimum attributes. ([Wikipedia][2])"
+  },
+  {
+    "text": "A super key is:",
+    "options": [
+      "Minimal key",
+      "Key with extra attributes possible",
+      "Foreign key",
+      "Composite key only"
+    ],
+    "correctAnswer": 1,
+    "section": "system",
+    "topic": "Relational Model, Keys, Relational Algebra",
+    "difficulty": "medium",
+    "explanation": ""
+  },
+  {
+    "text": "Which key is chosen among candidate keys?",
+    "options": [
+      "Foreign Key",
+      "Alternate Key",
+      "Primary Key",
+      "Super Key"
+    ],
+    "correctAnswer": 2,
+    "section": "system",
+    "topic": "Relational Model, Keys, Relational Algebra",
+    "difficulty": "medium",
+    "explanation": ""
+  },
+  {
+    "text": "Candidate keys not selected become:",
+    "options": [
+      "Foreign Keys",
+      "Alternate Keys",
+      "Composite Keys",
+      "Partial Keys"
+    ],
+    "correctAnswer": 1,
+    "section": "system",
+    "topic": "Relational Model, Keys, Relational Algebra",
+    "difficulty": "medium",
+    "explanation": ""
+  },
+  {
+    "text": "A foreign key is used to:",
+    "options": [
+      "Identify tuples uniquely",
+      "Maintain referential integrity",
+      "Increase redundancy",
+      "Remove keys"
+    ],
+    "correctAnswer": 1,
+    "section": "system",
+    "topic": "Relational Model, Keys, Relational Algebra",
+    "difficulty": "medium",
+    "explanation": ""
+  },
+  {
+    "text": "Referential integrity ensures:",
+    "options": [
+      "Duplicate rows exist",
+      "Foreign key values match referenced key values",
+      "Primary key is NULL",
+      "Relation is empty"
+    ],
+    "correctAnswer": 1,
+    "section": "system",
+    "topic": "Relational Model, Keys, Relational Algebra",
+    "difficulty": "medium",
+    "explanation": ""
+  },
+  {
+    "text": "A primary key cannot contain:",
+    "options": [
+      "Numbers",
+      "Characters",
+      "NULL values",
+      "Unique values"
+    ],
+    "correctAnswer": 2,
+    "section": "system",
+    "topic": "Relational Model, Keys, Relational Algebra",
+    "difficulty": "medium",
+    "explanation": ""
+  },
+  {
+    "text": "Which key can contain NULL?",
+    "options": [
+      "Primary Key",
+      "Candidate Key",
+      "Foreign Key",
+      "Super Key"
+    ],
+    "correctAnswer": 2,
+    "section": "system",
+    "topic": "Relational Model, Keys, Relational Algebra",
+    "difficulty": "medium",
+    "explanation": ""
+  },
+  {
+    "text": "A relation having one candidate key only:",
+    "options": [
+      "No primary key",
+      "Exactly one primary key",
+      "Multiple primary keys",
+      "No super key"
+    ],
+    "correctAnswer": 1,
+    "section": "system",
+    "topic": "Relational Model, Keys, Relational Algebra",
+    "difficulty": "medium",
+    "explanation": ""
+  },
+  {
+    "text": "A composite key contains:",
+    "options": [
+      "One attribute",
+      "Multiple attributes",
+      "No attributes",
+      "Foreign key only"
+    ],
+    "correctAnswer": 1,
+    "section": "system",
+    "topic": "Relational Model, Keys, Relational Algebra",
+    "difficulty": "medium",
+    "explanation": ""
+  },
+  {
+    "text": "Which is always a super key?",
+    "options": [
+      "Candidate Key",
+      "Foreign Key",
+      "Alternate Key",
+      "Domain"
+    ],
+    "correctAnswer": 0,
+    "section": "system",
+    "topic": "Relational Model, Keys, Relational Algebra",
+    "difficulty": "medium",
+    "explanation": ""
+  },
+  {
+    "text": "Relational Algebra is:",
+    "options": [
+      "Non-procedural language",
+      "Procedural language",
+      "Programming language",
+      "DDL"
+    ],
+    "correctAnswer": 1,
+    "section": "system",
+    "topic": "Relational Model, Keys, Relational Algebra",
+    "difficulty": "medium",
+    "explanation": "It specifies both what and how to retrieve data. ([GeeksforGeeks][3])"
+  },
+  {
+    "text": "Result of relational algebra operation is:",
+    "options": [
+      "Value",
+      "Attribute",
+      "Relation",
+      "Key"
+    ],
+    "correctAnswer": 2,
+    "section": "system",
+    "topic": "Relational Model, Keys, Relational Algebra",
+    "difficulty": "medium",
+    "explanation": "Closure property. ([Suraku Academy][1])"
+  },
+  {
+    "text": "Selection operator is represented by:",
+    "options": [
+      "π",
+      "σ",
+      "×",
+      "∪"
+    ],
+    "correctAnswer": 1,
+    "section": "system",
+    "topic": "Relational Model, Keys, Relational Algebra",
+    "difficulty": "medium",
+    "explanation": ""
+  },
+  {
+    "text": "Projection operator is:",
+    "options": [
+      "π",
+      "σ",
+      "×",
+      "ρ"
+    ],
+    "correctAnswer": 0,
+    "section": "system",
+    "topic": "Relational Model, Keys, Relational Algebra",
+    "difficulty": "medium",
+    "explanation": ""
+  },
+  {
+    "text": "Cartesian product symbol is:",
+    "options": [
+      "×",
+      "∩",
+      "∪",
+      "σ"
+    ],
+    "correctAnswer": 0,
+    "section": "system",
+    "topic": "Relational Model, Keys, Relational Algebra",
+    "difficulty": "medium",
+    "explanation": ""
+  },
+  {
+    "text": "Union requires:",
+    "options": [
+      "Same cardinality only",
+      "Union compatibility",
+      "Same tuples only",
+      "Same key only"
+    ],
+    "correctAnswer": 1,
+    "section": "system",
+    "topic": "Relational Model, Keys, Relational Algebra",
+    "difficulty": "medium",
+    "explanation": ""
+  },
+  {
+    "text": "Union compatibility requires:",
+    "options": [
+      "Same attributes and domains",
+      "Same rows only",
+      "Same key only",
+      "Same degree only"
+    ],
+    "correctAnswer": 0,
+    "section": "system",
+    "topic": "Relational Model, Keys, Relational Algebra",
+    "difficulty": "medium",
+    "explanation": ""
+  },
+  {
+    "text": "Set Difference operator is:",
+    "options": [
+      "−",
+      "÷",
+      "×",
+      "∩"
+    ],
+    "correctAnswer": 0,
+    "section": "system",
+    "topic": "Relational Model, Keys, Relational Algebra",
+    "difficulty": "medium",
+    "explanation": ""
+  },
+  {
+    "text": "Rename operator is:",
+    "options": [
+      "π",
+      "σ",
+      "ρ",
+      "∪"
+    ],
+    "correctAnswer": 2,
+    "section": "system",
+    "topic": "Relational Model, Keys, Relational Algebra",
+    "difficulty": "medium",
+    "explanation": ""
+  },
+  {
+    "text": "Which is a unary operation?",
+    "options": [
+      "Union",
+      "Difference",
+      "Projection",
+      "Cartesian Product"
+    ],
+    "correctAnswer": 2,
+    "section": "system",
+    "topic": "Relational Model, Keys, Relational Algebra",
+    "difficulty": "medium",
+    "explanation": ""
+  },
+  {
+    "text": "Which is binary?",
+    "options": [
+      "Selection",
+      "Projection",
+      "Rename",
+      "Union"
+    ],
+    "correctAnswer": 3,
+    "section": "system",
+    "topic": "Relational Model, Keys, Relational Algebra",
+    "difficulty": "medium",
+    "explanation": ""
+  },
+  {
+    "text": "Selection works on:",
+    "options": [
+      "Columns",
+      "Rows",
+      "Tables only",
+      "Domains"
+    ],
+    "correctAnswer": 1,
+    "section": "system",
+    "topic": "Relational Model, Keys, Relational Algebra",
+    "difficulty": "medium",
+    "explanation": ""
+  },
+  {
+    "text": "Projection works on:",
+    "options": [
+      "Rows",
+      "Columns",
+      "Domains",
+      "Keys"
+    ],
+    "correctAnswer": 1,
+    "section": "system",
+    "topic": "Relational Model, Keys, Relational Algebra",
+    "difficulty": "medium",
+    "explanation": ""
+  },
+  {
+    "text": "Projection removes:",
+    "options": [
+      "Rows",
+      "Duplicates",
+      "Keys",
+      "Domains"
+    ],
+    "correctAnswer": 1,
+    "section": "system",
+    "topic": "Relational Model, Keys, Relational Algebra",
+    "difficulty": "medium",
+    "explanation": ""
+  },
+  {
+    "text": "Natural Join is based on:",
+    "options": [
+      "Common attributes",
+      "Primary key only",
+      "Foreign key only",
+      "Candidate key"
+    ],
+    "correctAnswer": 0,
+    "section": "system",
+    "topic": "Relational Model, Keys, Relational Algebra",
+    "difficulty": "medium",
+    "explanation": ""
+  },
+  {
+    "text": "Theta Join uses:",
+    "options": [
+      "Any comparison operator",
+      "Equality only",
+      "Foreign key only",
+      "Projection"
+    ],
+    "correctAnswer": 0,
+    "section": "system",
+    "topic": "Relational Model, Keys, Relational Algebra",
+    "difficulty": "medium",
+    "explanation": ""
+  },
+  {
+    "text": "Equi Join uses:",
+    "options": [
+      "<",
+      ">",
+      "=",
+      "≤"
+    ],
+    "correctAnswer": 2,
+    "section": "system",
+    "topic": "Relational Model, Keys, Relational Algebra",
+    "difficulty": "medium",
+    "explanation": ""
+  },
+  {
+    "text": "Natural Join is a special case of:",
+    "options": [
+      "Union",
+      "Equi Join",
+      "Projection",
+      "Difference"
+    ],
+    "correctAnswer": 1,
+    "section": "system",
+    "topic": "Relational Model, Keys, Relational Algebra",
+    "difficulty": "medium",
+    "explanation": ""
+  },
+  {
+    "text": "Division operator is useful for:",
+    "options": [
+      "All values queries",
+      "Aggregate queries",
+      "Update queries",
+      "Delete queries"
+    ],
+    "correctAnswer": 0,
+    "section": "system",
+    "topic": "Relational Model, Keys, Relational Algebra",
+    "difficulty": "medium",
+    "explanation": ""
+  },
+  {
+    "text": "A relation schema defines:",
+    "options": [
+      "Current rows",
+      "Structure of relation",
+      "Data values",
+      "Indexes"
+    ],
+    "correctAnswer": 1,
+    "section": "system",
+    "topic": "Relational Model, Keys, Relational Algebra",
+    "difficulty": "medium",
+    "explanation": ""
+  },
+  {
+    "text": "Current contents of relation are:",
+    "options": [
+      "Schema",
+      "Instance",
+      "Domain",
+      "Key"
+    ],
+    "correctAnswer": 1,
+    "section": "system",
+    "topic": "Relational Model, Keys, Relational Algebra",
+    "difficulty": "medium",
+    "explanation": ""
+  },
+  {
+    "text": "Primary key is selected from:",
+    "options": [
+      "Foreign keys",
+      "Candidate keys",
+      "Domains",
+      "Tuples"
+    ],
+    "correctAnswer": 1,
+    "section": "system",
+    "topic": "Relational Model, Keys, Relational Algebra",
+    "difficulty": "medium",
+    "explanation": ""
+  },
+  {
+    "text": "# 41–80 HARD LEVEL If a relation has n attributes, maximum super keys possible:",
+    "options": [
+      "2ⁿ−1",
+      "n²",
+      "n",
+      "2n"
+    ],
+    "correctAnswer": 0,
+    "section": "system",
+    "topic": "Relational Model, Keys, Relational Algebra",
+    "difficulty": "hard",
+    "explanation": ""
+  },
+  {
+    "text": "If candidate keys are {A}, {B,C}, number of super keys?",
+    "options": [
+      "4",
+      "5",
+      "6",
+      "7"
+    ],
+    "correctAnswer": 3,
+    "section": "system",
+    "topic": "Relational Model, Keys, Relational Algebra",
+    "difficulty": "hard",
+    "explanation": "Any set containing A or both B,C."
+  },
+  {
+    "text": "Foreign key references:",
+    "options": [
+      "Candidate key of same relation",
+      "Primary/Candidate key of another relation",
+      "Alternate key only",
+      "Domain"
+    ],
+    "correctAnswer": 1,
+    "section": "system",
+    "topic": "Relational Model, Keys, Relational Algebra",
+    "difficulty": "hard",
+    "explanation": ""
+  },
+  {
+    "text": "Which operation does not preserve duplicates?",
+    "options": [
+      "Projection",
+      "Selection",
+      "Rename",
+      "Join"
+    ],
+    "correctAnswer": 0,
+    "section": "system",
+    "topic": "Relational Model, Keys, Relational Algebra",
+    "difficulty": "hard",
+    "explanation": ""
+  },
+  {
+    "text": "Selection commutes because:",
+    "options": [
+      "σ₁(σ₂(R))=σ₂(σ₁(R))",
+      "Projection commutes",
+      "Join commutes",
+      "Union commutes"
+    ],
+    "correctAnswer": 0,
+    "section": "system",
+    "topic": "Relational Model, Keys, Relational Algebra",
+    "difficulty": "hard",
+    "explanation": ""
+  },
+  {
+    "text": "πA(σcondition(R)) means:",
+    "options": [
+      "Select then Project",
+      "Project then Select",
+      "Join then Select",
+      "Difference then Project"
+    ],
+    "correctAnswer": 0,
+    "section": "system",
+    "topic": "Relational Model, Keys, Relational Algebra",
+    "difficulty": "hard",
+    "explanation": ""
+  },
+  {
+    "text": "The result of Cartesian product of relations with m and n tuples:",
+    "options": [
+      "m+n",
+      "mn",
+      "m−n",
+      "m/n"
+    ],
+    "correctAnswer": 1,
+    "section": "system",
+    "topic": "Relational Model, Keys, Relational Algebra",
+    "difficulty": "hard",
+    "explanation": ""
+  },
+  {
+    "text": "A relation with degree 5 and cardinality 20 contains:",
+    "options": [
+      "25 values",
+      "100 values",
+      "15 values",
+      "20 values"
+    ],
+    "correctAnswer": 1,
+    "section": "system",
+    "topic": "Relational Model, Keys, Relational Algebra",
+    "difficulty": "hard",
+    "explanation": ""
+  },
+  {
+    "text": "Which key enforces entity integrity?",
+    "options": [
+      "Foreign Key",
+      "Primary Key",
+      "Alternate Key",
+      "Super Key"
+    ],
+    "correctAnswer": 1,
+    "section": "system",
+    "topic": "Relational Model, Keys, Relational Algebra",
+    "difficulty": "hard",
+    "explanation": ""
+  },
+  {
+    "text": "A relation can have:",
+    "options": [
+      "One candidate key only",
+      "Multiple candidate keys",
+      "No key",
+      "One super key"
+    ],
+    "correctAnswer": 1,
+    "section": "system",
+    "topic": "Relational Model, Keys, Relational Algebra",
+    "difficulty": "hard",
+    "explanation": ""
+  },
+  {
+    "text": "Join without condition equals:",
+    "options": [
+      "Union",
+      "Difference",
+      "Cartesian Product",
+      "Projection"
+    ],
+    "correctAnswer": 2,
+    "section": "system",
+    "topic": "Relational Model, Keys, Relational Algebra",
+    "difficulty": "hard",
+    "explanation": ""
+  },
+  {
+    "text": "Division is inverse of:",
+    "options": [
+      "Selection",
+      "Cartesian Product",
+      "Join",
+      "Projection"
+    ],
+    "correctAnswer": 1,
+    "section": "system",
+    "topic": "Relational Model, Keys, Relational Algebra",
+    "difficulty": "hard",
+    "explanation": ""
+  },
+  {
+    "text": "If R has 10 tuples and S has 20 tuples, maximum tuples in join:",
+    "options": [
+      "10",
+      "20",
+      "200",
+      "30"
+    ],
+    "correctAnswer": 2,
+    "section": "system",
+    "topic": "Relational Model, Keys, Relational Algebra",
+    "difficulty": "hard",
+    "explanation": ""
+  },
+  {
+    "text": "Which key can identify records uniquely but may not be selected?",
+    "options": [
+      "Candidate Key",
+      "Alternate Key",
+      "Primary Key",
+      "Foreign Key"
+    ],
+    "correctAnswer": 1,
+    "section": "system",
+    "topic": "Relational Model, Keys, Relational Algebra",
+    "difficulty": "hard",
+    "explanation": ""
+  },
+  {
+    "text": "Closure property means:",
+    "options": [
+      "Output is relation",
+      "Output is table name",
+      "Output is key",
+      "Output is schema"
+    ],
+    "correctAnswer": 0,
+    "section": "system",
+    "topic": "Relational Model, Keys, Relational Algebra",
+    "difficulty": "hard",
+    "explanation": ""
+  },
+  {
+    "text": "Which operation is commutative?",
+    "options": [
+      "Difference",
+      "Division",
+      "Union",
+      "Projection"
+    ],
+    "correctAnswer": 2,
+    "section": "system",
+    "topic": "Relational Model, Keys, Relational Algebra",
+    "difficulty": "hard",
+    "explanation": ""
+  },
+  {
+    "text": "Which operation is not commutative?",
+    "options": [
+      "Union",
+      "Intersection",
+      "Difference",
+      "Natural Join"
+    ],
+    "correctAnswer": 2,
+    "section": "system",
+    "topic": "Relational Model, Keys, Relational Algebra",
+    "difficulty": "hard",
+    "explanation": ""
+  },
+  {
+    "text": "Candidate key must be:",
+    "options": [
+      "Unique and minimal",
+      "Unique only",
+      "Minimal only",
+      "Composite"
+    ],
+    "correctAnswer": 0,
+    "section": "system",
+    "topic": "Relational Model, Keys, Relational Algebra",
+    "difficulty": "hard",
+    "explanation": ""
+  },
+  {
+    "text": "A foreign key may reference:",
+    "options": [
+      "Candidate key",
+      "Primary key",
+      "Either of these",
+      "Neither"
+    ],
+    "correctAnswer": 2,
+    "section": "system",
+    "topic": "Relational Model, Keys, Relational Algebra",
+    "difficulty": "hard",
+    "explanation": ""
+  },
+  {
+    "text": "Which join removes duplicate join columns?",
+    "options": [
+      "Equi Join",
+      "Theta Join",
+      "Natural Join",
+      "Outer Join"
+    ],
+    "correctAnswer": 2,
+    "section": "system",
+    "topic": "Relational Model, Keys, Relational Algebra",
+    "difficulty": "hard",
+    "explanation": ""
+  },
+  {
+    "text": "Selection reduces:",
+    "options": [
+      "Degree",
+      "Cardinality",
+      "Both",
+      "Neither"
+    ],
+    "correctAnswer": 1,
+    "section": "system",
+    "topic": "Relational Model, Keys, Relational Algebra",
+    "difficulty": "hard",
+    "explanation": ""
+  },
+  {
+    "text": "Projection reduces:",
+    "options": [
+      "Degree",
+      "Cardinality",
+      "Both",
+      "Neither"
+    ],
+    "correctAnswer": 0,
+    "section": "system",
+    "topic": "Relational Model, Keys, Relational Algebra",
+    "difficulty": "hard",
+    "explanation": ""
+  },
+  {
+    "text": "Which operation needs union compatibility?",
+    "options": [
+      "Join",
+      "Union",
+      "Projection",
+      "Selection"
+    ],
+    "correctAnswer": 1,
+    "section": "system",
+    "topic": "Relational Model, Keys, Relational Algebra",
+    "difficulty": "hard",
+    "explanation": ""
+  },
+  {
+    "text": "If R(A,B,C) and S(B,C,D), natural join degree:",
+    "options": [
+      "7",
+      "5",
+      "4",
+      "6"
+    ],
+    "correctAnswer": 2,
+    "section": "system",
+    "topic": "Relational Model, Keys, Relational Algebra",
+    "difficulty": "hard",
+    "explanation": ""
+  },
+  {
+    "text": "The key chosen by DBA is:",
+    "options": [
+      "Candidate key",
+      "Alternate key",
+      "Primary key",
+      "Foreign key"
+    ],
+    "correctAnswer": 2,
+    "section": "system",
+    "topic": "Relational Model, Keys, Relational Algebra",
+    "difficulty": "hard",
+    "explanation": ""
+  },
+  {
+    "text": "Every primary key is:",
+    "options": [
+      "Candidate key",
+      "Foreign key",
+      "Alternate key",
+      "Domain"
+    ],
+    "correctAnswer": 0,
+    "section": "system",
+    "topic": "Relational Model, Keys, Relational Algebra",
+    "difficulty": "hard",
+    "explanation": ""
+  },
+  {
+    "text": "Every candidate key is:",
+    "options": [
+      "Primary key",
+      "Super key",
+      "Foreign key",
+      "Alternate key"
+    ],
+    "correctAnswer": 1,
+    "section": "system",
+    "topic": "Relational Model, Keys, Relational Algebra",
+    "difficulty": "hard",
+    "explanation": ""
+  },
+  {
+    "text": "The smallest super key is:",
+    "options": [
+      "Candidate key",
+      "Foreign key",
+      "Domain",
+      "Tuple"
+    ],
+    "correctAnswer": 0,
+    "section": "system",
+    "topic": "Relational Model, Keys, Relational Algebra",
+    "difficulty": "hard",
+    "explanation": ""
+  },
+  {
+    "text": "Join operation combines:",
+    "options": [
+      "Columns only",
+      "Rows only",
+      "Related tuples from relations",
+      "Domains"
+    ],
+    "correctAnswer": 2,
+    "section": "system",
+    "topic": "Relational Model, Keys, Relational Algebra",
+    "difficulty": "hard",
+    "explanation": ""
+  },
+  {
+    "text": "Outer join preserves:",
+    "options": [
+      "Matching rows only",
+      "Non-matching rows also",
+      "Keys only",
+      "Attributes only"
+    ],
+    "correctAnswer": 1,
+    "section": "system",
+    "topic": "Relational Model, Keys, Relational Algebra",
+    "difficulty": "hard",
+    "explanation": ""
+  },
+  {
+    "text": "Which is not unary?",
+    "options": [
+      "Selection",
+      "Projection",
+      "Rename",
+      "Join"
+    ],
+    "correctAnswer": 3,
+    "section": "system",
+    "topic": "Relational Model, Keys, Relational Algebra",
+    "difficulty": "hard",
+    "explanation": ""
+  },
+  {
+    "text": "Degree after selection:",
+    "options": [
+      "Same",
+      "Reduced",
+      "Increased",
+      "Zero"
+    ],
+    "correctAnswer": 0,
+    "section": "system",
+    "topic": "Relational Model, Keys, Relational Algebra",
+    "difficulty": "hard",
+    "explanation": ""
+  },
+  {
+    "text": "Cardinality after projection:",
+    "options": [
+      "Always same",
+      "May decrease",
+      "Increase",
+      "Double"
+    ],
+    "correctAnswer": 1,
+    "section": "system",
+    "topic": "Relational Model, Keys, Relational Algebra",
+    "difficulty": "hard",
+    "explanation": ""
+  },
+  {
+    "text": "Intersection requires:",
+    "options": [
+      "Union compatibility",
+      "Same tuples",
+      "Same key",
+      "Same rows"
+    ],
+    "correctAnswer": 0,
+    "section": "system",
+    "topic": "Relational Model, Keys, Relational Algebra",
+    "difficulty": "hard",
+    "explanation": ""
+  },
+  {
+    "text": "The result of R−S contains:",
+    "options": [
+      "Common tuples",
+      "Tuples in R not in S",
+      "Tuples in S not in R",
+      "All tuples"
+    ],
+    "correctAnswer": 1,
+    "section": "system",
+    "topic": "Relational Model, Keys, Relational Algebra",
+    "difficulty": "hard",
+    "explanation": ""
+  },
+  {
+    "text": "The most restrictive key is:",
+    "options": [
+      "Super key",
+      "Candidate key",
+      "Foreign key",
+      "Alternate key"
+    ],
+    "correctAnswer": 1,
+    "section": "system",
+    "topic": "Relational Model, Keys, Relational Algebra",
+    "difficulty": "hard",
+    "explanation": ""
+  },
+  {
+    "text": "Relational algebra forms the basis of:",
+    "options": [
+      "SQL optimization",
+      "Networking",
+      "OS scheduling",
+      "Compiler design"
+    ],
+    "correctAnswer": 0,
+    "section": "system",
+    "topic": "Relational Model, Keys, Relational Algebra",
+    "difficulty": "hard",
+    "explanation": ""
+  },
+  {
+    "text": "Which operation can simulate join?",
+    "options": [
+      "Cartesian Product + Selection",
+      "Projection + Rename",
+      "Difference + Union",
+      "Selection + Projection"
+    ],
+    "correctAnswer": 0,
+    "section": "system",
+    "topic": "Relational Model, Keys, Relational Algebra",
+    "difficulty": "hard",
+    "explanation": ""
+  },
+  {
+    "text": "The strongest property of a candidate key is:",
+    "options": [
+      "Uniqueness + Minimality",
+      "Uniqueness only",
+      "Not NULL only",
+      "Composite"
+    ],
+    "correctAnswer": 0,
+    "section": "system",
+    "topic": "Relational Model, Keys, Relational Algebra",
+    "difficulty": "hard",
+    "explanation": ""
+  },
+  {
+    "text": "# PART B — 30 NUMERICAL MCQs (Very Important for COAL India / PSU Exams) Relation R has 20 tuples and S has 15 tuples. Number of tuples in R × S?",
+    "options": [
+      "35",
+      "300",
+      "250",
+      "20"
+    ],
+    "correctAnswer": 1,
+    "section": "system",
+    "topic": "Relational Model, Keys, Relational Algebra",
+    "difficulty": "hard",
+    "explanation": "Cartesian Product = 20 × 15 = 300."
+  },
+  {
+    "text": "A relation has 8 attributes and 50 tuples. Total values stored?",
+    "options": [
+      "58",
+      "400",
+      "50",
+      "8"
+    ],
+    "correctAnswer": 1,
+    "section": "system",
+    "topic": "Relational Model, Keys, Relational Algebra",
+    "difficulty": "hard",
+    "explanation": "8 × 50 = 400."
+  }
+]

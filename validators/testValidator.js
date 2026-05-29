@@ -7,7 +7,7 @@ const testValidator = [
     .withMessage('Invalid test type'),
   body('section')
     .optional()
-    .isIn(['numerical', 'reasoning', 'verbal', 'advanced'])
+    .isIn(['numerical', 'reasoning', 'verbal', 'advanced', 'system'])
     .withMessage('Invalid section'),
   body('topic').optional().trim(),
   body('questions')

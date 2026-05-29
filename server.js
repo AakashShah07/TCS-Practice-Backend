@@ -7,6 +7,9 @@ const cookieParser = require('cookie-parser');
 const connectDB = require('./config/db');
 const errorHandler = require('./middleware/errorHandler');
 
+// Register Mongoose discriminators so populate resolves them
+require('./models/PassageQuestion');
+
 // Connect to database
 connectDB();
 

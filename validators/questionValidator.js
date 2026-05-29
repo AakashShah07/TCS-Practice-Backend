@@ -10,7 +10,7 @@ const questionValidator = [
     .isInt({ min: 0, max: 3 })
     .withMessage('Correct answer must be 0-3'),
   body('section')
-    .isIn(['numerical', 'reasoning', 'verbal', 'advanced'])
+    .isIn(['numerical', 'reasoning', 'verbal', 'advanced', 'system'])
     .withMessage('Invalid section'),
   body('topic').trim().notEmpty().withMessage('Topic is required'),
   body('difficulty')
@@ -30,7 +30,7 @@ const bulkQuestionValidator = [
     .isInt({ min: 0, max: 3 })
     .withMessage('Correct answer must be 0-3'),
   body('questions.*.section')
-    .isIn(['numerical', 'reasoning', 'verbal', 'advanced'])
+    .isIn(['numerical', 'reasoning', 'verbal', 'advanced', 'system'])
     .withMessage('Invalid section'),
   body('questions.*.topic').trim().notEmpty().withMessage('Topic is required'),
 ];

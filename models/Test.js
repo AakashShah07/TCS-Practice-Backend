@@ -14,7 +14,7 @@ const testSchema = new mongoose.Schema(
     },
     section: {
       type: String,
-      enum: ['numerical', 'reasoning', 'verbal', 'advanced'],
+      enum: ['numerical', 'reasoning', 'verbal', 'advanced', 'system'],
     },
     topic: {
       type: String,

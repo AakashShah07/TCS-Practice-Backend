@@ -1,0 +1,1122 @@
+[
+  {
+    "text": "An entity is:",
+    "options": [
+      "A relationship among attributes",
+      "A real-world distinguishable object",
+      "A collection of tables",
+      "A DBMS process"
+    ],
+    "correctAnswer": 1,
+    "section": "system",
+    "topic": "ER Model, Entities, Attributes, Relationships",
+    "difficulty": "easy",
+    "explanation": "An entity represents a real-world object that can be uniquely identified, such as Student, Employee, or Product."
+  },
+  {
+    "text": "Which symbol represents an entity set in an ER diagram?",
+    "options": [
+      "Diamond",
+      "Ellipse",
+      "Rectangle",
+      "Triangle"
+    ],
+    "correctAnswer": 2,
+    "section": "system",
+    "topic": "ER Model, Entities, Attributes, Relationships",
+    "difficulty": "easy",
+    "explanation": "Rectangles are used to represent entity sets in ER diagrams."
+  },
+  {
+    "text": "Which symbol represents a relationship?",
+    "options": [
+      "Rectangle",
+      "Diamond",
+      "Ellipse",
+      "Circle"
+    ],
+    "correctAnswer": 1,
+    "section": "system",
+    "topic": "ER Model, Entities, Attributes, Relationships",
+    "difficulty": "easy",
+    "explanation": "Relationships between entities are shown using diamonds."
+  },
+  {
+    "text": "Which attribute uniquely identifies an entity?",
+    "options": [
+      "Composite attribute",
+      "Multivalued attribute",
+      "Key attribute",
+      "Derived attribute"
+    ],
+    "correctAnswer": 2,
+    "section": "system",
+    "topic": "ER Model, Entities, Attributes, Relationships",
+    "difficulty": "easy",
+    "explanation": "A key attribute uniquely identifies each entity occurrence."
+  },
+  {
+    "text": "A multivalued attribute is represented by:",
+    "options": [
+      "Single ellipse",
+      "Double ellipse",
+      "Dashed ellipse",
+      "Rectangle"
+    ],
+    "correctAnswer": 1,
+    "section": "system",
+    "topic": "ER Model, Entities, Attributes, Relationships",
+    "difficulty": "easy",
+    "explanation": "Double ellipses indicate attributes having multiple values."
+  },
+  {
+    "text": "A derived attribute is represented by:",
+    "options": [
+      "Double ellipse",
+      "Rectangle",
+      "Dashed ellipse",
+      "Diamond"
+    ],
+    "correctAnswer": 2,
+    "section": "system",
+    "topic": "ER Model, Entities, Attributes, Relationships",
+    "difficulty": "easy",
+    "explanation": "Derived attributes are computed from other attributes."
+  },
+  {
+    "text": "Which of the following is a composite attribute?",
+    "options": [
+      "Age",
+      "Salary",
+      "Address",
+      "Roll Number"
+    ],
+    "correctAnswer": 2,
+    "section": "system",
+    "topic": "ER Model, Entities, Attributes, Relationships",
+    "difficulty": "easy",
+    "explanation": "Address can be divided into Street, City, State, etc."
+  },
+  {
+    "text": "Age is usually considered:",
+    "options": [
+      "Composite",
+      "Derived",
+      "Multivalued",
+      "Key"
+    ],
+    "correctAnswer": 1,
+    "section": "system",
+    "topic": "ER Model, Entities, Attributes, Relationships",
+    "difficulty": "easy",
+    "explanation": "Age can be derived from Date of Birth."
+  },
+  {
+    "text": "Weak entities are represented using:",
+    "options": [
+      "Single rectangle",
+      "Double rectangle",
+      "Diamond",
+      "Double ellipse"
+    ],
+    "correctAnswer": 1,
+    "section": "system",
+    "topic": "ER Model, Entities, Attributes, Relationships",
+    "difficulty": "easy",
+    "explanation": "Weak entities use double rectangles."
+  },
+  {
+    "text": "A weak entity depends on:",
+    "options": [
+      "Relationship set only",
+      "Another weak entity",
+      "Strong entity",
+      "Attribute"
+    ],
+    "correctAnswer": 2,
+    "section": "system",
+    "topic": "ER Model, Entities, Attributes, Relationships",
+    "difficulty": "easy",
+    "explanation": "Weak entities cannot exist without their owner entity."
+  },
+  {
+    "text": "The identifying relationship of a weak entity is shown by:",
+    "options": [
+      "Double diamond",
+      "Double rectangle",
+      "Double ellipse",
+      "Dashed diamond"
+    ],
+    "correctAnswer": 0,
+    "section": "system",
+    "topic": "ER Model, Entities, Attributes, Relationships",
+    "difficulty": "easy",
+    "explanation": "Double diamonds represent identifying relationships."
+  },
+  {
+    "text": "Total participation is represented by:",
+    "options": [
+      "Single line",
+      "Double line",
+      "Dashed line",
+      "Arrow"
+    ],
+    "correctAnswer": 1,
+    "section": "system",
+    "topic": "ER Model, Entities, Attributes, Relationships",
+    "difficulty": "easy",
+    "explanation": "Double lines indicate mandatory participation."
+  },
+  {
+    "text": "Partial participation is represented by:",
+    "options": [
+      "Double line",
+      "Single line",
+      "Diamond",
+      "Arrow"
+    ],
+    "correctAnswer": 1,
+    "section": "system",
+    "topic": "ER Model, Entities, Attributes, Relationships",
+    "difficulty": "easy",
+    "explanation": "Single lines indicate optional participation."
+  },
+  {
+    "text": "In a one-to-one relationship:",
+    "options": [
+      "One entity relates to many entities",
+      "Many entities relate to one entity",
+      "One entity relates to one entity",
+      "Many entities relate to many entities"
+    ],
+    "correctAnswer": 2,
+    "section": "system",
+    "topic": "ER Model, Entities, Attributes, Relationships",
+    "difficulty": "easy",
+    "explanation": "Each entity instance is associated with only one instance."
+  },
+  {
+    "text": "Student — Enrolls — Course is usually:",
+    "options": [
+      "1:1",
+      "1:N",
+      "M:N",
+      "Recursive"
+    ],
+    "correctAnswer": 2,
+    "section": "system",
+    "topic": "ER Model, Entities, Attributes, Relationships",
+    "difficulty": "easy",
+    "explanation": "A student can enroll in many courses and vice versa."
+  },
+  {
+    "text": "An attribute that cannot be divided further is:",
+    "options": [
+      "Composite",
+      "Simple",
+      "Derived",
+      "Multivalued"
+    ],
+    "correctAnswer": 1,
+    "section": "system",
+    "topic": "ER Model, Entities, Attributes, Relationships",
+    "difficulty": "easy",
+    "explanation": "Simple attributes are atomic."
+  },
+  {
+    "text": "The degree of a relationship involving three entities is:",
+    "options": [
+      "Unary",
+      "Binary",
+      "Ternary",
+      "Quaternary"
+    ],
+    "correctAnswer": 2,
+    "section": "system",
+    "topic": "ER Model, Entities, Attributes, Relationships",
+    "difficulty": "easy",
+    "explanation": "Ternary relationships connect three entities."
+  },
+  {
+    "text": "Employee manages Employee is:",
+    "options": [
+      "Binary",
+      "Recursive",
+      "Ternary",
+      "Weak"
+    ],
+    "correctAnswer": 1,
+    "section": "system",
+    "topic": "ER Model, Entities, Attributes, Relationships",
+    "difficulty": "easy",
+    "explanation": "Same entity participates twice."
+  },
+  {
+    "text": "Which relationship has highest complexity?",
+    "options": [
+      "Unary",
+      "Binary",
+      "Ternary",
+      "None"
+    ],
+    "correctAnswer": 2,
+    "section": "system",
+    "topic": "ER Model, Entities, Attributes, Relationships",
+    "difficulty": "easy",
+    "explanation": "Ternary relationships involve three entity sets."
+  },
+  {
+    "text": "The ER model belongs to:",
+    "options": [
+      "Physical level",
+      "Conceptual level",
+      "Internal level",
+      "File level"
+    ],
+    "correctAnswer": 1,
+    "section": "system",
+    "topic": "ER Model, Entities, Attributes, Relationships",
+    "difficulty": "easy",
+    "explanation": "ER modeling is used for conceptual database design."
+  },
+  {
+    "text": "# Advanced MCQs (21–40) Which cannot be represented directly in a relational table?",
+    "options": [
+      "Simple attribute",
+      "Multivalued attribute",
+      "Key attribute",
+      "Foreign key"
+    ],
+    "correctAnswer": 1,
+    "section": "system",
+    "topic": "ER Model, Entities, Attributes, Relationships",
+    "difficulty": "easy",
+    "explanation": "Multivalued attributes require separate tables."
+  },
+  {
+    "text": "A weak entity must have:",
+    "options": [
+      "Primary key",
+      "Partial key",
+      "Candidate key",
+      "Alternate key"
+    ],
+    "correctAnswer": 1,
+    "section": "system",
+    "topic": "ER Model, Entities, Attributes, Relationships",
+    "difficulty": "easy",
+    "explanation": "Weak entities use partial keys."
+  },
+  {
+    "text": "Which participation is mandatory for a weak entity?",
+    "options": [
+      "Partial",
+      "Total",
+      "Recursive",
+      "Ternary"
+    ],
+    "correctAnswer": 1,
+    "section": "system",
+    "topic": "ER Model, Entities, Attributes, Relationships",
+    "difficulty": "easy",
+    "explanation": ""
+  },
+  {
+    "text": "An entity having no attributes is:",
+    "options": [
+      "Strong entity",
+      "Weak entity",
+      "Not meaningful in ER model",
+      "Composite entity"
+    ],
+    "correctAnswer": 2,
+    "section": "system",
+    "topic": "ER Model, Entities, Attributes, Relationships",
+    "difficulty": "easy",
+    "explanation": ""
+  },
+  {
+    "text": "A relationship can have:",
+    "options": [
+      "Attributes",
+      "Keys only",
+      "No properties",
+      "Tables only"
+    ],
+    "correctAnswer": 0,
+    "section": "system",
+    "topic": "ER Model, Entities, Attributes, Relationships",
+    "difficulty": "easy",
+    "explanation": "Example: Enrollment relationship may have Grade."
+  },
+  {
+    "text": "Which is NOT an attribute type?",
+    "options": [
+      "Composite",
+      "Derived",
+      "Multivalued",
+      "Recursive"
+    ],
+    "correctAnswer": 3,
+    "section": "system",
+    "topic": "ER Model, Entities, Attributes, Relationships",
+    "difficulty": "easy",
+    "explanation": ""
+  },
+  {
+    "text": "If every department has exactly one manager and vice versa:",
+    "options": [
+      "1:1",
+      "1:N",
+      "N:1",
+      "M:N"
+    ],
+    "correctAnswer": 0,
+    "section": "system",
+    "topic": "ER Model, Entities, Attributes, Relationships",
+    "difficulty": "easy",
+    "explanation": ""
+  },
+  {
+    "text": "Cardinality specifies:",
+    "options": [
+      "Attribute count",
+      "Number of entities participating",
+      "Table size",
+      "Keys"
+    ],
+    "correctAnswer": 1,
+    "section": "system",
+    "topic": "ER Model, Entities, Attributes, Relationships",
+    "difficulty": "easy",
+    "explanation": ""
+  },
+  {
+    "text": "Participation constraint defines:",
+    "options": [
+      "Mandatory involvement",
+      "Key selection",
+      "Normalization",
+      "Table count"
+    ],
+    "correctAnswer": 0,
+    "section": "system",
+    "topic": "ER Model, Entities, Attributes, Relationships",
+    "difficulty": "easy",
+    "explanation": ""
+  },
+  {
+    "text": "An ER diagram can be transformed into:",
+    "options": [
+      "Network Model",
+      "Relational Model",
+      "File System",
+      "XML only"
+    ],
+    "correctAnswer": 1,
+    "section": "system",
+    "topic": "ER Model, Entities, Attributes, Relationships",
+    "difficulty": "easy",
+    "explanation": ""
+  },
+  {
+    "text": "A many-to-many relationship generally requires:",
+    "options": [
+      "One table",
+      "Two tables",
+      "Three tables",
+      "Four tables"
+    ],
+    "correctAnswer": 2,
+    "section": "system",
+    "topic": "ER Model, Entities, Attributes, Relationships",
+    "difficulty": "medium",
+    "explanation": "Two entity tables + one relationship table."
+  },
+  {
+    "text": "Which is not a key?",
+    "options": [
+      "Candidate key",
+      "Primary key",
+      "Foreign key",
+      "Composite attribute"
+    ],
+    "correctAnswer": 3,
+    "section": "system",
+    "topic": "ER Model, Entities, Attributes, Relationships",
+    "difficulty": "medium",
+    "explanation": ""
+  },
+  {
+    "text": "A relationship among three entities is:",
+    "options": [
+      "Binary",
+      "Recursive",
+      "Ternary",
+      "Weak"
+    ],
+    "correctAnswer": 2,
+    "section": "system",
+    "topic": "ER Model, Entities, Attributes, Relationships",
+    "difficulty": "medium",
+    "explanation": ""
+  },
+  {
+    "text": "A partial key identifies:",
+    "options": [
+      "Strong entity",
+      "Weak entity within owner entity",
+      "Relationship",
+      "Table"
+    ],
+    "correctAnswer": 1,
+    "section": "system",
+    "topic": "ER Model, Entities, Attributes, Relationships",
+    "difficulty": "medium",
+    "explanation": ""
+  },
+  {
+    "text": "Which ER component corresponds to a table?",
+    "options": [
+      "Entity Set",
+      "Relationship Set",
+      "Attribute",
+      "Domain"
+    ],
+    "correctAnswer": 0,
+    "section": "system",
+    "topic": "ER Model, Entities, Attributes, Relationships",
+    "difficulty": "medium",
+    "explanation": ""
+  },
+  {
+    "text": "Employee(EmpID, Name, Skills). Skills is:",
+    "options": [
+      "Composite",
+      "Derived",
+      "Multivalued",
+      "Key"
+    ],
+    "correctAnswer": 2,
+    "section": "system",
+    "topic": "ER Model, Entities, Attributes, Relationships",
+    "difficulty": "medium",
+    "explanation": ""
+  },
+  {
+    "text": "Which attribute may become NULL?",
+    "options": [
+      "Key attribute",
+      "Optional attribute",
+      "Primary key",
+      "Candidate key"
+    ],
+    "correctAnswer": 1,
+    "section": "system",
+    "topic": "ER Model, Entities, Attributes, Relationships",
+    "difficulty": "medium",
+    "explanation": ""
+  },
+  {
+    "text": "The owner entity of a weak entity is called:",
+    "options": [
+      "Strong Entity",
+      "Recursive Entity",
+      "Derived Entity",
+      "Ternary Entity"
+    ],
+    "correctAnswer": 0,
+    "section": "system",
+    "topic": "ER Model, Entities, Attributes, Relationships",
+    "difficulty": "medium",
+    "explanation": ""
+  },
+  {
+    "text": "A relationship set connects:",
+    "options": [
+      "Attributes",
+      "Entity sets",
+      "Tables",
+      "Domains"
+    ],
+    "correctAnswer": 1,
+    "section": "system",
+    "topic": "ER Model, Entities, Attributes, Relationships",
+    "difficulty": "medium",
+    "explanation": ""
+  },
+  {
+    "text": "The primary purpose of ER modeling is:",
+    "options": [
+      "Coding",
+      "Query optimization",
+      "Database design",
+      "Backup"
+    ],
+    "correctAnswer": 2,
+    "section": "system",
+    "topic": "ER Model, Entities, Attributes, Relationships",
+    "difficulty": "medium",
+    "explanation": ""
+  },
+  {
+    "text": "# Hard GATE/PSU Level (41–80) If A and B are connected by M:N relationship without attributes, minimum tables required?",
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correctAnswer": 2,
+    "section": "system",
+    "topic": "ER Model, Entities, Attributes, Relationships",
+    "difficulty": "medium",
+    "explanation": ""
+  },
+  {
+    "text": "Which relationship can be merged into an entity table?",
+    "options": [
+      "M:N",
+      "1:N with total participation on N side",
+      "Ternary",
+      "Recursive"
+    ],
+    "correctAnswer": 1,
+    "section": "system",
+    "topic": "ER Model, Entities, Attributes, Relationships",
+    "difficulty": "medium",
+    "explanation": ""
+  },
+  {
+    "text": "A weak entity always has:",
+    "options": [
+      "Total participation",
+      "Partial participation",
+      "No participation",
+      "Derived key"
+    ],
+    "correctAnswer": 0,
+    "section": "system",
+    "topic": "ER Model, Entities, Attributes, Relationships",
+    "difficulty": "medium",
+    "explanation": ""
+  },
+  {
+    "text": "Which constraint limits number of entity associations?",
+    "options": [
+      "Participation",
+      "Cardinality",
+      "Domain",
+      "Integrity"
+    ],
+    "correctAnswer": 1,
+    "section": "system",
+    "topic": "ER Model, Entities, Attributes, Relationships",
+    "difficulty": "medium",
+    "explanation": ""
+  },
+  {
+    "text": "Employee works in Department (N:1). Foreign key goes to:",
+    "options": [
+      "Employee table",
+      "Department table",
+      "Both",
+      "Relationship table only"
+    ],
+    "correctAnswer": 0,
+    "section": "system",
+    "topic": "ER Model, Entities, Attributes, Relationships",
+    "difficulty": "medium",
+    "explanation": ""
+  },
+  {
+    "text": "A relationship with attributes usually becomes:",
+    "options": [
+      "Column",
+      "Separate table",
+      "Key",
+      "Domain"
+    ],
+    "correctAnswer": 1,
+    "section": "system",
+    "topic": "ER Model, Entities, Attributes, Relationships",
+    "difficulty": "medium",
+    "explanation": ""
+  },
+  {
+    "text": "Total participation implies:",
+    "options": [
+      "Every entity must participate",
+      "Some entities participate",
+      "Optional participation",
+      "Recursive participation"
+    ],
+    "correctAnswer": 0,
+    "section": "system",
+    "topic": "ER Model, Entities, Attributes, Relationships",
+    "difficulty": "medium",
+    "explanation": ""
+  },
+  {
+    "text": "An identifying relationship exists between:",
+    "options": [
+      "Strong entities",
+      "Weak and owner entity",
+      "Two attributes",
+      "Two tables"
+    ],
+    "correctAnswer": 1,
+    "section": "system",
+    "topic": "ER Model, Entities, Attributes, Relationships",
+    "difficulty": "medium",
+    "explanation": ""
+  },
+  {
+    "text": "A candidate key is:",
+    "options": [
+      "Chosen primary key only",
+      "Any minimal unique identifier",
+      "Foreign key",
+      "Composite attribute"
+    ],
+    "correctAnswer": 1,
+    "section": "system",
+    "topic": "ER Model, Entities, Attributes, Relationships",
+    "difficulty": "medium",
+    "explanation": ""
+  },
+  {
+    "text": "An entity set with 500 entities and another with 200 entities are connected M:N. Maximum relationship instances?",
+    "options": [
+      "500",
+      "200",
+      "700",
+      "100000"
+    ],
+    "correctAnswer": 3,
+    "section": "system",
+    "topic": "ER Model, Entities, Attributes, Relationships",
+    "difficulty": "medium",
+    "explanation": "500 × 200 = 100000."
+  },
+  {
+    "text": "Which relationship has same entity on both sides?",
+    "options": [
+      "Binary",
+      "Recursive",
+      "Ternary",
+      "Weak"
+    ],
+    "correctAnswer": 1,
+    "section": "system",
+    "topic": "ER Model, Entities, Attributes, Relationships",
+    "difficulty": "medium",
+    "explanation": ""
+  },
+  {
+    "text": "If DOB is stored and Age calculated:",
+    "options": [
+      "Age should be derived",
+      "Age should be key",
+      "DOB derived",
+      "Both stored necessarily"
+    ],
+    "correctAnswer": 0,
+    "section": "system",
+    "topic": "ER Model, Entities, Attributes, Relationships",
+    "difficulty": "medium",
+    "explanation": ""
+  },
+  {
+    "text": "An entity can participate in:",
+    "options": [
+      "One relationship only",
+      "Multiple relationships",
+      "No relationship",
+      "One attribute"
+    ],
+    "correctAnswer": 1,
+    "section": "system",
+    "topic": "ER Model, Entities, Attributes, Relationships",
+    "difficulty": "medium",
+    "explanation": ""
+  },
+  {
+    "text": "A relationship among 4 entity sets is:",
+    "options": [
+      "Unary",
+      "Binary",
+      "Ternary",
+      "Quaternary"
+    ],
+    "correctAnswer": 3,
+    "section": "system",
+    "topic": "ER Model, Entities, Attributes, Relationships",
+    "difficulty": "medium",
+    "explanation": ""
+  },
+  {
+    "text": "Which cannot exist independently?",
+    "options": [
+      "Strong entity",
+      "Weak entity",
+      "Candidate key",
+      "Relationship"
+    ],
+    "correctAnswer": 1,
+    "section": "system",
+    "topic": "ER Model, Entities, Attributes, Relationships",
+    "difficulty": "medium",
+    "explanation": ""
+  },
+  {
+    "text": "A double ellipse denotes:",
+    "options": [
+      "Composite attribute",
+      "Derived attribute",
+      "Multivalued attribute",
+      "Key attribute"
+    ],
+    "correctAnswer": 2,
+    "section": "system",
+    "topic": "ER Model, Entities, Attributes, Relationships",
+    "difficulty": "medium",
+    "explanation": ""
+  },
+  {
+    "text": "A dashed ellipse denotes:",
+    "options": [
+      "Derived attribute",
+      "Composite attribute",
+      "Multivalued attribute",
+      "Weak attribute"
+    ],
+    "correctAnswer": 0,
+    "section": "system",
+    "topic": "ER Model, Entities, Attributes, Relationships",
+    "difficulty": "medium",
+    "explanation": ""
+  },
+  {
+    "text": "Which is NOT a participation type?",
+    "options": [
+      "Total",
+      "Partial",
+      "Mandatory",
+      "Recursive"
+    ],
+    "correctAnswer": 3,
+    "section": "system",
+    "topic": "ER Model, Entities, Attributes, Relationships",
+    "difficulty": "medium",
+    "explanation": ""
+  },
+  {
+    "text": "The ER model was proposed by:",
+    "options": [
+      "E.F. Codd",
+      "Peter Chen",
+      "Date",
+      "Boyce"
+    ],
+    "correctAnswer": 1,
+    "section": "system",
+    "topic": "ER Model, Entities, Attributes, Relationships",
+    "difficulty": "medium",
+    "explanation": ""
+  },
+  {
+    "text": "Which is conceptual modeling?",
+    "options": [
+      "ER Model",
+      "Relational Model",
+      "Physical Storage Model",
+      "File Model"
+    ],
+    "correctAnswer": 0,
+    "section": "system",
+    "topic": "ER Model, Entities, Attributes, Relationships",
+    "difficulty": "medium",
+    "explanation": ""
+  },
+  {
+    "text": "Composite attributes contain:",
+    "options": [
+      "Multiple values",
+      "Subparts",
+      "Derived values",
+      "Keys"
+    ],
+    "correctAnswer": 1,
+    "section": "system",
+    "topic": "ER Model, Entities, Attributes, Relationships",
+    "difficulty": "hard",
+    "explanation": ""
+  },
+  {
+    "text": "Which relationship needs an associative entity?",
+    "options": [
+      "1:1",
+      "1:N",
+      "M:N",
+      "Unary"
+    ],
+    "correctAnswer": 2,
+    "section": "system",
+    "topic": "ER Model, Entities, Attributes, Relationships",
+    "difficulty": "hard",
+    "explanation": ""
+  },
+  {
+    "text": "A key attribute is represented by:",
+    "options": [
+      "Underlined ellipse text",
+      "Double ellipse",
+      "Rectangle",
+      "Dashed ellipse"
+    ],
+    "correctAnswer": 0,
+    "section": "system",
+    "topic": "ER Model, Entities, Attributes, Relationships",
+    "difficulty": "hard",
+    "explanation": ""
+  },
+  {
+    "text": "An ER diagram mainly captures:",
+    "options": [
+      "Data semantics",
+      "Algorithms",
+      "Programming logic",
+      "Memory allocation"
+    ],
+    "correctAnswer": 0,
+    "section": "system",
+    "topic": "ER Model, Entities, Attributes, Relationships",
+    "difficulty": "hard",
+    "explanation": ""
+  },
+  {
+    "text": "A weak entity's discriminator is:",
+    "options": [
+      "Candidate key",
+      "Partial key",
+      "Foreign key",
+      "Composite key"
+    ],
+    "correctAnswer": 1,
+    "section": "system",
+    "topic": "ER Model, Entities, Attributes, Relationships",
+    "difficulty": "hard",
+    "explanation": ""
+  },
+  {
+    "text": "If every student belongs to exactly one department:",
+    "options": [
+      "M:N",
+      "N:1",
+      "1:N",
+      "1:1"
+    ],
+    "correctAnswer": 1,
+    "section": "system",
+    "topic": "ER Model, Entities, Attributes, Relationships",
+    "difficulty": "hard",
+    "explanation": ""
+  },
+  {
+    "text": "Which relationship type has maximum redundancy risk?",
+    "options": [
+      "M:N",
+      "1:1",
+      "1:N",
+      "Unary"
+    ],
+    "correctAnswer": 0,
+    "section": "system",
+    "topic": "ER Model, Entities, Attributes, Relationships",
+    "difficulty": "hard",
+    "explanation": ""
+  },
+  {
+    "text": "Entity occurrence is also called:",
+    "options": [
+      "Tuple",
+      "Instance",
+      "Schema",
+      "Domain"
+    ],
+    "correctAnswer": 1,
+    "section": "system",
+    "topic": "ER Model, Entities, Attributes, Relationships",
+    "difficulty": "hard",
+    "explanation": ""
+  },
+  {
+    "text": "Which is not represented directly in ER diagram?",
+    "options": [
+      "Entity",
+      "Attribute",
+      "Relationship",
+      "SQL Query"
+    ],
+    "correctAnswer": 3,
+    "section": "system",
+    "topic": "ER Model, Entities, Attributes, Relationships",
+    "difficulty": "hard",
+    "explanation": ""
+  },
+  {
+    "text": "The number of participating entity sets in a relationship is:",
+    "options": [
+      "Cardinality",
+      "Degree",
+      "Participation",
+      "Schema"
+    ],
+    "correctAnswer": 1,
+    "section": "system",
+    "topic": "ER Model, Entities, Attributes, Relationships",
+    "difficulty": "hard",
+    "explanation": ""
+  },
+  {
+    "text": "A many-to-one relationship from Employee to Department means:",
+    "options": [
+      "One employee → many departments",
+      "Many employees → one department",
+      "One department → one employee",
+      "None"
+    ],
+    "correctAnswer": 1,
+    "section": "system",
+    "topic": "ER Model, Entities, Attributes, Relationships",
+    "difficulty": "hard",
+    "explanation": ""
+  },
+  {
+    "text": "Which attribute can have multiple phone numbers?",
+    "options": [
+      "Derived",
+      "Composite",
+      "Multivalued",
+      "Key"
+    ],
+    "correctAnswer": 2,
+    "section": "system",
+    "topic": "ER Model, Entities, Attributes, Relationships",
+    "difficulty": "hard",
+    "explanation": ""
+  },
+  {
+    "text": "The strongest candidate for primary key is:",
+    "options": [
+      "Non-unique attribute",
+      "Candidate key",
+      "Derived attribute",
+      "Composite attribute"
+    ],
+    "correctAnswer": 1,
+    "section": "system",
+    "topic": "ER Model, Entities, Attributes, Relationships",
+    "difficulty": "hard",
+    "explanation": ""
+  },
+  {
+    "text": "A weak entity without identifying relationship is:",
+    "options": [
+      "Valid",
+      "Invalid",
+      "Strong",
+      "Composite"
+    ],
+    "correctAnswer": 1,
+    "section": "system",
+    "topic": "ER Model, Entities, Attributes, Relationships",
+    "difficulty": "hard",
+    "explanation": ""
+  },
+  {
+    "text": "Cardinality 1:N means:",
+    "options": [
+      "One entity linked to many entities",
+      "Many linked to many",
+      "One linked to one",
+      "Many linked to one only"
+    ],
+    "correctAnswer": 0,
+    "section": "system",
+    "topic": "ER Model, Entities, Attributes, Relationships",
+    "difficulty": "hard",
+    "explanation": ""
+  },
+  {
+    "text": "Relationship attributes are stored:",
+    "options": [
+      "Entity table",
+      "Relationship table",
+      "Key table",
+      "Domain table"
+    ],
+    "correctAnswer": 1,
+    "section": "system",
+    "topic": "ER Model, Entities, Attributes, Relationships",
+    "difficulty": "hard",
+    "explanation": ""
+  },
+  {
+    "text": "Which is NOT an ER modeling construct?",
+    "options": [
+      "Entity",
+      "Attribute",
+      "Relationship",
+      "Trigger"
+    ],
+    "correctAnswer": 3,
+    "section": "system",
+    "topic": "ER Model, Entities, Attributes, Relationships",
+    "difficulty": "hard",
+    "explanation": ""
+  },
+  {
+    "text": "The purpose of conceptual schema is:",
+    "options": [
+      "Storage optimization",
+      "User-level abstraction",
+      "Query execution",
+      "Indexing"
+    ],
+    "correctAnswer": 1,
+    "section": "system",
+    "topic": "ER Model, Entities, Attributes, Relationships",
+    "difficulty": "hard",
+    "explanation": ""
+  },
+  {
+    "text": "An entity with primary key is usually:",
+    "options": [
+      "Weak entity",
+      "Strong entity",
+      "Derived entity",
+      "Recursive entity"
+    ],
+    "correctAnswer": 1,
+    "section": "system",
+    "topic": "ER Model, Entities, Attributes, Relationships",
+    "difficulty": "hard",
+    "explanation": ""
+  },
+  {
+    "text": "The first step in database design is: These MCQs are designed in the style commonly seen in **COAL India Management Trainee (IT), PSU IT exams, GATE DBMS, NIELIT, Banking IT Officer, ISRO, DRDO, and technical recruitment exams**. The question patterns are based on relational model, keys, and relational algebra practice sets and previous-year style DBMS questions. ([Suraku Academy][1])",
+    "options": [
+      "Normalization",
+      "ER Modeling",
+      "Indexing",
+      "Query Writing"
+    ],
+    "correctAnswer": 1,
+    "section": "system",
+    "topic": "ER Model, Entities, Attributes, Relationships",
+    "difficulty": "hard",
+    "explanation": ""
+  }
+]

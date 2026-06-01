@@ -47,7 +47,7 @@ const seedRelationalModel = async () => {
 
     const test = await Test.create({
       title: 'System IT: Relational Model & Algebra',
-      type: 'section_test',
+      type: 'topic_practice',
       section: 'system',
       topic: topic,
       questions: selectedQuestions.map(q => q._id),

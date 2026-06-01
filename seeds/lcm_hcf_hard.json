@@ -1,0 +1,452 @@
+[
+  {
+    "text": "The product of two numbers is 4107. If the H.C.F. of these numbers is 37, then the greater number is:",
+    "options": ["101", "107", "111", "185"],
+    "correctAnswer": 2,
+    "section": "numerical",
+    "topic": "LCM & HCF",
+    "difficulty": "hard",
+    "explanation": "Let numbers be 37a and 37b (co-prime). 37a × 37b = 4107, so ab = 4107/1369 = 3. Co-prime pair with product 3: (1, 3). Numbers: 37 and 111. Greater = 111."
+  },
+  {
+    "text": "The product of two numbers is 2028 and their H.C.F. is 13. The number of such pairs is:",
+    "options": ["1", "2", "3", "4"],
+    "correctAnswer": 1,
+    "section": "numerical",
+    "topic": "LCM & HCF",
+    "difficulty": "hard",
+    "explanation": "Let numbers be 13a and 13b (co-prime). 169ab = 2028, ab = 12. Co-prime pairs with product 12: (1, 12) and (3, 4). So 2 pairs: (13, 156) and (39, 52)."
+  },
+  {
+    "text": "The sum of two numbers is 528 and their H.C.F. is 33. The number of pairs of numbers satisfying the above conditions is:",
+    "options": ["4", "6", "8", "12"],
+    "correctAnswer": 0,
+    "section": "numerical",
+    "topic": "LCM & HCF",
+    "difficulty": "hard",
+    "explanation": "Let numbers be 33a and 33b (co-prime). 33(a+b) = 528, a+b = 16. Co-prime pairs with sum 16 (a < b): (1,15), (3,13), (5,11), (7,9). So 4 pairs."
+  },
+  {
+    "text": "Three numbers which are co-prime to each other are such that the product of the first two is 551 and that of the last two is 1073. The sum of the three numbers is:",
+    "options": ["75", "81", "85", "89"],
+    "correctAnswer": 2,
+    "section": "numerical",
+    "topic": "LCM & HCF",
+    "difficulty": "hard",
+    "explanation": "551 = 19 × 29 and 1073 = 29 × 37. The common number is 29. The three numbers are 19, 29, and 37. Sum = 19 + 29 + 37 = 85."
+  },
+  {
+    "text": "The ratio of two numbers is 13 : 15 and their L.C.M. is 39780. The numbers are:",
+    "options": ["273 and 315", "689 and 795", "1326 and 1530", "2652 and 3060"],
+    "correctAnswer": 3,
+    "section": "numerical",
+    "topic": "LCM & HCF",
+    "difficulty": "hard",
+    "explanation": "Let numbers be 13k and 15k. Since gcd(13,15) = 1, LCM = 13 × 15 × k = 195k. 195k = 39780, k = 204. Numbers: 13 × 204 = 2652, 15 × 204 = 3060."
+  },
+  {
+    "text": "Three numbers are in the ratio of 3 : 4 : 5 and their L.C.M. is 2400. Their H.C.F. is:",
+    "options": ["20", "40", "60", "80"],
+    "correctAnswer": 1,
+    "section": "numerical",
+    "topic": "LCM & HCF",
+    "difficulty": "hard",
+    "explanation": "Let numbers be 3k, 4k, 5k. LCM = k × LCM(3,4,5) = 60k. 60k = 2400, k = 40. HCF = 40. Numbers are 120, 160, 200."
+  },
+  {
+    "text": "The L.C.M. and ratio of four numbers are 630 and 2 : 3 : 5 : 7 respectively. The difference between the greatest and the least numbers is:",
+    "options": ["6", "10", "15", "21"],
+    "correctAnswer": 2,
+    "section": "numerical",
+    "topic": "LCM & HCF",
+    "difficulty": "hard",
+    "explanation": "Let numbers be 2k, 3k, 5k, 7k. LCM = k × LCM(2,3,5,7) = 210k. 210k = 630, k = 3. Numbers: 6, 9, 15, 21. Difference = 21 - 6 = 15."
+  },
+  {
+    "text": "The sum and difference of the L.C.M. and H.C.F. of two numbers are 592 and 518 respectively. If the sum of the numbers is 296, find the numbers.",
+    "options": ["111 and 185", "148 and 148", "74 and 222", "37 and 259"],
+    "correctAnswer": 0,
+    "section": "numerical",
+    "topic": "LCM & HCF",
+    "difficulty": "hard",
+    "explanation": "L + H = 592, L - H = 518. So L = 555, H = 37. Numbers = 37a, 37b (co-prime), 37(a+b) = 296, a+b = 8. LCM = 37ab = 555, ab = 15. a+b=8, ab=15 gives a=3, b=5. Numbers: 111 and 185."
+  },
+  {
+    "text": "The H.C.F. of two numbers, each having three digits, is 17 and their L.C.M. is 714. The sum of the numbers is:",
+    "options": ["204", "221", "238", "255"],
+    "correctAnswer": 1,
+    "section": "numerical",
+    "topic": "LCM & HCF",
+    "difficulty": "hard",
+    "explanation": "Numbers = 17a, 17b. Product = HCF × LCM = 17 × 714 = 12138. 17a × 17b = 12138, ab = 42. Co-prime pairs with product 42: (1,42), (2,21), (3,14), (6,7). For 3-digit numbers: 17 × 6 = 102, 17 × 7 = 119. Sum = 221."
+  },
+  {
+    "text": "Find the least number which is exactly divisible by 32, 36, 45, 60 and 80.",
+    "options": ["720", "1080", "1440", "2880"],
+    "correctAnswer": 2,
+    "section": "numerical",
+    "topic": "LCM & HCF",
+    "difficulty": "hard",
+    "explanation": "32 = 2⁵, 36 = 2² × 3², 45 = 3² × 5, 60 = 2² × 3 × 5, 80 = 2⁴ × 5. LCM = 2⁵ × 3² × 5 = 32 × 9 × 5 = 1440."
+  },
+  {
+    "text": "Find the least number which when divided by 6, 7, 8, 9 and 12 leaves the same remainder 1 in each case.",
+    "options": ["501", "505", "509", "513"],
+    "correctAnswer": 1,
+    "section": "numerical",
+    "topic": "LCM & HCF",
+    "difficulty": "hard",
+    "explanation": "LCM(6, 7, 8, 9, 12) = 2³ × 3² × 7 = 504. Required number = 504 + 1 = 505."
+  },
+  {
+    "text": "Find the smallest number which when increased by 10 is completely divisible by 12, 15, 18, 20 and 24.",
+    "options": ["340", "350", "360", "370"],
+    "correctAnswer": 1,
+    "section": "numerical",
+    "topic": "LCM & HCF",
+    "difficulty": "hard",
+    "explanation": "LCM(12, 15, 18, 20, 24) = 2³ × 3² × 5 = 360. Required number = 360 - 10 = 350."
+  },
+  {
+    "text": "Find the greatest number of five digits which is divisible by 15, 21 and 36.",
+    "options": ["99540", "99720", "99960", "99000"],
+    "correctAnswer": 0,
+    "section": "numerical",
+    "topic": "LCM & HCF",
+    "difficulty": "hard",
+    "explanation": "LCM(15, 21, 36) = 2² × 3² × 5 × 7 = 1260. Greatest 5-digit number = 99999. 99999 ÷ 1260 = 79 remainder 459. Required number = 99999 - 459 = 99540."
+  },
+  {
+    "text": "Find the smallest number of five digits exactly divisible by 16, 24, 36 and 54.",
+    "options": ["10080", "10296", "10368", "10800"],
+    "correctAnswer": 2,
+    "section": "numerical",
+    "topic": "LCM & HCF",
+    "difficulty": "hard",
+    "explanation": "LCM(16, 24, 36, 54) = 2⁴ × 3³ = 432. Smallest 5-digit number = 10000. 10000 ÷ 432 = 23 remainder 64. Required number = 10000 + (432 - 64) = 10368."
+  },
+  {
+    "text": "The L.C.M. of two numbers is 12 times their H.C.F. The sum of H.C.F. and L.C.M. is 403. If one number is 93, find the other.",
+    "options": ["116", "124", "128", "132"],
+    "correctAnswer": 1,
+    "section": "numerical",
+    "topic": "LCM & HCF",
+    "difficulty": "hard",
+    "explanation": "LCM = 12 × HCF. LCM + HCF = 403, so 12H + H = 403, 13H = 403, H = 31. LCM = 372. Other number = (H × LCM) / 93 = (31 × 372) / 93 = 124."
+  },
+  {
+    "text": "The H.C.F. and L.C.M. of two numbers are 50 and 250 respectively. If the first number is divided by 2, the quotient is 50. The second number is:",
+    "options": ["50", "100", "125", "250"],
+    "correctAnswer": 2,
+    "section": "numerical",
+    "topic": "LCM & HCF",
+    "difficulty": "hard",
+    "explanation": "First number = 50 × 2 = 100. Product = HCF × LCM = 50 × 250 = 12500. Second number = 12500 / 100 = 125."
+  },
+  {
+    "text": "The product of two numbers is 1320 and their H.C.F. is 6. The L.C.M. of the numbers is:",
+    "options": ["220", "330", "440", "660"],
+    "correctAnswer": 0,
+    "section": "numerical",
+    "topic": "LCM & HCF",
+    "difficulty": "hard",
+    "explanation": "LCM = Product / HCF = 1320 / 6 = 220."
+  },
+  {
+    "text": "The L.C.M. of three different numbers is 120. Which of the following cannot be their H.C.F.?",
+    "options": ["8", "12", "24", "35"],
+    "correctAnswer": 3,
+    "section": "numerical",
+    "topic": "LCM & HCF",
+    "difficulty": "hard",
+    "explanation": "H.C.F. must be a factor of L.C.M. 120 = 2³ × 3 × 5. 35 = 5 × 7. Since 7 does not divide 120, 35 cannot be the H.C.F."
+  },
+  {
+    "text": "The H.C.F. of two numbers is 8. Which one of the following can never be their L.C.M.?",
+    "options": ["24", "48", "56", "60"],
+    "correctAnswer": 3,
+    "section": "numerical",
+    "topic": "LCM & HCF",
+    "difficulty": "hard",
+    "explanation": "L.C.M. must be a multiple of H.C.F. 60 / 8 = 7.5, which is not an integer. So 60 can never be their L.C.M."
+  },
+  {
+    "text": "If the L.C.M. of three numbers is 9570, then their H.C.F. can be:",
+    "options": ["11", "12", "19", "21"],
+    "correctAnswer": 0,
+    "section": "numerical",
+    "topic": "LCM & HCF",
+    "difficulty": "hard",
+    "explanation": "H.C.F. must divide L.C.M. 9570 = 2 × 3 × 5 × 11 × 29. Only 11 divides 9570. 12 = 2² × 3 (4 doesn't divide 9570), 19 doesn't divide 9570, 21 = 3 × 7 (7 doesn't divide 9570)."
+  },
+  {
+    "text": "The H.C.F. of two numbers is 23 and the other two factors of their L.C.M. are 13 and 14. The larger of the two numbers is:",
+    "options": ["276", "299", "322", "345"],
+    "correctAnswer": 2,
+    "section": "numerical",
+    "topic": "LCM & HCF",
+    "difficulty": "hard",
+    "explanation": "The numbers are 23 × 13 = 299 and 23 × 14 = 322. The larger number is 322."
+  },
+  {
+    "text": "The H.C.F. and L.C.M. of two numbers are 21 and 4641 respectively. If one of the numbers lies between 200 and 300, the two numbers are:",
+    "options": ["210 and 441", "273 and 357", "252 and 387", "231 and 423"],
+    "correctAnswer": 1,
+    "section": "numerical",
+    "topic": "LCM & HCF",
+    "difficulty": "hard",
+    "explanation": "Numbers = 21a, 21b (co-prime). Product = 21 × 4641 = 97461. ab = 4641/21 = 221 = 13 × 17. Co-prime pairs: (1, 221) and (13, 17). Numbers: (21, 4641) or (273, 357). 273 lies between 200 and 300."
+  },
+  {
+    "text": "Two numbers, both greater than 29, have H.C.F. 29 and L.C.M. 4147. The sum of the numbers is:",
+    "options": ["580", "667", "696", "754"],
+    "correctAnswer": 2,
+    "section": "numerical",
+    "topic": "LCM & HCF",
+    "difficulty": "hard",
+    "explanation": "Numbers = 29a, 29b (co-prime). LCM = 29ab = 4147, ab = 143 = 11 × 13. Since both numbers > 29, both a, b > 1. Co-prime pair: (11, 13). Numbers: 319 and 377. Sum = 696."
+  },
+  {
+    "text": "L.C.M. of two prime numbers x and y (x > y) is 161. The value of 3y − x is:",
+    "options": ["-2", "-1", "1", "2"],
+    "correctAnswer": 0,
+    "section": "numerical",
+    "topic": "LCM & HCF",
+    "difficulty": "hard",
+    "explanation": "Since x and y are prime, LCM = x × y = 161 = 7 × 23. So x = 23, y = 7. 3y − x = 21 − 23 = −2."
+  },
+  {
+    "text": "The greatest number that exactly divides 105, 1001 and 2436 is:",
+    "options": ["3", "7", "11", "13"],
+    "correctAnswer": 1,
+    "section": "numerical",
+    "topic": "LCM & HCF",
+    "difficulty": "hard",
+    "explanation": "105 = 3 × 5 × 7, 1001 = 7 × 11 × 13, 2436 = 2² × 3 × 7 × 29. H.C.F. = 7."
+  },
+  {
+    "text": "21 mango trees, 42 apple trees and 56 orange trees have to be planted in rows such that each row contains the same number of trees of one variety only. The minimum number of rows in which the trees may be planted is:",
+    "options": ["3", "15", "17", "20"],
+    "correctAnswer": 2,
+    "section": "numerical",
+    "topic": "LCM & HCF",
+    "difficulty": "hard",
+    "explanation": "H.C.F.(21, 42, 56) = 7. Trees per row = 7. Rows = 21/7 + 42/7 + 56/7 = 3 + 6 + 8 = 17."
+  },
+  {
+    "text": "The greatest possible length which can be used to measure exactly the lengths 7 m, 3 m 85 cm and 12 m 95 cm is:",
+    "options": ["15 cm", "25 cm", "35 cm", "45 cm"],
+    "correctAnswer": 2,
+    "section": "numerical",
+    "topic": "LCM & HCF",
+    "difficulty": "hard",
+    "explanation": "Convert to cm: 700, 385, 1295. H.C.F.: 700 = 2² × 5² × 7, 385 = 5 × 7 × 11, 1295 = 5 × 7 × 37. H.C.F. = 5 × 7 = 35 cm."
+  },
+  {
+    "text": "A daily wage labourer was engaged for a certain number of days for ₹5750, but being absent on some days he was paid only ₹5000. His maximum possible daily wage was:",
+    "options": ["₹125", "₹250", "₹375", "₹500"],
+    "correctAnswer": 1,
+    "section": "numerical",
+    "topic": "LCM & HCF",
+    "difficulty": "hard",
+    "explanation": "Maximum daily wage = H.C.F.(5750, 5000). 5750 = 2 × 5³ × 23, 5000 = 2³ × 5⁴. H.C.F. = 2 × 5³ = 250."
+  },
+  {
+    "text": "A person has to completely put each of three liquids: 403 litres of petrol, 465 litres of diesel and 496 litres of Mobil Oil in bottles of equal size without mixing. What is the least possible number of bottles required?",
+    "options": ["34", "44", "46", "54"],
+    "correctAnswer": 1,
+    "section": "numerical",
+    "topic": "LCM & HCF",
+    "difficulty": "hard",
+    "explanation": "H.C.F.(403, 465, 496). 403 = 13 × 31, 465 = 3 × 5 × 31, 496 = 2⁴ × 31. H.C.F. = 31. Bottles = 403/31 + 465/31 + 496/31 = 13 + 15 + 16 = 44."
+  },
+  {
+    "text": "The maximum number of students among whom 1001 pens and 910 pencils can be distributed in such a way that each student gets the same number of pens and pencils is:",
+    "options": ["91", "910", "1001", "1911"],
+    "correctAnswer": 0,
+    "section": "numerical",
+    "topic": "LCM & HCF",
+    "difficulty": "hard",
+    "explanation": "H.C.F.(1001, 910). 1001 = 7 × 11 × 13, 910 = 2 × 5 × 7 × 13. H.C.F. = 7 × 13 = 91."
+  },
+  {
+    "text": "A rectangular courtyard 3.78 metres long and 5.25 metres wide is to be paved exactly with square tiles, all of the same size. The largest size of the tile which could be used is:",
+    "options": ["14 cm", "21 cm", "42 cm", "None of these"],
+    "correctAnswer": 1,
+    "section": "numerical",
+    "topic": "LCM & HCF",
+    "difficulty": "hard",
+    "explanation": "378 cm × 525 cm. H.C.F.(378, 525). 378 = 2 × 3³ × 7, 525 = 3 × 5² × 7. H.C.F. = 3 × 7 = 21 cm."
+  },
+  {
+    "text": "The least number of square tiles required to pave the ceiling of a room 15 m 17 cm long and 9 m 2 cm broad is:",
+    "options": ["656", "738", "814", "902"],
+    "correctAnswer": 2,
+    "section": "numerical",
+    "topic": "LCM & HCF",
+    "difficulty": "hard",
+    "explanation": "1517 cm × 902 cm. H.C.F.(1517, 902). 1517 = 37 × 41, 902 = 2 × 11 × 41. H.C.F. = 41 cm. Tiles = (1517/41) × (902/41) = 37 × 22 = 814."
+  },
+  {
+    "text": "Three sets of English, Mathematics and Science books containing 336, 240 and 96 books respectively have to be stacked in such a way that all the books are stored subjectwise and the height of each stack is the same. The total number of stacks will be:",
+    "options": ["14", "21", "22", "48"],
+    "correctAnswer": 0,
+    "section": "numerical",
+    "topic": "LCM & HCF",
+    "difficulty": "hard",
+    "explanation": "H.C.F.(336, 240, 96). 336 = 2⁴ × 3 × 7, 240 = 2⁴ × 3 × 5, 96 = 2⁵ × 3. H.C.F. = 2⁴ × 3 = 48. Stacks = 336/48 + 240/48 + 96/48 = 7 + 5 + 2 = 14."
+  },
+  {
+    "text": "Four metal rods of lengths 78 cm, 104 cm, 117 cm and 169 cm are to be cut into parts of equal length. Each part must be as long as possible. The maximum number of pieces that can be cut is:",
+    "options": ["27", "36", "43", "480"],
+    "correctAnswer": 1,
+    "section": "numerical",
+    "topic": "LCM & HCF",
+    "difficulty": "hard",
+    "explanation": "H.C.F.(78, 104, 117, 169). 78 = 2 × 3 × 13, 104 = 2³ × 13, 117 = 3² × 13, 169 = 13². H.C.F. = 13 cm. Pieces = 78/13 + 104/13 + 117/13 + 169/13 = 6 + 8 + 9 + 13 = 36."
+  },
+  {
+    "text": "Find the greatest number that will divide 43, 91 and 183 so as to leave the same remainder in each case.",
+    "options": ["4", "7", "9", "13"],
+    "correctAnswer": 0,
+    "section": "numerical",
+    "topic": "LCM & HCF",
+    "difficulty": "hard",
+    "explanation": "Required number = H.C.F. of (91−43), (183−91), (183−43) = H.C.F.(48, 92, 140). 48 = 2⁴ × 3, 92 = 2² × 23, 140 = 2² × 5 × 7. H.C.F. = 2² = 4."
+  },
+  {
+    "text": "If r is the remainder when each of 7654, 8506 and 9997 is divided by the greatest number d (d > 1) that divides all three with the same remainder, then d − r equals:",
+    "options": ["14", "18", "24", "28"],
+    "correctAnswer": 0,
+    "section": "numerical",
+    "topic": "LCM & HCF",
+    "difficulty": "hard",
+    "explanation": "d = H.C.F. of (8506−7654), (9997−8506), (9997−7654) = H.C.F.(852, 1491, 2343). 852 = 2² × 3 × 71, 1491 = 3 × 7 × 71, 2343 = 3 × 11 × 71. H.C.F. = 3 × 71 = 213. r = 7654 mod 213 = 199. d − r = 213 − 199 = 14."
+  },
+  {
+    "text": "Let N be the greatest number that will divide 1305, 4665 and 6905 leaving the same remainder in each case. The sum of digits in N is:",
+    "options": ["4", "5", "6", "8"],
+    "correctAnswer": 0,
+    "section": "numerical",
+    "topic": "LCM & HCF",
+    "difficulty": "hard",
+    "explanation": "N = H.C.F. of (4665−1305), (6905−4665), (6905−1305) = H.C.F.(3360, 2240, 5600). 3360 = 2⁵ × 3 × 5 × 7, 2240 = 2⁶ × 5 × 7, 5600 = 2⁵ × 5² × 7. H.C.F. = 2⁵ × 5 × 7 = 1120. Sum of digits = 1 + 1 + 2 + 0 = 4."
+  },
+  {
+    "text": "A milkman has 3 jars containing 57 litres, 129 litres and 177 litres of pure milk respectively. A measuring can, after a different number of exact measurements of milk in each jar, leaves the same amount of milk unmeasured in each jar. The largest such can has a capacity of:",
+    "options": ["12 litres", "16 litres", "24 litres", "None of these"],
+    "correctAnswer": 2,
+    "section": "numerical",
+    "topic": "LCM & HCF",
+    "difficulty": "hard",
+    "explanation": "The can leaves the same remainder. Required number = H.C.F. of (129−57), (177−129), (177−57) = H.C.F.(72, 48, 120). 72 = 2³ × 3², 48 = 2⁴ × 3, 120 = 2³ × 3 × 5. H.C.F. = 2³ × 3 = 24 litres."
+  },
+  {
+    "text": "The greatest number which can divide 1356, 1868 and 2764 leaving the same remainder 12 in each case is:",
+    "options": ["64", "124", "156", "260"],
+    "correctAnswer": 0,
+    "section": "numerical",
+    "topic": "LCM & HCF",
+    "difficulty": "hard",
+    "explanation": "Subtract 12: 1344, 1856, 2752. H.C.F.(1344, 1856, 2752). 1344 = 2⁶ × 3 × 7, 1856 = 2⁶ × 29, 2752 = 2⁶ × 43. H.C.F. = 2⁶ = 64."
+  },
+  {
+    "text": "Which greatest number will divide 3026 and 5053 leaving remainders 11 and 13 respectively?",
+    "options": ["15", "30", "45", "60"],
+    "correctAnswer": 2,
+    "section": "numerical",
+    "topic": "LCM & HCF",
+    "difficulty": "hard",
+    "explanation": "3026 − 11 = 3015, 5053 − 13 = 5040. H.C.F.(3015, 5040). 3015 = 3² × 5 × 67, 5040 = 2⁴ × 3² × 5 × 7. H.C.F. = 3² × 5 = 45."
+  },
+  {
+    "text": "Find the greatest number that will divide 964, 1238 and 1400 leaving remainders 41, 31 and 51 respectively.",
+    "options": ["61", "71", "73", "81"],
+    "correctAnswer": 1,
+    "section": "numerical",
+    "topic": "LCM & HCF",
+    "difficulty": "hard",
+    "explanation": "964 − 41 = 923, 1238 − 31 = 1207, 1400 − 51 = 1349. 923 = 13 × 71, 1207 = 17 × 71, 1349 = 19 × 71. H.C.F. = 71."
+  },
+  {
+    "text": "What is the least natural number which leaves no remainder when divided by all the digits from 1 to 9?",
+    "options": ["1800", "1920", "2520", "5040"],
+    "correctAnswer": 2,
+    "section": "numerical",
+    "topic": "LCM & HCF",
+    "difficulty": "hard",
+    "explanation": "Required number = L.C.M.(1, 2, 3, 4, 5, 6, 7, 8, 9) = 2³ × 3² × 5 × 7 = 2520."
+  },
+  {
+    "text": "What will be the least number which when doubled will be exactly divisible by 12, 18, 21 and 30?",
+    "options": ["196", "630", "1260", "2520"],
+    "correctAnswer": 1,
+    "section": "numerical",
+    "topic": "LCM & HCF",
+    "difficulty": "hard",
+    "explanation": "L.C.M.(12, 18, 21, 30) = 2² × 3² × 5 × 7 = 1260. If 2N = 1260, then N = 630."
+  },
+  {
+    "text": "The sum of two numbers is 45. Their difference is 1/9 of their sum. Their L.C.M. is:",
+    "options": ["100", "150", "200", "250"],
+    "correctAnswer": 0,
+    "section": "numerical",
+    "topic": "LCM & HCF",
+    "difficulty": "hard",
+    "explanation": "Difference = 45/9 = 5. a + b = 45, a − b = 5. So a = 25, b = 20. 25 = 5², 20 = 2² × 5. L.C.M. = 2² × 5² = 100."
+  },
+  {
+    "text": "The smallest fraction, which each of 6/7, 5/14 and 10/21 will divide exactly, is:",
+    "options": ["30/__(cannot determine)", "30/7", "60/7", "30/49"],
+    "correctAnswer": 1,
+    "section": "numerical",
+    "topic": "LCM & HCF",
+    "difficulty": "hard",
+    "explanation": "L.C.M. of fractions = L.C.M. of numerators / H.C.F. of denominators = L.C.M.(6, 5, 10) / H.C.F.(7, 14, 21) = 30 / 7."
+  },
+  {
+    "text": "The traffic lights at three different road crossings change after every 48 sec, 72 sec and 108 sec respectively. If they all change simultaneously at 8:20:00 hours, they will again change simultaneously at:",
+    "options": ["8:24:12 hrs", "8:27:12 hrs", "8:28:48 hrs", "8:30:00 hrs"],
+    "correctAnswer": 1,
+    "section": "numerical",
+    "topic": "LCM & HCF",
+    "difficulty": "hard",
+    "explanation": "L.C.M.(48, 72, 108). 48 = 2⁴ × 3, 72 = 2³ × 3², 108 = 2² × 3³. L.C.M. = 2⁴ × 3³ = 432 sec = 7 min 12 sec. Next change: 8:20:00 + 7:12 = 8:27:12."
+  },
+  {
+    "text": "The greatest number which can divide 1305, 4665 and 6905 leaving the same remainder 5 in each case is:",
+    "options": ["10", "20", "40", "65"],
+    "correctAnswer": 2,
+    "section": "numerical",
+    "topic": "LCM & HCF",
+    "difficulty": "hard",
+    "explanation": "1305 − 5 = 1300, 4665 − 5 = 4660, 6905 − 5 = 6900. H.C.F.(1300, 4660, 6900). 1300 = 2² × 5² × 13, 4660 = 2² × 5 × 233, 6900 = 2² × 3 × 5² × 23. H.C.F. = 2² × 5 = 20. Wait, let me recheck. 4660 = 4 × 1165 = 4 × 5 × 233. 6900 = 4 × 1725 = 4 × 25 × 69. H.C.F. = 20. Hmm, but 1300/20 = 65, 4660/20 = 233, 6900/20 = 345. GCD(65,233): 233 = 3×65 + 38, 65 = 1×38 + 27, 38 = 1×27 + 11, 27 = 2×11 + 5, 11 = 2×5 + 1. So GCD = 1. Thus H.C.F. of all three = 20."
+  },
+  {
+    "text": "The product of the L.C.M. and H.C.F. of two numbers is 24. The difference of the two numbers is 2. Find the numbers.",
+    "options": ["2 and 4", "6 and 4", "8 and 6", "8 and 10"],
+    "correctAnswer": 1,
+    "section": "numerical",
+    "topic": "LCM & HCF",
+    "difficulty": "hard",
+    "explanation": "Product of two numbers = H.C.F. × L.C.M. = 24. And a − b = 2. So a = b + 2 and a × b = 24. b(b+2) = 24, b² + 2b − 24 = 0, (b−4)(b+6) = 0. b = 4, a = 6. Numbers: 6 and 4."
+  },
+  {
+    "text": "The H.C.F. of two numbers is 12 and their difference is 12. The numbers are:",
+    "options": ["66, 78", "70, 82", "94, 106", "84, 96"],
+    "correctAnswer": 3,
+    "section": "numerical",
+    "topic": "LCM & HCF",
+    "difficulty": "hard",
+    "explanation": "Numbers = 12a, 12b (co-prime, a < b). 12b − 12a = 12, b − a = 1. Only (d) works: 84 = 12 × 7, 96 = 12 × 8. gcd(7, 8) = 1 ✓. Other options: 66/12 = 5.5 (not integer), 70/12 (not integer), 94/12 (not integer)."
+  },
+  {
+    "text": "The number of pairs lying between 40 and 100 with their H.C.F. as 15 is:",
+    "options": ["3", "4", "5", "6"],
+    "correctAnswer": 1,
+    "section": "numerical",
+    "topic": "LCM & HCF",
+    "difficulty": "hard",
+    "explanation": "Numbers = 15a, 15b (co-prime). 40 ≤ 15a ≤ 100 gives a ∈ {3, 4, 5, 6}. Co-prime pairs (a, b) with a < b: (3,4), (3,5), (4,5), (5,6). Note (3,6) and (4,6) are not co-prime. So 4 pairs."
+  }
+]

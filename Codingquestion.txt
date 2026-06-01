@@ -1,282 +1,1033 @@
-Q1   Given a string S consisting only of '*' and '#'.
+## Error Detection MCQs with Solutions
 
-Find the minimum number required to make the string valid.
+---
 
-A string is considered valid if the number of '*' and '#' are equal.
+### 1.
 
-Rules
-If count of '*' > count of '#' → return a positive integer
-If count of '#' > count of '*' → return a negative integer
-If both are equal → return 0
-Example 1
+Somebody has **(A)** / broken the window **(B)** / by throwing **(C)** / many stone at it. **(D)** / No error **(E)**
 
-Input:
+#### Options:
 
-###***
+* A
+* B
+* C
+* D
+* E
 
-Output:
+### Answer: **D**
 
-0
+### Solution:
 
-Explanation:
-Number of '*' and '#' are equal.
+“many stone” is incorrect because after **many**, we use a **plural noun**.
 
-Example 2
+✅ Correct sentence:
+**“many stones at it.”**
 
-Input:
+---
 
-****##
+## 2.
 
-Output:
+All the child playing **(A)** / at the beach ran **(B)** / towards Sam when **(C)** / they heard him shout. **(D)** / No error **(E)**
 
-2
+#### Options:
 
-Explanation:
-There are 2 more '*' than '#'.
+* A
+* B
+* C
+* D
+* E
 
+### Answer: **A**
 
+### Solution:
 
+“child” should be plural because “they” refers to multiple children.
 
-Q2. Given an integer array Arr of size N, find the count of elements whose value is greater than all of its previous elements.
+✅ Correct sentence:
+**“All the children playing…”**
 
-Note
-The first element is always counted.
-An element is counted if it is strictly greater than every element before it.
-Example
-Input
-N = 5
-Arr = [7, 4, 8, 2, 9]
-Explanation
-7 → first element → counted
-4 → not greater than 7
-8 → greater than 7 and 4 → counted
-2 → not greater than previous maximum
-9 → greater than all previous elements → counted
-Output
-3
+---
 
+## 3.
 
+He gained admission **(A)** / to one of the **(B)** / best commerce college **(C)** / in the city. **(D)** / No error **(E)**
 
-q3  At a fun fair, a street vendor is selling balloons of different colours.
+#### Options:
 
-He sells N balloons, where each balloon colour is stored in an array B[].
+* A
+* B
+* C
+* D
+* E
 
-The task is to find the colour of the balloon that appears an odd number of times in the array.
+### Answer: **C**
 
-Note
-If more than one colour appears an odd number of times, print the first colour in the array whose count is odd.
-Balloon colours may be in uppercase or lowercase.
-If all colours appear an even number of times, print:
-All are even
-Example 1
-Input
-N = 7
+### Solution:
 
-B = [r, g, b, b, g, y, y]
-Explanation
+After “one of the best”, the noun must be plural.
 
-Counts:
+✅ Correct sentence:
+**“best commerce colleges”**
 
-r → 1 time
-g → 2 times
-b → 2 times
-y → 2 times
+---
 
-Only r appears odd number of times.
+## 4.
 
-Output
-r 
+Nina had applied **(A)** / for a loans for **(B)** / post-graduate studies but **(C)** / it was not sanctioned. **(D)** / No error **(E)**
 
+#### Options:
 
+* A
+* B
+* C
+* D
+* E
 
-q4: There are n monkeys sitting on the branches of a huge tree.
+### Answer: **B**
 
-Travelers offer:
+### Solution:
 
-m bananas
-p peanuts
+Article “a” is singular, so the noun must also be singular.
 
-Each monkey can eat:
+✅ Correct sentence:
+**“for a loan for…”**
 
-k bananas OR
-j peanuts
+---
 
-Monkeys come down one at a time, eat, and then leave.
-A monkey does not climb back onto the tree.
+## 5.
 
-If the remaining bananas or peanuts are less than k or j, the last monkey can eat the remaining items as well.
+A large number of policy **(A)** / have lapsed because many **(B)** / people have not paid **(C)** / their instalments on time. **(D)** / No error **(E)**
 
-Your task is to find the number of monkeys left on the tree after feeding.
+#### Options:
 
-Input Variables
-n → Total number of monkeys
-k → Bananas eaten by one monkey
-j → Peanuts eaten by one monkey
-m → Total bananas
-p → Total peanuts
-Logic  
+* A
+* B
+* C
+* D
+* E
 
+### Answer: **A**
 
+### Solution:
 
+“policy” should be plural after “a large number of”.
 
-Q5:  Airport security officials have confiscated several items from passengers.
+✅ Correct sentence:
+**“A large number of policies…”**
 
-Each item has a risk severity level:
+---
 
-0 → Low Risk
-1 → Medium Risk
-2 → High Risk
+## 6.
 
-These risk levels are stored in an array of size N.
+The manager has not **(A)** / yet replied to the **(B)** / customer letter asking **(C)** / about her loan application. **(D)** / No error **(E)**
 
-The task is to sort the array based on risk severity in ascending order.
+#### Options:
 
-Example
-Input
-N = 7
+* A
+* B
+* C
+* D
+* E
 
-Arr = [1, 0, 2, 0, 1, 0, 2]
-Output
-0 0 0 1 1 2 2 
+### Answer: **C**
 
+### Solution:
 
-Q6: Write a function to find the longest common prefix among an array of strings.
+Possessive form is needed.
 
-If there is no common prefix, return an empty string "".
+✅ Correct sentence:
+**“customer’s letter”**
 
-Example 1
-Input
-strs = ["flower", "flow", "flight"]
-Output
-"fl" 
+---
 
+## 7.
 
-q7: Jack loves Sundays because he gets to play and go cycling with his friends.
+I shall have to check **(A)** / our records to find out **(B)** / how much cheques **(C)** / have been collected so far. **(D)** / No error **(E)**
 
-At the beginning of every month, Jack counts how many Sundays will occur within the next n days.
+#### Options:
 
-The month can start on any day of the week:
+* A
+* B
+* C
+* D
+* E
 
-Sunday
-Monday
-Tuesday
-...
-Saturday
+### Answer: **C**
 
-Your task is to count the number of Sundays within n days from the start of the month.
+### Solution:
 
-Example
-Input
-start_day = "mon"
-n = 13
+“Cheques” are countable, so use **how many**, not **how much**.
 
+✅ Correct sentence:
+**“how many cheques…”**
 
+---
 
-Q8:  Simple Question Statement
+## 8.
 
-A mall parking lot is represented using a matrix of size R × C.
+The medias, **(A)** / especially television, **(B)** / has a very powerful **(C)** / influence on children. **(D)** / No error **(E)**
 
-0 means the parking space is empty.
-1 means the parking space is occupied.
+#### Options:
 
-Your task is to find the row that contains the maximum number of occupied parking spaces (1s).
+* A
+* B
+* C
+* D
+* E
 
-If rows are counted starting from 1, return the row number having the highest count of 1s.
+### Answer: **A**
 
-Approach
+### Solution:
 
-We will go row by row and count how many 1s are present in each row.
+“Media” itself is used as plural; “medias” is incorrect.
 
-While traversing:
+✅ Correct sentence:
+**“The media…”**
 
-Keep track of:
-maximum count of 1s found so far
-row index where this maximum occurs
+---
 
-Whenever a row has more 1s than the current maximum:
+## 9.
 
-update the maximum count
-update the answer row
+There is a new shampoo **(A)** / in the market **(B)** / that is good for people **(C)** / with dry hairs. **(D)** / No error **(E)**
 
-At the end, return the row number.
+#### Options:
 
-Logic
-Steps
-Read matrix dimensions R and C
-Traverse every row
-Count number of 1s in that row
-Compare with current maximum
-Store row index if current row has more 1s
-Print the row number  
+* A
+* B
+* C
+* D
+* E
 
+### Answer: **D**
 
-Q9: Simple Question Statement
+### Solution:
 
-You are given two integers i and j.
+“Hair” is generally used as an uncountable noun when referring collectively.
 
-Your task is to calculate the sum of all integers from i to j (inclusive) and print the result.
+✅ Correct sentence:
+**“with dry hair.”**
 
+---
 
-Q10: Simple Question Statement
+## 10.
 
-Given an integer N, find the sum of the first N prime numbers.
+There is lot of **(A)** / supports from the employees **(B)** / for the proposal to **(C)** / merge with the parent company. **(D)** / No error **(E)**
 
-A prime number is a number greater than 1 that has only two divisors:
+#### Options:
 
-1
-itself
-Example
-Input
-N = 4
+* A
+* B
+* C
+* D
+* E
 
-First 4 prime numbers:
+### Answer: **A**
 
-2, 3, 5, 7
+### Solution:
 
-Sum:
+“Support” is generally uncountable here.
 
-2 + 3 + 5 + 7 = 17
-Output
-17
+✅ Correct sentence:
+**“There is a lot of support…”**
 
 
-Q11: You are given a weighted graph with:
 
-n vertices
-m edges
 
-Each edge has:
 
-source vertex u
-destination vertex v
-weight w
+# Error Detection MCQs (40 Questions with Solutions)
 
-You are also given:
+---
 
-source node src
-destination node dest
+# 1.
 
-Your task is to:
+Each of the boys **(A)** / were given **(B)** / a certificate for **(C)** / participation. **(D)** / No error **(E)**
 
-Find the shortest path from src to dest
-Print the path
-Print the total shortest distance
+### Answer: **B**
 
+### Solution:
 
-Q12: Simple Question Statement
-Write a program to manage expenses from a given total income.
-The program should:
+“Each” is singular, so singular verb should be used.
 
-Take total income as input
+✅ Correct: **was given**
 
-Repeatedly take:
-expense category
-expense amount
+---
 
-Stop when user enters: done
+# 2.
 
-Then print:
-Total Income
-Total Expenses
-Total Savings
-Expense breakdown category-wise
+Neither the teacher nor the students **(A)** / was aware **(B)** / of the changes made **(C)** / in the schedule. **(D)** / No error **(E)**
+
+### Answer: **B**
+
+### Solution:
+
+When subjects are joined by “neither…nor”, the verb agrees with the nearer subject (“students”).
+
+✅ Correct: **were aware**
+
+---
+
+# 3.
+
+One of my friend **(A)** / has started **(B)** / a new business **(C)** / in Delhi. **(D)** / No error **(E)**
+
+### Answer: **A**
+
+### Solution:
+
+After “one of”, noun should be plural.
+
+✅ Correct: **friends**
+
+---
+
+# 4.
+
+She is senior than **(A)** / me in experience **(B)** / but junior in **(C)** / age. **(D)** / No error **(E)**
+
+### Answer: **A**
+
+### Solution:
+
+With “senior”, “junior”, “superior”, we use **to**, not **than**.
+
+✅ Correct: **senior to me**
+
+---
+
+# 5.
+
+The committee have **(A)** / submitted its report **(B)** / to the chairman **(C)** / yesterday. **(D)** / No error **(E)**
+
+### Answer: **A**
+
+### Solution:
+
+“Committee” is singular collective noun here.
+
+✅ Correct: **has submitted**
+
+---
+
+# 6.
+
+He denied **(A)** / to have stolen **(B)** / the confidential files **(C)** / from the office. **(D)** / No error **(E)**
+
+### Answer: **B**
+
+### Solution:
+
+“Deny” is followed by gerund (verb + ing).
+
+✅ Correct: **having stolen**
+
+---
+
+# 7.
+
+The news are **(A)** / too good to be **(B)** / true according to **(C)** / the officials. **(D)** / No error **(E)**
+
+### Answer: **A**
+
+### Solution:
+
+“News” is singular.
+
+✅ Correct: **The news is**
+
+---
+
+# 8.
+
+Hardly had I reached **(A)** / the station than **(B)** / the train started **(C)** / moving. **(D)** / No error **(E)**
+
+### Answer: **B**
+
+### Solution:
+
+“Hardly” is followed by “when”, not “than”.
+
+✅ Correct: **when**
+
+---
+
+# 9.
+
+She prefers tea **(A)** / than coffee during **(B)** / the winter season. **(C)** / No error **(D)**
+
+### Answer: **B**
+
+### Solution:
+
+“Prefer” takes “to”, not “than”.
+
+✅ Correct: **tea to coffee**
+
+---
+
+# 10.
+
+The furniture in this room **(A)** / are made of **(B)** / pure teak wood. **(C)** / No error **(D)**
+
+### Answer: **B**
+
+### Solution:
+
+“Furniture” is singular uncountable noun.
+
+✅ Correct: **is made**
+
+---
+
+# 11.
+
+He as well as his brothers **(A)** / are planning to start **(B)** / a manufacturing company. **(C)** / No error **(D)**
+
+### Answer: **B**
+
+### Solution:
+
+Verb agrees with first subject before “as well as”.
+
+✅ Correct: **is planning**
+
+---
+
+# 12.
+
+I look forward **(A)** / to meet you **(B)** / during the annual **(C)** / conference. **(D)** / No error **(E)**
+
+### Answer: **B**
+
+### Solution:
+
+“Look forward to” is followed by gerund.
+
+✅ Correct: **to meeting you**
+
+---
+
+# 13.
+
+Scarcely had he entered **(A)** / the classroom when **(B)** / the bell had rung. **(C)** / No error **(D)**
+
+### Answer: **C**
+
+### Solution:
+
+Past perfect should not be used again.
+
+✅ Correct: **the bell rang**
+
+---
+
+# 14.
+
+The teacher asked the students **(A)** / if they had completed **(B)** / there assignments **(C)** / on time. **(D)** / No error **(E)**
+
+### Answer: **C**
+
+### Solution:
+
+Wrong usage of “there”.
+
+✅ Correct: **their assignments**
+
+---
+
+# 15.
+
+Ravi is one of the smartest **(A)** / boy in the class **(B)** / and everybody admires him. **(C)** / No error **(D)**
+
+### Answer: **B**
+
+### Solution:
+
+After “one of the”, plural noun is used.
+
+✅ Correct: **boys**
+
+---
+
+# 16.
+
+The principal along with the teachers **(A)** / were present at **(B)** / the annual function yesterday. **(C)** / No error **(D)**
+
+### Answer: **B**
+
+### Solution:
+
+Verb agrees with “principal”.
+
+✅ Correct: **was present**
+
+---
+
+# 17.
+
+She is married with **(A)** / a famous doctor **(B)** / from Mumbai. **(C)** / No error **(D)**
+
+### Answer: **A**
+
+### Solution:
+
+Use “married to”.
+
+✅ Correct: **married to**
+
+---
+
+# 18.
+
+No sooner did the meeting start **(A)** / when the electricity **(B)** / went off suddenly. **(C)** / No error **(D)**
+
+### Answer: **B**
+
+### Solution:
+
+“No sooner” takes “than”.
+
+✅ Correct: **than**
+
+---
+
+# 19.
+
+The poet and philosopher **(A)** / are invited to the event **(B)** / as the chief guest. **(C)** / No error **(D)**
+
+### Answer: **B**
+
+### Solution:
+
+Same person is both poet and philosopher.
+
+✅ Correct: **is invited**
+
+---
+
+# 20.
+
+She has been suffering **(A)** / from fever since **(B)** / the last three days. **(C)** / No error **(D)**
+
+### Answer: **B**
+
+### Solution:
+
+Use “for” with duration.
+
+✅ Correct: **for the last three days**
+
+---
+
+# 21.
+
+Either of the two answers **(A)** / are acceptable to **(B)** / the examiner. **(C)** / No error **(D)**
+
+### Answer: **B**
+
+### Solution:
+
+“Either” is singular.
+
+✅ Correct: **is acceptable**
+
+---
+
+# 22.
+
+The police has arrested **(A)** / the thief who escaped **(B)** / from the prison yesterday. **(C)** / No error **(D)**
+
+### Answer: **A**
+
+### Solution:
+
+“Police” is plural.
+
+✅ Correct: **have arrested**
+
+---
+
+# 23.
+
+He is good in **(A)** / mathematics but weak **(B)** / in chemistry. **(C)** / No error **(D)**
+
+### Answer: **A**
+
+### Solution:
+
+Use “good at”.
+
+✅ Correct: **good at**
+
+---
+
+# 24.
+
+The Ganges flow **(A)** / through several states **(B)** / of northern India. **(C)** / No error **(D)**
+
+### Answer: **A**
+
+### Solution:
+
+Singular subject.
+
+✅ Correct: **flows**
+
+---
+
+# 25.
+
+The sceneries of Kashmir **(A)** / attract thousands of **(B)** / tourists every year. **(C)** / No error **(D)**
+
+### Answer: **A**
+
+### Solution:
+
+“Scenery” has no plural form.
+
+✅ Correct: **The scenery**
+
+---
+
+# 26.
+
+He ordered for **(A)** / a cup of coffee **(B)** / and some sandwiches. **(C)** / No error **(D)**
+
+### Answer: **A**
+
+### Solution:
+
+“Order” does not take “for”.
+
+✅ Correct: **He ordered**
+
+---
+
+# 27.
+
+One must finish **(A)** / his work before **(B)** / you leave the office. **(C)** / No error **(D)**
+
+### Answer: **C**
+
+### Solution:
+
+Pronoun inconsistency.
+
+✅ Correct: **he leaves the office**
+
+---
+
+# 28.
+
+The child was punished **(A)** / because he told **(B)** / a lie to his parents. **(C)** / No error **(D)**
+
+### Answer: **D**
+
+### Solution:
+
+Sentence is grammatically correct.
+
+✅ No error.
+
+---
+
+# 29.
+
+She is capable to **(A)** / solve this difficult **(B)** / mathematical problem. **(C)** / No error **(D)**
+
+### Answer: **A**
+
+### Solution:
+
+“Capable” takes “of”.
+
+✅ Correct: **capable of solving**
+
+---
+
+# 30.
+
+The lecturer discussed about **(A)** / the new policy in **(B)** / detail during class. **(C)** / No error **(D)**
+
+### Answer: **A**
+
+### Solution:
+
+“Discuss” itself means talk about.
+
+✅ Correct: **discussed the new policy**
+
+---
+
+# 31.
+
+Many a student **(A)** / have failed in **(B)** / the examination this year. **(C)** / No error **(D)**
+
+### Answer: **B**
+
+### Solution:
+
+“Many a” takes singular verb.
+
+✅ Correct: **has failed**
+
+---
+
+# 32.
+
+He insisted on me **(A)** / attending the seminar **(B)** / without any excuse. **(C)** / No error **(D)**
+
+### Answer: **A**
+
+### Solution:
+
+Correct expression is “insisted that I attend” OR “insisted on my attending”.
+
+✅ Correct: **on my attending**
+
+---
+
+# 33.
+
+Neither of the players **(A)** / were able to score **(B)** / a goal in the match. **(C)** / No error **(D)**
+
+### Answer: **B**
+
+### Solution:
+
+“Neither” is singular.
+
+✅ Correct: **was able**
+
+---
+
+# 34.
+
+The number of applicants **(A)** / are increasing every year **(B)** / for this examination. **(C)** / No error **(D)**
+
+### Answer: **B**
+
+### Solution:
+
+“The number of” takes singular verb.
+
+✅ Correct: **is increasing**
+
+---
+
+# 35.
+
+He has been working here **(A)** / since five years **(B)** / as a senior manager. **(C)** / No error **(D)**
+
+### Answer: **B**
+
+### Solution:
+
+Use “for” with duration.
+
+✅ Correct: **for five years**
+
+---
+
+# 36.
+
+One of the employee **(A)** / was promoted to the post **(B)** / of regional manager. **(C)** / No error **(D)**
+
+### Answer: **A**
+
+### Solution:
+
+Plural noun needed.
+
+✅ Correct: **employees**
+
+---
+
+# 37.
+
+She prevented me **(A)** / to enter the building **(B)** / after office hours. **(C)** / No error **(D)**
+
+### Answer: **B**
+
+### Solution:
+
+“Prevent” takes “from + verb-ing”.
+
+✅ Correct: **from entering**
+
+---
+
+# 38.
+
+The jury was divided **(A)** / in their opinions regarding **(B)** / the final verdict. **(C)** / No error **(D)**
+
+### Answer: **B**
+
+### Solution:
+
+Plural pronoun needed because members are acting individually.
+
+✅ Correct: **its opinions** OR **were divided in their opinions**
+
+---
+
+# 39.
+
+The quality of the apples **(A)** / were not satisfactory **(B)** / according to the customers. **(C)** / No error **(D)**
+
+### Answer: **B**
+
+### Solution:
+
+Subject is “quality” (singular).
+
+✅ Correct: **was not satisfactory**
+
+---
+
+# 40.
+
+The teacher asked me **(A)** / why was I absent **(B)** / from school the previous day. **(C)** / No error **(D)**
+
+### Answer: **B**
+
+### Solution:
+
+Indirect speech uses statement order.
+
+✅ Correct: **why I was absent**
+
+
+
+# Error Detection MCQs with Solutions (11–20)
+
+---
+
+# 11.
+
+How people do **(A)** / to earn their bread **(B)** / is dependent largely on **(C)** / the locality where they live. **(D)** / No error **(E)**
+
+### Options:
+
+* A
+* B
+* C
+* D
+* E
+
+### Answer: **A**
+
+### Solution:
+
+The sentence needs “what” instead of “how people do”.
+
+✅ Correct sentence:
+**“What people do to earn their bread…”**
+
+---
+
+# 12.
+
+Your promotion depends **(A)** / on the number of **(B)** / projects your handling **(C)** / during the year. **(D)** / No error **(E)**
+
+### Options:
+
+* A
+* B
+* C
+* D
+* E
+
+### Answer: **C**
+
+### Solution:
+
+“Your” should be followed by a noun or gerund phrase.
+
+✅ Correct sentence:
+**“projects you are handling”**
+OR
+**“projects handled by you”**
+
+---
+
+# 13.
+
+When he asked **(A)** / why the machines **(B)** / were idle we told **(C)** / him It was broken. **(D)** / No error **(E)**
+
+### Options:
+
+* A
+* B
+* C
+* D
+* E
+
+### Answer: **D**
+
+### Solution:
+
+Pronoun error: “It” should be plural because “machines” is plural.
+
+✅ Correct sentence:
+**“they were broken.”**
+
+---
+
+# 14.
+
+The meeting will not end **(A)** / till the Chairman **(B)** / gets approval from every members of the Board. **(D)** / No error **(E)**
+
+### Options:
+
+* A
+* B
+* C
+* D
+* E
+
+### Answer: **D**
+
+### Solution:
+
+“Every” is followed by singular noun.
+
+✅ Correct sentence:
+**“every member of the Board.”**
+
+---
+
+# 15.
+
+The dog leapt **(A)** / forward, breaking **(B)** / free from **(C)** / it’s owner’s grasp. **(D)** / No error **(E)**
+
+### Options:
+
+* A
+* B
+* C
+* D
+* E
+
+### Answer: **D**
+
+### Solution:
+
+“It's” means “it is.” Possessive form should be “its”.
+
+✅ Correct sentence:
+**“its owner’s grasp.”**
+
+---
+
+# 16.
+
+You cannot change **(A)** / people, but you **(B)** / can definitely **(C)** / change own. **(D)** / No error **(E)**
+
+### Options:
+
+* A
+* B
+* C
+* D
+* E
+
+### Answer: **D**
+
+### Solution:
+
+Reflexive pronoun is required.
+
+✅ Correct sentence:
+**“change yourself.”**
+
+---
+
+# 17.
+
+The scheme has been **(A)** / implemented only in these **(B)** / part of the country and the **(C)** / Prime Minister will visit it shortly. **(D)** / No error **(E)**
+
+### Options:
+
+* A
+* B
+* C
+* D
+* E
+
+### Answer: **B**
+
+### Solution:
+
+“These” is plural, so noun should also be plural.
+
+✅ Correct sentence:
+**“these parts of the country”**
+
+---
+
+# 18.
+
+None else **(A)** / should be held responsible **(B)** / for this accident **(C)** / and the loss. **(D)** / No error **(E)**
+
+### Options:
+
+* A
+* B
+* C
+* D
+* E
+
+### Answer: **A**
+
+### Solution:
+
+Correct expression is “No one else” or “None other”.
+
+✅ Correct sentence:
+**“No one else should be held responsible…”**
+
+---
+
+# 19.
+
+Which **(A)** / do you prefer, **(B)** / more meat **(C)** / or fish? **(D)** / No error **(E)**
+
+### Options:
+
+* A
+* B
+* C
+* D
+* E
+
+### Answer: **C**
+
+### Solution:
+
+“Prefer” itself expresses comparison; “more” is unnecessary.
+
+✅ Correct sentence:
+**“do you prefer, meat or fish?”**
+
+---
+
+# 20.
+
+In the present guidelines, **(A)** / the bank Is required to obtain **(B)** / a photograph from any person **(C)** / who wishes to open an account. **(D)** / No error **(E)**
+
+### Options:
+
+* A
+* B
+* C
+* D
+* E
+
+### Answer: **A**
+
+### Solution:
+
+Incorrect preposition usage.
+
+✅ Correct sentence:
+**“Under the present guidelines…”**

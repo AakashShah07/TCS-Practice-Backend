@@ -1,2 +1,10 @@
 node_modules/
 .env
+.aider*
+
+# Unnecessary files
+*.pdf
+*.xlsx
+Question.txt
+SpeedTime.txt
+SystemIt_que.txt

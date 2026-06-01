@@ -1,6 +1,6 @@
 require('dotenv').config();
 const mongoose = require('mongoose');
-const Question = require('../models/Question');
+const PassageQuestion = require('../models/PassageQuestion');
 const Test = require('../models/Test');
 const questions = require('./passage_fill_in_the_blank.json');
 
@@ -10,8 +10,17 @@ const seed = async () => {
     await mongoose.connect(mongoURI);
     console.log('MongoDB connected...');
 
+    // Tag any existing passage FITB docs that lack the discriminator key
+    const tagged = await mongoose.connection.db.collection('questions').updateMany(
+      { topic: 'Passage Fill in the Blank', __t: { $exists: false } },
+      { $set: { __t: 'PassageQuestion' } }
+    );
+    if (tagged.modifiedCount > 0) {
+      console.log(`Tagged ${tagged.modifiedCount} existing questions with PassageQuestion discriminator`);
+    }
+
     // Insert questions (skip duplicates)
-    const inserted = await Question.insertMany(questions, { ordered: false }).catch((err) => {
+    const inserted = await PassageQuestion.insertMany(questions, { ordered: false }).catch((err) => {
       if (err.code === 11000) {
         const count = err.insertedDocs?.length || err.result?.insertedCount || 0;
         console.log(`Inserted ${count} new questions (skipped duplicates)`);
@@ -22,11 +31,11 @@ const seed = async () => {
     console.log(`Inserted ${inserted.length} Passage Fill in the Blank questions`);
 
     // Show summary
-    const total = await Question.countDocuments({ topic: 'Passage Fill in the Blank' });
+    const total = await PassageQuestion.countDocuments({ topic: 'Passage Fill in the Blank' });
     console.log(`Total Passage FITB questions in DB: ${total}`);
 
     // Create the test
-    const pool = await Question.find({ section: 'verbal', topic: 'Passage Fill in the Blank' }).select('_id');
+    const pool = await PassageQuestion.find({ section: 'verbal', topic: 'Passage Fill in the Blank' }).select('_id');
     console.log(`Found ${pool.length} questions for test`);
 
     await Test.deleteMany({ topic: 'Passage Fill in the Blank', type: 'topic_practice' });

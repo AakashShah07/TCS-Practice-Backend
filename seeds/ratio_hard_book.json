@@ -1,0 +1,371 @@
+[
+  {
+    "text": "If a : b = 7 : 9 and b : c = 15 : 7, then what is a : c?",
+    "options": ["3 : 5", "5 : 3", "7 : 15", "7 : 21"],
+    "correctAnswer": 1,
+    "section": "numerical",
+    "topic": "Ratio & Percentage",
+    "difficulty": "hard",
+    "explanation": "a/b = 7/9, b/c = 15/7. a/c = (a/b) × (b/c) = (7/9) × (15/7) = 15/9 = 5/3. Answer: 5 : 3."
+  },
+  {
+    "text": "If A : B = 2 : 3, B : C = 4 : 5 and C : D = 6 : 7, then A : B : C : D is",
+    "options": ["16 : 22 : 30 : 35", "16 : 24 : 15 : 35", "16 : 24 : 30 : 35", "18 : 24 : 30 : 35"],
+    "correctAnswer": 2,
+    "section": "numerical",
+    "topic": "Ratio & Percentage",
+    "difficulty": "hard",
+    "explanation": "A:B = 2:3 = 8:12, B:C = 4:5 = 12:15, so A:B:C = 8:12:15. C:D = 6:7 → make C = 30: A:B:C = 16:24:30, C:D = 30:35. A:B:C:D = 16:24:30:35."
+  },
+  {
+    "text": "If x : y = 3 : 4, then the value of (2x + 3y) : (3y − 2x) is",
+    "options": ["2 : 1", "3 : 1", "3 : 2", "21 : 1"],
+    "correctAnswer": 1,
+    "section": "numerical",
+    "topic": "Ratio & Percentage",
+    "difficulty": "hard",
+    "explanation": "Let x = 3k, y = 4k. 2x + 3y = 6k + 12k = 18k. 3y − 2x = 12k − 6k = 6k. Ratio = 18k : 6k = 3 : 1."
+  },
+  {
+    "text": "If x : y = 3 : 2, then the ratio (2x² + 3y²) : (3x² − 2y²) is equal to",
+    "options": ["5 : 3", "6 : 5", "12 : 5", "30 : 19"],
+    "correctAnswer": 3,
+    "section": "numerical",
+    "topic": "Ratio & Percentage",
+    "difficulty": "hard",
+    "explanation": "Let x = 3k, y = 2k. 2x² + 3y² = 2(9k²) + 3(4k²) = 18k² + 12k² = 30k². 3x² − 2y² = 3(9k²) − 2(4k²) = 27k² − 8k² = 19k². Ratio = 30 : 19."
+  },
+  {
+    "text": "If x : y = 3 : 1, then (x³ − y³) : (x³ + y³) is equal to",
+    "options": ["10 : 11", "11 : 10", "13 : 14", "14 : 13"],
+    "correctAnswer": 2,
+    "section": "numerical",
+    "topic": "Ratio & Percentage",
+    "difficulty": "hard",
+    "explanation": "Let x = 3k, y = k. x³ − y³ = 27k³ − k³ = 26k³. x³ + y³ = 27k³ + k³ = 28k³. Ratio = 26 : 28 = 13 : 14."
+  },
+  {
+    "text": "If (x + y) : (x − y) = 4 : 1, then (x² + y²) : (x² − y²) is equal to",
+    "options": ["17 : 8", "8 : 17", "25 : 9", "9 : 25"],
+    "correctAnswer": 0,
+    "section": "numerical",
+    "topic": "Ratio & Percentage",
+    "difficulty": "hard",
+    "explanation": "(x+y)/(x−y) = 4. So x+y = 4x−4y → 5y = 3x → x/y = 5/3. x² + y² = 25 + 9 = 34, x² − y² = 25 − 9 = 16. Ratio = 34 : 16 = 17 : 8."
+  },
+  {
+    "text": "If a : b : c = 2 : 3 : 4 and 2a − 3b + 4c = 33, then the value of c is",
+    "options": ["6", "9", "12", "66/7"],
+    "correctAnswer": 2,
+    "section": "numerical",
+    "topic": "Ratio & Percentage",
+    "difficulty": "hard",
+    "explanation": "Let a = 2k, b = 3k, c = 4k. 2(2k) − 3(3k) + 4(4k) = 4k − 9k + 16k = 11k = 33. k = 3. c = 4 × 3 = 12."
+  },
+  {
+    "text": "Profits of a business are divided among three partners A, B and C in such a way that 4 times the amount received by A is equal to 6 times the amount received by B and 11 times the amount received by C. The ratio in which the three received the amount is",
+    "options": ["4 : 6 : 11", "11 : 6 : 4", "33 : 22 : 12", "1/4 : 1/6 : 1/11"],
+    "correctAnswer": 2,
+    "section": "numerical",
+    "topic": "Ratio & Percentage",
+    "difficulty": "hard",
+    "explanation": "4A = 6B = 11C = k. A = k/4, B = k/6, C = k/11. A : B : C = 1/4 : 1/6 : 1/11 = 33 : 22 : 12 (multiplying by 132)."
+  },
+  {
+    "text": "If the income of A is 10% more than that of B and the income of B is 20% less than that of C, then the incomes of A, B and C are in the ratio",
+    "options": ["11 : 10 : 8", "22 : 20 : 25", "10 : 9 : 7", "22 : 18 : 25"],
+    "correctAnswer": 1,
+    "section": "numerical",
+    "topic": "Ratio & Percentage",
+    "difficulty": "hard",
+    "explanation": "B = 80% of C = 4C/5. A = 110% of B = 11B/10 = 11(4C/5)/10 = 44C/50 = 22C/25. A : B : C = 22C/25 : 4C/5 : C = 22 : 20 : 25."
+  },
+  {
+    "text": "Rs. 16000 are to be distributed between A and B such that B gets Rs. 4000 less than A. The ratio of the amount received by A to that received by B is",
+    "options": ["1 : 3", "3 : 5", "5 : 3", "6 : 1"],
+    "correctAnswer": 2,
+    "section": "numerical",
+    "topic": "Ratio & Percentage",
+    "difficulty": "hard",
+    "explanation": "A + B = 16000 and A − B = 4000. Solving: A = 10000, B = 6000. Ratio = 10000 : 6000 = 5 : 3."
+  },
+  {
+    "text": "Seema and Meena divide a sum of Rs. 25000 in the ratio of 3 : 2 respectively. If Rs. 5000 is added to each of their shares, what would be the new ratio formed?",
+    "options": ["2 : 3", "3 : 4", "5 : 4", "4 : 3"],
+    "correctAnswer": 3,
+    "section": "numerical",
+    "topic": "Ratio & Percentage",
+    "difficulty": "hard",
+    "explanation": "Seema = 25000 × 3/5 = 15000, Meena = 10000. After adding 5000: 20000 : 15000 = 4 : 3."
+  },
+  {
+    "text": "An amount of Rs. 53 is divided among A, B and C such that A gets Rs. 7 more than B and B gets Rs. 8 more than C. What is the ratio of their shares?",
+    "options": ["15 : 8 : 30", "16 : 9 : 18", "18 : 25 : 10", "25 : 18 : 10"],
+    "correctAnswer": 3,
+    "section": "numerical",
+    "topic": "Ratio & Percentage",
+    "difficulty": "hard",
+    "explanation": "Let C = x. B = x + 8, A = x + 15. Sum = 3x + 23 = 53. x = 10. A = 25, B = 18, C = 10. Ratio = 25 : 18 : 10."
+  },
+  {
+    "text": "If an amount of Rs. 1,50,000 is shared among A, B and C in the ratio 2 : 3 : 5, then A receives the same as from another sum shared in the ratio 5 : 3 : 2. The ratio of Rs. 1,50,000 to the second sum is",
+    "options": ["2 : 3", "3 : 2", "5 : 2", "5 : 3"],
+    "correctAnswer": 2,
+    "section": "numerical",
+    "topic": "Ratio & Percentage",
+    "difficulty": "hard",
+    "explanation": "A's share from 1st sum = 150000 × 2/10 = 30000. From 2nd sum of x: A gets 5x/10 = x/2. So x/2 = 30000, x = 60000. Ratio = 150000 : 60000 = 5 : 2."
+  },
+  {
+    "text": "A man distributes Rs. 165000 among his daughter, wife and son in such a manner that 1/2 of daughter's share, 1/4 of wife's share and 1/5 of son's share are equal. The daughter's share is",
+    "options": ["Rs. 15000", "Rs. 30000", "Rs. 45000", "Rs. 60000"],
+    "correctAnswer": 1,
+    "section": "numerical",
+    "topic": "Ratio & Percentage",
+    "difficulty": "hard",
+    "explanation": "D/2 = W/4 = S/5 = k. D = 2k, W = 4k, S = 5k. Total = 11k = 165000. k = 15000. Daughter's share = 2 × 15000 = Rs. 30000."
+  },
+  {
+    "text": "Rs. 33630 are divided among A, B and C in such a manner that the ratio of the amount of A to that of B is 3 : 7 and the ratio of the amount of B to that of C is 6 : 5. The amount of money received by B is",
+    "options": ["Rs. 12390", "Rs. 13290", "Rs. 14868", "Rs. 16257"],
+    "correctAnswer": 2,
+    "section": "numerical",
+    "topic": "Ratio & Percentage",
+    "difficulty": "hard",
+    "explanation": "A : B = 3 : 7, B : C = 6 : 5. Make B common: A : B = 18 : 42, B : C = 42 : 35. A : B : C = 18 : 42 : 35. Sum = 95. B = 33630 × 42/95 = Rs. 14868."
+  },
+  {
+    "text": "In an innings of a cricket match, three players A, B and C scored a total of 361 runs. If the ratio of the number of runs scored by A to that scored by B and also the ratio of runs scored by B to that scored by C be 3 : 2, the number of runs scored by A was",
+    "options": ["161", "171", "181", "185"],
+    "correctAnswer": 1,
+    "section": "numerical",
+    "topic": "Ratio & Percentage",
+    "difficulty": "hard",
+    "explanation": "A : B = 3 : 2, B : C = 3 : 2. Make B common: A : B = 9 : 6, B : C = 6 : 4. A : B : C = 9 : 6 : 4. Sum = 19. A = 361 × 9/19 = 171."
+  },
+  {
+    "text": "Rs. 8400 are divided among A, B, C and D in such a way that the shares of A and B, B and C, and C and D are in the ratios of 2 : 3, 4 : 5 and 6 : 7 respectively. The share of A is",
+    "options": ["Rs. 1280", "Rs. 1320", "Rs. 8210", "Rs. 8400"],
+    "correctAnswer": 0,
+    "section": "numerical",
+    "topic": "Ratio & Percentage",
+    "difficulty": "hard",
+    "explanation": "A:B = 2:3 = 8:12. B:C = 4:5 = 12:15. A:B:C = 8:12:15. C:D = 6:7. Make C common (LCM 15,6=30): A:B:C = 16:24:30, C:D = 30:35. A:B:C:D = 16:24:30:35. Sum = 105. A = 8400 × 16/105 = Rs. 1280."
+  },
+  {
+    "text": "A sum of Rs. 1300 is divided among P, Q, R and S such that P's share / Q's share = Q's share / R's share = R's share / S's share = 2/3. P's share is",
+    "options": ["Rs. 140", "Rs. 160", "Rs. 240", "Rs. 320"],
+    "correctAnswer": 1,
+    "section": "numerical",
+    "topic": "Ratio & Percentage",
+    "difficulty": "hard",
+    "explanation": "P : Q : R : S = 1 : 3/2 : 9/4 : 27/8 = 8 : 12 : 18 : 27. Sum = 65. P = 1300 × 8/65 = Rs. 160."
+  },
+  {
+    "text": "Rs. 2010 is to be divided among A, B and C such that if A gets Rs. 5, B gets Rs. 12 and if B gets Rs. 4, C gets Rs. 5.50. The share of C will exceed that of B by",
+    "options": ["Rs. 270", "Rs. 360", "Rs. 430", "Rs. 620"],
+    "correctAnswer": 0,
+    "section": "numerical",
+    "topic": "Ratio & Percentage",
+    "difficulty": "hard",
+    "explanation": "A : B = 5 : 12. B : C = 4 : 5.50 = 8 : 11. Make B common: A : B = 10 : 24, B : C = 24 : 33. A : B : C = 10 : 24 : 33. Sum = 67. B = 2010 × 24/67 = 720. C = 2010 × 33/67 = 990. C − B = Rs. 270."
+  },
+  {
+    "text": "Rs. 12540 is divided among A, B and C such that A receives 3/7 of what B and C together receive, and B receives 2/9 of what A and C together receive. The difference in the shares of A and B is",
+    "options": ["Rs. 1482", "Rs. 2736", "Rs. 4218", "Rs. 4320"],
+    "correctAnswer": 0,
+    "section": "numerical",
+    "topic": "Ratio & Percentage",
+    "difficulty": "hard",
+    "explanation": "A = 3/7 × (12540 − A) → 7A = 3(12540 − A) → 10A = 37620 → A = 3762. B = 2/9 × (12540 − B) → 9B = 2(12540 − B) → 11B = 25080 → B = 2280. A − B = Rs. 1482."
+  },
+  {
+    "text": "Rs. 671 is divided among A, B and C such that if their shares are increased by Rs. 3, Rs. 7 and Rs. 9 respectively, the new amounts are in the ratio 1 : 2 : 3. What is A's share?",
+    "options": ["Rs. 110", "Rs. 112", "Rs. 105", "Rs. 115"],
+    "correctAnswer": 1,
+    "section": "numerical",
+    "topic": "Ratio & Percentage",
+    "difficulty": "hard",
+    "explanation": "(A+3) : (B+7) : (C+9) = 1 : 2 : 3. Sum of new amounts = 671 + 19 = 690. A + 3 = 690/6 = 115. A = Rs. 112."
+  },
+  {
+    "text": "Rs. 1087 is divided among A, B and C such that if Rs. 10, Rs. 12 and Rs. 15 are diminished from their shares respectively, the remainders are in the ratio 5 : 7 : 9. B's share is",
+    "options": ["Rs. 260", "Rs. 355", "Rs. 362", "Rs. 465"],
+    "correctAnswer": 2,
+    "section": "numerical",
+    "topic": "Ratio & Percentage",
+    "difficulty": "hard",
+    "explanation": "(A−10) : (B−12) : (C−15) = 5 : 7 : 9. Sum of remainders = 1087 − 37 = 1050. B − 12 = 1050 × 7/21 = 350. B = Rs. 362."
+  },
+  {
+    "text": "The ratio of income and expenditure of a person is 11 : 10. If he saves Rs. 9000 per annum, his monthly income is",
+    "options": ["Rs. 8000", "Rs. 8250", "Rs. 8500", "Rs. 8800"],
+    "correctAnswer": 1,
+    "section": "numerical",
+    "topic": "Ratio & Percentage",
+    "difficulty": "hard",
+    "explanation": "I : E = 11 : 10. Savings = I − E = 11x − 10x = x per month. Annual savings = 12x = 9000 → x = 750. Monthly income = 11 × 750 = Rs. 8250."
+  },
+  {
+    "text": "A sum of money is divided among A, B, C and D in the ratio 3 : 4 : 9 : 10. If the share of C is Rs. 2580 more than the share of B, then what is the total amount of A and D together?",
+    "options": ["Rs. 5676", "Rs. 6192", "Rs. 6708", "Rs. 7224"],
+    "correctAnswer": 2,
+    "section": "numerical",
+    "topic": "Ratio & Percentage",
+    "difficulty": "hard",
+    "explanation": "C − B = (9 − 4)x = 5x = 2580. x = 516. A + D = (3 + 10) × 516 = 13 × 516 = Rs. 6708."
+  },
+  {
+    "text": "The ratio of the incomes of Ram and Shyam is 7 : 17 and that of Shyam and Sohan is 7 : 17. If the income of Ram is Rs. 490, what is the income of Sohan?",
+    "options": ["Rs. 490", "Rs. 1190", "Rs. 2790", "Rs. 2890"],
+    "correctAnswer": 3,
+    "section": "numerical",
+    "topic": "Ratio & Percentage",
+    "difficulty": "hard",
+    "explanation": "Ram : Shyam = 7 : 17. Ram = 490, Shyam = 490 × 17/7 = 1190. Shyam : Sohan = 7 : 17. Sohan = 1190 × 17/7 = Rs. 2890."
+  },
+  {
+    "text": "Two numbers are in the ratio 3 : 4. If the difference of their squares is 63, the numbers are",
+    "options": ["8, 12", "9, 12", "12, 15", "16, 20"],
+    "correctAnswer": 1,
+    "section": "numerical",
+    "topic": "Ratio & Percentage",
+    "difficulty": "hard",
+    "explanation": "Let numbers be 3x and 4x. (4x)² − (3x)² = 16x² − 9x² = 7x² = 63. x² = 9, x = 3. Numbers: 9 and 12."
+  },
+  {
+    "text": "If A : B = 4 : 5, B : C = 7 : 9 and C : D = 3 : 4, and if A's share is Rs. 1680, then D's share is",
+    "options": ["Rs. 2100", "Rs. 2700", "Rs. 2900", "Rs. 3600"],
+    "correctAnswer": 3,
+    "section": "numerical",
+    "topic": "Ratio & Percentage",
+    "difficulty": "hard",
+    "explanation": "A/D = (A/B)(B/C)(C/D) = (4/5)(7/9)(3/4) = 84/180 = 7/15. D = A × 15/7 = 1680 × 15/7 = Rs. 3600."
+  },
+  {
+    "text": "Two numbers are in the ratio 17 : 45. One-third of the smaller is less than 1/5 of the bigger by 15. The smaller number is",
+    "options": ["25.5", "67.5", "76.5", "86.5"],
+    "correctAnswer": 2,
+    "section": "numerical",
+    "topic": "Ratio & Percentage",
+    "difficulty": "hard",
+    "explanation": "Let numbers be 17x and 45x. 45x/5 − 17x/3 = 15. 9x − 17x/3 = 15. (27x − 17x)/3 = 15. 10x/3 = 15. x = 4.5. Smaller = 17 × 4.5 = 76.5."
+  },
+  {
+    "text": "Three numbers A, B and C are in the ratio of 12 : 15 : 25. If the sum of these numbers is 312, the ratio between the difference of B and A and the difference of C and B is",
+    "options": ["3 : 7", "5 : 1", "3 : 10", "10 : 3"],
+    "correctAnswer": 2,
+    "section": "numerical",
+    "topic": "Ratio & Percentage",
+    "difficulty": "hard",
+    "explanation": "12k + 15k + 25k = 52k = 312. k = 6. A = 72, B = 90, C = 150. B − A = 18, C − B = 60. Ratio = 18 : 60 = 3 : 10."
+  },
+  {
+    "text": "Incomes of A, B and C are in the ratio 7 : 9 : 12 and their expenditures are in the ratio 8 : 9 : 15. If A saves 1/4 of his income, then the ratio of their savings is",
+    "options": ["56 : 99 : 69", "33 : 19 : 23", "15 : 28 : 27", "56 : 69 : 99"],
+    "correctAnswer": 0,
+    "section": "numerical",
+    "topic": "Ratio & Percentage",
+    "difficulty": "hard",
+    "explanation": "A's income = 7x, saves 7x/4, exp = 21x/4 = 8y → y = 21x/32. B's savings = 9x − 9(21x/32) = 99x/32. C's savings = 12x − 15(21x/32) = 69x/32. A's savings = 56x/32. Ratio = 56 : 99 : 69."
+  },
+  {
+    "text": "The incomes of Mr. Gupta and Mr. Verma are in the ratio 9 : 4 and their expenditures are in the ratio 7 : 3. If each saves Rs. 2000, then Mr. Gupta's expenditure is",
+    "options": ["Rs. 60000", "Rs. 70000", "Rs. 80000", "Rs. 90000"],
+    "correctAnswer": 1,
+    "section": "numerical",
+    "topic": "Ratio & Percentage",
+    "difficulty": "hard",
+    "explanation": "I_G = 9x, I_V = 4x. E_G = 7y, E_V = 3y. 9x − 7y = 2000, 4x − 3y = 2000. Subtracting: 5x − 4y = 0 → y = 5x/4. 9x − 7(5x/4) = 2000 → x/4 = 2000 → x = 8000. E_G = 7y = 7(5×8000/4) = Rs. 70000."
+  },
+  {
+    "text": "Salaries of A and B are in the ratio 9 : 4. When A's salary is increased by 15%, it becomes Rs. 5175. What is B's salary?",
+    "options": ["Rs. 2000", "Rs. 2500", "Rs. 4000", "Rs. 4500"],
+    "correctAnswer": 0,
+    "section": "numerical",
+    "topic": "Ratio & Percentage",
+    "difficulty": "hard",
+    "explanation": "115% of 9x = 5175 → 9x = 5175/1.15 = 4500 → x = 500. B's salary = 4 × 500 = Rs. 2000."
+  },
+  {
+    "text": "The sum of the salaries of A and B is Rs. 2100. A spends 80% of his salary and B spends 70% of his salary. If their savings are in the proportion of 4 : 3, what is the salary of A?",
+    "options": ["Rs. 700", "Rs. 900", "Rs. 1200", "Rs. 1400"],
+    "correctAnswer": 3,
+    "section": "numerical",
+    "topic": "Ratio & Percentage",
+    "difficulty": "hard",
+    "explanation": "A saves 20%, B saves 30%. Savings ratio: 0.2A : 0.3B = 4 : 3 → 0.2A/0.3B = 4/3 → A/B = (4 × 0.3)/(3 × 0.2) = 2. A : B = 2 : 1. A = 2100 × 2/3 = Rs. 1400."
+  },
+  {
+    "text": "The ratio of incomes of two persons is 5 : 3 and that of their expenditures is 9 : 5. If they save Rs. 2600 and Rs. 1800 respectively, their incomes are",
+    "options": ["Rs. 6000, Rs. 3600", "Rs. 7000, Rs. 4200", "Rs. 7500, Rs. 4500", "Rs. 8000, Rs. 4800"],
+    "correctAnswer": 3,
+    "section": "numerical",
+    "topic": "Ratio & Percentage",
+    "difficulty": "hard",
+    "explanation": "I_A = 5x, I_B = 3x. E_A = 9y, E_B = 5y. 5x − 9y = 2600, 3x − 5y = 1800. From 2nd: y = (3x−1800)/5. Substituting: 5x − 9(3x−1800)/5 = 2600 → 25x − 27x + 16200 = 13000 → 2x = 3200 → x = 1600. Incomes: Rs. 8000 and Rs. 4800."
+  },
+  {
+    "text": "Two numbers are in the ratio 7 : 11. If 7 is added to each of the numbers, the ratio becomes 2 : 3. The smaller number is",
+    "options": ["39", "49", "66", "77"],
+    "correctAnswer": 1,
+    "section": "numerical",
+    "topic": "Ratio & Percentage",
+    "difficulty": "hard",
+    "explanation": "(7x + 7) / (11x + 7) = 2/3. 21x + 21 = 22x + 14. x = 7. Smaller number = 7 × 7 = 49."
+  },
+  {
+    "text": "The ratio of milk and water in 80 litres of a mixture is 7 : 3. The water (in litres) to be added to make the ratio 2 : 1 is",
+    "options": ["4", "5", "6", "8"],
+    "correctAnswer": 0,
+    "section": "numerical",
+    "topic": "Ratio & Percentage",
+    "difficulty": "hard",
+    "explanation": "Milk = 80 × 7/10 = 56 litres. Water = 24 litres. For ratio 2:1 (milk:water): 56/(24 + x) = 2/1. 24 + x = 28. x = 4 litres."
+  },
+  {
+    "text": "In a certain company, the ratio of the number of managers to the number of production-line workers is 5 to 72. If 8 additional production-line workers were to be hired, the ratio would become 5 to 74. How many managers does the company have?",
+    "options": ["10", "20", "25", "30"],
+    "correctAnswer": 1,
+    "section": "numerical",
+    "topic": "Ratio & Percentage",
+    "difficulty": "hard",
+    "explanation": "M : P = 5 : 72. M = 5k, P = 72k. New: 5k/(72k + 8) = 5/74. 370k = 360k + 40. 10k = 40. k = 4. Managers = 5 × 4 = 20."
+  },
+  {
+    "text": "Two numbers are in the ratio 2 : 3. If 2 is subtracted from the first and 2 is added to the second, the ratio becomes 1 : 2. The sum of the numbers is",
+    "options": ["10", "24", "28", "30"],
+    "correctAnswer": 3,
+    "section": "numerical",
+    "topic": "Ratio & Percentage",
+    "difficulty": "hard",
+    "explanation": "Let numbers be 2x and 3x. (2x − 2)/(3x + 2) = 1/2. 4x − 4 = 3x + 2. x = 6. Sum = 12 + 18 = 30."
+  },
+  {
+    "text": "The ratio of number of boys to that of girls in a group becomes 2 : 1 when 15 girls leave. But afterwards, when 45 boys also leave, the ratio becomes 1 : 5. Originally the number of girls in the group was",
+    "options": ["20", "30", "40", "50"],
+    "correctAnswer": 2,
+    "section": "numerical",
+    "topic": "Ratio & Percentage",
+    "difficulty": "hard",
+    "explanation": "After 15 girls leave: B/(G−15) = 2/1 → B = 2(G−15). After 45 boys leave: (B−45)/(G−15) = 1/5 → 5(B−45) = G−15. Substituting: 5(2G−30−45) = G−15 → 10G−375 = G−15 → 9G = 360 → G = 40."
+  },
+  {
+    "text": "Two natural numbers are in the ratio 3 : 5 and their product is 2160. The smaller number is",
+    "options": ["12", "18", "24", "36"],
+    "correctAnswer": 3,
+    "section": "numerical",
+    "topic": "Ratio & Percentage",
+    "difficulty": "hard",
+    "explanation": "Let numbers be 3x and 5x. 3x × 5x = 15x² = 2160. x² = 144. x = 12. Smaller number = 3 × 12 = 36."
+  },
+  {
+    "text": "The average age of three boys is 25 years and their ages are in the proportion 3 : 5 : 7. The age of the youngest boy is",
+    "options": ["9 years", "15 years", "18 years", "21 years"],
+    "correctAnswer": 1,
+    "section": "numerical",
+    "topic": "Ratio & Percentage",
+    "difficulty": "hard",
+    "explanation": "Total age = 75 years. 3x + 5x + 7x = 15x = 75. x = 5. Youngest = 3 × 5 = 15 years."
+  }
+]

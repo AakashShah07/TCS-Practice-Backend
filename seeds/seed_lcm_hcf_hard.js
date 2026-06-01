@@ -1,7 +1,7 @@
 require('dotenv').config();
 const mongoose = require('mongoose');
 const Question = require('../models/Question');
-const questions = require('./time_and_work.json');
+const questions = require('./lcm_hcf_hard.json');
 
 const seed = async () => {
   try {
@@ -9,14 +9,11 @@ const seed = async () => {
     await mongoose.connect(mongoURI);
     console.log('MongoDB connected...');
 
-    const deleted = await Question.deleteMany({ topic: 'Time & Work' });
-    console.log(`Deleted ${deleted.deletedCount} existing Time & Work questions`);
-
     const inserted = await Question.insertMany(questions);
-    console.log(`Inserted ${inserted.length} Time & Work questions`);
+    console.log(`Inserted ${inserted.length} hard LCM & HCF questions`);
 
-    const total = await Question.countDocuments({ topic: 'Time & Work' });
-    console.log(`Total Time & Work questions in DB: ${total}`);
+    const total = await Question.countDocuments({ topic: 'LCM & HCF' });
+    console.log(`Total LCM & HCF questions in DB: ${total}`);
 
     mongoose.connection.close();
     process.exit(0);

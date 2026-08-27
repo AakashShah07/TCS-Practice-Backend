@@ -58,6 +58,7 @@ app.use('/api/results', require('./routes/results'));
 app.use('/api/analytics', require('./routes/analytics'));
 app.use('/api/admin', require('./routes/admin'));
 app.use('/api/coding', require('./routes/coding'));
+app.use('/api/payment', require('./routes/payment'));
 
 // Error handler
 app.use(errorHandler);

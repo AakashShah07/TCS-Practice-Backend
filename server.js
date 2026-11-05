@@ -10,8 +10,10 @@ const errorHandler = require('./middleware/errorHandler');
 // Register Mongoose discriminators so populate resolves them
 require('./models/PassageQuestion');
 
-// Connect to database
-connectDB();
+// Connect to database (tests manage their own connection)
+if (process.env.NODE_ENV !== 'test') {
+  connectDB();
+}
 
 const app = express();
 
@@ -63,7 +65,11 @@ app.use('/api/payment', require('./routes/payment'));
 // Error handler
 app.use(errorHandler);
 
-const PORT = process.env.PORT || 5000;
-app.listen(PORT, () => {
-  console.log(`Server running on port ${PORT}`);
-});
+if (process.env.NODE_ENV !== 'test') {
+  const PORT = process.env.PORT || 5000;
+  app.listen(PORT, () => {
+    console.log(`Server running on port ${PORT}`);
+  });
+}
+
+module.exports = app;

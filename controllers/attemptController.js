@@ -12,6 +12,61 @@ function shuffle(arr) {
   return a;
 }
 
+// Extract the canonical passage body from a Reading Comprehension question text.
+// A Reading Comprehension question is written as:
+// "Read the passage: '...some text...' Which of the following ... ?"
+function extractReadingPassage(text) {
+  if (!text || typeof text !== 'string') return { passage: null, questionText: text || '' };
+
+  const match = text.match(/^Read the passage\s*:\s*['"“]([\s\S]*?)['"”]\s*(.*)$/i);
+  if (!match) {
+    return { passage: null, questionText: text };
+  }
+
+  const passage = match[1]?.trim();
+  const trailing = match[2]?.trim();
+  return {
+    passage: passage || '',
+    questionText: trailing || '',
+  };
+}
+
+function buildReadingComprehensionGroups(questionPool) {
+  const groups = new Map();
+
+  for (const question of questionPool) {
+    const { passage } = extractReadingPassage(question.text);
+    const normalizedKey = passage || question.text;
+
+    if (!groups.has(normalizedKey)) {
+      groups.set(normalizedKey, []);
+    }
+
+    groups.get(normalizedKey).push(question);
+  }
+
+  return Array.from(groups.values());
+}
+
+function selectReadingComprehensionIds(groups, requireCount) {
+  const shuffledGroups = shuffle(groups);
+  const selectedIds = [];
+
+  for (const group of shuffledGroups) {
+    const ids = group.map((q) => q._id);
+    const remainingSlots = requireCount - selectedIds.length;
+    if (remainingSlots <= 0) break;
+
+    if (ids.length <= remainingSlots) {
+      selectedIds.push(...ids);
+    } else {
+      selectedIds.push(...ids.slice(0, remainingSlots));
+    }
+  }
+
+  return selectedIds;
+}
+
 // @desc    Start a test attempt
 // @route   POST /api/attempts/start/:testId
 exports.startAttempt = async (req, res, next) => {
@@ -19,6 +74,11 @@ exports.startAttempt = async (req, res, next) => {
     const test = await Test.findById(req.params.testId);
     if (!test || !test.isActive) {
       return res.status(404).json({ success: false, message: 'Test not found or inactive' });
+    }
+
+    // Premium tests require an active premium membership (checked against the DB, not client claims)
+    if (test.isPremium && !req.user.isPremium) {
+      return res.status(403).json({ success: false, code: 'PREMIUM_REQUIRED', message: 'Premium subscription required' });
     }
 
     // Check for existing in-progress attempt
@@ -66,15 +126,37 @@ exports.startAttempt = async (req, res, next) => {
       for (const [section, count] of Object.entries(sectionCounts)) {
         const pool = await Question.find({ section }).select('_id text');
         const unique = dedupeByText(pool);
-        const shuffled = shuffle(unique.map((q) => q._id));
-        selectedQuestionIds.push(...shuffled.slice(0, Math.min(count, shuffled.length)));
+
+        const isReadingSection = section === 'verbal';
+        if (isReadingSection) {
+          const rcGroups = buildReadingComprehensionGroups(unique);
+          const rcIds = selectReadingComprehensionIds(rcGroups, Math.min(count, unique.length));
+          const remaining = Math.max(count - rcIds.length, 0);
+          if (remaining > 0) {
+            const nonRc = unique.filter((q) => !/Read the passage\s*:/i.test(q.text));
+            const shuffledNonRc = shuffle(nonRc.map((q) => q._id));
+            selectedQuestionIds.push(...rcIds, ...shuffledNonRc.slice(0, Math.min(remaining, shuffledNonRc.length)));
+          } else {
+            selectedQuestionIds.push(...rcIds);
+          }
+        } else {
+          const shuffled = shuffle(unique.map((q) => q._id));
+          selectedQuestionIds.push(...shuffled.slice(0, Math.min(count, shuffled.length)));
+        }
       }
     } else if (test.type === 'topic_practice' && test.topic) {
       // For topic practice: pick from questions matching that specific topic
       const pool = await Question.find({ section: test.section, topic: test.topic }).select('_id text');
       const unique = dedupeByText(pool);
-      const shuffled = shuffle(unique.map((q) => q._id));
-      selectedQuestionIds = shuffled.slice(0, Math.min(test.totalQuestions, shuffled.length));
+
+      const isReadingComprehensionTopic = /reading comprehension/i.test(test.topic);
+      if (isReadingComprehensionTopic) {
+        const groups = buildReadingComprehensionGroups(unique);
+        selectedQuestionIds = selectReadingComprehensionIds(groups, Math.min(test.totalQuestions, unique.length));
+      } else {
+        const shuffled = shuffle(unique.map((q) => q._id));
+        selectedQuestionIds = shuffled.slice(0, Math.min(test.totalQuestions, shuffled.length));
+      }
     } else if (test.section) {
       // For section tests: pick `totalQuestions` random questions from that section
       const pool = await Question.find({ section: test.section }).select('_id text');

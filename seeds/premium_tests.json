@@ -1,0 +1,13 @@
+[
+  {
+    "title": "Premium Hard Mock Exam 1",
+    "type": "full_mock",
+    "section": "advanced",
+    "topic": "Comprehensive Aptitude",
+    "totalQuestions": 79,
+    "duration": 7110,
+    "isPremium": true,
+    "isActive": true,
+    "questions": []
+  }
+]

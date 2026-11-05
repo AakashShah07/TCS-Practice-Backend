@@ -28,9 +28,24 @@ const userSchema = new mongoose.Schema(
       enum: ['user', 'admin'],
       default: 'user',
     },
-    refreshToken: {
+    isPremium: {
+      type: Boolean,
+      default: false,
+    },
+    subscriptionType: {
       type: String,
-      select: false,
+      enum: ['free', 'basic', 'pro'],
+      default: 'free',
+    },
+    subscriptionExpiry: {
+      type: Date,
+    },
+    // Authoritative session reference — only the session whose id matches
+    // this value is considered valid. Set atomically at login/refresh,
+    // cleared at logout/admin-revoke.
+    activeSessionId: {
+      type: String,
+      default: null,
     },
   },
   { timestamps: true }

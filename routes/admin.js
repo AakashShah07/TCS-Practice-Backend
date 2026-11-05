@@ -13,6 +13,8 @@ const {
   getDashboard,
   getUsers,
   getUserDetail,
+  updateUserPremium,
+  revokeUserSession,
 } = require('../controllers/adminController');
 const { protect, adminOnly } = require('../middleware/auth');
 const validate = require('../middleware/validate');
@@ -41,5 +43,7 @@ router.delete('/tests/:id', deleteTest);
 // Users
 router.get('/users', getUsers);
 router.get('/users/:id', getUserDetail);
+router.put('/users/:id/premium', updateUserPremium);
+router.put('/users/:id/revoke-session', revokeUserSession);
 
 module.exports = router;

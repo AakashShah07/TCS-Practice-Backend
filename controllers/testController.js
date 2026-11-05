@@ -5,12 +5,20 @@ const Question = require('../models/Question');
 // @route   GET /api/tests
 exports.getTests = async (req, res, next) => {
   try {
-    const { type, section } = req.query;
+    const { type, section, isPremium } = req.query;
     const filter = { isActive: true };
     if (type) filter.type = type;
     if (section) filter.section = section;
+    if (isPremium !== undefined) filter.isPremium = isPremium === 'true';
 
     const tests = await Test.find(filter).select('-questions');
+    
+    if (isPremium === 'true') {
+      tests.forEach(test => {
+        console.log(`Premium Test: ${test.title}, ID: ${test._id}, Total Questions: ${test.totalQuestions}`);
+      });
+    }
+
     res.json({ success: true, count: tests.length, data: tests });
   } catch (error) {
     next(error);
@@ -28,6 +36,11 @@ exports.getTest = async (req, res, next) => {
 
     if (!test) {
       return res.status(404).json({ success: false, message: 'Test not found' });
+    }
+
+    // Premium Check (DB-backed via protect → req.user)
+    if (test.isPremium && (!req.user || !req.user.isPremium)) {
+      return res.status(403).json({ success: false, code: 'PREMIUM_REQUIRED', message: 'Premium subscription required' });
     }
 
     res.json({ success: true, data: test });

@@ -3,6 +3,7 @@ const Test = require('../models/Test');
 const User = require('../models/User');
 const TestAttempt = require('../models/TestAttempt');
 const Result = require('../models/Result');
+const { revokeSession } = require('../utils/session');
 
 // ===== QUESTION MANAGEMENT =====
 
@@ -236,6 +237,54 @@ exports.getUserDetail = async (req, res, next) => {
         recentResults: results,
       },
     });
+  } catch (error) {
+    next(error);
+  }
+};
+
+// @desc    Revoke a user's active session (Admin only)
+// @route   PUT /api/admin/users/:id/revoke-session
+exports.revokeUserSession = async (req, res, next) => {
+  try {
+    const user = await User.findById(req.params.id);
+    if (!user) {
+      return res.status(404).json({ success: false, message: 'User not found' });
+    }
+
+    const sid = user.activeSessionId || null;
+    await revokeSession(user._id, sid, 'admin_revoked');
+
+    res.json({
+      success: true,
+      message: sid ? 'User session revoked' : 'User had no active session',
+      data: { userId: user._id, sessionRevoked: Boolean(sid) },
+    });
+  } catch (error) {
+    next(error);
+  }
+};
+
+// @desc    Update user premium status (Admin only)
+// @route   PUT /api/admin/users/:id/premium
+exports.updateUserPremium = async (req, res, next) => {
+  try {
+    const { isPremium, subscriptionType } = req.body;
+    const user = await User.findById(req.params.id);
+    if (!user) {
+      return res.status(404).json({ success: false, message: 'User not found' });
+    }
+
+    user.isPremium = isPremium !== undefined ? isPremium : user.isPremium;
+    user.subscriptionType = subscriptionType || user.subscriptionType;
+    if (user.isPremium) {
+      // Default to 1 year if becoming premium
+      user.subscriptionExpiry = new Date(Date.now() + 365 * 24 * 60 * 60 * 1000); 
+    } else {
+      user.subscriptionExpiry = null;
+    }
+
+    await user.save();
+    res.json({ success: true, data: user });
   } catch (error) {
     next(error);
   }

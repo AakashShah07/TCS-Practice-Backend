@@ -1,0 +1,249 @@
+# TCS NQT Practice Platform — Backend Project Init
+
+> Generated analysis of the backend as of 2026-11-04.
+> No source files were modified during this analysis.
+
+---
+
+## 1. Framework & Dependencies
+
+**Stack:** Node.js + **Express 5.2** + **MongoDB via Mongoose 9**, deployed as a
+**Vercel serverless function** (`vercel.json`, `@vercel/node`).
+
+| Package | Purpose |
+|---|---|
+| `express` ^5.2.1 | Web framework (v5 — note: new query-parser behavior) |
+| `mongoose` ^9.4.1 | MongoDB ODM |
+| `jsonwebtoken` | Access + refresh JWT auth |
+| `bcryptjs` | Password hashing (12 rounds) |
+| `cors` | CORS middleware |
+| `helmet` | Security headers |
+| `cookie-parser` | Cookie parsing |
+| `morgan` | HTTP request logging (dev only) |
+| `express-validator` | Request validation |
+| `express-rate-limit` | Rate limiting (only used on payment submit) |
+| `razorpay` | Installed + `utils/razorpay.js` exists, but **never used** — payments are manual UPI/UTR verification |
+| `nodemon` (dev) | Dev server with auto-reload |
+
+**Scripts:** `start`, `dev`, plus dozens of `seed:*` commands (each inserts question
+bank data). **No test framework** — zero automated tests.
+
+---
+
+## 2. Folder Structure
+
+```
+server.js               Entry point — DB connect, middleware, route mounting, debug endpoint
+config/                 db.js (mongo connect), products.js (premium-lifetime product config)
+models/                 User, Test, Question (+ PassageQuestion discriminator), TestAttempt,
+                        Result, UserAnalytics, Payment, CodingQuestion
+controllers/            authController, testController, attemptController, resultController,
+                        analyticsController, adminController, codingController, paymentController
+routes/                 Thin routers; admin routes use router.use(protect, adminOnly)
+middleware/             auth.js (protect + adminOnly), premiumCheck.js (defined but unused),
+                        validate.js (express-validator runner), errorHandler.js
+validators/             auth / question / test express-validator chains
+utils/                  generateToken, scoringEngine (result calculation),
+                        recommendationEngine (analytics + recommendations), razorpay (dead code)
+seeds/                  One-off seed scripts + JSON question banks (numerical/reasoning/verbal/...)
+scripts/                DB maintenance utilities
+```
+
+### Patterns
+
+- MVC-style layering (routes → controllers → models)
+- Centralized error handler (handles Mongoose ValidationError / CastError / duplicate-key)
+- Fisher–Yates shuffled random question selection per attempt
+- Resume-able attempts (in-progress attempts can resume within duration + 30s grace)
+- Section/topic scoring with time tracking
+- `UserAnalytics` updated after each submission (running averages, score history last 50)
+- Manual UPI → UTR → admin-approval payment flow for premium upgrades
+
+---
+
+## 3. Bugs & Security Issues
+
+### 🔴 Critical
+
+**1. Unauthenticated premium upgrade — `POST /api/auth/upgrade-premium`**
+In `routes/auth.js` this route has **no `protect` middleware**, and
+`authController.upgradePremium` accepts **any email in the request body** and sets
+`isPremium = true`, `subscriptionType = 'pro'`, 1-year expiry. Anyone can grant
+anyone (including themselves) premium for free with one request. This completely
+bypasses the entire payment flow.
+
+**2. Premium tests are accessible without paying — `startAttempt` lacks a premium check**
+`GET /api/tests/:id` correctly blocks premium tests for non-premium users, but
+`POST /api/attempts/start/:testId` (attemptController.js) never checks `test.isPremium`.
+A free user can start any premium test (and seeded premium `topic_practice` tests) by
+ID and receive the full question set. The `premiumOnly` middleware exists but is
+**imported in routes/tests.js and never used anywhere**.
+
+**3. Public debug endpoint leaks internals — `/api/debug/db`**
+`server.js` exposes DB host, DB name, collection counts, and **all test titles/IDs**
+with no auth. The source comment even says `REMOVE after debugging` — it is still present.
+
+**4. Payment flow grants premium without expiry and without approval-state checks**
+`approvePayment` sets `isPremium: true` but never sets `subscriptionType` or
+`subscriptionExpiry` (unlike the admin upgrade path, which sets 1 year). It also
+does not check whether the payment was already approved/rejected. Creates
+inconsistent premium state and allows redundant mutation.
+
+### 🟠 High
+
+**5. Race condition → duplicate results & double-counted analytics**
+`submitAttempt` does `findOne({ status: 'in_progress' })` → check → `save()` as
+separate non-atomic steps. Two concurrent submits both pass the check, both create
+`Result` documents and both increment analytics. Fix: atomic
+`findOneAndUpdate({ status: 'in_progress' }, ...)`. `Result` also has no unique
+index on `attempt`.
+
+**6. No server-side time enforcement / unbounded client-supplied values**
+- `saveAnswer` and `navigate` trust client-sent `timeSpent` and add it blindly —
+  negative or huge values skew all time analytics.
+- Answers are accepted even after the attempt's time limit expired; only submission
+  marks it `timed_out`.
+- No controller-level check that `selectedAnswer` is 0–3 (schema min/max catches it,
+  but as a Mongoose validation error rather than a clean 400).
+
+**7. Broken input validation → 500 crashes instead of 400s**
+- `saveAnswer`: `questionIndex` isn't checked to be an integer (`"abc"` passes both
+  comparisons; `responses["abc"]` is undefined → TypeError → 500).
+- `navigate`: `previousQuestion < responses.length` has no lower bound —
+  `previousQuestion = -1` → `responses[-1].timeSpent` throws → 500.
+- `parseInt()` used everywhere without radix and without upper bound on `limit`
+  pagination params (`?limit=10000000`).
+
+**8. CORS misconfiguration**
+`cors({ origin: true, credentials: true })` reflects **any** origin with credentials.
+Additionally, `vercel.json` sets `Access-Control-Allow-Origin: *` together with
+`Allow-Credentials: true` (an invalid/dangerous combo) for preflight requests.
+Practical impact is limited because auth uses Bearer headers (not cookies), but it
+defeats the purpose of CORS restrictions — should be an explicit allowlist of
+frontend origins.
+
+**9. No rate limiting on auth endpoints**
+Only `/api/payment/submit` is limited (5/hour). `/api/auth/login` and
+`/api/auth/register` are unlimited → credential brute-force, user enumeration,
+account spam. No lockout either.
+
+### 🟡 Medium
+
+**10. N+1 query in analytics — `getSectionAnalysis`**
+Inside a loop over every topic in `topicPerformance`, it runs
+`Result.find({ user })` **each iteration** — O(topics × results) DB round-trips.
+Fetch once, or use an aggregation pipeline.
+
+**11. Admin dashboard loads the entire results collection**
+`Result.find().select('percentage')` pulls **every result ever recorded** into memory
+to average them. Should be a Mongo `aggregate($group avg)`.
+
+**12. Mass assignment (admin-only, lower risk)**
+`addQuestion` / `updateQuestion` / `updateTest` pass raw `req.body` straight to
+Mongoose. Strict schema drops unknown fields, but explicit field whitelisting is safer.
+
+**13. `generatePracticeTest` creates a new `Test` document per request**
+For topics without a seeded test, every call inserts a new `topic_practice` Test into
+the DB — unbounded collection growth from ordinary user traffic. These dynamic tests
+are also never cleaned up.
+
+**14. Coding questions (with full solutions) are fully public**
+`/api/coding` routes have no `protect` at all — anyone can scrape all problems +
+brute-force/optimal solutions. Given the paid-premium model, this likely contradicts
+the business intent (verify against frontend expectations).
+
+**15. Error handler leaks internal messages in production**
+For non-Mongoose errors it always returns `err.message` (which may contain DB/driver
+internals) with HTTP 500. Only stack traces are dev-gated. Unknown 500s should return
+a generic message in production.
+
+**16. Refresh tokens stored in plaintext in DB; access tokens not revocable**
+Refresh tokens are compared directly against `user.refreshToken`. Hashing them would
+limit blast radius if the DB leaks. Acceptable trade-off in many apps, but worth flagging.
+
+**17. `express.json({ limit: '10mb' })`**
+Far larger than this API needs (question payloads are small); increases DoS surface.
+Reduce to ~100kb–1mb.
+
+### 🟢 Low / hygiene
+
+- `utils/razorpay.js` and the `razorpay` dependency are **dead code** (payment is
+  manual UTR) — remove or wire up properly. Same for `GROK_KEY` in `.env` if unused.
+- No JSON **404 handler** — unknown routes fall through to Express's default HTML 404.
+- `console.log` of premium test titles/IDs in `getTests` — noisy, leaks to logs.
+- Passwords minimum length 6 — weak; consider 8+.
+- `totalTime: undefined` leftover key in `scoringEngine.sectionWise` (silently dropped
+  by the strict schema, but sloppy).
+- Serverless: `connectDB()` runs per cold start with no cached connection across
+  invocations; `app.listen()` at module scope. Works on Vercel, but caching the
+  Mongoose connection globally is the recommended pattern to avoid connection storms.
+- Missing DB indexes: `Payment.user` / `Payment.status` (pending-list query path).
+- **Secrets hygiene (currently OK, but watch it):** `.env` and `rzp-key.csv` are
+  correctly gitignored and **not** in git history. They still sit in the working tree
+  alongside tracked files. If `rzp-key.csv` contains **live** Razorpay keys, rotate
+  them — never commit. Also `preeemi,json` (note comma — likely an accidental
+  filename) and large PDFs are repo clutter.
+- **No tests at all** — no Jest/Mocha; high regression risk for an auth + payments +
+  scoring system.
+- **Uncommitted working-tree changes** — modified files (`config/products.js`,
+  `controllers/*`, `routes/*`, `models/*`, `seeds/*.json`) and untracked files
+  (`PrimiumQuesiton.txt`, `RAZORPAY_FRONTEND.md`, `preeemi,json`, `seeds/premium_*.json`, …)
+  appear to be in-progress work; treat them as such.
+- `.aider.chat.history.md` — committed AI-chat logs can contain pasted secrets/prompts;
+  review before pushing.
+- Inconsistent docs: `API_PAYMENT.md` documents sending `amount` in the request body,
+  but the server correctly derives amount from `productId` — docs are stale/misleading.
+- `CLAUDE.md` says 15m access tokens; utils actually uses the `JWT_EXPIRE` env var.
+
+---
+
+## 4. Priority Fix List (recommended order)
+
+1. Delete or protect `/api/auth/upgrade-premium` (route does nothing legitimate).
+2. Add premium check to `startAttempt` (or apply `premiumOnly` consistently).
+3. Remove `/api/debug/db`.
+4. Make attempt submission atomic (`findOneAndUpdate` with `status: 'in_progress'`
+   filter) + unique index on `Result.attempt`.
+5. Validate `questionIndex` / `previousQuestion` / `timeSpent`; enforce the time limit
+   server-side.
+6. Fix CORS to an allowlist; add rate limiting to `/api/auth/*`.
+7. Fix N+1 in `getSectionAnalysis`; aggregate for admin avg score.
+8. Remove dead Razorpay code or complete the integration; tighten JSON body limit.
+
+---
+
+## 5. API Surface Summary
+
+| Prefix | Auth | Description |
+|---|---|---|
+| `/api/auth` | Mixed (register/login/refresh/upgrade-premium are PUBLIC) | Register, login, refresh, logout, me |
+| `/api/tests` | protect | List tests, get test, topics, practice questions, generate practice test |
+| `/api/attempts` | protect | Start, answer, navigate, mark review, tab-switch, submit |
+| `/api/results` | protect | History, detailed result, full question review |
+| `/api/analytics` | protect | Dashboard, section/topic performance, trends, recommendations |
+| `/api/admin` | protect + adminOnly | CRUD questions/tests, user management, dashboard stats |
+| `/api/coding` | **NONE (public)** | PYQ coding question solutions with brute force & optimal approaches |
+| `/api/payment` | protect (admin routes + adminOnly) | Manual UPI/UTR submission, admin approval → premium |
+| `/api/health` | public | Health check |
+| `/api/debug/db` | **PUBLIC — REMOVE** | Dumps DB host/name/counts/test list |
+
+---
+
+## 6. Environment Variables (names only — values never committed)
+
+`PORT`, `MONGO_URI`, `JWT_SECRET`, `JWT_REFRESH_SECRET`, `JWT_EXPIRE`,
+`JWT_REFRESH_EXPIRE`, `NODE_ENV`, `RAZORPAY_KEY_ID`, `RAZORPAY_KEY_SECRET`,
+`GROK_KEY` (unused?)
+
+Required for new code to run: at minimum `MONGO_URI`, `JWT_SECRET`, `JWT_REFRESH_SECRET`.
+
+---
+
+## 7. Notes for Future Work
+
+- User's uncommitted working-tree changes must not be discarded when refactoring auth/payment.
+- If live Razorpay keys exist in `rzp-key.csv`, rotate them immediately.
+- Decide and document the intended access model for `/api/coding` (public vs premium).
+- Add a test runner (Jest or Vitest) before making any of the critical fixes — auth and
+  scoring paths need regression coverage.
+- When fixing CORS, confirm the exact frontend origin(s) first (Vercel preview URLs vs prod).

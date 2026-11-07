@@ -1,71 +1,18 @@
 const TestAttempt = require('../models/TestAttempt');
 const Test = require('../models/Test');
 const Question = require('../models/Question');
+const QuestionGroup = require('../models/QuestionGroup');
+const {
+  selectQuestionIds,
+  buildQuestionAssemblies,
+} = require('../utils/questionSelection');
 
-// Fisher-Yates shuffle
-function shuffle(arr) {
-  const a = [...arr];
-  for (let i = a.length - 1; i > 0; i--) {
-    const j = Math.floor(Math.random() * (i + 1));
-    [a[i], a[j]] = [a[j], a[i]];
-  }
-  return a;
-}
+// Grace period (seconds) allowed beyond the configured duration before an
+// attempt is treated as expired. Matches the existing resume logic.
+const ATTEMPT_GRACE_SECONDS = 30;
 
-// Extract the canonical passage body from a Reading Comprehension question text.
-// A Reading Comprehension question is written as:
-// "Read the passage: '...some text...' Which of the following ... ?"
-function extractReadingPassage(text) {
-  if (!text || typeof text !== 'string') return { passage: null, questionText: text || '' };
-
-  const match = text.match(/^Read the passage\s*:\s*['"“]([\s\S]*?)['"”]\s*(.*)$/i);
-  if (!match) {
-    return { passage: null, questionText: text };
-  }
-
-  const passage = match[1]?.trim();
-  const trailing = match[2]?.trim();
-  return {
-    passage: passage || '',
-    questionText: trailing || '',
-  };
-}
-
-function buildReadingComprehensionGroups(questionPool) {
-  const groups = new Map();
-
-  for (const question of questionPool) {
-    const { passage } = extractReadingPassage(question.text);
-    const normalizedKey = passage || question.text;
-
-    if (!groups.has(normalizedKey)) {
-      groups.set(normalizedKey, []);
-    }
-
-    groups.get(normalizedKey).push(question);
-  }
-
-  return Array.from(groups.values());
-}
-
-function selectReadingComprehensionIds(groups, requireCount) {
-  const shuffledGroups = shuffle(groups);
-  const selectedIds = [];
-
-  for (const group of shuffledGroups) {
-    const ids = group.map((q) => q._id);
-    const remainingSlots = requireCount - selectedIds.length;
-    if (remainingSlots <= 0) break;
-
-    if (ids.length <= remainingSlots) {
-      selectedIds.push(...ids);
-    } else {
-      selectedIds.push(...ids.slice(0, remainingSlots));
-    }
-  }
-
-  return selectedIds;
-}
+const isExpired = (attempt, now = Date.now()) =>
+  (now - attempt.startedAt.getTime()) / 1000 > attempt.duration + ATTEMPT_GRACE_SECONDS;
 
 // @desc    Start a test attempt
 // @route   POST /api/attempts/start/:testId
@@ -88,11 +35,7 @@ exports.startAttempt = async (req, res, next) => {
       status: 'in_progress',
     });
     if (existing) {
-      // Check if the existing attempt has expired
-      const elapsed = (Date.now() - existing.startedAt.getTime()) / 1000;
-      const isExpired = elapsed > existing.duration + 30;
-
-      if (isExpired || req.body.forceNew) {
+      if (isExpired(existing) || req.body.forceNew) {
         // Mark old attempt as timed_out so a fresh one can be created
         existing.status = 'timed_out';
         existing.submittedAt = new Date();
@@ -106,66 +49,13 @@ exports.startAttempt = async (req, res, next) => {
       }
     }
 
-    // Pick random questions from the pool for this attempt
-    // Deduplicate by question text to avoid repeated questions from duplicate DB entries
-    function dedupeByText(questions) {
-      const seen = new Set();
-      return questions.filter((q) => {
-        if (seen.has(q.text)) return false;
-        seen.add(q.text);
-        return true;
-      });
-    }
+    // Select questions according to the test's strategy (fixed | random | auto).
+    // Fixed selection preserves configured order and expands groups into their
+    // ordered children, so a child question is never returned without its group.
+    const selectedQuestionIds = await selectQuestionIds(test);
 
-    let selectedQuestionIds;
-
-    if (test.type === 'full_mock') {
-      // For full mock: pick proportionally from each section
-      const sectionCounts = { numerical: 25, reasoning: 25, verbal: 25, advanced: 14 };
-      selectedQuestionIds = [];
-      for (const [section, count] of Object.entries(sectionCounts)) {
-        const pool = await Question.find({ section }).select('_id text');
-        const unique = dedupeByText(pool);
-
-        const isReadingSection = section === 'verbal';
-        if (isReadingSection) {
-          const rcGroups = buildReadingComprehensionGroups(unique);
-          const rcIds = selectReadingComprehensionIds(rcGroups, Math.min(count, unique.length));
-          const remaining = Math.max(count - rcIds.length, 0);
-          if (remaining > 0) {
-            const nonRc = unique.filter((q) => !/Read the passage\s*:/i.test(q.text));
-            const shuffledNonRc = shuffle(nonRc.map((q) => q._id));
-            selectedQuestionIds.push(...rcIds, ...shuffledNonRc.slice(0, Math.min(remaining, shuffledNonRc.length)));
-          } else {
-            selectedQuestionIds.push(...rcIds);
-          }
-        } else {
-          const shuffled = shuffle(unique.map((q) => q._id));
-          selectedQuestionIds.push(...shuffled.slice(0, Math.min(count, shuffled.length)));
-        }
-      }
-    } else if (test.type === 'topic_practice' && test.topic) {
-      // For topic practice: pick from questions matching that specific topic
-      const pool = await Question.find({ section: test.section, topic: test.topic }).select('_id text');
-      const unique = dedupeByText(pool);
-
-      const isReadingComprehensionTopic = /reading comprehension/i.test(test.topic);
-      if (isReadingComprehensionTopic) {
-        const groups = buildReadingComprehensionGroups(unique);
-        selectedQuestionIds = selectReadingComprehensionIds(groups, Math.min(test.totalQuestions, unique.length));
-      } else {
-        const shuffled = shuffle(unique.map((q) => q._id));
-        selectedQuestionIds = shuffled.slice(0, Math.min(test.totalQuestions, shuffled.length));
-      }
-    } else if (test.section) {
-      // For section tests: pick `totalQuestions` random questions from that section
-      const pool = await Question.find({ section: test.section }).select('_id text');
-      const unique = dedupeByText(pool);
-      const shuffled = shuffle(unique.map((q) => q._id));
-      selectedQuestionIds = shuffled.slice(0, Math.min(test.totalQuestions, shuffled.length));
-    } else {
-      // Fallback: use the test's fixed questions
-      selectedQuestionIds = shuffle(test.questions);
+    if (!selectedQuestionIds || selectedQuestionIds.length === 0) {
+      return res.status(400).json({ success: false, message: 'No questions available for this test' });
     }
 
     const responses = selectedQuestionIds.map((qId) => ({
@@ -196,17 +86,31 @@ exports.getAttemptState = async (req, res, next) => {
     const attempt = await TestAttempt.findOne({
       _id: req.params.id,
       user: req.user._id,
-    }).populate({
-      path: 'test',
-      select: 'title type section totalQuestions duration sectionLocked',
-    }).populate({
-      path: 'responses.question',
-      select: 'text options section topic',
-    });
+    })
+      .populate({
+        path: 'test',
+        select: 'title type section totalQuestions duration sectionLocked selectionMode',
+      })
+      .populate({
+        // Never expose correctAnswer or explanation during an active attempt.
+        path: 'responses.question',
+        select: 'text options section topic difficulty questionType media optionMedia groupId',
+      })
+      .lean();
 
     if (!attempt) {
       return res.status(404).json({ success: false, message: 'Attempt not found' });
     }
+
+    const questionDocs = (attempt.responses || []).map((r) => r.question).filter(Boolean);
+    const groupIds = [...new Set(questionDocs.map((q) => q.groupId).filter(Boolean).map(String))];
+    const groups = groupIds.length
+      ? await QuestionGroup.find({ _id: { $in: groupIds } }).lean()
+      : [];
+
+    const { questionMode, questionGroups } = buildQuestionAssemblies(questionDocs, groups);
+    attempt.questionMode = questionMode;
+    attempt.questionGroups = questionGroups;
 
     res.json({ success: true, data: attempt });
   } catch (error) {
@@ -219,6 +123,11 @@ exports.getAttemptState = async (req, res, next) => {
 exports.saveAnswer = async (req, res, next) => {
   try {
     const { questionIndex, selectedAnswer, timeSpent } = req.body;
+
+    if (!Number.isInteger(questionIndex)) {
+      return res.status(400).json({ success: false, message: 'questionIndex must be an integer' });
+    }
+
     const attempt = await TestAttempt.findOne({
       _id: req.params.id,
       user: req.user._id,
@@ -229,18 +138,48 @@ exports.saveAnswer = async (req, res, next) => {
       return res.status(400).json({ success: false, message: 'No active attempt found' });
     }
 
+    // Server-side timer enforcement — never trust the client.
+    if (isExpired(attempt)) {
+      attempt.status = 'timed_out';
+      attempt.submittedAt = new Date();
+      await attempt.save();
+      return res.status(400).json({ success: false, code: 'ATTEMPT_EXPIRED', message: 'Attempt time has expired' });
+    }
+
     if (questionIndex < 0 || questionIndex >= attempt.responses.length) {
       return res.status(400).json({ success: false, message: 'Invalid question index' });
     }
 
-    attempt.responses[questionIndex].selectedAnswer = selectedAnswer;
-    attempt.responses[questionIndex].status = selectedAnswer !== null ? 'answered' : 'not_answered';
+    // Validate the answer against the actual option count of the referenced question.
+    const response = attempt.responses[questionIndex];
+    const question = await Question.findById(response.question).select('options');
+    if (!question) {
+      return res.status(400).json({ success: false, message: 'Question no longer available' });
+    }
+
+    if (selectedAnswer !== null) {
+      const optionCount = question.options.length;
+      if (!Number.isInteger(selectedAnswer) || selectedAnswer < 0 || selectedAnswer >= optionCount) {
+        return res.status(400).json({
+          success: false,
+          code: 'INVALID_ANSWER',
+          message: `selectedAnswer must be an integer between 0 and ${optionCount - 1}, or null`,
+        });
+      }
+    }
+
+    if (timeSpent !== undefined && (!Number.isFinite(timeSpent) || timeSpent < 0)) {
+      return res.status(400).json({ success: false, message: 'timeSpent must be a non-negative number' });
+    }
+
+    response.selectedAnswer = selectedAnswer;
+    response.status = selectedAnswer !== null ? 'answered' : 'not_answered';
     if (timeSpent) {
-      attempt.responses[questionIndex].timeSpent += timeSpent;
+      response.timeSpent += timeSpent;
     }
 
     await attempt.save();
-    res.json({ success: true, data: { questionIndex, status: attempt.responses[questionIndex].status } });
+    res.json({ success: true, data: { questionIndex, status: response.status } });
   } catch (error) {
     next(error);
   }
@@ -251,6 +190,10 @@ exports.saveAnswer = async (req, res, next) => {
 exports.markForReview = async (req, res, next) => {
   try {
     const { questionIndex } = req.body;
+    if (!Number.isInteger(questionIndex)) {
+      return res.status(400).json({ success: false, message: 'questionIndex must be an integer' });
+    }
+
     const attempt = await TestAttempt.findOne({
       _id: req.params.id,
       user: req.user._id,
@@ -279,6 +222,10 @@ exports.markForReview = async (req, res, next) => {
 exports.clearResponse = async (req, res, next) => {
   try {
     const { questionIndex } = req.body;
+    if (!Number.isInteger(questionIndex)) {
+      return res.status(400).json({ success: false, message: 'questionIndex must be an integer' });
+    }
+
     const attempt = await TestAttempt.findOne({
       _id: req.params.id,
       user: req.user._id,
@@ -317,8 +264,14 @@ exports.navigate = async (req, res, next) => {
       return res.status(400).json({ success: false, message: 'No active attempt found' });
     }
 
-    // Update time spent on previous question
-    if (previousQuestion !== undefined && timeSpent && previousQuestion < attempt.responses.length) {
+    // Update time spent on the previous question (validated index range)
+    if (
+      previousQuestion !== undefined &&
+      Number.isInteger(previousQuestion) &&
+      previousQuestion >= 0 &&
+      previousQuestion < attempt.responses.length &&
+      timeSpent
+    ) {
       attempt.responses[previousQuestion].timeSpent += timeSpent;
       if (attempt.responses[previousQuestion].status === 'not_visited') {
         attempt.responses[previousQuestion].status = 'not_answered';
@@ -342,7 +295,7 @@ exports.recordTabSwitch = async (req, res, next) => {
     const attempt = await TestAttempt.findOneAndUpdate(
       { _id: req.params.id, user: req.user._id, status: 'in_progress' },
       { $inc: { tabSwitchCount: 1 } },
-      { new: true }
+      { returnDocument: 'after' }
     );
 
     if (!attempt) {
@@ -370,10 +323,8 @@ exports.submitAttempt = async (req, res, next) => {
     }
 
     const now = new Date();
-    const elapsed = (now.getTime() - attempt.startedAt.getTime()) / 1000;
-
     attempt.submittedAt = now;
-    attempt.status = elapsed > attempt.duration + 30 ? 'timed_out' : 'completed';
+    attempt.status = isExpired(attempt, now.getTime()) ? 'timed_out' : 'completed';
     await attempt.save();
 
     // Scoring is handled by the result controller (called separately or triggered here)

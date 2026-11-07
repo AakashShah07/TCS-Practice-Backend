@@ -7,13 +7,23 @@ const testValidator = [
     .withMessage('Invalid test type'),
   body('section')
     .optional()
-    .isIn(['numerical', 'reasoning', 'verbal', 'advanced', 'system'])
+    .isIn(['numerical', 'reasoning', 'verbal', 'advanced', 'system', 'technical'])
     .withMessage('Invalid section'),
   body('topic').optional().trim(),
   body('questions')
-    .isArray({ min: 1 })
-    .withMessage('At least one question is required'),
-  body('questions.*').isMongoId().withMessage('Invalid question ID'),
+    .optional()
+    .isArray()
+    .withMessage('questions must be an array'),
+  body('questions.*').optional().isMongoId().withMessage('Invalid question ID'),
+  body('groups')
+    .optional()
+    .isArray()
+    .withMessage('groups must be an array'),
+  body('groups.*').optional().isMongoId().withMessage('Invalid group ID'),
+  body('selectionMode')
+    .optional()
+    .isIn(['auto', 'fixed', 'random'])
+    .withMessage('Invalid selectionMode'),
   body('duration')
     .isInt({ min: 60 })
     .withMessage('Duration must be at least 60 seconds'),

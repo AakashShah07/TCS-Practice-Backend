@@ -3,6 +3,7 @@ const Test = require('../models/Test');
 const User = require('../models/User');
 const TestAttempt = require('../models/TestAttempt');
 const Result = require('../models/Result');
+const QuestionGroup = require('../models/QuestionGroup');
 const { revokeSession } = require('../utils/session');
 
 // ===== QUESTION MANAGEMENT =====
@@ -95,8 +96,14 @@ exports.deleteQuestion = async (req, res, next) => {
 // @route   POST /api/admin/tests
 exports.createTest = async (req, res, next) => {
   try {
-    const { questions } = req.body;
-    req.body.totalQuestions = questions.length;
+    const questions = Array.isArray(req.body.questions) ? req.body.questions : [];
+    const groups = Array.isArray(req.body.groups) ? req.body.groups : [];
+
+    if (questions.length === 0 && groups.length === 0) {
+      return res.status(400).json({ success: false, message: 'At least one question or group is required' });
+    }
+
+    req.body.totalQuestions = await countTestQuestions(questions, groups);
     const test = await Test.create(req.body);
     res.status(201).json({ success: true, data: test });
   } catch (error) {
@@ -119,8 +126,14 @@ exports.getTests = async (req, res, next) => {
 // @route   PUT /api/admin/tests/:id
 exports.updateTest = async (req, res, next) => {
   try {
-    if (req.body.questions) {
-      req.body.totalQuestions = req.body.questions.length;
+    if (req.body.questions || req.body.groups) {
+      const existing = await Test.findById(req.params.id);
+      if (!existing) {
+        return res.status(404).json({ success: false, message: 'Test not found' });
+      }
+      const questions = req.body.questions || existing.questions;
+      const groups = req.body.groups || existing.groups;
+      req.body.totalQuestions = await countTestQuestions(questions, groups);
     }
     const test = await Test.findByIdAndUpdate(req.params.id, req.body, {
       new: true,
@@ -134,6 +147,16 @@ exports.updateTest = async (req, res, next) => {
     next(error);
   }
 };
+
+// Count standalone questions plus the expanded children of any referenced groups.
+async function countTestQuestions(questions = [], groups = []) {
+  let total = questions.length;
+  if (groups.length > 0) {
+    const groupDocs = await QuestionGroup.find({ _id: { $in: groups } }).select('questions');
+    total += groupDocs.reduce((sum, g) => sum + (g.questions ? g.questions.length : 0), 0);
+  }
+  return total;
+}
 
 // @desc    Delete a test
 // @route   DELETE /api/admin/tests/:id
@@ -289,3 +312,244 @@ exports.updateUserPremium = async (req, res, next) => {
     next(error);
   }
 };
+
+// ===== QUESTION GROUP MANAGEMENT =====
+
+// @desc    Create a question group (shared stimulus for grouped questions)
+// @route   POST /api/admin/question-groups
+exports.createQuestionGroup = async (req, res, next) => {
+  try {
+    const { questions, ...rest } = req.body;
+    const group = await QuestionGroup.create(rest);
+
+    if (Array.isArray(questions) && questions.length > 0) {
+      const ids = await validateQuestionIds(questions);
+      group.questions = ids;
+      await group.save();
+      await Question.updateMany({ _id: { $in: ids } }, { groupId: group._id });
+    }
+
+    res.status(201).json({ success: true, data: group });
+  } catch (error) {
+    next(error);
+  }
+};
+
+// @desc    List question groups
+// @route   GET /api/admin/question-groups
+exports.getQuestionGroups = async (req, res, next) => {
+  try {
+    const { type, section, topic, page = 1, limit = 20 } = req.query;
+    const filter = {};
+    if (type) filter.type = type;
+    if (section) filter.section = section;
+    if (topic) filter.topic = topic;
+
+    const skip = (parseInt(page) - 1) * parseInt(limit);
+    const [groups, total] = await Promise.all([
+      QuestionGroup.find(filter).sort({ createdAt: -1 }).skip(skip).limit(parseInt(limit)),
+      QuestionGroup.countDocuments(filter),
+    ]);
+
+    res.json({
+      success: true,
+      count: groups.length,
+      total,
+      pages: Math.ceil(total / parseInt(limit)),
+      currentPage: parseInt(page),
+      data: groups,
+    });
+  } catch (error) {
+    next(error);
+  }
+};
+
+// @desc    Get a single question group (with ordered child questions)
+// @route   GET /api/admin/question-groups/:id
+exports.getQuestionGroup = async (req, res, next) => {
+  try {
+    const group = await QuestionGroup.findById(req.params.id).populate({
+      path: 'questions',
+      select: 'text options correctAnswer section topic difficulty questionType media optionMedia groupId',
+    });
+    if (!group) {
+      return res.status(404).json({ success: false, message: 'Question group not found' });
+    }
+    res.json({ success: true, data: group });
+  } catch (error) {
+    next(error);
+  }
+};
+
+// @desc    Update a question group (metadata/stimulus)
+// @route   PUT /api/admin/question-groups/:id
+exports.updateQuestionGroup = async (req, res, next) => {
+  try {
+    const { questions, ...rest } = req.body;
+    if (questions !== undefined) {
+      // Order/child management goes through the dedicated endpoints.
+      return res.status(400).json({
+        success: false,
+        message: 'Use the child-question endpoints to manage group questions',
+      });
+    }
+
+    const group = await QuestionGroup.findByIdAndUpdate(req.params.id, rest, {
+      new: true,
+      runValidators: true,
+    });
+    if (!group) {
+      return res.status(404).json({ success: false, message: 'Question group not found' });
+    }
+    res.json({ success: true, data: group });
+  } catch (error) {
+    next(error);
+  }
+};
+
+// @desc    Delete a question group safely (detach children, unlink from tests)
+// @route   DELETE /api/admin/question-groups/:id
+exports.deleteQuestionGroup = async (req, res, next) => {
+  try {
+    const group = await QuestionGroup.findById(req.params.id);
+    if (!group) {
+      return res.status(404).json({ success: false, message: 'Question group not found' });
+    }
+
+    await Question.updateMany({ groupId: group._id }, { $set: { groupId: null } });
+    await Test.updateMany({ groups: group._id }, { $pull: { groups: group._id } });
+    await Test.updateMany({ questions: group._id }, { $pull: { questions: group._id } });
+    await QuestionGroup.findByIdAndDelete(group._id);
+
+    res.json({ success: true, message: 'Question group deleted' });
+  } catch (error) {
+    next(error);
+  }
+};
+
+// @desc    Add child question(s) to a group (appended in order)
+// @route   POST /api/admin/question-groups/:id/questions
+exports.addGroupQuestions = async (req, res, next) => {
+  try {
+    const raw = req.body.questionIds || (req.body.questionId ? [req.body.questionId] : []);
+    if (!Array.isArray(raw) || raw.length === 0) {
+      return res.status(400).json({ success: false, message: 'questionIds array is required' });
+    }
+
+    const group = await QuestionGroup.findById(req.params.id);
+    if (!group) {
+      return res.status(404).json({ success: false, message: 'Question group not found' });
+    }
+
+    const ids = await validateQuestionIds(raw);
+    const existing = new Set(group.questions.map(String));
+    for (const id of ids) {
+      const s = String(id);
+      if (!existing.has(s)) {
+        group.questions.push(id);
+        existing.add(s);
+      }
+    }
+    await group.save();
+    await Question.updateMany({ _id: { $in: ids } }, { groupId: group._id });
+
+    res.json({ success: true, data: group });
+  } catch (error) {
+    next(error);
+  }
+};
+
+// @desc    Remove a child question from a group
+// @route   DELETE /api/admin/question-groups/:id/questions/:questionId
+exports.removeGroupQuestion = async (req, res, next) => {
+  try {
+    const group = await QuestionGroup.findById(req.params.id);
+    if (!group) {
+      return res.status(404).json({ success: false, message: 'Question group not found' });
+    }
+
+    group.questions = group.questions.filter((q) => String(q) !== String(req.params.questionId));
+    await group.save();
+    await Question.updateOne(
+      { _id: req.params.questionId, groupId: group._id },
+      { $set: { groupId: null } }
+    );
+
+    res.json({ success: true, data: group });
+  } catch (error) {
+    next(error);
+  }
+};
+
+// @desc    Reorder child questions (must reference exactly the current children)
+// @route   PUT /api/admin/question-groups/:id/questions/reorder
+exports.reorderGroupQuestions = async (req, res, next) => {
+  try {
+    const { questionIds } = req.body;
+    if (!Array.isArray(questionIds)) {
+      return res.status(400).json({ success: false, message: 'questionIds array is required' });
+    }
+
+    const group = await QuestionGroup.findById(req.params.id);
+    if (!group) {
+      return res.status(404).json({ success: false, message: 'Question group not found' });
+    }
+
+    const current = new Set(group.questions.map(String));
+    const incoming = new Set(questionIds.map(String));
+    if (current.size !== incoming.size || [...current].some((id) => !incoming.has(id))) {
+      return res.status(400).json({
+        success: false,
+        message: 'questionIds must contain exactly the current child questions',
+      });
+    }
+
+    group.questions = questionIds;
+    await group.save();
+    res.json({ success: true, data: group });
+  } catch (error) {
+    next(error);
+  }
+};
+
+// @desc    Attach (or clear) media on a group stimulus
+// @route   PUT /api/admin/question-groups/:id/media
+exports.attachGroupMedia = async (req, res, next) => {
+  try {
+    const { media } = req.body;
+    if (media !== null && (!media || typeof media !== 'object')) {
+      return res.status(400).json({ success: false, message: 'media object (or null) is required' });
+    }
+
+    const group = await QuestionGroup.findById(req.params.id);
+    if (!group) {
+      return res.status(404).json({ success: false, message: 'Question group not found' });
+    }
+
+    group.stimulus = group.stimulus || { text: '', media: null };
+    group.stimulus.media = media === null ? null : {
+      type: media.type || 'image',
+      url: media.url || '',
+      alt: media.alt || '',
+    };
+    await group.save();
+
+    res.json({ success: true, data: group });
+  } catch (error) {
+    next(error);
+  }
+};
+
+// Validate a list of question ids and return the existing subset (in input order).
+async function validateQuestionIds(ids) {
+  const unique = [...new Set(ids.map(String))];
+  const found = await Question.find({ _id: { $in: unique } }).select('_id');
+  const foundSet = new Set(found.map((q) => String(q._id)));
+  const missing = unique.filter((id) => !foundSet.has(id));
+  if (missing.length > 0) {
+    const err = new Error(`Question(s) not found: ${missing.join(', ')}`);
+    err.statusCode = 400;
+    throw err;
+  }
+  return unique;
+}

@@ -9,7 +9,7 @@ const analyzeQuestions = async () => {
     await mongoose.connect(MONGO_URI);
     console.log('Connected to MongoDB');
 
-    const sections = ['numerical', 'reasoning', 'verbal', 'advanced'];
+    const sections = ['numerical', 'reasoning', 'verbal', 'advanced', 'technical'];
     for (const section of sections) {
       const count = await Question.countDocuments({ section: section });
       console.log(`Section ${section}: ${count} questions`);

@@ -1,0 +1,742 @@
+{
+  "groups": [
+    {
+      "title": "AutoParts Ltd: Plant-wise Production and Defect Rates",
+      "type": "data_interpretation",
+      "section": "numerical",
+      "topic": "Data Interpretation",
+      "difficulty": "hard",
+      "stimulus": {
+        "text": "AutoParts Ltd has five manufacturing plants (P1 to P5). The table below shows the number of units produced by each plant in 2024 and 2025, and the percentage of units produced that were defective in each year.\n\nPlant | Units Produced 2024 | Units Produced 2025 | Defect % 2024 | Defect % 2025\nP1 | 8,000 | 9,200 | 5% | 4%\nP2 | 6,000 | 7,500 | 8% | 6%\nP3 | 10,000 | 9,000 | 4% | 5%\nP4 | 5,000 | 6,000 | 10% | 5%\nP5 | 7,000 | 8,400 | 6% | 5%",
+        "media": null
+      },
+      "metadata": {
+        "columns": ["Plant", "Units Produced 2024", "Units Produced 2025", "Defect % 2024", "Defect % 2025"],
+        "rows": [["P1", 8000, 9200, 5, 4], ["P2", 6000, 7500, 8, 6], ["P3", 10000, 9000, 4, 5], ["P4", 5000, 6000, 10, 5], ["P5", 7000, 8400, 6, 5]]
+      },
+      "questions": [
+        {
+          "text": "Which plant recorded the highest percentage growth in units produced from 2024 to 2025?",
+          "options": ["P1", "P2", "P4", "P5"],
+          "correctAnswer": 1,
+          "section": "numerical",
+          "topic": "Data Interpretation",
+          "difficulty": "medium",
+          "marks": 2,
+          "explanation": "Growth % = (2025 − 2024) / 2024 × 100. P1 = 1,200 / 8,000 = 15%. P2 = 1,500 / 6,000 = 25%. P3 fell from 10,000 to 9,000, so it has negative growth. P4 = 1,000 / 5,000 = 20%. P5 = 1,400 / 7,000 = 20%. P2 has the highest growth at 25%."
+        },
+        {
+          "text": "What was the overall defect percentage of the company in 2025 (correct to two decimal places)?",
+          "options": ["4.62%", "4.96%", "5.10%", "5.28%"],
+          "correctAnswer": 1,
+          "section": "numerical",
+          "topic": "Data Interpretation",
+          "difficulty": "hard",
+          "marks": 2,
+          "explanation": "Defective units in 2025: P1 = 9,200 × 4% = 368. P2 = 7,500 × 6% = 450. P3 = 9,000 × 5% = 450. P4 = 6,000 × 5% = 300. P5 = 8,400 × 5% = 420. Total defective = 368 + 450 + 450 + 300 + 420 = 1,988. Total production in 2025 = 9,200 + 7,500 + 9,000 + 6,000 + 8,400 = 40,100. Overall defect % = 1,988 / 40,100 × 100 ≈ 4.96%."
+        },
+        {
+          "text": "By what percentage did the total number of defective units of the company decrease from 2024 to 2025 (approximately)?",
+          "options": ["8.50%", "9.64%", "10.20%", "11.50%"],
+          "correctAnswer": 1,
+          "section": "numerical",
+          "topic": "Data Interpretation",
+          "difficulty": "hard",
+          "marks": 2,
+          "explanation": "Defective units in 2024: P1 = 8,000 × 5% = 400. P2 = 6,000 × 8% = 480. P3 = 10,000 × 4% = 400. P4 = 5,000 × 10% = 500. P5 = 7,000 × 6% = 420. Total = 2,200. Defective units in 2025 = 1,988. Decrease = 2,200 − 1,988 = 212. Percentage decrease = 212 / 2,200 × 100 ≈ 9.64%."
+        },
+        {
+          "text": "By what percentage did the number of non-defective units produced by plant P4 increase from 2024 to 2025 (approximately)?",
+          "options": ["20.00%", "24.50%", "26.67%", "28.33%"],
+          "correctAnswer": 2,
+          "section": "numerical",
+          "topic": "Data Interpretation",
+          "difficulty": "hard",
+          "marks": 2,
+          "explanation": "Non-defective units of P4 in 2024 = 5,000 − (10% of 5,000) = 5,000 − 500 = 4,500. Non-defective units of P4 in 2025 = 6,000 − (5% of 6,000) = 6,000 − 300 = 5,700. Increase = 5,700 − 4,500 = 1,200. Percentage increase = 1,200 / 4,500 × 100 ≈ 26.67%."
+        },
+        {
+          "text": "Suppose in 2025 the defect percentages of plants P2 and P3 had been the same as their 2024 defect percentages, while all other data remained unchanged. What would the total number of defective units of the company in 2025 have been?",
+          "options": ["1,988", "2,048", "2,108", "1,898"],
+          "correctAnswer": 1,
+          "section": "numerical",
+          "topic": "Data Interpretation",
+          "difficulty": "hard",
+          "marks": 2,
+          "explanation": "P2 at its 2024 rate of 8%: 7,500 × 8% = 600. P3 at its 2024 rate of 4%: 9,000 × 4% = 360. The other plants stay as in 2025: P1 = 368, P4 = 300, P5 = 420. Total = 600 + 360 + 368 + 300 + 420 = 2,048."
+        }
+      ]
+    },
+    {
+      "title": "Data Sufficiency (Hard): Logic and Reasoning Set",
+      "type": "data_interpretation",
+      "section": "reasoning",
+      "topic": "Data Sufficiency",
+      "difficulty": "hard",
+      "stimulus": {
+        "text": "Directions: Each of the questions below consists of a question and two statements numbered I and II given below it. You must decide whether the information provided in the statements is sufficient to answer the question. Consider the following while answering the questions: Mark 1 as the answer, if the question can be answered by using one of the statements alone but cannot be answered using the other statement alone. Mark 2 as the answer, if the question can be answered by using either statement alone. Mark 3 as the answer, if the question can be answered by using both statements together but cannot be answered using either statement alone. Mark 4 as the answer, if the question cannot be answered even by using both statements together.",
+        "media": null
+      },
+      "metadata": {
+        "questionType": "data_sufficiency",
+        "numberOfQuestions": 5,
+        "options": {
+          "1": "One statement alone is sufficient, the other alone is not",
+          "2": "Either statement alone is sufficient",
+          "3": "Both statements together are needed",
+          "4": "Even both together are not sufficient"
+        }
+      },
+      "questions": [
+        {
+          "text": "In a class of 40 students, what is Mohan's rank from the top?\nI. Mohan is 12th from the bottom.\nII. Rahul is 14th from the top and Mohan is 15 places behind Rahul.",
+          "options": ["1", "2", "3", "4"],
+          "correctAnswer": 1,
+          "section": "reasoning",
+          "topic": "Data Sufficiency",
+          "difficulty": "hard",
+          "marks": 2,
+          "explanation": "From I, rank from the top = 40 − 12 + 1 = 29. From II, Mohan's rank from the top = 14 + 15 = 29. Each statement alone gives the rank, so the answer is 2."
+        },
+        {
+          "text": "Is the positive integer p divisible by 12?\nI. p is divisible by 4.\nII. p is divisible by 6.",
+          "options": ["1", "2", "3", "4"],
+          "correctAnswer": 2,
+          "section": "reasoning",
+          "topic": "Data Sufficiency",
+          "difficulty": "hard",
+          "marks": 2,
+          "explanation": "From I alone, p = 4 is not divisible by 12 but p = 12 is, so no single answer is possible. From II alone, p = 6 is not divisible by 12 but p = 12 is, so no single answer is possible. Together, p is a multiple of both 4 and 6, so it is a multiple of their LCM, which is 12. Hence p is definitely divisible by 12. Both statements are needed, so the answer is 3."
+        },
+        {
+          "text": "Is x² > x, where x is a real number?\nI. x > 1.5\nII. x² < 4",
+          "options": ["1", "2", "3", "4"],
+          "correctAnswer": 0,
+          "section": "reasoning",
+          "topic": "Data Sufficiency",
+          "difficulty": "hard",
+          "marks": 2,
+          "explanation": "Note that x² > x holds when x > 1 or x < 0, and fails when 0 ≤ x ≤ 1. From I, x > 1.5, so x > 1 and x² > x is definitely true. From II, −2 < x < 2. Here x = 0.5 gives x² = 0.25 which is not greater than 0.5, while x = −1 gives 1 which is greater than −1. So no single answer is possible. Statement I alone is sufficient and II alone is not, so the answer is 1."
+        },
+        {
+          "text": "What is the value of x + y, where x and y are real numbers?\nI. x² + y² = 25\nII. xy = 12",
+          "options": ["1", "2", "3", "4"],
+          "correctAnswer": 3,
+          "section": "reasoning",
+          "topic": "Data Sufficiency",
+          "difficulty": "hard",
+          "marks": 2,
+          "explanation": "From I alone, x + y can take many values, for example 5 (x = 5, y = 0) or 7 (x = 3, y = 4). From II alone, x + y can be 7 (x = 3, y = 4) or 8 (x = 2, y = 6), among others. Together, (x + y)² = x² + y² + 2xy = 25 + 24 = 49, so x + y = 7 or x + y = −7. Both values are possible, since (3, 4) and (−3, −4) satisfy both statements. The value is not unique even with both statements, so the answer is 4."
+        },
+        {
+          "text": "What is the length of a train?\nI. The train crosses a 300 m long platform in 30 seconds and crosses a signal pole in 18 seconds.\nII. The train crosses a signal pole in 18 seconds while running at a speed of 90 km/h.",
+          "options": ["1", "2", "3", "4"],
+          "correctAnswer": 1,
+          "section": "reasoning",
+          "topic": "Data Sufficiency",
+          "difficulty": "hard",
+          "marks": 2,
+          "explanation": "From I, let the length be x metres and the speed be constant. Then x / 18 = (x + 300) / 30, so 30x = 18x + 5,400, which gives x = 450 m. From II, speed = 90 km/h = 25 m/s, so length = 25 × 18 = 450 m. Each statement alone gives the length as 450 m, so the answer is 2."
+        }
+      ]
+    },
+    {
+      "title": "Syllogism (Hard): Set 1",
+      "type": "data_interpretation",
+      "section": "reasoning",
+      "topic": "Syllogism",
+      "difficulty": "hard",
+      "stimulus": {
+        "text": "Directions: In each question below, three statements are given, followed by four conclusions numbered I, II, III and IV. Take the given statements to be true, even if they seem to be at variance with commonly known facts. Decide which of the conclusions logically follow from the statements, and select the option that gives the correct set of conclusions.",
+        "media": null
+      },
+      "metadata": {
+        "questionType": "syllogism",
+        "numberOfQuestions": 5,
+        "focus": ["Three-statement chains", "Some-not conclusions", "Either-or cases", "Possibility cases"]
+      },
+      "questions": [
+        {
+          "text": "Statements: Some pens are books. All books are tables. No table is a chair.\nConclusions:\nI. Some pens are tables.\nII. Some pens are not chairs.\nIII. No book is a chair.\nIV. Some chairs are pens.",
+          "options": ["Only I, II and III follow", "Only I and II follow", "Only II, III and IV follow", "All I, II, III and IV follow"],
+          "correctAnswer": 0,
+          "section": "reasoning",
+          "topic": "Syllogism",
+          "difficulty": "medium",
+          "marks": 2,
+          "explanation": "Some pens are books and all books are tables, so those pens are tables. Hence I follows. Those pens are tables and no table is a chair, so some pens are not chairs. Hence II follows. All books are tables and no table is a chair, so no book is a chair. Hence III follows. IV does not follow, because the pens that are not books may or may not be chairs, so a definite link between chairs and pens is not established. So only I, II and III follow."
+        },
+        {
+          "text": "Statements: All cars are buses. Some buses are trains. All trains are planes.\nConclusions:\nI. Some buses are planes.\nII. Some cars are trains.\nIII. Some planes are buses.\nIV. All cars are planes.",
+          "options": ["Only I and III follow", "Only I, II and III follow", "Only II and IV follow", "None of the conclusions follow"],
+          "correctAnswer": 0,
+          "section": "reasoning",
+          "topic": "Syllogism",
+          "difficulty": "medium",
+          "marks": 2,
+          "explanation": "Some buses are trains and all trains are planes, so those buses are planes. Hence I follows. Converting I gives 'Some planes are buses', so III follows. II does not follow, because the buses that are trains need not be cars. IV does not follow, because cars are inside buses, but only some buses are known to be linked with planes. So only I and III follow."
+        },
+        {
+          "text": "Statements: Some wires are cables. All cables are ropes.\nConclusions:\nI. All wires are ropes.\nII. Some wires are not ropes.\nIII. Some ropes are wires.\nIV. No wire is a rope.",
+          "options": ["Only III follows", "Only III and either I or II follow", "Only I and III follow", "Only II and IV follow"],
+          "correctAnswer": 1,
+          "section": "reasoning",
+          "topic": "Syllogism",
+          "difficulty": "hard",
+          "marks": 2,
+          "explanation": "Some wires are cables and all cables are ropes, so some wires are ropes, and converting gives 'Some ropes are wires'. Hence III follows. IV is contradicted by this result, so it does not follow. Conclusions I and II form a complementary pair: 'All wires are ropes' and 'Some wires are not ropes' cannot both be false, and exactly one of them must be true, but neither is definite alone. So either I or II follows. The correct set is III together with either I or II."
+        },
+        {
+          "text": "Statements: Some pencils are erasers. No eraser is a ruler. All rulers are boxes.\nConclusions:\nI. Some pencils are not rulers.\nII. Some boxes are not erasers.\nIII. No box is an eraser.\nIV. Some pencils are rulers.",
+          "options": ["Only I and II follow", "Only I, II and III follow", "Only III and IV follow", "Only II and IV follow"],
+          "correctAnswer": 0,
+          "section": "reasoning",
+          "topic": "Syllogism",
+          "difficulty": "hard",
+          "marks": 2,
+          "explanation": "Some pencils are erasers and no eraser is a ruler, so those pencils are not rulers. Hence I follows. All rulers are boxes, so some boxes are rulers, and no ruler is an eraser, so those boxes are not erasers. Hence II follows. III does not follow, because boxes may include items that are not rulers and could be erasers. IV does not follow, because nothing links pencils definitely with rulers. So only I and II follow."
+        },
+        {
+          "text": "Statements: All lions are tigers. Some tigers are wolves. No wolf is a bear.\nConclusions:\nI. Some tigers are not bears.\nII. It is possible that some lions are wolves.\nIII. All lions are wolves.\nIV. No lion is a bear.",
+          "options": ["Only I and II follow", "Only I, II and IV follow", "Only II and III follow", "Only I and IV follow"],
+          "correctAnswer": 0,
+          "section": "reasoning",
+          "topic": "Syllogism",
+          "difficulty": "hard",
+          "marks": 2,
+          "explanation": "Some tigers are wolves and no wolf is a bear, so those tigers are not bears. Hence I follows. Lions are inside tigers, and only some tigers are known to be wolves, so nothing prevents some lions from being wolves. This makes II a valid possibility. III does not follow, because only some tigers are wolves. IV does not follow, because tigers that are not wolves may be bears, and some lions may be among them. So only I and II follow."
+        }
+      ]
+    },
+    {
+      "title": "Conditional Logic (Hard): Selecting a Project Team",
+      "type": "data_interpretation",
+      "section": "reasoning",
+      "topic": "Conditional Logic",
+      "difficulty": "hard",
+      "stimulus": {
+        "text": "A project team of exactly four members is to be selected from seven employees: Pooja, Qadir, Rohan, Sneha, Tarun, Uma and Vikram. The selection must follow these conditions: (i) Pooja and Qadir cannot both be selected. (ii) If Rohan is selected, then Sneha is selected. (iii) Tarun is selected only if Pooja is selected. (iv) If Sneha is selected, then Uma is not selected. (v) If Qadir is not selected, then Vikram is selected.",
+        "media": null
+      },
+      "metadata": {
+        "people": ["Pooja", "Qadir", "Rohan", "Sneha", "Tarun", "Uma", "Vikram"],
+        "teamSize": 4,
+        "conditions": ["Pooja and Qadir cannot both be selected", "If Rohan is selected, then Sneha is selected", "Tarun is selected only if Pooja is selected", "If Sneha is selected, then Uma is not selected", "If Qadir is not selected, then Vikram is selected"]
+      },
+      "questions": [
+        {
+          "text": "Which of the following employees must be in every valid team?",
+          "options": ["Pooja", "Rohan", "Sneha", "Vikram", "None of these"],
+          "correctAnswer": 3,
+          "section": "reasoning",
+          "topic": "Conditional Logic",
+          "difficulty": "hard",
+          "marks": 2,
+          "explanation": "The valid teams are Pooja, Vikram, Rohan, Sneha; Pooja, Vikram, Sneha, Tarun; Pooja, Vikram, Tarun, Uma; and Qadir, Rohan, Sneha, Vikram. Vikram appears in all four. Pooja is missing from the last team, Rohan from the second and third, and Sneha from the third. So only Vikram is in every team. The answer is (d)."
+        },
+        {
+          "text": "If Uma is selected, then which of the following must be true?",
+          "options": ["Sneha is selected", "Qadir is selected", "Tarun is selected", "Rohan is selected", "None of these"],
+          "correctAnswer": 2,
+          "section": "reasoning",
+          "topic": "Conditional Logic",
+          "difficulty": "hard",
+          "marks": 2,
+          "explanation": "If Uma is selected, Sneha cannot be selected by (iv), and then Rohan cannot be selected by (ii). Without Rohan and Sneha, a team of four with Uma must come from Pooja, Qadir, Tarun, Uma and Vikram. Qadir and Pooja cannot both be in, and a team without Pooja would have no Tarun by (iii), leaving too few members. So Pooja is selected and Qadir is not, which forces Vikram by (v). The fourth member must be Tarun. The team is Pooja, Vikram, Tarun, Uma, so Tarun must be selected. The answer is (c)."
+        },
+        {
+          "text": "If Rohan is not selected, then which of the following must be true?",
+          "options": ["Sneha is selected", "Uma is selected", "Qadir is selected", "Tarun is selected", "None of these"],
+          "correctAnswer": 3,
+          "section": "reasoning",
+          "topic": "Conditional Logic",
+          "difficulty": "hard",
+          "marks": 2,
+          "explanation": "The valid teams without Rohan are Pooja, Vikram, Sneha, Tarun and Pooja, Vikram, Tarun, Uma. Tarun appears in both, so Tarun must be selected. Sneha is missing from the second team, Uma is missing from the first, and Qadir is in neither. The answer is (d)."
+        },
+        {
+          "text": "Which of the following could be the team selected?",
+          "options": ["Pooja, Sneha, Tarun, Vikram", "Pooja, Qadir, Vikram, Tarun", "Qadir, Rohan, Uma, Vikram", "Rohan, Sneha, Uma, Vikram", "None of these"],
+          "correctAnswer": 0,
+          "section": "reasoning",
+          "topic": "Conditional Logic",
+          "difficulty": "hard",
+          "marks": 2,
+          "explanation": "Option (a): Pooja is selected so Tarun is allowed, Qadir is absent so Vikram is required and present, Sneha is selected and Uma is absent, and Rohan is absent. All conditions hold, so this team is valid. Option (b): Pooja and Qadir are both selected, which violates (i). Option (c): Rohan is selected without Sneha, which violates (ii). Option (d): Sneha and Uma are both selected, which violates (iv). The answer is (a)."
+        },
+        {
+          "text": "How many different teams can be selected while satisfying all the conditions?",
+          "options": ["3", "4", "5", "6"],
+          "correctAnswer": 1,
+          "section": "reasoning",
+          "topic": "Conditional Logic",
+          "difficulty": "hard",
+          "marks": 2,
+          "explanation": "Case 1: Pooja is selected. Then Qadir is not, so Vikram is selected. Two more members come from Rohan, Sneha, Tarun and Uma. Rohan with Sneha is valid. Sneha with Tarun is valid. Tarun with Uma is valid. Rohan with Tarun, Rohan with Uma and Sneha with Uma are invalid. That gives 3 teams. Case 2: Pooja is not selected, so Tarun is not either. The team comes from Qadir, Rohan, Sneha, Uma and Vikram. Only Qadir, Rohan, Sneha, Vikram is valid, which gives 1 team. The total is 3 + 1 = 4. The answer is (b)."
+        }
+      ]
+    },
+    {
+      "title": "Critical Reasoning (Hard): Plastic Bag Ban in Greenvale",
+      "type": "data_interpretation",
+      "section": "verbal",
+      "topic": "Critical Reasoning",
+      "difficulty": "hard",
+      "stimulus": {
+        "text": "The town council of Greenvale banned single-use plastic bags in all shops from January 1. The council argues that the ban will reduce the total amount of plastic waste in the town, since shoppers will switch to reusable cloth bags. Two months after the ban, a survey of the town's shops found that sales of paper bags had tripled, and that sales of thick plastic bin liners, which are not covered by the ban, had risen by 40%. Shop owners also reported that about half of the shoppers now bring their own cloth bags.",
+        "media": null
+      },
+      "metadata": {
+        "claim": "The ban will reduce the total amount of plastic waste in the town",
+        "paperBagSales": "tripled",
+        "plasticBinLinerSales": "rose by 40%",
+        "shoppersWithOwnBags": "about half"
+      },
+      "questions": [
+        {
+          "text": "Which of the following statements, if true, most weakens the council's argument that the ban will reduce plastic waste?",
+          "options": ["Most households were using single-use bags to line their small dustbins before the ban, and now buy thick plastic bin liners instead, which contain more plastic per bag.", "Paper bags can be recycled in the town's waste plants.", "Many shoppers like the cloth bags sold by the shops.", "The council has announced that fines for breaking the ban will be increased."],
+          "correctAnswer": 0,
+          "section": "verbal",
+          "topic": "Critical Reasoning",
+          "difficulty": "medium",
+          "marks": 2,
+          "explanation": "The council expects a fall in plastic waste. Option (a) explains the 40% rise in bin liner sales and says each liner contains more plastic than the banned bag, so the plastic saved by the ban may be offset or exceeded by the new plastic bought. This weakens the argument. Option (b) is about paper bags and supports the idea that waste will fall. Option (c) shows more use of cloth bags, which supports the plan. Option (d) strengthens enforcement of the ban. The answer is (a)."
+        },
+        {
+          "text": "The council's argument assumes which of the following?",
+          "options": ["The plastic used in the substitute products bought after the ban is less than the plastic saved by the ban.", "Every shopper in the town now owns a cloth bag.", "Paper bags cost more than plastic bags.", "The ban will remain in force for more than ten years."],
+          "correctAnswer": 0,
+          "section": "verbal",
+          "topic": "Critical Reasoning",
+          "difficulty": "hard",
+          "marks": 2,
+          "explanation": "For total plastic waste to fall, the plastic saved by the ban must be greater than any new plastic introduced through substitutes such as thick bin liners. Option (a) states this necessary assumption. Option (b) is too extreme, since only about half of the shoppers need to bring bags. Option (c) concerns price, which is not part of the conclusion. Option (d) deals with the duration of the ban, which the argument does not depend on. The answer is (a)."
+        },
+        {
+          "text": "Which of the following statements, if true, most strengthens the council's argument?",
+          "options": ["Thick plastic bin liners are mostly reused several times before being thrown away, and the total plastic collected by the town's waste service fell sharply after the ban.", "The number of shops in the town has increased since January.", "Paper bags are sold in more colours than plastic bags were.", "The ban was announced three months before it began."],
+          "correctAnswer": 0,
+          "section": "verbal",
+          "topic": "Critical Reasoning",
+          "difficulty": "medium",
+          "marks": 2,
+          "explanation": "The council's conclusion is about the total amount of plastic waste. Option (a) provides direct evidence that plastic collected fell sharply and explains why the bin liner increase did not cancel the gain, so it strengthens the argument. Options (b), (c) and (d) have no link to the amount of plastic waste. The answer is (a)."
+        },
+        {
+          "text": "Which of the following can be properly inferred from the passage?",
+          "options": ["The ban has reduced the total plastic waste in the town by half.", "The survey results do not by themselves show that total plastic waste has fallen.", "Paper bags are more harmful to the environment than plastic bags.", "Shop owners opposed the ban."],
+          "correctAnswer": 1,
+          "section": "verbal",
+          "topic": "Critical Reasoning",
+          "difficulty": "hard",
+          "marks": 2,
+          "explanation": "The survey reports changes in sales of paper bags and bin liners, and the share of shoppers with their own bags, but gives no figure for total plastic waste. The rise in bin liner sales also shows that some plastic use has shifted elsewhere. So the results alone do not establish that total waste has fallen, which is option (b). Option (a) invents a figure. Option (c) is not stated. Option (d) is not stated, since the owners only reported what shoppers do. The answer is (b)."
+        },
+        {
+          "text": "Which of the following would be most useful to know in order to evaluate the council's claim?",
+          "options": ["The total weight of plastic waste collected in the town before and after the ban.", "The name of the company that makes the cloth bags.", "The number of shops that painted their signboards after the ban.", "The age of the council's chairperson."],
+          "correctAnswer": 0,
+          "section": "verbal",
+          "topic": "Critical Reasoning",
+          "difficulty": "easy",
+          "marks": 2,
+          "explanation": "The claim is about total plastic waste, so the most direct evidence is the amount of plastic waste before and after the ban. Options (b), (c) and (d) are unrelated to the quantity of plastic waste. The answer is (a)."
+        }
+      ]
+    },
+    {
+      "title": "Sentence Completion (Hard): Vocabulary and Logic",
+      "type": "data_interpretation",
+      "section": "verbal",
+      "topic": "Sentence Completion",
+      "difficulty": "hard",
+      "stimulus": {
+        "text": "Directions: Each sentence below has a blank. Choose the option that fits in grammatically and logically and completes the sentence most effectively. Pay close attention to contrast and cause-effect signal words such as 'despite', 'far from' and 'though'.",
+        "media": null
+      },
+      "metadata": {
+        "questionType": "sentence_completion",
+        "numberOfQuestions": 5,
+        "focus": ["advanced vocabulary", "contrast signals", "logical fit", "subject-verb agreement"]
+      },
+      "questions": [
+        {
+          "text": "Despite the author's reputation for _____ prose, her latest novel is surprisingly lucid and easy to follow.",
+          "options": ["abstruse", "limpid", "lyrical", "concise"],
+          "correctAnswer": 0,
+          "section": "verbal",
+          "topic": "Sentence Completion",
+          "difficulty": "hard",
+          "marks": 2,
+          "explanation": "'Despite' signals a contrast. Since the latest novel is 'lucid and easy to follow', the author's reputation must be for the opposite, which is obscure and hard to understand. 'Abstruse' means difficult to understand and fits. 'Limpid' means clear, which is the same as 'lucid' and would remove the contrast. 'Lyrical' and 'concise' do not contrast with 'lucid' and 'easy to follow'. The answer is (a)."
+        },
+        {
+          "text": "The minister's statement was deliberately , allowing both supporters and critics to claim that he had endorsed their position.",
+          "options": ["categorical", "equivocal", "emphatic", "candid"],
+          "correctAnswer": 1,
+          "section": "verbal",
+          "topic": "Sentence Completion",
+          "difficulty": "hard",
+          "marks": 2,
+          "explanation": "If both supporters and critics can claim the statement as their own, it must have been ambiguous and open to more than one reading. 'Equivocal' means ambiguous and fits. 'Categorical' and 'emphatic' mean clear and forceful, which would leave no room for conflicting claims. 'Candid' means frank, which also leaves little room for double meaning. The answer is (b)."
+        },
+        {
+          "text": "Far from being a _____ observer of the debate, the chairman steered every discussion towards the conclusion he had already chosen.",
+          "options": ["dispassionate", "partisan", "zealous", "interfering"],
+          "correctAnswer": 0,
+          "section": "verbal",
+          "topic": "Sentence Completion",
+          "difficulty": "hard",
+          "marks": 2,
+          "explanation": "'Far from being' introduces the opposite of what the chairman actually did. He steered every discussion towards his chosen conclusion, so he was far from being neutral and detached. 'Dispassionate' means neutral and fits. 'Partisan', 'zealous' and 'interfering' describe what he actually was, so 'far from being' would contradict the rest of the sentence. The answer is (a)."
+        },
+        {
+          "text": "Neither the director nor the actors _____ aware that the schedule had been changed.",
+          "options": ["was", "were", "has been", "is"],
+          "correctAnswer": 1,
+          "section": "verbal",
+          "topic": "Sentence Completion",
+          "difficulty": "medium",
+          "marks": 2,
+          "explanation": "With 'neither ... nor', the verb agrees with the subject closest to it. The nearer subject is 'the actors', which is plural, so the verb must be plural. The sentence is also in the past tense, as shown by 'had been changed', so 'were' is correct. 'Was' and 'is' are singular, and 'has been' is singular and in the wrong tense. The answer is (b)."
+        },
+        {
+          "text": "The scientist's findings, though initially dismissed as , were vindicated when independent laboratories reproduced the results.",
+          "options": ["verifiable", "rigorous", "spurious", "conclusive"],
+          "correctAnswer": 2,
+          "section": "verbal",
+          "topic": "Sentence Completion",
+          "difficulty": "hard",
+          "marks": 2,
+          "explanation": "The findings were later 'vindicated', which means proved right, so the early dismissal must have been on the ground that they were false or not genuine. 'Spurious' means false or not genuine and fits. 'Verifiable', 'rigorous' and 'conclusive' are positive descriptions, and nobody would dismiss findings on those grounds. The answer is (c)."
+        }
+      ]
+    },
+    {
+      "title": "Reading Comprehension (Hard): The Paradox of Choice in Modern Consumer Markets",
+      "type": "data_interpretation",
+      "section": "verbal",
+      "topic": "Reading Comprehension",
+      "difficulty": "hard",
+      "stimulus": {
+        "text": "Directions: Read the following passage and answer the questions that follow on the basis of what is stated or implied in the passage.\n\nConventional economic theory holds that more choice is always better for the consumer. A person offered twenty varieties of a product, the reasoning goes, can do no worse than a person offered five, since the larger set contains the smaller one and the extra options can simply be ignored. Yet a series of experiments in the last two decades has cast doubt on this assumption. In one well-known study, shoppers at a food counter were shown either six or twenty-four flavours of jam. The larger display attracted more people to the stall, but the smaller display produced several times as many actual purchases.\n\nThe researchers proposed that abundance carries hidden costs. First, comparing many options demands effort, and when the effort becomes too great, people may defer the decision altogether. Second, a wider range raises expectations: a buyer who has seen twenty-four options feels that a perfect match must exist, and so is more likely to regret the choice made, wondering about the options left behind. Third, when a choice disappoints, the buyer has only himself to blame, since so many alternatives were on offer.\n\nIt would be a mistake, however, to conclude that restricting choice is a universal remedy. Later studies found that the effect weakens sharply when buyers arrive with clear preferences. A person who already knows she wants a particular flavour finds a large display helpful, because it raises the chance that her preferred item is present. Moreover, in complex purchases such as insurance or retirement plans, where options differ in ways that matter greatly, simplification can leave buyers unable to find a product that fits their needs. The lesson, then, is not that choice is harmful, but that its value depends on how well buyers can navigate it. Retailers who help customers narrow their options, through filters, recommendations or sensible defaults, may capture the benefits of variety while sparing buyers its burdens.",
+        "media": null
+      },
+      "metadata": {
+        "passageType": "reading_comprehension",
+        "wordCount": 300,
+        "theme": "The paradox of choice in consumer markets"
+      },
+      "questions": [
+        {
+          "text": "Which of the following best states the central idea of the passage?",
+          "options": ["Consumers should always be offered as few options as possible.", "The benefit of having many choices depends on how well buyers can handle them, so more choice is not automatically better.", "Conventional economic theory has been proved completely wrong by experiments.", "Retailers should avoid selling complex products such as insurance."],
+          "correctAnswer": 1,
+          "section": "verbal",
+          "topic": "Reading Comprehension",
+          "difficulty": "medium",
+          "marks": 2,
+          "explanation": "The passage challenges the view that more choice is always better, but it then cautions against concluding that restriction is a universal remedy. Its closing lesson is that the value of choice depends on how well buyers can navigate it. Option (b) captures this balance. Option (a) is the overgeneralisation the passage warns against. Option (c) is too strong, since the passage only says that doubt has been cast on the theory. Option (d) is not suggested. The answer is (b)."
+        },
+        {
+          "text": "In the jam experiment described in the passage, the larger display of twenty-four flavours:",
+          "options": ["attracted more shoppers to the stall but led to fewer purchases than the smaller display.", "attracted fewer shoppers and led to fewer purchases.", "attracted the same number of shoppers but led to more purchases.", "led to more purchases because buyers had clear preferences."],
+          "correctAnswer": 0,
+          "section": "verbal",
+          "topic": "Reading Comprehension",
+          "difficulty": "easy",
+          "marks": 2,
+          "explanation": "The first paragraph states that the larger display attracted more people to the stall, while the smaller display produced several times as many purchases. So the larger display drew more shoppers but fewer purchases. Option (b) is wrong on the number of shoppers. Option (c) is wrong on both counts. Option (d) reverses the result and misuses the idea of clear preferences. The answer is (a)."
+        },
+        {
+          "text": "Which of the following is NOT given in the passage as a hidden cost of abundant choice?",
+          "options": ["Comparing many options takes effort, which may lead buyers to postpone the decision.", "A wider range raises expectations, making regret more likely.", "Buyers who are disappointed have only themselves to blame.", "Large displays raise the price of every product on offer."],
+          "correctAnswer": 3,
+          "section": "verbal",
+          "topic": "Reading Comprehension",
+          "difficulty": "medium",
+          "marks": 2,
+          "explanation": "The second paragraph lists three costs: the effort of comparison that may cause deferral, higher expectations that increase regret, and self-blame when a choice disappoints. Nothing in the passage says that large displays raise prices. The answer is (d)."
+        },
+        {
+          "text": "The passage suggests that a large range of options is most likely to benefit a buyer who:",
+          "options": ["has no idea what he wants and hopes to be guided by the display.", "already knows which specific item she wants.", "wishes to postpone the purchase.", "prefers a simple product to a complex one."],
+          "correctAnswer": 1,
+          "section": "verbal",
+          "topic": "Reading Comprehension",
+          "difficulty": "medium",
+          "marks": 2,
+          "explanation": "The third paragraph says that the negative effect weakens when buyers arrive with clear preferences, and that a person who knows she wants a particular flavour finds a large display helpful because it raises the chance that the item is present. Option (a) describes the buyer most likely to be overwhelmed. Option (c) describes a cost of abundance, not a benefit. Option (d) is not supported. The answer is (b)."
+        },
+        {
+          "text": "Which of the following can be most reasonably inferred from the passage?",
+          "options": ["A retailer selling retirement plans would do well to cut its range down to a single plan.", "A retailer who offers filters and recommendations may keep the advantages of variety while reducing the burden on buyers.", "The jam experiment proves that fewer options always produce higher sales.", "Buyers who feel regret never return to the same retailer."],
+          "correctAnswer": 1,
+          "section": "verbal",
+          "topic": "Reading Comprehension",
+          "difficulty": "hard",
+          "marks": 2,
+          "explanation": "The last sentence says that retailers who help customers narrow their options through filters, recommendations or sensible defaults may capture the benefits of variety while sparing buyers its burdens. Option (b) restates this inference. Option (a) conflicts with the point that simplification of complex purchases can leave buyers without a suitable product. Option (c) is the overgeneralisation the passage rejects, and a single experiment cannot prove an 'always' claim. Option (d) is not stated or implied. The answer is (b)."
+        }
+      ]
+    },
+    {
+      "title": "Sentence Correction (Hard): Set 2",
+      "type": "data_interpretation",
+      "section": "verbal",
+      "topic": "Sentence Correction",
+      "difficulty": "hard",
+      "stimulus": {
+        "text": "Directions: In each of the following sentences, some part of the sentence or the entire sentence is underlined (shown here in square brackets). Beneath each sentence you will find four ways of phrasing the underlined part. Choose the answer that expresses most effectively what is presented in the original sentence, following the requirements of standard written English. The answer should be clear and exact, without awkwardness, ambiguity or redundancy.",
+        "media": null
+      },
+      "metadata": {
+        "questionType": "sentence_correction",
+        "numberOfQuestions": 5,
+        "focus": ["idiom", "pronoun reference", "conditionals", "redundancy", "correlative conjunctions"]
+      },
+      "questions": [
+        {
+          "text": "The company announced that [it will not be hiring no more employees] until the market improves.",
+          "options": ["it will not be hiring no more employees", "it will not be hiring any more employees", "they will not be hiring no more employees", "it would not be hiring none more employees"],
+          "correctAnswer": 1,
+          "section": "verbal",
+          "topic": "Sentence Correction",
+          "difficulty": "medium",
+          "marks": 2,
+          "explanation": "The original contains a double negative: 'not' and 'no' together. Standard English uses 'any' after a negative, giving 'will not be hiring any more employees'. The company is a single entity, so 'it' is correct. Option (a) keeps the double negative. Option (c) keeps it and also uses the plural 'they'. Option (d) uses 'none' in an incorrect structure. The answer is (b)."
+        },
+        {
+          "text": "The mayor told the engineer that [he should supervise the construction himself because he did not trust the contractor].",
+          "options": ["he should supervise the construction himself because he did not trust the contractor", "the engineer should supervise the construction himself, as the mayor did not trust the contractor", "he should supervise the construction himself because of not trusting the contractor", "the construction should be supervised by him as he did not trust the contractor"],
+          "correctAnswer": 1,
+          "section": "verbal",
+          "topic": "Sentence Correction",
+          "difficulty": "hard",
+          "marks": 2,
+          "explanation": "In the original, each 'he' could refer to either the mayor or the engineer, so the sentence is ambiguous. Option (b) removes the ambiguity by naming 'the engineer' and 'the mayor' explicitly. Option (a) keeps the ambiguity. Option (c) also keeps it and makes the reason awkward. Option (d) keeps it as well, since 'him' is unclear. The answer is (b)."
+        },
+        {
+          "text": "[If I was you, I would have accepted the offer] without hesitation.",
+          "options": ["If I was you, I would have accepted the offer", "If I were you, I would accept the offer", "If I had been you, I would accept the offer", "If I were you, I would have accepted the offer"],
+          "correctAnswer": 1,
+          "section": "verbal",
+          "topic": "Sentence Correction",
+          "difficulty": "hard",
+          "marks": 2,
+          "explanation": "This is a hypothetical situation in the present, with the speaker imagining himself in the other person's place, so the subjunctive 'were' is needed, and the result clause takes 'would' plus the base verb: 'If I were you, I would accept the offer'. The original uses 'was' and 'would have accepted', which mix forms. Option (c) mixes the past perfect with a present result. Option (d) keeps 'would have accepted', which does not match 'if I were'. The answer is (b)."
+        },
+        {
+          "text": "The proposal was [both rejected by the board and the shareholders also opposed it].",
+          "options": ["both rejected by the board and the shareholders also opposed it", "rejected both by the board and by the shareholders", "both rejected by the board and also the shareholders", "rejected by both the board, and the shareholders also"],
+          "correctAnswer": 1,
+          "section": "verbal",
+          "topic": "Sentence Correction",
+          "difficulty": "hard",
+          "marks": 2,
+          "explanation": "The correlative pair 'both ... and' must join elements of the same grammatical form. In option (b), 'both by the board and by the shareholders' joins two parallel prepositional phrases, and the sentence is concise. Option (a) joins a phrase with a full clause, which breaks parallelism, and 'also' is redundant. Option (c) is not parallel and is incomplete. Option (d) places 'both' wrongly and adds a redundant 'also'. The answer is (b)."
+        },
+        {
+          "text": "The new smartphone is [priced at a much more higher cost than the old one was, and it is also costlier].",
+          "options": ["priced at a much more higher cost than the old one was, and it is also costlier", "priced much higher than the old one was", "priced at a cost which is higher in comparison to the old one's cost", "priced more costlier than the old one"],
+          "correctAnswer": 1,
+          "section": "verbal",
+          "topic": "Sentence Correction",
+          "difficulty": "medium",
+          "marks": 2,
+          "explanation": "The original is full of redundancy: 'much more higher' is a double comparative, 'priced at a ... cost' repeats the idea, and 'it is also costlier' says the same thing again. Option (b) is clear and concise. Option (a) keeps all the redundancy. Option (c) is wordy and awkward. Option (d) uses the double comparative 'more costlier'. The answer is (b)."
+        }
+      ]
+    }
+  ],
+  "standaloneQuestions": [
+    {
+      "text": "What will be the output of the following pseudocode?\n1) Integer i, j, s\n2) Set s = 0\n3) For (each i from 1 to 5)\n4) For (each j from 1 to i)\n5) If ((i * j) MOD 4 = 0)\n6) s = s + (i - j)\n7) End-if\n8) End-for\n9) End-for\n10) Print s",
+      "options": ["5", "6", "7", "8"],
+      "correctAnswer": 2,
+      "section": "technical",
+      "topic": "Pseudocode",
+      "difficulty": "hard",
+      "marks": 2,
+      "explanation": "Add (i − j) whenever i × j is divisible by 4. i=1: no pair qualifies. i=2: j=2 gives 4, so add 0. i=3: the products are 3, 6 and 9, so none qualifies. i=4: j=1 gives 4 (add 3), j=2 gives 8 (add 2), j=3 gives 12 (add 1), j=4 gives 16 (add 0), so s = 6. i=5: only j=4 gives 20 (add 1), so s = 7. The output is 7."
+    },
+    {
+      "text": "What will be the output of the following pseudocode?\n1) Integer func (Integer a, Integer b)\n2) If (b = 0)\n3) return a\n4) End-if\n5) return func(b, a MOD b) + 1\n6) End-function\n7) Print func(48, 18)",
+      "options": ["6", "7", "8", "9"],
+      "correctAnswer": 3,
+      "section": "technical",
+      "topic": "Pseudocode",
+      "difficulty": "hard",
+      "marks": 2,
+      "explanation": "func(48, 18) = func(18, 12) + 1. func(18, 12) = func(12, 6) + 1. func(12, 6) = func(6, 0) + 1. func(6, 0) returns 6. Working back: func(12, 6) = 7, func(18, 12) = 8, func(48, 18) = 9. The output is 9."
+    },
+    {
+      "text": "What will be the output of the following pseudocode?\n1) Integer n, r, p\n2) Set n = 45, r = 0, p = 1\n3) While (n > 0)\n4) If (n MOD 2 = 1)\n5) r = r + p\n6) End-if\n7) p = p * 10\n8) n = n / 2 (integer division)\n9) End-while\n10) Print r MOD 1000",
+      "options": ["101", "111", "1101", "101101"],
+      "correctAnswer": 0,
+      "section": "technical",
+      "topic": "Pseudocode",
+      "difficulty": "hard",
+      "marks": 2,
+      "explanation": "The loop writes the binary form of n as a decimal-looking number. n=45 (odd): r=1, p=10, n=22. n=22 (even): p=100, n=11. n=11 (odd): r=101, p=1000, n=5. n=5 (odd): r=1101, p=10000, n=2. n=2 (even): p=100000, n=1. n=1 (odd): r=101101, n=0. Then r MOD 1000 = 101101 MOD 1000 = 101."
+    },
+    {
+      "text": "What will be the output of the following pseudocode? (Array indices start from 1)\n1) Integer A[5] = {3, 8, 2, 7, 4}, i, t\n2) Set t = 0\n3) For (each i from 1 to 5)\n4) If (A[i] MOD 2 = 0)\n5) t = t + A[i]\n6) Else\n7) t = t - A[i]\n8) End-if\n9) A[i] = t\n10) End-for\n11) Print A[2] + A[5]",
+      "options": ["7", "9", "11", "13"],
+      "correctAnswer": 1,
+      "section": "technical",
+      "topic": "Pseudocode",
+      "difficulty": "hard",
+      "marks": 2,
+      "explanation": "Each element is replaced by the running value of t. i=1: 3 is odd, t = −3, A[1] = −3. i=2: 8 is even, t = 5, A[2] = 5. i=3: 2 is even, t = 7, A[3] = 7. i=4: 7 is odd, t = 0, A[4] = 0. i=5: 4 is even, t = 4, A[5] = 4. A[2] + A[5] = 5 + 4 = 9."
+    },
+    {
+      "text": "What will be the output of the following pseudocode?\n1) Integer a, b, c\n2) Set a = 1, b = 1, c = 0\n3) While (c < 4)\n4) a = a + b\n5) b = a - b\n6) If (a MOD 3 = 0)\n7) c = c + 1\n8) End-if\n9) End-while\n10) Print a",
+      "options": ["377", "610", "987", "1597"],
+      "correctAnswer": 2,
+      "section": "technical",
+      "topic": "Pseudocode",
+      "difficulty": "hard",
+      "marks": 2,
+      "explanation": "Each pass sets a = a + b and then b = the old a, so a follows the Fibonacci pattern. The values of a are 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, 233, 377, 610, 987. The multiples of 3 are 3, 21, 144 and 987, so c reaches 1, 2, 3 and 4 at these values. The loop stops when a = 987, and 987 is printed."
+    },
+    {
+      "text": "A train crosses a man running at 6 km/h in the same direction in 30 seconds, and crosses a 270 m long platform in 45 seconds. What is the length of the train?",
+      "options": ["330 m", "360 m", "390 m", "420 m"],
+      "correctAnswer": 2,
+      "section": "numerical",
+      "topic": "Speed and Time",
+      "difficulty": "hard",
+      "marks": 2,
+      "explanation": "Let the train's length be L m and its speed v m/s. The man's speed is 6 km/h = 5/3 m/s. Crossing the man: L = (v − 5/3) × 30. Crossing the platform: L + 270 = 45v. Substituting gives 30v − 50 + 270 = 45v, so 15v = 220 and v = 44/3 m/s. Then L = (44/3 − 5/3) × 30 = 13 × 30 = 390 m. Check: 390 + 270 = 660 = 45 × 44/3."
+    },
+    {
+      "text": "Verbose : Laconic :: Obdurate : ?",
+      "options": ["Pliant", "Stubborn", "Reticent", "Austere"],
+      "correctAnswer": 0,
+      "section": "reasoning",
+      "topic": "Analogy",
+      "difficulty": "hard",
+      "marks": 2,
+      "explanation": "'Verbose' (using too many words) and 'laconic' (using very few words) are antonyms. 'Obdurate' means stubbornly unyielding, so its antonym is 'pliant', which means flexible and yielding. 'Stubborn' is a synonym, not an antonym. 'Reticent' and 'austere' do not oppose 'obdurate'."
+    },
+    {
+      "text": "A and B together can complete a work in 12 days, B and C together in 15 days, and C and A together in 20 days. All three work together for 5 days, after which A leaves. In how many more days will B and C finish the remaining work?",
+      "options": ["6 days", "7 days", "7.5 days", "8 days"],
+      "correctAnswer": 2,
+      "section": "numerical",
+      "topic": "Time and Work",
+      "difficulty": "hard",
+      "marks": 2,
+      "explanation": "Adding the three rates gives 2(A + B + C) = 1/12 + 1/15 + 1/20 = 5/60 + 4/60 + 3/60 = 12/60 = 1/5, so A + B + C = 1/10 per day. In 5 days they complete 5/10 = 1/2 of the work. B + C = 1/15 per day. The remaining 1/2 takes (1/2) ÷ (1/15) = 7.5 days."
+    },
+    {
+      "text": "The incomes of A and B are in the ratio 4 : 3 and their expenditures are in the ratio 3 : 2. If each of them saves ₹600, what is A's income?",
+      "options": ["₹2,400", "₹2,700", "₹3,000", "₹3,200"],
+      "correctAnswer": 0,
+      "section": "numerical",
+      "topic": "Ratio and Proportion",
+      "difficulty": "hard",
+      "marks": 2,
+      "explanation": "Let the incomes be 4x and 3x and the expenditures 3y and 2y. Then 4x − 3y = 600 and 3x − 2y = 600. From the first, x = (600 + 3y)/4. Substituting into the second: 3(600 + 3y)/4 − 2y = 600, so 1800 + 9y − 8y = 2400 and y = 600. Then x = (600 + 1800)/4 = 600. A's income = 4x = ₹2,400. Check: B's income is ₹1,800, B's expenditure is ₹1,200 and B's savings are ₹600."
+    },
+    {
+      "text": "Arrange the following words in dictionary order and select the word that comes in the middle (third position): Reverie, Reveal, Revere, Revenue, Revenge.",
+      "options": ["Revenge", "Revenue", "Revere", "Reveal"],
+      "correctAnswer": 1,
+      "section": "reasoning",
+      "topic": "Word Arrangement",
+      "difficulty": "hard",
+      "marks": 2,
+      "explanation": "All five words begin with 'Reve', so the fifth letter decides. Reveal has 'a', Revenge and Revenue have 'n', and Revere and Reverie have 'r'. Reveal comes first. Revenge and Revenue share 'Reven', and the next letters are 'g' and 'u', so Revenge comes before Revenue. Revere and Reverie share 'Rever', and the next letters are 'e' and 'i', so Revere comes before Reverie. The order is Reveal, Revenge, Revenue, Revere, Reverie. The middle word is Revenue."
+    },
+    {
+      "text": "Find the missing number in the given matrix.",
+      "questionType": "image_mcq",
+      "media": {
+        "type": "image",
+        "url": "https://res.cloudinary.com/dinwniuxq/image/upload/v1794052263/puzzle1_matrix.png",
+        "alt": "A 3 by 3 number matrix: 2, 3, 13; 3, 4, 25; 4, 5, and a question mark."
+      },
+      "options": ["37", "39", "41", "43"],
+      "correctAnswer": 2,
+      "section": "reasoning",
+      "topic": "Number Matrix (Sum of Squares)",
+      "difficulty": "hard",
+      "marks": 2,
+      "explanation": "The third number in each row is the sum of the squares of the first two numbers. Row 1: 2² + 3² = 13. Row 2: 3² + 4² = 25. Row 3: 4² + 5² = 16 + 25 = 41. Therefore, the missing number is 41 (Option C)."
+    },
+    {
+      "text": "Find the missing number in the given matrix.",
+      "questionType": "image_mcq",
+      "media": {
+        "type": "image",
+        "url": "https://res.cloudinary.com/dinwniuxq/image/upload/v1794052263/puzzle2_matrix.png",
+        "alt": "A 3 by 3 number matrix: 2, 3, 8; 3, 4, 15; 4, 5, and a question mark."
+      },
+      "options": ["20", "22", "24", "26"],
+      "correctAnswer": 2,
+      "section": "reasoning",
+      "topic": "Number Matrix (Multiply and Add)",
+      "difficulty": "hard",
+      "marks": 2,
+      "explanation": "The third number in each row is calculated by multiplying the first two numbers and adding the first number. Row 1: 2 × 3 + 2 = 8. Row 2: 3 × 4 + 3 = 15. Row 3: 4 × 5 + 4 = 24. Therefore, the missing number is 24 (Option C)."
+    },
+    {
+      "text": "Find the missing number in the given matrix.",
+      "questionType": "image_mcq",
+      "media": {
+        "type": "image",
+        "url": "https://res.cloudinary.com/dinwniuxq/image/upload/v1794052422/puzzle2_matrix.png",
+        "alt": "Number matrix puzzle 2"
+      },
+      "options": ["Option A", "Option B", "Option C", "Option D"],
+      "optionMedia": [
+        { "type": "image", "url": "https://res.cloudinary.com/dinwniuxq/image/upload/v1794052222/puzzle2_option_a.png", "alt": "Option A" },
+        { "type": "image", "url": "https://res.cloudinary.com/dinwniuxq/image/upload/v1794052222/puzzle2_option_b.png", "alt": "Option B" },
+        { "type": "image", "url": "https://res.cloudinary.com/dinwniuxq/image/upload/v1794052222/puzzle2_option_c.png", "alt": "Option C" },
+        { "type": "image", "url": "https://res.cloudinary.com/dinwniuxq/image/upload/v1794052222/puzzle2_option_d.png", "alt": "Option D" }
+      ],
+      "correctAnswer": 2,
+      "section": "reasoning",
+      "topic": "Number Matrix Puzzle 2 (Image Options)",
+      "difficulty": "hard",
+      "marks": 2,
+      "explanation": "The correct answer is Option C. Identify the mathematical relationship between the numbers in each row and apply the same pattern to determine the missing value."
+    },
+    {
+      "text": "Find the missing number in the given matrix.",
+      "questionType": "image_mcq",
+      "media": {
+        "type": "image",
+        "url": "https://res.cloudinary.com/dinwniuxq/image/upload/v1794052428/puzzle1_matrix.png",
+        "alt": "Number matrix puzzle 1"
+      },
+      "options": ["Option A", "Option B", "Option C", "Option D"],
+      "optionMedia": [
+        { "type": "image", "url": "https://res.cloudinary.com/dinwniuxq/image/upload/v1794052231/puzzle1_option_a.png", "alt": "Option A" },
+        { "type": "image", "url": "https://res.cloudinary.com/dinwniuxq/image/upload/v1794052231/puzzle1_option_b.png", "alt": "Option B" },
+        { "type": "image", "url": "https://res.cloudinary.com/dinwniuxq/image/upload/v1794052231/puzzle1_option_c.png", "alt": "Option C" },
+        { "type": "image", "url": "https://res.cloudinary.com/dinwniuxq/image/upload/v1794052231/puzzle1_option_d.png", "alt": "Option D" }
+      ],
+      "correctAnswer": 2,
+      "section": "reasoning",
+      "topic": "Number Matrix Puzzle 1 (Image Options)",
+      "difficulty": "hard",
+      "marks": 2,
+      "explanation": "The correct answer is Option C. Observe the relationship among the numbers in the rows and use the same rule to calculate the missing number."
+    }
+  ],
+  "test": {
+    "title": "CrackNQT Mock — Infosys SE 2027 Advanced Reasoning & Verbal Set",
+    "type": "topic_practice",
+    "section": "reasoning",
+    "topic": "Data Interpretation",
+    "duration": 2700,
+    "selectionMode": "fixed",
+    "sectionLocked": false,
+    "isPremium": true,
+    "isActive": true
+  }
+}

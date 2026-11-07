@@ -1,5 +1,7 @@
 const Test = require('../models/Test');
 const Question = require('../models/Question');
+const QuestionGroup = require('../models/QuestionGroup');
+const { buildQuestionAssemblies } = require('../utils/questionSelection');
 
 // @desc    Get all active tests (public)
 // @route   GET /api/tests
@@ -29,10 +31,11 @@ exports.getTests = async (req, res, next) => {
 // @route   GET /api/tests/:id
 exports.getTest = async (req, res, next) => {
   try {
-    const test = await Test.findById(req.params.id).populate({
-      path: 'questions',
-      select: 'text options section topic difficulty',
-    });
+    const test = await Test.findById(req.params.id)
+      .populate({
+        path: 'questions',
+        select: 'text options section topic difficulty questionType media optionMedia groupId',
+      });
 
     if (!test) {
       return res.status(404).json({ success: false, message: 'Test not found' });
@@ -43,7 +46,18 @@ exports.getTest = async (req, res, next) => {
       return res.status(403).json({ success: false, code: 'PREMIUM_REQUIRED', message: 'Premium subscription required' });
     }
 
-    res.json({ success: true, data: test });
+    const payload = test.toObject();
+    const questionDocs = (payload.questions || []).filter(Boolean);
+    const groupIds = [...new Set(questionDocs.map((q) => q.groupId).filter(Boolean).map(String))];
+    const groups = groupIds.length
+      ? await QuestionGroup.find({ _id: { $in: groupIds } }).lean()
+      : [];
+
+    const { questionMode, questionGroups } = buildQuestionAssemblies(questionDocs, groups);
+    payload.questionMode = questionMode;
+    payload.questionGroups = questionGroups;
+
+    res.json({ success: true, data: payload });
   } catch (error) {
     next(error);
   }
@@ -54,7 +68,7 @@ exports.getTest = async (req, res, next) => {
 exports.getTopicsBySection = async (req, res, next) => {
   try {
     const { section } = req.params;
-    const validSections = ['numerical', 'reasoning', 'verbal', 'advanced', 'system'];
+    const validSections = ['numerical', 'reasoning', 'verbal', 'advanced', 'system', 'technical'];
     if (!validSections.includes(section)) {
       return res.status(400).json({ success: false, message: 'Invalid section' });
     }
@@ -103,7 +117,7 @@ exports.getQuestionsByTopic = async (req, res, next) => {
     const questions = await Question.aggregate([
       { $match: filter },
       { $sample: { size: parseInt(limit) } },
-      { $project: { text: 1, options: 1, section: 1, topic: 1, difficulty: 1 } },
+      { $project: { text: 1, options: 1, section: 1, topic: 1, difficulty: 1, questionType: 1, media: 1, optionMedia: 1, groupId: 1 } },
     ]);
 
     if (questions.length === 0) {
@@ -144,7 +158,7 @@ exports.generatePracticeTest = async (req, res, next) => {
       const questions = await Question.aggregate([
         { $match: { section, topic } },
         { $sample: { size: existingTest.totalQuestions } },
-        { $project: { text: 1, options: 1, section: 1, topic: 1, difficulty: 1 } },
+        { $project: { text: 1, options: 1, section: 1, topic: 1, difficulty: 1, questionType: 1, media: 1, optionMedia: 1, groupId: 1 } },
       ]);
 
       return res.json({

@@ -43,7 +43,12 @@
     "seed:percentage-test": "node seeds/seed_percentage_test.js",
     "seed:cleanup-tests": "node seeds/cleanup_dynamic_tests.js",
     "seed:reseed-all-tests": "node seeds/reseed_all_tests.js",
-    "seed:profit-and-loss-hard-book": "node seeds/seed_profit_and_loss_hard_book.js"
+    "seed:profit-and-loss-hard-book": "node seeds/seed_profit_and_loss_hard_book.js",
+    "seed:di-mock": "node seeds/seed_data_interpretation_mock.js",
+    "seed:di-friends": "node seeds/seed_data_interpretation_mock.js seeds/data_interpretation_friends.json",
+    "seed:infosys-2": "node seeds/seed_data_interpretation_mock.js seeds/infosys_mock_2.json",
+    "seed:infosys-3": "node seeds/seed_data_interpretation_mock.js seeds/infosys_mock_3.json",
+    "seed:infosys-4": "node seeds/seed_data_interpretation_mock.js seeds/infosys_mock_4.json"
   },
   "keywords": [],
   "author": "",

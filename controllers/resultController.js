@@ -1,4 +1,6 @@
 const Result = require('../models/Result');
+const QuestionGroup = require('../models/QuestionGroup');
+const { buildQuestionAssemblies } = require('../utils/questionSelection');
 
 // @desc    Get detailed result for an attempt
 // @route   GET /api/results/:attemptId
@@ -28,7 +30,7 @@ exports.getReview = async (req, res, next) => {
       user: req.user._id,
     }).populate({
       path: 'questionDetails.question',
-      select: 'text options correctAnswer section topic explanation',
+      select: 'text options correctAnswer section topic explanation questionType media optionMedia groupId',
     });
 
     if (!result) {
@@ -45,12 +47,21 @@ exports.getReview = async (req, res, next) => {
       timeSpent: qd.timeSpent,
     }));
 
+    const questionDocs = result.questionDetails.map((qd) => qd.question).filter(Boolean);
+    const groupIds = [...new Set(questionDocs.map((q) => q.groupId).filter(Boolean).map(String))];
+    const groups = groupIds.length
+      ? await QuestionGroup.find({ _id: { $in: groupIds } }).lean()
+      : [];
+    const { questionMode, questionGroups } = buildQuestionAssemblies(questionDocs, groups);
+
     res.json({
       success: true,
       data: {
         score: result.score,
         totalQuestions: result.totalQuestions,
         percentage: result.percentage,
+        questionMode,
+        questionGroups,
         review,
       },
     });

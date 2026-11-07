@@ -1,0 +1,742 @@
+{
+  "groups": [
+    {
+      "title": "QuickKart: City-wise Orders and Revenue",
+      "type": "data_interpretation",
+      "section": "numerical",
+      "topic": "Data Interpretation",
+      "difficulty": "medium",
+      "stimulus": {
+        "text": "QuickKart, an online grocery delivery company, operates in five cities. The table below shows the number of orders received and the number of orders successfully delivered in each city during one month, along with the average value of a delivered order. Revenue of a city is calculated only on delivered orders (Revenue = Orders delivered × Average order value).\n\nCity | Orders Received | Orders Delivered | Average Order Value (₹)\nBengaluru | 2,400 | 2,160 | 500\nChennai | 1,800 | 1,530 | 400\nHyderabad | 2,000 | 1,700 | 450\nPune | 1,500 | 1,425 | 600\nKochi | 1,200 | 960 | 350",
+        "media": null
+      },
+      "metadata": {
+        "columns": ["City", "Orders Received", "Orders Delivered", "Average Order Value (₹)"],
+        "rows": [["Bengaluru", 2400, 2160, 500], ["Chennai", 1800, 1530, 400], ["Hyderabad", 2000, 1700, 450], ["Pune", 1500, 1425, 600], ["Kochi", 1200, 960, 350]]
+      },
+      "questions": [
+        {
+          "text": "In which city is the percentage of orders delivered (out of orders received) the highest?",
+          "options": ["Bengaluru", "Chennai", "Pune", "Kochi"],
+          "correctAnswer": 2,
+          "section": "numerical",
+          "topic": "Data Interpretation",
+          "difficulty": "easy",
+          "marks": 2,
+          "explanation": "Delivery percentage = (Delivered / Received) × 100. Bengaluru = 2160/2400 = 90%. Chennai = 1530/1800 = 85%. Pune = 1425/1500 = 95%. Kochi = 960/1200 = 80%. Pune has the highest delivery percentage at 95%."
+        },
+        {
+          "text": "What is the total number of orders that were received but not delivered across all five cities?",
+          "options": ["1,025", "1,075", "1,125", "1,175"],
+          "correctAnswer": 2,
+          "section": "numerical",
+          "topic": "Data Interpretation",
+          "difficulty": "medium",
+          "marks": 2,
+          "explanation": "Total received = 2400 + 1800 + 2000 + 1500 + 1200 = 8,900. Total delivered = 2160 + 1530 + 1700 + 1425 + 960 = 7,775. Undelivered orders = 8,900 − 7,775 = 1,125."
+        },
+        {
+          "text": "The orders received in Bengaluru and Hyderabad together form approximately what percentage of the total orders received in all five cities?",
+          "options": ["45.2%", "47.8%", "49.4%", "51.6%"],
+          "correctAnswer": 2,
+          "section": "numerical",
+          "topic": "Data Interpretation",
+          "difficulty": "medium",
+          "marks": 2,
+          "explanation": "Orders received in Bengaluru and Hyderabad = 2400 + 2000 = 4,400. Total orders received = 8,900. Percentage = (4400 / 8900) × 100 ≈ 49.4%."
+        },
+        {
+          "text": "By how much does the revenue of Hyderabad exceed the revenue of Chennai?",
+          "options": ["₹1,23,000", "₹1,53,000", "₹1,63,000", "₹1,35,000"],
+          "correctAnswer": 1,
+          "section": "numerical",
+          "topic": "Data Interpretation",
+          "difficulty": "medium",
+          "marks": 2,
+          "explanation": "Revenue of Hyderabad = 1700 × 450 = ₹7,65,000. Revenue of Chennai = 1530 × 400 = ₹6,12,000. Difference = 7,65,000 − 6,12,000 = ₹1,53,000."
+        },
+        {
+          "text": "If Kochi had delivered 90% of the orders it received instead of its actual delivery, by how much would Kochi's revenue have increased?",
+          "options": ["₹36,000", "₹42,000", "₹48,000", "₹52,500"],
+          "correctAnswer": 1,
+          "section": "numerical",
+          "topic": "Data Interpretation",
+          "difficulty": "hard",
+          "marks": 2,
+          "explanation": "Orders Kochi would deliver at 90% = 0.90 × 1200 = 1,080. Actual orders delivered = 960. Additional orders delivered = 1080 − 960 = 120. Average order value in Kochi = ₹350. Increase in revenue = 120 × 350 = ₹42,000."
+        }
+      ]
+    },
+    {
+      "title": "Data Sufficiency: Mark the Right Option",
+      "type": "data_sufficiency",
+      "section": "reasoning",
+      "topic": "Data Sufficiency",
+      "difficulty": "medium",
+      "stimulus": {
+        "text": "Directions: Each of the questions below consists of a question and two statements numbered I and II given below it. You must decide whether the information provided in the statements is sufficient to answer the question. Consider the following while answering the questions: Mark 1 as the answer, if the question can be answered by using one of the statements alone but cannot be answered using the other statement alone. Mark 2 as the answer, if the question can be answered by using either statement alone. Mark 3 as the answer, if the question can be answered by using both statements together but cannot be answered using either statement alone. Mark 4 as the answer, if the question cannot be answered even by using both statements together.",
+        "media": null
+      },
+      "metadata": {
+        "questionType": "data_sufficiency",
+        "numberOfQuestions": 5,
+        "options": {
+          "1": "One statement alone is sufficient, the other alone is not",
+          "2": "Either statement alone is sufficient",
+          "3": "Both statements together are needed",
+          "4": "Even both together are not sufficient"
+        }
+      },
+      "questions": [
+        {
+          "text": "What is the speed of a boat in still water?\nI. The boat takes 3 hours to travel 36 km downstream.\nII. The speed of the stream is 2 km/h.",
+          "options": ["1", "2", "3", "4"],
+          "correctAnswer": 2,
+          "section": "reasoning",
+          "topic": "Data Sufficiency",
+          "difficulty": "medium",
+          "marks": 2,
+          "explanation": "From I alone, the downstream speed = 36 / 3 = 12 km/h, but the boat's speed in still water cannot be found without the stream speed. From II alone, only the stream speed is known, so the boat's speed cannot be found. Together, speed in still water = 12 − 2 = 10 km/h. Both statements are needed, so the answer is 3."
+        },
+        {
+          "text": "What is the volume of a cuboid?\nI. The area of its base is 48 sq cm and its height is 5 cm.\nII. Its length is 8 cm, its breadth is 6 cm and its height is 5 cm.",
+          "options": ["1", "2", "3", "4"],
+          "correctAnswer": 1,
+          "section": "reasoning",
+          "topic": "Data Sufficiency",
+          "difficulty": "easy",
+          "marks": 2,
+          "explanation": "From I, volume = base area × height = 48 × 5 = 240 cu cm. From II, volume = 8 × 6 × 5 = 240 cu cm. Each statement alone gives the volume, so the answer is 2."
+        },
+        {
+          "text": "What is the marked price of a watch?\nI. The shopkeeper gave a discount of 10% on the marked price.\nII. The shopkeeper still made a profit of 20% on the cost price.",
+          "options": ["1", "2", "3", "4"],
+          "correctAnswer": 3,
+          "section": "reasoning",
+          "topic": "Data Sufficiency",
+          "difficulty": "medium",
+          "marks": 2,
+          "explanation": "Statement I gives only a percentage discount, and statement II gives only a percentage profit. Neither gives any actual amount such as the cost price or selling price. Even together, they give only relations such as selling price = 0.9 × marked price = 1.2 × cost price, so the marked price cannot be found as a number. The answer is 4."
+        },
+        {
+          "text": "Is the integer n even?\nI. n + 3 is odd.\nII. n is divisible by 3.",
+          "options": ["1", "2", "3", "4"],
+          "correctAnswer": 0,
+          "section": "reasoning",
+          "topic": "Data Sufficiency",
+          "difficulty": "medium",
+          "marks": 2,
+          "explanation": "From I, n + 3 is odd, so n must be even, because an even number plus 3 is odd. This gives a definite yes. From II, n can be 6 (even) or 9 (odd), so no single answer is possible. Statement I alone is sufficient and II alone is not, so the answer is 1."
+        },
+        {
+          "text": "Who is the tallest among P, Q and R?\nI. P is taller than Q.\nII. R is shorter than P.",
+          "options": ["1", "2", "3", "4"],
+          "correctAnswer": 2,
+          "section": "reasoning",
+          "topic": "Data Sufficiency",
+          "difficulty": "hard",
+          "marks": 2,
+          "explanation": "From I alone, P is taller than Q, but R's height relative to P is unknown, so R could be the tallest. From II alone, P is taller than R, but Q's height relative to P is unknown, so Q could be the tallest. Together, P is taller than both Q and R, so P is the tallest. Both statements are needed, so the answer is 3."
+        }
+      ]
+    },
+    {
+      "title": "Syllogism: Valid Conclusions",
+      "type": "syllogism",
+      "section": "reasoning",
+      "topic": "Syllogism",
+      "difficulty": "medium",
+      "stimulus": {
+        "text": "Directions: In each question below, two or three statements are given, followed by four conclusions numbered I, II, III and IV. Take the given statements to be true, even if they seem to be at variance with commonly known facts. Decide which of the conclusions logically follow from the statements, and select the option that gives the correct set of conclusions.",
+        "media": null
+      },
+      "metadata": {
+        "questionType": "syllogism",
+        "numberOfQuestions": 5,
+        "focus": ["All-Some-No statements", "Conversion", "Possibility cases", "Either-or cases"]
+      },
+      "questions": [
+        {
+          "text": "Statements: All pens are books. All books are bags.\nConclusions:\nI. All pens are bags.\nII. Some bags are books.\nIII. Some bags are pens.\nIV. All bags are pens.",
+          "options": ["Only I and II follow", "Only I, II and III follow", "Only II and IV follow", "All I, II, III and IV follow"],
+          "correctAnswer": 1,
+          "section": "reasoning",
+          "topic": "Syllogism",
+          "difficulty": "easy",
+          "marks": 2,
+          "explanation": "Pens lie inside books, and books lie inside bags, so all pens are bags. Hence I follows. 'All books are bags' converts to 'Some bags are books', so II follows. Since all pens are bags, converting gives 'Some bags are pens', so III follows. IV does not follow, because bags can be more than pens. So only I, II and III follow."
+        },
+        {
+          "text": "Statements: Some cats are dogs. All dogs are horses.\nConclusions:\nI. Some cats are horses.\nII. Some horses are dogs.\nIII. All cats are horses.\nIV. Some horses are cats.",
+          "options": ["Only I and II follow", "Only I, II and IV follow", "Only II and III follow", "Only III and IV follow"],
+          "correctAnswer": 1,
+          "section": "reasoning",
+          "topic": "Syllogism",
+          "difficulty": "medium",
+          "marks": 2,
+          "explanation": "Some cats are dogs, and all dogs are horses, so those cats are also horses. Hence I follows. 'All dogs are horses' converts to 'Some horses are dogs', so II follows. Converting I gives 'Some horses are cats', so IV follows. III does not follow, because only some cats are known to be dogs. So only I, II and IV follow."
+        },
+        {
+          "text": "Statements: No table is a chair. All chairs are sofas.\nConclusions:\nI. No table is a sofa.\nII. Some sofas are chairs.\nIII. Some sofas are not tables.\nIV. All sofas are chairs.",
+          "options": ["Only I and II follow", "Only II and III follow", "Only II and IV follow", "Only I, II and III follow"],
+          "correctAnswer": 1,
+          "section": "reasoning",
+          "topic": "Syllogism",
+          "difficulty": "medium",
+          "marks": 2,
+          "explanation": "All chairs are sofas converts to 'Some sofas are chairs', so II follows. Those sofas that are chairs cannot be tables, since no table is a chair, so some sofas are not tables. Hence III follows. I does not follow, because tables may still be sofas that are not chairs. IV does not follow, because sofas can be more than chairs. So only II and III follow."
+        },
+        {
+          "text": "Statements: Some apples are mangoes. No mango is a grape.\nConclusions:\nI. Some apples are not grapes.\nII. No apple is a grape.\nIII. Some grapes are apples.\nIV. Some mangoes are not grapes.",
+          "options": ["Only I follows", "Only I and IV follow", "Only II and IV follow", "Only I, III and IV follow"],
+          "correctAnswer": 1,
+          "section": "reasoning",
+          "topic": "Syllogism",
+          "difficulty": "medium",
+          "marks": 2,
+          "explanation": "Some apples are mangoes, and no mango is a grape, so those apples are not grapes. Hence I follows. 'No mango is a grape' means every mango is not a grape, so some mangoes are not grapes, and IV follows. II does not follow, because the other apples may be grapes. III does not follow, because a grape-apple link is not established. So only I and IV follow."
+        },
+        {
+          "text": "Statements: All stars are planets. Some planets are moons. No moon is a comet.\nConclusions:\nI. Some stars are moons.\nII. Some moons are not comets.\nIII. Some planets are not comets.\nIV. All stars are comets.",
+          "options": ["Only I and II follow", "Only II and III follow", "Only II, III and IV follow", "None of the conclusions follow"],
+          "correctAnswer": 1,
+          "section": "reasoning",
+          "topic": "Syllogism",
+          "difficulty": "hard",
+          "marks": 2,
+          "explanation": "Some planets are moons, and no moon is a comet, so those planets are not comets. Hence III follows. Since no moon is a comet, some moons are not comets, so II follows. I does not follow, because the stars inside planets may not be the planets that are moons. IV does not follow, because there is no link between stars and comets. So only II and III follow."
+        }
+      ]
+    },
+    {
+      "title": "Farewell Dinner: Seating Attendance Conditions",
+      "type": "data_interpretation",
+      "section": "reasoning",
+      "topic": "Conditional Logic",
+      "difficulty": "medium",
+      "stimulus": {
+        "text": "A company is organising a farewell dinner for Mr. Kapoor and has invited 7 colleagues (Asha, Bharat, Chitra, Dev, Esha, Faisal and Gauri). Not all of them are on good terms, so their attendance follows these conditions: (i) If Asha comes, then Dev does not come. (ii) If Bharat comes, then Chitra does not come. (iii) If Chitra does not come, then Esha does not come. (iv) If Esha does not come, then Asha and Faisal come.",
+        "media": null
+      },
+      "metadata": {
+        "people": ["Asha", "Bharat", "Chitra", "Dev", "Esha", "Faisal", "Gauri"],
+        "conditions": ["If Asha comes, then Dev does not come", "If Bharat comes, then Chitra does not come", "If Chitra does not come, then Esha does not come", "If Esha does not come, then Asha and Faisal come"]
+      },
+      "questions": [
+        {
+          "text": "If Faisal does not come, then which of the following must be true?",
+          "options": ["Bharat comes", "Chitra does not come", "Esha comes", "Asha comes", "None of these"],
+          "correctAnswer": 2,
+          "section": "reasoning",
+          "topic": "Conditional Logic",
+          "difficulty": "medium",
+          "marks": 2,
+          "explanation": "By (iv), if Esha does not come then Asha and Faisal both come. Faisal is absent, so Esha must come. By (iii), if Chitra were absent Esha would be absent, so Chitra must come. By (ii), if Bharat came then Chitra would not come, so Bharat does not come. Asha's attendance is not forced. So only 'Esha comes' must be true. The answer is (c)."
+        },
+        {
+          "text": "If Dev comes, then which of the following must be true?",
+          "options": ["Asha comes", "Esha does not come", "Bharat comes", "Chitra comes", "None of these"],
+          "correctAnswer": 3,
+          "section": "reasoning",
+          "topic": "Conditional Logic",
+          "difficulty": "hard",
+          "marks": 2,
+          "explanation": "If Dev comes, Asha cannot come, by (i). Since Asha is absent, 'Asha and Faisal come' is false, so by (iv) Esha must come. By (iii), Chitra must come, because her absence would force Esha's absence. By (ii), Bharat then cannot come. So Chitra comes and Esha comes, while Asha and Bharat do not. Option (d) must be true. The answer is (d)."
+        },
+        {
+          "text": "If Bharat comes, then which of the following must NOT be true?",
+          "options": ["Asha comes", "Faisal comes", "Dev comes", "Gauri does not come", "None of these"],
+          "correctAnswer": 2,
+          "section": "reasoning",
+          "topic": "Conditional Logic",
+          "difficulty": "medium",
+          "marks": 2,
+          "explanation": "If Bharat comes, Chitra does not come by (ii). Then Esha does not come by (iii). Then Asha and Faisal come by (iv). Since Asha comes, Dev does not come by (i). So 'Dev comes' must be false. Options (a) and (b) must be true, and Gauri is not linked to any condition, so (d) can be either. The answer is (c)."
+        },
+        {
+          "text": "Which of the following could be the group of people attending the dinner?",
+          "options": ["Asha, Dev, Faisal", "Bharat, Asha, Faisal, Gauri", "Chitra, Esha, Bharat", "Dev, Faisal, Gauri", "None of these"],
+          "correctAnswer": 1,
+          "section": "reasoning",
+          "topic": "Conditional Logic",
+          "difficulty": "medium",
+          "marks": 2,
+          "explanation": "Option (a): Asha and Dev both come, violating (i). Option (b): Bharat comes and Chitra is absent, satisfying (ii). Chitra absent and Esha absent satisfies (iii). Esha absent and both Asha and Faisal present satisfies (iv). Asha comes and Dev is absent, satisfying (i). So this group is valid. Option (c): Bharat and Chitra both come, violating (ii). Option (d): Esha is absent, so Asha and Faisal must both come, but Asha is absent, violating (iv). The answer is (b)."
+        },
+        {
+          "text": "The attendance of ______ is not linked to any of the four conditions, so this person can attend regardless of who else comes.",
+          "options": ["Asha", "Chitra", "Esha", "Gauri", "Faisal"],
+          "correctAnswer": 3,
+          "section": "reasoning",
+          "topic": "Conditional Logic",
+          "difficulty": "easy",
+          "marks": 2,
+          "explanation": "Asha appears in conditions (i) and (iv), Chitra in (ii) and (iii), Esha in (iii) and (iv), and Faisal in (iv). Gauri appears in none of the conditions, so Gauri's attendance is neither forced nor prevented by anyone else. The answer is Gauri."
+        }
+      ]
+    },
+    {
+      "title": "City Bike-Sharing Scheme: Evaluating the Municipality's Argument",
+      "type": "data_interpretation",
+      "section": "verbal",
+      "topic": "Critical Reasoning",
+      "difficulty": "medium",
+      "stimulus": {
+        "text": "The municipality of Lakeside plans to launch a bike-sharing scheme with 2,000 bicycles at stations across the city from March 1. The municipality argues that the scheme will reduce traffic congestion and will also improve the health of residents, since more people will cycle instead of using cars and buses. A survey of 1,000 residents found that 40% of them travel to work by car or bus. In a pilot run last year in one neighbourhood, 25% of the bicycles were used daily, while the number of cars entering that neighbourhood during peak hours fell by only 2%.",
+        "media": null
+      },
+      "metadata": {
+        "claim": "The scheme will reduce traffic congestion and improve residents' health",
+        "plannedBicycles": 2000,
+        "surveyCarOrBusCommuters": "40%",
+        "pilotDailyBicycleUse": "25%",
+        "pilotPeakCarChange": "fell by 2%"
+      },
+      "questions": [
+        {
+          "text": "Which of the following statements, if true, most weakens the municipality's claim that the scheme will reduce traffic congestion?",
+          "options": ["Most of the people who used the pilot bicycles had earlier walked or used a bus to the same places, not a car.", "The bicycles are fitted with locks that cannot be broken easily.", "Bicycle stations will be built near all major markets.", "The municipality has decided to make the first 30 minutes of every ride free."],
+          "correctAnswer": 0,
+          "section": "verbal",
+          "topic": "Critical Reasoning",
+          "difficulty": "easy",
+          "marks": 2,
+          "explanation": "Congestion will fall only if people who now use cars switch to bicycles. Option (a) says the bicycle users were mostly not car users, so the scheme removes few cars from the road, and this weakens the claim. Option (b) is about security and does not affect traffic. Option (c) and option (d) would encourage more people to use the bicycles, so they support the plan rather than weaken it. The answer is (a)."
+        },
+        {
+          "text": "Which of the following statements, if true, most strengthens the municipality's claim that the scheme will improve the health of residents?",
+          "options": ["The municipality will print the scheme's logo on every bicycle.", "Many residents who currently do no regular exercise say they will use the bicycles for daily travel.", "The bicycles will be imported from another country.", "The scheme will run only during the dry season."],
+          "correctAnswer": 1,
+          "section": "verbal",
+          "topic": "Critical Reasoning",
+          "difficulty": "medium",
+          "marks": 2,
+          "explanation": "Health improves when people who are not active start to exercise. Option (b) says that residents who do no regular exercise plan to cycle daily, which directly supports the claim. Option (a) is about branding and has no link to health. Option (c) is about the origin of the bicycles and is irrelevant. Option (d) limits the period of use, which would weaken rather than strengthen the claim. The answer is (b)."
+        },
+        {
+          "text": "The municipality's claim that the scheme will reduce congestion assumes which of the following?",
+          "options": ["Every resident of the city owns a bicycle.", "A significant number of the new cyclists will be people who would otherwise have travelled by car.", "The bicycles will not need any repairs during the year.", "The scheme will be copied by other cities."],
+          "correctAnswer": 1,
+          "section": "verbal",
+          "topic": "Critical Reasoning",
+          "difficulty": "hard",
+          "marks": 2,
+          "explanation": "The argument moves from 'more people will cycle' to 'less congestion', and this holds only if the new cyclists are people who would otherwise have driven. If they were pedestrians or bus riders, the number of cars on the road would not drop. Option (b) states this necessary assumption. Option (a) is too extreme and would make the scheme pointless. Options (c) and (d) are not required for the conclusion to hold. The answer is (b)."
+        },
+        {
+          "text": "Which of the following can be properly inferred from the passage?",
+          "options": ["The pilot proved that the scheme will fail in the whole city.", "The pilot result does not strongly support the expectation of a large fall in congestion.", "The bicycles used in the pilot were of poor quality.", "Residents of the pilot neighbourhood did not like cycling."],
+          "correctAnswer": 1,
+          "section": "verbal",
+          "topic": "Critical Reasoning",
+          "difficulty": "medium",
+          "marks": 2,
+          "explanation": "In the pilot, peak-hour car entries fell by only 2%, which is a very small change compared with what the municipality expects. So the pilot does not strongly support the claim of a large reduction in congestion, which is option (b). Option (a) is too strong, because one neighbourhood cannot prove failure for the whole city. Option (c) and option (d) are not stated or implied, since 25% daily use of the bicycles suggests that people did use them. The answer is (b)."
+        },
+        {
+          "text": "Which of the following would be most useful to know in order to evaluate whether the scheme will reduce congestion?",
+          "options": ["The colour in which the bicycles will be painted.", "The share of the pilot's bicycle trips that replaced car trips.", "The number of staff the municipality will hire to maintain the bicycles.", "The date on which the scheme was first proposed."],
+          "correctAnswer": 1,
+          "section": "verbal",
+          "topic": "Critical Reasoning",
+          "difficulty": "medium",
+          "marks": 2,
+          "explanation": "The question is about congestion, which depends on how many car trips are replaced. If a large share of the bicycle trips replaced car trips, congestion could fall, but if the share is small, it will not. So option (b) is the most useful. Options (a), (c) and (d) are about colour, staffing and dates, which do not tell us whether car traffic will fall. The answer is (b)."
+        }
+      ]
+    },
+    {
+      "title": "Sentence Completion: Choose the Best Word or Phrase",
+      "type": "data_interpretation",
+      "section": "verbal",
+      "topic": "Sentence Completion",
+      "difficulty": "medium",
+      "stimulus": {
+        "text": "Directions: Each sentence below has a blank. Choose the option that fits in grammatically and logically and completes the sentence most effectively.",
+        "media": null
+      },
+      "metadata": {
+        "questionType": "sentence_completion",
+        "numberOfQuestions": 5,
+        "focus": ["vocabulary", "subject-verb agreement", "collocation", "logical fit", "idiom"]
+      },
+      "questions": [
+        {
+          "text": "The new highway was expected to ease traffic, but poor planning only _____ the problem, leaving commuters stuck for even longer than before.",
+          "options": ["alleviated", "exacerbated", "resolved", "ignored"],
+          "correctAnswer": 1,
+          "section": "verbal",
+          "topic": "Sentence Completion",
+          "difficulty": "easy",
+          "marks": 2,
+          "explanation": "The sentence says commuters were stuck longer than before, so the problem got worse. 'Exacerbated' means made worse and fits. 'Alleviated' and 'resolved' mean the opposite. 'Ignored' does not explain why commuters were stuck longer. The answer is (b)."
+        },
+        {
+          "text": "A large number of the students in the batch _____ already submitted their project reports to the department.",
+          "options": ["has", "have", "is", "was"],
+          "correctAnswer": 1,
+          "section": "verbal",
+          "topic": "Sentence Completion",
+          "difficulty": "medium",
+          "marks": 2,
+          "explanation": "'A large number of' takes a plural verb, since it refers to many students. The helping verb must therefore be 'have', which also matches 'already submitted'. 'Has' is singular, while 'is' and 'was' do not fit the structure with 'submitted'. The answer is (b)."
+        },
+        {
+          "text": "Online shopping has grown so quickly because it offers convenience, wide choice and _____.",
+          "options": ["competitive pricing", "competing prices", "competition of price", "price competitive"],
+          "correctAnswer": 0,
+          "section": "verbal",
+          "topic": "Sentence Completion",
+          "difficulty": "medium",
+          "marks": 2,
+          "explanation": "The list 'convenience, wide choice and ...' needs a noun phrase in parallel form, and 'competitive pricing' is the standard collocation. 'Competing prices' and 'competition of price' are not idiomatic. 'Price competitive' is an adjective phrase that breaks parallelism. The answer is (a)."
+        },
+        {
+          "text": "The company was once the undisputed leader of the camera market, but the arrival of smartphones brought a sudden _____ in its fortunes.",
+          "options": ["revelation", "decline", "accumulation", "expectation"],
+          "correctAnswer": 1,
+          "section": "verbal",
+          "topic": "Sentence Completion",
+          "difficulty": "easy",
+          "marks": 2,
+          "explanation": "The sentence contrasts a past position of leadership with the effect of smartphones, so the blank needs a word for a fall. 'Decline in its fortunes' is the natural phrase. 'Revelation', 'accumulation' and 'expectation' do not describe a change from success to weakness. The answer is (b)."
+        },
+        {
+          "text": "Although the manager's plan looked impressive on paper, the team found it too _____ to be carried out with the limited budget and time available.",
+          "options": ["practical", "ambitious", "modest", "affordable"],
+          "correctAnswer": 1,
+          "section": "verbal",
+          "topic": "Sentence Completion",
+          "difficulty": "hard",
+          "marks": 2,
+          "explanation": "The word 'although' signals a contrast: the plan looked impressive but could not be carried out with limited resources. 'Ambitious' means aiming at too much and fits this idea. 'Practical', 'modest' and 'affordable' would make the plan easy to carry out, which contradicts the sentence. The answer is (b)."
+        }
+      ]
+    },
+    {
+      "title": "Reading Comprehension: The Rise of Urban Rooftop Farming",
+      "type": "data_interpretation",
+      "section": "verbal",
+      "topic": "Reading Comprehension",
+      "difficulty": "medium",
+      "stimulus": {
+        "text": "Directions: Read the following passage and answer the questions that follow on the basis of what is stated or implied in the passage.\n\nAs cities grow denser, empty land becomes scarce and expensive. In response, a growing number of urban residents have begun to grow food on rooftops. Rooftop farming is not a new idea, but advances in lightweight soil mixes and drip irrigation have made it far more practical than it was a few decades ago.\n\nThe most obvious benefit is fresher food. Vegetables grown on a rooftop travel only a few floors, not hundreds of kilometres, so they reach the kitchen within hours of being picked. A second benefit is cooling. A layer of soil and plants absorbs heat that a bare concrete roof would radiate, and studies in several cities show that buildings with green roofs need less energy for air conditioning in summer. Rooftop gardens also soak up rainwater, which reduces the load on drains during heavy storms.\n\nHowever, rooftop farming has limits. Not every roof can bear the weight of wet soil, and strengthening an old building can cost more than the produce is worth. Water and electricity must be carried up to the roof, which adds to the expense. Because space is small, rooftop farms rarely grow staple crops such as wheat or rice; they concentrate on leafy vegetables, herbs and tomatoes, which give a high return from a small area.\n\nCritics argue that rooftop farms will never feed a city, and on the numbers they are right. Supporters reply that feeding a whole city was never the aim. They see rooftop farms as a supplement that brings fresh produce closer to consumers, teaches children where food comes from, and makes use of space that would otherwise lie idle. Judged by those modest goals, they say, the movement has already succeeded.",
+        "media": null
+      },
+      "metadata": {
+        "passageType": "reading_comprehension",
+        "wordCount": 250,
+        "theme": "Rooftop farming in cities"
+      },
+      "questions": [
+        {
+          "text": "According to the passage, which development has made rooftop farming more practical than before?",
+          "options": ["The availability of cheap land in cities", "Lightweight soil mixes and drip irrigation", "The decline in demand for fresh vegetables", "Stronger rules on building construction"],
+          "correctAnswer": 1,
+          "section": "verbal",
+          "topic": "Reading Comprehension",
+          "difficulty": "easy",
+          "marks": 2,
+          "explanation": "The first paragraph states that advances in lightweight soil mixes and drip irrigation have made rooftop farming far more practical. Option (a) is contradicted because land is described as scarce and expensive. Options (c) and (d) are not mentioned. The answer is (b)."
+        },
+        {
+          "text": "Which of the following is NOT mentioned in the passage as a benefit of rooftop farming?",
+          "options": ["Fresher food reaching the kitchen quickly", "Reduced energy use for air conditioning", "Less load on drains during heavy storms", "Lower prices for staple crops such as wheat"],
+          "correctAnswer": 3,
+          "section": "verbal",
+          "topic": "Reading Comprehension",
+          "difficulty": "medium",
+          "marks": 2,
+          "explanation": "The passage lists fresher food, cooling that reduces air-conditioning needs, and absorption of rainwater that reduces the load on drains. It says rooftop farms rarely grow staple crops such as wheat or rice, so lower prices for wheat are not a benefit mentioned. The answer is (d)."
+        },
+        {
+          "text": "Why do rooftop farms concentrate on leafy vegetables, herbs and tomatoes?",
+          "options": ["These crops give a high return from a small area.", "These crops need no water.", "Staple crops cannot grow in cities.", "Building rules allow only these crops."],
+          "correctAnswer": 0,
+          "section": "verbal",
+          "topic": "Reading Comprehension",
+          "difficulty": "medium",
+          "marks": 2,
+          "explanation": "The third paragraph says that because space is small, rooftop farms focus on leafy vegetables, herbs and tomatoes, which give a high return from a small area. Option (b) is wrong because water must be carried to the roof. Option (c) overstates the point, since the reason given is limited space, not impossibility. Option (d) is not mentioned. The answer is (a)."
+        },
+        {
+          "text": "Which of the following best describes the attitude of the supporters of rooftop farming, as presented in the passage?",
+          "options": ["They believe rooftop farms can replace rural farming.", "They accept that rooftop farms cannot feed a whole city but value their smaller contributions.", "They think the movement has failed to meet its goals.", "They want every old building to be strengthened at any cost."],
+          "correctAnswer": 1,
+          "section": "verbal",
+          "topic": "Reading Comprehension",
+          "difficulty": "medium",
+          "marks": 2,
+          "explanation": "The final paragraph says supporters agree that feeding a whole city was never the aim and see rooftop farms as a supplement that offers fresh produce, education and use of idle space. This matches option (b). Option (a) and option (c) contradict this view, and option (d) conflicts with the passage's point that strengthening old buildings can be too costly. The answer is (b)."
+        },
+        {
+          "text": "Which of the following can be inferred from the passage?",
+          "options": ["Rooftop farming is suitable for every building in a city.", "Rooftop farming can be worthwhile even though it cannot meet a city's total food needs.", "Green roofs increase the energy needed for air conditioning.", "Rooftop farms were invented only in recent years."],
+          "correctAnswer": 1,
+          "section": "verbal",
+          "topic": "Reading Comprehension",
+          "difficulty": "hard",
+          "marks": 2,
+          "explanation": "The passage admits that rooftop farms cannot feed a city but says that, judged by modest goals such as fresher produce, education and use of idle space, the movement has succeeded. So it can be worthwhile despite not meeting total food needs. Option (a) is contradicted because not every roof can bear the weight. Option (c) is the opposite of what the passage says. Option (d) is contradicted by the statement that the idea is not new. The answer is (b)."
+        }
+      ]
+    },
+    {
+      "title": "Sentence Correction: Choose the Best Underlined Part",
+      "type": "data_interpretation",
+      "section": "verbal",
+      "topic": "Sentence Correction",
+      "difficulty": "medium",
+      "stimulus": {
+        "text": "Directions: In each of the following sentences, some part of the sentence or the entire sentence is underlined (shown here in square brackets). Beneath each sentence you will find four ways of phrasing the underlined part. This is a test of correctness and effectiveness of expression. Follow the requirements of standard written English, paying attention to grammar, choice of words and sentence construction. Choose the answer that expresses most effectively what is presented in the original sentence; the answer should be clear and exact, without awkwardness, ambiguity or redundancy.",
+        "media": null
+      },
+      "metadata": {
+        "questionType": "sentence_correction",
+        "numberOfQuestions": 5,
+        "focus": ["subject-verb agreement", "parallelism", "idiom", "tense consistency", "conciseness"]
+      },
+      "questions": [
+        {
+          "text": "The committee [have decided to postpone the meeting until all the members is available].",
+          "options": ["has decided to postpone the meeting until all the members are available", "have decided to postpone the meeting until all the members is available", "has decided postponing the meeting until all the members are available", "have decided to postpone the meeting till when all the members is available"],
+          "correctAnswer": 0,
+          "section": "verbal",
+          "topic": "Sentence Correction",
+          "difficulty": "medium",
+          "marks": 2,
+          "explanation": "The original has two errors. 'The committee' is treated as a single body here, so the verb should be 'has decided'. Also, 'all the members' is plural, so the verb should be 'are', not 'is'. Option (a) fixes both errors. Option (b) keeps both errors. Option (c) fixes the first error but uses 'postponing', which breaks the structure 'decided to postpone'. Option (d) keeps both errors and adds the awkward 'till when'. The answer is (a)."
+        },
+        {
+          "text": "The new manager is [more experienced than any employee in the department].",
+          "options": ["more experienced than any employee in the department", "more experienced than any other employee in the department", "most experienced than any other employee in the department", "more experienced from any other employee in the department"],
+          "correctAnswer": 1,
+          "section": "verbal",
+          "topic": "Sentence Correction",
+          "difficulty": "medium",
+          "marks": 2,
+          "explanation": "The manager is one of the employees of the department, so comparing the manager with 'any employee' wrongly includes the manager in the comparison. The correct form is 'any other employee', which excludes the manager. Option (c) wrongly uses 'most' with 'than'. Option (d) uses the wrong preposition 'from' with 'more ... than'. Option (b) is correct, so the answer is (b)."
+        },
+        {
+          "text": "Not only [did the company lose its biggest client, but it also faced a heavy fine] from the regulator.",
+          "options": ["did the company lose its biggest client, but it also faced a heavy fine", "the company lost its biggest client, but it also faced a heavy fine", "did the company lose its biggest client, but also facing a heavy fine", "the company did lose its biggest client, and also it faced a heavy fine"],
+          "correctAnswer": 0,
+          "section": "verbal",
+          "topic": "Sentence Correction",
+          "difficulty": "hard",
+          "marks": 2,
+          "explanation": "When a sentence begins with 'Not only', the auxiliary verb must come before the subject, as in 'did the company lose'. The second part must then follow the pattern 'but ... also' with a matching verb form, giving 'but it also faced'. Option (a) does this correctly. Option (b) does not invert the subject and verb. Option (c) breaks parallelism by using 'facing'. Option (d) fails to invert correctly and uses 'and also' instead of 'but also'. The answer is (a)."
+        },
+        {
+          "text": "If the project [would have been completed on time, the client would have paid the bonus].",
+          "options": ["would have been completed on time, the client would have paid the bonus", "had been completed on time, the client would have paid the bonus", "was completed on time, the client would have paid the bonus", "has been completed on time, the client would pay the bonus"],
+          "correctAnswer": 1,
+          "section": "verbal",
+          "topic": "Sentence Correction",
+          "difficulty": "hard",
+          "marks": 2,
+          "explanation": "This is a third conditional sentence about a past situation that did not happen. The structure is 'If + past perfect, would have + past participle'. The 'if' clause should therefore say 'had been completed'. Option (a) wrongly uses 'would have' in the 'if' clause. Option (c) uses the simple past, which does not match the 'would have paid' result clause. Option (d) mixes present perfect with a present result, so it does not fit a past unreal condition. The answer is (b)."
+        },
+        {
+          "text": "The teacher asked the students [to submit their assignments on time and that they should not copy from each other].",
+          "options": ["to submit their assignments on time and that they should not copy from each other", "to submit their assignments on time and not to copy from each other", "that they submit their assignments on time and not copying from each other", "to submit their assignments on time and not copying from each other"],
+          "correctAnswer": 1,
+          "section": "verbal",
+          "topic": "Sentence Correction",
+          "difficulty": "medium",
+          "marks": 2,
+          "explanation": "The two requests must be in parallel form. The first request uses an infinitive, 'to submit', so the second should also use an infinitive, 'not to copy'. Option (b) is parallel and concise. Option (a) mixes an infinitive with a 'that' clause. Option (c) mixes a 'that' clause with the verb form 'copying'. Option (d) mixes an infinitive with 'copying'. The answer is (b)."
+        }
+      ]
+    }
+  ],
+  "standaloneQuestions": [
+    {
+      "text": "A shopkeeper marks an article 25% above its cost price and then allows a discount of 12% on the marked price. What is his profit percentage?",
+      "options": ["8%", "10%", "12%", "13%", "15%"],
+      "correctAnswer": 1,
+      "section": "numerical",
+      "topic": "Profit and Loss",
+      "difficulty": "medium",
+      "marks": 2,
+      "explanation": "Let the cost price be 100. Marked price = 125. Selling price after a 12% discount = 125 × 0.88 = 110. Profit = 110 − 100 = 10, so the profit percentage is 10%."
+    },
+    {
+      "text": "What comes next in the series? 3, 7, 15, 31, 63, ?",
+      "options": ["111", "119", "127", "131"],
+      "correctAnswer": 2,
+      "section": "reasoning",
+      "topic": "Number Series",
+      "difficulty": "easy",
+      "marks": 2,
+      "explanation": "The differences between consecutive terms are 4, 8, 16, 32, which double each time. The next difference is 64, so the next term = 63 + 64 = 127. (Each term also equals 2 × previous term + 1: 2 × 63 + 1 = 127.)"
+    },
+    {
+      "text": "Pointing to a man in a photograph, Riya says, \"He is the son of my mother's only brother.\" How is the man related to Riya?",
+      "options": ["Brother", "Cousin", "Uncle", "Nephew"],
+      "correctAnswer": 1,
+      "section": "reasoning",
+      "topic": "Blood Relations",
+      "difficulty": "easy",
+      "marks": 2,
+      "explanation": "Riya's mother's only brother is Riya's maternal uncle. The son of her maternal uncle is her maternal cousin. So the man is Riya's cousin."
+    },
+    {
+      "text": "A sum of money becomes double itself in 3 years at simple interest. In how many years will it become four times itself at the same rate?",
+      "options": ["6 years", "9 years", "12 years", "8 years"],
+      "correctAnswer": 1,
+      "section": "numerical",
+      "topic": "Simple Interest",
+      "difficulty": "medium",
+      "marks": 2,
+      "explanation": "Let the principal be P. To double, the interest earned must equal P, and this takes 3 years. So the interest per year = P / 3. To become four times, the interest must be 3P, which takes 3P ÷ (P / 3) = 9 years."
+    },
+    {
+      "text": "What will be the output of the following pseudocode?\n1) Integer i, x, sum\n2) Set x = 1, sum = 0\n3) For (each i from 1 to 4)\n4) x = x * 2\n5) sum = sum + x\n6) End-for\n7) Print sum",
+      "options": ["15", "30", "31", "62"],
+      "correctAnswer": 1,
+      "section": "technical",
+      "topic": "Pseudocode",
+      "difficulty": "medium",
+      "marks": 2,
+      "explanation": "Trace the loop. i=1: x = 2, sum = 2. i=2: x = 4, sum = 6. i=3: x = 8, sum = 14. i=4: x = 16, sum = 30. The program prints 30."
+    },
+    {
+      "text": "What will be the output of the following pseudocode?\n1) Integer i, j, total\n2) Set total = 0\n3) For (each i from 1 to 4)\n4) For (each j from i to 4)\n5) If ((i + j) MOD 3 = 0)\n6) total = total + i * j\n7) End-if\n8) End-for\n9) End-for\n10) Print total",
+      "options": ["17", "19", "21", "23"],
+      "correctAnswer": 1,
+      "section": "technical",
+      "topic": "Pseudocode",
+      "difficulty": "medium",
+      "marks": 2,
+      "explanation": "The inner loop starts at j = i, so only pairs with j >= i are checked. i=1: j=1 gives 2, j=2 gives 3 (divisible by 3, add 1×2 = 2), j=3 gives 4, j=4 gives 5. i=2: j=2 gives 4, j=3 gives 5, j=4 gives 6 (add 2×4 = 8). i=3: j=3 gives 6 (add 3×3 = 9), j=4 gives 7. i=4: j=4 gives 8, which is not divisible by 3. Total = 2 + 8 + 9 = 19."
+    },
+    {
+      "text": "What will be the output of the following pseudocode?\n1) Integer n, s, d\n2) Set n = 4872, s = 0\n3) While (n > 0)\n4) d = n MOD 10\n5) If (d MOD 2 = 0)\n6) s = s + d\n7) Else\n8) s = s - d\n9) End-if\n10) n = n / 10 (integer division)\n11) End-while\n12) Print s",
+      "options": ["5", "7", "9", "-7"],
+      "correctAnswer": 1,
+      "section": "technical",
+      "topic": "Pseudocode",
+      "difficulty": "medium",
+      "marks": 2,
+      "explanation": "The loop extracts digits from the right. d = 2 (even): s = 2, n = 487. d = 7 (odd): s = 2 − 7 = −5, n = 48. d = 8 (even): s = −5 + 8 = 3, n = 4. d = 4 (even): s = 3 + 4 = 7, n = 0. The loop ends and 7 is printed."
+    },
+    {
+      "text": "What will be the output of the following pseudocode?\n1) Integer func (Integer n)\n2) If (n <= 2)\n3) return n\n4) End-if\n5) return func(n - 1) * 2 + func(n - 2)\n6) End-function\n7) Print func(5)",
+      "options": ["24", "27", "29", "31"],
+      "correctAnswer": 2,
+      "section": "technical",
+      "topic": "Pseudocode",
+      "difficulty": "hard",
+      "marks": 2,
+      "explanation": "The base cases are func(1) = 1 and func(2) = 2. func(3) = func(2) × 2 + func(1) = 4 + 1 = 5. func(4) = func(3) × 2 + func(2) = 10 + 2 = 12. func(5) = func(4) × 2 + func(3) = 24 + 5 = 29."
+    },
+    {
+      "text": "What will be the output of the following pseudocode? (Array indices start from 1)\n1) Integer A[5] = {5, 2, 9, 1, 6}, i, j, t, count\n2) Set count = 0\n3) For (each i from 1 to 4)\n4) For (each j from 1 to 5 - i)\n5) If (A[j] > A[j + 1])\n6) t = A[j]\n7) A[j] = A[j + 1]\n8) A[j + 1] = t\n9) count = count + 1\n10) End-if\n11) End-for\n12) End-for\n13) Print count * 10 + A[3]",
+      "options": ["45", "55", "56", "65"],
+      "correctAnswer": 1,
+      "section": "technical",
+      "topic": "Pseudocode",
+      "difficulty": "hard",
+      "marks": 2,
+      "explanation": "This is bubble sort that counts swaps. Pass 1 (i=1): 5>2 swap gives 2 5 9 1 6; 5>9 no swap; 9>1 swap gives 2 5 1 9 6; 9>6 swap gives 2 5 1 6 9. That is 3 swaps. Pass 2 (i=2): 2>5 no swap; 5>1 swap gives 2 1 5 6 9; 5>6 no swap. Total 4 swaps. Pass 3 (i=3): 2>1 swap gives 1 2 5 6 9; 2>5 no swap. Total 5 swaps. Pass 4 (i=4): 1>2 no swap. Final count = 5 and A[3] = 5. Output = 5 × 10 + 5 = 55."
+    },
+    {
+      "text": "What will be the output of the following pseudocode?\n1) Integer a, b, c\n2) Set a = 10, b = 1, c = 0\n3) While (a > 0)\n4) If (a MOD 2 = 1)\n5) c = c + b\n6) End-if\n7) b = b * 3\n8) a = a / 2 (integer division)\n9) End-while\n10) Print c",
+      "options": ["27", "30", "36", "39"],
+      "correctAnswer": 1,
+      "section": "technical",
+      "topic": "Pseudocode",
+      "difficulty": "hard",
+      "marks": 2,
+      "explanation": "Trace the loop. Pass 1: a = 10 is even, so c stays 0; b = 3, a = 5. Pass 2: a = 5 is odd, so c = 0 + 3 = 3; b = 9, a = 2. Pass 3: a = 2 is even, so c stays 3; b = 27, a = 1. Pass 4: a = 1 is odd, so c = 3 + 27 = 30; b = 81, a = 0. The loop ends and 30 is printed."
+    },
+    {
+      "text": "Find the missing number in the given matrix.",
+      "questionType": "image_mcq",
+      "media": {
+        "type": "image",
+        "url": "https://res.cloudinary.com/dinwniuxq/image/upload/v1794036211/Minimal_3_3_Number_Matrix_Puzzle.png",
+        "alt": "A 3 by 3 number matrix showing 11, 17, 25 in the first row; 13, 19, 27 in the second row; and 15, 21, and a question mark in the third row."
+      },
+      "options": ["29", "31", "33", "35"],
+      "correctAnswer": 0,
+      "section": "reasoning",
+      "topic": "Matrix Puzzle",
+      "difficulty": "medium",
+      "marks": 2,
+      "explanation": "Each row follows the same pattern: the second number is 6 greater than the first, and the third number is 8 greater than the second. Therefore, 21 + 8 = 29. The missing number is 29 (Option A)."
+    },
+    {
+      "text": "Find the missing figure in the given matrix.",
+      "questionType": "image_mcq",
+      "media": {
+        "type": "image",
+        "url": "https://res.cloudinary.com/dinwniuxq/image/upload/v1794036949/matrix_question.png",
+        "alt": "A 3 by 3 matrix of dots. The first row contains 1, 2, and 3 dots; the second row contains 2, 3, and 4 dots; the third row contains 3, 4, and a question mark."
+      },
+      "options": ["Option A", "Option B", "Option C", "Option D"],
+      "optionMedia": [
+        { "type": "image", "url": "https://res.cloudinary.com/dinwniuxq/image/upload/v1794036949/option_a.png", "alt": "Option A" },
+        { "type": "image", "url": "https://res.cloudinary.com/dinwniuxq/image/upload/v1794036949/option_b.png", "alt": "Option B" },
+        { "type": "image", "url": "https://res.cloudinary.com/dinwniuxq/image/upload/v1794036949/option_c.png", "alt": "Option C" },
+        { "type": "image", "url": "https://res.cloudinary.com/dinwniuxq/image/upload/v1794036949/option_d.png", "alt": "Option D" }
+      ],
+      "correctAnswer": 1,
+      "section": "reasoning",
+      "topic": "Matrix Puzzle",
+      "difficulty": "medium",
+      "marks": 2,
+      "explanation": "The number of dots increases by 1 from left to right and from top to bottom. The missing cell therefore contains 5 dots, which is Option B."
+    },
+    {
+      "text": "Find the missing number in the given matrix.",
+      "questionType": "image_mcq",
+      "media": {
+        "type": "image",
+        "url": "https://res.cloudinary.com/dinwniuxq/image/upload/v1794037558/matrix_question.png",
+        "alt": "A 3 by 3 number matrix: 2, 5, 29; 3, 7, 58; 4, 9, and a question mark."
+      },
+      "options": ["89", "93", "97", "101"],
+      "correctAnswer": 2,
+      "section": "reasoning",
+      "topic": "Number Matrix Puzzle",
+      "difficulty": "hard",
+      "marks": 2,
+      "explanation": "The third number in each row is the sum of the squares of the first two numbers. Row 1: 2² + 5² = 4 + 25 = 29. Row 2: 3² + 7² = 9 + 49 = 58. Row 3: 4² + 9² = 16 + 81 = 97. Therefore, the missing number is 97 (Option C)."
+    },
+    {
+      "text": "Which figure completes the given matrix?",
+      "questionType": "image_mcq",
+      "media": {
+        "type": "image",
+        "url": "https://res.cloudinary.com/dinwniuxq/image/upload/v1794038336/matrix_question.png",
+        "alt": "A 3 by 3 matrix of geometric shapes with dots, with the bottom-right cell missing."
+      },
+      "options": ["Option A", "Option B", "Option C", "Option D"],
+      "optionMedia": [
+        { "type": "image", "url": "https://res.cloudinary.com/dinwniuxq/image/upload/v1794038335/option_a.png", "alt": "Option A" },
+        { "type": "image", "url": "https://res.cloudinary.com/dinwniuxq/image/upload/v1794038335/option_b.png", "alt": "Option B" },
+        { "type": "image", "url": "https://res.cloudinary.com/dinwniuxq/image/upload/v1794038335/option_c.png", "alt": "Option C" },
+        { "type": "image", "url": "https://res.cloudinary.com/dinwniuxq/image/upload/v1794038335/option_d.png", "alt": "Option D" }
+      ],
+      "correctAnswer": 2,
+      "section": "reasoning",
+      "topic": "Matrix Puzzle",
+      "difficulty": "hard",
+      "marks": 2,
+      "explanation": "The number of sides of the shape increases by one across each row and down each column. The number of dots also increases by one. Therefore, the missing figure is a heptagon (7 sides) with 5 dots, which is Option C."
+    }
+  ],
+  "test": {
+    "title": "CrackNQT Mock — Infosys SE 2027 Mixed Reasoning & Verbal Set",
+    "type": "topic_practice",
+    "section": "reasoning",
+    "topic": "Data Interpretation",
+    "duration": 2700,
+    "selectionMode": "fixed",
+    "sectionLocked": false,
+    "isPremium": true,
+    "isActive": true
+  }
+}

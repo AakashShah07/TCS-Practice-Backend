@@ -14,7 +14,7 @@ const testSchema = new mongoose.Schema(
     },
     section: {
       type: String,
-      enum: ['numerical', 'reasoning', 'verbal', 'advanced', 'system'],
+      enum: ['numerical', 'reasoning', 'verbal', 'advanced', 'system', 'technical'],
     },
     topic: {
       type: String,
@@ -26,6 +26,22 @@ const testSchema = new mongoose.Schema(
         ref: 'Question',
       },
     ],
+    // Curated question groups (shared stimuli) for fixed selection.
+    groups: [
+      {
+        type: mongoose.Schema.Types.ObjectId,
+        ref: 'QuestionGroup',
+      },
+    ],
+    // Question selection strategy:
+    //  'auto'   - legacy behaviour (section/topic pool sampling, questions[] fallback)
+    //  'fixed'  - use configured groups + questions in the exact configured order
+    //  'random' - sample from the configured section/topic pool
+    selectionMode: {
+      type: String,
+      enum: ['auto', 'fixed', 'random'],
+      default: 'auto',
+    },
     totalQuestions: {
       type: Number,
       required: true,
